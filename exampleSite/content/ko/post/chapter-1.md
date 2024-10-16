@@ -3,7 +3,7 @@ date: 2024-09-23T10:58:08-04:00
 description: "About Forensic"
 featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
 tags: ["scene"]
-title: "이상징후 탐지, 1분 만에 해결! PLURA 포렌식으로 빠르게 대응하세요"
+title: "PLURA 포렌식으로 빠르게 대응하세요"
 ---
 
 # 지금은 기업 보안이 무엇보다 중요한 시대입니다.
