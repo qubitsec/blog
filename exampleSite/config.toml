@@ -41,5 +41,5 @@ recent_posts_number = 3
 name = "twitter"
 url = "https://twitter.com/GoHugoIO"
 
-[params.customCSS]
-css_file = "/css/korean-fonts.css"
+#[params.customCSS]
+#css_file = "/css/korean-fonts.css"
