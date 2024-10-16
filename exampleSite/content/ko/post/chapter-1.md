@@ -1,13 +1,36 @@
 ---
-date: 2017-04-09T10:58:08-04:00
-description: "La grande halle"
+date: 2024-09-23T10:58:08-04:00
+description: "About Forensic"
 featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
 tags: ["scene"]
-title: "Chapitre I: La grande halle"
+title: "이상징후 탐지, 1분 만에 해결! PLURA 포렌식으로 빠르게 대응하세요"
 ---
 
-Généralement, on utilise un texte en faux latin (le texte ne veut rien dire, il a été modifié), le Lorem ipsum ou Lipsum, qui permet donc de faire office de texte d'attente. L'avantage de le mettre en latin est que l'opérateur sait au premier coup d'oeil que la page contenant ces lignes n'est pas valide, et surtout l'attention du client n'est pas dérangée par le contenu, il demeure concentré seulement sur l'aspect graphique.
+# 지금은 기업 보안이 무엇보다 중요한 시대입니다.
+언제, 어디서든 예상치 못한 사이버 공격이 일어날 수 있죠. 그런데 보안 문제가 생겼을 때, 그 원인을 찾는 데 시간이 많이 걸리는 게 문제입니다.
 
-Ce texte a pour autre avantage d'utiliser des mots de longueur variable, essayant de simuler une occupation normale. La méthode simpliste consistant à copier-coller un court texte plusieurs fois (« ceci est un faux-texte ceci est un faux-texte ceci est un faux-texte ceci est un faux-texte ceci est un faux-texte ») a l'inconvénient de ne pas permettre une juste appréciation typographique du résultat final.
+## PLURA 포렌식이 있으면 이런 걱정은 끝!
+이상 징후나 변조된 데이터를 자동으로 분석해, 빠르게 문제를 해결할 수 있습니다.
 
-Il circule des centaines de versions différentes du Lorem ipsum, mais ce texte aurait originellement été tiré de l'ouvrage de Cicéron, De Finibus Bonorum et Malorum (Liber Primus, 32), texte populaire à cette époque, dont l'une des premières phrases est : « Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... » (« Il n'existe personne qui aime la souffrance pour elle-même, ni qui la recherche ni qui la veuille pour ce qu'elle est... »).
+### PLURA 포렌식, 이렇게 간편해요
+PLURA 포렌식은 자동으로 시스템의 초기 정보와 현재 정보를 비교해, 무엇이 달라졌는지 바로 알려줍니다. 복잡한 과정 없이, 문제의 원인을 쉽게 확인할 수 있어요.
+
+- 시스템 설정, 네트워크 정보 등 수백 가지 데이터를 자동으로 수집해요.
+- 차이점 자동 분석: 초기 상태와 지금 상태를 비교해 문제점을 알려줍니다.
+- 변경 사항 관리도 자동으로 처리해, 보안 관리를 쉽게 해줍니다.
+
+## 도입하면 이렇게 달라져요
+기존에는 보안 문제를 분석하는 데 24시간이 걸렸다면, 이제 PLURA 포렌식으로 1분 만에 해결할 수 있습니다. 원격으로 바로 문제를 확인하고 대응할 수 있어요. 기업의 중요한 시간과 자산을 더 안전하게 지킬 수 있죠.
+
+## 시작도 간단해요
+딱 3단계, 3분이면 충분합니다.
+
+1. **회원가입**
+2. **서버에 에이전트 설치**
+3. **라이브 포렌식 실행**
+
+이제 복잡하게 고민할 필요 없이, PLURA 포렌식으로 빠르게 보안 문제를 해결하세요!
+
+---
+
+[포렌식 더 알아보기]([#](https://purplecow.plura.io/web/welcome/forensic.html)
