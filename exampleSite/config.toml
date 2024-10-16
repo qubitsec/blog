@@ -12,23 +12,16 @@ Paginate = 3                  # this is set low for demonstrating with dummy con
 googleAnalytics = ""
 enableRobotsTXT = true
 
+[languages]
 [languages.en]
 title = "Ananke"
 weight = 1
 contentDir = "content/en"
-languageName = "English"
-languageCode = "en"
-hasCJKLanguage = false
-disablePath = true  # 언어별로 구분되는 경로를 비활성화합니다.
 
-[Languages.ko]
+[languages.ko]
 title = "Ananke ko"
 weight = 2
 contentDir = "content/ko"
-languageName = "Korean"
-languageCode = "ko"
-hasCJKLanguage = true
-disablePath = true  # 언어별로 구분되는 경로를 비활성화합니다.
 
 [sitemap]
 changefreq = "monthly"
