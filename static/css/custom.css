@@ -1,0 +1,4 @@
+/* custom.css 파일에 폰트 적용 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
