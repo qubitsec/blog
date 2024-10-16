@@ -40,3 +40,6 @@ recent_posts_number = 3
 [[params.ananke_socials]]
 name = "twitter"
 url = "https://twitter.com/GoHugoIO"
+
+[params.customCSS]
+css_file = "/css/korean-fonts.css"
