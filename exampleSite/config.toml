@@ -5,7 +5,7 @@ theme = "../../../ananke"
 resourceDir = "../resources"
 
 # defaultContentLanguage를 제거하여 기본 언어 설정을 하지 않습니다.
-DefaultContentLanguage = "ko"
+# DefaultContentLanguage = "ko"
 
 SectionPagesMenu = "main"
 Paginate = 3
