@@ -18,15 +18,10 @@ title = "Ananke"
 weight = 1
 contentDir = "content/en"
 # languageDirection = 'rtl' for Right-To-Left languages
-[languages.fr]
-title = "Ananke Fr"
-weight = 2
-contentDir = "content/fr"
 [languages.ko]
 title = "Ananke ko"
-weight = 3
+weight = 2
 contentDir = "content/ko"
-
 
 [sitemap]
 changefreq = "monthly"
