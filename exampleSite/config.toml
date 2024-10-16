@@ -40,11 +40,3 @@ recent_posts_number = 3
 [[params.ananke_socials]]
 name = "twitter"
 url = "https://twitter.com/GoHugoIO"
-
-# Google Fonts - Noto Sans KR 폰트 추가
-[params.fonts]
-main_font = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
-
-# Custom CSS를 통한 폰트 설정
-[params.customCSS]
-css_file = "/css/custom.css"
