@@ -4,11 +4,11 @@ languageCode = "en-us"
 theme = "../../../ananke"
 resourceDir = "../resources"
 
-# defaultContentLanguage 설정을 제거합니다.
-# DefaultContentLanguage = "en"
+# defaultContentLanguage를 제거하여 기본 언어 설정을 하지 않습니다.
+# DefaultContentLanguage = "en" 제거
 
 SectionPagesMenu = "main"
-Paginate = 3  # 페이지네이션 설정
+Paginate = 3
 googleAnalytics = ""
 enableRobotsTXT = true
 
@@ -17,13 +17,13 @@ enableRobotsTXT = true
 title = "Ananke"
 weight = 1
 contentDir = "content/en"
-disablePath = true  # 언어별로 구분되는 경로를 비활성화합니다.
+disablePath = true  # 언어 경로를 비활성화합니다
 
 [languages.ko]
 title = "Ananke ko"
 weight = 2
 contentDir = "content/ko"
-disablePath = true  # 언어별로 구분되는 경로를 비활성화합니다.
+disablePath = true  # 언어 경로를 비활성화합니다
 
 [sitemap]
 changefreq = "monthly"
