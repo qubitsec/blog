@@ -22,6 +22,11 @@ contentDir = "content/en"
 title = "Ananke Fr"
 weight = 2
 contentDir = "content/fr"
+[languages.ko]
+title = "Ananke ko"
+weight = 3
+contentDir = "content/ko"
+
 
 [sitemap]
 changefreq = "monthly"
