@@ -1,6 +1,6 @@
 ---
 title: "Tech"
-description: "간결하고 강력한 핵심 테크놀로지_마이크"
+description: "간결하고 강력한 핵심 테크놀로지_마이크123"
 featured_image: '/images/Victor_Hugo-Hunchback.jpg'
 menu:
   main:
