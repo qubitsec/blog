@@ -1,11 +1,5 @@
 ---
 title: "Tech"
-description: "간결하고 강력한 핵심 테크놀로지"
-featured_image: '/images/Victor_Hugo-Hunchback.jpg'
-menu:
-  main:
-    weight: 1
+date: 2017-03-03
 ---
-{{< figure src="/images/Victor_Hugo-Hunchback.jpg" title="Illustration from Victor Hugo et son temps (1881)" >}}
-
-_The Hunchback of Notre-Dame_ (French: _Notre-Dame de Paris_) is a French Romantic/Gothic novel by Victor Hugo, published in 1831. The original French title refers to Notre Dame Cathedral, on which the story is centered. English translator Frederic Shoberl named the novel The Hunchback of Notre Dame in 1833 because at the time, Gothic novels were more popular than Romance novels in England. The story is set in Paris, France in the Late Middle Ages, during the reign of Louis XI.
+큐비트 시큐리티를 만들어가는 전문가들의 보안과 기술, 그리고 커리어 이야기
