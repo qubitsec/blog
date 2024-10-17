@@ -1,7 +1,7 @@
 ---
 title: "PLURA Blog"
 
-description: "최신 보안 솔루션을 위한 모든 정보, 여기서 시작하세요"
+description: "최신 보안 솔루션을 위한 모든 정보, 여기서 시작하세요_해리"
 cascade:
   featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 ---
