@@ -2,7 +2,7 @@
 title: News
 featured_image: ''
 omit_header_text: true
-description: Laissez-nous un message!
+description: 
 type: page
 menu: main
 
