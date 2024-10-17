@@ -9,3 +9,5 @@ PLURA 블로그에 오신 것을 환영합니다! 이곳에서는 최신 보안 
 
 아래에서 PLURA 포렌식, XDR, WAF 등 PLURA의 강력한 보안 솔루션에 대해 더 알아보세요.
 
+News
+https://www.qubitsec.com/news
