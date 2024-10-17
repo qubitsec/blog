@@ -3,7 +3,7 @@ date: 2024-10-17
 description: "About Forensic"
 featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
 tags: 
-title: "복사한것"
+title: "뉴 파일"
 ---
 
 지금은 기업 보안이 무엇보다 중요한 시대입니다. 
