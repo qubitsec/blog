@@ -1,7 +1,7 @@
 ---
 date: 2023-11-14
 description: 
-featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
+featured_image: 
 tags: 
 title: "[WEB] 관리자 페이지 노출 대응"
 ---
