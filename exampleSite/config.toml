@@ -40,10 +40,10 @@ googleFonts = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swa
 customCSS = true  # custom.css를 사용할지 여부
 #css_file = "/css/custom.css"  # custom.css 파일 경로 설정
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      attribute = true
+#[markup]
+#  [markup.goldmark]
+#    [markup.goldmark.renderer]
+#      unsafe = true
+#    [markup.goldmark.parser]
+#      autoHeadingID = true
+#      attribute = true
