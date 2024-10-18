@@ -1,7 +1,7 @@
 ---
 date: 2024-06-03
 description: 
-featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
+featured_image: 
 tags: 
 title: "[WEB] 웹쉘 공격과 create_function 함수의 취약성"
 ---
