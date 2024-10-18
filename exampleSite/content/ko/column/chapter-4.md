@@ -6,6 +6,8 @@ tags:
 title: "PLURA에서 Microsoft Defender Antivirus 로그 확인하기"
 ---
 
+![1](https://github.com/user-attachments/assets/a86fa6bd-605a-46b4-83b2-e16889dc87d4)
+
 &nbsp;
 
 <strong>Microsoft Defender Antivirus는 Microsoft Windows 의 바이러스 백신 소프트웨어 구성 요소입니다 </strong>. [1]
