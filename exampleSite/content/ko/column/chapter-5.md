@@ -6,7 +6,8 @@ tags:
 title: "웹방화벽의 장단점, 하드웨어 vs 소프트웨어 기반"
 ---
 
-![Column_20240213-1](https://github.com/user-attachments/assets/9868d72f-7199-417c-93ab-46747b1e3568)
+![Column_20240213-1](https://github.com/user-attachments/assets/3e7b2cbb-a2cb-4a90-b543-e4ba0657fd3f)
+
 
 **웹방화벽을 구축할 때 하드웨어와 소프트웨어 각각의 옵션을 고려하는 것은 중요합니다. 각각의 접근 방식은 특유의 장단점을 가지고 있으며, 이는 조직의 보안 요구사항, 예산, 인프라 구조에 따라 선택이 달라질 수 있습니다.**
 
