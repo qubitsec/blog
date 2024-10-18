@@ -16,6 +16,6 @@ PLURA 포렌식은 매우 간편하게 사용할 수 있습니다. 시스템의 
 
 **시작 방법도 매우 간단합니다.** 회원가입 후 서버에 에이전트를 설치하고, **라이브 포렌식** 기능을 실행하기만 하면 됩니다. 복잡한 고민 없이 PLURA 포렌식으로 빠르고 효율적으로 보안 문제를 해결해 보세요.
 
-더 자세한 내용은 [PLURA 포렌식 소개 페이지](https://purplecow.plura.io/web/welcome/forensic.html)에서 확인할 수 있습니다.
+더 자세한 내용은 [PLURA 포렌식 소개](https://purplecow.plura.io/web/welcome/forensic.html)에서 확인할 수 있습니다.
 
 ---
