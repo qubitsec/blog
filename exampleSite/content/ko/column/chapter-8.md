@@ -1,0 +1,41 @@
+---
+date: 2023-10-05
+description: 
+featured_image: 
+tags: 
+title: "[Apache Tomcat] 버전정보 노출 대응"
+---
+
+![414144141](https://github.com/user-attachments/assets/0811bdf6-f7c1-4a05-9df6-fd9382add8a2)
+
+### 개요
+Apache Tomcat이 오류를 내보낼 때 기본 설정의 경우 버전 정보가 노출됩니다. 버전마다 다양한 취약점이 존재하므로, 이러한 버전 정보가 보이지 않도록 설정해야 합니다.
+
+### 대응방법
+
+1. **Tomcat 서버 설정 파일로 이동**  
+   ![1-300x89](https://github.com/user-attachments/assets/4a6be0ce-8c6f-4da9-8b45-81198cdfc497)
+
+   Tomcat을 설치한 디렉토리로 이동하고, `conf` 디렉토리에 있는 `server.xml` 파일을 엽니다.
+
+3. **HTTP 커넥터 설정 찾기**  
+   ![변경전-300x128](https://github.com/user-attachments/assets/78aca181-8a29-48b8-9c30-b695922216c4)
+
+   `server.xml` 파일에서 HTTP 커넥터 설정 부분을 찾습니다. 이 설정은 일반적으로 아래와 비슷하게 표시됩니다.
+
+4. **server.xml 파일 편집**  
+   ![변경후-300x134](https://github.com/user-attachments/assets/714e998d-72ab-4c57-a1b6-32f7bc6b09af)
+
+   HTTP 커넥터 설정 부분에서 `server` 속성을 변경하여 버전 정보를 숨깁니다. 예를 들어, `server` 속성을 "Apache"로 변경할 수 있습니다.
+
+5. **변경 사항 저장**  
+   파일을 저장하고 편집기를 닫습니다.
+
+6. **Tomcat 서버 재시작**  
+   ![12312-300x189](https://github.com/user-attachments/assets/d16b6eea-8ee2-4612-8839-98aab4262283)
+
+   변경 사항을 적용하려면 Tomcat 서버를 재시작해야 합니다. 재시작 방법은 Tomcat 디렉토리의 `bin` 디렉토리에서 `./shutdown.sh`와 `./startup.sh`를 차례로 실행하면 됩니다.
+
+이 과정을 통해 Apache Tomcat의 버전 정보가 숨겨집니다.
+
+또한, 웹 서버 구성 및 보안 조치에 익숙하지 않은 경우 전문가의 도움을 받거나 보안 전문가와 상담하는 것이 좋습니다.
