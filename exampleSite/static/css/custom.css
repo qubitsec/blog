@@ -1,6 +1,17 @@
-.article-content {
+/* custom.css 파일에 폰트 및 텍스트 정렬 적용 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: justify;
+    line-height: 1.6; /* 가독성을 위한 줄 간격 */
+}
+
+h1, h2, h3, p {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+p {
+    text-align: justify;
     max-width: 700px; /* 문장의 최대 너비를 700px로 고정 */
-    margin: 0 auto; /* 가운데 정렬 */
-    text-align: justify; /* 양쪽 정렬 */
-    line-height: 1.6; /* 줄 간격 설정 */
+    margin: 0 auto; /* 텍스트를 중앙 정렬 */
+    line-height: 1.6; /* 가독성을 위한 줄 간격 */
 }
