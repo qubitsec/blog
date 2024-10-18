@@ -1,7 +1,7 @@
 ---
 date: 2024-03-04
 description: 
-featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
+featured_image: 
 tags: 
 title: "PLURA에서 Microsoft Defender Antivirus 로그 확인하기"
 ---
