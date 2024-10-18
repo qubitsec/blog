@@ -36,6 +36,7 @@ site_logo = ""
 description = "The last theme you'll ever need. Maybe."
 background_color_class = "bg-black"
 recent_posts_number = 3
+googleFonts = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
 
 #[[params.ananke_socials]]
 #name = "twitter"
