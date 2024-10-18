@@ -5,7 +5,7 @@ theme = "../../../ananke"
 resourceDir = "../resources"
 
 # 기본 언어 설정을 ko로 설정하려면 아래처럼 수정하세요.
-defaultContentLanguage = "ko"
+# defaultContentLanguage = "ko"
 
 SectionPagesMenu = "main"
 Paginate = 3
