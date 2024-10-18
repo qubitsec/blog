@@ -1,7 +1,7 @@
 ---
 date: 2024-06-12
 description: 
-featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
+featured_image: 
 tags: 
 title: "웹방화벽의 장단점, 하드웨어 vs 소프트웨어 기반"
 ---
