@@ -4,8 +4,8 @@ languageCode = "en-us"
 theme = "../../../ananke"
 resourceDir = "../resources"
 
-# defaultContentLanguage를 제거하여 기본 언어 설정을 하지 않습니다.
-DefaultContentLanguage = "ko"
+# 기본 언어 설정을 ko로 설정하려면 아래처럼 수정하세요.
+defaultContentLanguage = "ko"
 
 SectionPagesMenu = "main"
 Paginate = 3
@@ -36,13 +36,6 @@ site_logo = ""
 description = "The last theme you'll ever need. Maybe."
 background_color_class = "bg-black"
 recent_posts_number = 3
-googleFonts = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+googleFonts = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"  # 구글 폰트 링크 추가
 customCSS = true  # custom.css를 사용할지 여부
 css_file = "/css/custom.css"  # custom.css 파일 경로 설정
-
-#[[params.ananke_socials]]
-#name = "twitter"
-#url = "https://twitter.com/GoHugoIO"
-
-#[params.customCSS]
-#css_file = "/css/custom.css"
