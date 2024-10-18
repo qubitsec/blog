@@ -1,7 +1,7 @@
 ---
 date: 2024-06-12
 description: 
-featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
+featured_image: 
 tags: 
 title: "해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성"
 ---
