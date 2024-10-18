@@ -1,16 +1,16 @@
 body {
-    font-family: 'Spoqa Han Sans', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     text-align: justify;
     line-height: 1.6;
 }
 
 h1, h2, h3, p {
-    font-family: 'Spoqa Han Sans', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 p {
     text-align: justify;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     line-height: 1.6;
 }
