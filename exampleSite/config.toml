@@ -14,12 +14,12 @@ enableRobotsTXT = true
 
 [languages]
 [languages.en]
-title = "Ananke"
+title = "PLURA Blog EN"
 weight = 1
 contentDir = "content/en"
 
 [languages.ko]
-title = "Ananke ko"
+title = "PLURA Blog KO"
 weight = 2
 contentDir = "content/ko"
 
@@ -37,9 +37,9 @@ description = "The last theme you'll ever need. Maybe."
 background_color_class = "bg-black"
 recent_posts_number = 3
 
-[[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/GoHugoIO"
+#[[params.ananke_socials]]
+#name = "twitter"
+#url = "https://twitter.com/GoHugoIO"
 
 #[params.customCSS]
 #css_file = "/css/korean-fonts.css"
