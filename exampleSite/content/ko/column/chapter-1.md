@@ -1,7 +1,7 @@
 ---
 date: 2024-09-23T10:58:08-04:00
 description: "About Forensic"
-featured_image: "/images/Pope-Edouard-de-Beaumont-1844.jpg"
+featured_image: ![1](https://github.com/user-attachments/assets/804c9e19-e700-4baf-a157-1e84c80a711e)
 tags: 
 title: "PLURA 포렌식으로 빠르게 대응하세요"
 ---
