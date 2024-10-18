@@ -42,5 +42,5 @@ googleFonts = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swa
 #name = "twitter"
 #url = "https://twitter.com/GoHugoIO"
 
-#[params.customCSS]
-#css_file = "/css/korean-fonts.css"
+[params.customCSS]
+css_file = "/css/custom.css"
