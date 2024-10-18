@@ -37,6 +37,8 @@ description = "The last theme you'll ever need. Maybe."
 background_color_class = "bg-black"
 recent_posts_number = 3
 googleFonts = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+customCSS = true  # custom.css를 사용할지 여부
+css_file = "/css/custom.css"  # custom.css 파일 경로 설정
 
 #[[params.ananke_socials]]
 #name = "twitter"
