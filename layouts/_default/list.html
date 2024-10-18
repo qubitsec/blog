@@ -1,23 +1,15 @@
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height">
-    {{/* 외부 URL 처리 */}}
-    {{ if .Params.external_url }}
-      <script>
-        window.location.href = "{{ .Params.external_url }}";
-      </script>
-      <p>자동으로 리디렉션되지 않으면 <a href="{{ .Params.external_url }}">여기</a>를 클릭하세요.</p>
-    {{ else }}
-      <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
-        {{- .Content -}}
-      </section>
-      <section class="flex-ns flex-wrap justify-around mt5">
-        {{ range .Paginator.Pages }}
-          <div class="relative w-100 w-30-l mb4 bg-white">
-            {{ .Render "summary" }}
-          </div>
-        {{ end }}
-      </section>
-      {{- template "_internal/pagination.html" . -}}
-    {{ end }}
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
+      {{- .Content -}}
+    </section>
+    <section class="flex-ns flex-wrap justify-around mt5">
+      {{ range .Paginator.Pages }}
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          {{ .Render "summary" }}
+        </div>
+      {{ end }}
+    </section>
+    {{- template "_internal/pagination.html" . -}}
   </article>
 {{ end }}
