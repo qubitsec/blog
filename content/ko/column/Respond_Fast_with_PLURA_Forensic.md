@@ -6,7 +6,7 @@ featured_image:
 tags: ["PLURA 포렌식", "보안 솔루션", "사이버 보안", "포렌식"]
 ---
 
-![포렌식을-소개해요](https://github.com/user-attachments/assets/2454b01f-4431-43cf-b8d9-a1321cb61b68)
+![forensic](https://github.com/user-attachments/assets/45d495de-4fef-4be8-90eb-7bdd8235b59f)
 
 지금은 기업 보안이 그 어느 때보다 중요한 시대입니다. 사이버 공격은 언제 어디서나 발생할 수 있으며, 보안 문제의 원인을 찾는 데 시간이 오래 걸리는 것은 큰 문제입니다.
 
