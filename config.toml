@@ -107,7 +107,7 @@ contentDir = "content/ko"
 
   [[menu.main]]
   name = "ニュース"
-  url = "https://w.qubitsec.com/ja/news"
+  url = "https://w.qubitsec.com/ja/news.html"
   weight = 6
   [menu.main.params]
   lang = "ja"
