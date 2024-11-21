@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["Microsoft Defender", "보안 로그", "PLURA", "안티바이러스"]
 ---
 
-![1](https://github.com/user-attachments/assets/a86fa6bd-605a-46b4-83b2-e16889dc87d4)
+![column_20240304](https://github.com/user-attachments/assets/a254870f-a26f-4a89-997c-c93368c40408)
 
 ### Microsoft Defender Antivirus란?
 
@@ -19,7 +19,7 @@ Defender는 탐지 결과를 로그로 남기며, PLURA는 이 로그를 수집�
 
 #### 첫 번째 로그: ISO 이미지 파일 탐지
 
-![대한산업_01-1024x360](https://github.com/user-attachments/assets/c66faa41-45bb-42a8-af63-ee9de9dda521)
+![대한산업_01-1024x360](https://github.com/user-attachments/assets/05b23392-5f65-4f1c-b328-0d30002452f8)
 
 - **탐지 내용:** Microsoft Office 관련 ISO 이미지 내부의 `setup.exe` 파일이 Trojan으로 탐지됨.  
 - **Defender 조치:** 보호 작업이 실행되어 위협 제거.
@@ -30,7 +30,7 @@ Defender는 탐지 결과를 로그로 남기며, PLURA는 이 로그를 수집�
 
 #### 두 번째 로그: PUA 및 악성 IP 탐지
 
-![코리아메디케어_01-1](https://github.com/user-attachments/assets/b11d0c20-271e-441a-b85e-8bac9fe48c96)
+![코리아메디케어_02-1-1536x416](https://github.com/user-attachments/assets/c47daf58-486f-4ccc-b65c-7167c813352d)
 
 - **탐지 내용:** `uTorrent.exe` 파일이 PUA(원치 않는 파일)로 탐지됨.  
 - **추가 로그:** 악성 IP로의 접근 시도가 감지됨 (`port 80` 접속 시도).  
@@ -41,7 +41,7 @@ Defender는 탐지 결과를 로그로 남기며, PLURA는 이 로그를 수집�
 
 #### 세 번째 로그: Backdoor 의심 파일 탐지
 
-![천주교_02-1024x357](https://github.com/user-attachments/assets/b0d3df15-7e15-4f91-abf2-3a3b9f843b5e)
+![천주교_02-1024x357](https://github.com/user-attachments/assets/106efb22-9b27-4e6f-a395-8bb07c6b03a9)
 
 - **탐지 내용:** 특정 zip 파일 내 `admin`, `root` 경로로 지정된 악성 `asp` 및 `php` 파일 발견.  
 - **위험도:** 파일 확장자를 위장하여 악성코드를 숨기려는 의도가 명확.  
