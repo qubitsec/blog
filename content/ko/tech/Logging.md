@@ -6,7 +6,7 @@ tags:
 title: "로깅(Logging) 을 위해 SSD 사용하기"
 ---
 
-![1](https://github.com/user-attachments/assets/8a10771b-2664-4a9c-9ea0-6b0baf389d49)
+![blog_banner_20210716_1](https://github.com/user-attachments/assets/d7ceea36-2dfb-4493-8709-39d7d9888bd7)
 
 <br>
 
