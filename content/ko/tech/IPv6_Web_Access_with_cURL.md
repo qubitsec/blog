@@ -6,17 +6,17 @@ featured_image: ""
 tags: ["IPv6", "curl", "Apache Tomcat", "네트워크"]
 ---
 
-![IPv6 Web Access Check](https://github.com/user-attachments/assets/99bea80c-7c98-4748-923a-16d1fac782db)
+![blog_banner_20210817_2](https://github.com/user-attachments/assets/a6b13908-3d5b-457d-936a-3c784e84906c)
 
 ## 환경 설정
 
 ### 1) 클라이언트
 
-![Client Setup](https://github.com/user-attachments/assets/13e531c9-31c0-4ca8-86b3-af23cffec45b)
+![curl](https://github.com/user-attachments/assets/404c561e-7c83-418f-a891-d05c78d693e8)
 
 ### 2) 웹 서버: Apache Tomcat with IPv6
 
-![Web Server Setup](https://github.com/user-attachments/assets/77bb2979-9f47-48d4-aedc-e21bf4abff59)
+![tomcat-netstat-ipv6](https://github.com/user-attachments/assets/c905e280-6e1d-4f5c-b1b2-c5d91071fdfc)
 
 ---
 
