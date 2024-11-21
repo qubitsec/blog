@@ -6,7 +6,7 @@ tags:
 title: "How to Manually Update curl on CentOS"
 ---
 
-![1](https://github.com/user-attachments/assets/912f4318-5e66-4f16-a963-9d5a44afeab1)
+![blog_banner_20210817_1](https://github.com/user-attachments/assets/ddf3d087-3fae-4c4b-be71-68d646332700)
 
 ## need epel-release
 ```bash
