@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["ウェブファイアウォール", "セキュリティ", "ウェブ攻撃", "ランサムウェア"]
 ---
 
-![PublicPR-PLURA-WAF](https://github.com/user-attachments/assets/fe57820a-6b72-40df-bdd1-8e022127c821)
+![PublicPR-PLURA-WAF](https://github.com/user-attachments/assets/9f0f85ea-62ec-476e-bcd9-5b01d41fd3ad)
 
 ### ウェブ攻撃の脅威
 
