@@ -6,7 +6,7 @@ tags:
 title: "크리덴셜 스터핑 공격 대응하기"
 ---
 
-![1](https://github.com/user-attachments/assets/7cf94916-3d8d-43a3-b742-5133cde312b9)
+![with-ChatGPT-20230223-2](https://github.com/user-attachments/assets/5156a4a9-d063-4d13-a023-13bae144c972)
 
 “본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 부분에 있어서 임의 수정된 사실은 없습니다.”
 
