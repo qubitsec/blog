@@ -1,0 +1,142 @@
+title = "PLURA XDR – Cloud SECaaS Platform w/ MITRE ATT&CK"
+baseURL = "http://172.16.18.17"
+languageCode = "en-us"
+theme = "ananke"
+resourceDir = "../resources"
+defaultContentLanguage = "ko"
+
+copyright = "© 2024 Qubit Security Inc. All Rights Reserved."
+
+SectionPagesMenu = ""
+googleAnalytics = ""
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 6
+
+[languages]
+[languages.ja]
+title = "PLURA Blog"
+weight = 2
+contentDir = "content/ja"
+
+[languages.ko]
+title = "PLURA Blog"
+weight = 1
+contentDir = "content/ko"
+
+[menu]
+
+  [[menu.main]]
+  name = "日本語"
+  url = "/ja/"
+  weight = 1
+  [menu.main.params]
+  lang = "ko"
+  
+  [[menu.main]]
+  name = "Column"
+  url = "/column/"
+  weight = 2
+  [menu.main.params]
+  lang = "ko"
+
+  [[menu.main]]
+  name = "Tech"
+  url = "/tech/"
+  weight = 3
+  [menu.main.params]
+  lang = "ko"
+
+  [[menu.main]]
+  name = "Threats"
+  url = "/threats/"
+  weight = 4
+  [menu.main.params]
+  lang = "ko"
+
+  [[menu.main]]
+  name = "Respond"
+  url = "/respond/"
+  weight = 5
+  [menu.main.params]
+  lang = "ko"
+
+  [[menu.main]]
+  name = "News"
+  url = "https://www.qubitsec.com/news"
+  weight = 6
+  [menu.main.params]
+  lang = "ko"
+  target = "_blank"
+
+  [[menu.main]]
+  name = "한국어"
+  url = "/"
+  weight = 1
+  [menu.main.params]
+  lang = "ja"
+  
+  [[menu.main]]
+  name = "コラム"
+  url = "/ja/column/"
+  weight = 2
+  [menu.main.params]
+  lang = "ja"
+
+  [[menu.main]]
+  name = "技術"
+  url = "/ja/tech/"
+  weight = 3
+  [menu.main.params]
+  lang = "ja"
+
+  [[menu.main]]
+  name = "脅威"
+  url = "/ja/threats/"
+  weight = 4
+  [menu.main.params]
+  lang = "ja"
+
+  [[menu.main]]
+  name = "対応"
+  url = "/ja/Respond/"
+  weight = 5
+  [menu.main.params]
+  lang = "ja"
+
+  [[menu.main]]
+  name = "ニュース"
+  url = "https://w.qubitsec.com/ja/news"
+  weight = 6
+  [menu.main.params]
+  lang = "ja"
+  target = "_blank"
+
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[params]
+text_color = ""
+author = "PLURA"
+favicon = "/images/favicon.ico"
+site_logo = ""
+background_color_class = "bg-black"
+description = "PLURA-XDR provides an integrated, real-time cybersecurity solution for detecting, analyzing, and responding to evolving cyber threats with EDR, WAF, Forensic, SIEM."
+recent_posts_number = 3
+googleFonts = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
+customCSS = true
+css_file = ["/css/fonts.css", "/css/main.css"]
+summaryLength = 30
+# 언어별 기본 배경 이미지 설정
+[languages.ko.params]
+background_image = "/images/ko-bg.jpg"
+[languages.ja.params]
+background_image = "/images/ja-bg.jpg"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

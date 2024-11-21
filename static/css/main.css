@@ -1,0 +1,185 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 메인 페이지 텍스트 스타일 */
+.main-text {
+  font-size: 18px; /* 글자 크기를 키움 */
+  line-height: 1.8; /* 줄 간격을 늘림 */
+  color: #ffffff; /* 텍스트 색상을 밝게 설정 */
+  text-align: center; /* 가운데 정렬 */
+  margin: 20px auto; /* 상하 여백 추가 */
+  padding: 20px; /* 내부 여백 추가 */
+  background-color: rgba(0, 0, 0, 0.6); /* 반투명 배경 추가 */
+  border-radius: 10px; /* 모서리를 둥글게 */
+  max-width: 800px; /* 최대 너비 설정 */
+}
+
+/* 헤더 스타일 */
+.main-header {
+  font-size: 36px; /* 제목 글자 크기를 크게 */
+  font-family: 'Playfair Display', serif; /* 제목 폰트를 고급스럽게 */
+  color: #ffa500; /* 제목에 강조 색상 추가 */
+  margin-bottom: 15px; /* 제목 아래 여백 추가 */
+}
+
+a.read-more {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0066cc;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+a.read-more:hover {
+  background-color: #005bb5;
+}
+
+/* 세부 텍스트 스타일 */
+.main-subtext {
+  font-size: 16px; /* 부가 텍스트 크기 조정 */
+  color: #f0f0f0; /* 부가 텍스트 색상 밝게 */
+  text-align: center;
+  margin: 10px auto;
+}
+
+/* Body Style */
+body {
+  background-color: #f9fafb; /* Light gray background */
+  color: #333; /* Neutral dark text */
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Header Style */
+header {
+  background: #ffffff; /* White header background */
+  color: #333; /* Neutral text */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #0078d7; /* Naver-style highlight color */
+}
+
+/* Footer Style */
+footer {
+  background: #f0f0f0;
+  color: #666;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Custom Button */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0078d7; /* Naver-style blue */
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+/* Custom Section Styles */
+.section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Links */
+a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .section {
+    padding: 15px;
+  }
+}

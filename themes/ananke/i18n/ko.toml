@@ -1,0 +1,47 @@
+[more]
+other = "다른 기사도 확인하세요"
+
+[allTitle]
+other = "모든 {{.Title }}"
+
+[recentTitle]
+other = "최근 {{.Title }}"
+
+[readMore]
+other = "더 읽기"
+
+[whatsInThis]
+other = "이 글의 개요"
+
+[related]
+other = "관련"
+
+[yourName]
+other = "이름"
+
+[emailAddress]
+other = "이메일"
+
+[message]
+other = "내용"
+
+[emailRequiredNote]
+other = "이메일 주소는 필수 항목입니다"
+
+[send]
+other = "보내기"
+
+[taxonomyPageList]
+other = "다음 분류 용어를 사용하는 페이지가 아래에 있습니다: “{{ .Title }}”"
+
+[readingTime]
+one = "1분 소요"
+other = "{{ .Count }}분 소요"
+
+[wordCount]
+one = "1 글자"
+other = "{{ .Count }} 글자"
+
+[copyright]
+other = "© 2024 큐비트시큐리티 주식회사. 모든 권리 보유."
+
