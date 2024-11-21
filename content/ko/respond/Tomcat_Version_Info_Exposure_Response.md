@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["Apache Tomcat", "보안", "버전 정보", "설정"]
 ---
 
-![Apache Tomcat](https://github.com/user-attachments/assets/0811bdf6-f7c1-4a05-9df6-fd9382add8a2)
+![414144141](https://github.com/user-attachments/assets/f4838905-a0e0-4893-916e-6438a23edd86)
 
 ### 개요
 
@@ -20,7 +20,7 @@ Apache Tomcat은 기본 설정 상태에서 오류 발생 시 **버전 정보가
 #### 1. Tomcat 서버 설정 파일로 이동
 Tomcat이 설치된 디렉토리의 **`conf`** 폴더로 이동하여 **`server.xml`** 파일을 엽니다.
 
-![1-300x89](https://github.com/user-attachments/assets/4a6be0ce-8c6f-4da9-8b45-81198cdfc497)
+![1-300x89](https://github.com/user-attachments/assets/816c1b1f-2eaf-410a-be35-9300677ba210)
 
 ---
 
@@ -28,7 +28,7 @@ Tomcat이 설치된 디렉토리의 **`conf`** 폴더로 이동하여 **`server.
 `server.xml` 파일에서 HTTP 커넥터 설정 부분을 찾습니다.  
 해당 설정은 기본적으로 HTTP 요청과 관련된 정보를 포함합니다.
 
-![변경전-300x128](https://github.com/user-attachments/assets/78aca181-8a29-48b8-9c30-b695922216c4)
+![변경전-300x128](https://github.com/user-attachments/assets/de0433a8-bbf8-466c-89fd-3ab58a94b4cd)
 
 ---
 
@@ -36,7 +36,7 @@ Tomcat이 설치된 디렉토리의 **`conf`** 폴더로 이동하여 **`server.
 HTTP 커넥터 설정에서 `server.xml` 속성을 추가하거나 수정하여 버전 정보를 숨깁니다.  
 예를 들어, "Apache"로 변경하여 노출을 방지합니다.
 
-![변경후-300x134](https://github.com/user-attachments/assets/714e998d-72ab-4c57-a1b6-32f7bc6b09af)
+![변경후-300x134](https://github.com/user-attachments/assets/780fcdc8-d7b0-4e6b-98ff-e1d21bf7dd0a)
  
 ---
 
@@ -49,7 +49,7 @@ HTTP 커넥터 설정에서 `server.xml` 속성을 추가하거나 수정하여 
 수정 사항을 적용하기 위해 Tomcat 서버를 재시작합니다.  
 Tomcat 설치 디렉토리의 **`bin`** 폴더에서 다음 명령을 실행합니다:
 
-![12312-300x189](https://github.com/user-attachments/assets/d16b6eea-8ee2-4612-8839-98aab4262283)
+![12312-300x189](https://github.com/user-attachments/assets/d9a368f0-7e01-45e7-899e-d25d7079fe50)
 
 ```bash
 ./shutdown.sh
