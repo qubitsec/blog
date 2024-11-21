@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["curl", "proxy", "프록시 설정"]
 ---
 
-![blog_banner_20210714_3](https://github.com/user-attachments/assets/6ae23fe4-a5c3-4668-b458-625fea8ea176)
+![blog_banner_20210714_3](https://github.com/user-attachments/assets/cb7452ba-b166-4f9f-affd-2dd4aa91540c)
 
 # curl 옵션 설정 중 프록시 경유하기
 
