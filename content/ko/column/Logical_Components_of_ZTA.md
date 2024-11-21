@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["Zero Trust", "ZTA", "보안", "NIST"]
 ---
 
-![Zero Trust Architecture](https://github.com/user-attachments/assets/8e9b9633-782f-47c0-a981-6d64b2646455)
+![blog_20230516-1](https://github.com/user-attachments/assets/0522b13f-7d92-468e-9442-d4874fbec174)
 
 > **Zero Trust Architecture, NIST Special Publication 800-207**  
 > 번역 by Google Translate
