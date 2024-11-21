@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["sqlmap", "SQL Injection", "セキュリティ", "侵入テスト", "データベース"]
 ---
 
-![sqlmap](https://github.com/user-attachments/assets/58985214-005b-412f-8f6c-3fb6719e5925)
+![2022-06-16-15-59-21](https://github.com/user-attachments/assets/bd517c1f-4246-4b76-802f-63d50ef74ffd)
 
 ## sqlmapとは？
 
@@ -36,25 +36,25 @@ tags: ["sqlmap", "SQL Injection", "セキュリティ", "侵入テスト", "デ�
 
 ### データベース名の抽出
 
-![データベース名の抽出](https://github.com/user-attachments/assets/41dd7117-117d-43bb-aaca-9a06df5581de)
+![d1](https://github.com/user-attachments/assets/fa668e3f-ab17-4e3b-be96-f947716257e5)
 
 ---
 
 ### テーブル名の抽出
 
-![テーブル名の抽出](https://github.com/user-attachments/assets/7eeefc89-e858-4104-ae44-31085132ecb0)
+![d2-1](https://github.com/user-attachments/assets/33426029-c1ed-4c33-bd41-04c5dc14c1d0)
 
 ---
 
 ### カラム名の抽出
 
-![カラム名の抽出](https://github.com/user-attachments/assets/4b601d3f-09e6-4e39-bb3d-578625689dec)
+![d3-1](https://github.com/user-attachments/assets/c42a4261-7532-4a58-9a88-fea6d1b8c518)
 
 ---
 
 ### データ情報の抽出
 
-![データ情報の抽出](https://github.com/user-attachments/assets/c8d1ac2d-2c3e-49be-bba0-39e939f65160)
+![d4-1](https://github.com/user-attachments/assets/67351212-0d91-4f29-aded-ccbde1061edc)
 
 ---
 
