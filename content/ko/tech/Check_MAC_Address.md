@@ -6,7 +6,7 @@ featured_image:
 tags: ["MAC 주소", "네트워크", "PC 정보"]
 ---
 
-![MAC 주소 확인](https://github.com/user-attachments/assets/f8404547-9de5-4a25-bc89-ccc381f47fdf)
+![blog_banner_20210714_1](https://github.com/user-attachments/assets/1b1c156c-814b-4bd2-90a0-8dcc99516e79)
 
 PC 서버의 고유 정보를 확인하고 활용하기 위해 **MAC 주소**를 확인하는 방법을 안내합니다.
 
@@ -16,7 +16,7 @@ PC 서버의 고유 정보를 확인하고 활용하기 위해 **MAC 주소**를
 
 먼저, **명령 관리자**(cmd)를 실행합니다.
 
-![명령 관리자 실행](https://github.com/user-attachments/assets/8732e630-b4f6-4458-87ae-1ff23a7d23d1)
+![cmd](https://github.com/user-attachments/assets/904a77ef-fe8d-4590-a336-1ca42daa2135)
 
 ---
 
@@ -28,7 +28,7 @@ PC 서버의 고유 정보를 확인하고 활용하기 위해 **MAC 주소**를
 ipconfig /all
 ```
 
-![ipconfig 실행](https://github.com/user-attachments/assets/4c057267-956c-4644-a16d-5c29b716ed6f)
+![ipconfig](https://github.com/user-attachments/assets/80ce24e4-b4d8-45f1-9f1b-e41af052c497)
 
 ---
 
