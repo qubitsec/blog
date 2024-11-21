@@ -1,8 +1,18 @@
 <footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-center">
-    <a href="https://www.qubitsec.com" target="_blank" rel="noopener noreferrer" class="f4 fw4 white-70 pv2 ph3 tc no-underline hover-white">
-      {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ end }}
-    </a>
+    {{ if eq .Site.Language.Lang "ko" }}
+      <a href="https://www.qubitsec.com/" target="_blank" rel="noopener noreferrer" class="f4 fw4 white-70 pv2 ph3 tc no-underline hover-white">
+        {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ end }}
+      </a>
+    {{ else if eq .Site.Language.Lang "ja" }}
+      <a href="https://w.qubitsec.com/ja" target="_blank" rel="noopener noreferrer" class="f4 fw4 white-70 pv2 ph3 tc no-underline hover-white">
+        {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ end }}
+      </a>
+    {{ else }}
+      <a href="https://w.qubitsec.com/en" target="_blank" rel="noopener noreferrer" class="f4 fw4 white-70 pv2 ph3 tc no-underline hover-white">
+        {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ end }}
+      </a>
+    {{ end }}
     <div>{{ partialCached "social/follow.html" . }}</div>
   </div>
   <!-- PLURA Badge Script -->
