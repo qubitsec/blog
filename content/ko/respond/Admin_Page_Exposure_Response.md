@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["관리자 페이지", "보안", "WAF", "2차 인증", "Brute Force"]
 ---
 
-![1-1](https://github.com/user-attachments/assets/029fe563-fd39-48fb-8d6e-ef57b8f8bbd8)
+![1-1](https://github.com/user-attachments/assets/a65758a3-f6fd-48e2-9331-14aa9a6720c1)
 
 ### 개요
 
