@@ -1,5 +1,5 @@
 title = "PLURA XDR – Cloud SECaaS Platform w/ MITRE ATT&CK"
-baseURL = "http://172.16.18.17"
+baseURL = "http://10.100.10.200"
 languageCode = "en-us"
 theme = "ananke"
 resourceDir = "../resources"
