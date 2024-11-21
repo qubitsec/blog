@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["웹방화벽", "보안", "웹 공격", "랜섬웨어"]
 ---
 
-![PublicPR-PLURA-WAF](https://github.com/user-attachments/assets/fe57820a-6b72-40df-bdd1-8e022127c821)
+![PublicPR-PLURA-WAF](https://github.com/user-attachments/assets/6c5dee0a-d39a-49ae-a4bc-b30bb12ae770)
 
 ### 웹 공격의 위협
 
