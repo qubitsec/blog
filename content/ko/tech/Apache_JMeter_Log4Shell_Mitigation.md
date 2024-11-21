@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["Apache JMeter", "Log4j", "Log4Shell", "보안", "취약점"]
 ---
 
-![Apache JMeter Log4Shell 대응](https://github.com/user-attachments/assets/4d3f3dfe-9bc0-428b-b733-3a969fe9e2b7)
+![blog_banner_20211214](https://github.com/user-attachments/assets/e8398d21-669a-4c03-93bc-63bb2bde8b1a)
 
 Apache 소프트웨어 재단은 Log4j 2에서 발생한 취약점을 해결하기 위한 보안 업데이트를 권고하고 있습니다.  
 Apache JMeter는 주로 사용자 PC에서 사용되기 때문에 각별한 주의가 필요합니다.  
