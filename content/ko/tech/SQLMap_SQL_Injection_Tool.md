@@ -6,7 +6,7 @@ featured_image: ""
 tags: ["sqlmap", "SQL Injection", "보안", "침투 테스트", "데이터베이스"]
 ---
 
-![sqlmap](https://github.com/user-attachments/assets/58985214-005b-412f-8f6c-3fb6719e5925)
+![2022-06-16-15-59-21](https://github.com/user-attachments/assets/6e66fd8c-fba8-44ad-a174-0ea481e0758c)
 
 ## sqlmap이란?
 
@@ -36,25 +36,26 @@ tags: ["sqlmap", "SQL Injection", "보안", "침투 테스트", "데이터베이
 
 ### DB 이름 탈취
 
-![DB 이름 탈취](https://github.com/user-attachments/assets/41dd7117-117d-43bb-aaca-9a06df5581de)
+![d1](https://github.com/user-attachments/assets/20381b75-223c-4573-9c3b-38a222b14345)
 
 ---
 
 ### 테이블 이름 탈취
 
-![테이블 이름 탈취](https://github.com/user-attachments/assets/7eeefc89-e858-4104-ae44-31085132ecb0)
+![d2-1](https://github.com/user-attachments/assets/e0a3f0f2-beae-4c52-bba0-e1579ec1e49f)
 
 ---
 
 ### 컬럼 이름 탈취
 
-![컬럼 이름 탈취](https://github.com/user-attachments/assets/4b601d3f-09e6-4e39-bb3d-578625689dec)
+![d3-1](https://github.com/user-attachments/assets/58b9dbf6-795f-4d8b-9216-b191aab793ba)
 
 ---
 
 ### 데이터 정보 탈취
 
-![데이터 정보 탈취](https://github.com/user-attachments/assets/c8d1ac2d-2c3e-49be-bba0-39e939f65160)
+![d4-1](https://github.com/user-attachments/assets/10f73234-e7ed-4eab-8f1b-460a6200c8e5)
+
 
 ---
 
