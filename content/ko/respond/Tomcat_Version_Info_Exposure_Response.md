@@ -28,7 +28,7 @@ Tomcat이 설치된 디렉토리의 **`conf`** 폴더로 이동하여 **`server.
 `server.xml` 파일에서 HTTP 커넥터 설정 부분을 찾습니다.  
 해당 설정은 기본적으로 HTTP 요청과 관련된 정보를 포함합니다.
 
-![변경전-300x128](https://github.com/user-attachments/assets/de0433a8-bbf8-466c-89fd-3ab58a94b4cd)
+![300x128](https://github.com/user-attachments/assets/76dd05ab-dbed-46de-ab0d-d791c8d6a6f6)
 
 ---
 
@@ -36,8 +36,8 @@ Tomcat이 설치된 디렉토리의 **`conf`** 폴더로 이동하여 **`server.
 HTTP 커넥터 설정에서 `server.xml` 속성을 추가하거나 수정하여 버전 정보를 숨깁니다.  
 예를 들어, "Apache"로 변경하여 노출을 방지합니다.
 
-![변경후-300x134](https://github.com/user-attachments/assets/780fcdc8-d7b0-4e6b-98ff-e1d21bf7dd0a)
- 
+![300x134](https://github.com/user-attachments/assets/49e0a350-d94c-4c68-b437-04cf49233c1c)
+
 ---
 
 #### 4. 변경 사항 저장
