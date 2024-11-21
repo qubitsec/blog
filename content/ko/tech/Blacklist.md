@@ -6,7 +6,7 @@ tags:
 title: "유해차단 목록 다운받기"
 ---
 
-![1](https://github.com/user-attachments/assets/90db0644-cade-4986-abd4-312b5ab8a2f0)
+![blog_banner_20210727_1](https://github.com/user-attachments/assets/0eb0ba7d-33bd-425b-b8cb-cbe01d06f3d1)
 
 squidGuard 에서 Shalla 블랙 리스트를 주기적으로 다운받아 동기화를 위한 스크립트
 
