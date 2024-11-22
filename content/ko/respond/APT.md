@@ -26,7 +26,6 @@ C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 �
 >마이터 어택(MITRE ATT&CK)을 기반으로 탐지하며,<br>
 >탐지 결과는 육하원칙에 따라 제공되므로 원인을 파악하고 대응하기에 충분합니다.**
 <br>
-<br>
 
 ## 관련 영상 
 - 해킹탐지시연 > APT29(MITRE ATT&CK) : https://youtu.be/ZrV9dGkwA_U?si=LOYnNc2wyVr-h9wR
