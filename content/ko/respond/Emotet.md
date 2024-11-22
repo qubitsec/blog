@@ -52,7 +52,7 @@ tags: ["emotet", "마이터어택"]
 
 해당 사이트가 외관상 보통의 사이트였다면 해커는 장기간 C&C 서버로 활용할 수 있을 것입니다.
 
-**PowerShell[1059.001]** <br>
+**- PowerShell[1059.001]** <br>
 ![m-2-800x372](https://github.com/user-attachments/assets/bf898135-6d43-4288-b0e5-4ebfe7995f40)
 <br>
 > 공격자는 실행을 위해 PowerShell 명령 및 스크립트를 남용 할 수 있습니다.<br>
@@ -64,7 +64,7 @@ tags: ["emotet", "마이터어택"]
 
 **3) 계속하여 PowerShell 을 이용하여 다운로드 받은 파일을 임시 폴더 (Temp)에 저장 > 실행 > 삭제 순서로 진행됩니다.**
 
-> 임시 폴더 Temp\ __PSScriptPolicyTest_krutadkh.taj.ps1
+> - 임시 폴더 Temp\ __PSScriptPolicyTest_krutadkh.taj.ps1
 ![m-6](https://github.com/user-attachments/assets/9644c444-42b0-4853-b9b6-b6dfbcce83d8)
 ![m-7](https://github.com/user-attachments/assets/6b163ed0-3015-4502-9a29-4762398b14da)
 
@@ -74,7 +74,7 @@ tags: ["emotet", "마이터어택"]
 
 이 스크립트 내에서는 명확하게 C&C 서버가 워드프레스 사이트인 것을 확인할 수 있습니다.
 
-> 마이터 어택 탐지 필터 ID: PowerShell [T1059.001]
+> - 마이터 어택 탐지 필터 ID: PowerShell [T1059.001]
 ![m-5-1024x295](https://github.com/user-attachments/assets/4324b75e-3366-4838-8d1a-aaff3a81c0d0)
 
 <br>
@@ -83,16 +83,15 @@ tags: ["emotet", "마이터어택"]
 
 ![m-9-300x86](https://github.com/user-attachments/assets/1ef730eb-89ea-4982-9803-b8d67fba420b)<br>
 
-> 이벤트 로그의 상세 내역<br>
-![m-10-273x300](https://github.com/user-attachments/assets/453004ac-dd54-4a6a-a316-c389770fb370)
-
-> XML 뷰어에서 확인<br>
+> - 이벤트 로그의 상세 내역<br><br>
+![m-10-273x300](https://github.com/user-attachments/assets/453004ac-dd54-4a6a-a316-c389770fb370)<br><br>
+> - XML 뷰어에서 확인<br><br>
 ![m-11-225x300](https://github.com/user-attachments/assets/899ec693-cb58-4743-bc32-5b37356c99a4)
 
 <br>
 
 **6) 이제 악성코드는 해당 시스템에 트로이목마를 설치하여 원격에서 접속이 가능하도록 합니다.**<br>
-> 시스템 탐지 필터 : exe 파일 생성 by PowerShell <br>
+> - 시스템 탐지 필터 : exe 파일 생성 by PowerShell <br>
 > **PowerShell 프로세스에 의해 exe 파일 생성 시 발생되는 로그입니다.**
 ![m-3](https://github.com/user-attachments/assets/0b9e940d-b66a-4370-a362-e2bd40283e34)
 
