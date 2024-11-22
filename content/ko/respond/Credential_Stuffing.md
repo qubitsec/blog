@@ -6,6 +6,7 @@ tags:
 title: "크리덴셜 스터핑"
 ---
 
+![blog_banner-220318-2](https://github.com/user-attachments/assets/64c96317-3c76-4eca-9147-b8d245984786)
 
 A 기업은 오랜 기간 인증 시스템을 운영하고 있습니다.
 아이디와 패스워드로 로그인할 수 있는 방식으로 거의 모든 홈페이지와 동일합니다.
