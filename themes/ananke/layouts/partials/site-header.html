@@ -19,13 +19,13 @@
   </header>
 {{ else }}
   <header>
-    {{/* Generate background image dynamically based on menu URL and language */}}
-    {{ $lang := .Site.Language.Lang }} <!-- Current language -->
-    {{ $url := .Page.RelPermalink | replace "/" "-" | trim "-" }} <!-- Page URL -->
-    {{ $imagePath := printf "/images/%s%s.jpg" $lang $url }} <!-- Specific image path -->
-    {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }} <!-- Language-based default image -->
-    
-    {{/* Determine the correct image path */}}
+    {{/* Determine language and URL to generate image path */}}
+    {{ $lang := .Site.Language.Lang }}
+    {{ $url := .Page.RelPermalink | replace "/" "-" | trim "-" }}
+    {{ $imagePath := printf "/images/%s%s.jpg" $lang $url }} <!-- Language-URL specific image -->
+    {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }} <!-- Language-specific default image -->
+
+    {{/* Check if the specific image exists */}}
     {{ $backgroundImage := $imagePath }}
     {{ if not (fileExists (printf "static%s" $imagePath)) }}
       {{ $backgroundImage = $defaultLangImage }}
