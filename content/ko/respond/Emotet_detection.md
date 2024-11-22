@@ -110,7 +110,7 @@ title: "EMOTET 탐지 필터"
 ### 7. C&C
 
 > * aldina[.]jp/wp-admin/YvD46yh/
-> * www.alliance-habitat[.]com/cache/lE8/
+> * alliance-habitat[.]com/cache/lE8/
 > * anguklaw[.]com/microsoft-clearscript/oVgMlzJ61/
 > * andorsat[.]com/css/5xdvDtgW0H4SrZokxM/
 
