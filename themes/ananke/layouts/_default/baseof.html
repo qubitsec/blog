@@ -57,8 +57,27 @@
   </head>
 
   {{- $environment := hugo.Environment | default "production" -}}
-  <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}} {{ $environment }}">
-
+  <body 
+    class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}} {{ $environment }}"
+    style="
+      background-image: url(
+        {{- $lang := .Site.Language.Lang -}}
+        {{- $url := .Page.RelPermalink | replace "/" "-" | trim "-" -}}
+        {{- $imagePath := printf "/images/%s%s.jpg" $lang $url -}}
+        {{- if (fileExists (printf "static%s" $imagePath)) -}}
+          '{{ $imagePath }}'
+        {{- else if eq $lang "ko" -}}
+          '/images/ko-bg.jpg'
+        {{- else if eq $lang "ja" -}}
+          '/images/ja-bg.jpg'
+        {{- else -}}
+          '{{ .Site.Params.background_image | default "/images/default-bg.jpg" }}'
+        {{- end }}
+      );
+      background-size: cover;
+      background-repeat: no-repeat;
+    "
+  >
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     <main class="pb7" role="main">
       {{ block "main" . }}{{ end }}
