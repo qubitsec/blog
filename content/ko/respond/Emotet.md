@@ -53,8 +53,7 @@ tags: ["emotet", "마이터어택"]
 해당 사이트가 외관상 보통의 사이트였다면 해커는 장기간 C&C 서버로 활용할 수 있을 것입니다.
 
 > **- PowerShell[1059.001]** <br>
-![m-2-800x372](https://github.com/user-attachments/assets/bf898135-6d43-4288-b0e5-4ebfe7995f40)
-<br>
+![m-2-800x372](https://github.com/user-attachments/assets/bf898135-6d43-4288-b0e5-4ebfe7995f40)<br><br>
 > 공격자는 실행을 위해 PowerShell 명령 및 스크립트를 남용 할 수 있습니다.<br>
 > PowerShell은 Windows 운영 체제에 포함 된 강력한 대화 형 명령 줄 인터페이스 및 스크립팅 환경입니다.<br>
 > 공격자는 PowerShell을 사용하여 정보 검색 및 코드 실행을 포함한 다양한 작업을 수행 할 수 있습니다.<br>
