@@ -88,7 +88,51 @@ title: "EMOTET 탐지 필터"
 > ![emotet13](https://github.com/user-attachments/assets/eef93658-fba7-4209-9967-c7120c5f43b2)
 > 
 > * 필터명 : 이모텟 DLL 악성 파일 실행 (2)
-> 
+> ![emotet14](https://github.com/user-attachments/assets/2c8de873-1f5a-476d-bf79-d1adf9f43d54)
+>
+> * 필터명 : 이모텟 DLL 악성 파일 실행 (3)
+> ![emotet15](https://github.com/user-attachments/assets/d5d1095f-be88-4f31-b771-5a6bd3936734)
+>
+> * 필터명 : 이모텟 DLL 악성 파일 실행 (4)
+> ![emotet16](https://github.com/user-attachments/assets/ddb34d98-cc0d-4fea-9018-3320b6bdf6fe)
+> [그림9] 필터명: 이모텟 DLL 악성 파일 실행 (1~4)
+
+<br>
+
+### 6-2. PLURA 상관 분석 탐지 필터
+
+> * 상관 분석 탐지 필터를 통해 ‘정탐률’을 높일 수 있습니다.
+> ![emotet18](https://github.com/user-attachments/assets/202e826c-4413-4710-b8e1-14eb78cda9d7)
+> [그림10] 상관 분석 필터명: Emotet
+
+<br>
+
+### 7. C&C
+
+> * aldina[.]jp/wp-admin/YvD46yh/
+> * www.alliance-habitat[.]com/cache/lE8/
+> * anguklaw[.]com/microsoft-clearscript/oVgMlzJ61/
+> * andorsat[.]com/css/5xdvDtgW0H4SrZokxM/
+
+<br>
+
+### 8. IOC
+
+> * SHA256 : 76323e3a53815b76193d22984da10a9d492d934d49a611fd541e7a78a88cf3c9
+
+<br>
+
+### 출처
+
+* https://www.itworld.co.kr/tags/81617/Emotet/122207#csidxb0960f83251f39d83ca06e0918e9890
+* https://www.virustotal.com/gui/file/76323e3a53815b76193d22984da10a9d492d934d49a611fd541e7a78a88cf3c9
+* https://asec.ahnlab.com/ko/41365/
+
+
+
+
+
+
 
 
 
