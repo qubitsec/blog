@@ -27,5 +27,9 @@ C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 �
 >탐지 결과는 육하원칙에 따라 제공되므로 원인을 파악하고 대응하기에 충분합니다.**
 <br>
 
+## 내부 블로그
+- MITRE ATT&CK 이해 : https://blog.plura.io/column/mitre/
+<br>
+
 ## 관련 영상 
 - 해킹탐지시연 > APT29(MITRE ATT&CK) : https://youtu.be/ZrV9dGkwA_U?si=LOYnNc2wyVr-h9wR
