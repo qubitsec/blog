@@ -60,5 +60,5 @@ title: "홈네트워크 (월패드) 보안"
 
 ## 내부 블로그
 1) 크리덴셜 스터핑 대응하기, https://blog.plura.io/respond/credential_stuffing_response/
-2) APT공격 마이터의 이해, 추가 예정
+2) APT공격 마이터의 이해, https://blog.plura.io/column/mitre/
 
