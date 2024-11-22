@@ -1,27 +1,18 @@
 <header>
-  {{/* Determine language */}}
-  {{ $lang := .Site.Language.Lang }} <!-- Current language -->
-  
-  {{/* Check for Page URL and fallback */}}
-  {{ $url := .Page.RelPermalink }}
-  {{ if not $url }}
-    {{ $url = "/" }} <!-- Default to root if no URL found -->
-  {{ end }}
-  
-  {{/* Normalize URL to generate image path */}}
-  {{ $normalizedUrl := $url | replace "/" "-" | trim "-" }}
-  {{ $imagePath := printf "/images/%s%s.jpg" $lang $normalizedUrl }} <!-- Language + URL-based image -->
-  {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }} <!-- Language-specific default image -->
+  {{/* 현재 언어와 페이지 URL 가져오기 */}}
+  {{ $lang := .Site.Language.Lang }}
+  {{ $url := .Page.RelPermalink | replace "/" "-" | trim "-" }}
 
-  {{/* Finalize background image path */}}
+  {{/* 경로 기반 이미지 설정 */}}
+  {{ $imagePath := printf "/images/%s%s.jpg" $lang $url }}
+  {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }}
+  
+  {{/* 파일 확인 없이 URL 강제 적용 */}}
   {{ $backgroundImage := $imagePath }}
-  {{ if not (fileExists (printf "static%s" $imagePath)) }}
-    {{ $backgroundImage = $defaultLangImage }}
-  {{ end }}
 
-  {{/* Debugging Information */}}
+  {{/* 디버깅 정보 출력 */}}
   <!-- Debug Information -->
-  <!-- Lang: {{ $lang }}, URL: {{ $url }}, NormalizedUrl: {{ $normalizedUrl }}, ImagePath: {{ $imagePath }}, DefaultLangImage: {{ $defaultLangImage }}, Final BackgroundImage: {{ $backgroundImage }} -->
+  <!-- Lang: {{ $lang }}, URL: {{ $url }}, ImagePath: {{ $imagePath }}, DefaultLangImage: {{ $defaultLangImage }} -->
 
   <header class="cover bg-center" style="background-image: url('{{ $backgroundImage }}');">
     <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
