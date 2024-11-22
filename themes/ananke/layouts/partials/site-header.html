@@ -21,13 +21,19 @@
   <header>
     {{/* 언어 및 섹션 가져오기 */}}
     {{ $lang := .Site.Language.Lang }}
-    {{ $section := .Section | default "home" }}
+    {{ $section := .Section }}
+    {{ if not $section }}
+      {{ $section = "home" }}
+    {{ end }}
     {{ $imagePath := printf "/images/%s-%s.jpg" $lang $section }}
 
     {{/* 이미지 파일 존재 여부 확인 */}}
     {{ if not (fileExists (printf "static%s" $imagePath)) }}
       {{ $imagePath = printf "/images/%s-bg.jpg" $lang }}
     {{ end }}
+
+    {{/* 디버깅 정보 출력 (선택 사항) */}}
+    <!-- Debug: lang={{ $lang }}, section={{ $section }}, imagePath={{ $imagePath }} -->
 
     <div class="{{ .Site.Params.background_color_class | default "bg-black" }}"
          style="background-image: url('{{ $imagePath }}'); background-size: cover;">
