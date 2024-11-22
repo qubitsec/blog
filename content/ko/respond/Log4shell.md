@@ -21,6 +21,3 @@ Apache Log4j는 광범위하게 사용되고 있으므로 앞으로 수년간 �
 >**PLURA는 웹방화벽을 이용하여 사전 차단하고<br>
 >엔드포인트 보안(ED)을 이용하여 공격자의 원격 실행을 탐지하고 있습니다.**
 <br>
-
-## 내부 블로그
-- Qubit Insight > Column > Apache Log4j 취약점 (CVE-2021-44228) 업데이트 안내 : http://blog.plura.io/?p=16723
