@@ -19,17 +19,20 @@
   </header>
 {{ else }}
   <header>
-    {{/* Determine language and URL to generate image path */}}
+    {{/* Generate language and URL-based image paths */}}
     {{ $lang := .Site.Language.Lang }}
     {{ $url := .Page.RelPermalink | replace "/" "-" | trim "-" }}
-    {{ $imagePath := printf "/images/%s%s.jpg" $lang $url }} <!-- Language-URL specific image -->
-    {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }} <!-- Language-specific default image -->
+    {{ $imagePath := printf "/images/%s%s.jpg" $lang $url }}
+    {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }}
 
-    {{/* Check if the specific image exists */}}
+    {{/* Default fallback image */}}
     {{ $backgroundImage := $imagePath }}
     {{ if not (fileExists (printf "static%s" $imagePath)) }}
       {{ $backgroundImage = $defaultLangImage }}
     {{ end }}
+
+    {{/* Debugging output to verify paths */}}
+    <!-- Debug: lang={{ $lang }}, url={{ $url }}, imagePath={{ $imagePath }}, backgroundImage={{ $backgroundImage }} -->
 
     <div class="{{ .Site.Params.background_color_class | default "bg-black" }}"
          style="background-image: url('{{ $backgroundImage }}'); background-size: cover;">
