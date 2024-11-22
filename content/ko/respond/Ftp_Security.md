@@ -42,18 +42,18 @@ FTP는 파일 송수신을 위한 목적으로 만들어진 프로토콜로서 �
 필터 메뉴의 필터등록 페이지에서 필터등록 버튼을 클릭하여 상황에 적합한 필터를 사용자 스스로 제작할 수 있습니다. <br>
 저는 ‘vsftpd 비밀번호 실패’라는 명칭으로 필터를 제작하였습니다.
 
-![스크린샷-2020-10-22-14-01-00](https://github.com/user-attachments/assets/e45f76c3-76d2-4b06-9013-8754ebca9e9a)
+![2020-10-22-14-01-00](https://github.com/user-attachments/assets/c138c413-1731-48b7-9d5d-b5aeab3a3865)
 
 그럼 이제 해커의 역할이 되어 비밀번호 탈취 시도를 해보겠습니다. <br>
 FTP 클라이언트를 통해 짧은 시간 여러 번의 비빌 번호 대입을 시도했습니다. <br>
 틀린 비밀 번호를 계속 입력하여 오류를 발생시킵니다.
 
-![스크린샷-2020-10-22-11-01-07](https://github.com/user-attachments/assets/405fc7df-b331-4ded-8107-f3e684d50a04)
+![2020-10-22-11-01-07](https://github.com/user-attachments/assets/bc9e7633-6979-4bac-9abd-6e10a122b35c)
 
 해커의 사용자 대입 공격으로 다수의 로그인 시도들이 로그를 통해 프루라에 포착되며, 방금 제작한 사용자 필터를 통해서 해킹 시도가 감지된 것을 확인할 수 있습니다. <br>
 IP주소 차단 같이 적절한 방어 조치들 또한 사용자의 필요에 따라 프루라를 통해 이뤄질 수 있습니다.
 
-![해킹-감지](https://github.com/user-attachments/assets/b55893df-82ed-4dd8-86b1-e991d0320975)
+![13246846](https://github.com/user-attachments/assets/701840ca-3cd0-458c-a6ec-b33374209023)
 
 기술이 빠르게 발전하는 만큼 해킹 방법도 빠르게 진화합니다. 새로운 차원의 보안 솔루션이 필요한 때입니다.
 
