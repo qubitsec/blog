@@ -1,33 +1,36 @@
-{{ $featured_image := "" }} <!-- $featured_image를 비움 -->
+{{ $featured_image := "" }} <!-- $featured_image를 비워서 'else' 블록이 실행되도록 합니다 -->
 
 {{ if $featured_image }}
-  <!-- Debug: 'if' block executed -->
+  <!-- 'if' 블록 실행 -->
   {{ $featured_image_class := .Params.featured_image_class | default "cover bg-center" }}
   {{ $cover_dimming_class := .Params.cover_dimming_class | default "bg-black-60" }}
   <header class="{{ $featured_image_class }}" style="background-image: url('{{ $featured_image }}');">
     <div class="{{ $cover_dimming_class }}">
       {{ partial "site-navigation.html" . }}
-      <!-- 나머지 코드 -->
+      <!-- 기존 코드 유지 -->
     </div>
   </header>
 {{ else }}
-  <!-- Debug: 'else' block executed -->
+  <!-- 'else' 블록 실행 -->
   {{/* 언어 및 섹션 가져오기 */}}
   {{ $lang := .Site.Language.Lang }}
   {{ $section := .Section }}
   {{ if not $section }}
     {{ $section = "home" }}
   {{ end }}
+
+  {{/* 이미지 경로 생성 */}}
   {{ $imagePath := printf "/images/%s-%s.jpg" $lang $section }}
+
+  {{/* 디버깅 정보 출력 */}}
+  <!-- Debug: lang={{ $lang }}, section={{ $section }}, imagePath={{ $imagePath }} -->
 
   {{/* 이미지 파일 존재 여부 확인 */}}
   {{ if not (fileExists (printf "static%s" $imagePath)) }}
     {{ $imagePath = printf "/images/%s-bg.jpg" $lang }}
   {{ end }}
 
-  {{/* 디버깅 정보 출력 */}}
-  <!-- Debug: lang={{ $lang }}, section={{ $section }}, imagePath={{ $imagePath }} -->
-
+  {{/* 최종 배경 이미지 적용 */}}
   <header class="cover bg-center" style="background-image: url('{{ $imagePath }}');">
     <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
       {{ partial "site-navigation.html" . }}
