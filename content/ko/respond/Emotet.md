@@ -52,7 +52,7 @@ tags: ["emotet", "마이터어택"]
 
 해당 사이트가 외관상 보통의 사이트였다면 해커는 장기간 C&C 서버로 활용할 수 있을 것입니다.
 
-**- PowerShell[1059.001]** <br>
+> **- PowerShell[1059.001]** <br>
 ![m-2-800x372](https://github.com/user-attachments/assets/bf898135-6d43-4288-b0e5-4ebfe7995f40)
 <br>
 > 공격자는 실행을 위해 PowerShell 명령 및 스크립트를 남용 할 수 있습니다.<br>
