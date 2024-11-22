@@ -45,7 +45,7 @@ title: "EMOTET 탐지 필터"
 
 <br>
 
-### 숨겨진 시트 해제
+### 3. 숨겨진 시트 해제
 
 > * 숨겨진 시트를 모두 ‘숨기기 취소’ 처리 합니다.
 > * 6개의 시트 모두 ‘시트 보호 해제’ 처리를 합니다.
@@ -54,8 +54,40 @@ title: "EMOTET 탐지 필터"
 
 <br>
 
-### 매크로 항목 적용
+### 4. 매크로 항목 적용
 
+> * 매크로 상자에서 ‘Auto_Open0.’를 선택합니다.
+> * ‘Sheet6’의 ‘G열’을 숨기기 취소합니다.
+> ![emotet06](https://github.com/user-attachments/assets/abc39208-5eef-42fb-b68b-a725b3f5aa68)
+> [그림6] 매크로 허용
+
+<br>
+
+### 5. 셀 수식
+
+> * ‘숨기기 취소’후 ‘G열’의 셀 수식입니다.
+> ![emotet08](https://github.com/user-attachments/assets/fe4b6143-eeae-4642-8363-513ea76dc4b5)
+> [그림7] G열의 숨겨졌던 셀 수식
+
+<br>
+
+### 6. ‘콘텐츠 사용’ 버튼 클릭(감염 진행)
+
+> * ‘콘텐츠 사용’ 버튼을 클릭하면 순차적으로 명령어가 실행됩니다.
+> * C:\Windows\System32 에 DLL유형으로 Emotet파일을 다운로드 합니다.
+> * 다운받은 파일은 regsrv32.exe를 사용하여 DLL파일을 실행합니다.
+> * 실행된 Emotet파일은 C&C서버를 통해 추가 명령을 받아 정보 탈취 등의 악성행위를 수행합니다.
+> ![emotet09](https://github.com/user-attachments/assets/eedb5939-e34c-405b-ad3b-f6eb147b7cfa)
+> [그림8] G열의 공격 명령어들
+
+<br>
+
+### 6-1. PLURA 탐지 필터
+
+> * 필터명 : 이모텟 DLL 악성 파일 실행 (1)
+> ![emotet13](https://github.com/user-attachments/assets/eef93658-fba7-4209-9967-c7120c5f43b2)
+> 
+> * 필터명 : 이모텟 DLL 악성 파일 실행 (2)
 > 
 
 
