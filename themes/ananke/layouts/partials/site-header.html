@@ -18,21 +18,24 @@
     </div>
   </header>
 {{ else }}
-  <header>
-    {{/* Define language and URL-based image paths */}}
-    {{ $lang := .Site.Language.Lang }}
-    {{ $url := .Page.RelPermalink | replace "/" "-" | trim "-" }}
-    {{ $imagePath := printf "/images/%s%s.jpg" $lang $url }} <!-- Specific language + URL combination -->
-    {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }} <!-- Language-specific default image -->
+  {{/* Define language and URL-based image paths */}}
+  {{ $lang := .Site.Language.Lang }}
+  {{ $url := .Page.RelPermalink | replace "/" "-" | trim "-" }}
+  {{ $imagePath := printf "/images/%s%s.jpg" $lang $url }} <!-- Language-URL specific image -->
+  {{ $defaultLangImage := printf "/images/%s-bg.jpg" $lang }} <!-- Language-specific default image -->
 
-    {{/* Determine final background image */}}
-    {{ $backgroundImage := $imagePath }}
-    {{ if not (fileExists (printf "static%s" $imagePath)) }}
-      {{ $backgroundImage = $defaultLangImage }}
-    {{ end }}
+  {{/* Determine final background image */}}
+  {{ $backgroundImage := $imagePath }}
+  {{ if not (fileExists (printf "static%s" $imagePath)) }}
+    {{ $backgroundImage = $defaultLangImage }}
+  {{ end }}
 
-    <div class="{{ .Site.Params.background_color_class | default "bg-black" }}"
-         style="background-image: url('{{ $backgroundImage }}'); background-size: cover;">
+  {{/* Debugging Information */}}
+  <!-- Debug Information -->
+  <!-- Lang: {{ $lang }}, URL: {{ $url }}, ImagePath: {{ $imagePath }}, DefaultLangImage: {{ $defaultLangImage }}, Final BackgroundImage: {{ $backgroundImage }} -->
+
+  <header class="cover bg-center" style="background-image: url('{{ $backgroundImage }}');">
+    <div class="{{ .Site.Params.background_color_class | default "bg-black" }}">
       {{ partial "site-navigation.html" . }}
     </div>
   </header>
