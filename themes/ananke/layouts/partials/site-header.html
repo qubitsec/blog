@@ -31,7 +31,7 @@
       {{ $backgroundImage = $defaultLangImage }}
     {{ end }}
 
-    {{/* Additional debugging output for troubleshooting (optional) */}}
+    {{/* Debug output for troubleshooting (optional) */}}
     {{ printf "Lang: %s | URL: %s | Image Path: %s | Background Image: %s" $lang $url $imagePath $backgroundImage | safeHTML }}
 
     <div class="{{ .Site.Params.background_color_class | default "bg-black" }}"
