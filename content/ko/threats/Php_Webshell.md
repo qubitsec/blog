@@ -15,7 +15,7 @@ title: "PHP WEBSHELL 악성코드"
 
 Microsoft 탐지 및 대응팀에 따르면 Webshell 공격은 2020년 대비 2021년에 2배 증가하였으며, 전 세계적으로 꾸준히 위협이 되고 있는 공격입니다.²⁾
 
-다음 스크린샷은 최근 PLURA V5 에서 탐지된 악성코드입니다.
+다음 스크린샷은 최근 PLURA에서 탐지된 악성코드입니다.
 ![1 (1)](https://github.com/user-attachments/assets/1df3a84e-5fcc-48ff-9229-0c4a7a9ea54d)<br>
 [이미지 1] WEBSHELL>FILE EXECUTION - 위험성 높은 함수 호출 탐지
 
@@ -45,7 +45,7 @@ Microsoft 탐지 및 대응팀에 따르면 Webshell 공격은 2020년 대비 20
 다행히 해당 악성코드가 발견된 업체에서는 이 코드가 실행되지 않았습니다.
 하지만 만약 이처럼 취약점이 존재하여 Webshell과 같은 파일이 다운로드 및 업로드되고 실행이 된다면 공격자는 매우 간단히 시스템을 장악할 수 있습니다.
 
-**PLURA V5는 Webshell 공격 유형을 분석하고 이를 자동으로 탐지하고 차단하고 있습니다.**
+**PLURA는 Webshell 공격 유형을 분석하고 이를 자동으로 탐지하고 차단하고 있습니다.**
 
 ## 참조
 - 1) 위키백과, https://ko.wikipedia.org/wiki/%EC%9B%B9_%EC%85%B8
