@@ -12,7 +12,7 @@ googleAnalytics = ""
 enableRobotsTXT = true
 
 [pagination]
-pagerSize = 6
+pagerSize = 8
 
 [languages]
 [languages.ja]
