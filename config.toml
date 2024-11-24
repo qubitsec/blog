@@ -4,7 +4,7 @@ languageCode = "ko"
 defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = true
 theme = "ananke"
-resourceDir = "../resources"
+resourceDir = "resources"
 copyright = "© 2024 Qubit Security Inc. All Rights Reserved."
 
 SectionPagesMenu = ""
