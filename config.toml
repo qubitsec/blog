@@ -3,7 +3,8 @@ baseURL = "https://newblog.plura.io"
 languageCode = "en-us"
 theme = "ananke"
 resourceDir = "../resources"
-defaultContentLanguage = "ko"
+defaultContentLanguage = "kr"  # 기본 언어를 'kr'로 설정
+defaultContentLanguageInSubdir = true  # 기본 언어도 서브 디렉토리에서 접근
 
 copyright = "© 2024 Qubit Security Inc. All Rights Reserved."
 
@@ -15,68 +16,72 @@ enableRobotsTXT = true
 pagerSize = 8
 
 [languages]
-[languages.ja]
-title = "PLURA Blog"
-weight = 2
-contentDir = "content/ja"
+  [languages.kr]
+    title = "PLURA Blog"
+    weight = 1
+    languageName = "한국어"
+    contentDir = "content/kr"
 
-[languages.ko]
-title = "PLURA Blog"
-weight = 1
-contentDir = "content/ko"
+  [languages.ja]
+    title = "PLURA Blog"
+    weight = 2
+    languageName = "日本語"
+    contentDir = "content/ja"
 
 [menu]
 
+  # 한국어 메뉴
+  [[menu.main]]
+  name = "한국어"
+  url = "/kr/"
+  weight = 1
+  [menu.main.params]
+  lang = "kr"
+
+  [[menu.main]]
+  name = "컬럼"
+  url = "/kr/column/"
+  weight = 2
+  [menu.main.params]
+  lang = "kr"
+
+  [[menu.main]]
+  name = "기술"
+  url = "/kr/tech/"
+  weight = 3
+  [menu.main.params]
+  lang = "kr"
+
+  [[menu.main]]
+  name = "위협"
+  url = "/kr/threats/"
+  weight = 4
+  [menu.main.params]
+  lang = "kr"
+
+  [[menu.main]]
+  name = "대응"
+  url = "/kr/respond/"
+  weight = 5
+  [menu.main.params]
+  lang = "kr"
+
+  [[menu.main]]
+  name = "뉴스"
+  url = "https://www.qubitsec.com/news"
+  weight = 6
+  [menu.main.params]
+  lang = "kr"
+  target = "_blank"
+
+  # 일본어 메뉴
   [[menu.main]]
   name = "日本語"
   url = "/ja/"
   weight = 1
   [menu.main.params]
-  lang = "ko"
-  
-  [[menu.main]]
-  name = "Column"
-  url = "/column/"
-  weight = 2
-  [menu.main.params]
-  lang = "ko"
-
-  [[menu.main]]
-  name = "Tech"
-  url = "/tech/"
-  weight = 3
-  [menu.main.params]
-  lang = "ko"
-
-  [[menu.main]]
-  name = "Threats"
-  url = "/threats/"
-  weight = 4
-  [menu.main.params]
-  lang = "ko"
-
-  [[menu.main]]
-  name = "Respond"
-  url = "/respond/"
-  weight = 5
-  [menu.main.params]
-  lang = "ko"
-
-  [[menu.main]]
-  name = "News"
-  url = "https://www.qubitsec.com/news"
-  weight = 6
-  [menu.main.params]
-  lang = "ko"
-  target = "_blank"
-
-  [[menu.main]]
-  name = "한국어"
-  url = "/"
-  weight = 1
-  [menu.main.params]
   lang = "ja"
-  
+
   [[menu.main]]
   name = "コラム"
   url = "/ja/column/"
@@ -100,14 +105,14 @@ contentDir = "content/ko"
 
   [[menu.main]]
   name = "対応"
-  url = "/ja/Respond/"
+  url = "/ja/respond/"
   weight = 5
   [menu.main.params]
   lang = "ja"
 
   [[menu.main]]
   name = "ニュース"
-  url = "https://w.qubitsec.com/ja/news.html"
+  url = "https://www.qubitsec.com/ja/news.html"
   weight = 6
   [menu.main.params]
   lang = "ja"
@@ -130,9 +135,11 @@ googleFonts = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@50
 customCSS = true
 css_file = ["/css/fonts.css", "/css/main.css"]
 summaryLength = 30
+
 # 언어별 기본 배경 이미지 설정
-[languages.ko.params]
-background_image = "/images/ko-bg.jpg"
+[languages.kr.params]
+background_image = "/images/kr-bg.jpg"
+
 [languages.ja.params]
 background_image = "/images/ja-bg.jpg"
 
