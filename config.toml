@@ -113,7 +113,7 @@ pagerSize = 8
 
   [[menu.main]]
     name = "ニュース"
-    url = "https://www.qubitsec.com/ja/news.html"
+    url = "https://w.qubitsec.com/ja/news.html"
     weight = 6
     [menu.main.params]
       lang = "ja"
