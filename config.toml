@@ -15,45 +15,86 @@ enableRobotsTXT = true
 pagerSize = 8
 
 [languages]
-[languages.ja]
-languageCode = "ja"
-title = "PLURA Blog"
-weight = 2
-contentDir = "content/ja"
+  [languages.ja]
+  languageCode = "ja"
+  title = "PLURA Blog"
+  weight = 2
+  contentDir = "content/ja"
 
-[languages.ja.params]
-lang = "ja"
+  [languages.ja.params]
+  lang = "ja"
 
-[languages.ko]
-languageCode = "ko"
-title = "PLURA Blog"
-weight = 1
-contentDir = "content/ko"
+  [languages.ko]
+  languageCode = "ko"
+  title = "PLURA Blog"
+  weight = 1
+  contentDir = "content/ko"
 
-[languages.ko.params]
-lang = "ko"
+  [languages.ko.params]
+  lang = "ko"
 
-[menu.ko]
-[[menu.ko]]
-name = "日本語"
-url = "/ja/"
-weight = 1
+[menu]
+  [[menu.main]]
+  name = "日本語"
+  url = "/ja/"
+  weight = 1
 
-[[menu.ko]]
-name = "Column"
-url = "/ko/column/"
-weight = 2
+  [[menu.main]]
+  name = "Column"
+  url = "/ko/column/"
+  weight = 2
 
-[menu.ja]
-[[menu.ja]]
-name = "한국어"
-url = "/ko/"
-weight = 1
+  [[menu.main]]
+  name = "Tech"
+  url = "/ko/tech/"
+  weight = 3
 
-[[menu.ja]]
-name = "コラム"
-url = "/ja/column/"
-weight = 2
+  [[menu.main]]
+  name = "Threats"
+  url = "/ko/threats/"
+  weight = 4
+
+  [[menu.main]]
+  name = "Respond"
+  url = "/ko/respond/"
+  weight = 5
+
+  [[menu.main]]
+  name = "News"
+  url = "https://www.qubitsec.com/news"
+  weight = 6
+  target = "_blank"
+
+  [[menu.main]]
+  name = "한국어"
+  url = "/ko/"
+  weight = 1
+
+  [[menu.main]]
+  name = "コラム"
+  url = "/ja/column/"
+  weight = 2
+
+  [[menu.main]]
+  name = "技術"
+  url = "/ja/tech/"
+  weight = 3
+
+  [[menu.main]]
+  name = "脅威"
+  url = "/ja/threats/"
+  weight = 4
+
+  [[menu.main]]
+  name = "対応"
+  url = "/ja/respond/"
+  weight = 5
+
+  [[menu.main]]
+  name = "ニュース"
+  url = "https://w.qubitsec.com/ja/news.html"
+  weight = 6
+  target = "_blank"
 
 [sitemap]
 changefreq = "daily"
@@ -61,6 +102,6 @@ priority = 0.7
 filename = "sitemap.xml"
 
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true
