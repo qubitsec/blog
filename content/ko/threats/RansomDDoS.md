@@ -88,17 +88,17 @@ HTTP 헤더의 캐시 옵션값을 조작하여 웹서버에 부하를 주는 �
 
 ## 대응방법
 ### Syn flooding
-> - 백로그 큐의 크기 늘리기
-> sysctl -a | grep syn_backlog : 백로그 사이즈 확인
+> - 백로그 큐의 크기 늘리기<br>
+> sysctl -a | grep syn_backlog : 백로그 사이즈 확인<br>
 > sysctl -w net.ipv4.tcp_max_syn_backlog=1024 : 백로그 사이즈 수정<br>
 > - Syncookie 설정<br><br>
 > ![tcp_syn_cookie](https://github.com/user-attachments/assets/2702a667-07a8-49ed-bc0d-bddfc556dc7a)<br>
 > : Syncookie는 두 호스트간의 연결에 대한 정보를 암호화 한것인데 syncookie를 설정한다는 것은 3-way-handshake 과정에서 서버가 client로부터 SYN 패킷을 받고 SYN-ACK 패킷을 보낼 때 SYN 패킷의 seq값으로 syncookie값을 넣는 것을 말합니다.<br>
 > 이렇게 하면 client로부터 ACK 패킷이 오지 않아도 server는 기다리지 않고 나중에 client가 ack값에 syncookie+1을 넣어 보내면 자신이 가지고 있는 syncookie값과 비교하여 같다면 연결을 맺고 통신하게됩니다.
 >
-> - syncookie 설정하는 법
-> sysctl -a | grep syncookie : syncookie 설정 확인
-> sysctl -w net.ipv4.tcp_syncookies=1 : syncookie 기능 활성화
+> - syncookie 설정하는 법<br>
+> sysctl -a | grep syncookie : syncookie 설정 확인<br>
+> sysctl -w net.ipv4.tcp_syncookies=1 : syncookie 기능 활성화<br>
 > - 방화벽에 IP 당 SYN 요청에 대한 PPS 임계치 설정, 첫번째 SYN 패킷을 Drop 하여 재요청 패킷 도달 확인
 > * PPS : 대역폭 별로 사용할 수 있는 최대 패킷 수
 > - 레지스트리 값 수정 (EnableICMPRedirect, SynAttackProtect, KeepAliveTime 항목)
