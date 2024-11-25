@@ -1,13 +1,9 @@
 ---
 date: 2023-01-12T00:00:00
+title: "워드프레스로 만든 사이트 필수 보안 TOP 10"
 description: "워드프레스로 만든 사이트를 안전하게 보호하기 위한 필수 보안 설정 TOP 10을 소개합니다."
 featured_image: 
-tags: 
-  - WordPress
-  - WordPress 보안
-  - WordPress Plugin
-  - 워드프레스 플러그인
-title: "워드프레스로 만든 사이트 필수 보안 TOP 10"
+tags: ["WordPress", "WordPress 보안", "WordPress Plugin", "워드프레스 플러그인"]
 ---
 
 ![wordpress-589121_960_720](https://github.com/user-attachments/assets/4d856104-2141-4890-8f1d-9061fbab36da)
