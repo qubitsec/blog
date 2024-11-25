@@ -24,4 +24,3 @@ curl -x localhost:3128 -I -L http://www.eicar.org/download/eicar.com
 
 - [Using cURL with Proxy](https://oxylabs.io/blog/curl-with-proxy)
 - [cURL with Proxy Support](https://red.ht/2UKB3yC)
-```
