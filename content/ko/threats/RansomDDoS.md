@@ -70,7 +70,7 @@ TearDrop은 이 Offset값을 조작하여 서버가 받은 패킷들을 재조�
 ### 4. ICMP Flood
 ICMP Flood의 대표적인 공격으로는 Smurf 공격이 있습니다.<br>
 Smurf 공격은 공격자가 어떤 네트워크에 source IP를 victim의 IP로 한 ICMP request 패킷을 브로드캐스트하면 네트워크 안의 호스트들은 ICMP request 패킷을 victim이 보냈다고 생각하고 ICMP reply응답을 victim으로 보냅니다.<br> 
-그럼 victim은 갑자기 대량의 ICMP reply 패킷을 받게 됩니다.<br>
+그럼 victim은 갑자기 대량의 ICMP reply 패킷을 받게 됩니다.
 * ICMP : 다른 호스트 or 게이트웨이 사이에 네트워크 에러가 있는지 확인하는 프로토콜
 
 ### 5. Ping of Death
