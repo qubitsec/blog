@@ -22,22 +22,22 @@ PLURA 제품을 사용하면 클릭 몇 번을 통해 간단하게 홈페이지 
 
 # 홈페이지 위변조 해킹 탐지 방법
 
-## 1. [PLURA 메뉴] → [필터] → [보안] → [홈페이지 위변조]
+## 1. [PLURA 메뉴] → [필터] → [보안] → [홈페이지 위변조]<br>
 ![image](https://github.com/user-attachments/assets/bae4d0a1-6674-4f44-8aa4-7dffd0b823fa)
 
-## 탐지하고 싶은 파일경로를 적어주면 해당 파일이 위변조 될 때 필터 탐지가 됩니다.
+## 탐지하고 싶은 파일경로를 적어주면 해당 파일이 위변조 될 때 필터 탐지가 됩니다.<br><br>
 ![2020-06-04-13-07-01](https://github.com/user-attachments/assets/91ca78d3-41d8-49d2-a0b9-37b57ee799ab)
 
-> * 예시)  해커가 index.php 에 iframe 태그를 이용하여 악성코드 유포지를 삽입함.
+> * 예시)  해커가 index.php 에 iframe 태그를 이용하여 악성코드 유포지를 삽입함.<br><br>
 > ![2020-06-04-13-33-43](https://github.com/user-attachments/assets/eacdbe97-5444-4022-9948-115581b6c7b2)
 >
-> * 실제 삽입된 악성 html 코드<br>
+> * 실제 삽입된 악성 html 코드<br><br>
 > ![2020-06-04-13-31-28](https://github.com/user-attachments/assets/1d49c727-ea2a-4b35-bc36-8e79161a89a1)
 >
-> * 해당 사이트 방문자는 악성코드 유포지에 연결되었음. [테스트 환경이기 때문에 가상의 도메인으로 설정]
+> * 해당 사이트 방문자는 악성코드 유포지에 연결되었음. [테스트 환경이기 때문에 가상의 도메인으로 설정]<br><br>
 > ![2020-06-04-13-31-56](https://github.com/user-attachments/assets/68d5cf4d-fbba-4f87-9765-2c29448c4103)
 >
-> * PLURA에서 해당 페이지 변조가 탐지되었습니다.
+> * PLURA에서 해당 페이지 변조가 탐지되었습니다.<br><br>
 > ![2020-06-04-14-07-17](https://github.com/user-attachments/assets/d56e98ae-5be7-4a75-91c2-41afeff5490d)
 
 
