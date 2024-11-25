@@ -88,7 +88,7 @@ chmod **600** /etc/hosts
 
 <br><br>
 
-다음은 PLURA V5에서 hosts 파일 변조가 탐지되는 과정입니다.
+다음은 PLURA에서 hosts 파일 변조가 탐지되는 과정입니다.
 
 ping 명령어를 통해 www.google.com의 ip주소를 확인해 본 결과 172.217.163.228이 출력됩니다.
 
@@ -116,13 +116,13 @@ sudo vi /etc/hosts 명령어를 통해 관리자 권한으로 hosts 파일을 vi
 
 <br><br>
 
-그리고 PLURA V5에는 hosts 파일 변조에 대한 탐지가 발생합니다.
+그리고 PLURA에는 hosts 파일 변조에 대한 탐지가 발생합니다.
 
 ![hostslog-1](https://github.com/user-attachments/assets/449e7c2b-cd1a-42fa-8050-ad9cb82a2b3e)
 
 <br>
 
-**PLURA V5는 예방하지 못한 다양한 취약점으로 발생한 hosts파일 변조를 포함하여 다양한 파일 변조에 대한 해킹을 탐지하여 대응할 수 있도록 합니다.**
+**PLURA는 예방하지 못한 다양한 취약점으로 발생한 hosts파일 변조를 포함하여 다양한 파일 변조에 대한 해킹을 탐지하여 대응할 수 있도록 합니다.**
 
 
 ## 참고 사이트
