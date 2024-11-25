@@ -14,7 +14,7 @@ Windows에서 프록시 설정을 통해 인터넷 연결을 구성하는 방법
 
 ## 인터넷 옵션 열기
 
-먼저, **인터넷 옵션** 창을 엽니다.
+먼저, `인터넷 옵션` 창을 엽니다.
 
 ![internetoption](https://github.com/user-attachments/assets/27298dc1-dcc1-4116-8d9b-07195d1ece5e)
 
@@ -22,7 +22,7 @@ Windows에서 프록시 설정을 통해 인터넷 연결을 구성하는 방법
 
 ## 연결 탭 선택
 
-인터넷 옵션 창에서 상단의 **연결** 탭을 선택합니다.
+인터넷 옵션 창에서 상단의 `연결` 탭을 선택합니다.
 
 ![connect](https://github.com/user-attachments/assets/dd720568-81f7-4cd2-bdca-6ceffb235e94)
 
@@ -30,7 +30,7 @@ Windows에서 프록시 설정을 통해 인터넷 연결을 구성하는 방법
 
 ## LAN 설정 및 예외 등록
 
-1. **LAN 설정** 버튼을 클릭합니다.
+1. `LAN 설정` 버튼을 클릭합니다.
 2. 프록시 서버와 예외 항목을 등록합니다.
 
 ![LAN](https://github.com/user-attachments/assets/ce80393e-2654-483b-95ae-a2ed4e3cf4be)
