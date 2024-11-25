@@ -39,7 +39,7 @@ ARP table에 정보가 저장되면 다음부터는 이 과정 없이 ARP table�
 
 ## ARP spoofing ?
 
-그렇다면 ARP Spoofing이란 뭘까요?
+그렇다면 ARP Spoofing이란 뭘까요?<br>
 ARP Spoofing은 victim에게 잘못된 MAC 주소가 담긴 ARP Reply를 보내 victim의 ARP 캐시를 조작하여 victim으로부터 정보를 빼내는 해킹 기법입니다.<br>
 ARP에 Reply 패킷으로 받은 MAC주소가 진짜인지 아닌지 검증하는 인증 시스템이 없다는 취약점을 이용한 공격입니다.<br>
 ![Attack-MITM](https://github.com/user-attachments/assets/de2a1bdd-8a96-48ef-99ba-0c63b22336f1)
