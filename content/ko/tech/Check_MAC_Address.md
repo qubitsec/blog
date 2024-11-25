@@ -14,7 +14,7 @@ PC 서버의 고유 정보를 확인하고 활용하기 위해 **MAC 주소**를
 
 ## 명령 관리자 실행
 
-먼저, **명령 관리자**(cmd)를 실행합니다.
+먼저, `명령 관리자(cmd)`를 실행합니다.
 
 ![cmd](https://github.com/user-attachments/assets/904a77ef-fe8d-4590-a336-1ca42daa2135)
 
@@ -34,7 +34,7 @@ ipconfig /all
 
 ## MAC 주소 확인
 
-`ipconfig /all` 명령어 실행 결과에서 각 어댑터의 **물리적 주소(Physical Address)** 항목이 해당 어댑터의 MAC 주소입니다.
+`ipconfig /all` 명령어 실행 결과에서 각 어댑터의 `물리적 주소(Physical Address)` 항목이 해당 어댑터의 MAC 주소입니다.
 
 ---
 
