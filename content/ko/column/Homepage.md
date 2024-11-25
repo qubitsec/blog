@@ -31,7 +31,7 @@ PLURA 제품을 사용하면 클릭 몇 번을 통해 간단하게 홈페이지 
 > * 예시)  해커가 index.php 에 iframe 태그를 이용하여 악성코드 유포지를 삽입함.
 > ![2020-06-04-13-33-43](https://github.com/user-attachments/assets/eacdbe97-5444-4022-9948-115581b6c7b2)
 >
-> * 실제 삽입된 악성 html 코드
+> * 실제 삽입된 악성 html 코드<br>
 > ![2020-06-04-13-31-28](https://github.com/user-attachments/assets/1d49c727-ea2a-4b35-bc36-8e79161a89a1)
 >
 > * 해당 사이트 방문자는 악성코드 유포지에 연결되었음. [테스트 환경이기 때문에 가상의 도메인으로 설정]
