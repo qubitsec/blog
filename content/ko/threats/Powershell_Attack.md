@@ -47,7 +47,7 @@ System.Reflection.Dll
 
 ### 5. PLURA에서 PowerShell 악성 행위 탐지
 *Sysmon 설치 필수
-설치 방법: https://docs.plura.io/ko/agents/edr/windows/sysmon<br>
+설치 방법: https://docs.plura.io/ko/agents/edr/windows/sysmon<br><br>
 ![ps-0-1](https://github.com/user-attachments/assets/7f971a25-61de-4a51-8e71-c4e861881576)
 
 **악성 파일 실행**<br>
