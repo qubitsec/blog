@@ -81,7 +81,7 @@ i. 공격자가 victim에게 gateway의 ip 주소와 공격자의 Mac 주소가 
 ## 공격 테스트<br><br>
 ![re_cap](https://github.com/user-attachments/assets/6ca7e9de-b559-462e-9696-721857259700)
 
-시나리오 1><br>
+`시나리오 1`><br>
 : target의 arp table에 gateway의 ip와 attacker의 mac주소가 저장되도록 하여 target이 주고 받는 패킷들을 스니핑 할 수 있습니다.
 
 <공격 전 target’s arp table><br>
@@ -93,7 +93,7 @@ i. 공격자가 victim에게 gateway의 ip 주소와 공격자의 Mac 주소가 
 target이 로그인시 계정 정보 스니핑<br>
 ![계정정보](https://github.com/user-attachments/assets/e06da358-76a7-4467-bb84-df28884082f3)
 
-시나리오 2><br>
+`시나리오 2`><br>
 : switch의 arp table에 gateway의 ip와 attacker의 mac주소가 저장되도록 하여 스위치에 연결된 모든 호스트들이 주고받는 패킷들을 attacker가 스니핑 할 수 있습니다.
 
 <공격 전 switch의 arp table><br>
@@ -102,7 +102,7 @@ target이 로그인시 계정 정보 스니핑<br>
 <공격 후 switch의 arp table><br>
 ![SW_arp-table_after](https://github.com/user-attachments/assets/23945841-c391-439a-9108-539bbb8d88d1)
 
-시나리오 3><br>
+`시나리오 3`><br>
 : 라우터에 gateway의 ip와 attacker의 mac주소를 ARP Reply 패킷으로 보내면 라우터에서 서로 다른 ip에 같은 mac주소가 매핑된것을 확인하고 로그를 생성합니다.
 
 > Router# show logging
