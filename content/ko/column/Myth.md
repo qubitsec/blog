@@ -8,7 +8,7 @@ title: "로그 분석으로 해킹 조사하기는 신화(Myth)?"
 
 ![new_blog_news_230303-1](https://github.com/user-attachments/assets/ed618031-1d54-4149-af2d-bdb67f0ed3b7)
 
-해킹 공격을 받으면 거의 대부분 로그 분석을 합니다.
+**해킹 공격을 받으면 거의 대부분 로그 분석을 합니다.**
 
  
 
