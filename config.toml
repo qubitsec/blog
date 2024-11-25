@@ -18,17 +18,23 @@ pagerSize = 8
 [languages]
   [languages.ja]
     languageCode = "ja"
-    lang = "ja"
     title = "PLURA Blog"
     weight = 2
     contentDir = "content/ja"
+    
+    [languages.ja.params]
+      lang = "ja"
+      background_image = "/images/ja-bg.jpg"
 
   [languages.ko]
     languageCode = "ko"
-    lang = "ko"
     title = "PLURA Blog"
     weight = 1
     contentDir = "content/ko"
+    
+    [languages.ko.params]
+      lang = "ko"
+      background_image = "/images/ko-bg.jpg"
 
 [menu]
 
@@ -137,13 +143,6 @@ pagerSize = 8
   customCSS = true
   css_file = ["/css/fonts.css", "/css/main.css"]
   summaryLength = 30
-
-  # 언어별 기본 배경 이미지 설정
-  [languages.ko.params]
-    background_image = "/images/ko-bg.jpg"
-
-  [languages.ja.params]
-    background_image = "/images/ja-bg.jpg"
 
 [markup]
   [markup.goldmark]
