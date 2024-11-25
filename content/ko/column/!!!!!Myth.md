@@ -3,7 +3,7 @@ date: 2023-03-12T00:00:00
 description: 
 featured_image: 
 tags: 
-title: "작성중!!!!!! 로그 분석으로 해킹 조사하기는 신화(Myth)?"
+title: "로그 분석으로 해킹 조사하기는 신화(Myth)?"
 ---
 
 ![new_blog_news_230303-1](https://github.com/user-attachments/assets/ed618031-1d54-4149-af2d-bdb67f0ed3b7)
@@ -42,5 +42,5 @@ title: "작성중!!!!!! 로그 분석으로 해킹 조사하기는 신화(Myth)?
 
  
 
-## 참고 사이트 수정할것!!!!!!!!!!!!!
-* 마이터 어택 관점에서 고급감사정책 활용, http://blog.plura.io/?p=18914
+## 참고 사이트
+* 마이터 어택 관점에서 고급감사정책 활용, https://blog.plura.io/ko/threats/mitre_audit_gpt/
