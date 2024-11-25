@@ -25,7 +25,7 @@ Command Injection을 통해 내부 데이터 탈취 및 손상, 시스템 계정
 
 
 
-다음은 DVWA를 이용한 Command Injection 모의해킹 과정과 이에 대한 PLURA V5 탐지 내용입니다.
+다음은 DVWA를 이용한 Command Injection 모의해킹 과정과 이에 대한 PLURA 탐지 내용입니다.
 
 ![8 8 8 8](https://github.com/user-attachments/assets/8806bbac-2d42-434d-b50b-df3b72c454dc)
 
@@ -59,7 +59,7 @@ PHP의 escapeshellarg() , escapeshellcmd() 함수를 이용하는 방법도 있�
 허용 가능한 명령어 리스트(명령어 화이트 리스트)를 선정하여 해당 명령어만 실행할 수 있도록 설정합니다. [4]
 
 
-다음은 PLURA V5 ML탐지 기능으로 자동으로 탐지된 결과입니다.
+다음은 PLURA ML탐지 기능으로 자동으로 탐지된 결과입니다.
 
 ![ml01-1](https://github.com/user-attachments/assets/7ff23713-a89b-485c-bc5c-0a2382a0b9c9)
 
