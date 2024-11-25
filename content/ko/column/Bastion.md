@@ -27,6 +27,7 @@ Bastion Host 사용자는 다음 다이어그램에 설명된대로, Bastion Hos
 2) WebServer Instance1
 * IP: Public IP 부여하지 않는다.
 * Subnet: Private Subnet1에 배치
+
 ![00](https://github.com/user-attachments/assets/abec3ff3-5c70-461e-be3d-a6c6de9db1b8)
 
 ### 2. Security Group
@@ -37,11 +38,13 @@ Bastion Host 사용자는 다음 다이어그램에 설명된대로, Bastion Hos
 ### 2) WebServer Instance1
 * Type: SSH
 * Source: Bastion Host의 Public Subnet에 할당된 IP를 입력한다.
+
 ![11](https://github.com/user-attachments/assets/d8ebbe8a-1fcf-4256-8ede-49b746b4afa1)
 
 ## B. VPC
 ### 1. VPC
 * vpc: 172.31.0.0/16
+
 ![55](https://github.com/user-attachments/assets/d27ef032-09be-41ca-8049-a8dc95e301b7)
 
 ### 2. Subnet
@@ -69,6 +72,7 @@ Bastion Host 사용자는 다음 다이어그램에 설명된대로, Bastion Hos
 
 ### 3. Private Subnet으로 ssh 접속
 $ ssh -i “plura.pem” ec2-user@172.31.20.117
+
 ![22](https://github.com/user-attachments/assets/c76591b9-caf7-474d-9445-3d7e8425ff34)
 
 # Bastion Host 운영 목적
