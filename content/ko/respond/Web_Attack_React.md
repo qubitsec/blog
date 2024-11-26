@@ -78,5 +78,5 @@ SQL 인젝션, 크로스사이트스크립팅(XSS, Cross Site Scripting) 등이 
 <br>
 
 ### 참고 사이트
-* [1] 크리덴셜 스터핑 공격 대응하기 : https://newblog.plura.io/respond/credential_stuffing_response/
+* [1] 크리덴셜 스터핑 공격 대응하기 : https://newblog.plura.io/ko/respond/credential_stuffing_response/
 * [2] 큐비트시큐리티, ‘실시간 로그 분석 기반의 공격 탐지 시스템 및 방법’ (등록번호 : 10-1896267)
