@@ -59,6 +59,6 @@ title: "홈네트워크 (월패드) 보안"
 3) https://www.boannews.com/media/view.asp?idx=96702
 
 ## 내부 블로그
-1) 크리덴셜 스터핑 대응하기, https://newblog.plura.io/respond/credential_stuffing_response/
-2) APT공격 마이터의 이해, https://newblog.plura.io/column/mitre/
+1) 크리덴셜 스터핑 대응하기, https://newblog.plura.io/ko/respond/credential_stuffing_response/
+2) APT공격 마이터의 이해, https://newblog.plura.io/ko/column/mitre/
 
