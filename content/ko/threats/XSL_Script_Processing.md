@@ -32,4 +32,4 @@ https://youtu.be/1RoD8f8GYcw?si=u_gAMtyKrTqw-WP4
 ### 참조
 - https://attack.mitre.org/techniques/T1220/
 - https://asec.ahnlab.com/ko/1344/
-- https://blog.alyac.co.kr/3489[/fusion_builder_column][/fusion_builder_row][/fusion_builder_container]
+- https://blog.alyac.co.kr/3489
