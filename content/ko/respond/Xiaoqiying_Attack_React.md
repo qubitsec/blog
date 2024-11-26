@@ -74,7 +74,7 @@ tags: ["Xiaoqiying", "PLURA-WAF"]
 
 ### 참고 사이트 > 블로그
 
-- 크리덴셜 스터핑 대응하기 : https://newblog.plura.io/respond/credential_stuffing_response/
+- 크리덴셜 스터핑 대응하기 : https://newblog.plura.io/ko/respond/credential_stuffing_response/
 - PLURA-WAF 데모 : https://youtu.be/sDssT98NCg0?si=EbAiClNRxZQXflQg
 
 <br>
