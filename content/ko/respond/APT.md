@@ -28,7 +28,7 @@ C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 �
 <br>
 
 ## 내부 블로그
-- MITRE ATT&CK 이해 : https://newblog.plura.io/column/mitre/
+- MITRE ATT&CK 이해 : https://newblog.plura.io/ko/column/mitre/
 <br>
 
 ## 관련 영상 
