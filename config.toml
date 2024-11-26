@@ -1,5 +1,5 @@
 title = "PLURA XDR – Cloud SECaaS Platform w/ MITRE ATT&CK"
-baseURL = "https://newblog.plura.io"
+baseURL = "https://blog.plura.io"
 languageCode = "ko"
 defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = true
