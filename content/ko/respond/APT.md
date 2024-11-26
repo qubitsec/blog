@@ -3,7 +3,7 @@ date: 2022-03-14T00:00:00
 description: 
 featured_image: 
 tags: 
-title: "지능형지속위협(APT)"
+title: "지능형지속위협(APT)공격"
 ---
 
 ![blog_banner-220318-44](https://github.com/user-attachments/assets/ad176ad3-afa4-4387-b330-0ea017d0ac8d)
