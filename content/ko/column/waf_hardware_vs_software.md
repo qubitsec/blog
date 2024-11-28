@@ -1,7 +1,7 @@
 ---
 date: 2024-06-12
 title: "웹방화벽의 장단점, 하드웨어 vs 소프트웨어 기반"
-description: "하드웨어 및 소프트웨어 기반 웹방화벽의 특성과 PLURA-WAF의 차별화된 기능"
+description:
 featured_image: ""
 tags: ["웹방화벽", "보안", "하드웨어", "소프트웨어", "PLURA-WAF"]
 ---
