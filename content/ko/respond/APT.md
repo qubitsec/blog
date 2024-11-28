@@ -2,7 +2,7 @@
 date: 2022-03-14T00:00:00
 description: 
 featured_image: 
-tags: 
+태그: ["APT 공격", "MITRE ATT&CK", "사이버 보안", "멀웨어", "PLURA"]
 title: "지능형지속위협(APT)공격"
 ---
 
