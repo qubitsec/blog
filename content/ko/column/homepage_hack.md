@@ -2,7 +2,7 @@
 date: 2020-06-04T00:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["홈페이지 변조", "보안", "악성코드", "웹쉘", "PLURA"]
 title: "홈페이지 변조 해킹 기술 똑똑해져…보안 강화 필요"
 ---
 
