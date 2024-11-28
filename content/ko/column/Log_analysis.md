@@ -2,7 +2,7 @@
 date: 2016-06-27T00:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["로그 분석", "보안", "시스템 관리", "솔루션 선택", "PLURA"]
 title: "로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?"
 ---
 
