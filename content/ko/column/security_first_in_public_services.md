@@ -2,7 +2,7 @@
 date: 2021-08-14T00:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["비대면 서비스", "보안", "ISMS-P", "인증 관리", "PLURA"]
 title: "퍼블릭 비대면 서비스 선택 시 확인할 보안 서비스"
 ---
 
