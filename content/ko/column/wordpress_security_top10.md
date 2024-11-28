@@ -1,8 +1,8 @@
 ---
 date: 2023-01-12
 title: "워드프레스로 만든 사이트 필수 보안 TOP 10"
-description: "워드프레스 보안 TOP 10 소개"
-featured_image: ""
+description:
+featured_image: 
 tags: ["WordPress", "WordPress 보안", "WordPress Plugin", "워드프레스 플러그인"]
 ---
 
