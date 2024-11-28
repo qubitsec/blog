@@ -8,9 +8,7 @@ tags: ["Xiaoqiying", "PLURA-WAF", "PLURA-SIEM"]
 
 ![column-20230221-2](https://github.com/user-attachments/assets/21ff805a-4fe5-4b7f-9a07-da372112f997)
 
-**키워드 : 샤오치잉, 해킹 공격, 웹 방화벽, SQL Injection 대응, 웹쉘 검색, 보안 이벤트 로그 모니터링, Xiaoqiying, WAF, SIEM**
-
-"본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 부분에 있어서 임의 수정된 사실은 없습니다."
+> **"본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 부분에 있어서 임의 수정된 사실은 없습니다."**
 
 ### Q1. 샤오치잉(Xiaoqiying) 해킹 그룹의 이해
 > Xiaoqiying와 APT-C-23는 같은 해킹 그룹을 가리키는 서로 다른 이름입니다.
