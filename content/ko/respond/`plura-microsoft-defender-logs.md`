@@ -1,7 +1,7 @@
 ---
 date: 2024-03-04
 title: "PLURA에서 Microsoft Defender Antivirus 로그 확인하기"
-description: "Microsoft Defender와 PLURA를 활용한 보안 로그 관리"
+description:
 featured_image: ""
 tags: ["Microsoft Defender", "보안 로그", "PLURA", "안티바이러스"]
 ---
