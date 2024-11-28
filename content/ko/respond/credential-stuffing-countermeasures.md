@@ -2,7 +2,7 @@
 date: 2023-02-23T00:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["크리덴셜 스터핑", "사이버 보안", "PLURA", "클라우드 SaaS", "메타정보 분석"]
 title: "크리덴셜 스터핑 공격 대응하기"
 ---
 
