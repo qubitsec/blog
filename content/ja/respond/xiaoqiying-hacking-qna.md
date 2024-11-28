@@ -8,9 +8,7 @@ tags: ["Xiaoqiying", "PLURA-WAF", "PLURA-SIEM"]
 
 ![column-20230221-2](https://github.com/user-attachments/assets/21ff805a-4fe5-4b7f-9a07-da372112f997)
 
-**キーワード : シャオチーニン, サイバー攻撃, ウェブファイアウォール, SQLインジェクション対策, ウェブシェル検索, セキュリティイベントログモニタリング, Xiaoqiying, WAF, SIEM**
-
-"本内容はChatGPTとのQ&Aを整理したものであり、ChatGPTが作成した部分において任意の修正はありません。"
+> **"本内容はChatGPTとのQnAを整理したものであり、ChatGPTが作成した部分において任意修正された事実はありません。"**
 
 ### Q1. シャオチーニン(Xiaoqiying)攻撃グループについての理解
 > XiaoqiyingとAPT-C-23は、同じハッキンググループを指す異なる名称です。
