@@ -2,7 +2,7 @@
 date: 2022-03-14T01:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["크리덴셜 스터핑", "보안", "PLURA", "계정 공격", "개인정보 보호"]
 title: "크리덴셜 스터핑"
 ---
 
