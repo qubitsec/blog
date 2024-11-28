@@ -3,7 +3,7 @@ date: 2023-02-14T01:10:00
 title: "디렉토리 리스팅 공격 대응"
 description: ""
 featured_image: ""
-tags: []
+tags: ["디렉토리 리스팅", "사이버 보안", "웹 서버", "WAF", "접근 제어"]
 ---
 
 ![lfi](https://github.com/user-attachments/assets/4f6a6fd3-70f8-465c-987d-a9b95740cd61)
