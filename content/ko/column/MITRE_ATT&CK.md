@@ -2,7 +2,7 @@
 date: 2020-12-21T00:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["MITRE ATT&CK", "보안 프레임워크", "APT 공격", "사이버 보안", "PLURA"]
 title: "MITRE ATT&CK 이해"
 ---
 
