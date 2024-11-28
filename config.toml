@@ -1,7 +1,7 @@
 title = "PLURA XDR – Cloud SECaaS Platform w/ MITRE ATT&CK"
 baseURL = "https://blog.plura.io"
 languageCode = "ko"
-#defaultContentLanguage = "ko"
+defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = true
 #defaultContentLanguageInSubdir = false
 theme = "ananke"
@@ -39,12 +39,12 @@ pagerSize = 8
 [menu]
 
   # 일본어 메뉴 (한국어 사이트에서 표시)
-#  [[menu.main]]
-#    name = "日本語"
-#    url = "/ja/"
-#    weight = 1
-#    [menu.main.params]
-#      lang = "ko"
+  [[menu.main]]
+    name = "日本語"
+    url = "/ja/"
+    weight = 1
+    [menu.main.params]
+      lang = "ko"
 
   [[menu.main]]
     name = "Column"
@@ -83,12 +83,12 @@ pagerSize = 8
       target = "_blank"
 
   # 한국어 메뉴 (일본어 사이트에서 표시)
- # [[menu.main]]
- #   name = "한국어"
- #   url = "/ko/"
- #   weight = 1
- #   [menu.main.params]
- #     lang = "ja"
+  [[menu.main]]
+    name = "한국어"
+    url = "/ko/"
+    weight = 1
+    [menu.main.params]
+      lang = "ja"
 
   [[menu.main]]
     name = "コラム"
