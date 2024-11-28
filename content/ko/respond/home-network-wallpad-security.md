@@ -2,7 +2,7 @@
 date: 2022-03-19T02:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
 title: "홈네트워크 (월패드) 보안"
 ---
 
