@@ -2,7 +2,7 @@
 date: 2023-03-12T00:00:00
 description: 
 featured_image: 
-tags: 
+tags: ["로그 분석", "해킹 조사", "보안", "PLURA", "MITRE ATT&CK"]
 title: "로그 분석으로 해킹 조사하기는 신화(Myth)?"
 ---
 
