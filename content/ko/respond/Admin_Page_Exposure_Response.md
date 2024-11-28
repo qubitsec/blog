@@ -1,7 +1,7 @@
 ---
 date: 2023-11-14
 title: "[WEB] 관리자 페이지 노출 대응"
-description: "관리자 페이지 노출로 인한 보안 위협과 예방 방법"
+description: 
 featured_image: ""
 tags: ["관리자 페이지", "보안", "WAF", "2차 인증", "Brute Force"]
 ---
