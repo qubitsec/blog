@@ -16,7 +16,7 @@ Windows에서 프록시 설정을 통해 인터넷 연결을 구성하는 방법
 
 먼저, `인터넷 옵션` 창을 엽니다.
 
-![internetoption](https://github.com/user-attachments/assets/27298dc1-dcc1-4116-8d9b-07195d1ece5e)
+![04](https://github.com/user-attachments/assets/f1cd8e5d-f46b-49ff-aa12-758eb26d85d8)
 
 ---
 
