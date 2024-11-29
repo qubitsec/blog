@@ -1,7 +1,7 @@
 ---
 date: 2023-05-13
 title: "제로 트러스트 아키텍처(ZTA)의 논리적 구성 요소"
-description: "NIST SP 800-207에 정의된 Zero Trust Architecture의 구성 요소"
+description: 
 featured_image: ""
 tags: ["Zero Trust", "ZTA", "보안", "NIST"]
 ---
