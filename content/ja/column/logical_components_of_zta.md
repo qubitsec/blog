@@ -1,7 +1,7 @@
 ---
 title: "ゼロトラストアーキテクチャ(ZTA)の論理構成要素"
 date: 2023-05-13
-description: "NIST SP 800-207で定義されたZero Trust Architectureの構成要素"
+description: 
 featured_image: ""
 tags: ["Zero Trust", "ZTA", "セキュリティ", "NIST"]
 ---
