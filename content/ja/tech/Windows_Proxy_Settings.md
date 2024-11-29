@@ -16,7 +16,7 @@ Windowsでプロキシ設定を通じてインターネット接続を構成す�
 
 まず、`インターネットオプション` ウィンドウを開きます。
 
-![internetoption](https://github.com/user-attachments/assets/27298dc1-dcc1-4116-8d9b-07195d1ece5e)
+![01](https://github.com/user-attachments/assets/60fdb9aa-d6e9-49a5-bcc3-cd59bb8b799e)
 
 ---
 
@@ -24,7 +24,7 @@ Windowsでプロキシ設定を通じてインターネット接続を構成す�
 
 インターネットオプションウィンドウで、上部の `接続` タブを選択します。
 
-![connect](https://github.com/user-attachments/assets/dd720568-81f7-4cd2-bdca-6ceffb235e94)
+![02](https://github.com/user-attachments/assets/99315967-19db-4ed8-98e6-1e09e3011b08)
 
 ---
 
@@ -33,6 +33,6 @@ Windowsでプロキシ設定を通じてインターネット接続を構成す�
 1. `LAN設定` ボタンをクリックします。
 2. プロキシサーバーと例外項目を登録します。
 
-![LAN](https://github.com/user-attachments/assets/ce80393e-2654-483b-95ae-a2ed4e3cf4be)
+![03](https://github.com/user-attachments/assets/b5912ba8-8029-402e-9cec-41a03876bbd8)
 
 ---
