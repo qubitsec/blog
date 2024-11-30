@@ -26,7 +26,7 @@ title: "ANONYMOUS LOGON, NTLM V1 사용 정책 중지"
 
 ## ANONYMOUS LOGON 비활성화 방법
 
-**참고**: [KISA 주요정보통신기반시설 W-42](https://www.kisa.or.kr/)
+**참고**: [KISA 주요정보통신기반시설 W-42](https://github.com/QubitSecurity/VAS/tree/main/v.2021.03/windows)
 
 ### 설정 방법
 
@@ -42,7 +42,7 @@ title: "ANONYMOUS LOGON, NTLM V1 사용 정책 중지"
 
 ## NTLM V1 비활성화 방법
 
-**참고**: [KISA 주요정보통신기반시설 W-77](https://www.kisa.or.kr/)
+**참고**: [KISA 주요정보통신기반시설 W-77](https://github.com/QubitSecurity/VAS/tree/main/v.2021.03/windows)
 
 ### 설정 방법
 
