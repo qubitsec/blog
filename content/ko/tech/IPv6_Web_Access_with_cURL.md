@@ -1,7 +1,7 @@
 ---
 date: 2021-08-14T01:00:00
 title: "IPv6 기반에서 curl 이용하여 웹 접속 체크"
-description: "IPv6 환경에서 curl을 이용한 웹 접속 테스트와 Apache Tomcat 서버 로그 확인 방법"
+description: 
 featured_image: ""
 tags: ["IPv6", "curl", "Apache Tomcat", "네트워크"]
 ---
