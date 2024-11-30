@@ -1,7 +1,7 @@
 ---
 date: 2021-07-14T11:58:08-04:00
 title: "MAC 주소 확인하기"
-description: "PC 서버의 고유 정보를 확인하기 위해 MAC 주소를 사용하는 방법을 안내합니다."
+description: 
 featured_image: 
 tags: ["MAC 주소", "네트워크", "PC 정보"]
 ---
