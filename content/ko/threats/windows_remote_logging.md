@@ -1,7 +1,7 @@
 ---
 date: 2019-06-24T00:01:00
 title: "Windows Remote Logging"
-description: "Active Directory 환경에서 Windows Event Collector를 활용한 Remote Logging 설정 및 사용 방법"
+description: 
 featured_image: ""
 tags: ["Windows", "Remote Logging", "Windows Event Collector", "Active Directory", "로그 관리", "보안"]
 ---
