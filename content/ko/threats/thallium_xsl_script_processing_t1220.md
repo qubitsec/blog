@@ -33,7 +33,7 @@ XSL 표준에는 복잡한 작업을 지원하기 위해 다양한 언어로 스
 
 ## 실행 동영상 (XSL Script Processing)
 
-[XSL Script Processing 실행 예시](https://youtu.be/1RoD8f8GYcw?si=u_gAMtyKrTqw-WP4)
+[XSL Script Processing 실행 예시](https://docs.plura.io/ko/video/demo/web/xsl)
 
 ---
 
