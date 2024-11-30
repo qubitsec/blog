@@ -11,7 +11,7 @@ title: "탈륨 (Thallium) 조직, XSL Script Processing 공격 수행 [T1220]"
 ## XSL Script Processing란?
 
 공격자는 XSL 파일에 스크립트를 포함하여 애플리케이션 제어를 우회하고, 코드 실행을 모호하게 할 수 있습니다.  
-이 공격 기법은 **MITRE ATT&CK**의 **'XSL 스크립트 처리 [T1220]'**으로 분류되어 관리되고 있습니다.
+이 공격 기법은 **MITRE ATT&CK**의 'XSL 스크립트 처리 [T1220]'으로 분류되어 관리되고 있습니다.
 
 ---
 
