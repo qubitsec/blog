@@ -1,7 +1,7 @@
 ---
 date: 2021-07-14T11:58:08-04:00
 title: "MACアドレスを確認する方法"
-description: "PCサーバーの固有情報を確認するためのMACアドレスの使用方法を紹介します。"
+description: 
 featured_image: 
 tags: ["MACアドレス", "ネットワーク", "PC情報"]
 ---
