@@ -7,5 +7,5 @@ cascade:
 ---
 
 "Cybersecurity is delivered in natively integrated capabilities  
-from platforms, not point products"
+from platforms, not point products"  
 – Lee Klarich, CPO, Palo Alto Networks
