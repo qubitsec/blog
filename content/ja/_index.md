@@ -6,6 +6,6 @@ cascade:
   featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 ---
 
-「るサイバーセキュリティは単一製品ではなく、 
-プラットフォームであるべきだ」 
+「るサイバーセキュリティは単一製品ではなく、 <br>
+プラットフォームであるべきだ」 <br>
 – Lee Klarich, CPO, Palo Alto Networks
