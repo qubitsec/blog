@@ -6,6 +6,6 @@ cascade:
   featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 ---
 
-"Cybersecurity is delivered in natively integrated capabilities  
-from platforms, not point products"  
+「Cybersecurity is delivered in natively integrated capabilities  
+from platforms, not point products」  
 – Lee Klarich, CPO, Palo Alto Networks
