@@ -7,5 +7,5 @@ cascade:
 ---
 
 「るサイバーセキュリティは単一製品ではなく、 
-プラットフォームであるべきだ」
+プラットフォームであるべきだ」 
 – Lee Klarich, CPO, Palo Alto Networks
