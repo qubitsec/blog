@@ -1,6 +1,6 @@
 ---
 title: "보안과 보험의 차이점"
-date: 2024-12-15T01:43:00
+date: 2024-12-15
 draft: false
 description: "보안과 보험의 차이를 통해 PLURA-XDR의 필요성과 본질적인 역할을 알아봅니다."
 featured_image: ""
