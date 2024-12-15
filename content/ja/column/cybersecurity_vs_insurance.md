@@ -1,12 +1,10 @@
 ---
-date: 2024-12-15T09:40:00
-description: サイバーセキュリティと保険の違いを通じて、PLURA-XDRの必要性と本質的な役割について考えます。
-featured_image: 
-tags: [セキュリティ, 保険, Security, Insurance, PLURA-XDR]
 title: "セキュリティと保険の違いとは何でしょうか？"
+date: 2024-12-15T01:43:00
 draft: false
+description: "サイバーセキュリティと保険の違いを通じて、PLURA-XDRの必要性と本質的な役割について考えます。"
+tags: ["セキュリティ", "保険", "Security", "Insurance", "PLURA-XDR"]
 ---
-
 
 ### セキュリティと保険の違いとは？
 
