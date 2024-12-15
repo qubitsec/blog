@@ -37,5 +37,21 @@
                 color: {{ .Site.Params.contentColor | default "#333" }};">
       {{ .Content | safeHTML }}
     </div>
+
+    <!-- 태그 섹션 -->
+    {{ with .Params.tags }}
+    <div class="mt4">
+      <h3 class="f5 b">Tags:</h3>
+      <ul class="list pl0">
+        {{ range . }}
+          <li class="dib mr2">
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="link dim blue">
+              #{{ . }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
   </article>
 {{ end }}
