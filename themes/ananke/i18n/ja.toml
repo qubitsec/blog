@@ -44,3 +44,19 @@ other = "{{ .Count }} 文字"
 
 [pageTitle]
 other = "{{ .Name }} ページ"
+
+[[translation]]
+id = "latestPostsTitle"
+translation = "最新の記事"
+
+[[translation]]
+id = "recentTitle"
+translation = "最近の記事"
+
+[[translation]]
+id = "more"
+translation = "もっと見る"
+
+[[translation]]
+id = "allTitle"
+translation = "すべての記事を見る"
