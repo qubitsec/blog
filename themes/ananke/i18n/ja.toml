@@ -17,10 +17,10 @@ other = "この記事の概要"
 other = "関連"
 
 [yourName]
-other = "あなたの名前"
+other = "お名前"
 
 [emailAddress]
-other = "Eメール"
+other = "メールアドレス"
 
 [message]
 other = "内容"
@@ -29,10 +29,10 @@ other = "内容"
 other = "メールアドレスは必須です"
 
 [send]
-other = "送信する"
+other = "送信"
 
 [taxonomyPageList]
-other = "以下に、次の分類用語を使用するページがあります “{{ .Title }}”"
+other = "以下に、次の分類用語を使用するページがあります: “{{ .Title }}”"
 
 [readingTime]
 one = "1 分で読めます"
@@ -45,18 +45,14 @@ other = "{{ .Count }} 文字"
 [pageTitle]
 other = "{{ .Name }} ページ"
 
-[[translation]]
-id = "latestPostsTitle"
-translation = "最新の記事"
+[copyright]
+other = "© 2024 キュービットセキュリティ株式会社. 全著作権所有."
 
-[[translation]]
-id = "recentTitle"
-translation = "最近の記事"
+[latestPostsTitle]
+other = "最新の記事"
 
-[[translation]]
-id = "more"
-translation = "もっと見る"
+[recentPosts]
+other = "最近の投稿"
 
-[[translation]]
-id = "allTitle"
-translation = "すべての記事を見る"
+[viewAll]
+other = "すべてを見る"
