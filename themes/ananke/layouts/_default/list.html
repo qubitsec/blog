@@ -6,10 +6,15 @@
     <section class="flex-ns flex-wrap justify-around mt5">
       {{ range .Paginator.Pages }}
         <div class="relative w-100 w-30-l mb4 bg-white" style="width: 400px; height: 400px; overflow: hidden;">
+          <!-- 제목과 링크 추가 -->
+          <a href="{{ .RelPermalink }}" class="link dim">
+            <h2 style="font-size: 1.5rem; margin-bottom: 10px;">{{ .Title }}</h2>
+          </a>
+          <!-- 요약 내용 표시 -->
           {{ if .Summary }}
-            {{ .Summary | safeHTML }}
+            <p>{{ .Summary | safeHTML }}</p>
           {{ else }}
-            {{ .Plain | truncate 300 }}
+            <p>{{ .Plain | truncate 300 }}</p>
           {{ end }}
         </div>
       {{ end }}
