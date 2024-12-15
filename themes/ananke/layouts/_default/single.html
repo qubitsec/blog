@@ -1,22 +1,12 @@
-{{ define "header" }}
-   {{ partial "page-header.html" . }}
-{{ end }}
-
 {{ define "main" }}
   {{ $section := .Site.GetPage "section" .Section }}
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <!-- 페이지 헤더 -->
     <header class="mt4 w-100">
-      <aside class="instapaper_ignoref b helvetica tracked ttu">
-        {{ i18n "socialShareText" }}
-      </aside>
-      {{- partialCached "social/share.html" . . -}}
-      
-      <!-- 제목 -->
       <h1 class="mt3 mb1" style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 500;">
-        {{ .Title }}
+        {{ .Title | default .Site.Params.defaultTitle }}
       </h1>
-      
+
       <!-- 작성자 정보 -->
       {{ with .Params.author | default .Site.Params.author }}
       <p class="tracked">
@@ -29,19 +19,12 @@
         </strong>
       </p>
       {{ end }}
-      
+
       <!-- 게시 날짜 -->
       {{ if not .Date.IsZero }}
       <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
         {{ .Date | time.Format (i18n "date_format") }}
       </time>
-      {{ end }}
-
-      <!-- 읽기 시간 및 단어 수 -->
-      {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true)) }}
-        <span class="f6 mv4 dib tracked">
-          {{ printf (i18n "readingStats") .ReadingTime .WordCount }}
-        </span>
       {{ end }}
     </header>
 
@@ -52,22 +35,6 @@
                 font-size: {{ .Site.Params.contentFontSize | default "1.1rem" }};
                 color: {{ .Site.Params.contentColor | default "#333" }};">
       {{ .Content | safeHTML }}
-      {{- partial "tags.html" . -}}
-      
-      <!-- 댓글 및 추가 콘텐츠 -->
-      <div class="mt6 instapaper_ignoref">
-        {{ if .Site.Config.Services.Disqus.Shortname }}
-          {{ template "_internal/disqus.html" . }}
-        {{ end }}
-        {{ if .Site.Params.commentoEnable }}
-          {{ partial "commento.html" . }}
-        {{ end }}
-      </div>
     </div>
-
-    <!-- 사이드바 -->
-    <aside class="w-30-l mt6-l">
-      {{ partial "menu-contextual.html" . }}
-    </aside>
   </article>
 {{ end }}
