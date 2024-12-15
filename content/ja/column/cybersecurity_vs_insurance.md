@@ -1,6 +1,6 @@
 ---
 title: "セキュリティと保険の違い"
-date: 2024-12-15T01:43:00
+date: 2024-12-15
 draft: false
 description: "セキュリティと保険の違いを通じて、PLURA-XDRの必要性とその本質的な役割を探ります。"
 featured_image: ""
