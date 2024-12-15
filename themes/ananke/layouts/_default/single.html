@@ -1,15 +1,6 @@
 {{ define "main" }}
   {{ $backgroundImage := .Params.featured_image | default .Site.Params.background_image }}
 
-  <!-- 상단 배경 이미지 어둡게 처리 -->
-  <div class="header" 
-       style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-              url('{{ $backgroundImage | relURL }}');
-              background-size: cover; 
-              background-position: center;
-              height: 300px;">
-  </div>
-
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <!-- 페이지 헤더 -->
     <header class="mt4 w-100">
