@@ -53,3 +53,7 @@ other = "최근 게시물"
 
 [viewAll]
 other = "전체 보기"
+
+[readingStats]
+one = "읽기 시간: 1분 (단어 수: {{ .WordCount }} 단어)"
+other = "읽기 시간: {{ .Count }}분 (단어 수: {{ .WordCount }} 단어)"
