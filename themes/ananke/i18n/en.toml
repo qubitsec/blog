@@ -1,5 +1,5 @@
 [more]
-other = "More"
+other = "Check out other articles"
 
 [allTitle]
 other = "All {{.Title }}"
@@ -8,13 +8,13 @@ other = "All {{.Title }}"
 other = "Recent {{.Title }}"
 
 [readMore]
-other = "read more"
+other = "Read more"
 
 [by]
 other = "By"
 
 [whatsInThis]
-other = "What's in this {{ .Type }}"
+other = "Overview of this article"
 
 [related]
 other = "Related"
@@ -35,14 +35,14 @@ other = "An email address is required."
 other = "Send"
 
 [taxonomyPageList]
-other = "Below you will find pages that utilize the taxonomy term “{{ .Title }}”"
+other = "Below are pages that use the taxonomy term “{{ .Title }}”"
 
 [readingTime]
-one = "One minute read"
+one = "1 minute read"
 other = "{{ .Count }} minutes read"
 
 [wordCount]
-one = "One word"
+one = "1 word"
 other = "{{ .Count }} words"
 
 [pageTitle]
@@ -51,19 +51,11 @@ other = "{{ .Name }} page"
 [copyright]
 other = "© 2024 Qubit Security Inc. All rights reserved."
 
-[[translation]]
-id = "latestPostsTitle"
-translation = "Latest Posts"
+[latestPostsTitle]
+other = "Latest Posts"
 
-[[translation]]
-id = "recentTitle"
-translation = "Recent Posts"
+[recentPosts]
+other = "Recent Posts"
 
-[[translation]]
-id = "more"
-translation = "Read More"
-
-[[translation]]
-id = "allTitle"
-translation = "View All Posts"
-
+[viewAll]
+other = "View All"
