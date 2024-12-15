@@ -1,10 +1,9 @@
 ---
+title: "보안과 보험의 차이점"
 date: 2024-12-15T01:43:00
-description: 보안과 보험의 차이점을 통해 PLURA-XDR의 필요성과 본질적인 역할을 알아봅니다.
-featured_image: 
-tags: [보안, 보험, Security, Insurance, PLURA-XDR]
-title: "보안과 보험의 차이점은 무엇일까요?"
 draft: false
+description: "보안과 보험의 차이를 알아보고 PLURA-XDR의 역할을 이해합니다."
+tags: ["보안", "보험", "Security", "Insurance", "PLURA-XDR"]
 ---
 
 ### 보안과 보험의 차이점은 무엇일까요?
