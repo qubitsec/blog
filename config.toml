@@ -148,7 +148,9 @@ pagerSize = 8
   summaryLength = 30
   mainSections = ["respond", "column", "tech", "threats"]
   contentFontFamily = "'Roboto', sans-serif"
-
+  contentLineHeight = "1.8"
+  contentFontSize = "1.1rem"
+  contentColor = "#333"
 
 [markup]
   [markup.goldmark]
