@@ -1,4 +1,4 @@
-title = "PLURA XDR – Cloud SECaaS Platform w/ MITRE ATT&CK"
+title = "PLURA XDR – Cloud SaaS Platform w/ MITRE ATT&CK"
 baseURL = "https://blog.plura.io"
 languageCode = "ko"
 defaultContentLanguage = "ko"
@@ -6,6 +6,7 @@ defaultContentLanguageInSubdir = true
 #defaultContentLanguageInSubdir = false
 theme = "ananke"
 #resourceDir = "resources"
+buildFuture = true
 copyright = "© 2024 Qubit Security Inc. All Rights Reserved."
 
 SectionPagesMenu = ""
