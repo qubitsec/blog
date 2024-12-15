@@ -26,6 +26,7 @@ pagerSize = 8
     [languages.ja.params]
       lang = "ja"
       background_image = "/images/ja-bg.jpg"
+      summaryLength = 30
 
   [languages.ko]
     languageCode = "ko"
@@ -36,6 +37,7 @@ pagerSize = 8
     [languages.ko.params]
       lang = "ko"
       background_image = "/images/ko-bg.jpg"
+      summaryLength = 30
 
 [menu]
 
@@ -145,6 +147,7 @@ pagerSize = 8
   css_file = ["/css/fonts.css", "/css/main.css"]
   summaryLength = 30
   mainSections = ["respond", "column", "tech", "threats"]
+  summaryLength = 30
 
 [markup]
   [markup.goldmark]
