@@ -50,3 +50,20 @@ other = "{{ .Name }} page"
 
 [copyright]
 other = "© 2024 Qubit Security Inc. All rights reserved."
+
+[[translation]]
+id = "latestPostsTitle"
+translation = "Latest Posts"
+
+[[translation]]
+id = "recentTitle"
+translation = "Recent Posts"
+
+[[translation]]
+id = "more"
+translation = "Read More"
+
+[[translation]]
+id = "allTitle"
+translation = "View All Posts"
+
