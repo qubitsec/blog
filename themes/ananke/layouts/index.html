@@ -6,7 +6,7 @@
   {{/* 메인 페이지: 모든 섹션에서 최신 글 */}}
   {{ if .IsHome }}
     <div class="pa3 pa4-ns w-100 w-70-ns center">
-      <h1>최신 글</h1>
+      <h1>{{ i18n "latestPostsTitle" }}</h1> <!-- 다국어로 "최신 글" 번역 -->
       <section class="w-100 mw8">
         {{ $latestPosts := first 3 .Site.RegularPages.ByDate.Reverse }}
         {{ range $latestPosts }}
