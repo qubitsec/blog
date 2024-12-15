@@ -48,14 +48,8 @@ other = "© 2024 큐비트시큐리티 주식회사. 모든 권리 보유."
 [latestPostsTitle]
 other = "최신 글"
 
-[recentTitle]
-other = "최근 글"
+[recentPosts]
+other = "최근 게시물"
 
-[more]
-other = "더 보기"
-
-[allTitle]
-other = "모든 글 보기"
-
-[readMore]
-other = "더 읽기"
+[viewAll]
+other = "전체 보기"
