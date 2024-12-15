@@ -58,3 +58,12 @@
    - 기존 보안 솔루션은 복잡하고 고비용 구조로 인해 기업에게 부담이 될 수 있습니다.
    - **PLURA-XDR**은 통합적이고 간단한 솔루션으로, 기업이 비용 효율적이고 효과적인 방식으로 보안을 운영할 수 있도록 지원합니다.  
    - PLURA-XDR은 새로운 보안 표준을 제시하며, **기업의 미래를 위한 필수적 선택**입니다.
+
+---
+
+### 참고 자료:
+- ["지난해 전 세계 기업 평균 데이터 유출 비용, 사상 최고치 기록" - CIO (2024년 7월 30일)](https://www.cio.com/article/3537417/%EC%A7%80%EB%82%9C%ED%95%B4-%EC%A0%84-%EC%84%B8%EA%B3%84-%EA%B8%B0%EC%97%85-%ED%8F%89%EA%B7%A0-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9C%A0%EC%B6%9C-%EB%B9%84%EC%9A%A9-%EC%82%AC%EC%83%81-%EC%B5%9C.html)
+- ["2024년 데이터 유출 비용" - IBM (2024년 7월 21일)](https://www.ibm.com/kr-ko/reports/data-breach?utm_source=chatgpt.com)
+- ["한국, 데이터 유출로 인한 평균 비용 지난 3년간 19% 증가... 45억 원 기록" - AI타임스 (2023년 7월 31일)](https://www.aitimes.kr/news/articleView.html?idxno=29379&utm_source=chatgpt.com)
+- ["최근 사이버 공격 사례 및 기업 해킹 사례" - Fortinet](https://www.fortinet.com/kr/resources/cyberglossary/recent-cyber-attacks) 
+
