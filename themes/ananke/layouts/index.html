@@ -11,7 +11,7 @@
         {{ $latestPosts := first 3 .Site.RegularPages.ByDate.Reverse }}
         {{ range $latestPosts }}
           <div class="relative w-100 mb4">
-            {{ .Summary }}
+            {{ .Render "summary-with-image" }}
           </div>
         {{ end }}
       </section>
