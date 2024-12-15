@@ -59,7 +59,3 @@ other = "모든 글 보기"
 
 [readMore]
 other = "더 읽기"
-
-[[translation]]
-id = "allTitle"
-translation = "모든 글 보기"
