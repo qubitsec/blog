@@ -139,11 +139,12 @@ pagerSize = 8
   site_logo = ""
   background_color_class = "bg-black"
   description = "PLURA-XDR provides an integrated, real-time cybersecurity solution for detecting, analyzing, and responding to evolving cyber threats with EDR, WAF, Forensic, SIEM."
-  recent_posts_number = 3
+  recent_posts_number = 10
   googleFonts = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
   customCSS = true
   css_file = ["/css/fonts.css", "/css/main.css"]
   summaryLength = 30
+  mainSections = ["respond", "column", "tech", "threats"]
 
 [markup]
   [markup.goldmark]
