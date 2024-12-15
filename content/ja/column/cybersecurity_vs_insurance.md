@@ -2,7 +2,7 @@
 title: "セキュリティと保険の違い"
 date: 2024-12-15T01:43:00
 draft: false
-description: "보안과 보험의 차이를 통해 PLURA-XDR의 필요성과 본질적인 역할을 알아봅니다."
+description: "セキュリティと保険の違いを通じて、PLURA-XDRの必要性とその本質的な役割を探ります。"
 featured_image: ""
 tags: ["セキュリティ", "保険", "PLURA-XDR", "Security", "Insurance"]
 ---
