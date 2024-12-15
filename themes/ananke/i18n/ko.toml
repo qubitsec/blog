@@ -45,17 +45,20 @@ other = "{{ .Count }} 글자"
 [copyright]
 other = "© 2024 큐비트시큐리티 주식회사. 모든 권리 보유."
 
-[[translation]]
-id = "latestPostsTitle"
-translation = "최신 글"
+[latestPostsTitle]
+other = "최신 글"
 
-[[translation]]
-id = "recentTitle"
-translation = "최근 글"
+[recentTitle]
+other = "최근 글"
 
-[[translation]]
-id = "more"
-translation = "더 보기"
+[more]
+other = "더 보기"
+
+[allTitle]
+other = "모든 글 보기"
+
+[readMore]
+other = "더 읽기"
 
 [[translation]]
 id = "allTitle"
