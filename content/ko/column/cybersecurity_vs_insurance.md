@@ -3,7 +3,7 @@ title: "보안과 보험의 차이점"
 date: 2024-12-15
 draft: false
 description: "보안과 보험의 차이를 통해 PLURA-XDR의 필요성과 본질적인 역할을 알아봅니다."
-featured_image: "cdn/column/cybersecurity_vs_insurance-1.png"
+featured_image: "cdn/column/cybersecurity_vs_insurance.png"
 tags: ["보안", "보험", "Security", "Insurance", "PLURA-XDR"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["보안", "보험", "Security", "Insurance", "PLURA-XDR"]
 보안과 보험은 모두 위협에 대비한다는 점에서 공통점이 있지만, **비용, 기업 성장, 그리고 본질적 역할** 측면에서 보안과 보험의 차이는 극명합니다.  
 `PLURA-XDR`은 단순히 위협에 대비하는 것을 넘어 기업의 지속적인 성장과 효율적인 운영을 지원하며, 이러한 점에서 보험과는 본질적으로 다른 접근 방식을 취합니다.
 
-![보안과 보험의 차이점](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance-1.png)
+![보안과 보험의 차이점](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance.png)
 
 ---
 
