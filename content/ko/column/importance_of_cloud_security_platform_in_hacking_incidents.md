@@ -2,11 +2,9 @@
 date: 2024-06-12
 title: "해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성"
 description: 
-featured_image: ""
+featured_image: "cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
 tags: ["보안", "클라우드 보안", "정보보호", "해킹 대응", "로그 관리", "구독형 보안 서비스"]
 ---
-
-![column_20240612](https://github.com/user-attachments/assets/1ec6384c-5aee-4b37-993f-701d867d3a8b)
 
 ## 해킹 사건과 보안의 중요성
 
@@ -15,6 +13,9 @@ tags: ["보안", "클라우드 보안", "정보보호", "해킹 대응", "로그
 
 **큐비트시큐리티(주)의 신승민 대표**는 해킹 위협에서 정보를 안전하게 보호할 수 있는 **클라우드 보안 플랫폼**의 필요성을 강조합니다.
 
+![보안과 보험의 차이점](https://blog.plura.io/cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png)
+
+<!--more-->
 ---
 
 ## 최근 해킹 사건과 문제의 심각성
