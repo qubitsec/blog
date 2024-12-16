@@ -14,6 +14,7 @@ tags: ["보안", "보험", "Security", "Insurance", "PLURA-XDR"]
 
 ![보안과 보험의 차이점](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance.png)
 
+<!--more-->
 ---
 
 ### 1. **해킹 사고 대응 비용 증가**
