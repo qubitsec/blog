@@ -14,6 +14,7 @@ tags: ["セキュリティ", "保険", "PLURA-XDR", "Security", "Insurance"]
 
 ![セキュリティと保険の違い](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance.png)
 
+<!--more-->
 ---
 
 ### 1. **ハッキング事故対応費用の増加**
