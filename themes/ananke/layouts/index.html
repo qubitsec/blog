@@ -4,12 +4,12 @@
     {{ .Content }}
   </article>
 
-  {{/* 메인 페이지: 모든 섹션에서 최신 글 */}}
   {{ if .IsHome }}
     <div class="pa3 pa4-ns w-100 w-70-ns center">
-      <h1>{{ i18n "latestPostsTitle" }}</h1> <!-- 다국어로 "최신 글" 번역 -->
+      <h1>{{ i18n "latestPostsTitle" }}</h1>
       <section class="w-100 mw8">
-        {{ $latestPosts := first 3 .Site.RegularPages.ByDate.Reverse }}
+        {{ $n_posts := $.Site.Params.recent_posts_number | default 3 }} <!-- 동적 설정 -->
+        {{ $latestPosts := first $n_posts .Site.RegularPages.ByDate.Reverse }}
         {{ range $latestPosts }}
           <div class="relative w-100 mb4 flex-ns flex-wrap">
             {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
@@ -40,72 +40,5 @@
         {{ end }}
       </section>
     </div>
-  {{ else }}
-    {{/* 기존 섹션 동작 유지 */}}
-    {{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
-    {{ range $mainSections }}
-      {{ $section_name := . }}
-      {{ $section := where $.Site.RegularPages "Section" "in" $section_name }}
-      {{ $section_count := len $section }}
-      {{ if ge $section_count 1 }}
-        <div class="pa3 pa4-ns w-100 w-70-ns center">
-          {{ with $.Site.GetPage "section" $section_name }}
-            <h1 class="flex-none">
-              {{ $.Param "recent_copy" | default (i18n "recentTitle" .) }}
-            </h1>
-          {{ end }}
-
-          {{ $n_posts := $.Param "recent_posts_number" | default 3 }}
-          <section class="w-100 mw8">
-            {{ range (first $n_posts $section) }}
-              <div class="relative w-100 mb4 flex-ns flex-wrap">
-                {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
-                {{ $summary := .Content | plainify | truncate (default 30 .Site.Params.summaryLength) "..." }}
-
-                <!-- 이미지: 왼쪽에 작게 표시 -->
-                {{ if $featured_image }}
-                  <div class="w-30-ns pr3-ns mb4 mb0-ns">
-                    <a href="{{ .RelPermalink }}">
-                      <img src="{{ $featured_image }}" alt="{{ .Title }}" class="db w-100 br2 shadow-4" style="max-height: 150px; object-fit: cover;">
-                    </a>
-                  </div>
-                {{ end }}
-
-                <!-- 타이틀 및 요약 -->
-                <div class="w-70-ns">
-                  <h2 class="f3 fw4 lh-title mt0">
-                    <a href="{{ .RelPermalink }}" class="link black dim">{{ .Title }}</a>
-                  </h2>
-                  <p class="f5 lh-copy">{{ $summary }}</p>
-
-                  <!-- 더 보기 링크 -->
-                  <a href="{{ .RelPermalink }}" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">
-                    {{ $.Param "read_more_copy" | default (i18n "readMore") }}
-                  </a>
-                </div>
-              </div>
-            {{ end }}
-          </section>
-
-          {{ if ge $section_count (add $n_posts 1) }}
-            <section class="w-100">
-              <h1 class="f3">{{ i18n "more" }}</h1>
-              {{ range (first 4 (after $n_posts $section)) }}
-                <h2 class="f5 fw4 mb4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "ml3" "mr3" }}">
-                  <a href="{{ .RelPermalink }}" class="link black dim">
-                    {{ .Title }}
-                  </a>
-                </h2>
-              {{ end }}
-              {{ with $.Site.GetPage "section" $section_name }}
-                <a href="{{ .RelPermalink }}" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">
-                  {{ i18n "allTitle" . }}
-                </a>
-              {{ end }}
-            </section>
-          {{ end }}
-        </div>
-      {{ end }}
-    {{ end }}
   {{ end }}
 {{ end }}
