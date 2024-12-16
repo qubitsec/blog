@@ -3,7 +3,7 @@ title: "セキュリティと保険の違い"
 date: 2024-12-15
 draft: false
 description: "セキュリティと保険の違いを通じて、PLURA-XDRの必要性とその本質的な役割を探ります。"
-featured_image: "cdn/column/cybersecurity_vs_insurance-1.png"
+featured_image: "cdn/column/cybersecurity_vs_insurance.png"
 tags: ["セキュリティ", "保険", "PLURA-XDR", "Security", "Insurance"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["セキュリティ", "保険", "PLURA-XDR", "Security", "Insurance"]
 セキュリティと保険はどちらもリスクに備えるという点で共通していますが、**費用、企業の成長、そして本質的な役割**の観点でその違いは顕著です。  
 `PLURA-XDR`は単にリスクに備えるだけでなく、企業の持続的な成長と効率的な運営を支援し、この点で保険とは本質的に異なるアプローチを取っています。
 
-![セキュリティと保険の違い](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance-1.png)
+![セキュリティと保険の違い](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance.png)
 
 ---
 
