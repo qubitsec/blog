@@ -2,11 +2,11 @@
 date: 2024-09-23T10:58:08-04:00
 title: "PLURA 포렌식으로 빠르게 대응하세요"
 description:
-featured_image: 
+featured_image: "cdn/column/plura_forensic_quick_analysis.png"
 tags: ["PLURA 포렌식", "보안 솔루션", "사이버 보안", "포렌식", "보안 문제 해결", "자동 데이터 수집"]
 ---
 
-![forensic](https://github.com/user-attachments/assets/45d495de-4fef-4be8-90eb-7bdd8235b59f)
+![보안과 보험의 차이점](https://blog.plura.io/cdn/column/plura_forensic_quick_analysis.png)
 
 ## 기업 보안의 중요성
 
