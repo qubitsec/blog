@@ -2,11 +2,9 @@
 date: 2024-06-12
 title: "ハッキング事件に対応するクラウドセキュリティプラットフォームの重要性"
 description: 
-featured_image: ""
+featured_image: "cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
 tags: ["セキュリティ", "クラウドセキュリティ", "情報保護", "ハッキング対応", "ログ管理", "サブスクリプション型セキュリティサービス"]
 ---
-
-![column_20240612](https://github.com/user-attachments/assets/1ec6384c-5aee-4b37-993f-701d867d3a8b)
 
 ## ハッキング事件とセキュリティの重要性
 
@@ -16,6 +14,9 @@ tags: ["セキュリティ", "クラウドセキュリティ", "情報保護", "
 
 **Qubit Security株式会社のシン・スンミン代表**は、ハッキングの脅威から情報を安全に守るための**クラウドセキュリティプラットフォーム**の必要性を強調しています。
 
+![キュービットセキュリティの代表取締役、シン・スンミン](https://blog.plura.io/cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png)
+
+<!--more-->
 ---
 
 ## 最近のハッキング事件と問題の深刻性
