@@ -2,11 +2,9 @@
 date: 2024-09-23T10:58:08-04:00
 title: "PLURAフォレンジックで迅速に対応しましょう"
 description:
-featured_image: 
+featured_image: "cdn/column/plura_forensic_quick_analysis.png"
 tags: ["PLURAフォレンジック", "セキュリティソリューション", "サイバーセキュリティ", "フォレンジック", "セキュリティ問題解決", "自動データ収集"]
 ---
-
-![forensic](https://github.com/user-attachments/assets/45d495de-4fef-4be8-90eb-7bdd8235b59f)
 
 ## 企業セキュリティの重要性
 
@@ -15,6 +13,8 @@ tags: ["PLURAフォレンジック", "セキュリティソリューション", 
 
 しかし、**`PLURAフォレンジック`**を使用すれば、こうした不安を軽減することができます。  
 PLURAフォレンジックは、**異常な兆候や改ざんされたデータを自動で分析**し、迅速に問題を解決できる強力なセキュリティソリューションです。
+
+![PLURAフォレンジック](https://blog.plura.io/cdn/column/plura_forensic_quick_analysis.png)
 
 ---
 
