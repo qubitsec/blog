@@ -13,7 +13,7 @@
         {{ range $latestPosts }}
           <div class="relative w-100 mb4 flex-ns flex-wrap">
             {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
-            {{ $summary := .Content | plainify | truncate (default 30 .Site.Params.summaryLength) "..." }}
+            {{ $summary := .Summary | plainify | truncate (default .Site.Params.summaryLength 150) "..." }}
 
             <!-- 이미지: 왼쪽에 작게 표시 -->
             {{ if $featured_image }}
