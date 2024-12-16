@@ -16,6 +16,7 @@ PLURAフォレンジックは、**異常な兆候や改ざんされたデータ�
 
 ![PLURAフォレンジック](https://blog.plura.io/cdn/column/plura_forensic_quick_analysis.png)
 
+<!--more-->
 ---
 
 ## PLURAフォレンジックの主な特徴
