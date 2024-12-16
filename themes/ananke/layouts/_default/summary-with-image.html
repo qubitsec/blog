@@ -11,21 +11,16 @@
         </div>
       {{ end }}
 
-      <!-- 콘텐츠 내용 -->
+      <!-- 요약에서 마크다운 이미지 제거 -->
       <div class="blah w-100{{ if $featured_image }} w-60-ns {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr3-ns" "pl3-ns" }}{{ end }}">
-        <!-- 제목 -->
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="{{.RelPermalink}}" class="color-inherit dim link">
             {{ .Title }}
           </a>
         </h1>
-        
-        <!-- Summary에서 마크다운 이미지만 제거 -->
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           {{ .Summary | replaceRE "!\\[[^\\]]*\\]\\([^\\)]+\\)" "" | safeHTML }}
         </div>
-        
-        <!-- Read More 버튼 -->
         <a href="{{.RelPermalink}}" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">
           {{ $.Param "read_more_copy" | default (i18n "readMore") }}
         </a>
