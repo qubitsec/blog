@@ -1,12 +1,11 @@
 ---
 date: 2023-01-12
+draft: false
 title: "WordPressサイトの必須セキュリティ TOP 10"
 description: 
-featured_image: 
+featured_image: "cdn/column/wordpress_security_top10-1.png"
 tags: ["WordPress", "WordPress セキュリティ", "WordPress プラグイン", "セキュリティプラグイン"]
 ---
-
-![wordpress-589121_960_720](https://github.com/user-attachments/assets/4d856104-2141-4890-8f1d-9061fbab36da)
 
 WordPressは、ウェブサイトを簡単かつ低コストで制作できるという利点から、10年以上にわたり世界中で広く利用されてきました。2022年の統計では、全世界のウェブサイトの43%がWordPressで構築されていると言われ、その人気の高さを物語っています。
 
@@ -14,6 +13,8 @@ WordPressは、ウェブサイトを簡単かつ低コストで制作できる�
 
 ハッキングを防ぐためには、基本的で初歩的なことに注意を払う必要があります。大げさな技術ではなく、以下の簡単な対策を講じることで、ウェブサイトを保護することができます。ここでは、WordPressの脆弱性対策セキュリティTOP10を選定しました。
 
+![wordpress_security_top10](https://blog.plura.io/cdn/column/wordpress_security_top10-1.png)
+<!--more-->
 ---
 
 ## 1. ソフトウェア（テーマ、プラグインなど）の更新
