@@ -1,12 +1,11 @@
 ---
 date: 2017-08-18T00:01:00
-description: 
-featured_image: 
-tags: ["ARP Spoofing", "네트워크 보안", "해킹 기법", "사이버 보안", "정보 보호"]
+draft: false
 title: "누군가 당신의 인터넷 사용을 훔쳐보고 있다? ARP Spoofing"
+description: 
+featured_image: "cdn/threats/arp_spoofing_overview-1.png"
+tags: ["ARP Spoofing", "네트워크 보안", "해킹 기법", "사이버 보안", "정보 보호"]
 ---
-
-![ARP-Spoofing](https://github.com/user-attachments/assets/c1700da8-ddde-4a97-bc88-d16769939bbf)
 
 ARP 스푸핑은 간단하지만 피해는 치명적인 공격입니다.  
 그럼 도대체 ARP 스푸핑이 뭘까요?
@@ -18,6 +17,9 @@ ARP 스푸핑은 간단하지만 피해는 치명적인 공격입니다.
 >
 > **2015년 3월** 국내 보안업계 최대 행사인 행정자치부 주최 '전자정부 솔루션 페어'와 '세계 보안 엑스포'의 홈페이지가 ARP 스푸핑 공격에 당해 행사 전날 밤 동시에 마비됐습니다.  
 > 해킹 사실을 확인한 행사 조직위원회 측은 악성코드가 퍼져나갈 것을 우려하여 서버 접속을 중단시켰습니다.
+
+<!--more-->
+![arp_spoofing_overview](https://blog.plura.io/cdn/threats/arp_spoofing_overview-1.png)
 
 ## ARP (Address Resolution Protocol)
 
