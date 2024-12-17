@@ -1,16 +1,19 @@
 ---
 date: 2024-06-03
+draft: false
 title: "[WEB] Webシェル攻撃とcreate_function関数の脆弱性"
 description: "Webシェル攻撃の仕組みとcreate_function関数のセキュリティ脆弱性を分析"
-featured_image: ""
+featured_image: "cdn/column/webshell_attack_and_create_function-1.png"
 tags: ["Webシェル", "セキュリティ", "PHP", "create_function"]
 ---
-
-![webshell-1](https://github.com/user-attachments/assets/65f2db3d-7538-427e-a804-38cc3201c812)
 
 ### Webシェル(Webshell)の概要
 
 Webシェル(Webshell)とは、Webサーバーにアップロードされることで、攻撃者がリモートからサーバーを制御できるようにする悪意のあるスクリプトです。これにより、サーバーのファイルシステムにアクセスし、コマンドを実行することが可能になります。
+
+![webshell_attack_and_create_function](https://blog.plura.io/cdn/column/webshell_attack_and_create_function-1.png)
+<!--more-->
+---
 
 #### 主な機能:
 - **ファイル管理:** アップロード、ダウンロード、編集、削除
