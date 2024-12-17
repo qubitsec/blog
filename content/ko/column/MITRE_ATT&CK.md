@@ -1,14 +1,17 @@
 ---
 date: 2020-12-21T00:00:00
 description: 
-featured_image: 
+featured_image: "cdn/column/mitre_attck/matrix-1.png"
 tags: ["MITRE ATT&CK", "보안 프레임워크", "APT 공격", "사이버 보안", "PLURA"]
 title: "MITRE ATT&CK 이해"
 ---
 
-![mitre](https://github.com/user-attachments/assets/adce73fe-b3c9-43f5-962e-8d26a1c9d75a)
-
 마이터(MITRE)는 취약점 데이터베이스인 CVE(Common Vulnerabilities and Exposures)를 감독하는 비영리 단체로 어택(ATT&CK, Adversarial Tactics, Techniques 및 Common Knowledge)이라는 사이버 공격 전술 및 기술에 대한 정보를 기반으로 하는 보안 프레임워크를 제공합니다.
+
+![Mitre-matrix](https://blog.plura.io/cdn/column/mitre_attck/matrix-1.png)
+
+<!--more-->
+---
 
 Windows Enterprise Network에 대한 APT 공격의 TTPs(tactics, techniques, procedures)를 문서화함으로써 시작하였으며, 공격자가 엔드 포인트(End Point) 또는 시스템과 상호 작용하여 발생한 행동 패턴을 분석, 즉 공격자의 행위를 식별해줄 수 있는 프레임워크를 제공합니다. <br>
 공격자의 목표를 나타내는 전술(Tactics)을 정찰 지점에서 유출 또는 공격의 최종 목표까지 선형으로 제시되며, 목표 달성을 위한 실제 공격 기술(Techniques)을 항목별로 분류하여 제공합니다.
