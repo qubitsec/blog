@@ -7,8 +7,6 @@ featured_image: "cdn/threats/replay_attack_explained-1.png"
 tags: ["リプレイ攻撃", "Replay attack", "セキュリティ", "ログ分析", "ハッキング検知", "模擬ハッキング", "Post-body"]
 ---
 
-## リプレイ攻撃(Replay Attack)とは？
-
 リプレイ攻撃(Replay Attack)は、中間者攻撃(Man-in-the-Middle Attack)の下位バージョンの一つであり、過去にキャプチャされたデータを再利用してシステムにアクセスしたり、不正利用する攻撃です。
 
 PLURAでは、検知された攻撃ログを活用して実際の攻撃を再現(Replay)できる**リプレイ攻撃**機能を提供しています。  
