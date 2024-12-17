@@ -2,11 +2,9 @@
 date: 2023-01-12
 title: "워드프레스로 만든 사이트 필수 보안 TOP 10"
 description:
-featured_image: 
+featured_image: "cdn/column/wordpress_security_top10-1.png"
 tags: ["WordPress", "WordPress 보안", "WordPress Plugin", "워드프레스 플러그인"]
 ---
-
-![wordpress-589121_960_720](https://github.com/user-attachments/assets/4d856104-2141-4890-8f1d-9061fbab36da)
 
 워드프레스는 웹사이트를 쉽고 저렴하게 제작할 수 있다는 장점 때문에 십 년 넘게 전세계적으로 널리 사랑 받아오고 있습니다. 2022년도 기준으로  전세계 웹사이트의 43%가 워드프레스로 구축되었다고 하니 그 인기가 얼마나 대단한지 가늠할 수 있을 것입니다.
 
@@ -14,7 +12,9 @@ tags: ["WordPress", "WordPress 보안", "WordPress Plugin", "워드프레스 플
 
 해킹을 방지하려면 아주 기본적이고 기초적인 것부터 신경 써야 합니다. 거창한 기술이 아니더라도 다음의 간단한 조치를 취함으로써 웹사이트를 보호할 수 있기 때문에 워드프레스 취약점 보안 TOP10을 선정해 보았습니다.
 
- 
+![wordpress_security_top10](https://blog.plura.io/cdn/column/wordpress_security_top10-1.png)
+<!--more-->
+---
 
 ## 1. 소프트웨어(테마,플러그인 등) 업데이트
 
