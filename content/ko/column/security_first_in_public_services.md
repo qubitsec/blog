@@ -1,12 +1,10 @@
 ---
 date: 2021-08-14T00:00:00
-description: 
-featured_image: 
-tags: ["비대면 서비스", "보안", "ISMS-P", "인증 관리", "PLURA"]
 title: "퍼블릭 비대면 서비스 선택 시 확인할 보안 서비스"
+description: 
+featured_image: "cdn/column/untact_ontact-1.png"
+tags: ["비대면 서비스", "보안", "ISMS-P", "인증 관리", "PLURA"]
 ---
-
-![20201207_1](https://github.com/user-attachments/assets/af49899a-2b63-42e6-9402-7f8dc5b34550)
 
 코로나는 온라인 비대면 서비스 증대에 폭발적인 촉매제 역할을 하고 있습니다.
 
@@ -18,7 +16,9 @@ title: "퍼블릭 비대면 서비스 선택 시 확인할 보안 서비스"
 
 그러므로, 퍼블릭 비대면 서비스를 선택할 때 고려할 최우선은 “보안“입니다.
 
- 
+![untact_ontact](https://blog.plura.io/cdn/column/untact_ontact-1.png)
+<!--more-->
+--- 
 
 **ISMS-P  항목 中 2. 보호대책 요구 사항 > 2.5 인증 및 권한 관리를 살펴보겠습니다.**
 > 2.5.3 사용자 인증
