@@ -7,8 +7,6 @@ featured_image: "cdn/tech/windows_remote_logging-1.png"
 tags: ["Windows", "リモートロギング", "Windows Event Collector", "Active Directory", "ログ管理", "セキュリティ"]
 ---
 
-## Windowsリモートロギング概要
-
 Active Directory環境で**Windows Event Collector(WEC)**を構成すると、リモートイベントログを中央で収集・管理することができます。  
 この機能により、集中型ログ管理とモニタリングが可能となり、組織のセキュリティと運用効率が向上します。
 <!--more-->
