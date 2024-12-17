@@ -1,14 +1,17 @@
 ---
 date: 2020-12-21T00:00:00
 description: 
-featured_image: 
+featured_image: "cdn/column/matrix-1.png"
 tags: ["MITRE ATT&CK", "セキュリティフレームワーク", "APT攻撃", "サイバーセキュリティ", "PLURA"]
 title: "MITRE ATT&CKの理解"
 ---
 
-![mitre](https://github.com/user-attachments/assets/adce73fe-b3c9-43f5-962e-8d26a1c9d75a)
-
 マイター（MITRE）は、脆弱性データベースであるCVE（Common Vulnerabilities and Exposures）を監督する非営利団体であり、ATT&CK（Adversarial Tactics, Techniques, and Common Knowledge）というサイバー攻撃戦術および技術に関する情報を提供するセキュリティフレームワークを提供しています。
+
+![Mitre_matrix](https://blog.plura.io/cdn/column/matrix-1.png)
+
+<!--more-->
+---
 
 Windowsエンタープライズネットワークに対するAPT攻撃のTTP（戦術、技術、手順）を文書化することで始まり、攻撃者がエンドポイントまたはシステムと相互作用する際に発生する行動パターンを分析し、攻撃者の行動を識別するフレームワークを提供します。  
 攻撃者の目標を示す戦術（Tactics）は、偵察からデータ流出または攻撃の最終目標までを線形に示し、目標達成のための具体的な攻撃技術（Techniques）を分類して提供します。
