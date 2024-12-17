@@ -53,6 +53,8 @@ tags: ["보안", "보험", "Security", "Insurance", "PLURA-XDR"]
 - 보안은 단순히 사후 대처 수단이 아닌, 사고 자체를 차단하고 예방하는 핵심 시스템입니다.  
 - 결론적으로, **보안과 보험을 비교하는 것 자체가 잘못된 접근**이며, 보안은 기업의 생존과 성장을 위한 **필수 과제**임을 명확히 이해해야 합니다.  
 
+![구명조끼와 경고 시스템](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance-2.png)
+
 ---
 
 ### 4. **`PLURA-XDR`이 제공하는 근본적 차별성**
