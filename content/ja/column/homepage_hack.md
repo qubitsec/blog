@@ -1,12 +1,11 @@
 ---
 date: 2020-06-04T00:00:00
-description: 
-featured_image: 
-tags: ["ホームページ改ざん", "セキュリティ", "マルウェア", "ウェブシェル", "PLURA"]
+draft: false
 title: "ホームページ改ざんハッキング技術が進化、セキュリティ強化が必要"
+description: 
+featured_image: "cdn/column/homepage_hack-1.png"
+tags: ["ホームページ改ざん", "セキュリティ", "マルウェア", "ウェブシェル", "PLURA"]
 ---
-
-![2020-06-04](https://github.com/user-attachments/assets/c2c78f2c-79a7-4859-b2f1-deb670809d48)
 
 ハッカーはウェブサイトを攻撃して必要な情報を盗み取った後、二次的な被害を引き起こすためにホームページにマルウェアを埋め込みます。
 
@@ -19,6 +18,10 @@ title: "ホームページ改ざんハッキング技術が進化、セキュリ
 しかし、従来のSIEMやセキュリティ機器では、このような攻撃を効果的に防ぐ機能が実装されていません。
 
 **PLURA製品**を使用すれば、数回のクリックで簡単にホームページ改ざんハッキングを検知し、管理することができます。
+
+![homepage_hack](https://blog.plura.io/cdn/column/homepage_hack-1.png)
+<!--more-->
+---
 
 # ホームページ改ざんハッキングの検知方法
 
