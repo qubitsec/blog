@@ -8,8 +8,8 @@
     <!-- 카드 섹션 -->
     <section class="flex flex-wrap justify-between mt5">
       {{ range .Paginator.Pages }}
-        <div class="relative mb4 bg-white br3 shadow-1"
-             style="flex: 1 1 calc(100% - 1rem); max-width: calc(100% - 1rem); margin: 0.5rem;">
+        <div class="relative bg-white br3 shadow-1"
+             style="flex: 1 1 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); margin: 0.5rem; box-sizing: border-box;">
 
           <!-- Featured Image -->
           {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
@@ -56,15 +56,15 @@
   <!-- 추가 반응형 CSS -->
   <style>
     @media (min-width: 1200px) {
-      /* 데스크탑: 한 줄에 4개 카드 */
+      /* 데스크탑: 한 줄에 3개 */
       .flex-wrap > div {
-        flex: 1 1 calc(25% - 1rem);
-        max-width: calc(25% - 1rem);
+        flex: 1 1 calc(33.333% - 1rem);
+        max-width: calc(33.333% - 1rem);
       }
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
-      /* 태블릿: 한 줄에 2개 카드 */
+      /* 태블릿: 한 줄에 2개 */
       .flex-wrap > div {
         flex: 1 1 calc(50% - 1rem);
         max-width: calc(50% - 1rem);
@@ -72,7 +72,7 @@
     }
 
     @media (max-width: 767px) {
-      /* 모바일: 한 줄에 1개 카드 */
+      /* 모바일: 한 줄에 1개 */
       .flex-wrap > div {
         flex: 1 1 calc(100% - 1rem);
         max-width: calc(100% - 1rem);
