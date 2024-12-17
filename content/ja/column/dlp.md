@@ -1,12 +1,11 @@
 ---
 date: 2020-09-07T00:00:00
-description: 
-featured_image: 
-tags: 
+draft: false
 title: "ウェブを通じたデータ漏洩ハッキング対応の概要"
+description: 
+featured_image: "cdn/column/web_data_Loss_Prevention-1.png"
+tags: ["データ漏洩防止", "DLPソリューション", "ウェブデータ漏洩検知", "SQLインジェクション対策"]
 ---
-
-![20200907_4](https://github.com/user-attachments/assets/bf4bad1a-514d-49af-9736-4c517f4856d9)
 
 ハッキングの最終目的はデータ漏洩です。
 
@@ -18,7 +17,9 @@ title: "ウェブを通じたデータ漏洩ハッキング対応の概要"
 
 罰金、集団損害賠償、場合によっては刑事告発にまで発展する可能性があります。
 
- 
+![web_data_Loss_Prevention](https://blog.plura.io/cdn/column/web_data_Loss_Prevention-1.png)
+<!--more-->
+---
 
 では、どのようにデータ漏洩を検知することができるのでしょうか？
 
