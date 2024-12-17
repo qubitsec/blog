@@ -1,12 +1,10 @@
 ---
 date: 2020-12-30T00:00:00
 description: 
-featured_image: 
+featured_image: "cdn/column/bastion_hosts-1.png"
 tags: ["Bastion Host", "AWS", "VPC", "EC2", "보안", "Private Subnet"]
 title: "Bastion Host 운영"
 ---
-
-![terraformawsbastion-1](https://github.com/user-attachments/assets/15b39548-c2ed-43fe-86f4-e4335f39f88d)
 
 ## Bastion Host란?
 
@@ -15,6 +13,10 @@ Bastion Host는 Public 네트워크에서 Private 네트워크에 대한 액세�
 
 - Linux 인스턴스는 Public Subnet에 연결된 Bastion Host를 통해 Private Subnet에 있는 리소스에 접근할 수 있습니다.  
 - Bastion Host는 SSH 트래픽을 허용하며, Security Group을 통해 제어됩니다.
+
+![bastion_host](https://blog.plura.io/cdn/column/bastion_hosts-1.png)
+<!--more-->
+---
 
 다음 다이어그램은 Bastion Host를 통한 연결을 설명합니다:
 
