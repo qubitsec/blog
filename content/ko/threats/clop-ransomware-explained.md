@@ -1,20 +1,20 @@
 ---
 date: 2020-12-30T00:01:00
-description: 
-featured_image: 
-tags: ["클롭 랜섬웨어", "AD 서버 보안", "랜섬웨어 방지", "사이버 보안", "해킹 대응"]
+draft: false
 title: "클롭(CLOP) 랜섬웨어란?"
+description: 
+featured_image: "cdn/threats/clop-ransomware-explained-1.png"
+tags: ["클롭 랜섬웨어", "AD 서버 보안", "랜섬웨어 방지", "사이버 보안", "해킹 대응"]
 ---
-
-![blog_banner_20210104_1](https://github.com/user-attachments/assets/0aae715c-e490-4577-96a7-0adac9ced2da)
 
 2020년 12월 15일, 국내 대형 유통 기업의 고객 정보가 암호화되는 해킹 사건이 발생했습니다.  
 추가적인 확산을 막기 위해 사내 네트워크를 차단하면서 영업활동이 잠시 중단되었습니다.  
 
 해커 조직은 데이터 복구를 위한 조건으로 고액의 돈을 요구하며 협박하였고,  
 이로 인해 기업의 영업활동과 브랜드 이미지에 막대한 피해가 예상됩니다.
+<!--more-->
 
----
+![clop-ransomware-explained](https://blog.plura.io/cdn/threats/clop-ransomware-explained-1.png)
 
 ## 클롭(CLOP) 랜섬웨어란?
 
