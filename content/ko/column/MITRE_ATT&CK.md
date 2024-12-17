@@ -8,7 +8,7 @@ title: "MITRE ATT&CK 이해"
 
 마이터(MITRE)는 취약점 데이터베이스인 CVE(Common Vulnerabilities and Exposures)를 감독하는 비영리 단체로 어택(ATT&CK, Adversarial Tactics, Techniques 및 Common Knowledge)이라는 사이버 공격 전술 및 기술에 대한 정보를 기반으로 하는 보안 프레임워크를 제공합니다.
 
-![Mitre-matrix](https://blog.plura.io/cdn/column/mitre_attck/matrix-1.png)
+![Mitre_matrix](https://blog.plura.io/cdn/column/mitre_attck/matrix-1.png)
 
 <!--more-->
 ---
