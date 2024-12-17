@@ -1,9 +1,10 @@
 ---
 date: 2019-02-14T00:00:00
-description: 
-featured_image: 
-tags: 
+draft: false
 title: "오픈소스 웹 방화벽 WebKnight"
+description: 
+featured_image: "cdn/tech/webknight-1.png"
+tags: 
 ---
 
 WebKnight는 AQTRONIX사에서 개발한 IIS 웹서버에 설치할 수 있는 공개용 웹 방화벽입니다.
@@ -11,7 +12,8 @@ WebKnight는 ISAPI 필터 형태로 동작하며, IIS 서버 앞단에 위치하
 IIS 웹서버로 들어온 모든 웹 요청에 대해 웹서버 관리자가 설정한 필터 룰에 따라 검증을 하고
 SQL Injection 공격 등 특정 웹 요청을 사전에 차단합니다.
 
- 
+<!--more-->
+---
 
 ## 1.설치 방법
 
