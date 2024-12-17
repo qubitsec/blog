@@ -7,8 +7,6 @@ featured_image: "cdn/tech/sqlmap-1.png"
 tags: ["sqlmap", "SQL Injection", "セキュリティ", "侵入テスト", "データベース"]
 ---
 
-## sqlmapとは？
-
 **sqlmap**は、SQL Injectionの脆弱性を検出し悪用できるPythonで作成されたオープンソースの侵入テストツールです。
 
 <!--more-->
