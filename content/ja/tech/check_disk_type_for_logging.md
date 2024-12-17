@@ -1,20 +1,20 @@
 ---
 date: 2021-07-16T00:00:00
-description: 
-featured_image: 
-tags: 
+draft: false
 title: "ロギング(Logging)にSSDを使用する"
+description: 
+featured_image: "cdn/tech/check_disk_type_for_logging-1.png"
+tags: 
 ---
-
-![blog_banner_20210716_1](https://github.com/user-attachments/assets/d7ceea36-2dfb-4493-8709-39d7d9888bd7)
-
-<br>
 
 同時接続が増加すると、パフォーマンスに影響を与える要素が多くなります。
 
 特にウェブシステムでは、アクセス数の増加に伴い、ロギング(logging)も増加します。
 
 '/var/log' がHDDよりもSSDである場合、システムの安定した運用に役立ちます。
+
+<!--more-->
+---
 
 現在使用しているディスクがSSDかHDDかを確認するコマンドは以下の通りです。
 
