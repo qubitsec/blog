@@ -1,18 +1,18 @@
 ---
 date: 2023-02-20T00:00:00
-description: 
-featured_image: 
-tags: ["ANONYMOUS LOGON", "NTLM V1", "セキュリティポリシー", "Microsoft", "KISA", "LAN Manager", "認証セキュリティ"]
+draft: false
 title: "ANONYMOUS LOGON、NTLM V1 使用ポリシーの無効化"
+description: 
+featured_image: "cdn/tech/disable_anonymous_logon_ntlmv1_policy-1.png"
+tags: ["ANONYMOUS LOGON", "NTLM V1", "セキュリティポリシー", "Microsoft", "KISA", "LAN Manager", "認証セキュリティ"]
 ---
-
-![column-20230220-4](https://github.com/user-attachments/assets/2611df5b-5c37-4cf1-8ee8-56ee3c8cc0db)
 
 ## ANONYMOUS LOGONとは？
 
 匿名ユーザーアカウントを通じて**認証なしでファイルおよびフォルダにアクセス**できる機能を指します。  
 この設定が有効になっている場合、**セキュリティリスク**が高まる可能性があります。
 
+<!--more-->
 ---
 
 ## NTLM V1とは？
