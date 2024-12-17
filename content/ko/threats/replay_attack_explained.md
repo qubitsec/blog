@@ -1,12 +1,11 @@
 ---
 date: 2020-11-13T00:07:00
-description: 
-featured_image: 
-tags: ["재전송 공격", "Replay attack", "보안", "로그 분석", "해킹 탐지", "모의 해킹", "Post-body"]
+draft: false
 title: "[재전송 공격] Replay Attack이란"
+description: 
+featured_image: "cdn/threats/replay_attack_explained-1.png"
+tags: ["재전송 공격", "Replay attack", "보안", "로그 분석", "해킹 탐지", "모의 해킹", "Post-body"]
 ---
-
-![20201113_1](https://github.com/user-attachments/assets/ade0a051-eadd-4c5c-8c5f-1b95e4acbe4f)
 
 ## 재전송 공격(Replay Attack)이란?
 
@@ -15,6 +14,8 @@ title: "[재전송 공격] Replay Attack이란"
 프루라에서는 탐지된 공격 로그를 활용하여 실제 공격을 재현(Replay)할 수 있는 **재전송 공격** 기능을 제공합니다.  
 이는 공격이 실제 데이터 유출로 이어졌는지 확인하고 방어 전략을 수립하는 데 유용한 도구입니다.
 
+<!--more-->
+![replay_attack_explained](https://blog.plura.io/cdn/threats/replay_attack_explained-1.png)
 ---
 
 ## 문제점: 공격 확인의 어려움
