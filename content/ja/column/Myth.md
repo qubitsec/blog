@@ -1,5 +1,6 @@
 ---
 date: 2023-03-12T00:00:00
+draft: false
 description: 
 featured_image: "cdn/column/log_analysis_myth-1.png"
 tags: ["ログ分析", "ハッキング調査", "セキュリティ", "PLURA", "MITRE ATT&CK"]
