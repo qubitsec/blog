@@ -1,5 +1,5 @@
 ---
-title: "PLURA Blog 🎅"
+title: "Threats Respond 🛡️"
 description: "PLURA-XDR 대응 전략"
 featured_image: '/images/ko-bg.jpg'
 ---
