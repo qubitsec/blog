@@ -1,12 +1,11 @@
 ---
 date: 2021-08-14T01:00:00
 title: "IPv6 기반에서 curl 이용하여 웹 접속 체크"
+draft: false
 description: 
-featured_image: ""
+featured_image: "cdn/tech/ipv6_web_access_with_curl-1.png"
 tags: ["IPv6", "curl", "Apache Tomcat", "네트워크"]
 ---
-
-![blog_banner_20210817_2](https://github.com/user-attachments/assets/a6b13908-3d5b-457d-936a-3c784e84906c)
 
 ## 환경 설정
 
@@ -18,7 +17,9 @@ tags: ["IPv6", "curl", "Apache Tomcat", "네트워크"]
 
 ![tomcat-netstat-ipv6](https://github.com/user-attachments/assets/c905e280-6e1d-4f5c-b1b2-c5d91071fdfc)
 
+<!--more-->
 ---
+![ipv6_web_access_with_curl](https://blog.plura.io/cdn/tech/ipv6_web_access_with_curl-1.png)
 
 ## 접속 테스트
 
