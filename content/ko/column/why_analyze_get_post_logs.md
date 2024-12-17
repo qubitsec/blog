@@ -1,5 +1,6 @@
 ---
 date: 2017-02-23T00:00:00
+draft: false
 title: "우리는 왜 GET/POST 로그를 분석하는가?"
 description: 
 featured_image: "cdn/column/why_analyze_get_post_logs-1.png"
