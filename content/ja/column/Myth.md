@@ -18,15 +18,15 @@ title: "ログ分析でハッキング調査は神話(Myth)？"
 
 しかし、ログは自然に生成されるものではありません。
 
-![log_analysis_myth](https://blog.plura.io/cdn/column/log_analysis_myth-1.png)
-<!--more-->
----
-
 > **監査ポリシー設定**というユーザーの作業が必ず先行する必要があります。  
 > 
 > また、ウェブリクエスト本文とレスポンス本文をログに残すためには、さらに特別な作業が必要です。
 
 **したがって、「ログ分析だけですべてのハッキング攻撃に対応できる」というのは神話にすぎません。**
+
+![log_analysis_myth](https://blog.plura.io/cdn/column/log_analysis_myth-1.png)
+<!--more-->
+---
 
 **PLURA**はこの神話を現実に変えます。
 
