@@ -1,12 +1,11 @@
 ---
 date: 2021-08-14T00:00:00
-description: 
-featured_image: 
-tags: ["非対面サービス", "セキュリティ", "ISMS-P", "認証管理", "PLURA"]
+draft: false
 title: "パブリック非対面サービス選定時に確認すべきセキュリティサービス"
+description: 
+featured_image: "cdn/column/untact_ontact-1.png"
+tags: ["非対面サービス", "セキュリティ", "ISMS-P", "認証管理", "PLURA"]
 ---
-
-![20201207_1](https://github.com/user-attachments/assets/af49899a-2b63-42e6-9402-7f8dc5b34550)
 
 コロナ禍はオンライン非対面サービスの拡大に爆発的な触媒としての役割を果たしています。
 
@@ -18,7 +17,9 @@ title: "パブリック非対面サービス選定時に確認すべきセキュ
 
 したがって、パブリック非対面サービスを選定する際の最優先事項は「セキュリティ」です。
 
----
+![untact_ontact](https://blog.plura.io/cdn/column/untact_ontact-1.png)
+<!--more-->
+--- 
 
 **ISMS-P 項目 中 2. 保護対策要件 > 2.5 認証および権限管理について確認してみましょう。**
 > 2.5.3 ユーザー認証  
