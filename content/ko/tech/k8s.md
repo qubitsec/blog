@@ -1,12 +1,11 @@
 ---
 date: 2023-03-15T00:00:00
-description: 
-featured_image: 
-tags: ["Kubernetes", "k8s", "PLURA", "로그 수집", "웹 로그", "syslog", "컨테이너 로그", "보안"]
+draft: false
 title: "Kubernetes(k8s) with PLURA"
+description: 
+featured_image: "cdn/tech/k8s-1.png"
+tags: ["Kubernetes", "k8s", "PLURA", "로그 수집", "웹 로그", "syslog", "컨테이너 로그", "보안"]
 ---
-
-![blog-20230320-1](https://github.com/user-attachments/assets/2ea93b57-2e8a-42c2-93ba-cbd06f466a6e)
 
 ## 0. 개요
 
@@ -20,6 +19,7 @@ PLURA는 다음을 대상으로 **로그 생성/수집/분석 및 이상 징후 
 
 이 문서는 **Kubernetes 환경**에서 PLURA를 사용하여 컨테이너에서 생성되는 **Application Log, Syslog, Web Log**의 수집 및 분석 방법을 안내합니다.
 
+<!--more-->
 ---
 
 ## 1. 전제 조건
