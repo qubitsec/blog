@@ -1,12 +1,11 @@
 ---
 date: 2021-12-14T00:00:00
+draft: false
 title: "Apache JMeter Log4Shell 対応方法"
 description: "Apache JMeterに関連するLog4j脆弱性（Log4Shell）への対応方法"
-featured_image: ""
+featured_image: "cdn/tech/apache_jmeter_log4shell-1.png"
 tags: ["Apache JMeter", "Log4j", "Log4Shell", "セキュリティ", "脆弱性"]
 ---
-
-![blog_banner_20211214](https://github.com/user-attachments/assets/7b2e5db2-bdb7-4b37-b72e-43fbe4496140)
 
 Apacheソフトウェア財団は、Log4j 2に発生した脆弱性を解決するためのセキュリティアップデートを推奨しています。  
 Apache JMeterは主にユーザーPCで使用されるため、特に注意が必要です。  
@@ -15,7 +14,10 @@ Apache JMeterは主にユーザーPCで使用されるため、特に注意が�
 > 攻撃者はこの脆弱性を利用してマルウェア感染などの被害を引き起こす可能性があります。  
 > **最新バージョンにアップデートを行う必要があります。**
 
+<!--more-->
 ---
+
+![apache_jmeter_log4shell](https://blog.plura.io/cdn/tech/apache_jmeter_log4shell-1.png)
 
 ## 対応方法
 
