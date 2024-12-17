@@ -1,12 +1,10 @@
 ---
 date: 2020-06-04T00:00:00
-description: 
-featured_image: 
-tags: ["홈페이지 변조", "보안", "악성코드", "웹쉘", "PLURA"]
 title: "홈페이지 변조 해킹 기술 똑똑해져…보안 강화 필요"
+description: 
+featured_image: "cdn/column/homepage_hack-1.png"
+tags: ["홈페이지 변조", "보안", "악성코드", "웹쉘", "PLURA"]
 ---
-
-![2020-06-04](https://github.com/user-attachments/assets/c2c78f2c-79a7-4859-b2f1-deb670809d48)
 
 해커가 웹사이트를 공격한 후 필요한 정보를 탈취한 후, 이차적인 피해를 위해 홈페이지에 악성코드를 심는다.
 
@@ -19,6 +17,10 @@ title: "홈페이지 변조 해킹 기술 똑똑해져…보안 강화 필요"
 하지만 기존 SIEM 이나 보안장비들은 이러한 공격에 대하여 효과적으로 방어 할 수 있는 기능이 구현되지 않았다.
 
 PLURA 제품을 사용하면 클릭 몇 번을 통해 간단하게 홈페이지 위변조 해킹을 탐지하고 관리할 수 있다.
+
+![homepage_hack](https://blog.plura.io/cdn/column/homepage_hack-1.png)
+<!--more-->
+---
 
 # 홈페이지 위변조 해킹 탐지 방법
 
