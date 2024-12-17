@@ -1,17 +1,20 @@
 ---
 date: 2021-04-28T00:03:00
-description: 
-featured_image: 
-tags: ["カスタムルール", "ウェブハッキング", "ウェブファイアウォール", "ゼロデイ脆弱性", "WPScan"]
+draft: false
 title: "カスタムルールフィルター (ウェブ & ウェブファイアウォール)"
+description: 
+featured_image: "cdn/threats/custom_rule_filter_web_waf-1.png"
+tags: ["カスタムルール", "ウェブハッキング", "ウェブファイアウォール", "ゼロデイ脆弱性", "WPScan"]
 ---
-
-![0 (1)](https://github.com/user-attachments/assets/6a921cb9-fe12-4ab3-845a-1a7de939da76)
 
 ウェブハッキングは、ウェブサイトの脆弱性を攻撃する技術で、ウェブページを通じて権限のないシステムにアクセスしたり、データ漏洩や破壊などの行為が行われます。  
 特にウェブアプリケーションを通じてハッキングが主に発生します。
 
 OWASPは、10大ウェブアプリケーションの脆弱性を発表しており、PLURAはこれを基にウェブ攻撃タイプの分析を通じて検出パターンを登録し、管理しています。
+
+<!--more-->
+
+![custom_rule_filter_web_waf](https://blog.plura.io/cdn/threats/custom_rule_filter_web_waf-1.png)
 
 ハッカーは、ゼロデイ脆弱性という、以前報告されていない新たな欠陥を探し回っています。  
 これらが発見された直後、セキュリティ専門家は、1つのエクスプロイトが悪用されていることを追跡し、目撃することができます。  
