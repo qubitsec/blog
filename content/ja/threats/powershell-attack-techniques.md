@@ -7,8 +7,6 @@ featured_image: "cdn/threats/powershell_attack_techniques-1.png"
 tags: ["PowerShell", "マルウェア", "ウェブハッキング", "セキュリティ脆弱性", "PLURA"]
 ---
 
-## PowerShell
-
 PowerShellは、システム管理や自動化を目的に設計されたコマンドラインシェルおよびスクリプト言語です。  
 Windows Vista以降に標準搭載されており、管理ツールとして有用である一方、攻撃者にも頻繁に利用されています。
 
