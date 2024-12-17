@@ -1,17 +1,19 @@
 ---
 date: 2020-05-12T00:03:00
-description: 
-featured_image: 
-tags: ["PowerShell", "악성코드", "웹 해킹", "보안 취약점", "PLURA"]
+draft: false
 title: "PowerShell을 이용한 공격"
+description: 
+featured_image: "cdn/threats/powershell_attack_techniques-1.png"
+tags: ["PowerShell", "악성코드", "웹 해킹", "보안 취약점", "PLURA"]
 ---
-
-![PowerShell 공격](https://github.com/user-attachments/assets/a90db7c2-5c10-4f7e-b9d4-20c828b5a299)
 
 ## PowerShell
 
 PowerShell은 시스템 관리 및 자동화를 목적으로 설계된 명령줄 셸 및 스크립팅 언어입니다.  
 Windows Vista 이후 기본 탑재되었으며, 관리 도구로 유용한 만큼 공격자들에게도 자주 사용되고 있습니다.
+
+<!--more-->
+![powershell_attack_techniques](https://blog.plura.io/cdn/threats/powershell_attack_techniques-1.png)
 
 ---
 
