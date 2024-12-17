@@ -1,12 +1,11 @@
 ---
 date: 2016-06-27T00:00:00
-description: 
-featured_image: 
-tags: ["ログ分析", "セキュリティ", "システム管理", "ソリューション選択", "PLURA", "ログ管理"]
+draft: false
 title: "ログ分析ツール、私たちの会社には何を選ぶべきか？"
+description: 
+featured_image: "cdn/column/log_analysis_tool_selection_guide-1.png"
+tags: ["ログ分析", "セキュリティ", "システム管理", "ソリューション選択", "PLURA", "ログ管理"]
 ---
-
-![town-sign-1148092_1920](https://github.com/user-attachments/assets/2a6d981a-2fec-48f1-89a5-9e25eb966615)
 
 ## ログ分析の重要性
 
@@ -15,6 +14,8 @@ title: "ログ分析ツール、私たちの会社には何を選ぶべきか？
 
 しかし、ログ分析は多くの時間を要し、楽しい作業とは言えないことから、システム管理者は多くの課題に直面しています。この課題を解決するために、さまざまなログ管理およびログ分析ツールが登場しましたが、依然として選択の難しさが残っています。
 
+![log_analysis_tool_selection_guide](https://blog.plura.io/cdn/column/log_analysis_tool_selection_guide-1.png)
+<!--more-->
 ---
 
 ## システム管理者の悩み
