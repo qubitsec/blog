@@ -1,12 +1,11 @@
 ---
 date: 2021-08-14T01:00:00
+draft: false
 title: "IPv6環境でcurlを使用したウェブアクセス確認"
 description: 
-featured_image: ""
+featured_image: "cdn/tech/ipv6_web_access_with_curl-1.png"
 tags: ["IPv6", "curl", "Apache Tomcat", "ネットワーク"]
 ---
-
-![blog_banner_20210817_2](https://github.com/user-attachments/assets/98b8f92e-a4e9-404e-a99b-c47316ca870d)
 
 ## 環境設定
 
@@ -18,7 +17,9 @@ tags: ["IPv6", "curl", "Apache Tomcat", "ネットワーク"]
 
 ![tomcat-netstat-ipv6](https://github.com/user-attachments/assets/0df328ea-7323-4d6f-8237-d6d87fc664c8)
 
+<!--more-->
 ---
+![ipv6_web_access_with_curl](https://blog.plura.io/cdn/tech/ipv6_web_access_with_curl-1.png)
 
 ## アクセス確認
 
