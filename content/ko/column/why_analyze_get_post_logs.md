@@ -1,12 +1,10 @@
 ---
 date: 2017-02-23T00:00:00
-description: 
-featured_image: 
-tags: ["HTTP", "GET 방식", "POST 방식", "웹로그 분석", "보안", "PLURA"]
 title: "우리는 왜 GET/POST 로그를 분석하는가?"
+description: 
+featured_image: "cdn/column/why_analyze_get_post_logs-1.png"
+tags: ["HTTP", "GET 방식", "POST 방식", "웹로그 분석", "보안", "PLURA"]
 ---
-
-![HTTP GET/POST](https://github.com/user-attachments/assets/5db69b0c-3a81-4a52-88e6-6c644336be87)
 
 ## HTTP란?
 
@@ -16,6 +14,8 @@ HTTP는 **요청-응답(Request-Response)** 구조로 작동하며, 클라이언
 HTTP 요청 방식은 GET, HEAD, POST, PUT, DELETE, OPTIONS, TRACE, CONNECT 등 여러 가지가 있습니다. 하지만 보안상의 이유로 대부분의 웹 서버는 **GET**과 **POST** 방식만을 허용합니다.  
 아래에서 GET과 POST 방식에 대해 자세히 알아보겠습니다.
 
+![why_analyze_get_post_logs](https://blog.plura.io/cdn/column/why_analyze_get_post_logs-1.png)
+<!--more-->
 ---
 
 ## GET 방식
