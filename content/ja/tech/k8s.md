@@ -1,12 +1,11 @@
 ---
 date: 2023-03-15T00:00:00
-description: 
-featured_image: 
-tags: ["Kubernetes", "k8s", "PLURA", "ログ収集", "ウェブログ", "syslog", "コンテナログ", "セキュリティ"]
+draft: false
 title: "Kubernetes(k8s) と PLURA"
+description: 
+featured_image: "cdn/tech/k8s-1.png"
+tags: ["Kubernetes", "k8s", "PLURA", "ログ収集", "ウェブログ", "syslog", "コンテナログ", "セキュリティ"]
 ---
-
-![blog-20230320-1](https://github.com/user-attachments/assets/2ea93b57-2e8a-42c2-93ba-cbd06f466a6e)
 
 ## 0. 概要
 
@@ -20,6 +19,7 @@ PLURAは以下を対象に**ログ生成・収集・分析および異常検知*
 
 このドキュメントでは、**Kubernetes環境**でPLURAを使用してコンテナから生成される**アプリケーションログ、Syslog、ウェブログ**を収集および分析する方法を説明します。
 
+<!--more-->
 ---
 
 ## 1. 前提条件
