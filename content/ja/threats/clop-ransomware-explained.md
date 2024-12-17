@@ -1,20 +1,20 @@
 ---
 date: 2020-12-30T00:01:00
-description: 
-featured_image: 
-tags: ["CLOPランサムウェア", "ADサーバーセキュリティ", "ランサムウェア防止", "サイバーセキュリティ", "ハッキング対応"]
+draft: false
 title: "CLOPランサムウェアとは？"
+description: 
+featured_image: "cdn/threats/clop-ransomware-explained-1.png"
+tags: ["CLOPランサムウェア", "ADサーバーセキュリティ", "ランサムウェア防止", "サイバーセキュリティ", "ハッキング対応"]
 ---
-
-![blog_banner_20210104_1](https://github.com/user-attachments/assets/0aae715c-e490-4577-96a7-0adac9ced2da)
 
 2020年12月15日、国内の大手流通企業で顧客情報が暗号化されるハッキング事件が発生しました。  
 拡散を防ぐために社内ネットワークが遮断され、一時的に営業活動が中断されました。  
 
 ハッカー組織はデータ復旧の条件として高額な金銭を要求し脅迫しました。  
 これにより、企業の営業活動とブランドイメージに甚大な被害が予想されています。
+<!--more-->
 
----
+![clop-ransomware-explained](https://blog.plura.io/cdn/threats/clop-ransomware-explained-1.png)
 
 ## CLOPランサムウェアとは？
 
