@@ -9,10 +9,6 @@ tags: ["ウェブファイアウォール", "セキュリティ", "ハードウ�
 
 ウェブアプリケーションファイアウォール（WAF）を構築する際に、**ハードウェアベース**と**ソフトウェアベース**のオプションを比較することは非常に重要です。それぞれの方式は、組織のセキュリティ要件、予算、インフラによって適合性が異なります。
 
-![waf_hardware_vs_software](https://blog.plura.io/cdn/column/waf_hardware_vs_software-1.png)
-<!--more-->
----
-
 ### 1. ハードウェアベースWAFの長所と短所
 
 #### 長所:
@@ -31,6 +27,8 @@ tags: ["ウェブファイアウォール", "セキュリティ", "ハードウ�
 3. **配置の制約**  
    物理的スペースやネットワーク設計における制約が発生。
 
+![waf_hardware_vs_software](https://blog.plura.io/cdn/column/waf_hardware_vs_software-1.png)
+<!--more-->
 ---
 
 ### 2. ソフトウェアベースWAFの長所と短所
