@@ -1,17 +1,17 @@
 ---
 date: 2021-08-14T00:00:00
-description: 
-featured_image: 
-tags: 
+draft: false
 title: "How to Manually Update curl on CentOS"
+description: 
+featured_image: "cdn/tech/update_curl_on_centos-1.png"
+tags: 
 ---
-
-![blog_banner_20210817_1](https://github.com/user-attachments/assets/ddf3d087-3fae-4c4b-be71-68d646332700)
 
 ## need epel-release
 ```bash
 # yum -y update epel-release
 ```
+<!--more-->
 
 ## create a new file /etc/yum.repos.d/city-fan.repo
 ```bash
