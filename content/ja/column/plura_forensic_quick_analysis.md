@@ -1,5 +1,6 @@
 ---
 date: 2024-09-23T10:58:08-04:00
+draft: false
 title: "PLURAフォレンジックで迅速に対応しましょう"
 description:
 featured_image: "cdn/column/plura_forensic_quick_analysis.png"
