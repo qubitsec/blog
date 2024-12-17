@@ -3,7 +3,7 @@ date: 2023-08-30
 draft: false
 title: "ウェブファイアウォールなしのホームページ運営はシートベルトなしの運転と同じです。"
 description: 
-featured_image: "cdn/column/web-application-firewall-is-like-a-seatbelt-1.png"
+featured_image: "cdn/column/web-application-firewall-is-like-a-seatbelt-ko.png"
 tags: ["ウェブファイアウォール", "WAF", "セキュリティ", "ウェブ攻撃", "ランサムウェア", "SQLインジェクション", "クロスサイトスクリプティング"]
 ---
 
@@ -21,7 +21,7 @@ tags: ["ウェブファイアウォール", "WAF", "セキュリティ", "ウェ
 **ウェブファイアウォール(WAF)** は、ウェブを介した多様な攻撃を検知し、ブロックできる最も効果的な防御ツールです。  
 ウェブファイアウォールは以下のようなさまざまな脅威からサイトを保護します：
 
-![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-1.png)
+![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-ko.png)
 
 ---
 
