@@ -1,5 +1,6 @@
 ---
 date: 2016-06-27T00:00:00
+draft: false
 title: "로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?"
 description: 
 featured_image: "cdn/column/log_analysis_tool_selection_guide-1.png"
