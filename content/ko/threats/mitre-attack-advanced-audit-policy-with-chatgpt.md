@@ -1,16 +1,16 @@
 ---
 date: 2023-02-19T05:00:00
+draft: false
 title: "마이터어택 관점에서 고급감사정책 활용 with ChatGPT"
 description: ""
-featured_image: ""
+featured_image: "cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png"
 tags: ["마이터 어택", "고급감사정책", "이벤트 채널", "Windows PowerShell 채널", "MITRE ATT&CK", "Windows Event Log"]
 ---
-
-![column_20230222-1](https://github.com/user-attachments/assets/379e8238-977b-4938-a4a4-ce8df95b9d51)
 
 > 본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 부분에 있어서 임의 수정된 사실은 없습니다.
 
 ### Q1. 마이터 어택 관점에서 로그 모니터링을 강화하기 위하여 고급감사정책을 활용하는 것이 반드시 필요할까요?
+<!--more-->
 > 네, **마이터 어택 등 대규모 해킹 공격을 방지하기 위해서는 로그 모니터링을 강화하는 것이 중요합니다.**  
 > 로그 모니터링은 시스템 내부에서 발생하는 이벤트를 수집하고, 저장하며, 분석하는 과정을 말합니다.  
 > 이를 통해 이상 징후나 공격 행위를 탐지하고 대응할 수 있습니다.
@@ -91,6 +91,8 @@ tags: ["마이터 어택", "고급감사정책", "이벤트 채널", "Windows Po
 또한, 이벤트 발생 내역을 분석하여 추후 대응 전략을 수립하는 데에도 활용될 수 있습니다.
 
 **따라서, plura.io에서 제공하는 고급감사정책을 사용하면, 다양한 이벤트를 탐지하고 대응할 수 있으므로 마이터 어택과 같은 대규모 해킹 공격에 대비하는 데에 매우 유용합니다.**
+
+![mitre_attack_advanced_audit_policy_with_chatgpt](https://blog.plura.io/cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png)
 
 ## 참고 사이트 
 - [1] Windows Event Log : https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log
