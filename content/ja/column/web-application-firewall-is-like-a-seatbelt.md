@@ -1,13 +1,10 @@
 ---
 date: 2023-08-30
+draft: false
 title: "ウェブファイアウォールなしのホームページ運営はシートベルトなしの運転と同じです。"
 description: 
-featured_image: ""
+featured_image: "cdn/column/web-application-firewall-is-like-a-seatbelt-1.png"
 tags: ["ウェブファイアウォール", "WAF", "セキュリティ", "ウェブ攻撃", "ランサムウェア", "SQLインジェクション", "クロスサイトスクリプティング"]
----
-
-![ウェブファイアウォールの重要性](https://github.com/user-attachments/assets/6c5dee0a-d39a-49ae-a4bc-b30bb12ae770)
-
 ---
 
 ## ウェブ攻撃の脅威
@@ -17,6 +14,8 @@ tags: ["ウェブファイアウォール", "WAF", "セキュリティ", "ウェ
 
 ウェブは現代ビジネスの中心であると同時に、ハッカーが最も狙う脆弱性の一つでもあります。
 
+![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-1.png)
+<!--more-->
 ---
 
 ## ウェブファイアウォールの重要性
