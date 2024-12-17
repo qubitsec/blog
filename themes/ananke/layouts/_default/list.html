@@ -1,24 +1,48 @@
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height">
+    <!-- 메인 콘텐츠 섹션 -->
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
       {{- .Content -}}
     </section>
-    <section class="flex-ns flex-wrap justify-around mt5">
+
+    <!-- 포스트 목록 -->
+    <section class="flex-ns flex-wrap justify-center mt5">
       {{ range .Paginator.Pages }}
-        <div class="relative w-100 w-30-l mb4 bg-white" style="width: 400px; height: 400px; overflow: hidden;">
-          <!-- 제목과 링크 추가 -->
-          <a href="{{ .RelPermalink }}" class="link dim">
-            <h2 style="font-size: 1.2rem; margin-bottom: 10px;">{{ .Title }}</h2>
-          </a>
-          <!-- 요약 내용 표시 -->
-          {{ if .Summary }}
-            <p>{{ .Summary | safeHTML }}</p>
-          {{ else }}
-            <p>{{ .Plain | truncate 300 }}</p>
+        <div class="relative bg-white br3 shadow-4 pa3 mb4 mh3" style="width: 350px; min-height: 450px; overflow: hidden;">
+          <!-- 이미지 (있을 경우) -->
+          {{ with .Params.featured_image }}
+            <a href="{{ .RelPermalink }}">
+              <img src="{{ . }}" alt="{{ $.Title }}" class="db w-100 br3 mb3" style="height: 180px; object-fit: cover;">
+            </a>
           {{ end }}
+
+          <!-- 제목 -->
+          <a href="{{ .RelPermalink }}" class="link dim">
+            <h2 class="f4 fw6 near-black mt0">{{ .Title }}</h2>
+          </a>
+
+          <!-- 요약 내용 -->
+          <div class="nested-links f6 lh-copy gray">
+            {{ if .Summary }}
+              <p>{{ .Summary | truncate 200 }}</p>
+            {{ else }}
+              <p>{{ .Plain | truncate 200 }}</p>
+            {{ end }}
+          </div>
+
+          <!-- 더 읽기 버튼 -->
+          <div class="mt3">
+            <a href="{{ .RelPermalink }}" class="ba b--moon-gray bg-light-gray br2 dib f7 hover-bg-moon-gray link black ph3 pv2">
+              더 읽기 →
+            </a>
+          </div>
         </div>
       {{ end }}
     </section>
-    {{- template "_internal/pagination.html" . -}}
+
+    <!-- 페이지네이션 -->
+    <div class="tc mt5">
+      {{- template "_internal/pagination.html" . -}}
+    </div>
   </article>
 {{ end }}
