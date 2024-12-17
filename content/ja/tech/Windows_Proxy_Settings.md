@@ -1,15 +1,15 @@
 ---
 date: 2021-07-14T12:58:08-04:00
+draft: false
 title: "Windowsでのプロキシ設定"
 description: "Windowsでプロキシを設定する方法を紹介します。"
-featured_image: 
+featured_image: "cdn/tech/windows_proxy_settings-1.png"
 tags: ["Windows", "Proxy", "プロキシ設定"]
 ---
 
-![blog_banner_20210715_2](https://github.com/user-attachments/assets/cb587b2b-3969-417f-99ac-63535295a675)
-
 Windowsでプロキシ設定を通じてインターネット接続を構成する方法を紹介します。
 
+<!--more-->
 ---
 
 ## インターネットオプションを開く
