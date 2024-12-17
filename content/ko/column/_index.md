@@ -1,6 +1,7 @@
 ---
 title: "Column 📰"
 description: "큐비트시큐리티 전문가들이 전하는 보안, 기술, 그리고 인사이트"
+featured_image: '/images/ko-bg.jpg'
 ---
 
 최신 보안 트렌드, 혁신적인 기술접근법, 그리고 커리어여정을  
