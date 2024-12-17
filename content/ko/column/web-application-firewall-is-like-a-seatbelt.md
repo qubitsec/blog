@@ -21,7 +21,7 @@ tags: ["웹방화벽", "WAF", "보안", "웹 공격", "랜섬웨어", "SQL 인�
 **웹방화벽(WAF)** 은 웹을 통한 다양한 공격을 탐지하고 차단할 수 있는 가장 효과적인 방어 도구입니다.  
 웹방화벽은 아래와 같은 다양한 위협으로부터 사이트를 보호합니다:
 
-![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-ko.png)
+![웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-ko.png)
 ---
 
 ### 주요 방어 대상
