@@ -1,18 +1,18 @@
 ---
 date: 2023-02-20T00:00:00
-description: 
-featured_image: 
-tags: ["ANONYMOUS LOGON", "NTLM V1", "보안 정책", "Microsoft", "KISA", "LAN Manager", "인증 보안"]
+draft: false
 title: "ANONYMOUS LOGON, NTLM V1 사용 정책 중지"
+description: 
+featured_image: "cdn/tech/disable_anonymous_logon_ntlmv1_policy-1.png"
+tags: ["ANONYMOUS LOGON", "NTLM V1", "보안 정책", "Microsoft", "KISA", "LAN Manager", "인증 보안"]
 ---
-
-![column-20230220-4](https://github.com/user-attachments/assets/2611df5b-5c37-4cf1-8ee8-56ee3c8cc0db)
 
 ## ANONYMOUS LOGON란?
 
 익명 사용자 계정을 통해 **인증 없이 파일 및 폴더에 접근**할 수 있는 기능을 말합니다.  
 이 설정이 활성화된 상태에서는 **보안 위협**이 증가할 수 있습니다.
 
+<!--more-->
 ---
 
 ## NTLM V1이란?
