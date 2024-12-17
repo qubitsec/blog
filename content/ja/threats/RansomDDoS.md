@@ -1,12 +1,11 @@
 ---
 date: 2017-08-18T00:03:00
-description: 
-featured_image: 
-tags: ["ランサムDDoS", "DDoS攻撃", "セキュリティ", "ネットワークセキュリティ", "DDoS", "TCP Syn Flood", "HTTP Flood", "ICMP Flood"]
+draft: false
 title: "脅迫型DDoS攻撃、ランサムDDoS(RansomDDoS)"
+description: 
+featured_image: "cdn/threats/ransomddos-1.png"
+tags: ["ランサムDDoS", "DDoS攻撃", "セキュリティ", "ネットワークセキュリティ", "DDoS", "TCP Syn Flood", "HTTP Flood", "ICMP Flood"]
 ---
-
-![RansomDDoS](https://github.com/user-attachments/assets/530eb5ac-21e9-4443-8cf0-7daa6fe52e3a)
 
 ## 概要
 
@@ -18,8 +17,8 @@ title: "脅迫型DDoS攻撃、ランサムDDoS(RansomDDoS)"
 
 DosおよびDDoS攻撃は、**わずか数行のコマンドで対象サーバーに甚大な被害**を与える非常に脅威的な攻撃です。  
 本記事では、**DosとDDoSの概念、攻撃の種類、対応方法**を詳しく説明します。
-
----
+<!--more-->
+![ransomddos](https://blog.plura.io/cdn/threats/ransomddos-1.png)
 
 ## DosとDDoSの概念
 
