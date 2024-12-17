@@ -1,11 +1,8 @@
 ---
-title: "Tech"
-date: 2024-10-18
+title: "Tech 🤖"
+description: "간결한 핵심 테크놀로지"
+featured_image: '/images/ko-bg.jpg'
 ---
-
-**간결한 핵심 테크놀로지**  
-이 섹션에서는 PLURA 사용에 필요한 도구와  
-최신 기술에 대해 다룹니다.
 
 효율적인 보안 솔루션 활용법, 최적화된 도구 사용 방법,  
 그리고 기술적인 노하우를 통해 PLURA를 활용한  
