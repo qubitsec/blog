@@ -1,12 +1,11 @@
 ---
 date: 2020-10-20T00:07:01
-description: 
-featured_image: 
-tags: ["hosts ファイル", "ハッキング", "ファーミング", "ファイル 改竄", "セキュリティ"]
+draft: false
 title: "hosts ファイル 改竄"
+description: 
+featured_image: "cdn/threats/hosts_file_forgery-1.png"
+tags: ["hosts ファイル", "ハッキング", "ファーミング", "ファイル 改竄", "セキュリティ"]
 ---
-
-![blog_banner_20201102_2](https://github.com/user-attachments/assets/c9bdaad4-162a-4db0-b987-b900e380dfdb)
 
 私たちは Google サイトに接続したいとき、アドレスバーに `172.217.163.228` のように Google の IP アドレスを入力する代わりに、  
 `www.google.com` のようにその IP アドレスが割り当てられている特定のドメインを入力して接続します。  
@@ -15,6 +14,11 @@ title: "hosts ファイル 改竄"
 DNS は、ユーザーが入力したドメインを割り当てられた IP アドレスに変換するシステムで、電話帳のような役割を果たします。  
 
 しかし、私たちの PC は DNS からアドレス情報を受け取る前に、優先度が高い `hosts` ファイルを最初に読み込むことになります。  
+
+<!--more-->
+![hosts_file_forgery](https://blog.plura.io/cdn/threats/hosts_file_forgery-1.png)
+
+---
 
 ### hosts ファイルとは？
 
