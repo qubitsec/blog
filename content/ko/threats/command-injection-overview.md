@@ -1,15 +1,17 @@
 ---
 date: 2020-12-22T00:01:00
-description: 
-featured_image: 
-tags: ["Command Injection", "OWASP TOP 10", "보안 취약점", "웹 애플리케이션 보안", "해킹 방어"]
+draft: false
 title: "Command Injection"
+description: 
+featured_image: "cdn/threats/command_injection_overview-1.png"
+tags: ["Command Injection", "OWASP TOP 10", "보안 취약점", "웹 애플리케이션 보안", "해킹 방어"]
 ---
-
-![blog_banner_20201222_1](https://github.com/user-attachments/assets/ec774277-6fd2-40db-96c2-4f8810e61c2d)
 
 Command Injection(명령어 주입)은 OWASP TOP 10 중 1위인 Injection 유형 중 하나로,  
 취약한 애플리케이션을 통해 호스트 OS에서 시스템 명령을 실행하는 것을 목표로 하는 공격입니다.  
+
+<!--more-->
+![command_injection_overview](https://blog.plura.io/cdn/threats/command_injection_overview-1.png)
 
 `system()`, `exec()`와 같은 OS 시스템 명령어를 실행할 수 있는 함수에 대해 사용자 입력값 필터링이 제대로 이루어지지 않을 경우, 공격자가 시스템 명령어를 호출할 수 있는 취약점을 악용할 수 있습니다.  
 
