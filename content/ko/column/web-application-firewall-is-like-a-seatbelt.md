@@ -14,14 +14,16 @@ tags: ["웹방화벽", "WAF", "보안", "웹 공격", "랜섬웨어", "SQL 인�
 
 웹은 현대 비즈니스의 중심인 동시에, 해커들이 가장 먼저 노리는 취약점이기도 합니다.
 
-![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-1.png)
-<!--more-->
 ---
 
 ## 웹방화벽의 중요성
 
 **웹방화벽(WAF)** 은 웹을 통한 다양한 공격을 탐지하고 차단할 수 있는 가장 효과적인 방어 도구입니다.  
 웹방화벽은 아래와 같은 다양한 위협으로부터 사이트를 보호합니다:
+
+![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-1.png)
+<!--more-->
+---
 
 ### 주요 방어 대상
 - **SQL 인젝션**: 데이터베이스를 공격하여 정보를 탈취하는 기법  
