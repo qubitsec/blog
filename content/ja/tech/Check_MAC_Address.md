@@ -1,16 +1,17 @@
 ---
 date: 2021-07-14T11:58:08-04:00
+draft: false
 title: "MACアドレスを確認する方法"
 description: 
-featured_image: 
+featured_image: "cdn/tech/check_mac_address-1.png"
 tags: ["MACアドレス", "ネットワーク", "PC情報"]
 ---
 
-![blog_banner_20210714_1](https://github.com/user-attachments/assets/1b1c156c-814b-4bd2-90a0-8dcc99516e79)
-
 PCサーバーの固有情報を確認して活用するために、**MACアドレス**を確認する方法を紹介します。
 
+<!--more-->
 ---
+![check_mac_address](https://blog.plura.io/cdn/tech/check_mac_address-1.png)
 
 ## コマンドプロンプトを起動
 
