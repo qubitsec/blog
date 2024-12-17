@@ -1,12 +1,10 @@
 ---
 date: 2020-09-07T00:00:00
-description: 
-featured_image: 
-tags: 
 title: "웹을 통한 데이터유출 해킹 대응 개론"
+description: 
+featured_image: "cdn/column/web_data_Loss_Prevention-1.png"
+tags: ["데이터 유출 방지", "DLP솔루션", "웹 데이터 유출 탐지", "SQL인젝션 대응"]
 ---
-
-![20200907_4](https://github.com/user-attachments/assets/bf4bad1a-514d-49af-9736-4c517f4856d9)
 
 해킹의 최종 목표는 데이터유출입니다.
 
@@ -18,6 +16,9 @@ title: "웹을 통한 데이터유출 해킹 대응 개론"
 
 과징금, 집단적 손해배상, 상황에 따라 형사 고발까지 될 수 있습니다.
 
+![web_data_Loss_Prevention](https://blog.plura.io/cdn/column/web_data_Loss_Prevention-1.png)
+<!--more-->
+---
  
 
 우리는 어떻게 데이터유출을 탐지할 수 있을까요?
