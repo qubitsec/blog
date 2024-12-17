@@ -1,16 +1,19 @@
 ---
 date: 2020-10-22T00:03:00
-description: 
-featured_image: 
-tags: ["FTP", "보안 취약점", "파일 전송", "해킹 방어", "무차별 대입 공격"]
+draft: false
 title: "FTP는 보안에 취약하다?"
+description: 
+featured_image: "cdn/threats/ftp_security_vulnerabilities_and_defense_measures-1.png"
+tags: ["FTP", "보안 취약점", "파일 전송", "해킹 방어", "무차별 대입 공격"]
 ---
-
-![blog_banner_20201102_3](https://github.com/user-attachments/assets/ccfcde89-6d0c-44d8-ad98-92dbddceaa80)
 
 FTP는 파일 송수신을 위한 목적으로 만들어진 프로토콜로서 많은 데이터를 빠르게 주고받을 수 있습니다.  
 그 원리와 사용법 또한 비교적 간단하여 누구나 편리하게 이용 가능합니다.  
 하지만 전송 과정에서 데이터가 암호화되지 않고 텍스트 그대로 노출된다는 점에서 보안에 취약하다는 단점이 있습니다.  
+
+<!--more-->
+
+![ftp_security_vulnerabilities_and_defense_measures](https://blog.plura.io/cdn/threats/ftp_security_vulnerabilities_and_defense_measures-1.png)
 
 해커의 포트 스캐닝과 사용자 대입을 통한 무작위 공격으로 사용자의 계정이 탈취될 수 있으며, 악성코드를 업로드해 다수의 이용자 피해가 발생할 수 있습니다.  
 또한 웹을 공격한 해커는 서버를 통제할 수 있게 되고 더 나아가 기업의 데이터베이스까지 타깃으로 삼습니다.  
