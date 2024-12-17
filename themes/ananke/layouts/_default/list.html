@@ -1,47 +1,50 @@
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height">
-    <!-- 메인 콘텐츠 섹션 -->
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
       {{- .Content -}}
     </section>
 
-    <!-- 포스트 목록 -->
-    <section class="flex-ns flex-wrap justify-center mt5">
+    <section class="flex-ns flex-wrap justify-around mt5">
       {{ range .Paginator.Pages }}
-        <div class="relative bg-white br3 shadow-4 pa3 mb4 mh3" style="width: 350px; min-height: 450px; overflow: hidden;">
-          <!-- 이미지 (있을 경우) -->
-          {{ with .Params.featured_image }}
-            <a href="{{ .RelPermalink }}">
-              <img src="{{ . }}" alt="{{ $.Title }}" class="db w-100 br3 mb3" style="height: 180px; object-fit: cover;">
-            </a>
+        <div class="relative w-100 w-30-l mb4 bg-white br3 shadow-1" style="overflow: hidden;">
+
+          <!-- Featured Image -->
+          {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+          {{ if $featured_image }}
+          <a href="{{ .Permalink }}" class="db">
+            <img src="{{ $featured_image }}" alt="{{ .Title }}" 
+                 class="w-100 db br--top" style="height: 180px; object-fit: cover;">
+          </a>
           {{ end }}
 
-          <!-- 제목 -->
-          <a href="{{ .RelPermalink }}" class="link dim">
-            <h2 class="f4 fw6 near-black mt0">{{ .Title }}</h2>
-          </a>
+          <!-- Content Section -->
+          <div class="pa3">
+            <!-- Title -->
+            <h2 class="f4 fw6 mt0 mb3 lh-title">
+              <a href="{{ .Permalink }}" class="link near-black dim">{{ .Title }}</a>
+            </h2>
 
-          <!-- 요약 내용 -->
-          <div class="nested-links f6 lh-copy gray">
-            {{ if .Summary }}
-              <p>{{ .Summary | truncate 200 }}</p>
-            {{ else }}
-              <p>{{ .Plain | truncate 200 }}</p>
-            {{ end }}
-          </div>
+            <!-- Summary -->
+            <p class="f6 lh-copy mid-gray">
+              {{ if .Summary }}
+                {{ .Summary | safeHTML | truncate 150 "..." }}
+              {{ else }}
+                {{ .Plain | truncate 150 "..." }}
+              {{ end }}
+            </p>
 
-          <!-- 더 읽기 버튼 -->
-          <div class="mt3">
-            <a href="{{ .RelPermalink }}" class="ba b--moon-gray bg-light-gray br2 dib f7 hover-bg-moon-gray link black ph3 pv2">
-              더 읽기 →
+            <!-- Read More Link -->
+            <a href="{{ .Permalink }}" 
+               class="db link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 mt3">
+              {{ $.Param "read_more_copy" | default "더 읽기" }}
             </a>
           </div>
         </div>
       {{ end }}
     </section>
 
-    <!-- 페이지네이션 -->
-    <div class="tc mt5">
+    <!-- Pagination -->
+    <div class="w-100 tc mv4">
       {{- template "_internal/pagination.html" . -}}
     </div>
   </article>
