@@ -1,18 +1,17 @@
 ---
 date: 2019-06-24T00:01:00
+draft: false
 title: "Windows Remote Logging"
 description: 
-featured_image: ""
+featured_image: "cdn/tech/windows_remote_logging-1.png"
 tags: ["Windows", "Remote Logging", "Windows Event Collector", "Active Directory", "로그 관리", "보안"]
 ---
-
-![2020-07-29_1](https://github.com/user-attachments/assets/a159a391-3a43-400c-9ddc-57d230ff8457)
 
 ## Windows Remote Logging 개요
 
 Active Directory 환경에서 **Windows Event Collector(WEC)**를 구성하면 원격 이벤트 로그를 중앙에서 수집하고 관리할 수 있습니다.  
 이 기능은 중앙 집중식 로그 관리 및 모니터링을 가능하게 하며, 조직의 보안 및 운영 효율성을 향상시킵니다.
-
+<!--more-->
 ---
 
 ## 1. 이벤트 전달 및 수집을 위한 컴퓨터 구성
