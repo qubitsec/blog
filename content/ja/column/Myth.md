@@ -1,12 +1,10 @@
 ---
 date: 2023-03-12T00:00:00
 description: 
-featured_image: 
+featured_image: "cdn/column/log_analysis_myth-1.png"
 tags: ["ログ分析", "ハッキング調査", "セキュリティ", "PLURA", "MITRE ATT&CK"]
 title: "ログ分析でハッキング調査は神話(Myth)？"
 ---
-
-![new_blog_news_230303-1](https://github.com/user-attachments/assets/ed618031-1d54-4149-af2d-bdb67f0ed3b7)
 
 **ハッキング攻撃を受けた場合、ほとんどの場合ログ分析が行われます。**
 
@@ -16,9 +14,12 @@ title: "ログ分析でハッキング調査は神話(Myth)？"
 どのデータが流出したのか  
 
 分かると考えられているからでしょう。
- 
 
 しかし、ログは自然に生成されるものではありません。
+
+![log_analysis_myth](https://blog.plura.io/cdn/column/log_analysis_myth-1.png)
+<!--more-->
+---
 
 > **監査ポリシー設定**というユーザーの作業が必ず先行する必要があります。  
 > 
