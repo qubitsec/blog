@@ -7,7 +7,7 @@ featured_image: "cdn/column/defender_vs_edr.png"
 tags: ["안티바이러스", "AV", "Windows Defender", "EDR", "APT 공격", "PLURA-EDR"]
 ---
 
-### 전통적인 백신(Anti-Virus), 여전히 사용하고 계신가요?
+### 🛡️ 전통적인 백신(Anti-Virus), 여전히 사용하고 계신가요?
 
 많은 기업과 개인은 여전히 **전통적인 백신(AV)**을 사용하고 있습니다. 하지만 사이버 위협이 나날이 고도화되고 있는 지금, 전통적인 AV는 제대로 대응하지 못하고 있습니다.
 
