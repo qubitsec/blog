@@ -1,12 +1,10 @@
 ---
 date: 2016-06-27T00:00:00
-description: 
-featured_image: 
-tags: ["로그 분석", "보안", "시스템 관리", "솔루션 선택", "PLURA", "로그 관리"]
 title: "로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?"
+description: 
+featured_image: "cdn/column/log_analysis_tool_selection_guide-1.png"
+tags: ["로그 분석", "보안", "시스템 관리", "솔루션 선택", "PLURA", "로그 관리"]
 ---
-
-![town-sign-1148092_1920](https://github.com/user-attachments/assets/2a6d981a-2fec-48f1-89a5-9e25eb966615)
 
 ## 로그 분석의 중요성
 
@@ -15,6 +13,8 @@ title: "로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?"
 
 하지만, 로그 분석은 시간이 많이 소요되고 유쾌하지 않은 작업으로 여겨지며, 시스템 관리자는 여러 어려움에 직면합니다. 이를 해결하기 위해 다양한 로그 관리 및 로그 분석 툴이 출시되었지만, 여전히 선택의 어려움은 남아 있습니다.
 
+![log_analysis_tool_selection_guide](https://blog.plura.io/cdn/column/log_analysis_tool_selection_guide-1.png)
+<!--more-->
 ---
 
 ## 시스템 관리자의 고민
