@@ -1,15 +1,15 @@
 ---
 date: 2021-07-14T12:58:08-04:00
+draft: false
 title: "윈도우 프록시 설정"
 description: "Windows에서 프록시를 설정하는 방법을 안내합니다."
-featured_image: 
+featured_image: "cdn/tech/windows_proxy_settings-1.png"
 tags: ["Windows", "Proxy", "프록시 설정"]
 ---
 
-![blog_banner_20210715_2](https://github.com/user-attachments/assets/cb587b2b-3969-417f-99ac-63535295a675)
-
 Windows에서 프록시 설정을 통해 인터넷 연결을 구성하는 방법을 안내합니다.
 
+<!--more-->
 ---
 
 ## 인터넷 옵션 열기
