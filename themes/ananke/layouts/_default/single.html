@@ -1,51 +1,53 @@
 {{ define "main" }}
   {{ $backgroundImage := .Params.featured_image | default .Site.Params.background_image }}
 
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
-    <!-- 페이지 헤더 -->
-    <header class="mt4 w-100">
-      <h1 class="mt3 mb1" style="font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 500;">
-        {{ .Title | default .Site.Params.defaultTitle }}
-      </h1>
+  <!-- 상단 배경 이미지 섹션 -->
+  {{ if $backgroundImage }}
+  <div class="w-100" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ $backgroundImage | relURL }}');
+                               background-size: cover; background-position: center; height: 300px;">
+    <div class="tc pv4 white">
+      <h1 class="f2 fw6 lh-title mb3">{{ .Title | default .Site.Params.defaultTitle }}</h1>
+      {{ with .Params.description }}
+        <p class="f5 lh-copy">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
 
-      <!-- 작성자 정보 -->
-      {{ with .Params.author | default .Site.Params.author }}
-      <p class="tracked">
-        {{ i18n "by" }} <strong>
-        {{ if reflect.IsSlice . }}
-          {{ delimit . ", " | markdownify }}
-        {{ else }}
-          {{ . | markdownify }}
+  <article class="mw8 center ph3 ph5-ns pb5">
+    <!-- 본문 헤더 -->
+    <header class="mt4 mb4">
+      <h1 class="f2 lh-title fw7">{{ .Title | default .Site.Params.defaultTitle }}</h1>
+
+      <!-- 작성자 및 날짜 -->
+      <div class="f6 fw4 gray">
+        {{ with .Params.author | default .Site.Params.author }}
+          <span>{{ i18n "by" }} <strong>{{ . }}</strong></span>
         {{ end }}
-        </strong>
-      </p>
-      {{ end }}
-
-      <!-- 게시 날짜 -->
-      {{ if not .Date.IsZero }}
-      <time class="f6 mv4 dib tracked" {{ printf `datetime="%s"` (.Date.Format "2006-01-02") | safeHTMLAttr }}>
-        {{ .Date | time.Format (i18n "date_format") }}
-      </time>
-      {{ end }}
+        {{ if not .Date.IsZero }}
+          <time class="ml3" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date | time.Format (i18n "date_format") }}
+          </time>
+        {{ end }}
+      </div>
     </header>
 
     <!-- 본문 콘텐츠 -->
-    <div class="nested-copy-line-height lh-copy content-area"
+    <div class="nested-copy-line-height lh-copy f5"
          style="font-family: {{ .Site.Params.contentFontFamily | default "'Roboto', sans-serif" }};
                 line-height: {{ .Site.Params.contentLineHeight | default "1.8" }};
-                font-size: {{ .Site.Params.contentFontSize | default "1.1rem" }};
-                color: {{ .Site.Params.contentColor | default "#333" }};">
+                font-size: {{ .Site.Params.contentFontSize | default "1.1rem" }};">
       {{ .Content | safeHTML }}
     </div>
 
     <!-- 태그 섹션 -->
     {{ with .Params.tags }}
-    <div class="mt4">
-      <h3 class="f5 b">Tags:</h3>
-      <ul class="list pl0">
+    <div class="mt4 bt b--light-gray pt3">
+      <h3 class="f5 fw6 mt0 mb3">Tags</h3>
+      <ul class="list pl0 flex flex-wrap">
         {{ range . }}
-          <li class="dib mr2">
-            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="link dim blue">
+          <li class="mr2 mb2">
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="link dim br2 ba b--moon-gray ph2 pv1 f6 gray">
               #{{ . }}
             </a>
           </li>
@@ -53,5 +55,21 @@
       </ul>
     </div>
     {{ end }}
+
+    <!-- 하단 네비게이션 -->
+    <nav class="bt b--light-gray mt5 pt3">
+      <div class="flex justify-between">
+        {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="link dim gray f6">
+          ← {{ .Title }}
+        </a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="link dim gray f6">
+          {{ .Title }} →
+        </a>
+        {{ end }}
+      </div>
+    </nav>
   </article>
 {{ end }}
