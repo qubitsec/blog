@@ -1,16 +1,19 @@
 ---
 date: 2020-10-22T00:03:00
-description: 
-featured_image: 
-tags: ["FTP", "セキュリティの脆弱性", "ファイル転送", "ハッキング防止", "ブルートフォース攻撃"]
+draft: false
 title: "FTPはセキュリティに脆弱か？"
+description: 
+featured_image: "cdn/threats/ftp_security_vulnerabilities_and_defense_measures-1.png"
+tags: ["FTP", "セキュリティの脆弱性", "ファイル転送", "ハッキング防止", "ブルートフォース攻撃"]
 ---
-
-![blog_banner_20201102_3](https://github.com/user-attachments/assets/ccfcde89-6d0c-44d8-ad98-92dbddceaa80)
 
 FTPはファイル送受信を目的に作られたプロトコルで、多くのデータを高速でやり取りできます。  
 その仕組みや使い方も比較的簡単で、誰でも便利に利用できます。  
 しかし、転送過程でデータが暗号化されず、テキストのまま露出する点でセキュリティに脆弱という欠点があります。  
+
+<!--more-->
+
+![ftp_security_vulnerabilities_and_defense_measures](https://blog.plura.io/cdn/threats/ftp_security_vulnerabilities_and_defense_measures-1.png)
 
 ハッカーのポートスキャンとユーザーアカウントのブルートフォース攻撃によって、ユーザーのアカウントが奪われ、マルウェアをアップロードして多数の利用者に被害が及ぶ可能性があります。  
 また、ウェブを攻撃したハッカーはサーバーを制御し、さらに企業のデータベースをターゲットにすることもあります。  
