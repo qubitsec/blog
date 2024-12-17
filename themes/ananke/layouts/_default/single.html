@@ -1,19 +1,6 @@
 {{ define "main" }}
   {{ $backgroundImage := .Params.featured_image | default .Site.Params.background_image }}
 
-  <!-- 상단 배경 이미지 섹션 -->
-  {{ if $backgroundImage }}
-  <div class="w-100" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ $backgroundImage | relURL }}');
-                               background-size: cover; background-position: center; height: 300px;">
-    <div class="tc pv4 white">
-      <h1 class="f2 fw6 lh-title mb3">{{ .Title | default .Site.Params.defaultTitle }}</h1>
-      {{ with .Params.description }}
-        <p class="f5 lh-copy">{{ . }}</p>
-      {{ end }}
-    </div>
-  </div>
-  {{ end }}
-
   <article class="mw8 center ph3 ph5-ns pb5">
     <!-- 본문 헤더 -->
     <header class="mt4 mb4">
@@ -25,7 +12,7 @@
           <span>{{ i18n "by" }} <strong>{{ . }}</strong></span>
         {{ end }}
         {{ if not .Date.IsZero }}
-          <time class="ml3" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+          <time class="ml3" datetime="{{ .Date.Format "2006-01-02" }}">
             {{ .Date | time.Format (i18n "date_format") }}
           </time>
         {{ end }}
