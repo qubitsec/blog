@@ -7,8 +7,6 @@ featured_image: "cdn/threats/replay_attack_explained-1.png"
 tags: ["재전송 공격", "Replay attack", "보안", "로그 분석", "해킹 탐지", "모의 해킹", "Post-body"]
 ---
 
-## 재전송 공격(Replay Attack)이란?
-
 재전송 공격(Replay Attack)은 중간자 공격(Man-in-the-Middle Attack)의 하위 계층 버전 중 하나로, 이전에 캡처된 데이터를 재사용하여 시스템에 접근하거나 악용하려는 공격입니다.
 
 프루라에서는 탐지된 공격 로그를 활용하여 실제 공격을 재현(Replay)할 수 있는 **재전송 공격** 기능을 제공합니다.  
