@@ -13,7 +13,7 @@
         {{ end }}
         {{ if not .Date.IsZero }}
           <time class="ml3" datetime="{{ .Date.Format "2006-01-02" }}">
-            {{ .Date | time.Format (i18n "date_format") }}
+            {{ .Date.Format "2006-01-02" }}
           </time>
         {{ end }}
       </div>
