@@ -1,12 +1,11 @@
 ---
 date: 2020-11-13T00:07:00
-description: 
-featured_image: 
-tags: ["リプレイ攻撃", "Replay attack", "セキュリティ", "ログ分析", "ハッキング検知", "模擬ハッキング", "Post-body"]
+draft: false
 title: "[リプレイ攻撃] Replay Attackとは"
+description: 
+featured_image: "cdn/threats/replay_attack_explained-1.png"
+tags: ["リプレイ攻撃", "Replay attack", "セキュリティ", "ログ分析", "ハッキング検知", "模擬ハッキング", "Post-body"]
 ---
-
-![20201113_1](https://github.com/user-attachments/assets/ade0a051-eadd-4c5c-8c5f-1b95e4acbe4f)
 
 ## リプレイ攻撃(Replay Attack)とは？
 
@@ -15,6 +14,8 @@ title: "[リプレイ攻撃] Replay Attackとは"
 PLURAでは、検知された攻撃ログを活用して実際の攻撃を再現(Replay)できる**リプレイ攻撃**機能を提供しています。  
 この機能は、攻撃が実際にデータ漏洩につながったかどうかを確認し、防御戦略を立てるための有効なツールです。
 
+<!--more-->
+![replay_attack_explained](https://blog.plura.io/cdn/threats/replay_attack_explained-1.png)
 ---
 
 ## 課題: 攻撃確認の難しさ
