@@ -1,5 +1,6 @@
 ---
 date: 2023-05-13
+draft: false
 title: "제로 트러스트 아키텍처(ZTA)의 논리적 구성 요소"
 description: 
 featured_image: "cdn/column/zero_trust_architecture-1.png"
