@@ -1,10 +1,12 @@
 {{ define "main" }}
   <article class="pa3 pa4-ns nested-copy-line-height">
+    <!-- 상단 섹션 -->
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
       {{- .Content -}}
     </section>
 
-    <section class="flex-ns flex-wrap justify-around mt5">
+    <!-- 카드 섹션 -->
+    <section class="flex-ns flex-wrap justify-between mt5">
       {{ range .Paginator.Pages }}
         <div class="relative w-100 w-30-l mb4 bg-white br3 shadow-1" style="overflow: hidden;">
 
@@ -12,7 +14,7 @@
           {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
           {{ if $featured_image }}
           <a href="{{ .Permalink }}" class="db">
-            <img src="{{ $featured_image }}" alt="{{ .Title }}" 
+            <img src="{{ $featured_image }}" alt="{{ .Title }}"
                  class="w-100 db br--top" style="height: 180px; object-fit: cover;">
           </a>
           {{ end }}
@@ -34,9 +36,9 @@
             </p>
 
             <!-- Read More Link -->
-            <a href="{{ .Permalink }}" 
-               class="link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 ph3 mt3" 
-               style="width: 26%; display: inline-block; text-align: center;">
+            <a href="{{ .Permalink }}"
+               class="link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 ph3 mt3"
+               style="min-width: 120px; width: 25%; display: inline-block; text-align: center;">
                {{ i18n "readMore" }}
             </a>
           </div>
