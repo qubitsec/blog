@@ -9,10 +9,6 @@ tags: ["웹방화벽", "보안", "하드웨어", "소프트웨어", "PLURA-WAF"]
 
 웹방화벽을 구축할 때 **하드웨어 기반**과 **소프트웨어 기반**의 옵션을 비교하는 것은 매우 중요합니다. 각각의 방식은 조직의 보안 요구사항, 예산, 인프라에 따라 적합성이 다릅니다.
 
-![waf_hardware_vs_software](https://blog.plura.io/cdn/column/waf_hardware_vs_software-1.png)
-<!--more-->
----
-
 ### 1. 하드웨어 기반 웹방화벽의 장단점
 
 #### 장점:
@@ -31,6 +27,8 @@ tags: ["웹방화벽", "보안", "하드웨어", "소프트웨어", "PLURA-WAF"]
 3. **배치 제약**  
    물리적 공간과 네트워크 설계상의 제약 발생.
 
+![waf_hardware_vs_software](https://blog.plura.io/cdn/column/waf_hardware_vs_software-1.png)
+<!--more-->
 ---
 
 ### 2. 소프트웨어 기반 웹방화벽의 장단점
