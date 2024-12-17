@@ -1,12 +1,11 @@
 ---
 date: 2017-02-23T00:00:00
-description: 
-featured_image: 
-tags: ["HTTP", "GET メソッド", "POST メソッド", "ウェブログ分析", "セキュリティ", "PLURA"]
+draft: false
 title: "なぜ私たちはGET/POSTログを分析するのか？"
+description: 
+featured_image: "cdn/column/why_analyze_get_post_logs-1.png"
+tags: ["HTTP", "GET メソッド", "POST メソッド", "ウェブログ分析", "セキュリティ", "PLURA"]
 ---
-
-![HTTP GET/POST](https://github.com/user-attachments/assets/5db69b0c-3a81-4a52-88e6-6c644336be87)
 
 ## HTTPとは？
 
@@ -16,6 +15,8 @@ HTTPは**リクエスト-レスポンス(Request-Response)** 構造で動作し�
 HTTPのリクエストメソッドには、GET、HEAD、POST、PUT、DELETE、OPTIONS、TRACE、CONNECTなどがあります。しかし、セキュリティ上の理由から、ほとんどのウェブサーバーは**GET**と**POST**の2つのメソッドのみを許可しています。  
 以下では、GETとPOSTメソッドについて詳しく説明します。
 
+![why_analyze_get_post_logs](https://blog.plura.io/cdn/column/why_analyze_get_post_logs-1.png)
+<!--more-->
 ---
 
 ## GET メソッド
