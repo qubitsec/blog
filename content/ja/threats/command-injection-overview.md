@@ -1,15 +1,17 @@
 ---
 date: 2020-12-22T00:01:00
-description: 
-featured_image: 
-tags: ["コマンドインジェクション", "OWASP TOP 10", "セキュリティ脆弱性", "ウェブアプリケーションセキュリティ", "ハッキング防御"]
+draft: false
 title: "Command Injection"
+description: 
+featured_image: "cdn/threats/command_injection_overview-1.png"
+tags: ["コマンドインジェクション", "OWASP TOP 10", "セキュリティ脆弱性", "ウェブアプリケーションセキュリティ", "ハッキング防御"]
 ---
-
-![blog_banner_20201222_1](https://github.com/user-attachments/assets/ec774277-6fd2-40db-96c2-4f8810e61c2d)
 
 Command Injection（コマンドインジェクション）は、OWASP TOP 10 の1位であるインジェクションの一種であり、  
 脆弱なアプリケーションを通じてホストOS上でシステムコマンドを実行することを目的とした攻撃です。
+
+<!--more-->
+![command_injection_overview](https://blog.plura.io/cdn/threats/command_injection_overview-1.png)
 
 `system()` や `exec()` のようなOSシステムコマンドを実行する関数において、ユーザー入力値のフィルタリングが適切に行われない場合、  
 攻撃者はこの脆弱性を悪用してシステムコマンドを呼び出すことが可能になります。
