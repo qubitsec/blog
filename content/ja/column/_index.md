@@ -1,6 +1,6 @@
 ---
 title: "コラム 📰"  
-description: "キュービットセキュリティの専門家が伝えるセキュリティ、技術、そしてインサイト"  
+description: "セキュリティ、技術、そしてインサイト"  
 featured_image: '/images/ja-bg.jpg'  
 ---
 
