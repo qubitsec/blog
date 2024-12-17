@@ -1,5 +1,6 @@
 ---
 date: 2020-06-04T00:00:00
+draft: false
 title: "홈페이지 변조 해킹 기술 똑똑해져…보안 강화 필요"
 description: 
 featured_image: "cdn/column/homepage_hack-1.png"
