@@ -18,17 +18,15 @@ title: "로그 분석으로 해킹 조사하기는 신화(Myth)?"
 
 하지만 로그는 저절로 생성되지 않습니다.
 
-![log_analysis_myth](https://blog.plura.io/cdn/column/log_analysis_myth-1.png)
-<!--more-->
----
-
-
 > 감사정책 설정이라는 사용자의 작업이 반드시 선행되어야 합니다.  
 > 
 > 웹의 요청본문과 응답본문을 로그로 남기기 위해서는 더욱 특별한 작업이 필요합니다.
 
-
 **그러므로, '로그 분석만으로 모든 해킹 공격에 대응할 수 있다'는 것은 신화에 불과합니다.**
+
+![log_analysis_myth](https://blog.plura.io/cdn/column/log_analysis_myth-1.png)
+<!--more-->
+---
 
 프루라(PLURA)는 이 신화를 현실로 바꿔 드립니다.
 
