@@ -1,16 +1,19 @@
 ---
 date: 2017-09-21T00:00:00
+draft: false
 description: 
-featured_image: 
+featured_image: "cdn/tech/cloud-1.png"
 tags: 
 title: "퍼블릭 클라우드를 활용한 웹 호스팅"
 ---
 
-![1](https://github.com/user-attachments/assets/4efacf1e-7021-45eb-8253-a32b33e34a36)
-
 큐비트시큐리티는 홈페이지/블로그를 PLURA 서비스 망과 완전히 분리하여 운영하고 있습니다. <br>
 안정성과 보안성에 무게를 둔 PLURA 서비스 망과 달리, 저희 홈페이지/블로그는 퍼포먼스에 중점을 두고
 퍼블릭 클라우드에 구성하였습니다. <br>
+<!--more-->
+
+![cloud](https://blog.plura.io/cdn/tech/cloud-1.png)
+
 대략적인 구성은 다음과 같습니다.
 
 ![2](https://github.com/user-attachments/assets/e6fd658c-babd-48cb-a612-d9303b8a86d7)
