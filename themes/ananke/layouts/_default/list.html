@@ -6,10 +6,10 @@
     </section>
 
     <!-- 카드 섹션 -->
-    <section class="flex-ns flex-wrap justify-between mt5">
+    <section class="flex flex-wrap justify-between mt5">
       {{ range .Paginator.Pages }}
-        <div class="relative mb4 bg-white br3 shadow-1" 
-             style="flex: 1 1 calc(25% - 1rem); max-width: calc(25% - 1rem); overflow: hidden; margin: 0.5rem;">
+        <div class="relative mb4 bg-white br3 shadow-1"
+             style="flex: 1 1 calc(100% - 1rem); max-width: calc(100% - 1rem); margin: 0.5rem;">
 
           <!-- Featured Image -->
           {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
@@ -38,7 +38,7 @@
 
             <!-- Read More Link -->
             <a href="{{ .Permalink }}"
-               class="link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 ph3 mt3" 
+               class="link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 ph3 mt3"
                style="min-width: 120px; display: inline-block; text-align: center;">
                {{ i18n "readMore" }}
             </a>
@@ -53,23 +53,26 @@
     </div>
   </article>
 
-  <!-- 추가 CSS (반응형 스타일) -->
+  <!-- 추가 반응형 CSS -->
   <style>
     @media (min-width: 1200px) {
+      /* 데스크탑: 한 줄에 4개 카드 */
       .flex-wrap > div {
-        flex: 1 1 calc(20% - 1rem);
-        max-width: calc(20% - 1rem);
+        flex: 1 1 calc(25% - 1rem);
+        max-width: calc(25% - 1rem);
       }
     }
 
     @media (min-width: 768px) and (max-width: 1199px) {
+      /* 태블릿: 한 줄에 2개 카드 */
       .flex-wrap > div {
-        flex: 1 1 calc(33.33% - 1rem);
-        max-width: calc(33.33% - 1rem);
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 1rem);
       }
     }
 
     @media (max-width: 767px) {
+      /* 모바일: 한 줄에 1개 카드 */
       .flex-wrap > div {
         flex: 1 1 calc(100% - 1rem);
         max-width: calc(100% - 1rem);
