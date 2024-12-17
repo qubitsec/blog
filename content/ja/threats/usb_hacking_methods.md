@@ -1,17 +1,18 @@
 ---
 date: 2020-12-16T00:03:00
+draft: false
 description: 
-featured_image: 
+featured_image: "cdn/threats/usb_hacking_methods-1.png"
 tags: ["USBハッキング", "スタックスネット", "内部セキュリティ", "USBセキュリティ", "マルウェア", "セキュリティルール", "外部記憶装置"]
 title: "最も致命的なハッキング方法、USB"
 ---
-
-![blog_banner_20201222_2](https://github.com/user-attachments/assets/3a2cbadd-be51-4f7c-8725-bf02508e6332)
 
 ## 最も致命的なハッキング方法、USB
 
 外部インターネットを完全に遮断すれば、完全なセキュリティが可能でしょうか？  
 以下の事例を通じて、そうではないことが分かります。
+<!--more-->
+![usb_hacking_methods](https://blog.plura.io/cdn/threats/usb_hacking_methods-1.png)
 
 ---
 
