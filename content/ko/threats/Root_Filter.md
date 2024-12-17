@@ -1,15 +1,14 @@
 ---
 date: 2021-02-08T00:06:00
-description: 
-featured_image: 
-tags: 
+draft: false
 title: "ROOT 권한 상승(CVE-2021-3156) 필터"
+description: 
+featured_image: "cdn/threats/root_filter_cve_2021_3156-1.png"
+tags: 
 ---
 
-![2021-3156_s](https://github.com/user-attachments/assets/16994890-ab56-4ddd-b7e1-ae48cb1ce96d)
-
 ![b2](https://github.com/user-attachments/assets/f6cc7e16-4ca7-4c46-b855-8c01c3887ba9)
-
+<!--more-->
 ![b3](https://github.com/user-attachments/assets/db32cdf2-ec2a-429e-992e-4378f642fcbe)
 
 ![b4](https://github.com/user-attachments/assets/fb73ebb2-7b5f-4a47-aaf8-e9add4abcf0f)
