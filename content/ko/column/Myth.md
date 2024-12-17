@@ -1,12 +1,10 @@
 ---
 date: 2023-03-12T00:00:00
 description: 
-featured_image: 
+featured_image: "cdn/column/log_analysis_myth-1.png"
 tags: ["로그 분석", "해킹 조사", "보안", "PLURA", "MITRE ATT&CK"]
 title: "로그 분석으로 해킹 조사하기는 신화(Myth)?"
 ---
-
-![new_blog_news_230303-1](https://github.com/user-attachments/assets/ed618031-1d54-4149-af2d-bdb67f0ed3b7)
 
 **해킹 공격을 받으면 거의 대부분 로그 분석을 합니다.**
 
@@ -16,9 +14,13 @@ title: "로그 분석으로 해킹 조사하기는 신화(Myth)?"
 어떤 데이터가 유출되었는지  
 
 알 수 있다고 생각하기 때문이겠죠.
- 
 
 하지만 로그는 저절로 생성되지 않습니다.
+
+![log_analysis_myth](https://blog.plura.io/cdn/column/log_analysis_myth-1.png)
+<!--more-->
+---
+
 
 > 감사정책 설정이라는 사용자의 작업이 반드시 선행되어야 합니다.  
 > 
