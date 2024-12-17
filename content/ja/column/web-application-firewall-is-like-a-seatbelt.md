@@ -14,8 +14,6 @@ tags: ["ウェブファイアウォール", "WAF", "セキュリティ", "ウェ
 
 ウェブは現代ビジネスの中心であると同時に、ハッカーが最も狙う脆弱性の一つでもあります。
 
-![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-1.png)
-<!--more-->
 ---
 
 ## ウェブファイアウォールの重要性
@@ -23,6 +21,9 @@ tags: ["ウェブファイアウォール", "WAF", "セキュリティ", "ウェ
 **ウェブファイアウォール(WAF)** は、ウェブを介した多様な攻撃を検知し、ブロックできる最も効果的な防御ツールです。  
 ウェブファイアウォールは以下のようなさまざまな脅威からサイトを保護します：
 
+![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-1.png)
+<!--more-->
+---
 ### 主な防御対象
 - **SQLインジェクション**：データベースを攻撃し、情報を盗む手法  
 - **クロスサイトスクリプティング(XSS)**：ユーザーのブラウザに悪意のあるスクリプトを実行  
