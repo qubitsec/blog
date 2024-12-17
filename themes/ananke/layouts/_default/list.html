@@ -5,12 +5,10 @@
       {{- .Content -}}
     </section>
 
-    <!-- 카드 섹션 -->
-    <section class="flex flex-wrap mt5" style="gap: 1rem;">
+    <!-- 그리드 레이아웃 -->
+    <section class="grid-layout mt5">
       {{ range .Paginator.Pages }}
-        <div class="bg-white br3 shadow-1"
-             style="flex: 1 1 calc(33.333% - 1rem); max-width: calc(33.333% - 1rem); box-sizing: border-box;">
-
+        <div class="bg-white br3 shadow-1">
           <!-- Featured Image -->
           {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
           {{ if $featured_image }}
@@ -53,24 +51,17 @@
     </div>
   </article>
 
-  <!-- 반응형 스타일 -->
+  <!-- 반응형 스타일: CSS Grid -->
   <style>
-    .flex-wrap > div {
-      flex: 1 1 calc(33.333% - 1rem); /* Default: 3 columns */
-      max-width: calc(33.333% - 1rem);
-    }
-
-    @media (max-width: 1200px) {
-      .flex-wrap > div {
-        flex: 1 1 calc(50% - 1rem); /* Tablet: 2 columns */
-        max-width: calc(50% - 1rem);
-      }
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
     }
 
     @media (max-width: 768px) {
-      .flex-wrap > div {
-        flex: 1 1 calc(100% - 1rem); /* Mobile: 1 column */
-        max-width: calc(100% - 1rem);
+      .grid-layout {
+        grid-template-columns: 1fr; /* 모바일에서 1열 */
       }
     }
   </style>
