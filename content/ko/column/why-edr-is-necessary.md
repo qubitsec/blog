@@ -3,16 +3,19 @@ title: "PC와 서버의 백신은 윈도우즈 디펜더만으로 충분하다"
 date: 2024-12-17
 draft: false
 description: "전통적인 백신(AV)의 한계를 넘어 APT 공격에 대응할 수 있는 PLURA-EDR의 필요성을 알아봅니다."
-featured_image: ""
+featured_image: "cdn/column/why-edr-is-necessary.png"
 tags: ["안티바이러스", "Antivirus", "AV", "Windows Defender", "EDR", "APT 공격", "PLURA-EDR"]
 ---
 
 ### 🛡️ 전통적인 백신(Antivirus), 여전히 사용하고 계신가요?
 
-많은 기업과 개인은 여전히 **전통적인 백신**(Antivirus)을 사용하고 있습니다. 하지만 사이버 위협이 나날이 고도화되고 있는 지금, 전통적인 AV는 제대로 대응하지 못하고 있습니다.
+많은 기업과 개인은 여전히 **전통적인 백신**(Antivirus, AV)을 사용하고 있습니다. 하지만 사이버 위협이 나날이 고도화되고 있는 지금, 전통적인 AV는 제대로 대응하지 못하고 있습니다.
 
 **마이크로소프트의 윈도우즈 디펜더**는 무료로 제공되면서도 **기본적인 백신 기능**을 훌륭히 수행합니다. **윈도우즈 디펜더는 현재 전 세계 시장 1위**의 백신으로 인정받고 있습니다. 따라서 이제 더 이상 고가의 AV 솔루션이 필요하지 않다고 해도 과언이 아닙니다. 하지만 **APT 공격**과 같은 고도화된 위협에 대응하기 위해서는 `PLURA-EDR`과 같은 강력한 호스트 보안 솔루션이 반드시 필요합니다.
 
+![PC와 서버의 백신](https://blog.plura.io/cdn/column/why-edr-is-necessary.png)
+
+<!--more-->
 ---
 
 ### 1. **왜 전통적인 백신(AV)으로는 부족할까요?**
