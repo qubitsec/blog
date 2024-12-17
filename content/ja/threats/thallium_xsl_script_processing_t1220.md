@@ -1,17 +1,19 @@
 ---
 date: 2021-01-25T00:02:00
-description: 
-featured_image: 
-tags: ["タリウム", "Thallium", "XSL Script Processing", "T1220", "セキュリティ", "攻撃手法", "WMIC", "MITRE ATT&CK"]
+draft: false
 title: "タリウム (Thallium) 組織、XSL Script Processing 攻撃を実行 [T1220]"
+description: 
+featured_image: "cdn/threats/thallium_xsl_script_processing_t1220-1.png"
+tags: ["タリウム", "Thallium", "XSL Script Processing", "T1220", "セキュリティ", "攻撃手法", "WMIC", "MITRE ATT&CK"]
 ---
-
-![shutterstock_298555268_0](https://github.com/user-attachments/assets/95568d22-9a84-45f4-901e-854210c30030)
 
 ## XSL Script Processingとは？
 
 攻撃者はXSLファイルにスクリプトを埋め込むことで、アプリケーション制御を回避し、コード実行を隠蔽することができます。  
 この攻撃手法は、**MITRE ATT&CK**で[T1220]として管理されています。
+
+<!--more-->
+![thallium_xsl_script_processing_t1220](https://blog.plura.io/cdn/threats/thallium_xsl_script_processing_t1220-1.png)
 
 ---
 
