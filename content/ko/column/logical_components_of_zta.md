@@ -2,15 +2,8 @@
 date: 2023-05-13
 title: "제로 트러스트 아키텍처(ZTA)의 논리적 구성 요소"
 description: 
-featured_image: ""
+featured_image: "cdn/column/zero_trust_architecture-1.png"
 tags: ["Zero Trust", "ZTA", "보안", "NIST"]
----
-
-![blog_20230516-1](https://github.com/user-attachments/assets/0522b13f-7d92-468e-9442-d4874fbec174)
-
-> **Zero Trust Architecture, NIST Special Publication 800-207**  
-> 번역 by Google Translate
-
 ---
 
 ### 1. 정책 엔진 (PE, Policy Engine)
@@ -18,6 +11,11 @@ tags: ["Zero Trust", "ZTA", "보안", "NIST"]
 - **기능:** 
   - 외부 소스(예: CDM 시스템, 위협 인텔리전스) 및 엔터프라이즈 정책을 입력받아 액세스를 허용, 거부 또는 취소합니다.
   - 정책 관리자(PA)와 함께 동작하며 결정 내용을 기록하고 전달합니다.
+
+![zero_trust_architecture](https://blog.plura.io/cdn/column/zero_trust_architecture-1.png)
+<!--more-->
+> **Zero Trust Architecture, NIST Special Publication 800-207**  
+> 번역 by Google Translate
 
 ---
 
