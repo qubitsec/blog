@@ -3,7 +3,7 @@ date: 2017-09-21T00:00:00
 draft: false
 description: 
 featured_image: "cdn/tech/cloud-1.png"
-tags: 
+tags: ["클라우드 인프라 구성", "AWS와 Azure 비교", "CDN 및 로드 밸런싱", "웹 서버 구축", "고가용성 및 리전 설계"]
 title: "퍼블릭 클라우드를 활용한 웹 호스팅"
 ---
 
