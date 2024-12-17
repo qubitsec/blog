@@ -1,5 +1,6 @@
 ---
 date: 2020-09-07T00:00:00
+draft: false
 title: "웹을 통한 데이터유출 해킹 대응 개론"
 description: 
 featured_image: "cdn/column/web_data_Loss_Prevention-1.png"
