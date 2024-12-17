@@ -1,17 +1,18 @@
 ---
 date: 2020-12-16T00:03:00
-description: 
-featured_image: 
-tags: ["USB 해킹", "스턱스넷", "내부 보안", "USB 보안", "악성코드", "보안 수칙", "외부저장장치"]
+draft: false
 title: "가장 치명적인 해킹 방법, USB"
+description: 
+featured_image: "cdn/threats/usb_hacking_methods-1.png"
+tags: ["USB 해킹", "스턱스넷", "내부 보안", "USB 보안", "악성코드", "보안 수칙", "외부저장장치"]
 ---
-
-![blog_banner_20201222_2](https://github.com/user-attachments/assets/3a2cbadd-be51-4f7c-8725-bf02508e6332)
 
 ## 가장 치명적인 해킹 방법, USB
 
 외부 인터넷을 완벽히 차단하면 완벽한 보안이 가능할까요?  
 다음 사례들을 통해, 그렇지 않다는 것을 알 수 있습니다.
+<!--more-->
+![usb_hacking_methods](https://blog.plura.io/cdn/threats/usb_hacking_methods-1.png)
 
 ---
 
