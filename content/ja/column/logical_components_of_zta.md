@@ -1,16 +1,10 @@
 ---
-title: "ゼロトラストアーキテクチャ(ZTA)の論理構成要素"
 date: 2023-05-13
+draft: false
+title: "ゼロトラストアーキテクチャ(ZTA)の論理構成要素"
 description: 
-featured_image: ""
+featured_image: "cdn/column/zero_trust_architecture-1.png"
 tags: ["Zero Trust", "ZTA", "セキュリティ", "NIST"]
----
-
-![blog_20230516-1](https://github.com/user-attachments/assets/4d32fbbc-d0e0-4cd0-90c0-37917c1f2c0b)
-
-> **Zero Trust Architecture, NIST Special Publication 800-207**  
-> Google翻訳による翻訳
-
 ---
 
 ### 1. ポリシーエンジン (PE, Policy Engine)
@@ -18,6 +12,11 @@ tags: ["Zero Trust", "ZTA", "セキュリティ", "NIST"]
 - **機能:** 
   - 外部ソース（例: CDMシステム、脅威インテリジェンス）や企業ポリシーを基にアクセスを許可、拒否、または取り消します。
   - ポリシーアドミニストレータ(PA)と連携して動作し、決定内容を記録および伝達します。
+
+![zero_trust_architecture](https://blog.plura.io/cdn/column/zero_trust_architecture-1.png)
+<!--more-->
+> **Zero Trust Architecture, NIST Special Publication 800-207**  
+> Google翻訳による翻訳
 
 ---
 
