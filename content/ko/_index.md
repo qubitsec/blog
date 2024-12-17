@@ -6,6 +6,5 @@ cascade:
   featured_image: '/images/gohugo-default-sample-hero-image.jpg'
 ---
 
-「Cybersecurity is delivered in natively integrated capabilities  
-from platforms, not point products」  
-– Lee Klarich, CPO, Palo Alto Networks
+「보안은 단일 제품이 아닌 플랫폼에서 기본적으로 통합되어야 한다」  
+  – 리 클라리치 (Lee Klarich), Palo Alto Networks CPO
