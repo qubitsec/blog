@@ -1,17 +1,20 @@
 ---
 date: 2021-04-28T00:03:00
-description: 
-featured_image: 
-tags: ["사용자 정의 규칙", "웹 해킹", "웹 방화벽", "제로데이 취약점", "WPScan"]
+draft: false
 title: "사용자 정의 규칙 필터 (웹 & 웹방화벽)"
+description: 
+featured_image: "cdn/threats/custom_rule_filter_web_waf-1.png"
+tags: ["사용자 정의 규칙", "웹 해킹", "웹 방화벽", "제로데이 취약점", "WPScan"]
 ---
-
-![0 (1)](https://github.com/user-attachments/assets/6a921cb9-fe12-4ab3-845a-1a7de939da76)
 
 웹 해킹은 웹 사이트 취약점을 공격하는 기술로, 웹 페이지를 통하여 권한이 없는 시스템에 접근하거나 데이터 유출 및 파괴와 같은 행위가 이루어집니다.  
 특히 웹 애플리케이션을 통해 해킹이 주로 발생됩니다.
 
 OWASP에서 10대 웹 애플리케이션 취약점을 발표하였고, PLURA는 이를 기준으로 웹 공격 유형 분석을 통해 탐지 패턴을 등록하여 관리하고 있습니다.
+
+<!--more-->
+
+![custom_rule_filter_web_waf](https://blog.plura.io/cdn/threats/custom_rule_filter_web_waf-1.png)
 
 해커는 제로데이 취약점이라고 하는, 이전에 보고된 적 없는 새로운 결함을 찾아다니고 있습니다.  
 이들이 발견한 직후, 보안 전문가들은 exploit 하나가 악용되고 있는 것을 추적 결과 목격할 수 있습니다.  
