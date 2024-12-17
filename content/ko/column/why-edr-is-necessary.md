@@ -70,7 +70,7 @@ tags: ["안티바이러스", "Antivirus", "AV", "Windows Defender", "EDR", "APT 
 
 ---
 
-### 결론: 이제 필요한 것은 강력한 PLURA-EDR입니다
+### ✍️ 결론: 이제 필요한 것은 강력한 PLURA-EDR입니다
 
 전통적인 AV는 더 이상 고도화된 사이버 공격에 대응하지 못합니다. 윈도우즈 디펜더가 AV로서 충분하지만, **APT 공격과 실시간 위협 대응**을 위해서는 `PLURA-EDR`이 필요합니다.
 
@@ -80,7 +80,7 @@ tags: ["안티바이러스", "Antivirus", "AV", "Windows Defender", "EDR", "APT 
 
 ---
 
-### 참고 문서
+### 🔗 참고 문서
   - [PLURA에서 Microsoft Defender Antivirus 로그 확인하기](https://blog.plura.io/ko/respond/plura-microsoft-defender-logs/)
 
 
