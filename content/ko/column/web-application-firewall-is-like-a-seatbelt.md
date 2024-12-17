@@ -1,5 +1,6 @@
 ---
 date: 2023-08-30
+draft: false
 title: "웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다."
 description: 
 featured_image: "cdn/column/web-application-firewall-is-like-a-seatbelt-1.png"
