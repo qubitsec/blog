@@ -7,8 +7,6 @@ featured_image: "cdn/threats/powershell_attack_techniques-1.png"
 tags: ["PowerShell", "악성코드", "웹 해킹", "보안 취약점", "PLURA"]
 ---
 
-## PowerShell
-
 PowerShell은 시스템 관리 및 자동화를 목적으로 설계된 명령줄 셸 및 스크립팅 언어입니다.  
 Windows Vista 이후 기본 탑재되었으며, 관리 도구로 유용한 만큼 공격자들에게도 자주 사용되고 있습니다.
 
