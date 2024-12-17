@@ -4,12 +4,12 @@ date: 2024-12-17
 draft: false
 description: "전통적인 백신(AV)의 한계를 넘어 APT 공격에 대응할 수 있는 PLURA-EDR의 필요성을 알아봅니다."
 featured_image: ""
-tags: ["안티바이러스", "AV", "Windows Defender", "EDR", "APT 공격", "PLURA-EDR"]
+tags: ["안티바이러스", "Antivirus", "AV", "Windows Defender", "EDR", "APT 공격", "PLURA-EDR"]
 ---
 
-### 🛡️ 전통적인 백신(Anti-Virus), 여전히 사용하고 계신가요?
+### 🛡️ 전통적인 백신(Antivirus), 여전히 사용하고 계신가요?
 
-많은 기업과 개인은 여전히 **전통적인 백신(AV)**을 사용하고 있습니다. 하지만 사이버 위협이 나날이 고도화되고 있는 지금, 전통적인 AV는 제대로 대응하지 못하고 있습니다.
+많은 기업과 개인은 여전히 **전통적인 백신**(Antivirus)을 사용하고 있습니다. 하지만 사이버 위협이 나날이 고도화되고 있는 지금, 전통적인 AV는 제대로 대응하지 못하고 있습니다.
 
 **마이크로소프트의 윈도우즈 디펜더**는 무료로 제공되면서도 **기본적인 백신 기능**을 훌륭히 수행합니다. **윈도우즈 디펜더는 현재 전 세계 시장 1위**의 백신으로 인정받고 있습니다. 따라서 이제 더 이상 고가의 AV 솔루션이 필요하지 않다고 해도 과언이 아닙니다. 하지만 **APT 공격**과 같은 고도화된 위협에 대응하기 위해서는 `PLURA-EDR`과 같은 강력한 호스트 보안 솔루션이 반드시 필요합니다.
 
@@ -77,3 +77,11 @@ tags: ["안티바이러스", "AV", "Windows Defender", "EDR", "APT 공격", "PLU
 > **윈도우즈 디펜더로 기본 백신을 유지하고, `PLURA-EDR`로 강력한 실시간 대응 체계를 구축하세요.**
 
 ✅ `PLURA-EDR`은 기업의 서버와 엔드포인트를 완벽하게 보호하며, 사이버 위협으로부터 안전한 **미래 지향적 보안 환경**을 제공합니다.
+
+---
+
+### 참고 문서
+  - [PLURA에서 Microsoft Defender Antivirus 로그 확인하기](https://blog.plura.io/ko/respond/plura-microsoft-defender-logs/)
+
+
+
