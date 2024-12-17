@@ -1,12 +1,11 @@
 ---
 date: 2020-10-20T00:07:01
-description: 
-featured_image: 
-tags: ["hosts 파일", "해킹", "파밍", "파일 변조", "보안"]
+draft: false
 title: "hosts 파일 변조"
+description: 
+featured_image: "cdn/threats/hosts_file_forgery-1.png"
+tags: ["hosts 파일", "해킹", "파밍", "파일 변조", "보안"]
 ---
-
-![blog_banner_20201102_2](https://github.com/user-attachments/assets/c9bdaad4-162a-4db0-b987-b900e380dfdb)
 
 우리는 구글 사이트에 접속하고 싶을 때, 주소 창에 `172.217.163.228`과 같이 구글의 IP주소를 입력하기보다는  
 `www.google.com` 같이 해당 IP주소가 할당되어 있는 특정 도메인을 입력하여 접속합니다.  
@@ -15,6 +14,11 @@ title: "hosts 파일 변조"
 DNS는 사용자가 입력한 도메인을 할당된 IP주소로 변환하는 시스템으로, 마치 전화번호부와 같은 역할을 합니다.  
 
 그런데 우리의 PC는 DNS에서 주소 정보를 제공받기 전에, 우선 순위가 더 높은 `hosts` 파일을 먼저 읽게 됩니다.  
+
+<!--more-->
+![hosts_file_forgery](https://blog.plura.io/cdn/threats/hosts_file_forgery-1.png)
+
+---
 
 ### hosts 파일이란?
 
