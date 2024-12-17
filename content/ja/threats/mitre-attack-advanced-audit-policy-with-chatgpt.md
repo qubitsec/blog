@@ -1,16 +1,16 @@
 ---
 date: 2023-02-19T05:00:00  
+draft: false
 title: "MITRE ATT&CK 視点での高度監査ポリシーの活用 with ChatGPT"  
 description: ""  
-featured_image: ""  
+featured_image: "cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png"
 tags: ["MITRE ATT&CK", "高度監査ポリシー", "イベントチャネル", "Windows PowerShell チャネル", "MITRE ATT&CK", "Windows イベントログ"]  
 ---
-
-![column_20230222-1](https://github.com/user-attachments/assets/379e8238-977b-4938-a4a4-ce8df95b9d51)
 
 > 本内容はChatGPTとQnAを整理したもので、ChatGPTが作成した部分において任意の修正はされていません。
 
 ### Q1. MITRE ATT&CK 視点でログモニタリングを強化するために高度監査ポリシーを活用することは必ず必要ですか？
+<!--more-->
 > はい、**MITRE ATT&CK などの大規模なハッキング攻撃を防ぐためにはログモニタリングを強化することが重要です。**  
 > ログモニタリングはシステム内部で発生するイベントを収集し、保存し、分析するプロセスを指します。  
 > これにより異常兆候や攻撃行動を検出し、対応することができます。
@@ -91,6 +91,8 @@ tags: ["MITRE ATT&CK", "高度監査ポリシー", "イベントチャネル", "
 また、イベント発生履歴を分析して、今後の対応戦略を立てる際にも活用できます。
 
 **したがって、plura.ioで提供される高度監査ポリシーを使用すると、さまざまなイベントを検出して対応できるため、MITRE ATT&CKなどの大規模なハッキング攻撃に備えるために非常に有用です。**
+
+![mitre_attack_advanced_audit_policy_with_chatgpt](https://blog.plura.io/cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png)
 
 ## 参考サイト  
 - [1] Windows イベント
