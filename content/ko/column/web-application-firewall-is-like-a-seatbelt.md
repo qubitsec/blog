@@ -13,7 +13,7 @@ tags: ["웹방화벽", "WAF", "보안", "웹 공격", "랜섬웨어", "SQL 인�
 - 랜섬웨어 공격의 **70%는 웹 경유**로 발생합니다.
 
 웹은 현대 비즈니스의 중심인 동시에, 해커들이 가장 먼저 노리는 취약점이기도 합니다.
-
+<!--more-->
 ---
 
 ## 웹방화벽의 중요성
@@ -22,7 +22,6 @@ tags: ["웹방화벽", "WAF", "보안", "웹 공격", "랜섬웨어", "SQL 인�
 웹방화벽은 아래와 같은 다양한 위협으로부터 사이트를 보호합니다:
 
 ![web-application-firewall-is-like-a-seatbelt](https://blog.plura.io/cdn/column/web-application-firewall-is-like-a-seatbelt-1.png)
-<!--more-->
 ---
 
 ### 주요 방어 대상
