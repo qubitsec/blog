@@ -63,4 +63,4 @@ tags: ["セキュリティ", "クラウドセキュリティ", "情報保護", "
 100%完全な防御は難しいかもしれませんが、**クラウドベースのセキュリティプラットフォーム**は、安価で効率的な方法で企業に強力なセキュリティ環境を提供します。これにより、ハッキングの脅威に効果的に対応し、安全な情報保護体制を構築することができます。
 
 📺 **インタビュー全編を見る**  
-▶️ [YouTube](https://docs.plura.io/ko/video/company/broadcast/2024-sbs)
+▶️ [YouTube](https://docs.plura.io/ja/video/company/broadcast/2024-sbs)
