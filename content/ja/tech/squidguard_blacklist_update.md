@@ -1,14 +1,14 @@
 ---
 date: 2021-07-19T00:00:00
-description: 
-featured_image: 
-tags: 
+draft: false
 title: "有害サイトブロックリストのダウンロード"
+description: 
+featured_image: "cdn/tech/squidguard_blacklist_update-1.png"
+tags: 
 ---
 
-![blog_banner_20210727_1](https://github.com/user-attachments/assets/0eb0ba7d-33bd-425b-b8cb-cbe01d06f3d1)
-
 squidGuardでShallaブラックリストを定期的にダウンロードし、同期を行うためのスクリプト
+<!--more-->
 
 ```bash
 # vi squidguard-update-blacklist.sh
