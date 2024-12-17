@@ -11,8 +11,6 @@ tags: ["Webシェル", "セキュリティ", "PHP", "create_function"]
 
 Webシェル(Webshell)とは、Webサーバーにアップロードされることで、攻撃者がリモートからサーバーを制御できるようにする悪意のあるスクリプトです。これにより、サーバーのファイルシステムにアクセスし、コマンドを実行することが可能になります。
 
-![webshell_attack_and_create_function](https://blog.plura.io/cdn/column/webshell_attack_and_create_function-1.png)
-<!--more-->
 ---
 
 #### 主な機能:
@@ -21,6 +19,8 @@ Webシェル(Webshell)とは、Webサーバーにアップロードされるこ�
 - **ネットワーク活動:** 悪意のあるコードの拡散や他のシステムへの攻撃
 - **データベースアクセス:** 機密情報の流出
 
+![webshell_attack_and_create_function](https://blog.plura.io/cdn/column/webshell_attack_and_create_function-1.png)
+<!--more-->
 ---
 
 ### Webシェルの実行/分析情報
