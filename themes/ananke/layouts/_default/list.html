@@ -8,7 +8,8 @@
     <!-- 카드 섹션 -->
     <section class="flex-ns flex-wrap justify-between mt5">
       {{ range .Paginator.Pages }}
-        <div class="relative w-100 w-30-l mb4 bg-white br3 shadow-1" style="overflow: hidden;">
+        <div class="relative mb4 bg-white br3 shadow-1" 
+             style="flex: 1 1 calc(25% - 1rem); max-width: calc(25% - 1rem); overflow: hidden; margin: 0.5rem;">
 
           <!-- Featured Image -->
           {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
@@ -37,8 +38,8 @@
 
             <!-- Read More Link -->
             <a href="{{ .Permalink }}"
-               class="link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 ph3 mt3"
-               style="min-width: 120px; width: 25%; display: inline-block; text-align: center;">
+               class="link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 ph3 mt3" 
+               style="min-width: 120px; display: inline-block; text-align: center;">
                {{ i18n "readMore" }}
             </a>
           </div>
@@ -51,4 +52,28 @@
       {{- template "_internal/pagination.html" . -}}
     </div>
   </article>
+
+  <!-- 추가 CSS (반응형 스타일) -->
+  <style>
+    @media (min-width: 1200px) {
+      .flex-wrap > div {
+        flex: 1 1 calc(20% - 1rem);
+        max-width: calc(20% - 1rem);
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .flex-wrap > div {
+        flex: 1 1 calc(33.33% - 1rem);
+        max-width: calc(33.33% - 1rem);
+      }
+    }
+
+    @media (max-width: 767px) {
+      .flex-wrap > div {
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 1rem);
+      }
+    }
+  </style>
 {{ end }}
