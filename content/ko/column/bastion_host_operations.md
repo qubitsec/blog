@@ -1,5 +1,6 @@
 ---
 date: 2020-12-30T00:00:00
+draft: false
 description: 
 featured_image: "cdn/column/bastion_hosts-1.png"
 tags: ["Bastion Host", "AWS", "VPC", "EC2", "보안", "Private Subnet"]
