@@ -1,12 +1,11 @@
 ---
 date: 2017-08-18T00:03:00
-description: 
-featured_image: 
-tags: ["랜섬디도스", "디도스 공격", "보안", "네트워크 보안", "DDoS", "TCP Syn Flood", "HTTP Flood", "ICMP Flood"]
+draft: false
 title: "협박성 디도스 공격, 랜섬디도스(RansomDDoS)"
+description: 
+featured_image: "cdn/threats/ransomddos-1.png"
+tags: ["랜섬디도스", "디도스 공격", "보안", "네트워크 보안", "DDoS", "TCP Syn Flood", "HTTP Flood", "ICMP Flood"]
 ---
-
-![RansomDDoS](https://github.com/user-attachments/assets/530eb5ac-21e9-4443-8cf0-7daa6fe52e3a)
 
 ## 개요
 
@@ -18,8 +17,8 @@ title: "협박성 디도스 공격, 랜섬디도스(RansomDDoS)"
 
 Dos 및 DDoS 공격은 **단 몇 줄의 명령으로도 대상 서버에 막대한 피해**를 줄 수 있는 매우 위협적인 공격입니다.  
 이 문서에서는 **Dos와 DDoS의 개념, 공격 종류, 대응 방법**을 자세히 살펴보겠습니다.
-
----
+<!--more-->
+![ransomddos](https://blog.plura.io/cdn/threats/ransomddos-1.png)
 
 ## Dos와 DDoS의 개념
 
