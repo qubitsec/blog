@@ -85,6 +85,3 @@ tags: ["안티바이러스", "Antivirus", "AV", "Windows Defender", "EDR", "APT 
 
 ### 🔗 참고 문서
   - [PLURA에서 Microsoft Defender Antivirus 로그 확인하기](https://blog.plura.io/ko/respond/plura-microsoft-defender-logs/)
-
-
-
