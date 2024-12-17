@@ -1,5 +1,6 @@
 ---
 date: 2024-06-12
+draft: false
 title: "해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성"
 description: 
 featured_image: "cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
