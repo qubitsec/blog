@@ -1,21 +1,26 @@
 ---
 date: 2022-03-14T00:00:00
-description: 
-featured_image: 
-태그: ["APT 공격", "MITRE ATT&CK", "사이버 보안", "멀웨어", "PLURA"]
+draft: false
 title: "지능형지속위협(APT)공격"
+description: 
+featured_image: "cdn/respond/advanced_persistent_threat-1.png"
+태그: ["APT 공격", "MITRE ATT&CK", "사이버 보안", "멀웨어", "PLURA"]
 ---
-
-![blog_banner-220318-44](https://github.com/user-attachments/assets/ad176ad3-afa4-4387-b330-0ea017d0ac8d)
 
 C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 지속적인 위협에 노출되어 있었습니다.
 <br>CPU에 부하를 주는 요소를 찾아 보았지만, 원인을 확인할 수 없었습니다.
+
+<!--more-->
 
 다양한 백신 소프트웨어를 설치하여 탐지를 시도했지만 모두 허사였습니다.
 
 시스템 재설치를 하기에는 위험부담이 커서 엄두도 못 내고 있습니다.<br>
 특히 주말에는 어김없이 장애가 발생하여 출근하고 있습니다.
 <br>
+
+![advanced_persistent_threat](https://blog.plura.io/cdn/respond/advanced_persistent_threat-1.png)
+
+---
 
 ## 대응 방법
 최근 APT 공격은 알려진 악성 코드를 사용하지 않고 있습니다.<br>
