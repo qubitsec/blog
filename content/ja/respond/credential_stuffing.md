@@ -1,17 +1,18 @@
 ---
 date: 2022-03-14T01:00:00
-description: 
-featured_image: 
-tags: ["クレデンシャルスタッフィング", "セキュリティ", "PLURA", "アカウント攻撃", "個人情報保護"]
+draft: false
 title: "クレデンシャルスタッフィング"
+description: 
+featured_image: "cdn/respond/credential_stuffing-1.png"
+tags: ["クレデンシャルスタッフィング", "セキュリティ", "PLURA", "アカウント攻撃", "個人情報保護"]
 ---
-
-![blog_banner-220318-2](https://github.com/user-attachments/assets/64c96317-3c76-4eca-9147-b8d245984786)
 
 A社は長年にわたり認証システムを運用しています。  
 IDとパスワードでログインできる方式で、ほぼすべてのウェブサイトと同様の仕組みです。  
 会員情報漏洩のリスクから、どのように対策を講じればよいのでしょうか。  
 <br>
+<!--more-->
+![credential_stuffing](https://blog.plura.io/cdn/respond/credential_stuffing-1.png)
 
 ## 対策方法
 
