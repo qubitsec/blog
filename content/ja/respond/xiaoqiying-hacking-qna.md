@@ -9,15 +9,13 @@ tags: ["Xiaoqiying", "PLURA-WAF", "PLURA-SIEM"]
 
 > **"本内容はChatGPTとのQnAを整理したものであり、ChatGPTが作成した部分において任意修正された事実はありません。"**
 
-<!--more-->
-![xiaoqiying_hacking_qna](https://blog.plura.io/cdn/respond/xiaoqiying_hacking_qna-1.png)
-
 ### Q1. シャオチイン(Xiaoqiying) ハッキンググループの理解
 > XiaoqiyingとAPT-C-23は同じハッキンググループを指す異なる名称です。
 > 2021年3月、マカフィー(McAfee)社はXiaoqiyingとAPT-C-23の活動が類似しているという分析結果を発表しました。
 > その後、Xiaoqiyingという名前がAPT-C-23とともに頻繁に言及されるようになりました。
+<!--more--> 
 > したがって、この二つの用語はほぼ同じ意味で使用されます。
-> 
+>
 > → 一部の資料では、APT-C-23はアラビア語を使用するとの記載があり、Xiaoqiyingが中国を拠点とするハッキンググループであることとの関連性については、さらなる調査が必要です。by PLURA
 
 ### Q2. シャオチイン(Xiaoqiying) 攻撃の目的
