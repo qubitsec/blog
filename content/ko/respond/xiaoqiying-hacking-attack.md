@@ -1,17 +1,18 @@
 ---
 date: 2023-02-19T01:00:00
+draft: false
 title: "샤오치잉(Xiaoqiying) 해킹 공격 대응하기"
 description: 
-featured_image: ""
+featured_image: "cdn/respond/xiaoqiying-hacking-attack-1.png"
 tags: ["Xiaoqiying", "PLURA-WAF", "웹 방화벽", "웹 해킹", "공격 대응", "크리덴셜 스터핑"]
 ---
-
-![샤오치잉 공격](https://github.com/user-attachments/assets/f745d1bc-f503-4749-8827-9feb5407b156)
 
 ## 개요
 
 해킹 그룹 **샤오치잉(Xiaoqiying)** 은 18개 공공 기관 및 기업에 해킹 공격을 가했다고 주장하고 있습니다.  
 이번 공격 사례를 정리한 결과, 주요 경로는 **웹 서버**를 통한 공격이었습니다.
+<!--more-->
+![xiaoqiying-hacking-attack](https://blog.plura.io/cdn/respond/xiaoqiying-hacking-attack-1.png)
 
 ---
 
