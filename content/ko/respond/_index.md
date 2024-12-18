@@ -1,7 +1,7 @@
 ---
 title: "Threats Respond 🛡️"
 description: "PLURA-XDR 대응 전략"
-featured_image: '/images/ko-bg.jpg'
+featured_image: '/images/bg-mountain-3.png'
 ---
 
 다양한 공격 위험에 대한 이해를 바탕으로,  
