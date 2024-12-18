@@ -1,7 +1,7 @@
 ---
 title: "Column 📰"
 description: "보안, 기술, 그리고 인사이트"
-featured_image: '/images/ko-bg.jpg'
+featured_image: '/images/bg-road.png.png'
 ---
 
 최신 보안 트렌드, 혁신적인 기술접근법, 그리고 커리어여정을  
