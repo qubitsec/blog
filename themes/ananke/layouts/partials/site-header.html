@@ -1,7 +1,7 @@
 {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
 {{ if $featured_image }}
   {{ $featured_image_class := .Params.featured_image_class | default "cover bg-center" }}
-  {{ $cover_dimming_class := .Params.cover_dimming_class | default "bg-black-60" }}
+  {{ $cover_dimming_class := .Params.cover_dimming_class | default "bg-black-40" }}
   <header class="cover bg-center" style="background-image: url('{{ with .Site.Language.Params.background_image }}{{ . }}{{ else }}/images/gohugo-default-sample-hero-image.jpg{{ end }}');">
     <div class="{{ $cover_dimming_class }}">
       {{ partial "site-navigation.html" . }}
