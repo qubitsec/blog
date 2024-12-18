@@ -1,22 +1,25 @@
 ---
 date: 2022-03-19T02:00:00
-description: 
-featured_image: 
-tags: ["ホームネットワーク", "ウォールパッド", "サイバーセキュリティ", "WAF", "SIEM"]
+draft: false
 title: "ホームネットワーク（ウォールパッド）のセキュリティ"
+description: 
+featured_image: "cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
+tags: ["ホームネットワーク", "ウォールパッド", "サイバーセキュリティ", "WAF", "SIEM"]
 ---
-
-![1](https://github.com/user-attachments/assets/7289ad9c-7ba0-475a-8ab4-3ce585bf618d)
 
 2021年末、ウォールパッドのハッキングに関する記事が報じられ、多くのホームネットワーク（以下ホームネット）企業がハッキング対策に積極的に取り組んでいます。
 
 しかし、ホームネットのセキュリティは他のさまざまなアパート運営システムと連携しているため、ホームネット企業だけの問題ではありません。
+
+<!--more-->
 
 たとえば、駐車場管理システム、冷暖房システム、CCTV監視システム、インターネット網など、さまざまなシステムがホームネットに接続されている構造です。
 
 実際、これらのシステムを通じてハッキングされた事例が多数存在します。
 
 ホームネットワークシステムをどのように安全に管理することができるのでしょうか？
+
+![home_network_wallpad_security](https://blog.plura.io/cdn/respond/home_network_wallpad_security-1.png)
 
 ## 対応方法
 
