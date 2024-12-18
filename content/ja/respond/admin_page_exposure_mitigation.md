@@ -1,16 +1,20 @@
 ---
 date: 2023-11-14
+draft: false
 title: "[WEB] 管理者ページの露出対応"
 description: 
-featured_image: ""
+featured_image: "cdn/respond/admin_page_exposure_mitigation-1.png"
 tags: ["管理者ページ", "セキュリティ", "WAF", "二要素認証", "ブルートフォース", "PLURA", "Webセキュリティ", "SQLインジェクション"]
 ---
-
-![1-1](https://github.com/user-attachments/assets/a65758a3-f6fd-48e2-9331-14aa9a6720c1)
 
 ## 概要
 
 管理者ページの露出とは、**認可されていないユーザーや攻撃者がアクセスできないよう保護されるべき管理者ページが外部に露出した状態**を指します。このような露出は深刻なセキュリティリスクを引き起こします。
+
+<!--more-->
+![ransomeware](https://blog.plura.io/cdn/respond/admin_page_exposure_mitigation-1.png)
+
+---
 
 ### 主なセキュリティリスク
 - **攻撃のターゲット化**: 露出した管理者ページは攻撃者の主な標的となります。  
