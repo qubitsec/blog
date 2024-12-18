@@ -1,17 +1,18 @@
 ---
 date: 2024-03-04
+draft: false
 title: "PLURA에서 Microsoft Defender Antivirus 로그 확인하기"
 description:
-featured_image: ""
+featured_image: "cdn/respond/plura_microsoft_defender_logs-1.png"
 tags: ["Microsoft Defender", "보안 로그", "PLURA", "안티바이러스"]
 ---
-
-![column_20240304](https://github.com/user-attachments/assets/a254870f-a26f-4a89-997c-c93368c40408)
 
 ### Microsoft Defender Antivirus란?
 
 **Microsoft Defender Antivirus**는 Microsoft Windows의 내장 바이러스 백신 소프트웨어 구성 요소입니다. [1]  
 Defender는 탐지 결과를 로그로 남기며, PLURA는 이 로그를 수집하여 관리자가 악성 감염 및 탐지 이벤트를 효과적으로 파악할 수 있도록 지원합니다.
+<!--more-->
+![plura_microsoft_defender_logs](https://blog.plura.io/cdn/respond/plura_microsoft_defender_logs-1.png)
 
 ---
 
