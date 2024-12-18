@@ -1,18 +1,19 @@
 ---
 date: 2023-02-20T02:00:00
+draft: false
 title: "ウェブサービス攻撃への対応 against シャオチーニン(Xiaoqiying)"
 description: ""
-featured_image: ""
+featured_image: "cdn/respond/web_service_attack_response_against_xiaoqiying-1.png"
 tags: ["PLURA-SIEM", "WAF", "Post-body", "ウェブセキュリティ", "クレデンシャルスタッフィング", "攻撃対策"]
 ---
-
-![ウェブサービス保護](https://github.com/user-attachments/assets/ec557af0-de13-4f7e-a253-b9f17f5b51ea)
 
 ## 概要
 
 ウェブサービスを保護するために必須の製品は、**ウェブアプリケーションファイアウォール(WAF)** です。  
 ネットワーク型侵入防止システム(NIPS, Network-based Intrusion Prevention System)と併用される場合もありますが、  
 NIPSは現代の環境では適さず、ネットワークの複雑化により障害のリスクを高めるため、むしろ除去が推奨されます。
+<!--more-->
+![web_service_attack_response_against_xiaoqiying](https://blog.plura.io/cdn/respond/web_service_attack_response_against_xiaoqiying-1.png)
 
 ---
 
