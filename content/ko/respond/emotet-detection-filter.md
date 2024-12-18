@@ -1,18 +1,19 @@
 ---
 date: 2023-02-06T00:00:00
-description: 
-featured_image: 
-tags: ["Emotet", "악성코드", "트로이 목마", "PLURA", "필터"] 
+draft: false
 title: "EMOTET 탐지 필터"
+description: 
+featured_image: "cdn/respond/emotet-detection-filter-1.png"
+tags: ["Emotet", "악성코드", "트로이 목마", "PLURA", "필터"] 
 ---
-
-![excel](https://github.com/user-attachments/assets/29f395fe-2696-452c-baea-303f6e6f835f)
 
 > 이모텟(Emotet)은 개인으로부터 신용카드 정보 등을 훔치는 뱅킹 트로이 목마 바이러스이다. <br>
 > 2014년부터 활동했으며 수년 동안 크게 발전해 기업 네트워크에 침투하고 다른 악성코드 유형으로 확산되는 중대한 위협이 되었다.
 >
 > 미국 국토안보부(DHS)는 2018년 7월 이모텟에 대한 경보를 발령하면서 "주로 다른 뱅킹 트로이 목마 바이러스의 다운로더 또는 드롭퍼(Dropper)로 기능하는 발전된 모듈식 뱅킹 트로이 목마 바이러스"라고 설명하면서, 퇴치하기가 매우 어려우며 일반적인 시그니처 기반 탐지를 회피하고 스스로 확산된다고 경고했다.  <br>
 > 이 경보에서는 "이모텟 감염으로 주 정부나 지역자치단체들은 사건당 최대 100만 달러의 해결 비용이 발생했다"고 설명했다.
+<!--more-->
+![emotet-detection-filter](https://blog.plura.io/cdn/respond/emotet-detection-filter-1.png)
 
 ## EMOTET 탐지 필터
 
