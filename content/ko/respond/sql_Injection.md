@@ -1,18 +1,19 @@
 ---
 date: 2022-03-21T04:00:00
-description: 
-featured_image: 
-tags: ["SQL Injection", "보안 취약점", "데이터 유출", "웹 해킹", "PLURA"]
+draft: false
 title: "SQL 인젝션"
+description: 
+featured_image: "cdn/respond/sql_injection-1.png"
+tags: ["SQL Injection", "보안 취약점", "데이터 유출", "웹 해킹", "PLURA"]
 ---
-
-![SQL Injection](https://github.com/user-attachments/assets/effd8178-920d-413e-ab79-61fb6815f22f)
 
 B 기업은 오랫동안 SQL 인젝션에 대응하기 위해 노력해왔지만, 해커들의 공격 수법은 날로 정교해지고 있습니다.  
 공격 IP 주소는 국내뿐 아니라 해외 IP도 사용되며, 특히 **주말과 휴일의 새벽 시간** 등 대응이 취약한 시간대를 노리고 공격이 집중됩니다.  
 
 보안 관제 전문 회사의 24시간 관제 서비스조차 실시간 대응은 어려운 경우가 많으며,  
 기업이 자체적으로 24시간, 365일 관제를 운영하는 것은 거의 불가능에 가깝습니다.
+<!--more-->
+![sql_injection](https://blog.plura.io/cdn/respond/sql_injection-1.png)
 
 ---
 
