@@ -1,15 +1,16 @@
 ---
 date: 2021-01-15T00:02:00
+draft: false
 title: "RANSOMWARE 상관 분석 필터"
 description: ""
-featured_image: ""
+featured_image: "cdn/respond/ransomeware-1.png"
 tags: []
 ---
 
-![shutterstock_430063522_s-1](https://github.com/user-attachments/assets/b93bff49-0b63-4974-a389-51ef823ed95d)
-
 ![00](https://github.com/user-attachments/assets/048dfac4-00d5-49cb-a6e8-9c96be93c2bf)
 
+<!--more-->
+---
 ![02 (1)](https://github.com/user-attachments/assets/bb24bb86-c066-443b-9fcb-b7e44f320460)
 
 ![wannacry-1](https://github.com/user-attachments/assets/e2d5d173-7453-4c06-a410-42dfa0a20772)
