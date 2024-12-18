@@ -1,5 +1,5 @@
 ---
-title: "テック 🤖"  
+title: " 技術 🤖"  
 description: "簡潔な核心テクノロジー"  
 featured_image: '/images/bg-aurora.png'  
 ---
