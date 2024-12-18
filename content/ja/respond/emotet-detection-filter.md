@@ -1,18 +1,19 @@
 ---
 date: 2023-02-06T00:00:00
-description: 
-featured_image: 
-tags: ["Emotet", "マルウェア", "トロイの木馬", "PLURA", "フィルター"]
+draft: false
 title: "EMOTET検知フィルター"
+description: 
+featured_image: "cdn/respond/emotet-detection-filter-1.png"
+tags: ["Emotet", "マルウェア", "トロイの木馬", "PLURA", "フィルター"]
 ---
-
-![excel](https://github.com/user-attachments/assets/29f395fe-2696-452c-baea-303f6e6f835f)
 
 > Emotet（エモテット）は、クレジットカード情報などを個人から盗むバンキング型トロイの木馬ウイルスです。 <br>
 > 2014年から活動を開始し、数年間で大きく進化し、企業ネットワークに侵入し他のマルウェアタイプを拡散させる重大な脅威となっています。
 >
 > 米国国土安全保障省（DHS）は2018年7月にEmotetに関する警告を発し、「主に他のバンキング型トロイの木馬ウイルスのダウンローダーまたはドロッパー（Dropper）として機能する進化したモジュール型バンキングトロイの木馬ウイルス」と説明し、除去が非常に困難で一般的なシグネチャベースの検出を回避し、自ら拡散すると警告しました。  <br>
 > この警告では「Emotet感染により、州政府や地方自治体は1件あたり最大100万ドルの解決費用が発生した」と説明されています。
+<!--more-->
+![emotet-detection-filter](https://blog.plura.io/cdn/respond/emotet-detection-filter-1.png)
 
 ## EMOTET検知フィルター
 
