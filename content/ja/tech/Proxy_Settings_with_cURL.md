@@ -10,13 +10,14 @@ tags: ["curl", "proxy", "プロキシ設定"]
 # curl オプション設定でプロキシを経由する方法
 
 **以下はテスト用マルウェアをダウンロードする例です。**
-<!--more-->
 
 ```bash
 curl -O -x "http://127.0.0.1:3128" http://www.eicar.org/download/eicar.com
 curl -O --proxy "http://127.0.0.1:3128" http://www.eicar.org/download/eicar.com
 curl -x localhost:3128 -I -L http://www.eicar.org/download/eicar.com
 ```
+
+<!--more-->
 
 `-x` オプションだけでなく、`--proxy` も同様に使用できます。
 
