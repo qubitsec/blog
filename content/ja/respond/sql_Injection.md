@@ -1,12 +1,11 @@
 ---
 date: 2022-03-21T04:00:00
-description: 
-featured_image: 
-tags: ["SQLインジェクション", "セキュリティ脆弱性", "データ漏洩", "ウェブハッキング", "PLURA"]
+draft: false
 title: "SQLインジェクション"
+description: 
+featured_image: "cdn/respond/sql_injection-1.png"
+tags: ["SQLインジェクション", "セキュリティ脆弱性", "データ漏洩", "ウェブハッキング", "PLURA"]
 ---
-
-![SQL Injection](https://github.com/user-attachments/assets/effd8178-920d-413e-ab79-61fb6815f22f)
 
 B社は長年にわたりSQLインジェクションへの対応に取り組んできましたが、  
 攻撃者の手法はますます高度化しています。  
@@ -15,6 +14,8 @@ B社は長年にわたりSQLインジェクションへの対応に取り組ん�
 
 セキュリティ監視専門会社の24時間監視サービスでさえも、リアルタイム対応が困難な場合があり、  
 企業が独自に24時間365日の監視体制を構築するのはほぼ不可能に近い状況です。
+<!--more-->
+![sql_injection](https://blog.plura.io/cdn/respond/sql_injection-1.png)
 
 ---
 
