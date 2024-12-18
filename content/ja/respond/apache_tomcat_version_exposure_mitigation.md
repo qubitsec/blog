@@ -1,17 +1,18 @@
 ---
 date: 2023-10-05
+draft: false
 title: "[Apache Tomcat] バージョン情報漏洩対策"
 description: 
-featured_image: ""
+featured_image: "cdn/respond/http_status_500_Internal_server_error-1.png"
 tags: ["Apache Tomcat", "セキュリティ", "バージョン情報", "サーバ設定", "脆弱性対策"]
 ---
-
-![Apache Tomcat ロゴ](https://github.com/user-attachments/assets/f4838905-a0e0-4893-916e-6438a23edd86)
 
 ## 概要
 
 Apache Tomcatは、デフォルトの設定では**エラー発生時にサーバのバージョン情報が漏洩**する可能性があります。  
 これは攻撃者がサーバの脆弱性を悪用するリスクを高めるため、**バージョン情報を隠す設定**が必要です。
+<!--more-->
+![http_status_500_Internal_server_error](https://blog.plura.io/cdn/respond/http_status_500_Internal_server_error-1.png)
 
 ---
 
