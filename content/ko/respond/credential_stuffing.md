@@ -1,17 +1,18 @@
 ---
 date: 2022-03-14T01:00:00
-description: 
-featured_image: 
-tags: ["크리덴셜 스터핑", "보안", "PLURA", "계정 공격", "개인정보 보호"]
+draft: false
 title: "크리덴셜 스터핑"
+description: 
+featured_image: "cdn/respond/credential_stuffing-1.png"
+tags: ["크리덴셜 스터핑", "보안", "PLURA", "계정 공격", "개인정보 보호"]
 ---
-
-![blog_banner-220318-2](https://github.com/user-attachments/assets/64c96317-3c76-4eca-9147-b8d245984786)
 
 A 기업은 오랜 기간 인증 시스템을 운영하고 있습니다.<br>
 아이디와 패스워드로 로그인할 수 있는 방식으로 거의 모든 홈페이지와 동일합니다.<br>
 회원 정보 유출의 위험으로부터 어떻게 대응할 수 있을까요.<br>
 <br>
+<!--more-->
+![credential_stuffing](https://blog.plura.io/cdn/respond/credential_stuffing-1.png)
 
 ## 대응 방법
 **크리덴셜 스터핑 계정 공격은 현존하는 가장 무서운 공격입니다.**
