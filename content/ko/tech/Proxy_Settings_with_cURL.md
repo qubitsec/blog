@@ -10,13 +10,14 @@ tags: ["curl", "proxy", "프록시 설정"]
 # curl 옵션 설정 중 프록시 경유하기
 
 **다음은 테스트용 악성코드를 다운로드받는 예제입니다.**
-<!--more-->
 
 ```bash
 curl -O -x "http://127.0.0.1:3128" http://www.eicar.org/download/eicar.com
 curl -O --proxy "http://127.0.0.1:3128" http://www.eicar.org/download/eicar.com
 curl -x localhost:3128 -I -L http://www.eicar.org/download/eicar.com
 ```
+
+<!--more-->
 
 `-x` 옵션뿐만 아니라 `--proxy`도 동일한 옵션으로 사용할 수 있습니다.
 
