@@ -1,14 +1,16 @@
 ---
 date: 2023-02-23T00:00:00
-description: 
-featured_image: 
-tags: ["クレデンシャルスタッフィング", "サイバーセキュリティ", "PLURA", "クラウドSaaS", "メタ情報分析"]
+draft: false
 title: "クレデンシャルスタッフィング攻撃に対応する"
+description: 
+featured_image: "cdn/respond/credential_stuffing_with_chatgpt-1.png"
+tags: ["クレデンシャルスタッフィング", "サイバーセキュリティ", "PLURA", "クラウドSaaS", "メタ情報分析"]
 ---
 
-![with-ChatGPT-20230223-2](https://github.com/user-attachments/assets/5156a4a9-d063-4d13-a023-13bae144c972)
-
 「本内容はChatGPTとのQnAを整理したものであり、ChatGPTが作成した部分について任意に修正された事実はありません。」
+
+<!--more-->
+![credential_stuffing_with_chatgpt](https://blog.plura.io/cdn/respond/credential_stuffing_with_chatgpt-1.png)
 
 ### Q1. クレデンシャルスタッフィング攻撃を説明してください。
 
