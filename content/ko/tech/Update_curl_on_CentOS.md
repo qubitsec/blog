@@ -11,12 +11,11 @@ tags:
 ```bash
 # yum -y update epel-release
 ```
-<!--more-->
-
 ## create a new file /etc/yum.repos.d/city-fan.repo
 ```bash
 # vi /etc/yum.repos.d/city-fan.repo
 ```
+<!--more-->
 
 ## Paste the following contents:
 ```bash
