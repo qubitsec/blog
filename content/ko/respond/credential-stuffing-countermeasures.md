@@ -1,16 +1,17 @@
 ---
 date: 2023-02-23T00:00:00
-description: 
-featured_image: 
-tags: ["크리덴셜 스터핑", "사이버 보안", "PLURA", "클라우드 SaaS", "메타정보 분석"]
+draft: false
 title: "크리덴셜 스터핑 공격 대응하기"
+description: 
+featured_image: "cdn/respond/credential_stuffing_with_chatgpt-1.png"
+tags: ["크리덴셜 스터핑", "사이버 보안", "PLURA", "클라우드 SaaS", "메타정보 분석"]
 ---
-
-![with-ChatGPT-20230223-2](https://github.com/user-attachments/assets/5156a4a9-d063-4d13-a023-13bae144c972)
 
 “본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 부분에 있어서 임의 수정된 사실은 없습니다.”
 
 ### Q1. 크리덴셜 스터핑 공격을 설명해 주세요.
+
+<!--more-->
 
 > 크리덴셜 스터핑(Credential Stuffing) 공격은 대량의 ID와 Password 목록을 이용하여 온라인 계정에 대한 비밀번호를 무차별 대입하는 공격 기법입니다. <br>
 > 이 공격은 공격자가 이미 다른 웹사이트 등에서 유출된 계정 정보를 이용하여 해당 정보를 이용하는 것이 주요한 특징입니다.
