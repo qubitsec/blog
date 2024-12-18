@@ -9,23 +9,21 @@ tags: ["sqlmap", "SQL Injection", "보안", "침투 테스트", "데이터베이
 
 **sqlmap**은 SQL Injection 결함을 감지하고 악용할 수 있는 Python으로 작성된 오픈 소스 침투 테스트 도구입니다.
 
-<!--more-->
-![sqlmap](https://blog.plura.io/cdn/tech/sqlmap-1.png)
-
----
-
 ### 주요 특징
 - **지원 데이터베이스**: MySQL, PostgreSQL, Oracle, Microsoft SQL Server 등 최신 데이터베이스에서 작동
 - **기능**:
   - DB 취약 여부 확인부터 데이터베이스, 테이블, 컬럼, 데이터 탈취까지 SQL Injection 공격 기술을 자동화
+
+<!--more-->
+
 - **지원 SQL Injection 기술**:
   - Error Based
   - Time Delay
   - Stacked Queries
   - Boolean Based
   - Union Based
-
----
+  
+![sqlmap](https://blog.plura.io/cdn/tech/sqlmap-1.png)
 
 ## sqlmap 사용법 및 예제
 
