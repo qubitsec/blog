@@ -1,7 +1,7 @@
 ---
 title: "脅威 🦠"  
 description: "脅威の本質の理解"  
-featured_image: '/images/ja-bg.jpg'  
+featured_image: '/images/bg-mountain-sky.png'  
 ---
 
 サイバー脅威の本質的な問題を理解し、  
