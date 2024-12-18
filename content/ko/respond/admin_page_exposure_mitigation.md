@@ -1,16 +1,20 @@
 ---
 date: 2023-11-14
+draft: false
 title: "[WEB] 관리자 페이지 노출 대응"
 description: 
-featured_image: ""
+featured_image: "cdn/respond/admin_page_exposure_mitigation-1.png"
 tags: ["관리자 페이지", "보안", "WAF", "2차 인증", "Brute Force", "PLURA", "웹 보안", "SQL 인젝션"]
 ---
-
-![1-1](https://github.com/user-attachments/assets/a65758a3-f6fd-48e2-9331-14aa9a6720c1)
 
 ## 개요
 
 관리자 페이지 노출은 **인가되지 않은 사용자 및 공격자가 접근할 수 없도록 보호되어야 하는 관리자 페이지가 외부에 노출된 상황**을 의미합니다. 이러한 노출은 심각한 보안 위협을 초래할 수 있습니다.
+
+<!--more-->
+![ransomeware](https://blog.plura.io/cdn/respond/admin_page_exposure_mitigation-1.png)
+
+---
 
 ### 주요 보안 위협
 - **공격 표적화**: 노출된 관리자 페이지는 공격자의 주요 대상이 됩니다.  
