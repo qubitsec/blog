@@ -1,7 +1,7 @@
 ---
 title: "Threats 🦠"
 description: "위협의 본질의 이해"
-featured_image: '/images/ko-bg.jpg'
+featured_image: '/images/bg-mountain-sky.png'
 ---
 
 사이버 위협의 본질적인 문제를 이해하고,  
