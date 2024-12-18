@@ -1,14 +1,16 @@
 ---
 date: 2023-02-19T05:00:00
+draft: false
 title: "[QnA] シャオチイン(Xiaoqiying) ハッキング攻撃への対応 with ChatGPT"
 description: ""
-featured_image: ""
+featured_image: "cdn/respond/xiaoqiying_hacking_qna-1.png"
 tags: ["Xiaoqiying", "PLURA-WAF", "PLURA-SIEM"]
 ---
 
-![column-20230221-2](https://github.com/user-attachments/assets/21ff805a-4fe5-4b7f-9a07-da372112f997)
-
 > **"本内容はChatGPTとのQnAを整理したものであり、ChatGPTが作成した部分において任意修正された事実はありません。"**
+
+<!--more-->
+![xiaoqiying_hacking_qna](https://blog.plura.io/cdn/respond/xiaoqiying_hacking_qna-1.png)
 
 ### Q1. シャオチイン(Xiaoqiying) ハッキンググループの理解
 > XiaoqiyingとAPT-C-23は同じハッキンググループを指す異なる名称です。
