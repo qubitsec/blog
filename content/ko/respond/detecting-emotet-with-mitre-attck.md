@@ -1,19 +1,19 @@
 ---
 date: 2023-01-11T02:00:00
+draft: false
 title: "마이터 어택 관점에서 Emotet (이모텟) 탐지하기"
 description: ""
-featured_image: ""
+featured_image: "cdn/respond/detecting-emotet-with-mitre-attck-1.png"
 tags: ["emotet", "마이터어택"]
 ---
-
-![csm_emotet_aktivieren](https://github.com/user-attachments/assets/09d3c350-16ee-4ccf-9fb2-f3c4bb54d7de)
-
 
 **이모텟 (Emotet ) 악성코드는 2022년 하반기 일본에 유행하여 큰 피해를 주었고**
 
 우리나라에도 2022년 11월 알약에서 주의가 필요하다고 발표하고 있습니다.
 
 주로 스팸메일을 통하여 유포되고 있습니다.
+<!--more-->
+![detecting-emotet-with-mitre-attck](https://blog.plura.io/cdn/respond/detecting-emotet-with-mitre-attck-1.png)
 
 <br>
 
