@@ -1,17 +1,18 @@
 ---
 date: 2023-02-19T01:00:00
+draft: false
 title: "シャオチイン(Xiaoqiying)ハッキング攻撃への対応"
 description: 
-featured_image: ""
+featured_image: "cdn/respond/xiaoqiying-hacking-attack-1.png"
 tags: ["Xiaoqiying", "PLURA-WAF", "ウェブファイアウォール", "ウェブハッキング", "攻撃対応", "クレデンシャルスタッフィング"]
 ---
-
-![シャオチイン攻撃](https://github.com/user-attachments/assets/f745d1bc-f503-4749-8827-9feb5407b156)
 
 ## 概要
 
 ハッキンググループ**シャオチイン(Xiaoqiying)** は、18の公共機関および企業に対してハッキング攻撃を行ったと主張しています。  
 今回の攻撃事例を整理した結果、主要な攻撃経路は**ウェブサーバー**を通じたものでした。
+<!--more-->
+![xiaoqiying-hacking-attack](https://blog.plura.io/cdn/respond/xiaoqiying-hacking-attack-1.png)
 
 ---
 
