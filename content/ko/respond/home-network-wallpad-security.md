@@ -1,22 +1,25 @@
 ---
 date: 2022-03-19T02:00:00
-description: 
-featured_image: 
-tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
+draft: false
 title: "홈네트워크 (월패드) 보안"
+description: 
+featured_image: "cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
+tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
 ---
-
-![1](https://github.com/user-attachments/assets/7289ad9c-7ba0-475a-8ab4-3ce585bf618d)
 
 2021년 말 월패드 해킹 기사를 접한 많은 홈네트워크(이하 홈넷) 회사는 해킹 대응에 적극적으로 나서고 있습니다.
 
 하지만, 홈넷 보안은 여러 다른 아파트 운영 시스템과 연동되어 있으므로 홈넷 회사만의 문제가 아닌 구조를 갖고 있습니다.
+
+<!--more-->
 
 예를 들어, 주차관리 시스템, 냉난방 시스템, CCTV 관제 시스템, 인터넷 망 등 다양한 시스템이 홈넷에 연결되어 있는 구조입니다.
 
 실제로 해당 시스템을 통하여 해킹되었던 다수의 사례가 있습니다.
 
 어떻게 홈넷 시스템을 안전하게 관리할 수 있을까요?
+
+![home_network_wallpad_security](https://blog.plura.io/cdn/respond/home_network_wallpad_security-1.png)
 
 ## 대응 방법
 
