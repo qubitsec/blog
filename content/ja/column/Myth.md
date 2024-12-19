@@ -36,4 +36,4 @@ PLURAは、**監査ポリシー設定**と**ウェブリクエストおよびレ
 完璧なログ分析を通じて、サイバーセキュリティをさらに向上させましょう。
 
 ## 参考サイト
-* MITRE ATT&CK視点での高度な監査ポリシー活用, https://blog.plura.io/ko/threats/mitre_audit_gpt/
+* MITRE ATT&CK視点での高度な監査ポリシー活用, https://blog.plura.io/ko/threats/mitre-attack-advanced-audit-policy-with-chatgpt/
