@@ -11,9 +11,9 @@ tags: ["응답 상태값", "status", "200", "404", "웹 보안"]
 
 웹 서버 관리에서 서버 응답값을 항상 ‘200’으로 설정하는 것이 정보보안에 도움이 될까요? 이를 둘러싼 논의와 함께 바람직한 대응 방안을 살펴봅니다.
 
-![응답 상태값과 보안](https://blog.plura.io/cdn/column/status_code_security.jpg)
-
 <!--more-->
+
+![응답 상태값과 보안](https://blog.plura.io/cdn/column/status_code_security.jpg)
 
 ---
 
