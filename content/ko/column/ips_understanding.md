@@ -7,9 +7,7 @@ featured_image: "cdn/column/ips_understanding-1.png"
 tags: ["IPS", "OSI 모델", "보안"]
 ---
 
-### 🛡️ 침입차단시스템(IPS) 이해하기
-
-침입차단시스템(IPS, Intrusion Prevention System)은 OSI(Open Systems Interconnection) 모델을 기반으로 네트워크 및 호스트에서 발생하는 보안 위협을 탐지하고 방지하는 포괄적인 시스템입니다. IPS는 다양한 계층에서 작동하며, 네트워크와 호스트를 포함한 다층적 보안 전략의 핵심 요소로 작용합니다.
+🛡️침입차단시스템(IPS, Intrusion Prevention System)은 OSI(Open Systems Interconnection) 모델을 기반으로 네트워크 및 호스트에서 발생하는 보안 위협을 탐지하고 방지하는 포괄적인 시스템입니다. IPS는 다양한 계층에서 작동하며, 네트워크와 호스트를 포함한 다층적 보안 전략의 핵심 요소로 작용합니다.
 
 <!--more-->
 
