@@ -1,6 +1,6 @@
 ---
 title: "웹 서비스의 취약점은 대응할 수 있을까?"
-date: 2023-12-19
+date: 2023-05-06T11:42:00
 draft: false
 description: "웹 취약점 점검 서비스와 ISMS, 웹방화벽을 통해 웹 서비스 취약점을 개선하는 방안을 알아봅니다."
 featured_image: "cdn/column/web_vulnerability_response.jpg"
