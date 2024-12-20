@@ -1,6 +1,6 @@
 ---
 title: "요청 본문 로그 저장 시 용량 증가율 분석"
-date: 2023-12-19
+date: 2023-05-05T10:37:00
 draft: false
 description: "요청 본문(Post-body)을 로그로 남길 경우 로그 용량 증가율과 스토리지 요구 사항을 분석합니다."
 featured_image: "cdn/column/request_body_log_increase.jpg"
