@@ -11,9 +11,9 @@ tags: ["요청 본문", "Post-body", "Request-body", "로그 분석"]
 
 전통적으로 웹 서버의 액세스 로그(access.log)에는 요청 본문(Post-body)이 포함되지 않습니다. 이는 기본 설정에서 본문 로그가 제공되지 않으며, 본문 로그로 인해 용량 증가를 우려하기 때문입니다. 그러나, 본문 로그는 웹 방화벽(WAF) 우회 공격을 방지하고 보안을 강화하기 위해 필수적입니다.
 
-![요청 본문 로그 저장 분석](https://blog.plura.io/cdn/column/request_body_log_increase.jpg)
-
 <!--more-->
+
+![요청 본문 로그 저장 분석](https://blog.plura.io/cdn/column/request_body_log_increase.jpg)
 
 ---
 
