@@ -1,6 +1,6 @@
 ---
 title: "보안상 응답 상태값 변경 필요한가요?"
-date: 2023-12-19
+date: 2024-01-12T16:46:00
 draft: false
 description: "웹 서버 관리에서 응답 상태값(status)을 변경하는 보안적 필요성과 효과를 분석합니다."
 featured_image: "cdn/column/status_code_security.jpg"
