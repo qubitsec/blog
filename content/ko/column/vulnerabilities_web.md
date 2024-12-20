@@ -11,9 +11,9 @@ tags: ["웹 취약점", "ISMS", "웹방화벽", "웹 보안"]
 
 웹 공격의 심각성을 고려할 때, 웹 서비스의 취약점 개선을 위한 접근 방법은 무엇일까요? 웹 서비스는 다양한 위협에 노출되어 있으며, 이에 대응하기 위한 체계적이고 실질적인 보안 전략이 필요합니다.
 
-![웹 취약점 대응](https://blog.plura.io/cdn/column/web_vulnerability_response.jpg)
-
 <!--more-->
+
+![웹 취약점 대응](https://blog.plura.io/cdn/column/web_vulnerability_response.jpg)
 
 ---
 
