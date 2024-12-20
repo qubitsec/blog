@@ -1,6 +1,6 @@
 ---
 title: "제로 트러스트 아키텍처(ZTA, Zero Trust Architecture) 기본 원리"
-date: 2023-12-19
+date: 2023-05-13T17:20:00
 draft: false
 description: "NIST SP 800-207에 기반한 제로 트러스트 아키텍처의 핵심 원칙을 설명합니다."
 featured_image: "cdn/column/zero_trust_architecture.jpg"
