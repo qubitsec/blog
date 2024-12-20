@@ -11,9 +11,9 @@ tags: ["IPS", "NIPS", "HIPS", "하이브리드 IPS"]
 
 침입차단시스템(IPS)은 다양한 유형으로 분류될 수 있으며, 보안 요구사항에 따라 NIPS(Network Intrusion Prevention Systems), HIPS(Host Intrusion Prevention Systems), 그리고 하이브리드 IPS로 나눌 수 있습니다. 각 분류는 작동 원리와 목적이 다르며, 보안 전략의 핵심 요소로 작용합니다.
 
-![IPS 분류](https://blog.plura.io/cdn/column/ips_classification-1.jpg)
-
 <!--more-->
+
+![IPS 분류](https://blog.plura.io/cdn/column/ips_classification-1.jpg)
 
 ---
 
