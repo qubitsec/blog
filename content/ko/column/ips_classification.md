@@ -1,6 +1,6 @@
 ---
 title: "침입차단시스템(IPS) 분류: NIPS, HIPS, 그리고 하이브리드"
-date: 2023-12-19
+date: 2024-02-23T12:58:00
 draft: false
 description: "IPS를 NIPS, HIPS, 하이브리드로 분류하여 각각의 특성과 적용 범위를 분석합니다."
 featured_image: "cdn/column/ips_classification-1.jpg"
