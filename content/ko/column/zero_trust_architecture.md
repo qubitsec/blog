@@ -11,9 +11,9 @@ tags: ["Zero Trust", "ZTA", "보안", "NIST"]
 
 제로 트러스트 아키텍처(ZTA)는 보안 강화와 위협 대응을 위해 다음과 같은 기본 원칙에 따라 설계 및 배포됩니다. 이는 조직 내 리소스와 데이터 보호를 최우선으로 하여 보안 태세를 강화하기 위한 전략적 접근법입니다.
 
-![제로 트러스트 아키텍처](https://blog.plura.io/cdn/column/zero_trust_architecture.jpg)
-
 <!--more-->
+
+![제로 트러스트 아키텍처](https://blog.plura.io/cdn/column/zero_trust_architecture.jpg)
 
 ---
 
