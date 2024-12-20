@@ -1,6 +1,6 @@
 ---
 title: "NDR의 한계: 해결 불가능한 미션"
-date: 2023-12-19
+date: 2024-02-29T07:18:00 
 draft: false
 description: "NDR(Network Detection and Response)의 기술적 한계와 이를 극복하기 위한 현실적 접근 방안을 탐구합니다."
 featured_image: "cdn/column/ndr_limitations.jpg"
