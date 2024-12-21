@@ -11,7 +11,7 @@ tags: ["Splunk", "요청 본문 분석", "Post-body", "Request-body", "ModSecuri
 
 **“본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 번역과 정리 과정에서 변협이 없습니다.”**
 
-![보안과 보험의 차이점](https://blog.plura.io/cdn/column/cybersecurity_vs_insurance.png)
+![Splunk](https://blog.plura.io/cdn/column/splunk_request_body_analysis.jpg)
 
 <!--more-->
 
