@@ -9,10 +9,9 @@ tags: ["NDR", "NIPS", "ETA", "영구기관"]
 
 📡 NDR(Network Detection and Response)은 네트워크 보안의 기술로 자리 잡았지만, 본질적으로 해결하기 어려운 한계를 가지고 있습니다. 암호화된 트래픽의 분석 문제와 같은 구조적 한계부터 고급 위협 탐지의 어려움까지, 이러한 도전 과제를 살펴 보겠습니다.
 
-<!--more-->
-
 ![NDR의 한계](https://blog.plura.io/cdn/column/ndr_limitations.jpg)
 
+<!--more-->
 ---
 
 ### 1. **NDR의 주요 기능**
