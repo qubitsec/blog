@@ -8,6 +8,7 @@ tags: ["IPS", "NDR", "보안", "Security", "PLURA-XDR"]
 ---
 
 ⛑️**중소·중견 기업 환경**을 전제로, 네트워크 기반 보안 솔루션인 **IPS**(Intrusion Prevention System)와 **NDR**(Network Detection & Response)이 “과연 꼭 필요한가?”라는 질문을 다시 살펴봅니다.  
+
 🚀 결론부터 말하자면, **특수한 환경이나 규제 요건이 아니라면** 굳이 IPS/NDR까지 도입하지 않아도, **WAF + EDR/HIPS** 조합만으로도 충분한 보안 역량을 확보할 수 있습니다.
 
 ![IPS/NDR, 굳이 필요한가?](cdn/column/ips_ndr_needed.png)
