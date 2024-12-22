@@ -92,7 +92,7 @@ tags: ["Zero Trust", "ZTA", "보안", "NIST"]
 
 ---
 
-### 참고 자료
+### 📖 **함께 읽기**
 
 1. NIST SP 800-207: [Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final)  
 2. KISA 번역: "상시 진단 및 대응"  
