@@ -3,13 +3,13 @@ title: "IPS의 진화와 보안 환경의 변화"
 date: 2024-12-22
 draft: false
 description: "IPS 기술의 발전과 트래픽 암호화 증가에 따른 보안 전략의 변화에 대해 논의합니다."
-featured_image: "cdn/column/ips_evolution.png"
+featured_image: "cdn/column/ips_classification-1.jpg"
 tags: ["IPS", "HIPS", "NIPS", "보안", "Security"]
 ---
 
 **침입 방지 시스템**(IPS)는 보안 기술의 중요한 구성 요소로, 네트워크 및 호스트 수준에서 다양한 위협을 탐지하고 방지하는 역할을 수행합니다. 하지만 **암호화 트래픽의 증가**와 **퍼블릭 클라우드의 활성화**로 인해 IPS의 중심 축이 변화하고 있습니다. 다음은 IPS 기술의 역사와 현재 보안 환경에서의 변화에 대한 설명입니다.
 
-![IPS의 진화](https://blog.plura.io/cdn/column/ips_evolution.png)
+![IPS 분류](https://blog.plura.io/cdn/column/ips_classification-1.jpg)
 
 <!--more-->
 
@@ -70,6 +70,8 @@ IPS는 네트워크 수준에서 작동하는 **NIPS(Network-based Intrusion Pre
 - ["HIPS와 NIPS의 차이점과 사용 사례" - Dark Reading (2024년 8월)](https://www.darkreading.com/ips)
 
 ---
+
+![하이브리드 IPS 분류](https://blog.plura.io/cdn/column/ips_classification-2.png)
 
 ### 결론
 보안 환경은 암호화 트래픽의 급증과 퍼블릭 클라우드의 보편화로 인해 빠르게 변화하고 있습니다. NIPS의 효율성이 감소함에 따라, 보안의 중심은 HIPS로 이동했습니다.
