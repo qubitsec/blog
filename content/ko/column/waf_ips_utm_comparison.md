@@ -103,7 +103,7 @@ WAF(Web Application Firewall), IPS(Intrusion Prevention System), UTM(Unified Thr
 
 ---
 
-### 🔗 참고 자료
-- ["웹 애플리케이션 보안의 핵심: WAF 이해하기"](https://www.example.com)
-- ["IPS와 UTM의 역할 비교"](https://www.example.com)
-- ["최신 웹 공격 사례와 대응 방안"](https://www.example.com)
+### 📖 **함께 읽기**
+- [PLURA-WAF 바로가기](https://www.plura.io/platform/waf)
+- ["IPS와 UTM의 역할 비교"](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
+- ["최신 웹 공격 사례와 대응 방안"](https://blog.plura.io/ko/respond/)
