@@ -7,7 +7,7 @@ featured_image: "cdn/column/ips_vs_ndr.jpg"
 tags: ["IPS", "NDR", "보안", "네트워크 보안", "암호화 패킷", "Endpoint Security"]
 ---
 
-🔍 **IPS(Intrusion Prevention System)**와 **NDR(Network Detection and Response)**은 모두 네트워크 보안 분야에서 중요한 위치를 차지하고 있지만, **각기 다른 목적과 구현 방식**을 가집니다.  
+🔍 **IPS**(Intrusion Prevention System)와 **NDR**(Network Detection and Response)은 모두 네트워크 보안 분야에서 특정 역할을 차지하고 있지만, **각기 다른 목적과 구현 방식**을 가집니다.  
 이 문서에서는 **IPS**와 **NDR**의 정의와 차이, 그리고 암호화 트래픽이 늘어나고 있는 현대 환경에서 **이들이 지닌 한계**를 살펴보겠습니다. 또한, 이러한 한계를 보완하기 위해 왜 **호스트 기반 보안**(예: EDR) 솔루션이 필요해지고 있는지 설명합니다.
 
 ![IPS와 NDR의 차이](https://blog.plura.io/cdn/column/ips_vs_ndr.jpg)
