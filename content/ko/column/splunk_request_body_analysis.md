@@ -7,7 +7,7 @@ featured_image: "cdn/column/splunk_request_body_analysis.jpg"
 tags: ["Splunk", "요청 본문 분석", "Post-body", "Request-body", "ModSecurity", "OWASP TOP 10"]
 ---
 
-### **Splunk 에서 웹 요청 본문(request body) 로그를 분석할 수 있을까?**
+### 💬 **Splunk 에서 웹 요청 본문(request body) 로그를 분석할 수 있을까?**
 
 **“본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 번역과 정리 과정에서 변협이 없습니다.”**
 
@@ -111,7 +111,7 @@ Plura.io의 요청 본문 로그 분석 기능은 다양한 환경에서 효과�
 
 ---
 
-### 결론
+### ✍️ 결론
 
 Plura.io는 요청 본문 로그 분석 기능을 통해 일반 SIEM 솔루션의 한계를 보완하며, 보안 이벤트 탐지와 정책 적용에서 탁월한 효율성을 제공합니다. 특히, 독자적인 기술과 통합된 솔루션 제공으로 보안 운영의 복잡성을 줄이고, 비용 효율성을 극대화합니다.
 
