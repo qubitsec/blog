@@ -1,81 +1,82 @@
 ---
-title: "침입차단시스템(IPS) 분류: NIPS, HIPS, 그리고 하이브리드"
-date: 2024-02-23T12:58:00
+title: "IPS의 진화와 보안 환경의 변화"
+date: 2024-12-22
 draft: false
-description: "IPS를 NIPS, HIPS, 하이브리드로 분류하여 각각의 특성과 적용 범위를 분석합니다."
-featured_image: "cdn/column/ips_classification-1.jpg"
-tags: ["IPS", "NIPS", "HIPS", "하이브리드 IPS"]
+description: "IPS 기술의 발전과 트래픽 암호화 증가에 따른 보안 전략의 변화에 대해 논의합니다."
+featured_image: "cdn/column/ips_evolution.png"
+tags: ["IPS", "HIPS", "NIPS", "보안", "Security"]
 ---
 
-🔐침입차단시스템(IPS)은 다양한 유형으로 분류될 수 있으며, 보안 요구사항에 따라 NIPS(Network Intrusion Prevention Systems), HIPS(Host Intrusion Prevention Systems), 그리고 하이브리드 IPS로 나눌 수 있습니다. 각 분류는 작동 원리와 목적이 다르며, 보안 전략의 핵심 요소로 작용합니다.
+**침입 방지 시스템(IPS)**는 보안 기술의 중요한 구성 요소로, 네트워크 및 호스트 수준에서 다양한 위협을 탐지하고 방지하는 역할을 수행합니다. 하지만 **암호화 트래픽의 증가**와 **퍼블릭 클라우드의 활성화**로 인해 IPS의 중심 축이 변화하고 있습니다. 다음은 IPS 기술의 역사와 현재 보안 환경에서의 변화에 대한 설명입니다.
+
+![IPS의 진화](https://blog.plura.io/cdn/column/ips_evolution.png)
 
 <!--more-->
 
-![IPS 분류](https://blog.plura.io/cdn/column/ips_classification-1.jpg)
+---
+
+### 1. IPS의 종류
+IPS는 네트워크 수준에서 작동하는 **NIPS(Network-based Intrusion Prevention System)**와 호스트 수준에서 작동하는 **HIPS(Host-based Intrusion Prevention System)**로 나뉩니다.
+
+- **NIPS**: 네트워크 트래픽을 모니터링하며, 공격을 탐지하고 이를 차단합니다. 주로 기업 내부 네트워크나 데이터센터에서 사용되었습니다.
+- **HIPS**: 개별 호스트 시스템에서 작동하며, 운영체제 및 애플리케이션 수준에서의 공격을 방지합니다. 클라우드 환경과 분산형 시스템에서 특히 중요한 역할을 합니다.
 
 ---
 
-### 1. **NIPS (Network Intrusion Prevention Systems)**
+### 2. NIPS의 퇴색
+1990년대와 2000년대 초반에는 네트워크 트래픽의 대부분이 평문으로 전송되었기 때문에 NIPS의 역할이 중요했습니다. 그러나 **2010년 이후 전체 네트워크 트래픽의 99%가 암호화**되면서 NIPS의 효율성은 크게 감소했습니다.
 
-#### 정의
-NIPS는 네트워크 내에서 데이터 흐름을 모니터링하여 악성 트래픽과 공격을 식별하고 차단하는 시스템입니다.
+- **암호화 트래픽의 증가**: HTTPS와 같은 암호화 프로토콜의 사용 증가로 인해 NIPS는 트래픽 내용을 직접 검사하기 어려워졌습니다.
+- **기술적 한계**: NIPS는 암호화된 데이터의 내용을 분석하지 못하기 때문에, 공격 탐지 및 방어에서 한계를 드러냈습니다.
 
-#### 주요 기능
-- 네트워크 트래픽 패턴 분석
-- 알려진 공격 및 비정상적인 트래픽 탐지
-- 악성 트래픽 차단 및 격리
-
-#### 적용 범위
-네트워크 전체 또는 특정 세그먼트를 보호하며, 네트워크 경계에서 작동합니다.
+#### 참고 자료:
+- ["TLS 암호화 트래픽 증가와 보안의 과제" - Palo Alto Networks (2024년 3월)](https://www.paloaltonetworks.com/kr/solutions/secure-encrypted-traffic)
+- ["암호화된 트래픽의 보안 위험" - Fortinet (2023년 10월)](https://www.fortinet.com/kr/resources/secured-traffic)
 
 ---
 
-### 2. **HIPS (Host Intrusion Prevention Systems)**
+### 3. Snort와 같은 프로그램의 개발 중단
+**Snort**는 한때 NIPS/NIDS(Network-based Intrusion Detection System) 기술의 대표적인 오픈소스 프로젝트였습니다. 하지만 암호화 트래픽 증가로 인해 Snort와 같은 NIPS 기술은 점차 개발 및 유지보수의 우선순위에서 밀려나게 되었습니다.
 
-#### 정의
-HIPS는 개별 호스트나 디바이스에 설치되어 운영되는 시스템으로, 해당 호스트에서 발생하는 악성 활동을 탐지하고 차단합니다.
+- Snort의 개발사는 새로운 암호화 환경에 적응하기 위해 더 이상 NIPS 기술 개발에 중점을 두지 않고, 차세대 방화벽(NGFW) 및 HIPS 관련 기술로 전환했습니다.
+- **HIPS 중심의 발전**: 호스트 기반 보안은 암호화된 데이터의 내용을 직접 분석하지 않고도 운영체제 및 애플리케이션 수준에서 보안을 제공할 수 있습니다.
 
-#### 주요 기능
-- 파일 시스템 변경, 메모리 호출, 레지스트리 설정 변경 모니터링
-- 호스트 내부 이벤트 분석 및 악성 행위 차단
-
-#### 적용 범위
-특정 컴퓨터, 서버 등 소프트웨어가 설치된 개별 호스트를 대상으로 합니다.
+#### 참고 자료:
+- ["Snort의 개발 방향 변화와 HIPS로의 전환" - Cisco Talos (2024년 1월)](https://www.cisco.com/c/talos)
 
 ---
 
-### 3. **하이브리드 IPS (Hybrid IPS)**
+### 4. HIPS로의 무게 중심 이동
+**HIPS**는 암호화 트래픽의 증가와 **퍼블릭 클라우드 환경의 활성화**로 인해 보안의 중심 기술로 자리 잡았습니다. HIPS는 암호화 여부와 관계없이 시스템 내부에서 발생하는 행위를 분석하고 방지할 수 있는 장점을 제공합니다.
 
-#### 정의
-하이브리드 IPS는 NIPS와 HIPS의 기능을 통합하여 네트워크와 호스트 보안을 동시에 제공합니다.
+- **퍼블릭 클라우드 환경의 요구사항**:
+  - 클라우드 네이티브 애플리케이션과 컨테이너 환경은 HIPS 중심의 보안 솔루션이 적합합니다.
+  - HIPS는 호스트 시스템에 대한 세밀한 통제를 제공하며, 클라우드 자원 간 이동도 관리할 수 있습니다.
 
-#### 주요 사례
-- **CIPS (Cloud-based Intrusion Prevention Systems):** 클라우드 환경에서 네트워크와 호스트 보안을 모두 관리합니다.
-- **VIPS (Virtual IPS):** 가상화된 환경 내에서 가상 네트워크와 가상 머신의 보안을 강화합니다.
-
----
-
-### 4. **추가적인 IPS 분류**
-
-#### **WIPS (Wireless Intrusion Prevention Systems)**
-- 무선 네트워크 보안을 강화하며, 무단 접근 포인트(AP) 탐지 및 무선 트래픽 분석을 수행합니다.
-
-#### **AIPS (Application-level IPS)**
-- SQL 인젝션, 크로스 사이트 스크립팅(XSS) 등 애플리케이션 계층 공격을 탐지하고 방어합니다.
+#### 참고 자료:
+- ["클라우드 보안에서 HIPS의 중요성" - AWS Security Blog (2024년 6월)](https://aws.amazon.com/security)
+- ["퍼블릭 클라우드 환경의 보안 전략" - Gartner (2023년 11월)](https://www.gartner.com/en)
 
 ---
 
-### 5. **IIPS: 통합 IPS 전략**
+### 5. HIPS 중심 보안의 필요성
+현대의 보안 환경에서는 다음과 같은 이유로 **HIPS 중심의 보안 전략**이 필요합니다.
 
-IIPS(Integrated Intrusion Prevention System)는 NIPS, HIPS, 하이브리드 IPS를 통합하여 다양한 보안 요구사항에 대응하는 체계적인 방어 전략입니다. 이를 통해 조직은 네트워크, 호스트, 애플리케이션 등 다양한 환경에서 포괄적인 보안 체계를 구축할 수 있습니다.
+- **암호화된 트래픽 분석 불가능성**: NIPS는 암호화된 트래픽을 처리하지 못하므로 HIPS의 역할이 더욱 중요해졌습니다.
+- **분산 시스템 보호**: 퍼블릭 클라우드와 컨테이너 기반 애플리케이션의 보안은 호스트 기반 접근 방식으로 더 효과적으로 관리됩니다.
+- **확장 가능성**: HIPS는 퍼블릭 클라우드에서 자동 확장 기능과 함께 사용될 수 있어 보안과 확장성을 동시에 충족합니다.
 
-![하이브리드 IPS 분류](https://blog.plura.io/cdn/column/ips_classification-2.png)
+#### 참고 자료:
+- ["HIPS와 NIPS의 차이점과 사용 사례" - Dark Reading (2024년 8월)](https://www.darkreading.com/ips)
 
 ---
 
-### 🔗 참고 자료
-- [1] 침입차단시스템(IPS) 역할 이해하기  
-  https://blog.plura.io/ips-role
-- [2] NDR의 한계: 해결 불가능한 미션  
-  https://blog.plura.io/ndr-limitations
+### 결론
+보안 환경은 암호화 트래픽의 급증과 퍼블릭 클라우드의 보편화로 인해 빠르게 변화하고 있습니다. NIPS의 효율성이 감소함에 따라, 보안의 중심은 HIPS로 이동했습니다.
 
+#### ✅ 요약:
+1. 암호화 트래픽 증가로 인해 NIPS의 역할은 제한적이 되었습니다.
+2. Snort와 같은 NIPS 기술은 더 이상 주요 보안 기술로 개발되지 않습니다.
+3. 퍼블릭 클라우드와 분산 시스템 환경에서는 HIPS가 핵심 보안 기술로 자리 잡았습니다.
+
+`PLURA-XDR`은 이러한 변화에 맞춰 HIPS 중심의 보안을 강화하며, 기업이 안전한 환경에서 지속적으로 성장할 수 있도록 지원합니다.
