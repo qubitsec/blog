@@ -94,6 +94,8 @@ tags: ["IPS", "NDR", "보안", "Security", "PLURA-XDR"]
 >   - 장화만으로도 발이 젖지 않고 안전하므로,  
 >   - **키높이 깔창**을 덧대는 ‘과잉 대응’은 굳이 필요치 않을 수 있습니다.
 
+![장화와 키높이 깔창](https://blog.plura.io/cdn/column/ips_ndr_needed-2.png)
+
 ---
 
 ### ✍️ **최종 정리**
