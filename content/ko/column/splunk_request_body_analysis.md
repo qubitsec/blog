@@ -1,5 +1,5 @@
 ---
-title: "[QnA] Splunk 에서 요청 본문(request body) 로그 분석하기 with ChatGPT"
+title: "[QnA] Splunk 에서 요청 본문(request body) 로그 분석 알아보기 with ChatGPT"
 date: 2023-02-21
 draft: false
 description: "Splunk 로그 분석을 통해 요청 본문 데이터의 적절한 관리 및 OWASP TOP 10 기반 판사를 공부합니다."
@@ -7,13 +7,13 @@ featured_image: "cdn/column/splunk_request_body_analysis.jpg"
 tags: ["Splunk", "요청 본문 분석", "Post-body", "Request-body", "ModSecurity", "OWASP TOP 10"]
 ---
 
-### **Splunk 에서 요청 본문(request body) 로그 분석하기**
+### **Splunk 에서 웹 요청 본문(request body) 로그를 분석할 수 있을까?**
 
 **“본 내용은 ChatGPT와 QnA를 정리한 것으로 ChatGPT 가 작성한 번역과 정리 과정에서 변협이 없습니다.”**
 
-![Splunk](https://blog.plura.io/cdn/column/splunk_request_body_analysis.jpg)
-
 <!--more-->
+
+![Splunk](https://blog.plura.io/cdn/column/splunk_request_body_analysis.jpg)
 
 ---
 
