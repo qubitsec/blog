@@ -299,8 +299,8 @@ https://www.youtube.com/watch?v=fNhVYHjSKdQ&embeds_referring_euri=http%3A%2F%2Fb
 
  
 
-## 참고
-* http://makeawebsitehub.com/wordpress-security
-* http://codex.wordpress.org/Brute_Force_Attacks
+### 📖 **함께 읽기**
+* [WordPress Security](https://makeawebsitehub.com/wordpress-security/)
+* [Brute Force Attacks](https://developer.wordpress.org/advanced-administration/security/brute-force/)
 
 
