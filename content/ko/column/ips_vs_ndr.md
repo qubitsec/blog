@@ -7,7 +7,7 @@ featured_image: "cdn/column/ips_vs_ndr.jpg"
 tags: ["IPS", "NDR", "보안", "네트워크 보안", "암호화 패킷", "Endpoint Security"]
 ---
 
-🔍 **IPS**(Intrusion Prevention System)와 **NDR**(Network Detection and Response)은 모두 **네트워크 보안** 범주에 속합니다. 그러나 현대의 보안 환경, 특히 **TLS/SSL 등 암호화가 보편화된 환경**에서는 이들 솔루션이 **제 기능을 제대로 발휘하기 어렵고**, 이미 **WAF(Web Application Firewall)**를 도입했다면 “굳이 IPS·NDR을 추가로 운영해야 하나?”라는 의문이 생길 수 있습니다.
+🔍 **IPS**(Intrusion Prevention System)와 **NDR**(Network Detection and Response)은 모두 **네트워크 보안** 범주에 속합니다. 그러나 현대의 보안 환경, 특히 **TLS/SSL 등 암호화가 보편화된 환경**에서는 이들 솔루션이 **제 기능을 제대로 발휘하기 어렵고**, 이미 **WAF**(Web Application Firewall)를 도입했다면 “굳이 IPS·NDR을 추가로 운영해야 하나?”라는 의문이 생기게 됩니다.
 
 이 문서는 **IPS·NDR**의 목적과 한계를 살펴보고, WAF가 있는 상황에서 IPS·NDR이 과연 **필수**인지, 또는 **불필요**한지에 대한 시각을 정리합니다.
 
