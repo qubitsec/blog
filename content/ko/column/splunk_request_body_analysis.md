@@ -119,6 +119,6 @@ Plura.io는 기업의 규모와 상관없이 모든 조직에서 활용할 수 �
 
 ---
 
-### 🔗 참고 자료:
-- ["웹 서비스 공격에 대응하기 against 샤오치잉(Xiaoqiying)"](http://blog.plura.io/?p=18875)
-- ["웹을 통한 데이터유출 해킹 대응 개론"](http://blog.plura.io/?p=12219)
+### 📖 함께 읽기  
+- ["웹 서비스 공격에 대응하기 against 샤오치잉(Xiaoqiying)"](https://blog.plura.io/ko/respond/web-service-attack-response-against-xiaoqiying/)
+- ["웹을 통한 데이터유출 해킹 대응 개론"](https://blog.plura.io/ko/column/dlp/)
