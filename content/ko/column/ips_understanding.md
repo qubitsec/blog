@@ -11,9 +11,9 @@ tags: ["IPS", "OSI 모델", "보안"]
 하지만, IPS를 하나의 제품이나 기능으로만 여기는 것은 현재의 복잡한 보안 환경을 설명하기에 충분치 않습니다.  
 **OSI 모델** 상 여러 계층을 모두 고려하고, **네트워크**와 **호스트**를 통합적으로 보호하는 **다층 보안** 전략이 훨씬 더 효과적입니다.
 
-![IPS 이해](https://blog.plura.io/cdn/column/ips_understanding-1.png)
-
 <!--more-->
+
+![IPS 이해](https://blog.plura.io/cdn/column/ips_understanding-1.png)
 
 ---
 
