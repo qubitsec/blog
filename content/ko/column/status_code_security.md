@@ -57,8 +57,8 @@ HTTP 상태 코드는 특정 목적을 위해 설계되었습니다. 이를 임�
 ---
 
 ### 📖 **함께 읽기**
-- [1] [보안뉴스 기사, 해킹 사고 중 80% 차지하는 웹 보안의 중요성](https://www.boannews.com/media/view.asp?idx=55170)
-- [2] [IT Daily 기사, 랜섬웨어 70% 인터넷 통해 유포](http://www.itdaily.kr/news/articleView.html?idxno=87512)
-- [3] [CIO, 2018년 클라우드 보안 위협 12가지](https://www.ciokorea.com/news/36759)
-- [4] [한겨레 기사, 페이스북 또 이용자 개인정보 대량 유출](https://www.hani.co.kr/arti/economy/it/989501.html)
-- [5] [PLURA-BLOG, 워드프레스로 만든 사이트 필수 보안 TOP 10](https://blog.plura.io/ko/column/wordpress_security_top10/)
+- [1] [보안뉴스 기사, 해킹 사고 중 80% 차지하는 웹 보안의 중요성](https://www.boannews.com/media/view.asp?idx=55170)  
+- [2] [IT Daily 기사, 랜섬웨어 70% 인터넷 통해 유포](http://www.itdaily.kr/news/articleView.html?idxno=87512)  
+- [3] [CIO, 2018년 클라우드 보안 위협 12가지](https://www.ciokorea.com/news/36759)  
+- [4] [한겨레 기사, 페이스북 또 이용자 개인정보 대량 유출](https://www.hani.co.kr/arti/economy/it/989501.html)  
+- [5] [PLURA-BLOG, 워드프레스로 만든 사이트 필수 보안 TOP 10](https://blog.plura.io/ko/column/wordpress_security_top10/)  
