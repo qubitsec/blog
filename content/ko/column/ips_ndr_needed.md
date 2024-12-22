@@ -11,7 +11,7 @@ tags: ["IPS", "NDR", "보안", "Security", "PLURA-XDR"]
 
 🚀 결론부터 말하자면, **특수한 환경이나 규제 요건이 아니라면** 굳이 IPS/NDR까지 도입하지 않아도, **WAF + EDR/HIPS** 조합만으로도 충분한 보안 역량을 확보할 수 있습니다.
 
-![IPS/NDR, 굳이 필요한가?](cdn/column/ips_ndr_needed.png)
+![IPS/NDR, 굳이 필요한가?](https://blog.plura.io/cdn/column/ips_ndr_needed.png)
 
 <!--more-->
 
