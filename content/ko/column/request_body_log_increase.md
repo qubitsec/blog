@@ -63,9 +63,7 @@ tags: ["요청 본문", "Post-body", "Request-body", "로그 분석"]
 
 ---
 
-### 🔗 참고 자료
-- [1] 웹방화벽 우회 공격 어떻게 대응할 수 있을까요?  
-  http://blog.plura.io/?p=19174
-
+### 📖 **함께 읽기**
+- [웹방화벽 우회 공격 어떻게 대응할 수 있을까요?](https://blog.plura.io/ko/column/waf_bypass_response/)
 ---
 
