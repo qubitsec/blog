@@ -7,17 +7,19 @@ featured_image: "cdn/column/passgan_ai_password_cracking.jpg"
 tags: ["PassGAN", "AI", "패스워드 크래킹", "보안", "GAN 알고리즘"]
 ---
 
-🔍 **PassGAN**은 GAN(Generative Adversarial Network) 기반의 AI 기술을 활용하여 패스워드 크래킹에 사용될 수 있는 강력한 도구입니다.  
+🤖 **PassGAN**은 GAN(Generative Adversarial Network) 기반의 AI 기술을 활용하여 패스워드 크래킹에 사용될 수 있는 강력한 도구입니다.  
+
 이 문서에서는 PassGAN의 작동 원리와 보안 위협을 살펴보고, 효과적인 대응 방안을 제시합니다.
+
+<!--more-->
 
 ![PassGAN](https://blog.plura.io/cdn/column/passgan_ai_password_cracking.jpg)
 
-<!--more-->
 ---
 
 ### 1. **GAN 알고리즘의 이해**
 #### 💡 GAN이란?
-- GAN(Generative Adversarial Network)은 생성 모델 중 하나로, **생성자(Generator)**와 **판별자(Discriminator)**가 상호작용하며 학습하는 구조입니다.
+- GAN(Generative Adversarial Network)은 생성 모델 중 하나로, **생성자**(Generator)와 **판별자**(Discriminator)가 상호작용하며 학습하는 구조입니다.
   - **생성자**: 실제 데이터와 유사한 가짜 데이터를 생성.
   - **판별자**: 실제 데이터와 가짜 데이터를 구별.
 - 이 과정에서 생성자는 점점 더 실제와 유사한 데이터를 생성하며, 이미지, 음성, 텍스트 등 다양한 데이터 생성에 활용됩니다.
@@ -90,7 +92,7 @@ PassGAN과 같은 기술은 패스워드 크래킹의 정교함을 한층 높이
 
 ---
 
-### 🔗 참고 자료
+### 📖 **함께 읽기**
 - [홈페이지 - AI 기반 패스워드 크래킹 분석](https://www.homesecurityheroes.com/ai-password-cracking/)
 - ["PassGAN의 위협과 대응" - 매일경제](https://www.mk.co.kr/news/it/10709944)
 - ["안전한 패스워드 관리" - 네이버 블로그](https://d2.naver.com/helloworld/318732)
