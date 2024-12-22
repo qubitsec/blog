@@ -82,6 +82,6 @@ tags: ["마이터 어택", "고급감사정책", "Windows Event Log", "Security"
 
 ---
 
-### 🔗 참고 자료:
+### 📖 **함께 읽기**
 - ["Windows Event Log – Win32 apps | Microsoft Learn"](https://learn.microsoft.com/en-us/windows/win32/eventlog)
 - ["MITRE ATT&CK 공식 사이트"](https://attack.mitre.org/)
