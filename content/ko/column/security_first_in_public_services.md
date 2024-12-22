@@ -41,10 +41,8 @@ tags: ["비대면 서비스", "보안", "ISMS-P", "인증 관리", "PLURA"]
 
 고객 정보를 보호하기 위하여 막강한 보안 시스템을 구축, 운영하고 있습니다.
 
-## 참고 자료
+### 📖 **함께 읽기**
 
-1) IT조선 기사, 굴뚝기업도 속속 도입…재택근무 확산으로 주목받는 협업툴, 2020.03.08, https://bit.ly/2L1h75F
-
-2) 파이낸셜 기사, 코로나로 재택 늘며.. 기업도 “보안 필요성 커져”, 2020.12.09, https://bit.ly/3a4C3TI
-
-3) ISMS-P 자료실, KISA, https://isms.kisa.or.kr/main/ispims/notice/
+[1] [IT조선 기사, 굴뚝기업도 속속 도입…재택근무 확산으로 주목받는 협업툴, 2020.03.08](https://bit.ly/2L1h75F)
+[2] [파이낸셜 기사, 코로나로 재택 늘며.. 기업도 “보안 필요성 커져”, 2020.12.09](https://bit.ly/3a4C3TI)
+[3] [ISMS-P 자료실, KISA](https://isms.kisa.or.kr/main/ispims/notice/)
