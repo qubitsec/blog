@@ -73,9 +73,8 @@ tags: ["Zero Trust", "ZTA", "보안", "NIST"]
 
 ---
 
-### 🔗 참고 자료
-- [1] NIST SP 800-207, Zero Trust Architecture  
-  https://csrc.nist.gov/publications/detail/sp/800-207/final
+### 📖 **함께 읽기**
+- [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final)
 
 ---
 
