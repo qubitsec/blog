@@ -7,7 +7,7 @@ featured_image: "cdn/column/ips_classification-1.jpg"
 tags: ["IPS", "HIPS", "NIPS", "보안", "Security"]
 ---
 
-🔐 침입 방지 시스템(IPS)는 보안 기술의 중요한 구성 요소로, 네트워크 및 호스트 수준에서 다양한 위협을 탐지하고 방지하는 역할을 수행합니다. 하지만 다음과 같은 이유로 인해 IPS의 중심 축이 변화하고 있습니다.  
+🔐 **침입 방지 시스템**(IPS, Intrusion Prevention System)는 보안 기술의 중요한 구성 요소로, 네트워크 및 호스트 수준에서 다양한 위협을 탐지하고 방지하는 역할을 수행합니다. 하지만 다음과 같은 이유로 인해 IPS의 중심 축이 변화하고 있습니다.  
 - [ ] 암호화 트래픽의 증가  
 - [ ] 퍼블릭 클라우드의 활성화  
 
@@ -20,7 +20,7 @@ tags: ["IPS", "HIPS", "NIPS", "보안", "Security"]
 ---
 
 ### 1. IPS의 종류
-IPS는 네트워크 수준에서 작동하는 **NIPS(Network-based Intrusion Prevention System)**와 호스트 수준에서 작동하는 **HIPS(Host-based Intrusion Prevention System)**로 나뉩니다.
+IPS는 네트워크 수준에서 작동하는 **NIPS**(Network-based Intrusion Prevention System)와 호스트 수준에서 작동하는 **HIPS**(Host-based Intrusion Prevention System)로 나뉩니다.
 
 - **NIPS**: 네트워크 트래픽을 모니터링하며, 공격을 탐지하고 이를 차단합니다. 주로 기업 내부 네트워크나 데이터센터에서 사용되었습니다.
 - **HIPS**: 개별 호스트 시스템에서 작동하며, 운영체제 및 애플리케이션 수준에서의 공격을 방지합니다. 클라우드 환경과 분산형 시스템에서 특히 중요한 역할을 합니다.
