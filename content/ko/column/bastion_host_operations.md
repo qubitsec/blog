@@ -124,7 +124,7 @@ PLURA는 공개키 로그인 성공 시, Private Instance로 액세스한 IP 주
 
 ---
 
-## 참조
+### 📖 **함께 읽기**
 - [AWS Bastion Host 사용 가이드](https://aws.amazon.com/ko/blogs/security/how-to-record-ssh-sessions-established-through-a-bastion-host/)  
 - [Terraform Bastion Host 모듈](https://registry.terraform.io/modules/Guimove/bastion/aws/latest)  
 - [Bastion Host 운영 방법](https://galid1.tistory.com/365)
