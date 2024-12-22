@@ -9,7 +9,7 @@ tags: ["Apache Tomcat", "보안", "버전 정보", "서버 설정", "취약점 �
 
 ## 개요
 
-Apache Tomcat은 기본 설정 상태에서 **오류 발생 시 서버 버전 정보가 노출**될 가능성이 있습니다.  
+🐱 Apache Tomcat은 기본 설정 상태에서 **오류 발생 시 서버 버전 정보가 노출**될 가능성이 있습니다.  
 이는 공격자가 서버의 취약점을 악용할 가능성을 높이므로, **버전 정보를 숨기는 설정**이 반드시 필요합니다.
 <!--more-->
 ![http_status_500_Internal_server_error](https://blog.plura.io/cdn/respond/http_status_500_Internal_server_error-1.png)
