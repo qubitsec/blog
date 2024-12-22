@@ -104,7 +104,7 @@ PLURA는 전 세계 특허 기술을 활용하여 다음과 같은 문제를 해
 
 ---
 
-### 🔗 참고 자료
+### 📖 **함께 읽기**
 - ["WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기"](https://www.plura.io/blog/waf-vs-ips-vs-utm-comparison)
 - ["보안뉴스: 해킹 사고 중 80% 차지하는 웹 보안"](https://www.boannews.com/media/view.asp?idx=55170)
 - ["랜섬웨어 70% 인터넷 통해 유포"](https://www.itdaily.kr/news/articleView.html?idxno=87512)
