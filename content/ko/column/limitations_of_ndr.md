@@ -108,7 +108,7 @@ PLURA-XDR은 NDR의 한계를 극복하기 위해 다음과 같은 전략을 제
 
 ---
 
-### 🔗 참고 자료
+### 📖 **함께 읽기**
 - ["WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기"](https://www.plura.io/blog/waf-vs-ips-vs-utm)
 - ["Cisco Encrypted Traffic Analytics(ETA)의 한계"](https://www.plura.io/blog/cisco-eta-limitations)
 - ["NDR과 다층 방어 전략"](https://www.plura.io/blog/ndr-multi-layer-security)
