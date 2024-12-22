@@ -35,5 +35,5 @@ PLURA는 **감사정책 설정**과 **웹 요청 및 응답 본문 로깅**을 �
 지금 바로 프루라(PLURA)를 만나보세요.  
 완벽한 로그 분석을 통해 사이버 보안을 한 차원 더 높이세요.
 
-## 참고 사이트
-* 마이터 어택 관점에서 고급감사정책 활용, https://blog.plura.io/ko/threats/mitre-attack-advanced-audit-policy-with-chatgpt/
+### 📖 **함께 읽기**
+- [마이터 어택 관점에서 고급감사정책 활용](https://blog.plura.io/ko/threats/mitre-attack-advanced-audit-policy-with-chatgpt/)
