@@ -75,6 +75,7 @@ tags: ["Zero Trust", "ZTA", "보안", "NIST"]
 
 ### 📖 **함께 읽기**
 - [NIST SP 800-207, Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final)
+- [PLURA-Blog, ZTA 논리적 구성 요소](https://blog.plura.io/ko/column/logical_components_of_zta/)
 
 ---
 
