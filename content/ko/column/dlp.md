@@ -1,5 +1,5 @@
 ---
-date: 2020-09-07T00:00:00
+date: 2020-09-07
 draft: false
 title: "웹을 통한 데이터유출 해킹 대응 개론"
 description: 
@@ -7,7 +7,7 @@ featured_image: "cdn/column/web_data_Loss_Prevention-1.png"
 tags: ["데이터 유출 방지", "DLP솔루션", "웹 데이터 유출 탐지", "SQL인젝션 대응"]
 ---
 
-해킹의 최종 목표는 데이터유출입니다.
+🧑‍💻 해킹의 최종 목표는 데이터유출입니다.
 
 고객정보, 개인정보, 기업의 핵심 자산이 대상입니다.
 
@@ -17,14 +17,15 @@ tags: ["데이터 유출 방지", "DLP솔루션", "웹 데이터 유출 탐지",
 
 과징금, 집단적 손해배상, 상황에 따라 형사 고발까지 될 수 있습니다.
 
-![web_data_Loss_Prevention](https://blog.plura.io/cdn/column/web_data_Loss_Prevention-1.png)
 <!--more-->
+
+![web_data_Loss_Prevention](https://blog.plura.io/cdn/column/web_data_Loss_Prevention-1.png)
+
 ---
- 
 
-우리는 어떻게 데이터유출을 탐지할 수 있을까요?
+### 🛡️ 우리는 어떻게 데이터유출을 탐지할 수 있을까요?
 
-데이터 유출 방지(Data Loss Prevention)는 내부정보 유출방지, 정보유출방지 등으로 혼용되어 사용합니다. 보통 DLP로 축약하여 표시합니다.
+**데이터 유출 방지**(Data Loss Prevention, DLP)는 내부정보 유출방지, 정보유출방지 등으로 혼용되어 사용합니다. 보통 DLP로 축약하여 표시합니다.
 
 > 1) 데이터 유출 방지 소프트웨어는 메신저, 웹메일, 웹하드, 프린터, USB등 다양한 경로로 정보가 흘러나가는 것을 기록/통제하는 기술이다.
 > 
@@ -62,12 +63,10 @@ tags: ["데이터 유출 방지", "DLP솔루션", "웹 데이터 유출 탐지",
 
 어떤 제품이 이와 같은 웹 환경에서 효과적으로 데이터유출 탐지를 진행할까요?
 
-안타깝께도 잘 알려진 솔루션은 없습니다.
+안타깝께도 대단히 어렵습니다.
 
- 
 
 우리가 할 수 있는 다른 효과적인 대응은 웹의 응답 본문 (Resp-Body)을 분석하여 데이터유출 여부를 탐지하는 것입니다. 기본 원리로 돌아가 생각하면 브라우저의 요청으로 웹 서버의 데이터(정보)가 유출되는 것이므로 어떤 데이터가 포함되는지 실시간 분석한다면 이론적으로는 사실 완벽하게 탐지할 수 있습니다.
-
  
 
 다음의 영상은 sqlmap 을 이용한 SQL인젝션 공격으로 다음의 민감 정보 탈취 공격입니다.
@@ -75,12 +74,11 @@ tags: ["데이터 유출 방지", "DLP솔루션", "웹 데이터 유출 탐지",
   1) 데이터베이스
 
   2) 테이블 이름
-
  
 
 내부자 도움이 없다면 모든 SQL인젝션 공격자의 시작과 동일합니다.
 
 이러한 데이터유출 공격에 프루라를 이용하여 실시간 데이터유출을 탐지하는 방법을 소개합니다.
 
-## 시연 영상
-https://www.youtube.com/watch?v=Qp-JbyZ_G1k&embeds_referring_euri=http%3A%2F%2Fblog.plura.io%2F&source_ve_path=MjM4NTE
+## ▶️ 시연 영상
+👉 [PLURA SQL 인젝션 공격에 따른 데이터 유출 탐지](https://www.youtube.com/watch?v=Qp-JbyZ_G1k)
