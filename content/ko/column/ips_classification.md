@@ -3,7 +3,7 @@ title: "IPS의 진화와 보안 환경의 변화"
 date: 2024-12-22
 draft: false
 description: "IPS 기술의 발전과 트래픽 암호화 증가에 따른 보안 전략의 변화에 대해 논의합니다."
-featured_image: "cdn/column/ips_classification-1.jpg"
+featured_image: "cdn/column/ips_classification-1.png"
 tags: ["IPS", "HIPS", "NIPS", "보안", "Security"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["IPS", "HIPS", "NIPS", "보안", "Security"]
 
 아래에서는 IPS 기술이 어떻게 변화하고 있으며, 오늘날 어떤 형태의 보안이 중요한지 간단히 설명해 드리겠습니다.  
 
-![IPS 분류](https://blog.plura.io/cdn/column/ips_classification-1.jpg)
+![IPS 분류](https://blog.plura.io/cdn/column/ips_classification-1.png)
 
 <!--more-->
 
