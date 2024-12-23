@@ -97,6 +97,6 @@ telnet -6 fe80::20c:29ff:fe2f:52de%ens192 8080
 
 ---
 
-## 참고 자료
+## 📖 함께 읽기
 
 - [Ping IPv6 Address on Windows/Linux CLI](https://linoxide.com/ping-ipv6-address-windows-linux-cli/)
