@@ -56,4 +56,3 @@ IPアドレスのブロックなど、適切な防御措置もユーザーのニ
 - [FTP_2012_Naver Knowledge Encyclopedia_Imun-gyu_IT Dong-A](https://bit.ly/2HV8KYf)
 - [Haishinet_ブルートフォース攻撃](https://bit.ly/2JkbUoF)
 - [Kim Ji-eon_FTPサーバーの管理を誤ると‘大きな危険’が発生する！_Security News](https://bit.ly/2TITy2D)
-- [NISTのガイドラインに基づかない 最高のパスワードアドバイス_IT World](https://bit.ly/320D0rG)
