@@ -80,7 +80,7 @@ tags: ["Xiaoqiying", "PLURA-WAF", "ウェブファイアウォール", "ウェ�
 
 ## 📖 一緒に読む
 
-- [クレデンシャルスタッフィングへの対応](https://blog.plura.io/ko/respond/credential_stuffing_response/)  
+- [クレデンシャルスタッフィングへの対応](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)  
 - [PLURA-WAF デモ](https://youtu.be/sDssT98NCg0?si=EbAiClNRxZQXflQg)  
 - [PLURA-WAF 使用ガイド](https://docs.plura.io/ko/fn/waf)  
 - [PLURA-SIEM 使用ガイド](https://docs.plura.io/ko/fn/comm)
