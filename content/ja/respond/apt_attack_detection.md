@@ -37,4 +37,4 @@ PowerShellなどのスクリプトを利用したマルウェアは、アンチ�
 <br>
 
 ## 関連動画 
-- ハッキング検出デモ > APT29（MITRE ATT&CK）: https://youtu.be/ZrV9dGkwA_U?si=LOYnNc2wyVr-h9wR
+▶️[APT29](https://www.youtube.com/watch?v=fqLpY4NEDXc)
