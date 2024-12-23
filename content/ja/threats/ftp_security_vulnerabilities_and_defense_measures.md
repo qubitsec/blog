@@ -53,7 +53,7 @@ IPアドレスのブロックなど、適切な防御措置もユーザーのニ
 技術が急速に進化する中、ハッキング手法も迅速に進化しています。新しい次元のセキュリティソリューションが必要な時です。
 
 ## 参考サイト
-- [1] "FTP". 2012. Naver Knowledge Encyclopedia. Imun-gyu. IT Dong-A. [リンク](https://bit.ly/2HV8KYf)
-- [2] Haishinet, "ブルートフォース攻撃", [リンク](https://bit.ly/2JkbUoF)
-- [3] Kim Ji-eon, "FTPサーバーの管理を誤ると‘大きな危険’が発生する！", Security News, [リンク](https://bit.ly/2TITy2D)
-- [4] Roger A. Grimes, "NISTのガイドラインに基づかない" 最高のパスワードアドバイス, IT World, [リンク](https://bit.ly/320D0rG)
+- [FTP_2012_Naver Knowledge Encyclopedia_Imun-gyu_IT Dong-A](https://bit.ly/2HV8KYf)
+- [Haishinet_ブルートフォース攻撃](https://bit.ly/2JkbUoF)
+- [Kim Ji-eon_FTPサーバーの管理を誤ると‘大きな危険’が発生する！_Security News](https://bit.ly/2TITy2D)
+- [NISTのガイドラインに基づかない 最高のパスワードアドバイス_IT World](https://bit.ly/320D0rG)
