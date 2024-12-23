@@ -7,7 +7,7 @@ featured_image: "cdn/respond/web_service_attack_response_against_xiaoqiying-1.pn
 tags: ["PLURA-SIEM", "WAF", "Post-body", "웹 보안", "크리덴셜 스터핑", "공격 대응"]
 ---
 
-## 개요
+## 🛠️개요
 
 웹 서비스를 보호하기 위한 필수적인 제품은 바로 **웹 방화벽(WAF, Web Application Firewall)** 입니다.  
 네트워크 기반 침입 차단 시스템(NIPS, Network-based Intrusion Prevention System)과 병행 사용하는 경우도 있지만,  
