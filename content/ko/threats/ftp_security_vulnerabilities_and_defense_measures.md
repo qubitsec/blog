@@ -55,4 +55,3 @@ IP 주소 차단과 같은 적절한 방어 조치들 또한 사용자의 필요
 - [FTP_2012_네이버 지식백과_이문규 편_IT 동아](https://bit.ly/2HV8KYf)
 - [해시넷_무차별 대입 공격](https://bit.ly/2JkbUoF)
 - [김지언_FTP서버 잘못 관리했다간 ‘큰 코’ 다친다_보안뉴스](https://bit.ly/2TITy2D)
-- [NIST 지침과는 무관한 최고의 비밀번호 조언_IT World](https://bit.ly/320D0rG)
