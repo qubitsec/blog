@@ -125,4 +125,4 @@ tags: ["Emotet", "악성코드", "트로이 목마", "PLURA", "필터"]
 
 📖 함께 읽기
 - [virustotal_Security_vendors_analysis](https://www.virustotal.com/gui/file/76323e3a53815b76193d22984da10a9d492d934d49a611fd541e7a78a88cf3c9)
-- [ahnlab_Emotet](https://asec.ahnlab.com/ko/41365/)
+- [6개월만에 Excel 파일을 통해 다시 유포 중인 Emotet 악성코드](https://asec.ahnlab.com/ko/41365/)
