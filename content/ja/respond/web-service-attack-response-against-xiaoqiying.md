@@ -7,7 +7,7 @@ featured_image: "cdn/respond/web_service_attack_response_against_xiaoqiying-1.pn
 tags: ["PLURA-SIEM", "WAF", "Post-body", "ウェブセキュリティ", "クレデンシャルスタッフィング", "攻撃対策"]
 ---
 
-## 概要
+## 🏗️概要
 
 ウェブサービスを保護するために必須の製品は、**ウェブアプリケーションファイアウォール(WAF)** です。  
 ネットワーク型侵入防止システム(NIPS, Network-based Intrusion Prevention System)と併用される場合もありますが、  
