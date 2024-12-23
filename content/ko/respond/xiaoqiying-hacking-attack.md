@@ -80,7 +80,7 @@ tags: ["Xiaoqiying", "PLURA-WAF", "웹 방화벽", "웹 해킹", "공격 대응"
 
 ## 📖 함께 읽기
 
-- [크리덴셜 스터핑 대응하기](https://blog.plura.io/ko/respond/credential_stuffing_response/)  
+- [크리덴셜 스터핑 대응하기](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)  
 - [PLURA-WAF 데모](https://youtu.be/sDssT98NCg0?si=EbAiClNRxZQXflQg)  
 - [PLURA-WAF 사용 가이드](https://docs.plura.io/ko/fn/waf)  
 - [PLURA-SIEM 사용 가이드](https://docs.plura.io/ko/fn/comm)
