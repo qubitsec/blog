@@ -50,6 +50,6 @@ $chownpath -R $squidGuardowner $dbhome
 
 <br>
 
-## Reference
-http://www.shallalist.de/ <br>
-https://gist.github.com/omtinez/8e05f4609cec76edb00d9420234b2ac3
+## 📖 함께 읽기
+* [shallalist](http://www.shallalist.de/)
+* [Blacklist auto-update for SquidGuard](https://gist.github.com/omtinez/8e05f4609cec76edb00d9420234b2ac3)
