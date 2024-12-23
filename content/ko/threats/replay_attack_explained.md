@@ -56,8 +56,8 @@ tags: ["재전송 공격", "Replay attack", "보안", "로그 분석", "해킹 �
 
 ---
 
-## 참고 자료
+## 📖 함께 읽기
 
-1. [내 서버에는 누가 들어오는 걸까?](https://bit.ly/36zNkrM), NAVER D2 블로그, 권태관  
-2. [curl 설치 및 사용법](https://bit.ly/3knV3yl), lesstif  
-3. [Replay Attack](https://bit.ly/38yH1HQ), 위키백과  
+- [내 서버에는 누가 들어오는 걸까?](https://bit.ly/36zNkrM)
+- [curl 설치 및 사용법](https://bit.ly/3knV3yl)  
+- [위키백과_Replay Attack](https://bit.ly/38yH1HQ)
