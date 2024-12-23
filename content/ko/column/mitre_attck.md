@@ -95,7 +95,7 @@ Windows Enterprise Network에 대한 APT 공격의 TTPs(tactics, techniques, pro
   - **내부 확산(Lateral Movement)** Windows Admin Shares, Remote File Copy, Remote Desktop Protocol, Remote Service, WMI
 
 ## PLURA APT29(MITRE ATT&CK) 해킹 탐지 시연 영상
-https://www.youtube.com/watch?v=fqLpY4NEDXc&embeds_referring_euri=http%3A%2F%2Fblog.plura.io%2F&source_ve_path=MjM4NTE
+▶️[APT29 해킹 그룹](https://www.youtube.com/watch?v=fqLpY4NEDXc)
 
 
 
