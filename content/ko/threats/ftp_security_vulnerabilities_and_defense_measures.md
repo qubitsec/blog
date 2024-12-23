@@ -51,8 +51,8 @@ IP 주소 차단과 같은 적절한 방어 조치들 또한 사용자의 필요
 
 기술이 빠르게 발전하는 만큼 해킹 방법도 빠르게 진화합니다. 새로운 차원의 보안 솔루션이 필요한 때입니다.
 
-## 참고 사이트
-- [1] "FTP". 2012. 네이버 지식백과. 이문규 편. IT 동아. [링크](https://bit.ly/2HV8KYf)
-- [2] 해시넷, "무차별 대입 공격", [링크](https://bit.ly/2JkbUoF)
-- [3] 김지언, "FTP서버 잘못 관리했다간 ‘큰 코’ 다친다!", 보안뉴스, [링크](https://bit.ly/2TITy2D)
-- [4] Roger A. Grimes, "NIST 지침과는 무관한" 최고의 비밀번호 조언, IT World, [링크](https://bit.ly/320D0rG)
+## 📖 함께 읽기
+- [FTP_2012_네이버 지식백과_이문규 편_IT 동아](https://bit.ly/2HV8KYf)
+- [해시넷_무차별 대입 공격](https://bit.ly/2JkbUoF)
+- [김지언_FTP서버 잘못 관리했다간 ‘큰 코’ 다친다_보안뉴스](https://bit.ly/2TITy2D)
+- [NIST 지침과는 무관한 최고의 비밀번호 조언_IT World](https://bit.ly/320D0rG)
