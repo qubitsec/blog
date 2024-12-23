@@ -33,7 +33,7 @@ C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 �
 <br>
 
 ## 내부 블로그
-☕ [MITRE ATT&CK 이해](https://blog.plura.io/ko/column/mitre_attck/)
+☕ [MITRE ATT&CK 이해](https://blog.plura.io/ko/column/mitre_attck/)  
 ☕ [마이터 어택 관점에서 고급감사정책 ](https://blog.plura.io/ko/column/mitre_attack_audit_policy/)
 
 ---
