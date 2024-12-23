@@ -21,11 +21,11 @@ tags:
 
 ![b6](https://github.com/user-attachments/assets/6d70d380-ccc0-41e2-81f9-5ab129f64b79)
 
-### Reference
-- https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3156
-- https://access.redhat.com/security/cve/cve-2021-3156
-- https://ubuntu.com/security/CVE-2021-3156
-- https://github.com/r4j0x00/exploits/tree/master/CVE-2021-3156
+### 📖 함께 읽기
+- [mitre-cve-2021-3156](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-3156)
+- [redhat-cve-2021-3156](https://access.redhat.com/security/cve/cve-2021-3156)
+- [ubuntucve-2021-3156](https://ubuntu.com/security/CVE-2021-3156)
+- [github-cve-2021-3156](https://github.com/r4j0x00/exploits/tree/master/CVE-2021-3156)
 
 
 
