@@ -50,7 +50,6 @@ SQL Injection 공격 등 특정 웹 요청을 사전에 차단합니다.
 
 
 * 주요 파일
-* 
 ![8](https://github.com/user-attachments/assets/3bf3d6b5-7d7a-4dff-8514-d09b96fae294)
 
 
@@ -66,7 +65,6 @@ SQL Injection 공격 등 특정 웹 요청을 사전에 차단합니다.
 ## 2.설정 방법
 
 * Config.exe를 실행시켜 WebKnight.xml을 열어줍니다.
-* 
 ![9](https://github.com/user-attachments/assets/e266d06d-f6d4-49c8-88f9-3dd735aaf3d9)
 
 ![10](https://github.com/user-attachments/assets/bd9b4f78-b37e-43b7-9ebe-22f70559a58f)
