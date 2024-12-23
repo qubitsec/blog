@@ -61,6 +61,6 @@ tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
 - [“월패드 해킹으로 일상유출” 의혹에 “렌즈 가리고 암호설정해야”](https://www.seoul.co.kr/news/newsView.php?id=20211125500007)
 
 ## 📖 함께 읽기
-- [credential_stuffing_response](https://blog.plura.io/ko/respond/credential_stuffing_response/)
-- [APT_attack_mitre](https://blog.plura.io/ko/column/mitre/)
+- [크리덴셜 스터핑 공격 대응하기](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)
+- [MITRE ATT&CK 이해](https://blog.plura.io/ko/column/mitre_attck/)
 
