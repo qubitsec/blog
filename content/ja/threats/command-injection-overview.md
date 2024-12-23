@@ -85,5 +85,4 @@ PLURAのML検出機能によりCommand Injection攻撃を自動検出した結�
 
 - [OWASP - Command Injection](https://bit.ly/2WlCD7z)  
 - [オペレーティングシステムコマンドの実行脆弱性](https://bit.ly/3qXCvJE)  
-- [DVWA (Damn Vulnerable Web Application)](https://bit.ly/2IQQgIO)  
 - [OWASP - OS Command Injection Defense Cheat Sheet](https://bit.ly/2Kr73CW)  
