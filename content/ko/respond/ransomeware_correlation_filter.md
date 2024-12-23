@@ -33,5 +33,5 @@ tags: []
 
 ![10](https://github.com/user-attachments/assets/2c988d5e-69ae-4790-9b64-b209b637ea4f)
 
-### 참고영상
-- Wannacry Ransomware 시연 : https://youtu.be/plARXInwl6c?si=WSWCyGWyRpcrfMmq
+### PLURA 해킹 탐지 시연 영상
+▶️[Wannacry Ransomware](https://youtu.be/plARXInwl6c?si=WSWCyGWyRpcrfMmq)
