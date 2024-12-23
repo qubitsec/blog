@@ -73,4 +73,4 @@ SIEM이 웹 로그를 분석하더라도 이상 징후 탐지가 어려운 구�
 
 ## 📖 함께 읽기
 
-- [크리덴셜 스터핑 공격 대응하기](https://blog.plura.io/ko/respond/credential_stuffing_response/)  
+- [크리덴셜 스터핑 공격 대응하기](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)
