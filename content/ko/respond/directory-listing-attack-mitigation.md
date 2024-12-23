@@ -50,7 +50,7 @@ tags: ["디렉토리 리스팅", "사이버 보안", "웹 서버", "WAF", "접�
 
 <br>
 
-## 참고
-- https://cwiki.apache.org/confluence/display/httpd/DirectoryListings
-- https://nginx.org/en/docs/http/ngx_http_autoindex_module.html
-- https://learn.microsoft.com/en-us/iis/configuration/system.webserver/directorybrowse
+📖 一緒に読む
+- [cwiki_DirectoryListings](https://cwiki.apache.org/confluence/display/httpd/DirectoryListings)
+- [ngx_http_autoindex_module](https://nginx.org/en/docs/http/ngx_http_autoindex_module.html)
+- [microsoft_directorybrowse](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/directorybrowse)
