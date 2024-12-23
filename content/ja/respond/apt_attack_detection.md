@@ -22,7 +22,7 @@ C社では、システムのCPUに負荷がかかり障害が発生するなど�
 
 ---
 
-## 対応方法
+## 🛠️対応方法
 最近のAPT攻撃は、既知のマルウェアを使用せず、<br>
 PowerShellなどのスクリプトを利用したマルウェアは、アンチウイルスソフトウェアでは検出が非常に困難です。
 
@@ -32,9 +32,9 @@ PowerShellなどのスクリプトを利用したマルウェアは、アンチ�
 >検出結果は5W1Hに従って提供されるため、原因を把握し対応するのに十分です。**
 <br>
 
-## 内部ブログ
-- MITRE ATT&CKを理解する : https://blog.plura.io/ko/column/mitre/
-<br>
+## 📖一緒に読む
+- [MITRE ATT&CKについて](https://blog.plura.io/ko/column/mitre_attck/)  
+- [マイターアタックの観点から高度な監査政策](https://blog.plura.io/ko/column/mitre_attack_audit_policy/)
 
 ## 関連動画 
 ▶️[APT29](https://www.youtube.com/watch?v=fqLpY4NEDXc)
