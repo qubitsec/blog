@@ -47,6 +47,6 @@ WordPress는 자체 취약점도 존재하지만, 취약한 플러그인을 통�
 사용자는 설치된 WordPress Plugins 목록을 취합하여 관리할 필요가 있습니다.  
 이 목록을 포함 제외하여 활성화된 Plugins에 대한 로그를 실시간으로 탐지할 수 있습니다.
 
-## 참조
+## 📖 함께 읽기
 
 - [위키백과 - 웹 해킹](https://ko.wikipedia.org/wiki/%EC%9B%B9_%ED%95%B4%ED%82%B9_)
