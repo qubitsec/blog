@@ -94,7 +94,7 @@ Windows Enterprise Network에 대한 APT 공격의 TTPs(tactics, techniques, pro
   - **방어 회피(Defense Evasion)** Valid Accounts, Scripting, Masquerading, Disabling Security Tools, File Deletion, Obfuscated Files or Information, Process Injection, Rundll32
   - **내부 확산(Lateral Movement)** Windows Admin Shares, Remote File Copy, Remote Desktop Protocol, Remote Service, WMI
 
-## PLURA APT29(MITRE ATT&CK) 해킹 탐지 시연 영상
+## PLURA 해킹 탐지 시연 영상
 ▶️[APT29 해킹 그룹](https://www.youtube.com/watch?v=fqLpY4NEDXc)
 
 
