@@ -7,7 +7,7 @@ featured_image: "cdn/respond/plura_microsoft_defender_logs-1.png"
 tags: ["Microsoft Defender", "セキュリティログ", "PLURA", "アンチウイルス"]
 ---
 
-### Microsoft Defender Antivirusとは？
+### 🛡️Microsoft Defender Antivirusとは？
 
 **Microsoft Defender Antivirus**は、Microsoft Windowsに組み込まれたウイルス対策ソフトウェアコンポーネントです。[1]  
 Defenderは検出結果をログに記録し、PLURAはこれらのログを収集して管理者が悪性感染や検出イベントを効果的に把握できるようサポートします。
@@ -60,7 +60,7 @@ Defenderは検出結果をログに記録し、PLURAはこれらのログを収�
 
 ---
 
-### 外部参考資料
+### 一緒に読む
 
-[1] [Microsoft Defender Antivirus (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Defender_Antivirus)  
-[2] [Microsoft Defender Antivirus トラブルシューティング](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus?view=o365-worldwide)
+- [Microsoft Defender Antivirus (Wikipedia)](https://en.wikipedia.org/wiki/Microsoft_Defender_Antivirus)  
+- [Microsoft Defender Antivirus トラブルシューティング](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus?view=o365-worldwide)
