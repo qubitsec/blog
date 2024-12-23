@@ -104,5 +104,5 @@ MITRE ATT&CKフレームワークの利点は、従来のマルウェア検出�
 
 📖 一緒に読む
 
-1. [wikipedia_emotet](https://en.wikipedia.org/wiki/Emotet)
-2. [イモテット（Emotet）マルウェア、スパムメールによる国内流布の再開](https://blog.alyac.co.kr/4971)
+- [wikipedia_emotet](https://en.wikipedia.org/wiki/Emotet)
+- [イモテット（Emotet）マルウェア、スパムメールによる国内流布の再開](https://blog.alyac.co.kr/4971)
