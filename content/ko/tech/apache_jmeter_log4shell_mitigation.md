@@ -57,6 +57,6 @@ Log4j에서 JNDI 파싱은 원격 코드 실행에 대한 취약점을 유발하
 
 ---
 
-## 참고 자료
+## 📖 함께 읽기
 
 - [Windows ForFiles 명령어 사용](https://docs.microsoft.com/ko-kr/windows-server/administration/windows-commands/forfiles)
