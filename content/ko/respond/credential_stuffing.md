@@ -27,5 +27,5 @@ A 기업은 오랜 기간 인증 시스템을 운영하고 있습니다.<br>
 <br>
 
 ## PLURA 해킹 탐지 시연 영상
-▶️[credential_stuffing](https://www.youtube.com/watch?v=ri5JNVhNV0A)
+▶️[크리덴셜스터핑](https://www.youtube.com/watch?v=ri5JNVhNV0A)
 
