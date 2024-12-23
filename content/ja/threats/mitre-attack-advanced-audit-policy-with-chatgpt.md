@@ -95,6 +95,4 @@ tags: ["MITRE ATT&CK", "高度監査ポリシー", "イベントチャネル", "
 ![mitre_attack_advanced_audit_policy_with_chatgpt](https://blog.plura.io/cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png)
 
 ## 参考サイト  
-- [1] Windows イベント
-
-ログ : https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log
+- [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log)
