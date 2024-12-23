@@ -32,4 +32,4 @@ SQLインジェクション攻撃は、たった一度成功するだけで、�
 
 ## 関連動画
 
-- [データ流出 by SQL 挿入](https://youtu.be/Qp-JbyZ_G1k?si=7bd8eHbK--mmgdhH)
+- ▶️[データ流出 by SQL 挿入](https://youtu.be/Qp-JbyZ_G1k?si=7bd8eHbK--mmgdhH)
