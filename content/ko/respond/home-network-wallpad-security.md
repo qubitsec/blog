@@ -56,12 +56,11 @@ tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
 
 정보보안관리체계에서는 전통적으로 많은 제품을 설치 운영하는 방식인 다중 경계망이라는 다다익선을 추구하고 있습니다. 하지만 이제는 다시 살펴보아야 합니다. 다다익선도 그 근본에는 기우(杞憂)가 존재합니다.
 
-## 홈넷 해킹 관련 기사
-1) https://www.etnews.com/20211203000181
-2) https://www.seoul.co.kr/news/newsView.php?id=20211125500007
-3) https://www.boannews.com/media/view.asp?idx=96702
+## 📰 홈넷 해킹 관련 기사
+- [etnews_apt_hacking](https://www.etnews.com/20211203000181)
+- [seoul_news_wallpad_hacking](https://www.seoul.co.kr/news/newsView.php?id=20211125500007)
 
-## 내부 블로그
-1) 크리덴셜 스터핑 대응하기, https://blog.plura.io/ko/respond/credential_stuffing_response/
-2) APT공격 마이터의 이해, https://blog.plura.io/ko/column/mitre/
+## 📖 함께 읽기
+- [credential_stuffing_response](https://blog.plura.io/ko/respond/credential_stuffing_response/)
+- [APT_attack_mitre](https://blog.plura.io/ko/column/mitre/)
 
