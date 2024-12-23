@@ -91,7 +91,5 @@ DNS는 사용자가 입력한 도메인을 할당된 IP주소로 변환하는 �
 
 ## 📖 함께 읽기
 
-- [호스트를 설정해서 쓰는 이유](https://bit.ly/3jOAniL)
-- [파밍 공격방법 중 하나인 `HOSTS` 파일 변조](https://bit.ly/35SZdJk)
 - [연말연시 파밍 주의보, 파밍 대처법은?](https://bit.ly/2JvEzYh)
 - [`hosts.ics` 이용한 파밍 사이트 접속 유도 주의!](https://bit.ly/2JtfxsH)
