@@ -90,4 +90,4 @@ tags: ["데이터 유출 방지", "DLP솔루션", "웹 데이터 유출 탐지",
 이러한 데이터유출 공격에 PLURA를 이용하여 실시간 데이터유출을 탐지하는 방법을 소개합니다.
 
 ## 시연 영상
-▶️ [PLURA SQL 인젝션 공격에 따른 데이터 유출 탐지](https://www.youtube.com/watch?v=Qp-JbyZ_G1k)
+▶️ [SQL 인젝션 공격에 따른 데이터 유출 탐지](https://docs.plura.io/ko/video/demo/web/data_breach)
