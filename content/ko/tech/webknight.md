@@ -76,5 +76,3 @@ SQL Injection 공격 등 특정 웹 요청을 사전에 차단합니다.
 자세한 수정 항목들은 참고 사이트의 pdf를 참고하여 작성합니다.
 * 탐지 된 로그는 LogAnalysis.exe를 통해 확인할 수 있습니다.
 
-## 참고 사이트
-* http://www.kisa.or.kr/public/laws/laws3_View.jsp?mode=view&p_No=259&b_No=259&d_No=42
