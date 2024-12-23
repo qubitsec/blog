@@ -36,5 +36,5 @@ C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 �
 - MITRE ATT&CK 이해 : https://blog.plura.io/ko/column/mitre/
 <br>
 
-## 관련 영상 
-- 해킹탐지시연 > APT29(MITRE ATT&CK) : https://youtu.be/ZrV9dGkwA_U?si=LOYnNc2wyVr-h9wR
+## PLURA APT29(MITRE ATT&CK) 해킹 탐지 시연 영상
+▶️[APT29 해킹 그룹](https://www.youtube.com/watch?v=fqLpY4NEDXc)
