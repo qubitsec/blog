@@ -21,7 +21,7 @@ tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
 
 ![home_network_wallpad_security](https://blog.plura.io/cdn/respond/home_network_wallpad_security-1.png)
 
-## 대응 방법
+## 🛠️대응 방법
 
 월패드는 홈넷의 최종 공격 목적지입니다.
 
@@ -57,8 +57,8 @@ tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
 정보보안관리체계에서는 전통적으로 많은 제품을 설치 운영하는 방식인 다중 경계망이라는 다다익선을 추구하고 있습니다. 하지만 이제는 다시 살펴보아야 합니다. 다다익선도 그 근본에는 기우(杞憂)가 존재합니다.
 
 ## 📰 홈넷 해킹 관련 기사
-- [etnews_apt_hacking](https://www.etnews.com/20211203000181)
-- [seoul_news_wallpad_hacking](https://www.seoul.co.kr/news/newsView.php?id=20211125500007)
+- [아파트, 해킹에 또 뚫렸다...단지 내 서버, 해킹 거점으로 악용](https://www.etnews.com/20211203000181)
+- [“월패드 해킹으로 일상유출” 의혹에 “렌즈 가리고 암호설정해야”](https://www.seoul.co.kr/news/newsView.php?id=20211125500007)
 
 ## 📖 함께 읽기
 - [credential_stuffing_response](https://blog.plura.io/ko/respond/credential_stuffing_response/)
