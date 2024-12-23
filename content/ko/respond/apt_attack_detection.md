@@ -22,7 +22,7 @@ C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 �
 
 ---
 
-## 대응 방법
+## 🛠️대응 방법
 최근 APT 공격은 알려진 악성 코드를 사용하지 않고 있습니다.<br>
 또한 파워쉘 등의 스크립트를 이용한 악성 코드는 백신 소프트웨어가 탐지하기에는 매우 어렵습니다.
 
@@ -32,9 +32,9 @@ C 기업은 시스템의 CPU에 과부하가 걸려 장애가 발생하는 등 �
 >탐지 결과는 육하원칙에 따라 제공되므로 원인을 파악하고 대응하기에 충분합니다.**
 <br>
 
-## 내부 블로그
-☕ [MITRE ATT&CK 이해](https://blog.plura.io/ko/column/mitre_attck/)  
-☕ [마이터 어택 관점에서 고급감사정책 ](https://blog.plura.io/ko/column/mitre_attack_audit_policy/)
+## 📖 함께 읽기
+- [MITRE ATT&CK 이해](https://blog.plura.io/ko/column/mitre_attck/)  
+- [마이터 어택 관점에서 고급감사정책 ](https://blog.plura.io/ko/column/mitre_attack_audit_policy/)
 
 ---
 
