@@ -1,6 +1,6 @@
 ---
 title: "PLURA Blog 🎅"
-description: "최신 보안 트렌드와 솔루션을 만나는 공간<br> It's NEW! 🎉 "
+description: "최신 보안 트렌드와 솔루션을 만나는 공간 🆕"
 featured_image: '/images/ko-bg.jpg'
 ---
 
