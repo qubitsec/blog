@@ -56,7 +56,7 @@ tags: ["ANONYMOUS LOGON", "NTLM V1", "보안 정책", "Microsoft", "KISA", "LAN 
 
 ---
 
-## 참고 자료
+## 📖 함께 읽기
 
 - [6시간 이내에 모든 표준 Windows 암호 크래킹 가능](https://arstechnica.com/information-technology/2012/12/25-gpu-cluster-cracks-every-standard-windows-password-in-6-hours/)
 - [KISA 주요정보통신기반시설 보안 가이드](https://www.kisa.or.kr/)
