@@ -123,8 +123,6 @@ tags: ["Emotet", "악성코드", "트로이 목마", "PLURA", "필터"]
 
 <br>
 
-### 출처
-
-* https://www.itworld.co.kr/tags/81617/Emotet/122207#csidxb0960f83251f39d83ca06e0918e9890
-* https://www.virustotal.com/gui/file/76323e3a53815b76193d22984da10a9d492d934d49a611fd541e7a78a88cf3c9
-* https://asec.ahnlab.com/ko/41365/
+📖 함께 읽기
+- [virustotal_Security_vendors_analysis](https://www.virustotal.com/gui/file/76323e3a53815b76193d22984da10a9d492d934d49a611fd541e7a78a88cf3c9)
+- [ahnlab_Emotet](https://asec.ahnlab.com/ko/41365/)
