@@ -102,8 +102,7 @@ tags: ["emotet", "MITRE ATT&CK"]
 
 MITRE ATT&CKフレームワークの利点は、従来のマルウェア検出方式を一歩進化させ、マルウェアの動作をモニタリングすることで、回避攻撃を含む広範囲の検出が可能である点です。
 
-## 参考サイト
+📖 一緒に読む
 
-1. Wikipedia, https://en.wikipedia.org/wiki/Emotet
-
-2. Alyac, https://blog.alyac.co.kr/4971
+1. [wiki_emotet](https://en.wikipedia.org/wiki/Emotet)
+2. [alyac_emotet](https://blog.alyac.co.kr/4971)
