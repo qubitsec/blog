@@ -35,7 +35,7 @@ XSLの標準には、複雑な処理をサポートするために、さまざ�
 
 ## 実行動画 (XSL Script Processing)
 
-[XSL Script Processing 実行例](https://docs.plura.io/ko/video/demo/web/xsl)
+▶️[XSL Script Processing 実行例](https://docs.plura.io/ko/video/demo/web/xsl)
 
 ---
 
