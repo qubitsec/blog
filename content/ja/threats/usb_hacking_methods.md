@@ -94,5 +94,5 @@ PLURAのUSBセキュリティ機能を活用し、内部システムを安全に
 
 ## 参考資料
 
-1. [無意識に挿したUSBで1日で3000億円損害](https://bit.ly/387EO4i)、박순찬、Chosun.com、2019.06.26  
-2. [USBハッキング予防法を学ぼう](https://bit.ly/38czyMV)、안데르센、tistory.com、2018.04.26  
+- [無意識に挿したUSBで1日で3000億円損害](https://bit.ly/387EO4i)
+- [USBハッキング予防法を学ぼう](https://bit.ly/38czyMV)
