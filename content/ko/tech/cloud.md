@@ -88,6 +88,6 @@ Azure에서의 가용성 설정: docs.microsoft.com/en-us/azure/virtual-machines
 
  
 
-## Reference
-* https://aws.amazon.com/blogs/security/
-* https://azure.microsoft.com/en-us/blog/
+## 📖 함께 읽기
+* [AWS Security Blog](https://aws.amazon.com/blogs/security/)
+* [Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/)
