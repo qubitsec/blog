@@ -14,7 +14,7 @@ IDとパスワードでログインできる方式で、ほぼすべてのウェ
 <!--more-->
 ![credential_stuffing](https://blog.plura.io/cdn/respond/credential_stuffing-1.png)
 
-## 対策方法
+## 🛠️対策方法
 
 **クレデンシャルスタッフィングによるアカウント攻撃は、現存する最も脅威的な攻撃の一つです。**
 
