@@ -94,5 +94,5 @@ tags: ["마이터 어택", "고급감사정책", "이벤트 채널", "Windows Po
 
 ![mitre_attack_advanced_audit_policy_with_chatgpt](https://blog.plura.io/cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png)
 
-## 참고 사이트 
-- [1] Windows Event Log : https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log
+## 📖 함께 읽기
+- [Windows Event Log](https://learn.microsoft.com/en-us/windows/win32/wes/windows-event-log)
