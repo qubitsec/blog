@@ -28,4 +28,4 @@ IDとパスワードでログインできる方式で、ほぼすべてのウェ
 <br>
 
 ## 関連動画 
-▶️[credential_stuffing](https://www.youtube.com/watch?v=ri5JNVhNV0A)
+▶️[クレデンシャルスタッフィング](https://www.youtube.com/watch?v=ri5JNVhNV0A)
