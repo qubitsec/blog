@@ -75,4 +75,4 @@ tags: ["크리덴셜 스터핑", "사이버 보안", "PLURA", "클라우드 SaaS
 <br>
 
 ## PLURA 해킹 탐지 시연 영상
-▶️[credential_stuffing](https://www.youtube.com/watch?v=ri5JNVhNV0A)
+▶️[크리덴셜스터핑](https://www.youtube.com/watch?v=ri5JNVhNV0A)
