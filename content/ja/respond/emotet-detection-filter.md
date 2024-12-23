@@ -125,4 +125,4 @@ tags: ["Emotet", "マルウェア", "トロイの木馬", "PLURA", "フィルタ
 
 📖 一緒に読む
 - [virustotal_Security_vendors_analysis](https://www.virustotal.com/gui/file/76323e3a53815b76193d22984da10a9d492d934d49a611fd541e7a78a88cf3c9)
-- [ahnlab_Emotet](https://asec.ahnlab.com/ko/41365/)
+- [6ヶ月後にExcelファイルを介して再配布されているEmotetマルウェア](https://asec.ahnlab.com/ko/41365/)
