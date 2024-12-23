@@ -29,4 +29,4 @@ SQL 인젝션 공격은 단 한 번의 성공으로도 대량의 고객 정보�
 
 ## PLURA 해킹 탐지 시연 영상
 
-- [데이터유출 by SQL 삽입 공격](https://youtu.be/Qp-JbyZ_G1k?si=7bd8eHbK--mmgdhH)
+- ▶️[데이터유출 by SQL 삽입 공격](https://youtu.be/Qp-JbyZ_G1k?si=7bd8eHbK--mmgdhH)
