@@ -76,5 +76,5 @@ tags: ["クレデンシャルスタッフィング", "サイバーセキュリ�
 
 <br>
 
-## 参考
-* クレデンシャルスタッフィング攻撃検知デモ: https://docs.plura.io/ko/video/demo/web/credential_stuffing
+## 関連動画 
+▶️[credential_stuffing](https://www.youtube.com/watch?v=ri5JNVhNV0A)
