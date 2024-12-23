@@ -14,7 +14,7 @@ A 기업은 오랜 기간 인증 시스템을 운영하고 있습니다.<br>
 <!--more-->
 ![credential_stuffing](https://blog.plura.io/cdn/respond/credential_stuffing-1.png)
 
-## 대응 방법
+## 🛠️대응 방법
 **크리덴셜 스터핑 계정 공격은 현존하는 가장 무서운 공격입니다.**
 
 한 사이트에서 확보한 계정을 분석해 또 다른 사이트의 정보를 알아내는 방법으로
