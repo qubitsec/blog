@@ -59,7 +59,7 @@ tags: ["sqlmap", "SQL Injection", "보안", "침투 테스트", "데이터베이
 
 ---
 
-## Reference
+## 📖 함께 읽기
 
 - [University of Toronto - SQLMap](http://www.cs.toronto.edu/~arnold/427/15s/csc427/tools/sqlmap/index.html)
 - [sqlmap GitHub Wiki](https://github.com/sqlmapproject/sqlmap/wiki/Usage)
