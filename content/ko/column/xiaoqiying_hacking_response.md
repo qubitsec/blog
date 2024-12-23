@@ -7,9 +7,7 @@ featured_image: "cdn/column/xiaoqiying_hacking_response.jpg"
 tags: ["샤오치잉", "Xiaoqiying", "해킹", "WAF", "SIEM"]
 ---
 
-### 🔐 샤오치잉(Xiaoqiying) 해킹 그룹 대응하기
-
-샤오치잉(Xiaoqiying)은 사이버 스파이 활동과 대규모 정보 수집을 목적으로 활동하는 것으로 알려진 해킹 그룹입니다. 이 문서에서는 샤오치잉의 활동과 목적, 효과적인 보안 대응 방안을 살펴봅니다.
+🔐샤오치잉(Xiaoqiying)은 사이버 스파이 활동과 대규모 정보 수집을 목적으로 활동하는 것으로 알려진 해킹 그룹입니다. 이 문서에서는 샤오치잉의 활동과 목적, 효과적인 보안 대응 방안을 살펴봅니다.
 
 <!--more-->
 
