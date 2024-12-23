@@ -7,7 +7,7 @@ featured_image: "cdn/respond/directory_listing_attack-1.png"
 tags: ["디렉토리 리스팅", "사이버 보안", "웹 서버", "WAF", "접근 제어"]
 ---
 
-## 개요
+## 🏗️개요
 
 디렉토리 목록 공격은 기본 페이지(예: "index.html")가 없는 경우에도 웹 서버가 디렉토리의 내용을 표시하도록 구성된 경우 발생하는 일종의 취약점입니다. 공격자는 이 취약점을 악용하여 중요한 파일이나 디렉터리 구조와 같은 중요한 정보에 대한 무단 액세스 권한을 얻을 수 있습니다.
 
@@ -21,7 +21,7 @@ tags: ["디렉토리 리스팅", "사이버 보안", "웹 서버", "WAF", "접�
 
 ![directory_listing_attack](https://blog.plura.io/cdn/respond/directory_listing_attack-1.png)
 
-## 대응방법
+## 🛠️대응방법
 
 ### 1. 디렉토리 목록 비활성화:
 
