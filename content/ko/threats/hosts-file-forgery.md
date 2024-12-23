@@ -89,9 +89,9 @@ DNS는 사용자가 입력한 도메인을 할당된 IP주소로 변환하는 �
 
 **PLURA는 예방하지 못한 다양한 취약점으로 발생한 `hosts` 파일 변조를 포함하여 다양한 파일 변조에 대한 해킹을 탐지하여 대응할 수 있도록 합니다。**
 
-## 참고 사이트
+## 📖 함께 읽기
 
-- [1] [hosts] 호스트를 설정해서 쓰는 이유??, [링크](https://bit.ly/3jOAniL)
-- [2] 파밍 공격방법 중 하나인 `HOSTS` 파일 변조, [링크](https://bit.ly/35SZdJk)
-- [3] 연말연시 파밍 주의보, 파밍 대처법은?, [링크](https://bit.ly/2JvEzYh)
-- [4] `hosts.ics` 이용한 파밍 사이트 접속 유도 주의!, [링크](https://bit.ly/2JtfxsH)
+- [호스트를 설정해서 쓰는 이유](https://bit.ly/3jOAniL)
+- [파밍 공격방법 중 하나인 `HOSTS` 파일 변조](https://bit.ly/35SZdJk)
+- [연말연시 파밍 주의보, 파밍 대처법은?](https://bit.ly/2JvEzYh)
+- [`hosts.ics` 이용한 파밍 사이트 접속 유도 주의!](https://bit.ly/2JtfxsH)
