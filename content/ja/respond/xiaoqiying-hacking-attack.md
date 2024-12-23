@@ -31,7 +31,7 @@ tags: ["Xiaoqiying", "PLURA-WAF", "ウェブファイアウォール", "ウェ�
 
 ---
 
-## ウェブハッキングへの対応方法
+## 🛠️ウェブハッキングへの対応方法
 
 ### 1. ウェブファイアウォール(WAF)の必要性
 ウェブサーバー攻撃を防御するためには、**ウェブファイアウォール(WAF, Web Application Firewall)** が不可欠です。
@@ -78,12 +78,9 @@ tags: ["Xiaoqiying", "PLURA-WAF", "ウェブファイアウォール", "ウェ�
 
 ---
 
-## 参考資料
+## 📖 一緒に読む
 
-### ブログ
 - [クレデンシャルスタッフィングへの対応](https://blog.plura.io/ko/respond/credential_stuffing_response/)  
 - [PLURA-WAF デモ](https://youtu.be/sDssT98NCg0?si=EbAiClNRxZQXflQg)  
-
-### マニュアル
 - [PLURA-WAF 使用ガイド](https://docs.plura.io/ko/fn/waf)  
 - [PLURA-SIEM 使用ガイド](https://docs.plura.io/ko/fn/comm)
