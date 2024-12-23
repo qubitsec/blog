@@ -35,7 +35,7 @@ XSL 표준에는 복잡한 작업을 지원하기 위해 다양한 언어로 스
 
 ## 실행 동영상 (XSL Script Processing)
 
-[XSL Script Processing 실행 예시](https://docs.plura.io/ko/video/demo/web/xsl)
+▶️[XSL Script Processing 실행 예시](https://docs.plura.io/ko/video/demo/web/xsl)
 
 ---
 
@@ -46,7 +46,7 @@ PLURA는 **'XSL 스크립트 처리 [T1220]'** 필터를 통해 해당 공격을
 
 ---
 
-## 참조 자료
+## 📖 함께 읽기
 
 - [MITRE ATT&CK - T1220](https://attack.mitre.org/techniques/T1220/)
 - [AhnLab ASEC 블로그](https://asec.ahnlab.com/ko/1344/)
