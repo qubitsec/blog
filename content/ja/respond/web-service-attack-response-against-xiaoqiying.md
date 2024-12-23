@@ -73,4 +73,4 @@ SIEMがウェブログを分析しても異常を検知することが難しい�
 
 ## 📖 一緒に読む
 
-- [クレデンシャルスタッフィング攻撃への対応](https://blog.plura.io/ko/respond/credential_stuffing_response/)  
+- [クレデンシャルスタッフィング攻撃への対応](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)
