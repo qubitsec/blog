@@ -106,11 +106,11 @@ tags: ["emotet", "마이터어택"]
 
 악성 코드가 어떻게 해동하는 가를 모니터링하므로, 우회 공격을 포함하여 보다 넓은 범위에서 탐지할 수 있습니다.
 
-## 참고 사이트
+📖 함께 읽기
 
-1. 위키백과, https://en.wikipedia.org/wiki/Emotet
+1. [wiki_emotet](https://en.wikipedia.org/wiki/Emotet)
 
-2. 알약, https://blog.alyac.co.kr/4971
+2. [alyac_emotet](https://blog.alyac.co.kr/4971)
 
 
 
