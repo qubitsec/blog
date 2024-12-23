@@ -26,5 +26,5 @@ cat /sys/block/sda/queue/rotational
 
 <br>
 
-## Reference
-https://unix.stackexchange.com/questions/65595/how-to-know-if-a-disk-is-an-ssd-or-an-hdd
+## 📖 함께 읽기
+* [How to know if a disk is an SSD or an HDD](https://unix.stackexchange.com/questions/65595/how-to-know-if-a-disk-is-an-ssd-or-an-hdd)
