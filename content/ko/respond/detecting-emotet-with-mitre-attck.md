@@ -110,7 +110,7 @@ tags: ["emotet", "마이터어택"]
 
 1. [wiki_emotet](https://en.wikipedia.org/wiki/Emotet)
 
-2. [alyac_emotet](https://blog.alyac.co.kr/4971)
+2. [alyac_blog_emotet](https://blog.alyac.co.kr/4971)
 
 
 
