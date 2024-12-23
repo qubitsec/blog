@@ -7,7 +7,7 @@ featured_image: "cdn/respond/admin_page_exposure_mitigation-1.png"
 tags: ["관리자 페이지", "보안", "WAF", "2차 인증", "Brute Force", "PLURA", "웹 보안", "SQL 인젝션"]
 ---
 
-## 개요
+## 🏗️개요
 
 관리자 페이지 노출은 **인가되지 않은 사용자 및 공격자가 접근할 수 없도록 보호되어야 하는 관리자 페이지가 외부에 노출된 상황**을 의미합니다. 이러한 노출은 심각한 보안 위협을 초래할 수 있습니다.
 
