@@ -56,11 +56,11 @@ tags: ["ホームネットワーク", "ウォールパッド", "サイバーセ�
 
 情報セキュリティ管理体系では、従来から多くの製品を設置・運用する方式である多層防御というアプローチが追求されてきました。しかし、現在では改めて見直す必要があります。多層防御もその根本には杞憂（不要な懸念）が存在します。
 
-## ホームネットワークに関連するハッキング記事
-1) https://www.etnews.com/20211203000181
-2) https://www.seoul.co.kr/news/newsView.php?id=20211125500007
-3) https://www.boannews.com/media/view.asp?idx=96702
+## 📰ホームネットワークに関連するハッキング記事
+- [etnews_apt_hacking](https://www.etnews.com/20211203000181)
+- [seoul_news_wallpad_hacking](https://www.seoul.co.kr/news/newsView.php?id=20211125500007)
+- [](https://www.boannews.com/media/view.asp?idx=96702)
 
-## 内部ブログ
-1) クレデンシャルスタッフィング対応, https://blog.plura.io/ko/respond/credential_stuffing_response/
-2) APT攻撃 マイターの理解, https://blog.plura.io/ko/column/mitre/
+## 📖 一緒に読む
+- [credential_stuffing_response](https://blog.plura.io/ko/respond/credential_stuffing_response/)
+- [APT_attack_mitre](https://blog.plura.io/ko/column/mitre/)
