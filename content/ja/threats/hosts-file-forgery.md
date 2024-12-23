@@ -91,7 +91,7 @@ Windows の場合は、管理者権限のファイルプロパティを通じて
 
 ## 参考サイト
 
-- [1] [hosts] ホストを設定して使う理由??, [リンク](https://bit.ly/3jOAniL)
-- [2] ファーミング攻撃方法の一つである `HOSTS` ファイル改竄, [リンク](https://bit.ly/35SZdJk)
-- [3] 年末年始ファーミング注意報、ファーミング対処法は?, [リンク](https://bit.ly/2JvEzYh)
-- [4] `hosts.ics` を使ったファーミングサイト接続誘導注意!, [リンク](https://bit.ly/2JtfxsH)
+- [ホストを設定して使う理由](https://bit.ly/3jOAniL)
+- [ファーミング攻撃方法の一つである `HOSTS` ファイル改竄](https://bit.ly/35SZdJk)
+- [年末年始ファーミング注意報、ファーミング対処法は?](https://bit.ly/2JvEzYh)
+- [`hosts.ics` を使ったファーミングサイト接続誘導注意!](https://bit.ly/2JtfxsH)
