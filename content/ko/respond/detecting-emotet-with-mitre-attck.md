@@ -108,9 +108,8 @@ tags: ["emotet", "마이터어택"]
 
 📖 함께 읽기
 
-1. [wikipedia_emotet](https://en.wikipedia.org/wiki/Emotet)
-
-2. [이모텟(Emotet) 악성코드, 스팸메일을 통한 국내 유포 재개](https://blog.alyac.co.kr/4971)
+- [wikipedia_emotet](https://en.wikipedia.org/wiki/Emotet)
+- [이모텟(Emotet) 악성코드, 스팸메일을 통한 국내 유포 재개](https://blog.alyac.co.kr/4971)
 
 
 
