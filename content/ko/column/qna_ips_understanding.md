@@ -7,9 +7,7 @@ featured_image: "cdn/column/qna_ips_understanding.jpg"
 tags: ["IPS", "네트워크보안", "암호화 패킷 분석", "호스트보안", "NDR", "EDR", "WAF", "SIEM", "Zeek", "Wireshark", "tcpdump"]
 ---
 
-### 🔐 침입차단시스템(IPS)에 대한 이해
-
-침입차단시스템(IPS, Intrusion Prevention System)은 네트워크 보안의 핵심 요소로, 네트워크 및 호스트 기반 보안 솔루션들과 함께 사용되어 다양한 보안 위협에 대응합니다. 그러나 IPS는 암호화된 패킷 분석에서 한계가 있으며, 이를 보완하기 위해 WAF와 EDR 같은 기술이 필요합니다.
+🔐침입차단시스템(IPS, Intrusion Prevention System)은 네트워크 보안의 핵심 요소로, 네트워크 및 호스트 기반 보안 솔루션들과 함께 사용되어 다양한 보안 위협에 대응합니다. 그러나 IPS는 암호화된 패킷 분석에서 한계가 있으며, 이를 보완하기 위해 WAF와 EDR 같은 기술이 필요합니다.
 
 ![IPS 이해](https://blog.plura.io/cdn/column/qna_ips_understanding.jpg)
 
