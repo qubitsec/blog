@@ -23,7 +23,7 @@ curl -x localhost:3128 -I -L http://www.eicar.org/download/eicar.com
 
 ![proxy_settings_with_curl](https://blog.plura.io/cdn/tech/proxy_settings_with_curl-1.png)
 
-## Reference
+## 📖 함께 읽기
 
 - [Using cURL with Proxy](https://oxylabs.io/blog/curl-with-proxy)
 - [cURL with Proxy Support](https://red.ht/2UKB3yC)
