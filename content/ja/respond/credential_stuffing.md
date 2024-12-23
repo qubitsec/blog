@@ -27,6 +27,5 @@ IDとパスワードでログインできる方式で、ほぼすべてのウェ
 > クレデンシャルスタッフィングを自動的に検出して遮断します。**  
 <br>
 
-## 関連動画
-
-- ハッキング検出デモ > クレデンシャルスタッフィング: https://youtu.be/_LA7p-IeOOY?si=ESJzvp1On8TgY1u_
+## 関連動画 
+▶️[credential_stuffing](https://www.youtube.com/watch?v=ri5JNVhNV0A)
