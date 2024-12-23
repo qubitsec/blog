@@ -106,7 +106,7 @@ Windows Event Collector를 활용하여 이벤트를 수집하려면 아래 단�
 
 ---
 
-## 5. 추가 참고 자료
+## 📖 함께 읽기
 
 - [Microsoft 공식 문서 - Windows Event Forwarding](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection)  
 - [Windows Remote Management 가이드](https://docs.microsoft.com/en-us/windows/win32/winrm/portal)
