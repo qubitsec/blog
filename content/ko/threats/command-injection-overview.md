@@ -29,7 +29,7 @@ Command Injection은 다음과 같은 피해를 초래할 수 있습니다.
 
 ---
 
-## DVWA를 이용한 Command Injection 모의해킹
+## ⚔️DVWA를 이용한 Command Injection 모의해킹
 
 ![8 8 8 8](https://github.com/user-attachments/assets/8806bbac-2d42-434d-b50b-df3b72c454dc)
 
@@ -80,9 +80,9 @@ PLURA의 ML 탐지 기능으로 Command Injection 공격을 자동으로 탐지�
 
 ---
 
-## 참고
+## 📖 함께 읽기
 
-1. [OWASP - Command Injection](https://bit.ly/2WlCD7z)  
-2. [운영체제 명령 실행 취약점](https://bit.ly/3qXCvJE)  
-3. [DVWA (Damn Vulnerable Web Application)](https://bit.ly/2IQQgIO)  
-4. [OWASP - OS Command Injection Defense Cheat Sheet](https://bit.ly/2Kr73CW)  
+- [OWASP - Command Injection](https://bit.ly/2WlCD7z)  
+- [운영체제 명령 실행 취약점](https://bit.ly/3qXCvJE)  
+- [DVWA (Damn Vulnerable Web Application)](https://bit.ly/2IQQgIO)  
+- [OWASP - OS Command Injection Defense Cheat Sheet](https://bit.ly/2Kr73CW)  
