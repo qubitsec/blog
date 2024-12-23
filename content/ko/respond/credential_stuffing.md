@@ -26,6 +26,6 @@ A 기업은 오랜 기간 인증 시스템을 운영하고 있습니다.<br>
 >크리덴셜 스터핑을 자동으로 탐지하여 차단합니다.**
 <br>
 
-## 관련 영상 
-- 해킹탐지시연 > 크리덴셜스터핑 : https://youtu.be/_LA7p-IeOOY?si=ESJzvp1On8TgY1u_
+## PLURA 해킹 탐지 시연 영상
+▶️[credential_stuffing](https://www.youtube.com/watch?v=ri5JNVhNV0A)
 
