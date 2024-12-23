@@ -31,7 +31,7 @@ tags: ["Xiaoqiying", "PLURA-WAF", "웹 방화벽", "웹 해킹", "공격 대응"
 
 ---
 
-## 웹 해킹 대응 방법
+## 🛠️웹 해킹 대응 방법
 
 ### 1. 웹 방화벽(WAF)의 필요성
 웹 서버 공격을 방어하기 위해 **웹 방화벽(WAF, Web Application Firewall)** 은 필수적입니다.
@@ -78,12 +78,9 @@ tags: ["Xiaoqiying", "PLURA-WAF", "웹 방화벽", "웹 해킹", "공격 대응"
 
 ---
 
-## 참고 자료
+## 📖 함께 읽기
 
-### 블로그
 - [크리덴셜 스터핑 대응하기](https://blog.plura.io/ko/respond/credential_stuffing_response/)  
 - [PLURA-WAF 데모](https://youtu.be/sDssT98NCg0?si=EbAiClNRxZQXflQg)  
-
-### 매뉴얼
 - [PLURA-WAF 사용 가이드](https://docs.plura.io/ko/fn/waf)  
 - [PLURA-SIEM 사용 가이드](https://docs.plura.io/ko/fn/comm)
