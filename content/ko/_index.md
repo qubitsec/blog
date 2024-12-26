@@ -1,5 +1,5 @@
 ---
-title: "PLURA Blog 🎅"
+title: "PLURA Blog 🎉🌟😊"
 description: "최신 보안 트렌드와 솔루션을 만나는 공간 🆕"
 featured_image: '/images/ko-bg.jpg'
 ---
