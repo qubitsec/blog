@@ -1,3 +1,13 @@
+---
+date: 2025-01-02
+draft: true
+description: 
+featured_image: "cdn/"
+tags: ["Qubit", "Algorithm"]
+title: "큐비트 알고리즘"
+---
+
+
 ### 1. 샤오어 알고리즘 (Shor's Algorithm)
 
 - **발표자:** Peter Shor (1994년)
