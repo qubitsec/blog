@@ -1,8 +1,8 @@
 ---
 date: 2025-01-02
-draft: true
+draft: false
 description:
-featured_image: "cdn/"
+featured_image: "cdn/quantum_computing_progress.png"
 tags: ["Quantum Computing", "Qubit", "Algorithm"]
 title: "양자 컴퓨터 진척도"
 ---
