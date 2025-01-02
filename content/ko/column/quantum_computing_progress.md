@@ -246,5 +246,5 @@ title: "양자 컴퓨팅의 현주소와 가능성"
 ---
 
 ### 📖 **함께 읽기**
-- [퀀텀 알고리즘 소개](https://blog.plura.io/column/qubit_algorithm/)  
+- [퀀텀 알고리즘 소개](https://blog.plura.io/ko/column/qubit_algorithm/)  
 
