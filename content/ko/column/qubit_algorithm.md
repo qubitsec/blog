@@ -1,10 +1,10 @@
 ---
 date: 2025-01-02
-draft: true
-description:
-featured_image: "cdn/"
+draft: false
+description: "지금은 알고리즘 시대"
+featured_image: "cdn/qubit_algorithm.png"
 tags: ["Qubit", "Algorithm"]
-title: "퀴비트 알고리즘"
+title: "퀀텀 알고리즘 소개"
 ---
 
 ## 퀴비트 알고리즘
