@@ -2,7 +2,7 @@
 date: 2025-01-02
 draft: false
 description: "양자 컴퓨터 2035년을 기대하며"
-featured_image: "cdn/quantum_computing_progress.png"
+featured_image: "cdn/column/quantum_computing_progress.png"
 tags: ["Quantum Computing", "Qubit", "Algorithm"]
 title: "양자 컴퓨팅의 현주소와 가능성"
 ---
