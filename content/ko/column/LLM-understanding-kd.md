@@ -1,10 +1,10 @@
 ---
 date: 2025-02-02
 draft: false
-description: "Deep Seek가 촉발한 지식 증류 이해하기"
+description: "지식 증류 이해하기"
 featured_image: "cdn/column/llm-understanding-kd.png"
 tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation"]
-title: "지식 증류 이해하기"
+title: "대형 언어 모델(LMM) 트렌드 분석"
 ---
 
 🤖 최근 **딥러닝 모델의 경량화**가 중요해지면서, **지식 증류**(Knowledge Distillation) 기법이 주목받고 있습니다. 기존에 거대한 모델(Teacher)이 학습한 **지식**을, 가벼운 모델(Student)에 ‘증류’하여 전달함으로써, **추론 속도와 메모리**를 절감하면서도 Teacher 모델에 준하는 성능을 낼 수 있다는 장점이 있습니다.
@@ -113,29 +113,20 @@ title: "지식 증류 이해하기"
 
 ---
 
-## 4. Deep Seek가 참고한 지식 종류
+## Deep Seek가 실제 활용한 지식 증류 기법
 
-최근 **Deep Seek**에서는 다음과 같은 다양한 지식 출처를 참조하여 **지식 증류**(Knowledge Distillation)와 관련된 법적·기술적 이슈를 조사하고 있습니다:
+현재 **Deep Seek**에서는 다음 요소들을 중심으로 **지식 증류**(Knowledge Distillation) 연구를 진행하고 있습니다:
 
-1. **특허 문헌(Patent Documents)**  
-   - Teacher 모델 구조, 학습 알고리즘, 데이터 처리 방식 등에 대한 **출원·등록 특허**.  
-   - 특허 청구항(Claims)으로부터 **지식 증류**가 침해 요소가 있는지 여부를 분석.
+1. **Feature Distillation + Attention Transfer**  
+   - 대형 Transformer 기반 Teacher 모델이 보유한 **중간 레이어 및 어텐션 패턴**을 Student 모델이 그대로 학습하는 방식입니다.  
+   - 특히 NLP 및 시각 분야의 **멀티모달** 데이터 처리에 활용되어, **Teacher의 중간 표현**과 **어텐션 지도**를 결합함으로써 경량화와 정확도 상승 효과를 동시에 노립니다.
 
-2. **학술 논문 및 오픈소스 레포지토리**  
-   - 학계 발표 논문, GitHub 등 오픈소스 프로젝트를 통한 **지식 증류** 구현 사례.  
-   - 공개 라이선스(예: Apache, MIT 등)와의 호환성, 활용 범위를 검토.
+2. **Multi-Teacher Distillation**  
+   - 사내·외부의 서로 다른 아키텍처(예: CNN 기반 모델, Transformer 기반 모델)를 Teacher로 삼아 **합의된 지식**을 Student가 학습하도록 설계하였습니다.  
+   - 도메인별(예: 영상, 음성, NLP)로 최적화된 Teacher들이 제공하는 정보를 **동시에** 반영함으로써, **단일 모델**이 다중 도메인을 커버하도록 시도하고 있습니다.
 
-3. **Teacher 모델의 API 및 사용 약관**  
-   - ChatGPT, 다른 대형 언어모델(LLM) API 이용 시, **출력 재사용**이나 **모델 내부 분석**에 관한 약관 조항.  
-   - API 호출 결과(로짓, 확률분포 등)를 Student 학습용으로 활용했을 때의 **계약 위반** 가능성 확인.
+3. **Generative Distillation** (제한적 파일럿 테스트)  
+   - Teacher 모델이 직접 pseudo-sample(텍스트·이미지)을 생성하면, Student가 이를 다시 학습하는 형태도 **실험적**으로 적용 중입니다.  
+   - 아직은 생성 모델의 품질과 학습 안정성 문제가 남아 있어, 보조적 방법으로만 활용하고 있습니다.
 
-4. **기업 내부 R&D 문서**  
-   - 자사·협력사에서 개발한 Teacher 모델 관련 매뉴얼, 사내 연구 보고서.  
-   - 기존에 축적된 도메인 지식(예: 사내 데이터, 프라이빗 모델)과의 접합 방식 검토.
-
-이처럼 **Deep Seek**는 특허·라이선스·데이터 소유권 등이 복합적으로 얽힌 지식 자산을 전방위로 분석하여, **지식 증류**가 초래할 수 있는 **법적·윤리적** 리스크를 파악하고 있습니다.
-
----
-
-### ✍️ **함께 읽기**
-- [지금은 대형 언어 모델(LMM) 시대](https://blog.plura.io/ko/column/LLM-algorithm/)
+**Deep Seek**는 이 세 가지 방법론을 결합하여, 대규모 Teacher 모델로부터 **핵심 표현 및 지식**을 최대한 확보하면서도, **경량 Student 모델**을 빠르게 학습시키는 데 초점을 맞추고 있습니다.
