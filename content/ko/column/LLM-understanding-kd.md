@@ -157,4 +157,4 @@ tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation", "Deep Seek"]
 ---
 
 ### 📖 **함께 읽기**  
-- [PLURA-Blog 지금은 대형 언어 모델(LMM) 시대](https://blog.plura.io/column/llm-algorithm/)
+- [PLURA-Blog 지금은 대형 언어 모델(LMM) 시대](https://blog.plura.io/ko/column/llm-algorithm/)
