@@ -11,7 +11,7 @@ title: "대형 언어 모델(LMM) 트렌드 분석"
 
 <!--more-->
 
-![Quantum Computing Chip](https://blog.plura.io/cdn/column/llm-understanding-kd.png)
+![Knowledge Distillation](https://blog.plura.io/cdn/column/llm-understanding-kd.png)
 
 ---
 
