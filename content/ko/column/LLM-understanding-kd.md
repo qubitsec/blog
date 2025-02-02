@@ -4,7 +4,7 @@ date: 2025-02-02
 draft: false
 description: "Deep Seek가 촉발한 지식 증류 이해하기"
 featured_image: "cdn/column/llm-understanding-kd.png"
-tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation"]
+tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation", "Deep Seek"]
 ---
 
 🤖**딥러닝 모델의 경량화**가 점차 중요해지면서, **지식 증류**(Knowledge Distillation)가 큰 관심을 받고 있습니다. 이는 대규모 **Teacher 모델**이 학습한 지식을, 경량 **Student 모델**에 ‘증류’하여 전달함으로써, **추론 속도와 메모리 사용**을 혁신적으로 줄이면서도 Teacher에 준하는 정확도를 유지할 수 있게 해줍니다.
