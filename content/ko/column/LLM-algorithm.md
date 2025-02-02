@@ -3,7 +3,7 @@ date: 2025-02-02
 draft: false
 description: "지금은 대형 언어 모델(LMM) 시대"
 featured_image: "cdn/column/llm_algorithm.png"
-tags: ["LMM", "AI", "Deep Learning"]
+tags: ["LMM", "AI", "ChatGPT", "R1LLaMAGemini", "Gemini", "Grok", "Deep Learning", "Knowledge Distillation", "Deep Seek"]
 title: "대형 언어 모델(LMM) 트렌드 분석"
 ---
 
