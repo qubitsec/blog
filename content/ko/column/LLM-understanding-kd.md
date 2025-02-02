@@ -153,3 +153,8 @@ tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation", "Deep Seek"]
 - **Deep Seek** 사례처럼, 실제 산업 현장에서는 **Feature Distillation**, **Attention Transfer**, **Multi-Teacher Distillation** 등 다양한 방법론이 혼합 적용되어 효과를 극대화합니다.  
 - “거인의 어깨 위에 선다”라는 협업적·합법적 비유와, “기생충” 은유처럼 **무단으로 Teacher 지식에 기대는 부정적 측면** 모두를 고려해야 합니다.  
 - 결과적으로, **지적 재산권과 라이선스 이슈**를 충분히 준수하면서 지식 증류를 활용할 때, 가장 이상적인 성과를 도출할 수 있습니다.
+
+---
+
+### 📖 **함께 읽기**  
+- [PLURA-Blog 지금은 대형 언어 모델(LMM) 시대](https://blog.plura.io/column/LLM-algorithm/)
