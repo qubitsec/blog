@@ -11,7 +11,7 @@ tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation", "Deep Seek"]
 
 <!--more-->
 
-![지식 증류의 기본 개념](https://blog.plura.io/cdn/column/llm-understanding-kd.png)
+![지식 증류의 기본 개념](https://blog.plura.io/cdn/column/llm_algorithm.png)
 
 ---
 
