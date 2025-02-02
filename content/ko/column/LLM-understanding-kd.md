@@ -7,7 +7,7 @@ tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation"]
 title: "대형 언어 모델(LMM) 트렌드 분석"
 ---
 
-⚛️ 최근 **딥러닝 모델의 경량화**가 중요해지면서, **지식 증류(Knowledge Distillation)** 기법이 주목받고 있습니다. 기존에 거대한 모델(Teacher)이 학습한 **지식**을, 가벼운 모델(Student)에 ‘증류’하여 전달함으로써, **추론 속도와 메모리**를 절감하면서도 Teacher 모델에 준하는 성능을 낼 수 있다는 장점이 있습니다.
+🤖 최근 **딥러닝 모델의 경량화**가 중요해지면서, **지식 증류(Knowledge Distillation)** 기법이 주목받고 있습니다. 기존에 거대한 모델(Teacher)이 학습한 **지식**을, 가벼운 모델(Student)에 ‘증류’하여 전달함으로써, **추론 속도와 메모리**를 절감하면서도 Teacher 모델에 준하는 성능을 낼 수 있다는 장점이 있습니다.
 
 <!--more-->
 
