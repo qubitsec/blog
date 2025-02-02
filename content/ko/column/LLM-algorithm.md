@@ -11,7 +11,7 @@ title: "대형 언어 모델(LMM) 트렌드 분석"
 
 이 글에서는 **글로벌 5대 모델의 아키텍처, 학습 전략, 산업 적용 사례** 등을 간략히 비교·분석합니다. 특히, 저사양 칩 환경에서도 높은 성능을 구현한 **DeepSeek R1**의 **경량화 전략**과 함께, 최근 이슈가 되고 있는 **지식 증류(Knowledge Distillation)** 기법에 대한 별도 설명을 덧붙여 살펴봅니다. 🤖🤖🤖
 
-![LMM Algorithm](https://blog.plura.io/cdn/column/lmm_algorithm.png)
+![LMM Algorithm](https://blog.plura.io/cdn/column/llm_algorithm.png)
 
 <!--more-->
 ---
