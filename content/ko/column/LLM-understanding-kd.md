@@ -1,5 +1,5 @@
 ---
-title: "지식 증류, 그 매력과 Deep Seek의 활용 사례"
+title: "Deep Seek가 촉발한 지식 증류 이해하기"
 date: 2025-02-02
 draft: false
 description: "Deep Seek가 촉발한 지식 증류 이해하기"
