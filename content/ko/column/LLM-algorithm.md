@@ -149,8 +149,7 @@ LMM은 대규모 텍스트·이미지·음성 데이터를 학습하여 **다양
 ---
 
 ### 함께 보기
-- [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum_computing_progress/)  
-- [Transformer 모델의 핵심 아이디어 정리](https://blog.plura.io/ko/column/transformer_basics/)  
+- [Deep Seek가 촉발한 지식 증류 이해하기](https://blog.plura.io/ko/column/LLM-understanding-kd/)  
 
 > **Tip:**  
 > - LMM의 **모델 크기·정밀도**를 줄이는 다양한 기법(FP16, 프루닝, 지식 증류 등)은 **추론 비용 절감**과 **모델 배포 용이성** 측면에서 갈수록 중요해지고 있습니다.  
