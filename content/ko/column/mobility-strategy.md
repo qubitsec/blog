@@ -1,5 +1,5 @@
 ---
-date: 2025-1-12
+date: 2025-02-02
 draft: true
 description: 
 featured_image: "cdn/column/"
