@@ -149,5 +149,5 @@ LMM은 대규모 텍스트·이미지·음성 데이터를 학습하여 **다양
 ---
 
 ### 📖 **함께 읽기**  
-- [Deep Seek가 촉발한 지식 증류 이해하기](https://blog.plura.io/ko/column/LLM-understanding-kd/)  
+- [Deep Seek가 촉발한 지식 증류 이해하기](https://blog.plura.io/ko/column/llm-understanding-kd/)  
 
