@@ -2,7 +2,7 @@
 
 title: "(수정) 지식 증류, 그 매력과 Deep Seek의 활용 사례"  
 date: 2025-02-02  
-draft: false  
+draft: true  
 description: "(수정) Deep Seek의 지식 증류 활용 사례를 통해 이해하기 by Deep Seek"  
 featured_image: "cdn/column/llm-understanding-kd.png"  
 tags: ["LLM", "AI", "Deep Learning", "Knowledge Distillation", "Deep Seek"]  
