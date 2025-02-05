@@ -1,5 +1,5 @@
 ---
-date: 2025-02-02
+date: 2025-02-02T00:00:01
 draft: false
 description: "今は大型言語モデル（LMM）時代"
 featured_image: "cdn/column/llm_algorithm.png"
