@@ -1,6 +1,6 @@
 ---
 title: "中小・中堅企業にIPS/NDR、本当に必要だろうか？"
-date: 2024-12-22
+date: 2024-12-22T00:00:01
 draft: false
 description: "特別な環境でなければ、WAF + EDR / HIPSでも十分な理由とIPS / NDRを考慮する必要がある例外的な状況を見てください。"
 featured_image: "cdn/column/ips_ndr_needed.png"
