@@ -1,6 +1,6 @@
 ---
 title: "侵入遮断システム（IPS）を理解する"
-date: 2024-02-23
+date: 2024-02-23T00:00:02
 draft: false
 description: "侵入遮断システム（IPS）をOSIモデルに基づいて分析し、ネットワークとホストのセキュリティの包括的な戦略として理解します。"
 featured_image: "cdn/column/ips_understanding-1.png"
