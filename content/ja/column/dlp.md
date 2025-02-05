@@ -1,5 +1,5 @@
 ---
-date: 2020-09-07T00:00:00
+date: 2024-12-22
 draft: false
 title: "ウェブを通じたデータ漏洩ハッキング対応の概要"
 description: 
