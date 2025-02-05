@@ -1,6 +1,6 @@
 ---
 title: "Deep Seekが触発した知識蒸留を理解する"
-date: 2025-02-02
+date: 2025-02-02T00:00:02
 draft: false
 description: "Deep Seekが触発した知識蒸留を理解する"
 featured_image: "cdn/column/llm-understanding-kd.png"
