@@ -13,7 +13,7 @@ tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation", "Deep Seek"]
 
 <!--more-->
 
-![知識蒸留の基本概念](https://blog.plura.io/cdn/column/llm-understanding-kd.png)
+![What really happened. From reddit](https://blog.plura.io/cdn/column/llm-understanding-kd-2.png)
 
 ---
 
