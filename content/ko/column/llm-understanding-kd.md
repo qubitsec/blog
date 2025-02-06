@@ -3,7 +3,7 @@ title: "Deep Seek가 촉발한 지식 증류 이해하기"
 date: 2025-02-02T00:00:02
 draft: false
 description: "Deep Seek가 촉발한 지식 증류 이해하기"
-featured_image: "cdn/column/llm-understanding-kd.png"
+featured_image: "cdn/column/llm-understanding-kd-2.png"
 tags: ["LMM", "AI", "Deep Learning", "Knowledge Distillation", "Deep Seek"]
 ---
 
