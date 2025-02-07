@@ -9,8 +9,6 @@ tags: ["クレデンシャルスタッフィング", "サイバーセキュリ�
 
 「本内容はChatGPTとのQnAを整理したものであり、ChatGPTが作成した部分について任意に修正された事実はありません。」
 
-![credential_stuffing_with_chatgpt](https://blog.plura.io/cdn/respond/credential_stuffing_with_chatgpt-1.png)
-
 ### Q1. クレデンシャルスタッフィング攻撃を説明してください。
 
 > クレデンシャルスタッフィング(Credential Stuffing)攻撃は、大量のIDおよびパスワードリストを利用してオンラインアカウントへの不正アクセスを試みる攻撃手法です。<br>
