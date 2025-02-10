@@ -141,9 +141,9 @@ hollow_test.exe가 A사 백신에서 탐지.
 
 [사진 7] A사 백신 보호 기록 (Trojan:Win32/Bearfoos.A!ml 탐지)
 
----
-
 A사 백신에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
+
+---
 
 ![b](https://github.com/user-attachments/assets/527b6e6b-1e52-4c7b-a581-8590c84a9cc1)
 
@@ -158,7 +158,6 @@ A사 백신에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
 ![b_detect](https://github.com/user-attachments/assets/3dc8b5f6-82df-473e-b315-f816f899d921)
 
 [사진 10] B사 백신 정밀 검사로 탐지 되는 것을 확인
-
 
 ---
 
@@ -195,10 +194,9 @@ A사 백신에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
 
 [사진 13] C사 백신 지정 폴더 검사로 탐지하지 못함
 
-
 ---
 
-### D사 백신(무료 버전)
+### 3. D사 백신(무료 버전)
 - 기본적인 탐지 기능은 있지만, **행위 기반 탐지가 부족**
 - 과거 사용자 데이터 수집 및 프라이버시 이슈로 논란
 - 실시간 보호 기능이 있지만, 탐지력이 낮아 **우회가 쉬운 편**
@@ -210,6 +208,7 @@ A사 백신에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
 
 [사진 14] D사 백신 실시간 감시로 탐지되는 것을 확인
 
+---
 
 ### 4. 마스커레이딩은 보안 솔루션의 “허점”을 노리는 기법
 
