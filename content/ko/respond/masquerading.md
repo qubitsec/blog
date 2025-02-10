@@ -2,7 +2,7 @@
 date: 2025-02-10T16:32:00
 draft: false
 description: 
-featured_image: "cdn/column/masquerading.png"
+featured_image: "cdn/respond/masquerading.png"
 tags: ["Masquerading", "CyberThreats", "EndpointSecurity", "ThreatHunting", "EDR_Security"]
 title: "복사된 시스템 파일, 보안 솔루션은 동일하게 볼까?"
 ---
