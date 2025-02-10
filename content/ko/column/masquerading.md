@@ -84,30 +84,39 @@ stop-process -name "cmd" | out-null
 
 복사된 cmd.exe를 실행할 경우, 위 [사진 2]와 같이 오류가 발생했습니다.
 
-![path](https://github.com/user-attachments/assets/ceb66c65-75d5-4eda-b9df-05f1e3813143)
+`cmd.exe`는 Windows 운영 체제의 명령 프롬프트 실행 파일로, 다양한 리소스 파일과 함께 작동합니다.
+이러한 리소스 파일 중에는 다국어 지원을 위한 다국어 사용자 인터페이스 파일(`.mui` 파일)이 포함되어 있습니다.
+일반적으로 `cmd.exe`와 관련 `.mui` 파일은 다음 경로에 위치해 있습니다:
 
-[사진 3] 다른 해결 방안 제시
+- 경로 : `C:\Windows\System32\ko-KR\cmd.exe.mui`
+
+여기서 `ko-KR`은 한국어(Korean)를 나타내며, 시스템 언어 설정에 따라 해당 언어 코드로 된 폴더에 `.mui` 파일이 존재합니다.
+예를 들어, 영어(미국) 시스템의 경우 `en-US` 폴더에 위치합니다.
+이러한 `.mui` 파일은 `cmd.exe`의 사용자 인터페이스 요소를 해당 언어로 표시하는데 사용됩니다.
+따라서, `cmd.exe`를 다른 디렉터리로 복사하여 실행할 경우, 이러한 리소스 파일을 찾지 못해 오류 메시지가 발생할 수 있습니다.
+이러한 문제를 방지하기 위해서는 cmd.exe를 원래 위치에서 실행하거나, 필요한 리소스 파일을 함께 복사해야 합니다.
+그러나 시스템 파일을 복사하거나 이동하는 것은 권장되지 않으므로, 가능한 한 원래 위치에서 실행하는 것이 좋습니다.
 
 
 ChatGPT의 다른 해결 방안으로 다국어 사용자 인터페이스 파일인 `.mui` 파일을 복사한 cmd.exe가 위치한 비정상적인 경로에 넣어주면 해결이 가능하다고 합니다.
 
 ![copy](https://github.com/user-attachments/assets/ed15570e-974c-4235-84bb-2652550927a7)
 
-[사진 4]C:\Windows\System32 경로에 있는 ko-KR 폴더를 복사
+[사진 3]C:\Windows\System32 경로에 있는 ko-KR 폴더를 복사
 
 
 `.mui` 파일이 포함되어 있는 C:\Windows\System32 경로에 있는 `ko-KR` 폴더를 복사합니다.
 
 ![paste](https://github.com/user-attachments/assets/c2cf32bf-be54-4aba-bdc8-28af5860edb2)
 
-[사진 5] 복사된 ko-KR 폴더를 복사된 cmd.exe가 있는 비정상적인 경로에 붙여 넣기
+[사진 4] 복사된 ko-KR 폴더를 복사된 cmd.exe가 있는 비정상적인 경로에 붙여 넣기
 
 
 복사한 `ko-KR` 폴더를 복사한 cmd.exe가 위치한 비정상적인 경로에 넣어줍니다.
 
 ![cmd](https://github.com/user-attachments/assets/3cfe7cd0-e794-46fb-b898-444b658a072e)
 
-[사진 6] 에러 메시지 없이 정상적으로 cmd.exe가 실행
+[사진 5] 에러 메시지 없이 정상적으로 cmd.exe가 실행
 
 
 cmd.exe가 정상적으로 실행되는 것을 확인할 수 있습니다.
@@ -116,72 +125,94 @@ cmd.exe가 정상적으로 실행되는 것을 확인할 수 있습니다.
 
 데모에 사용된 악성 코드는 지난 블로그에서 설명드린 **프로세스 할로잉(Process Hollowing)** 기법을 사용하여 악성 코드를 제작 후, 사용했습니다.
 
-- [**프로세스 할로잉 (Process Hollowing) 알아보기**](https://www.notion.so/18f63ad52448802086fccc8ec082da38?pvs=21)
+- [**프로세스 할로잉 (Process Hollowing) 알아보기**](https://blog.plura.io/ko/threats/process_hollowing/)
 
-![defender](https://github.com/user-attachments/assets/7479837c-3cd8-460c-a868-fa3fb65d2c8e)
+![a](https://github.com/user-attachments/assets/7479837c-3cd8-460c-a868-fa3fb65d2c8e)
 
-[사진 7 Microsoft Defender 탐지
-
-
-hollow_test.exe가 Microsoft Defender에서 탐지.
-
-![defender_log](https://github.com/user-attachments/assets/bea524f9-3f8e-4ce4-9fe5-fb7aef02b01d)
-
-[사진 8] Microsoft Defender 보호 기록 (Trojan:Win32/Bearfoos.A!ml 탐지)
+[사진 6] A사 백신 탐지
 
 
-Microsoft Defender에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
+hollow_test.exe가 A사 백신에서 탐지.
 
-![alyac](https://github.com/user-attachments/assets/527b6e6b-1e52-4c7b-a581-8590c84a9cc1)
+![a_log](https://github.com/user-attachments/assets/bea524f9-3f8e-4ce4-9fe5-fb7aef02b01d)
 
-[사진 9] 알약의 실시간 감시로 탐지하지 못함
-
-
-![fail01](https://github.com/user-attachments/assets/fa954303-9385-487f-89be-8c41507fdf39)
-
-[사진 10] 빠른 검사로 탐지 되지 않음.
+[사진 7] A사 백신 보호 기록 (Trojan:Win32/Bearfoos.A!ml 탐지)
 
 
-![alyac_detect](https://github.com/user-attachments/assets/3dc8b5f6-82df-473e-b315-f816f899d921)
+A사 백신에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
 
-[사진 11] 정밀 검사로 탐지 되는 것을 확인
+![b](https://github.com/user-attachments/assets/527b6e6b-1e52-4c7b-a581-8590c84a9cc1)
+
+[사진 8] B사 백신 실시간 감시로 탐지하지 못함
 
 
-![answer](https://github.com/user-attachments/assets/fe785e6e-a3f3-4dcf-ac4e-15f991bd541a)
+![b_fail01](https://github.com/user-attachments/assets/fa954303-9385-487f-89be-8c41507fdf39)
 
-[사진 12] 성능이 낮은 보안 솔루션 추천에 대한 답변
+[사진 9] B사 백신 빠른 검사로 탐지 되지 않음.
 
+
+![b_detect](https://github.com/user-attachments/assets/3dc8b5f6-82df-473e-b315-f816f899d921)
+
+[사진 10] B사 백신 정밀 검사로 탐지 되는 것을 확인
+
+
+
+
+무료 보안 솔루션 중에서 성능이 가장 낮은(즉, 탐지력이 약한) 솔루션을 찾는 것은 쉽지 않지만, 여러 테스트 결과와 사용자 피드백을 종합하면 몇 가지 후보를 정리할 수 있습니다.
+
+---
+
+### 1. 무료 보안 솔루션 성능이 낮은 경우의 특징
+✅서명(Signature) 기반 탐지만 제공 → 최신 공격 기법 탐지가 어려움
+✅행위 기반(Behavioral) 탐지가 없음 → 악성코드 실행 후의 행위를 분석하지 못함
+✅실시간 감시가 약함 → 실시간 보호 기능이 제한적이거나 없음
+✅EDR 기능이 없음 → 프로세스 체인 분석이나 위협 헌팅을 지원하지 않음
+✅업데이트가 느리거나 지원이 부족함 → 최신 악성코드 탐지가 어려움
+
+---
 
 다른 보안 솔루션에서도 탐지가 되는지 확인을 위해서 ChatGPT에게 성능이 낮은 무료 보안 솔루션을 추천 받았습니다.
 
-![comodo](https://github.com/user-attachments/assets/ec570264-2a0e-48bb-9501-1ae8bbf9f8bc)
+### 2. C사 백신
+- 실시간 보호 기능이 있지만, 성능이 좋지 않음
+- **오탐(False Positive)이 많음** → 정상적인 파일도 차단하는 경우가 많음
+- 클라우드 기반 탐지 성능이 낮고, 데이터베이스 업데이트가 늦음
+- **행위 기반 탐지가 부족하여 마스커레이팅 탐지 가능성이 낮음**
 
-[사진 13] Comodo Free Antivirus
+---
 
+### 🛑결론:
+기본적인 보호는 가능하지만, **EDR이나 SIEM이 없는 환경에서는 쉽게 우회 가능.**
 
-![comodo_fail](https://github.com/user-attachments/assets/a46b3e4f-ee73-4425-9e6f-da1a81d0bbe0)
+![c_fail](https://github.com/user-attachments/assets/a46b3e4f-ee73-4425-9e6f-da1a81d0bbe0)
 
-[사진 14] Comodo의 실시간 감시로 탐지하지 못함
-
-
-![comodo_fail_2](https://github.com/user-attachments/assets/c8d97477-7256-4b85-9bdb-90c713c42464)
-
-[사진 15] Comodo의 빠른 검사로 탐지하지 못함
-
-
-![comodo_fail_3](https://github.com/user-attachments/assets/760ebe77-6d12-49f0-8c55-cfa6c0239c2b)
-
-[사진 16] Comodo의 지정 폴더 검사로 탐지하지 못함
+[사진 11] C사 백신 실시간 감시로 탐지하지 못함
 
 
-![360_total_security](https://github.com/user-attachments/assets/110e3dbd-303c-4ebe-ad7e-905553b2c50b)
+![c_fail_2](https://github.com/user-attachments/assets/c8d97477-7256-4b85-9bdb-90c713c42464)
 
-[사진 17] 360 Total Security
+[사진 12] C사 백신 빠른 검사로 탐지하지 못함
 
 
-![360_TotalSecurity_success](https://github.com/user-attachments/assets/a9ebc215-ba8a-43a3-8849-98708ca10f8e)
+![c_fail_3](https://github.com/user-attachments/assets/760ebe77-6d12-49f0-8c55-cfa6c0239c2b)
 
-[사진 18] 360 Total Security의 실시간 감시로 탐지되는 것을 확인
+[사진 13] C사 백신 지정 폴더 검사로 탐지하지 못함
+
+
+---
+
+### D사 백신(무료 버전)
+- 기본적인 탐지 기능은 있지만, **행위 기반 탐지가 부족**
+- 과거 사용자 데이터 수집 및 프라이버시 이슈로 논란
+- 실시간 보호 기능이 있지만, 탐지력이 낮아 **우회가 쉬운 편**
+- **광고가 많고, 불필요한 기능이 포함됨**
+
+### 🛑결론:
+무료이긴 하지만, **중국산 백신 특성상 신뢰도가 낮고, 보안 성능도 미흠.**
+
+![D_success](https://github.com/user-attachments/assets/a9ebc215-ba8a-43a3-8849-98708ca10f8e)
+
+[사진 14] D사 백신 실시간 감시로 탐지되는 것을 확인
 
 
 ### 4. 마스커레이딩은 보안 솔루션의 “허점”을 노리는 기법
