@@ -221,7 +221,7 @@ A사 백신에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
 
 그래서 공격자들은 `PowerShell`, `rundll32.exe`, `mshta.exe`, `wmic.exe` 같은 **LOLBins(Living Off the Land Binaries)**를 활용하는 방식으로 추가적인 우회 기법을 결합하기도 합니다.
 
-💡 **방어 전략**:
+###💡 **방어 전략**:
 
 ✅ **EDR(Endpoint Detection & Response) 솔루션 활용** → 비정상적인 프로세스 실행 감지
 
