@@ -139,6 +139,7 @@ hollow_test.exe가 A사 백신에서 탐지.
 
 [사진 7] A사 백신 보호 기록 (Trojan:Win32/Bearfoos.A!ml 탐지)
 
+---
 
 A사 백신에서 Trojan:Win32/Bearfoos.A!ml 분류로 격리된 것을 확인.
 
