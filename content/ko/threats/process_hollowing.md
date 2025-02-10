@@ -16,6 +16,7 @@ title: "Process Hollowing: 공격 기법과 탐지 전략"
 <!--more-->
 
 ![process_hollowing1](https://github.com/user-attachments/assets/524b4574-0aa7-4878-abc2-60694b47cf9e)
+
 [사진 1] Process Hollowing
 
 # 🛠️2. Process Hollowing의 주요 단계 
@@ -25,9 +26,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 1) 프로세스를 일시정지 상태로 생성한다.
 
 ![process_hollowing2](https://github.com/user-attachments/assets/011a705f-b35a-4612-8c46-d9a2e70025d5)
+
 [사진 2] Process Hollowing Step 1
 
 ![code1-1-1](https://github.com/user-attachments/assets/2cf8151c-6d40-40ac-aaca-e8ba105eb9ba)
+
 [사진 3] Process Hollowing Step 1 (code)
 
 정상 프로세스인 explorer.exe를 실행한다.
@@ -35,9 +38,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 2) 프로세스의 ImageBase 주소를 구한다.
 
 ![process_hollowing3](https://github.com/user-attachments/assets/2d2c9524-e112-4798-91ce-b5e1bd2779d0)
+
 [사진 4] Process Hollowing Step 2
 
 ![code1-2-1](https://github.com/user-attachments/assets/33b8e5cb-e8b8-4e48-ae71-3e418adbf250)
+
 [사진 5] Process Hollowing Step 2 (code)
 
 새로 생성된 프로세스의 이미지 베이스 주소를 가져온다.
@@ -45,9 +50,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 3) 프로세스의 ImageBase 주소를 Unmapping 한다.
 
 ![process_hollowing4](https://github.com/user-attachments/assets/2d798777-6958-451d-a874-ab5422780f4a)
+
 [사진 6] Process Hollowing Step 3
 
 ![image](https://github.com/user-attachments/assets/87cf1b03-cd7f-4e1e-aad7-3861171d7fb5)
+
 [사진 7] Process Hollowing Step 3 (code)
 
 원래 실행되던 explorer.exe의 메모리를 언맵하여 빈 상태로 만든다.
@@ -55,12 +62,15 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 4) 프로세스의 ImageBase 주소에 새로운 이미지를 Mapping 한다.
 
 ![process_hollowing5](https://github.com/user-attachments/assets/8c892aca-1789-44c7-ac72-d04f3c4d4e9c)
+
 [사진 8] Process Hollowing Step 4
 
 ![code2-1](https://github.com/user-attachments/assets/01677cfb-bee8-41ec-96ad-a13198237a8d)
+
 [사진 9] Process Hollowing Step 4 (code1)
 
 ![code2-2](https://github.com/user-attachments/assets/9b99ed92-af05-498c-8e82-bddc06e1adad)
+
 [사진 10] Process Hollowing Step 4 (code2)
 
 - injector 객체를 이용해 악성 코드(malwareTarget)를 정상 프로세스에  주입할 준비를 한다.
@@ -70,9 +80,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 5) 임시로 메모리 공간을 할당한다.
 
 ![process_hollowing6](https://github.com/user-attachments/assets/1f85d2b0-c132-4098-8c2d-569a877a5ac1)
+
 [사진 11] Process Hollowing Step 5
 
 ![code2-3](https://github.com/user-attachments/assets/2c1dff38-7497-458f-b1c1-bcbfd166ea83)
+
 [사진 12] Process Hollowing Step 5 (code)
 
 - PE 파일을 로드할 새로운 메모리를 확보한다.
@@ -82,9 +94,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 6) 임시로 할당한 메로리 공간에 악성 PE 파일의 헤더를 기록한다.
 
 ![process_hollowing7](https://github.com/user-attachments/assets/b490090d-752f-4bd6-9742-b1f111e42910)
+
 [사진 13] Process Hollowing Step 6
 
 ![code2-4](https://github.com/user-attachments/assets/af1bb32e-2db0-480a-9223-5e14c6fa2c0a)
+
 [사진 14] Process Hollowing Step 6 (code)
 
 프로세스가 실행될 수 있도록 PE 파일의 헤더(Header) 정보를 먼저 기록한다.
@@ -92,9 +106,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 7) 임시로 할당한 메모리 공간에 악성 PE 파일의 섹션을 기록한다.
 
 ![process_hollowing8](https://github.com/user-attachments/assets/ed71f701-290c-4acb-a2de-f0ab19c7c7a9)
+
 [사진 15] Process Hollowing Step 7
 
 ![code2-5](https://github.com/user-attachments/assets/b7823331-c03f-4ba6-a327-efb282ea4811)
+
 [사진 16] Process Hollowing Step 7 (code)
 
 - PE 파일은 헤더(Header) + 섹션(Section) 구조로 이루어져 있다.
@@ -104,9 +120,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 8) ImageBase를 기준으로 악성 PE 파일의 코드와 데이터를 재배치한다.
 
 ![process_hollowing9](https://github.com/user-attachments/assets/27a5e07d-3a2c-49fb-b459-263691682c05)
+
 [사진 17] Process Hollowing Step 8
 
 ![code2-6](https://github.com/user-attachments/assets/9d78b686-3c61-42a4-b477-50abbe3929c4)
+
 [사진 18] Process Hollowing Step 8 (code)
 
 - PE 파일이 새로운 메모리 주소에 로드되었기 때문에, 원래 가정했던 베이스 주소와 다를 수 있다.
@@ -115,12 +133,15 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 9) 재배치 완료된 악성 PE 파일을 정상 PE 파일 메모리 영역에 기록한다.
 
 ![process_hollowing10](https://github.com/user-attachments/assets/e1b11d53-6e2d-4c9b-8324-5c49c7646981)
+
 [사진 19] Process Hollowing Step 9
 
 ![code2-7](https://github.com/user-attachments/assets/68a188f1-ea00-40ff-8421-40d72b52e7ba)
+
 [사진 20] Process Hollowing Step 9 (code1)
 
 ![code3-1](https://github.com/user-attachments/assets/d45f46f2-bdf1-4f66-891a-7fa2f7c5d3fe)
+
 [사진 21] Process Hollowing Step 9 (code2)
 
 - injector.write()를 이용해 PE 파일 전체를 정상 프로세스 메모리에 쓴다.
@@ -129,9 +150,11 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 ## 10) 코드의 시작 주소를 ImageBase를 기준으로 수정한 후에 프로세스를 재개한다.
 
 ![process_hollowing11](https://github.com/user-attachments/assets/d2695498-3cab-4993-8754-bf19d1310143)
+
 [사진 22] Process Hollowing Step 10
 
 ![code3-2](https://github.com/user-attachments/assets/843278b8-1037-477a-bac9-a2f18285d4b9)
+
 [사진 23] Process Hollowing Step 10 (code)
 
 - resume()을 호출하여 정지 상태였던 프로세스를 다시 실행한다.
@@ -148,6 +171,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 7. 프로세스 실행 재개 → 정상적인 프로세스로 위장하여 실행
 
 ![hollow_test_virustotal](https://github.com/user-attachments/assets/d0eaebf5-9319-4066-8612-48101f02d7dd)
+
 [사진 24] 사용된 hollow_test.exe를 VirusTotal에 업로드한 결과 23/71에서 악성코드로 탐지함.
 
 ## **사용된 Process  Hollowing 코드**
@@ -228,9 +252,11 @@ int WINAPI WinMain(
 # 3. 작성한 Process Hollowing 프로그램 실행 화면
 
 ![program](https://github.com/user-attachments/assets/57fff65a-d408-4b87-8c31-391668b18810)
+
 [사진 25] hollow_test.exe 실행 화면
 
 ![process_list](https://github.com/user-attachments/assets/79ba792b-8559-4b0b-80c7-b22789f208d2)
+
 [사진 26] 프로세스 목록
 
 Process Hacker를 사용해 프로세스의 목록을 확인해본 결과, `hollow_test.exe` 프로세스 아래에 `explorer.exe(파일 탐색기)` 및 `conhost.exe`가 존재하는 것을 확인할 수 있다.
@@ -248,6 +274,7 @@ Process Hacker를 사용해 프로세스의 목록을 확인해본 결과, `holl
 - `WriteProcessMemory`, `SetThreadContext`, `ResumeThread` 등의 API 호출을 모니터링하여 추가적인 Hollowing이 발생하는지 확인해야 합니다.
 
 ![two_explorer](https://github.com/user-attachments/assets/fc3de4a3-034e-47b3-af0b-f2a8c488f52d)
+
 [사진 27] explorer.exe 프로세스가 두 개인 것을 확인
 
 ## 1️⃣ 분석 포인트
@@ -270,6 +297,7 @@ Process Hacker를 사용해 프로세스의 목록을 확인해본 결과, `holl
 - 보통 `explorer.exe`는 상당한 메모리를 사용하지만, **5.05MB만 사용하는** **`explorer.exe`는 Hollowing으로 인해 정상적인 PE가 로드되지 않았을 가능성**이 큽니다.
 
 ![explorer_analysis](https://github.com/user-attachments/assets/877a4d15-49de-44f9-9204-7bedb1c5762d)
+
 [사진 28] 두 개의 explorer.exe 프로세스 분석
 
 ## **1️⃣ 분석 포인트**
@@ -300,6 +328,7 @@ Process Hacker를 사용해 프로세스의 목록을 확인해본 결과, `holl
 - `explorer.exe`의 실행 시간이 3일 전에 수동으로 실행된 것으로 보이며, 이는 Windows 부팅과 관계없는 실행 기록입니다.
 
 ![analsys](https://github.com/user-attachments/assets/2e9ee03c-fe88-4dde-bb0b-7ffa345042b5)
+
 [사진 29] 두 개의 explorer.exe 프로세스 분석
 
 ## **1️⃣ 스레드(Thread) 분석 포인트**
