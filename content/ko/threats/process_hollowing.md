@@ -27,7 +27,7 @@ title: "Process Hollowing: 공격 기법과 탐지 전략"
 
 Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 
-## 1) 프로세스를 일시정지 상태로 생성한다.
+## 2-1) 프로세스를 일시정지 상태로 생성한다.
 
 ![process_hollowing2](https://github.com/user-attachments/assets/011a705f-b35a-4612-8c46-d9a2e70025d5)
 
@@ -39,7 +39,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 
 정상 프로세스인 explorer.exe를 실행한다.
 
-## 2) 프로세스의 ImageBase 주소를 구한다.
+## 2-2) 프로세스의 ImageBase 주소를 구한다.
 
 ![process_hollowing3](https://github.com/user-attachments/assets/2d2c9524-e112-4798-91ce-b5e1bd2779d0)
 
@@ -51,7 +51,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 
 새로 생성된 프로세스의 이미지 베이스 주소를 가져온다.
 
-## 3) 프로세스의 ImageBase 주소를 Unmapping 한다.
+## 2-3) 프로세스의 ImageBase 주소를 Unmapping 한다.
 
 ![process_hollowing4](https://github.com/user-attachments/assets/2d798777-6958-451d-a874-ab5422780f4a)
 
@@ -63,7 +63,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 
 원래 실행되던 explorer.exe의 메모리를 언맵하여 빈 상태로 만든다.
 
-## 4) 프로세스의 ImageBase 주소에 새로운 이미지를 Mapping 한다.
+## 2-4) 프로세스의 ImageBase 주소에 새로운 이미지를 Mapping 한다.
 
 ![process_hollowing5](https://github.com/user-attachments/assets/8c892aca-1789-44c7-ac72-d04f3c4d4e9c)
 
@@ -81,7 +81,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 - malwareTarget(2203648 바이트 크기의 PE 바이너리)을 pe 클래스를 이용해 로드한다.
 - injector.alloc(malwr_size, imagebase, false); - 원래 프로세스가 사용하던 영역(imagebase)에 악성 코드 크기만큼 메모리를 할당한다.
 
-## 5) 임시로 메모리 공간을 할당한다.
+## 2-5) 임시로 메모리 공간을 할당한다.
 
 ![process_hollowing6](https://github.com/user-attachments/assets/1f85d2b0-c132-4098-8c2d-569a877a5ac1)
 
@@ -95,7 +95,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 - getRelativeOffset을 통해 재배치 정보(Relocation Offset)를 계산한다.
 - 새로운 베이스 주소를 악성 코드에 설정한다.
 
-## 6) 임시로 할당한 메로리 공간에 악성 PE 파일의 헤더를 기록한다.
+## 2-6) 임시로 할당한 메로리 공간에 악성 PE 파일의 헤더를 기록한다.
 
 ![process_hollowing7](https://github.com/user-attachments/assets/b490090d-752f-4bd6-9742-b1f111e42910)
 
@@ -107,7 +107,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 
 프로세스가 실행될 수 있도록 PE 파일의 헤더(Header) 정보를 먼저 기록한다.
 
-## 7) 임시로 할당한 메모리 공간에 악성 PE 파일의 섹션을 기록한다.
+## 2-7) 임시로 할당한 메모리 공간에 악성 PE 파일의 섹션을 기록한다.
 
 ![process_hollowing8](https://github.com/user-attachments/assets/ed71f701-290c-4acb-a2de-f0ab19c7c7a9)
 
@@ -121,7 +121,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 - getFirstSection()으로 첫 번째 섹션을 가져오고, writeSection()을 통해 각 섹션을 복사한다.
 - getNextSection(currentSection)을 이용해 모든 섹션을 순차적으로 기록한다.
 
-## 8) ImageBase를 기준으로 악성 PE 파일의 코드와 데이터를 재배치한다.
+## 2-8) ImageBase를 기준으로 악성 PE 파일의 코드와 데이터를 재배치한다.
 
 ![process_hollowing9](https://github.com/user-attachments/assets/27a5e07d-3a2c-49fb-b459-263691682c05)
 
@@ -134,7 +134,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 - PE 파일이 새로운 메모리 주소에 로드되었기 때문에, 원래 가정했던 베이스 주소와 다를 수 있다.
 - relocate() 함수를 사용하여 상대적인 오프셋을 적용하여 올바르게 실행될 수 있도록 수정한다.
 
-## 9) 재배치 완료된 악성 PE 파일을 정상 PE 파일 메모리 영역에 기록한다.
+## 2-9) 재배치 완료된 악성 PE 파일을 정상 PE 파일 메모리 영역에 기록한다.
 
 ![process_hollowing10](https://github.com/user-attachments/assets/e1b11d53-6e2d-4c9b-8324-5c49c7646981)
 
@@ -151,7 +151,7 @@ Process Hollowing은 일반적으로 다음과 같은 단계로 진행됩니다.
 - injector.write()를 이용해 PE 파일 전체를 정상 프로세스 메모리에 쓴다.
 - patchEntryPoint()를 사용하여 원래 프로세스의 진입점을 악성 코드의 진입점(Entry Point)으로 변경한다.
 
-## 10) 코드의 시작 주소를 ImageBase를 기준으로 수정한 후에 프로세스를 재개한다.
+## 2-10) 코드의 시작 주소를 ImageBase를 기준으로 수정한 후에 프로세스를 재개한다.
 
 ![process_hollowing11](https://github.com/user-attachments/assets/d2695498-3cab-4993-8754-bf19d1310143)
 
@@ -267,13 +267,13 @@ Process Hacker를 사용해 프로세스의 목록을 확인해본 결과, `holl
 
 ## 🔍 프로세스 분석
 
-1. **`hollow_test.exe` 내부에 또 다른 `explorer.exe` 실행**
+a. **`hollow_test.exe` 내부에 또 다른 `explorer.exe` 실행**
 - 원래 `explorer.exe`는 시스템에서 자동으로 실행되는 프로세스이지만, 특정 실행 파일(`hollow_test.exe`)이 부모 프로세스로 작동하며 `explorer.exe`를 실행한 것은 매우 의심되는 행동입니다.
 - 이는 정상적인 실행 방식이 아니라 악성 코드가 Hollowing 기법을 통해 기존 정상적인 프로세스를 가장했을 가능성이 있음을 나타냅니다.
-1. **`conhost.exe` 존재**
+b. **`conhost.exe` 존재**
 - `conhost.exe`는 콘솔 프로그램을 지원하는 정상적인 Windows 프로세스이지만, `hollow_test.exe` 아래에서 실행된 점이 특이합니다.
 - 악성 코드가 `conhost.exe`를 이용하여 쉘 명령어를 실행하는 경우도 있으므로 주의가 필요합니다.
-1. **CPU 및 메모리 사용량 분석**
+c. **CPU 및 메모리 사용량 분석**
 - `hollow_test.exe`가 높은 CPU 사용량을 보이지 않는다면, 실행된 악성 코드가 백그라운드에서 조용히 동작할 가능성이 있습니다.
 - `WriteProcessMemory`, `SetThreadContext`, `ResumeThread` 등의 API 호출을 모니터링하여 추가적인 Hollowing이 발생하는지 확인해야 합니다.
 
@@ -372,12 +372,12 @@ Process Hacker를 사용해 프로세스의 목록을 확인해본 결과, `holl
 
 📌 **Hollowing 가능성이 높은 이유:**
 
-1. **TID 개수 차이:**
+a. **TID 개수 차이:**
     - 정상적인 `explorer.exe`(PID 2296)는 **13개 이상의 다양한 시스템 스레드**를 포함합니다.
     - 의심스러운 `explorer.exe`(PID 9728)는 **4개만 존재하며, 대부분 `ntdll.dll`에서 실행됩니다.**
-2. **비정상적인 실행 위치:**
+b. **비정상적인 실행 위치:**
     - `explorer.exe+0xa3a10`는 명확한 DLL 기반이 아닌 **메모리 내부 코드 실행 형태**로 보이며, **Hollowing 흔적**으로 의심됩니다.
-3. **Parent Process (`hollow_test.exe`)의 존재:**
+c. **Parent Process (`hollow_test.exe`)의 존재:**
     - 원래 `explorer.exe`는 `winlogon.exe`에서 생성되어야 하지만, **비정상적인 프로세스 (`hollow_test.exe`)에서 실행되었습니다.**
 
 ---
@@ -389,27 +389,27 @@ Process Hacker를 사용해 프로세스의 목록을 확인해본 결과, `holl
 
 Process Hollowing은 정교한 공격 기법이지만, 보안 솔루션에서는 다양한 방법으로 이를 탐지할 수 있습니다.
 
-## 📡1) API 호출 모니터링 
+## 📡4-1) API 호출 모니터링 
 
 `CreateProcess`, `NtUnmapViewOfSection`, `VirtualAllocEx`, `WriteProcessMemory`, `SetThreadContext`, `ResumeThread`와 같은 API 호출이 연속적으로 발생하는 경우 의심해야 합니다.
 
 - EDR 및 SIEM 로그에서 해당 API의 호출 패턴을 분석하면 이상 핻옹을 감지할 수 있습니다.
 
-## 🏴‍☠️2) 실행 파일과 메모리 매핑 비교 
+## 🏴‍☠️4-2) 실행 파일과 메모리 매핑 비교 
 
 정상적인 실행 파일과 메모리에 로드된 실행 파일이 다른 경우 Process Hollowing이 발생했을 가능성이 높습니다.
 
 - `SigCheck` 같은 도구를 사용하여 실행 파일의 서명 및 무결성을 검증할 수 있습니다.
 - `Volatility`를 이용하여 메모리 내 실행 중인 프로세스를 분석하고, 실행 파일과 비교하여 불일치를 탐지할 수 있습니다.
 
-## 🧩3) Parent-Child Process 관계 분석
+## 🧩4-3) Parent-Child Process 관계 분석
 
 공격자가 원래 실행된 프로세스를 중지하고, 새로운 프로세스를 Hollowing 형태로 실행하면 Parent-Child 관계가 비정상적으로 변경될 수 있습ㄴ니다.
 
 - 예를 들어, `explorer.exe`에서 `cmd.exe`가 실행되는 것은 정상적이지만, `winlogon.exe`에서 `powershell.exe`가 실행되면 의심할 필요가 있습니다.
 - Sysmon을 활요하면 Parentj-Child 관계를 추적할 수 있습니다.
 
-## 📊4) 코드 인젝션 탐지 
+## 📊4-4) 코드 인젝션 탐지 
 
 Process Hollowing의 핵심은 정상 프로세스에 악성 코드를 주입하는 것입니다. <br>
 이를 탐지하기 위해 프로세스 내 코드 영역을 주기적으로 스캔하여 실행 가능한 메모리 페이지가 변경되었는지 확인할 수 있습니다.
@@ -420,20 +420,20 @@ Process Hollowing의 핵심은 정상 프로세스에 악성 코드를 주입하
 
 Process Hollowing 공격을 효과적으로 차단하려면 다음과 같은 보안 조치를 적용하는 것이 중요합니다.
 
-## 1) EDR 및 SIEM 솔루션 활용
+## 5-1) EDR 및 SIEM 솔루션 활용
 
 EDR 및 SIEM을 활용하여 **API 호출 패턴 분석**, **실행 파일 무결성 검사**, **Parent-Child 관계 모니터링** 등의 탐지 기법을 자동화할 수 있습니다.
 
-## 2) 공격 표면 줄이기
+## 5-2) 공격 표면 줄이기
 
 - `AppLocker` 또는 `Windows Defender Application Control (WDAC)`을 사용하여 의심스러운 실행 파일의 실행을 차단합니다.
 - 메모리 보호 기술(ASLR, DEP, CFGj)을 활성화하여 코드 인젝션을 어렵게 만듭니다.
 
-## 3) 시스템 로그 분석 및 탐지 필터 적용
+## 5-3) 시스템 로그 분석 및 탐지 필터 적용
 
 - `Sysmon` 및 `Windows Event Logging`을 활성화하여 의심스러운 API 호출을 감지하고 필터링한다.
 
-## 4) 정기적인 포렌식 분석 수행
+## 5-4) 정기적인 포렌식 분석 수행
 
 - `Volatility`, `Procmon`, `PE-Sieve` 등을 사용하여 주기적으로 시스템을 스캔하고 이상 행위를 분석한다.
 
