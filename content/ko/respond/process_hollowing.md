@@ -2,7 +2,7 @@
 date: 2025-02-10T16:00:00
 draft: false
 description: 
-featured_image: "cdn/threats/process_hollowing.png"
+featured_image: "cdn/respond/process_hollowing.png"
 tags: ["process_hollowing", "CyberSecurity", "MalwareAnalysis", "ThreatDetection", "EDR_Security"]
 title: "Process Hollowing: 공격 기법과 탐지 전략"
 ---
