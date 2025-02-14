@@ -1,7 +1,7 @@
 ---
 
 title: "필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션"
-date: 2025-02-14
+date: 2025-02-15
 draft: false
 description: "일반 보안 제품에는 수많은 기능이 포함되어 있지만, 실제 기업이 사용하는 기능은 극히 일부에 불과합니다. PLURA 솔루션은 꼭 필요한 기능만 최적화하여 비용을 절감하고 성능을 극대화합니다."
 featured_image: "cdn/column/plura_vs_traditional_security.png"
