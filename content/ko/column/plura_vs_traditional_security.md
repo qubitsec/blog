@@ -15,7 +15,7 @@ tags: ["보안", "Security", "PLURA-XDR", "WAF", "EDR", "Forensic", "SIEM", "SMS
 방화벽, EDR, SIEM, WAF 등 다양한 보안 솔루션이 있지만, **실제로 사용하는 기능은 20%도 안 되는 경우가 많습니다.**  
 **문제는 사용하지도 않는 기능을 위해 비싼 비용을 지불해야 한다는 점**이죠. 🤔
 
-![PLURA-XDR](https://blog.plura.io/cdn/plura_vs_traditional_security.png)
+![PLURA-XDR](https://blog.plura.io/cdn/column/plura_vs_traditional_security.png)
 
 <!--more-->
 
