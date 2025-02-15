@@ -73,8 +73,7 @@ tags: ["보안", "Security", "PLURA-XDR", "WAF", "EDR", "Forensic", "SIEM", "SMS
 6. **합리적인 가격 정책**  
    \- 비싸고 방대한 보안 솔루션보다 **현실적인 비용**으로 맞춤형 제공
 
-
-> **APT(Advanced Persistent Threats)**: 지능적·지속적 해킹 공격
+> \- **APT**: Advanced Persistent Threats  
 
 ---
 
