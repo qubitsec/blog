@@ -4,7 +4,7 @@ title: "1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성"
 date: 2025-02-16
 draft: false
 description: "PLURA-XDR을 통해 1분 안에 네트워크 위협을 탐지하고 대응할 수 있습니다. 즉각적인 가시성과 자동화된 대응으로 보안을 혁신하세요."
-featured_image: "cdn/column/plura_xdr_visibility.png"
+featured_image: "cdn/column/1-minute-detection.png"
 tags: ["보안", "Security", "PLURA-XDR", "실시간 탐지", "APT", "SIEM", "자동화"]
 
 ---
@@ -17,7 +17,7 @@ tags: ["보안", "Security", "PLURA-XDR", "실시간 탐지", "APT", "SIEM", "�
 
 PLURA-XDR은 **실시간 탐지 및 분석**을 통해 보안 담당자가 즉시 위협을 인지하고 대응할 수 있도록 돕습니다. 보안 사고가 발생했을 때 신속한 탐지는 피해를 최소화하는 핵심 요소입니다.
 
-![PLURA-XDR](https://blog.plura.io/cdn/column/plura_xdr_visibility.png)
+![PLURA-XDR](https://blog.plura.io/cdn/column/1-minute-detection.png)
 
 <!--more-->
 
