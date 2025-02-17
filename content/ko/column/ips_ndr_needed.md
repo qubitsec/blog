@@ -1,5 +1,5 @@
 ---
-title: "중소·중견 기업에 IPS/NDR, 정말로 필요할까?"
+title: "중소·중견 기업에 NIPS/NDR, 정말로 필요할까?"
 date: 2024-12-22T00:00:01
 draft: false
 description: "특수 환경이 아니라면 WAF + EDR/HIPS로도 충분한 이유와 IPS/NDR을 고려해야 하는 예외적 상황을 살펴봅니다."
@@ -11,7 +11,7 @@ tags: ["IPS", "NDR", "보안", "Security", "PLURA-XDR"]
 
 🚀 결론부터 말하자면, **특수한 환경이나 규제 요건이 아니라면** 굳이 IPS/NDR까지 도입하지 않아도, **WAF + EDR/HIPS** 조합만으로도 충분한 보안 역량을 확보할 수 있습니다.
 
-![IPS/NDR, 굳이 필요한가?](https://blog.plura.io/cdn/column/ips_ndr_needed.png)
+![NIPS/NDR, 굳이 필요한가?](https://blog.plura.io/cdn/column/ips_ndr_needed.png)
 
 <!--more-->
 
@@ -35,7 +35,7 @@ tags: ["IPS", "NDR", "보안", "Security", "PLURA-XDR"]
 
 ---
 
-## 2. **IPS/NDR을 굳이 도입하지 않아도 되는 이유**
+## 2. **NIPS/NDR을 굳이 도입하지 않아도 되는 이유**
 
 ### (1) **주요 위협의 90% 이상이 웹 공격**
 - 중소·중견 기업의 **실제 공격 벡터**를 보면, 웹 트래픽을 통한 SQL 인젝션, XSS, 파일 업로드 취약점 공격 등이 대부분입니다.  
@@ -53,7 +53,7 @@ tags: ["IPS", "NDR", "보안", "Security", "PLURA-XDR"]
 
 ---
 
-## 3. **IPS/NDR이 필요한 ‘예외적’ 상황**
+## 3. **NIPS/NDR이 필요한 ‘예외적’ 상황**
 
 그럼에도 불구하고, **아래와 같은 특수 사례**에서는 IPS/NDR이 유의미할 수 있습니다.
 
