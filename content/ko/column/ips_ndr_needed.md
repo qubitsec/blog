@@ -4,7 +4,7 @@ date: 2024-12-22T00:00:01
 draft: false
 description: "특수 환경이 아니라면 WAF + EDR/HIPS로도 충분한 이유와 NIPS/NDR을 고려해야 하는 예외적 상황을 살펴봅니다."
 featured_image: "cdn/column/ips_ndr_needed.png"
-tags: ["IPS", "NIPS, "HIPS", "NDR", "보안", "Security", "PLURA-XDR"]
+tags: ["IPS", "NIPS", "HIPS", "NDR", "보안", "Security", "PLURA-XDR"]
 ---
 
 ⛑️**중소·중견 기업 환경**을 전제로, 네트워크 기반 보안 솔루션인 **NIPS**(Network-based Intrusion Prevention System)와 **NDR**(Network Detection & Response)이 “과연 꼭 필요한가?”라는 질문을 다시 살펴봅니다.  
