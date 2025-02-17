@@ -79,7 +79,7 @@ tags: ["応答状態値", "status", "200", "404", "Webセキュリティ"]
 
 **正確なステータスコードとログデータを基に、安定したサービス運用とセキュリティ強化を同時に実現しましょう。**
 
-![応答状態値の重要性](https://blog.plura.io/cdn/column/status_code_security-2.png)
+![応答状態値の重要性](https://blog.plura.io/cdn/column/status_code_security.jpg)
 
 ---
 
