@@ -106,3 +106,5 @@ tags: ["IPS", "NIPS", "HIPS", "NDR", "보안", "Security", "PLURA-XDR"]
 
 ### 📖 **함께 읽기**
 - [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+- [IPS의 진화와 보안 환경의 변화](https://blog.plura.io/ko/column/ips_classification/)
+- [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
