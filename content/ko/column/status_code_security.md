@@ -79,7 +79,7 @@ tags: ["응답 상태값", "status", "200", "404", "웹 보안"]
 
 정확한 상태값과 로그 데이터를 기반으로 **안정적 서비스**와 **보안 강화**를 동시에 달성해 보시기 바랍니다.
 
-![응답 상태값의 중요성](https://blog.plura.io/cdn/column/status_code_security-2.png)
+![응답 상태값의 중요성](https://blog.plura.io/cdn/column/status_code_security.jpg)
 
 ---
 
