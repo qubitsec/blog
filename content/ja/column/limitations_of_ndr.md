@@ -111,8 +111,6 @@ PLURA-XDRは、NDRの限界を克服するために以下の戦略を提供し�
 
 ✅ **PLURA-XDRは、NDRの弱点を補い、企業のセキュリティ環境を飛躍的に向上させる次世代の統合セキュリティソリューションを提供します。**
 
-![NDRと永久機関のたとえ](https://blog.plura.io/cdn/column/ndr_perpetual_machine.png)
-
 ---
 
 ### 📖 **関連資料**
