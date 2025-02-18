@@ -1,6 +1,6 @@
 ---
 title: "온프레미스 DDoS 시대는 끝났다"
-date: 2025-02-18T00:00:01
+date: 2025-02-18
 draft: false
 description: "DDoS 공격의 주요 타겟이 웹 서비스인 현실에서, 온프레미스에서 이를 방어하는 것은 비효율적입니다. 퍼블릭 클라우드 기반 방어와 네트워크 구조의 변화가 필요한 이유를 살펴봅니다."
 featured_image: "cdn/column/end_of_onprem_ddos.png"
