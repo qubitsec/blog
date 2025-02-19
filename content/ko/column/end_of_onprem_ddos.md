@@ -120,5 +120,5 @@ DDoS를 막으려면, 단순히 클라우드 이전만이 아니라 **전체 네
 ---
 
 ### 📖 **함께 읽기**
-- [Zero Trust 보안 아키텍처란?](https://blog.plura.io/ko/column/zero-trust-architecture/)
+- [Zero Trust 보안 아키텍처란?](https://blog.plura.io/ko/column/zero_trust_architecture/)
 - [DDoS 방어를 위한 클라우드 네트워크 설계](https://blog.plura.io/ko/column/cloud-network-design-for-ddos-protection/)
