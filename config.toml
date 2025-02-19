@@ -7,7 +7,7 @@ defaultContentLanguageInSubdir = true
 theme = "ananke"
 #resourceDir = "resources"
 buildFuture = true
-copyright = "© 2014-2024 Qubit Security Inc. All Rights Reserved."
+copyright = "© 2014-2025 Qubit Security Inc. All Rights Reserved."
 
 SectionPagesMenu = ""
 googleAnalytics = ""
