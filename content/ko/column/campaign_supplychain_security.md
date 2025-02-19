@@ -1,6 +1,6 @@
 ---
 title: "PLURA-XDR을 활용한 공급망 보안 강화 방안"
-date: 2025-2-19
+date: 2025-02-19
 draft: false
 description: "PLURA-XDR을 활용한 공급망 보안 강화 전략을 소개합니다."
 featured_image: "cdn/column/supply_chain_security.png"
