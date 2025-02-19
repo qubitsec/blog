@@ -7,7 +7,7 @@ featured_image: "cdn/column/supply_chain_security.png"
 tags: ["공급망 보안", "Security", "PLURA-XDR", "협력사 보안", "클라우드 보안"]
 ---
 
-## 캠페인: PLURA-XDR을 활용한 공급망 보안 강화 방안 [1탄]
+## 🕵️‍♂️ 캠페인: PLURA-XDR을 활용한 공급망 보안 강화 방안 [1탄]
 
 ## 1. 제안 배경
 
