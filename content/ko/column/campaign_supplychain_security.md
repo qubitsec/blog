@@ -54,7 +54,7 @@ tags: ["공급망 보안", "Supply Chain", "Security", "PLURA-XDR", "협력사 �
 
 2) **PLURA-XDR 플랫폼의 통합성**  
    - **PLURA-XDR**(Extended Detection & Response)은 기존 EDR(Endpoint Detection & Response) 영역을 넘어 *웹, 클라우드, 서버 및 PC* 등 다양한 환경에서 발생하는 보안 이벤트를 *단일 플랫폼*에서 통합적으로 모니터링·분석·대응 가능하게 합니다.  
-   - WAF, EDR, Forensic, SMS, SIEM 등 여러 보안 기능을 한 곳에서 제공해, *솔루션 간 호환성*과 *운영 편의성*이 탁월합니다.  
+   - PLURA-XDR은 WAF, EDR, Forensic, SMS, SIEM 등 여러 보안 기능을 한 곳에서 제공해, *솔루션 간 호환성*과 *운영 편의성*이 탁월합니다.  
    - *기존 SIEM, EDR*에 비해 웹 영역으로 확장하여 탐지·분석 범위가 넓고, *보다 빠른 이벤트 상관분석*을 통해 *정확한 위협 대응*이 가능합니다.
 
 3) **간편한 도입 및 운영**  
