@@ -7,51 +7,6 @@ featured_image: "cdn/column/why_analyze_get_post_logs-1.png"
 tags: ["GET 방식", "POST 방식", "웹로그 분석", "보안", "PLURA-XDR"]
 ---
 
-## HTTP란?
-
-HTTP(Hypertext Transfer Protocol)는 클라이언트와 서버 간의 통신을 가능하게 하는 프로토콜입니다.  
-HTTP는 **요청-응답**(Request-Response) 구조로 작동하며, 클라이언트가 서버에 요청을 보내고 서버는 이에 대한 응답을 제공합니다.
-
-HTTP 요청 방식은 GET, HEAD, POST, PUT, DELETE, OPTIONS, TRACE, CONNECT 등 여러 가지가 있습니다. 하지만 보안상의 이유로 대부분의 웹 서버는 **GET**과 **POST** 방식만을 허용합니다.  
-아래에서 GET과 POST 방식에 대해 자세히 알아보겠습니다.
-
-![why_analyze_get_post_logs](https://blog.plura.io/cdn/column/why_analyze_get_post_logs-1.png)  
-<!--more-->
-
----
-
-## GET 방식
-
-```plaintext
-/test/test_form.php?name1=value1&name2=value2
-```
-
-**GET 방식**은 URL(URI) 형식으로 데이터를 요청합니다. URL을 통해 요청 데이터를 노출하기 때문에 **검색어 전달**이나 **페이지 번호 전송** 등 **민감하지 않은 정보**에 주로 사용됩니다.  
-
-### 특징
-- **정보 노출**: 요청 데이터가 URL에 포함되므로 누구나 볼 수 있습니다.  
-- **데이터 제한**: URL의 길이는 4096bytes로 제한되므로 전송 가능한 데이터 크기가 제한됩니다.  
-- **사용 사례**: 검색어 전달, 게시판 페이지 전환 등.
-
----
-
-## POST 방식
-
-```plaintext
-POST /test/test_form.php HTTP/1.1
-Host: plura.io
-name1=value1&name2=value2
-```
-
-**POST 방식**은 데이터를 HTTP Body에 담아 서버로 전송합니다. HTML Form을 통해 **개인 정보나 중요한 데이터**를 전송하는 데 주로 사용됩니다.
-
-### 특징
-- **정보 보호**: 데이터가 URL에 노출되지 않아 GET 방식보다 상대적으로 안전합니다.  
-- **데이터 크기 제한 없음**: 서버의 응답 지연 시간 내에서는 대량의 데이터를 전송할 수 있습니다.  
-- **사용 사례**: 회원 아이디, 비밀번호, 개인정보 전송 등.
-
----
-
 ## 왜 전체 웹 로그 분석이 중요한가?
 
 ### 1) 제로데이 또는 알려지지 않은 공격(Zero-Day Attack) 탐지
