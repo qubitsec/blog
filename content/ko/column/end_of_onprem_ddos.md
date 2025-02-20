@@ -49,7 +49,8 @@ DDoS 공격은 아래 두 가지 축으로 크게 나눌 수 있습니다.
 
 ### 🛠 **(1) 대고객용 서비스는 퍼블릭 클라우드에서 제공**
 
-- AWS, Azure, GCP 등 **글로벌 클라우드 사업자는 Anycast 기반의 대규모 DDoS 방어 인프라**를 이미 갖추고 있습니다.
+- Oracle OCI, AWS, Azure, GCP 등 **글로벌 클라우드 사업자는 Anycast 기반의 대규모 DDoS 방어 인프라**를 이미 갖추고 있습니다.
+- Naver Cloud의 DDoS 방어 시스템도 검토할 수 있습니다.
 - Cloudflare, Akamai, AWS Shield 등 **전용 DDoS 보호 서비스**를 통합 활용하면 공격 트래픽이 **온프레미스까지 도달하기 전에 차단**됩니다.
 - **CDN(Content Delivery Network)을 적극 도입**하여, 공격자가 특정 서버 IP를 직접 공격할 수 없도록 우회/캐시 구조를 만듭니다.
 
