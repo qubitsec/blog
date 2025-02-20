@@ -160,4 +160,5 @@ URL 인코딩, 이중 인코딩, 특수 문자 치환 등을 활용해 **WAF나 
 ---
 
 ### 📖 **함께 읽기**  
-- [PLURA-Blog: 우리는 왜 GET/POST 로그를 분석하는가?](https://blog.plura.io/ko/column/why_analyze_get_post_logs/)  
+- [PLURA-Blog: 우리는 왜 GET/POST 로그를 분석하는가?](https://blog.plura.io/ko/column/why_analyze_get_post_logs/)
+- [PLURA-github: LoL(Living off the Land) 공격 설명](https://github.com/qubitsec/plura/tree/main/demo/ko)  
