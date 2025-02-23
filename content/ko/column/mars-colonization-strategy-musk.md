@@ -3,7 +3,7 @@ title: "화성을 향한 머스크의 기업 네트워크 분석"
 date: 2025-02-23
 draft: false
 description: "일론 머스크의 거대한 퍼즐: 화성 개척을 위한 테슬라, 스페이스X, xAI, The Boring Company, Neuralink Corporation의 연결고리"
-featured_image: "cdn/column/musk_mars_network.png"
+featured_image: "cdn/column/mars-colonization-strategy-musk.png"
 tags: ["Elon Musk", "Tesla", "SpaceX", "Starlink", "xAI", "Solar", "ESS", "The Boring Company", "Neuralink Corporation", "Mars", "Phone"]
 ---
 
