@@ -7,7 +7,7 @@ featured_image: "cdn/column/mars-colonization-strategy-musk.png"
 tags: ["Elon Musk", "Tesla", "SpaceX", "Starlink", "xAI", "Solar", "ESS", "The Boring Company", "Neuralink Corporation", "Mars", "Phone"]
 ---
 
-### “화성에서 생존 가능하다면, 지구에서도 반드시 유용하다”
+### 🌍➡️🔴 “화성에서 생존 가능하다면, 지구에서도 반드시 유용하다”
 
 일론 머스크의 궁극적인 목표는 **화성에 인간이 거주할 수 있는 식민지를 건설**하는 것입니다.  
 그러나 화성은 지구와 달리 **기존 인프라가 전무**하고, **방사선, 저온, 낮은 대기압** 등  
