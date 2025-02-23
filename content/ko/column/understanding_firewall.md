@@ -1,6 +1,6 @@
 ---
 title: "방화벽(Firewall)에 대한 올바른 이해"
-date: 2025-02-24
+date: 2025-02-23
 draft: false
 description: "온프레미스 환경에서 방화벽의 역할과 효과적인 운영 방법을 살펴봅니다. 네트워크 보호와 트래픽 관리의 핵심은 무엇일까요?"
 featured_image: "cdn/column/understanding_firewall.png"
