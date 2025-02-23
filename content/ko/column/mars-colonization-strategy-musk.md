@@ -126,3 +126,12 @@ tags: ["Elon Musk", "Tesla", "SpaceX", "Starlink", "xAI", "Solar", "ESS", "The B
 > "**화성을 향한 도전**"이 "**지구에서의 혁신**"으로 이어지는 모습은,  
 > 일론 머스크가 구축하고 있는 **거대한 기업 네트워크**의 진정한 가치이자  
 > **인류의 미래를 바꿀 수 있는 잠재력**이라 할 수 있습니다.
+
+### 📖 함께 읽기  
+- [테슬라 (Tesla)](https://www.tesla.com)  
+- [스페이스X (SpaceX)](https://www.spacex.com)  
+- [스타링크 (Starlink)](https://www.starlink.com)  
+- [xAI](https://x.ai)  
+- [태양광 & ESS (Tesla Energy)](https://www.tesla.com/solarpanels)  
+- [더 보링 컴퍼니 (The Boring Company)](https://www.boringcompany.com)  
+- [뉴럴링크 (Neuralink)](https://neuralink.com)
