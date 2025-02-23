@@ -14,7 +14,7 @@ tags: ["Elon Musk", "Tesla", "SpaceX", "Starlink", "xAI", "Solar", "ESS", "The B
 머스크가 설립·운영 중인 **테슬라(Tesla), 스페이스X(SpaceX), 스타링크(Starlink), xAI, 태양광 & ESS, The Boring Company, 뉴럴링크(Neuralink)** 등은  
 모두 이 **‘화성 개척’이라는 하나의 목표**를 향해, **각각의 필요 기술을 맡아 수직 계열화를 이루는 과정**에서 탄생했습니다.
 
-결과적으로 **“화성에서 생존 가능하다면, 지구에서도 반드시 유용하다”**라는 머스크의 철학은  
+결과적으로 "**화성에서 생존 가능하다면, 지구에서도 반드시 유용하다**"라는 머스크의 철학은  
 이 기업들을 통해 **지구에서도 효율적이고 지속 가능한 미래 기술**을 선보이는 원동력이 되고 있습니다.
 
 ![Mars Colonization](https://blog.plura.io/cdn/column/mars-colonization-strategy-musk.png)
