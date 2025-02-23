@@ -121,4 +121,4 @@ DDoS를 막으려면, 단순히 클라우드 이전만이 아니라 **전체 네
 ---
 
 ### 📖 **함께 읽기**
-- [Zero Trust 보안 아키텍처란?](https://blog.plura.io/ko/column/zero_trust_architecture/)
+- [PLURA-Blog: 올바른 웹방화벽 WAF 운영 방법은?](https://blog.plura.io/ko/column/onpremise_inline_waf/)
