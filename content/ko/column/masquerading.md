@@ -128,7 +128,7 @@ cmd.exe가 정상적으로 실행되는 것을 확인할 수 있습니다.
 
 데모에 사용된 악성 코드는 지난 블로그에서 설명드린 **프로세스 할로잉(Process Hollowing)** 기법을 사용하여 악성 코드를 제작 후, 사용했습니다.
 
-- [**프로세스 할로잉 (Process Hollowing) 알아보기**](https://blog.plura.io/ko/threats/process_hollowing/)
+- [**프로세스 할로잉 (Process Hollowing) 알아보기**](https://blog.plura.io/ko/respond/process_hollowing/)
 
 ![a](https://github.com/user-attachments/assets/7479837c-3cd8-460c-a868-fa3fb65d2c8e)
 
