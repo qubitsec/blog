@@ -130,7 +130,7 @@ cmd.exe が正常に実行されることを確認できます。
 デモに使用されたマルウェアは、以前のブログで説明した **Process Hollowing（プロセス ハロウイング）** 手法を  
 使用して作成されたものです。
 
-- [**Process Hollowing（プロセス ハロウイング）について詳しく知る**](https://blog.plura.io/ko/threats/process_hollowing/)
+- [**Process Hollowing（プロセス ハロウイング）について詳しく知る**](https://blog.plura.io/ja/respond/process_hollowing/)
 
 ![a](https://github.com/user-attachments/assets/7479837c-3cd8-460c-a868-fa3fb65d2c8e)
 
