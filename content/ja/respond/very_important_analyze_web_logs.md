@@ -160,6 +160,6 @@ URLエンコーディング、二重エンコーディング、特殊文字変�
 
 ---
 
-### 📖 **함께 읽기**  
+### 📖 **関連リンク**  
 - [PLURA-Blog: 私たちはなぜGET/POSTログを分析するのか？](https://blog.plura.io/ja/column/why_analyze_get_post_logs/)
 - [PLURA-Github: LoL（Living off the Land）攻撃の説明](https://github.com/qubitsec/plura/tree/main/demo/ja)  
