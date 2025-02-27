@@ -69,5 +69,5 @@ tags: ["ゼロデイ攻撃", "未知の攻撃", "ウェブログ分析", "セキ
 ---
 
 ### 📖 関連記事
-- [Netflix - Zero Day](https://www.youtube.com/watch?v=FOfBiiPdQPI)
+- [Netflix - Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)
 - [PLURA-Blog: なぜウェブの全体的なログ分析が重要なのか？](https://blog.plura.io/ja/respond/very_important_analyze_web_logs)
