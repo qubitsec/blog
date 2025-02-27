@@ -69,5 +69,5 @@ tags: ["제로데이 공격", "알려지지 않은 공격", "웹로그 분석", 
 ---
 
 ### 📖 함께 보고 & 읽기
-- [Netflix - Zero Day](https://www.youtube.com/watch?v=FOfBiiPdQPI)
+- [Netflix - Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)
 - [PLURA-Blog: 웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs)
