@@ -19,6 +19,10 @@ tags: ["Elon Musk", "Tesla", "SpaceX", "Starlink", "xAI", "Solar", "ESS", "The B
 "**火星で生存できるなら、地球でも必ず役立つ**" というマスクの哲学のもと、  
 **火星のための技術**が、**地球を革新する核心的な推進力**になることです。  
 
+![Elon Musk](https://blog.plura.io/cdn/column/mars-colonization-strategy-musk.png)
+
+<!--more-->
+
 ---
 
 ## **1. テスラ (Tesla) – 電動化 & 人工知能(AI)**
