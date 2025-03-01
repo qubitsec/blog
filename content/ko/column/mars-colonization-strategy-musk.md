@@ -19,6 +19,10 @@ tags: ["Elon Musk", "Tesla", "SpaceX", "Starlink", "xAI", "Solar", "ESS", "The B
 "**화성에서 생존 가능하다면, 지구에서도 반드시 유용하다**"라는 머스크의 철학대로,  
 **화성을 위한 기술**이 곧 **지구를 혁신할 수 있는 핵심 동력**이 된다는 것입니다.  
 
+![Elon Musk](https://blog.plura.io/cdn/column/mars-colonization-strategy-musk.png)
+
+<!--more-->
+
 ---
 
 ## **1. 테슬라 (Tesla) – 전동화 & 인공지능(AI)**
