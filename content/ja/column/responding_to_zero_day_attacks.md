@@ -1,15 +1,15 @@
 ---
 date: 2025-02-23
 draft: false
-title: "ゼロデーと未知の攻撃対応戦略"
+title: "ゼロデイ攻撃対応戦略"
 description: "新しい脆弱性と未知の攻撃技術を検出し、対応する方法を学びます。"
 featured_image: "cdn/column/responding_to_zero_day_attacks.png"
-tags: ["ゼロデイ攻撃", "未知の攻撃", "ウェブログ分析", "セキュリティ", "PLURA-XDR"]
+tags: ["ゼロデイ攻撃", "Zero-day", "未知の攻撃", "ウェブログ分析", "セキュリティ", "PLURA-XDR"]
 ---
 
 🕵️‍♂️ 近年、サイバーセキュリティの脅威がますます高度化し、従来のシグネチャベースの検出方法だけでは対応が難しくなっています。**ゼロデイ攻撃**（Zero-Day Attack）や**未知の攻撃**（Unknown Attack）は、セキュリティシステムが事前に認識していない新しい手法で実行され、従来のセキュリティソリューションを回避する可能性が高くなります。これらの攻撃を効果的に防ぐには、**全体的なウェブログ分析に基づく異常兆候検出**が不可欠です。
 
-![Zero-Day Attack](https://blog.plura.io/cdn/column/responding_to_zero_day_attacks.png)  
+![Zero-day Attack](https://blog.plura.io/cdn/column/responding_to_zero_day_attacks.png)  
 <!--more-->
 
 ## ゼロデイ攻撃および未知の攻撃とは？
@@ -71,3 +71,4 @@ tags: ["ゼロデイ攻撃", "未知の攻撃", "ウェブログ分析", "セキ
 ### 📖 関連記事
 - [Netflix - Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)
 - [PLURA-Blog: なぜウェブの全体的なログ分析が重要なのか？](https://blog.plura.io/ja/respond/very_important_analyze_web_logs)
+- [ウィキペディア-ゼロデイ攻撃](https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AD%E3%83%87%E3%82%A4%E6%94%BB%E6%92%83)
