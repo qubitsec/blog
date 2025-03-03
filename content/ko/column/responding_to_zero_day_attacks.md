@@ -1,15 +1,15 @@
 ---
 date: 2025-02-23
 draft: false
-title: "제로데이 및 알려지지 않은 공격 대응 전략"
-description: "새로운 취약점과 알려지지 않은 공격 기법을 탐지하고 대응하는 방법을 알아봅니다."
+title: "제로 데이 공격 대응 전략"
+description: "새로운 취약점(제로 데이)과 알려지지 않은 공격 기법을 탐지하고 대응하는 방법을 알아봅니다."
 featured_image: "cdn/column/responding_to_zero_day_attacks.png"
-tags: ["제로데이 공격", "알려지지 않은 공격", "웹로그 분석", "보안", "PLURA-XDR"]
+tags: ["제로 데이 공격", "Zero-day", "알려지지 않은 공격", "웹로그 분석", "보안", "PLURA-XDR"]
 ---
 
 🕵️‍♂️ 최근 사이버 보안 위협이 점점 더 정교해지면서 기존의 시그니처 기반 탐지 방식만으로는 대응이 어려워지고 있습니다. **제로데이 공격**(Zero-Day Attack)과 **알려지지 않은 공격**(Unknown Attack)은 보안 시스템이 미처 인지하지 못한 새로운 방식으로 진행되며, 전통적인 보안 솔루션을 우회할 가능성이 높습니다. 이러한 공격을 효과적으로 차단하기 위해서는 **전체 웹 로그 분석을 기반으로 한 이상 징후 탐지**가 필수적입니다.
 
-![Zero-Day Attack](https://blog.plura.io/cdn/column/responding_to_zero_day_attacks.png)  
+![Zero-day Attack](https://blog.plura.io/cdn/column/responding_to_zero_day_attacks.png)  
 <!--more-->
 
 ## 제로데이 및 알려지지 않은 공격이란?
@@ -71,3 +71,4 @@ tags: ["제로데이 공격", "알려지지 않은 공격", "웹로그 분석", 
 ### 📖 함께 보고 & 읽기
 - [Netflix - Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)
 - [PLURA-Blog: 웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs)
+- [위키백과-제로 데이 공격](https://ko.wikipedia.org/wiki/%EC%A0%9C%EB%A1%9C_%EB%8D%B0%EC%9D%B4_%EA%B3%B5%EA%B2%A9)
