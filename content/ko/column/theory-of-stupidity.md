@@ -1,6 +1,6 @@
 ---
 title: "디트리히 본회퍼의 멍청이 이론"
-date: 2025-03-05
+date: 2025-03-15
 draft: false
 description: "디트리히 본회퍼의 멍청이 이론과 현대 사회에 미치는 영향을 분석합니다."
 featured_image: "cdn/column/theory-of-stupidity.png"
