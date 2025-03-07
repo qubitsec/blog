@@ -1,6 +1,6 @@
 ---
 title: "Dietrich Bonhoefferの愚か者理論"
-date: 2025-03-05
+date: 2025-03-05T10:38:00
 draft: false
 description: "Dietrich Bonhoefferの愚か者理論と現代社会への影響を分析します。"
 featured_image: "cdn/column/theory-of-stupidity.png"
