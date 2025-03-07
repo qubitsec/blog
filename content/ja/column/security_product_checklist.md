@@ -1,6 +1,6 @@
 ---
 title: "情報セキュリティ製品選択チェックリスト"
-date: 2025-03-04
+date: 2025-03-04T10:39:00
 draft: false
 description: "情報セキュリティ製品を選択する際に考慮すべき重要な基準とチェックリストを提供します。"
 featured_image: "cdn/column/security_product_checklist.png"
