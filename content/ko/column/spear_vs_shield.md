@@ -1,10 +1,10 @@
 ---
-title: "해커 vs Blue Team, 누가 유리할까?"
+title: "레드 팀 vs 블루 팀, 누가 유리할까?"
 date: 2025-03-08
 draft: false
-description: "해커와 Blue Team 간의 창과 방패 싸움 속에서 PLURA-XDR의 필요성과 강력한 보안 역할을 알아봅니다."
+description: "공격자 관점의 레드 팀(해커)와 블루 팀 간의 창과 방패 싸움 속에서 PLURA-XDR의 필요성과 강력한 보안 역할을 알아봅니다."
 featured_image: "cdn/column/spear_vs_shield.png"
-tags: ["spear", "shield", "보안", "해커", "Blue Team", "Cybersecurity", "PLURA-XDR"]
+tags: ["Spear", "Shield", "해커", "Red Team", "Blue Team", "Cybersecurity", "PLURA-XDR"]
 ---
 
 
@@ -20,7 +20,7 @@ tags: ["spear", "shield", "보안", "해커", "Blue Team", "Cybersecurity", "PLU
 
 ### 1. **해커 vs Blue Team: 누가 더 유리할까?**
 
-보안 전문가 마크 쉬(Marc Schemacher)는 **"공격의 한계는 공격자의 상상력에 달려있다"**고 말했습니다. 이 관점을 중심으로 공격자가 유리한 이유를 정리하면 다음과 같습니다:
+해킹 웹앱의 저자 보안 전문가 마이크 쉬마(Mike Shema)는 "**공격의 한계는 공격자의 상상력에 달려있다**"고 말했습니다. 이 관점을 중심으로 공격자가 유리한 이유를 정리하면 다음과 같습니다:
 
 #### 🔸 **창의적이고 무한한 공격 가능성**
 - 공격자는 정해진 규칙에 얽매이지 않고 다양한 창의적 방법을 시도할 수 있습니다.
