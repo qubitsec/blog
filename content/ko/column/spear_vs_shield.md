@@ -13,6 +13,9 @@ tags: ["spear", "shield", "보안", "해커", "Blue Team", "Cybersecurity", "PLU
 
 많은 사람들이 해커와 Blue Team 간의 싸움을 '창과 방패'에 비유합니다. 공격하는 해커는 계속 진화하고 있으며, 방어하는 Blue Team은 이에 대응하기 위한 방어 체계를 지속적으로 구축해야 합니다. 그렇다면 과연 이 싸움에서 누가 더 유리할까요?
 
+![Spear vs. Shield](https://blog.plura.io/cdn/column/spear_vs_shield.png)
+<!--more-->
+
 ---
 
 ### 1. **해커 vs Blue Team: 누가 더 유리할까?**
