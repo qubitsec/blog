@@ -1,6 +1,6 @@
 ---
 title: "정보보안 제품 선택 체크리스트"
-date: 2025-03-04
+date: 2025-03-04T10:39:00
 draft: false
 description: "정보보안 제품 선택 시 반드시 고려해야 할 핵심 기준과 체크리스트를 제공합니다."
 featured_image: "cdn/column/security_product_checklist.png"
