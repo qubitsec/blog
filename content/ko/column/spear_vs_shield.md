@@ -1,7 +1,7 @@
 ---
 title: "레드 팀 vs 블루 팀, 누가 유리할까?"
 date: 2025-03-08
-draft: false
+draft: true
 description: "공격자 관점의 레드 팀(해커)와 블루 팀 간의 창과 방패 싸움 속에서 PLURA-XDR의 필요성과 강력한 보안 역할을 알아봅니다."
 featured_image: "cdn/column/spear_vs_shield.png"
 tags: ["Spear", "Shield", "해커", "Red Team", "Blue Team", "Cybersecurity", "PLURA-XDR"]
