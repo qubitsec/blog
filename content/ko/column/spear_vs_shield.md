@@ -50,7 +50,7 @@ tags: ["Spear", "Shield", "해커", "Red Team", "Blue Team", "Cybersecurity", "P
 
 ### 2️⃣ **PLURA-XDR이 왜 이 싸움에서 더 유리한가?**
 
-> 나는 퍽이 지나간 자리가 아니라 나아갈 자리로 움직인다.
+> 나는 퍽이 지나간 자리가 아니라 나아갈 자리로 움직인다.  
 > \- 웨인 그레츠키 (Wayne Gretzky) 
 
 #### 🔹 **통합적 실시간 탐지 및 대응**
