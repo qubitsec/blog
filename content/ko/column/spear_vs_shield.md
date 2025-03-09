@@ -79,3 +79,11 @@ tags: ["Spear", "Shield", "해커", "Red Team", "Blue Team", "Cybersecurity", "P
 PLURA-XDR은 단순히 방어를 위한 방패가 아니라, 적극적으로 위협을 찾아내고 차단하는 강력한 경고 시스템입니다. 해커의 창의성과 상상력에 맞서, PLURA-XDR을 도입한 기업은 공격자보다 한발 앞선 대응 능력을 갖출 수 있습니다.
 
 이제 PLURA-XDR과 함께, 보안의 주도권을 기업이 쥐세요.
+
+---
+
+### 📖 **함께 읽기**  
+- [PLURA-Blog-1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
+- [PLURA-Blog-필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
+- [PLURA-Blog-PC와 서버의 백신은 윈도우즈 디펜더만으로 충분하다](https://blog.plura.io/ko/column/why-edr-is-necessary/)
+- [PLURA-Blog-웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs/)
