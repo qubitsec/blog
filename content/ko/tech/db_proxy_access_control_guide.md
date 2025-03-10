@@ -10,7 +10,7 @@ title: "Proxy 형 DB 접근 통제 솔루션 간소화 구현 가이드"
 
 📖 자체적으로 Proxy 형 DB 접근 통제 솔루션과 유사한 기능을 간소화하여 직접 구현하는 방법 설명
 
-![check_mac_address](https://blog.plura.io/cdn/tech/db_proxy_access_control_guide.png)
+![DB Safe](https://blog.plura.io/cdn/tech/db_proxy_access_control_guide.png)
 <!--more-->
 
 ---
