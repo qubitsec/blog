@@ -1,4 +1,16 @@
+---
+date: 2025-03-11
+draft: false
+description: "Proxy 서버 없이 SSH 터널링과 IP 기반 ACL, 쿼리 로깅 및 로그 분석을 활용해 DB 접근 제어를 간소화하여 구축하는 가이드"
+featured_image: "cdn/tech/db_proxy_access_control_guide.png"
+tags: ["DB 접근 제어", "SSH 터널링", "ACL 설정", "DB 쿼리 로깅", "이상징후 탐지", "보안 관리"]
+title: "Proxy 형 DB 접근 통제 솔루션 간소화 구현 가이드"
+---
+
+
 📕 다음과 같이 자체적으로 Proxy 형 DB 접근 통제 솔루션과 유사한 기능을 간소화하여 직접 구현하는 방법 설명
+
+
 
 ---
 
