@@ -127,3 +127,5 @@ NAC의 출현은 정보보안 요구사항보다는 **시스템 관리 차원의
 
 🚀 **비싼 NAC 장비 없이도, PLURA-XDR을 활용해 보안 최적화는 가능합니다!**
 
+### 📖 **함께 읽기**
+- [정보보안 제품 선택 체크리스트](https://blog.plura.io/ko/column/security_product_checklist/)
