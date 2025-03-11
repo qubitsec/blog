@@ -2,7 +2,7 @@
 date: 2025-03-12
 draft: false
 description: "NAC(Network Access Control) 솔루션 도입이 필요한지에 대한 현실적인 검토와 대안적 접근 방식 제안"
-featured_image: "cdn/tech/nac_evaluation.png"
+featured_image: "cdn/tech/nac_network_access_control_guide"
 tags: ["NAC", "IP 관리", "보안 비용", "이상 징후 탐지", "네트워크 접근 제어", "보안 최적화"]
 title: "NAC(Network Access Control) 도입이 필요한가? 현실적인 접근 방식 검토"
 ---
@@ -11,7 +11,7 @@ title: "NAC(Network Access Control) 도입이 필요한가? 현실적인 접근 
 
 > 목표: "NAC 도입을 통한 선제적 IP 관리 방식이 반드시 필요한지, 대안적인 접근이 가능한지 검토한다."
 
-![NAC Evaluation](https://blog.plura.io/cdn/tech/nac_evaluation.png)
+![NAC Evaluation](https://blog.plura.io/cdn/tech/nac_network_access_control_guide.png)
 <!--more-->
 
 ---
