@@ -77,3 +77,4 @@ tags: ["방화벽", "네트워크 보안", "트래픽 관리", "Zero Trust", "PL
 
 ### 📖 **함께 읽기**
 - [Zero Trust 보안 아키텍처란?](https://blog.plura.io/ko/column/zero_trust_architecture/)
+- [정보보안 제품 선택 체크리스트](https://blog.plura.io/ko/column/security_product_checklist/)
