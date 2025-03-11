@@ -9,7 +9,7 @@ title: "NAC(Network Access Control) 도입이 필요한가? 현실적인 접근 
 
 📖 **NAC(Network Access Control) 솔루션 도입이 필요한가? 현실적인 검토**
 
-> 목표: "NAC 도입을 통한 선제적 IP 관리 방식이 반드시 필요한지, 대안적인 접근이 가능한지 검토한다."
+> 목표: "정보보안은 선제적 대응이 중요합니다. 하지만 현재의 보안 문제는 불필요한 과잉 관리가 포함되어 정작 중요한 보안 위협을 간과하는 데서 비롯됩니다. 본 글에서는 NAC 도입을 통한 선제적 IP 관리 방식이 반드시 필요한지 검토하고, 보다 현실적이고 효율적인 대안적 접근 방안을 제시합니다."
 
 ![NAC Evaluation](https://blog.plura.io/cdn/tech/nac_evluation.png)
 <!--more-->
