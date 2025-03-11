@@ -2,7 +2,7 @@
 date: 2025-03-12
 draft: false
 description: "NAC(Network Access Control) 솔루션 도입이 필요한지에 대한 현실적인 검토와 대안적 접근 방식 제안"
-featured_image: "cdn/tech/nac_evluation.png"
+featured_image: "cdn/tech/nac_evaluation.png"
 tags: ["NAC", "IP 관리", "보안 비용", "이상 징후 탐지", "네트워크 접근 제어", "보안 최적화"]
 title: "NAC(Network Access Control) 도입이 필요한가? 효율적인 대안을 제시합니다"
 ---
@@ -11,7 +11,7 @@ title: "NAC(Network Access Control) 도입이 필요한가? 효율적인 대안�
 
 > 목표: "정보보안은 선제적 대응이 중요합니다. 하지만 선제적 대응에 방점이 되어 현재의 보안 문제는 불필요한 과잉 관리가 포함되어 정작 중요한 보안 위협을 간과하는 데서 비롯됩니다. 본 글에서는 NAC 도입을 통한 선제적 IP 관리 방식이 반드시 필요한지 검토하고, 보다 현실적이고 효율적인 대안적 접근 방안을 제시합니다."
 
-![NAC Evaluation](https://blog.plura.io/cdn/tech/nac_evluation.png)
+![NAC Evaluation](https://blog.plura.io/cdn/tech/nac_evaluation.png)
 <!--more-->
 
 ---
@@ -105,7 +105,7 @@ flowchart TD
   BlockIP --> Alert[관리자 알림]
 ```
 
-![Flowchart](https://blog.plura.io/cdn/tech/nac_evluation-2.png)
+![Flowchart](https://blog.plura.io/cdn/tech/nac_evaluation-2.png)
 
 ---
 
