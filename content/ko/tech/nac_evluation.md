@@ -105,6 +105,8 @@ flowchart TD
   BlockIP --> Alert[관리자 알림]
 ```
 
+![Flowchart](https://blog.plura.io/cdn/tech/nac_evluation-2.png)
+
 ---
 
 ## 📌 결론
