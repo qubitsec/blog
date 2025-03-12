@@ -148,4 +148,5 @@ NAC의 출현은 정보보안 요구사항보다는 **시스템 관리 차원의
 
 ### 📖 **함께 읽기**
 - [정보보안 제품 선택 체크리스트](https://blog.plura.io/ko/column/security_product_checklist/)
+- [NAC(Network Access Control) 도입이 필요한가? 효율적인 대안을 제시합니다](https://blog.plura.io/ko/tech/nac_evaluation/)
 
