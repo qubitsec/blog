@@ -11,7 +11,7 @@ title: "NAC(Network Access Control) 도입 자가 진단하기"
 
 > 목표: "NAC 솔루션이 보안 강화를 위한 필수 요소인지, 아니면 불필요한 관리 부담을 초래하는지 분석합니다. 단순한 IP 기반 접근 제어가 해킹 방어에 효과적인지 검토하고, 보다 현실적이고 효율적인 대안을 제시합니다."
 
-![NAC Evaluation](https://blog.plura.io/cdn/tech/nac_evaluation_self_checklist.png)
+![NAC Evaluation Self Checklist](https://blog.plura.io/cdn/tech/nac_evaluation_self_checklist.png)
 <!--more-->
 
 ---
