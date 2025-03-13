@@ -1,5 +1,5 @@
 ---
-date: 2025-03-12
+date: 2025-03-12T00:00:01
 draft: false
 description: "NAC(Network Access Control) 솔루션 도입이 필요한지에 대한 현실적인 검토와 대안적 접근 방식 제안"
 featured_image: "cdn/tech/nac_evaluation.png"
