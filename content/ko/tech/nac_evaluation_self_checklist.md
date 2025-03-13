@@ -1,5 +1,5 @@
 ---
-date: 2025-03-12
+date: 2025-03-12T00:00:10
 draft: false
 description: "NAC(Network Access Control) 솔루션 도입이 보안에 실질적으로 기여하는지, 아니면 단순한 관리 편의를 위한 도구인지 검토하고, 보다 효과적인 대안을 제시합니다."
 featured_image: "cdn/tech/nac_evaluation_self_checklist.png"
