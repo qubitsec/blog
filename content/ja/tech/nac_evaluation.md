@@ -105,7 +105,7 @@ flowchart TD
   BlockIP --> Alert[管理者アラート]
 ```
 
-![Flowchart](https://blog.plura.io/cdn/tech/nac_evaluation-2.png)
+![Flowchart](https://blog.plura.io/cdn/tech/nac_evaluation-3.png)
 
 ---
 
