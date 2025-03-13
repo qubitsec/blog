@@ -1,9 +1,9 @@
 ---
 date: 2025-03-12T00:00:10
 draft: false
-description: "NAC(Network Access Control)ソリューションの導入がセキュリティに実質的に貢献するのか、それとも単なる管理の利便性を目的としたツールなのかを検討し、より効果的な代替案を提案します。"
+description: "NAC(Network Access Control)ソリューションの導入がセキュリティに実質的に貢献するのか、それとも単なる管理の利便性を目的としたツールなのかを検討し、より効果的な代替案を提案します"
 featured_image: "cdn/tech/nac_evaluation_self_checklist.png"
-tags: ["NAC"、"IP管理"、"セキュリティコスト"、"異常兆候検知"、"ネットワークアクセス制御"、"セキュリティ最適化"]
+tags: ["NAC","IP管理","セキュリティコスト","異常兆候検知","ネットワークアクセス制御","セキュリティ最適化"]
 title: "NAC(Network Access Control) 導入自己診断"
 ---
 
