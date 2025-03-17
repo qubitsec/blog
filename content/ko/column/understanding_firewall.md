@@ -11,8 +11,10 @@ tags: ["방화벽", "네트워크 보안", "트래픽 관리", "Zero Trust", "PL
 
 온프레미스 환경에서 내부 네트워크 보호 및 **출입하는 트래픽을 관리하는 일**은 반드시 방화벽(firewall)이 수행해야 할 핵심 과제입니다.
 
-![Firewall](https://blog.plura.io/cdn/column/understanding_firewall.png)
 <!--more-->
+![Firewall](https://blog.plura.io/cdn/column/understanding_firewall.png)
+
+---
 
 ## 1. 방화벽이란 무엇인가?
 
