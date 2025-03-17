@@ -11,8 +11,10 @@ tags: ["ファイアウォール", "ネットワークセキュリティ", "ト�
 
 オンプレミス環境において、内部ネットワークの保護および**出入りするトラフィックを管理すること**は、必ずファイアウォール（firewall）が果たすべき重要な課題です。
 
-![Firewall](https://blog.plura.io/cdn/column/understanding_firewall.png)
 <!--more-->
+![Firewall](https://blog.plura.io/cdn/column/understanding_firewall.png)
+
+---
 
 ## 1. ファイアウォールとは？
 
