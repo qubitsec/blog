@@ -13,8 +13,8 @@ tags: ["Spear", "Shield", "해커", "Red Team", "Blue Team", "Cybersecurity", "P
 
 해커와 블루 팀 간의 싸움은 흔히 '창과 방패'에 비유됩니다. 해커는 계속해서 진화하며, 블루 팀은 이에 맞서 방어 체계를 지속적으로 강화해야 합니다.
 
-![Spear vs. Shield](https://blog.plura.io/cdn/column/spear_vs_shield.png)
 <!--more-->
+![Spear vs. Shield](https://blog.plura.io/cdn/column/spear_vs_shield.png)
 
 ---
 
