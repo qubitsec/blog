@@ -13,8 +13,8 @@ tags: ["Spear", "Shield", "해커", "Red Team", "Blue Team", "Cybersecurity", "P
 
 ハッカーとブルーチームの戦いは、よく「槍と盾」に例えられます。ハッカーは常に進化し続け、ブルーチームはそれに対抗して防御システムを継続的に強化しなければなりません。
 
-![Spear vs. Shield](https://blog.plura.io/cdn/column/spear_vs_shield.png)
 <!--more-->
+![Spear vs. Shield](https://blog.plura.io/cdn/column/spear_vs_shield.png)
 
 ---
 
