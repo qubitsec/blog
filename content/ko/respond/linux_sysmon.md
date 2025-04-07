@@ -21,7 +21,9 @@ Microsoft에서 제공하는 Sysinternals Suite의 일부로, 보안 분석가�
 
 ![sysmon_linux](https://blog.plura.io/cdn/respond/sysmon_linux.png)
 
+
 ---
+
 
 ## **🔎 2. 왜 리눅스에서도 Sysmon을 사용해야 하는가?**
 
@@ -48,9 +50,9 @@ Sysmon은 **eBPF(Extended Berkeley Packet Filter)** 기반으로 동작하며, �
 
 👉 **즉, Sysmon은 커널에서 직접 데이터를 수집하고, JSON 형식의 가독성 높은 로그를 생성하며, 이벤트 필터링 기능을 통해 실질적인 위협 탐지가 가능하다.**
 
----
 
-## **📌 2-2. eBPF 기반 Sysmon이 강력한 이유**
+
+### **📌 2-2. eBPF 기반 Sysmon이 강력한 이유**
 
 🔹 **eBPF(Extended Berkeley Packet Filter)란?**
 
@@ -69,7 +71,8 @@ Sysmon은 **eBPF(Extended Berkeley Packet Filter)** 기반으로 동작하며, �
 
 💡 **즉, Sysmon은 리눅스 커널과 직접 연동하여 보다 정밀하고 효율적인 보안 로깅을 가능하게 한다.**
 
----
+
+
 
 ### **📌 2-3. Sysmon for Linux의 주요 기능 (TID 매핑)**
 
@@ -85,7 +88,9 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 
 👉 **이를 통해 Sysmon을 활용하면 리눅스에서도 보안 이벤트를 정밀하게 분석하고, 위협 탐지 정확도를 높일 수 있다.**
 
+
 ---
+
 
 ## **🔥 3. Sysmon for Linux를 활용한 실전 위협 탐지 시나리오**
 
@@ -101,6 +106,8 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 
 ![sample01](https://github.com/user-attachments/assets/63908c7d-822c-409f-b314-b537e7b5f36b)
 
+
+
 ### **📌 3-2. 리눅스에서 악성 네트워크 연결 탐지**
 
 **공격 시나리오**
@@ -113,7 +120,8 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 
 ![sample02](https://github.com/user-attachments/assets/d8d79e81-3854-4530-aabb-b5776c658ad9)
 
----
+
+
 
 ### **📌 3-3. Sysmon for Linux vs Auditd 비교표**
 
@@ -128,7 +136,9 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 | 파일 해시 출력 | ❌ 불가능 | ✅ 가능 ( `FileCreate`등) |
 | 리소스 사용량 | ✅ 낮음 (커널 레벨 감시) | 🔶 다소 높은 편 (유저 공간에서 작동) |
 
+
 ---
+
 
 ## **🚀 4. 결론: 리눅스 보안 강화를 위한 필수 도구, Sysmon!**
 
