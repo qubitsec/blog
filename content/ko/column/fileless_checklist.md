@@ -3,7 +3,7 @@ title: "파일리스(Fileless) 공격 대응 필수 체크리스트"
 date: 2025-04-08T00:00:01
 draft: false
 description: "파일리스(Fileless) 공격은 탐지가 어려운 고급 위협으로, 다층적인 보안 전략이 필수입니다. 이 글에서는 대응을 위한 핵심 체크리스트와 PLURA-XDR 기반의 통합 보안 방안을 소개합니다."
-featured_image: "cdn/column/fileless_checklist_01.png"
+featured_image: "cdn/column/fileless_checklist_02.png"
 tags: ["정보보안", "Security", "보안 제품 선택", "PLURA-XDR", "기업 보안"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["정보보안", "Security", "보안 제품 선택", "PLURA-XDR", "기업 
 다음은 파일리스 공격에 효과적으로 대응하기 위한 **필수 체크리스트**입니다. 🚀
 
 <!--more-->
-![fileless_checklist](https://blog.plura.io/cdn/column/fileless_checklist_01.png)
+![fileless_checklist](https://blog.plura.io/cdn/column/fileless_checklist_02.png)
 
 ---
 
