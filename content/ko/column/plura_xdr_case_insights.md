@@ -7,8 +7,8 @@ featured_image: "cdn/column/plura_xdr_case_insights.png"
 tags: ["사이버보안", "침해사례", "XDR전략", "PLURA-XDR", "랜섬웨어대응"]
 ---
 
-# ✅ 사이버 공격이 조직에 미치는 실질적 영향과 대응 전략  
-### – 국내외 침해 사례 분석과 보안 체계 고도화 방안 🔐
+
+## 국내외 침해 사례 분석과 보안 체계 고도화 방안 🔐
 
 <!--more-->
 ![plura_xdr_case_insights](https://blog.plura.io/cdn/column/plura_xdr_case_insights.png)
