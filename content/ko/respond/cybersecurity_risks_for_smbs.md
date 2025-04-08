@@ -4,7 +4,7 @@ title: "당신의 기업도 이미 해커의 표적일 수 있다 – 사이버 
 date: 2025-04-08T00:00:02
 draft: false
 description: "사이버 보안을 외면하면 피해는 시간문제입니다. 중소기업을 위한 보안 리스크와 PLURA-XDR로 대응하는 전략을 정리했습니다."
-featured_image: "cdn/respond/cybersecurity_risks.png"
+featured_image: "cdn/respond/cybersecurity_risks_01.png"
 tags: ["사이버보안", "중소기업보안", "PLURA-XDR", "랜섬웨어", "보안투자"]
 
 ---
