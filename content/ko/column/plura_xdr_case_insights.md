@@ -3,7 +3,7 @@ title: "사이버 공격이 조직에 미치는 실질적 영향과 대응 전�
 date: 2025-04-08T00:00:03
 draft: false
 description: "사이버 공격 피해 사례와 그 원인을 분석하고, PLURA-XDR 기반의 실전 대응 전략과 기술적 대안을 제시합니다."
-featured_image: "cdn/column/plura_xdr_case_insights.png"
+featured_image: "cdn/column/plura_xdr_case_insights_01.png"
 tags: ["사이버보안", "침해사례", "XDR전략", "PLURA-XDR", "랜섬웨어대응"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["사이버보안", "침해사례", "XDR전략", "PLURA-XDR", "랜섬웨�
 ## 🔐 국내외 침해 사례 분석과 보안 체계 고도화 방안 
 
 <!--more-->
-![plura_xdr_case_insights](https://blog.plura.io/cdn/column/plura_xdr_case_insights.png)
+![plura_xdr_case_insights](https://blog.plura.io/cdn/column/plura_xdr_case_insights_01.png)
 
 ---
 
