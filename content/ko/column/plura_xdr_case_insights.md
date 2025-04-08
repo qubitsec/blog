@@ -8,7 +8,7 @@ tags: ["사이버보안", "침해사례", "XDR전략", "PLURA-XDR", "랜섬웨�
 ---
 
 
-## 국내외 침해 사례 분석과 보안 체계 고도화 방안 🔐
+## 🔐 국내외 침해 사례 분석과 보안 체계 고도화 방안 
 
 <!--more-->
 ![plura_xdr_case_insights](https://blog.plura.io/cdn/column/plura_xdr_case_insights.png)
