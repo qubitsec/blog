@@ -3,14 +3,14 @@ title: "보안은 지켜보는 것이 아니라, 대응하는 것이다"
 date: 2025-04-08T00:00:05
 draft: false
 description: "지켜보는 것에 머무는 순간, 위협은 이미 안에 있다. 이제는 얼마나 잘 보는지가 아니라, 얼마나 빠르고 정확하게 대응할 수 있는지가 보안의 기준이 되었다."
-featured_image: "cdn/column/agent_based_security_shift.png"
+featured_image: "cdn/column/agent_based_security_shift_01.png"
 tags: ["에이전트기반보안", "실시간대응", "행위기반탐지", "보안패러다임전환", "PLURA-XDR"]
 ---
 
 🔍 그리고 그 대응은, 시스템 내부에서 시작된다.
 
 <!--more-->
-![agent_based_security_shift](https://blog.plura.io/cdn/column/agent_based_security_shift.png)
+![agent_based_security_shift](https://blog.plura.io/cdn/column/agent_based_security_shift_01.png)
 
 ---
 
