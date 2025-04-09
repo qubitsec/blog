@@ -7,12 +7,7 @@ featured_image: "cdn/column/agent_based_security_shift_01.png"
 tags: ["에이전트기반보안", "실시간대응", "행위기반탐지", "보안패러다임전환", "PLURA-XDR"]
 ---
 
-🔍 그리고 그 대응은, 시스템 내부에서 시작된다.
-
-<!--more-->
-![agent_based_security_shift](https://blog.plura.io/cdn/column/agent_based_security_shift_01.png)
-
----
+# 🔍 그리고 그 대응은, 시스템 내부에서 시작된다.
 
 ## 보안 패러다임의 전환 🧭
 
