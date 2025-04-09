@@ -9,15 +9,15 @@ tags: ["sysmon", "Linux 보안", "위협탐지", "eBPF", "MITRE ATT&CK", "PLURA"
 
 ## **🚨 1. Sysmon이란 무엇인가?**
 
-💡 **Sysmon(System Monitor)은 Windows 및 Linux 환경에서 시스템 활동을 기록하고, 보안 탐지 및 위협 헌팅을 위한 중요한 정보를 제공하는 도구이다.**
+**Sysmon(System Monitor)은 Windows 및 Linux 환경에서 시스템 활동을 기록하고, 보안 탐지 및 위협 헌팅을 위한 중요한 정보를 제공하는 도구이다.**
 
 <!--more-->
 
 Microsoft에서 제공하는 Sysinternals Suite의 일부로, 보안 분석가들이 악성 활동을 탐지하는 데 필수적인 로그 데이터를 수집하는 역할을 한다.
 
-👉 하지만 여전히 많은 보안 운영자들은 **Sysmon이 Windows에서만 유용하다**고 생각하는데, 이는 **크나큰 착각**이다.
+하지만 여전히 많은 보안 운영자들은 **Sysmon이 Windows에서만 유용하다**고 생각하는데, 이는 **크나큰 착각**이다.
 
-🔍 **Linux에서도 Sysmon은 강력한 보안 모니터링 및 위협 탐지를 가능하게 한다.**
+**Linux에서도 Sysmon은 강력한 보안 모니터링 및 위협 탐지를 가능하게 한다.**
 
 ![sysmon_linux](https://blog.plura.io/cdn/respond/sysmon_linux.png)
 
@@ -27,14 +27,14 @@ Microsoft에서 제공하는 Sysinternals Suite의 일부로, 보안 분석가�
 
 ## **🔎 2. 왜 리눅스에서도 Sysmon을 사용해야 하는가?**
 
-### **📌 2-1. Linux Sysmon vs. Linux 로깅: 주요 차이점 비교**
+### **2-1. Linux Sysmon vs. Linux 로깅: 주요 차이점 비교**
 
-✅ **기존 Linux 로깅 시스템의 한계**
+**기존 Linux 로깅 시스템의 한계**
 
 - Linux에는 `syslog`, `auditd`, `journald` 같은 기본 로깅 시스템이 있지만, **프로세스 실행 트래킹**, **파일 변경 감시**, **네트워크 연결 모니터링**을 종합적으로 제공하는 기능이 부족하다.
 - `auditd`는 높은 수준의 커널 이벤트 로깅을 제공하지만, **설정이 어렵고, 분석이 복잡하며, 노이즈 로그가 많아 실시간 탐지에 불리**하다.
 
-✅ **Sysmon의 장점**
+**Sysmon의 장점**
 
 Sysmon은 **eBPF(Extended Berkeley Packet Filter)** 기반으로 동작하며, 커널 이벤트를 효과적으로 추적해 기존 보안 로깅 시스템보다 다음과 같은 이점을 제공한다.
 
@@ -48,11 +48,11 @@ Sysmon은 **eBPF(Extended Berkeley Packet Filter)** 기반으로 동작하며, �
 | **Lateral Movement 탐지** | ❌ Auditd로는 어렵다 | ✅ Sysmon은 프로세스 및 네트워크 이벤트 연계 분석 가능 |
 | **Noise Filtering (이벤트 필터링)** | ❌ 설정 없이 모든 이벤트 기록 | ✅ 유효한 이벤트만 필터링 가능 |
 
-👉 **즉, Sysmon은 커널에서 직접 데이터를 수집하고, JSON 형식의 가독성 높은 로그를 생성하며, 이벤트 필터링 기능을 통해 실질적인 위협 탐지가 가능하다.**
+**즉, Sysmon은 커널에서 직접 데이터를 수집하고, JSON 형식의 가독성 높은 로그를 생성하며, 이벤트 필터링 기능을 통해 실질적인 위협 탐지가 가능하다.**
 
 
 
-### **📌 2-2. eBPF 기반 Sysmon이 강력한 이유**
+### ** 2-2. eBPF 기반 Sysmon이 강력한 이유**
 
 🔹 **eBPF(Extended Berkeley Packet Filter)란?**
 
@@ -69,12 +69,12 @@ Sysmon은 **eBPF(Extended Berkeley Packet Filter)** 기반으로 동작하며, �
 
 ✅ 파일 변조 탐지 (데이터 유출 감시)
 
-💡 **즉, Sysmon은 리눅스 커널과 직접 연동하여 보다 정밀하고 효율적인 보안 로깅을 가능하게 한다.**
+**즉, Sysmon은 리눅스 커널과 직접 연동하여 보다 정밀하고 효율적인 보안 로깅을 가능하게 한다.**
 
 
 
 
-### **📌 2-3. Sysmon for Linux의 주요 기능 (TID 매핑)**
+### **2-3. Sysmon for Linux의 주요 기능 (TID 매핑)**
 
 Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로깅 기능**을 제공한다.
 
@@ -86,15 +86,15 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 | **ModuleLoad** | 커널 모듈 로딩 감지 | T1543.003 (Create or Modify System Process: Windows Service) |
 | **ProcessTerminate** | 특정 프로세스 종료 감지 | T1489 (Service Stop) |
 
-👉 **이를 통해 Sysmon을 활용하면 리눅스에서도 보안 이벤트를 정밀하게 분석하고, 위협 탐지 정확도를 높일 수 있다.**
+**이를 통해 Sysmon을 활용하면 리눅스에서도 보안 이벤트를 정밀하게 분석하고, 위협 탐지 정확도를 높일 수 있다.**
 
 
 ---
 
 
-## **🔥 3. Sysmon for Linux를 활용한 실전 위협 탐지 시나리오**
+## **3. Sysmon for Linux를 활용한 실전 위협 탐지 시나리오**
 
-### **📌 3-1. 리눅스 서버에서 권한 상승(Sudo Exploit) 탐지**
+### **3-1. 리눅스 서버에서 권한 상승(Sudo Exploit) 탐지**
 
 **공격 시나리오**
 
@@ -108,7 +108,7 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 
 
 
-### **📌 3-2. 리눅스에서 악성 네트워크 연결 탐지**
+### **3-2. 리눅스에서 악성 네트워크 연결 탐지**
 
 **공격 시나리오**
 
@@ -123,7 +123,7 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 
 
 
-### **📌 3-3. Sysmon for Linux vs Auditd 비교표**
+### **3-3. Sysmon for Linux vs Auditd 비교표**
 
 | 기능 | Auditd | Sysmon for Linux |
 | --- | --- | --- |
@@ -140,25 +140,25 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 ---
 
 
-## **🚀 4. 결론: 리눅스 보안 강화를 위한 필수 도구, Sysmon!**
+## **4. 결론: 리눅스 보안 강화를 위한 필수 도구, Sysmon!**
 
-🔍 **1. 보안 탐지 및 위협 헌팅 측면**
+**1. 보안 탐지 및 위협 헌팅 측면**
 
 - Sysmon은 MITRE ATT&CK 프레임워크와 긴밀하게 연계되며, **권한 상승(T1548), 원격 코드 실행(T1059), 악성 프로세스 실행(T1203) 등의 공격 기법을 더 직관적으로 탐지**할 수 있다.
 
-🔍 **2. 이벤트 필터링을 통한 보안 운영 최적화**
+**2. 이벤트 필터링을 통한 보안 운영 최적화**
 
 - Auditd는 **불필요한 이벤트까지 기록하여 노이즈가 많다.**
 - Sysmon은 **필터링 기능(Event Filtering)을 제공하여 실제 위협 탐지 성능을 극대화**한다.
 
-🔍 **3. SIEM 및 클라우드 환경과의 통합**
+**3. SIEM 및 클라우드 환경과의 통합**
 
 - Sysmon은 JSON 기반 로그를 생성하여 **Windows Sysmon, SIEM, XDR과 쉽게 연동 가능**하다.
 - 클라우드 기반 서버 보호, 컨테이너 환경 보안에 최적화된 솔루션이다.
 
 ---
 
-### **🚀 최종 선택: Sysmon이 적합한 환경**
+### **최종 선택: Sysmon이 적합한 환경**
 
 ✅ **SIEM과 연계하여 로그를 분석하는 환경**
 
@@ -168,5 +168,5 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 
 ✅ **Windows, Linux 통합 보안 모니터링이 필요한 환경**
 
-💡 **즉, 실시간 위협 탐지와 보안 가시성을 높이기 위해서는 Sysmon이 적합한 솔루션이 될 수 있다.**
+**즉, 실시간 위협 탐지와 보안 가시성을 높이기 위해서는 Sysmon이 적합한 솔루션이 될 수 있다.**
 
