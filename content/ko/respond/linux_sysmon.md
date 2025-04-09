@@ -25,7 +25,7 @@ Microsoft에서 제공하는 Sysinternals Suite의 일부로, 보안 분석가�
 ---
 
 
-## **🔎 2. 왜 리눅스에서도 Sysmon을 사용해야 하는가?**
+## **2. 왜 리눅스에서도 Sysmon을 사용해야 하는가?**
 
 ### **2-1. Linux Sysmon vs. Linux 로깅: 주요 차이점 비교**
 
