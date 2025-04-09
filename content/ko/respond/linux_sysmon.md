@@ -11,13 +11,13 @@ tags: ["sysmon", "Linux 보안", "위협탐지", "eBPF", "MITRE ATT&CK", "PLURA"
 
 💡 **Sysmon(System Monitor)은 Windows 및 Linux 환경에서 시스템 활동을 기록하고, 보안 탐지 및 위협 헌팅을 위한 중요한 정보를 제공하는 도구이다.**
 
+<!--more-->
+
 Microsoft에서 제공하는 Sysinternals Suite의 일부로, 보안 분석가들이 악성 활동을 탐지하는 데 필수적인 로그 데이터를 수집하는 역할을 한다.
 
 👉 하지만 여전히 많은 보안 운영자들은 **Sysmon이 Windows에서만 유용하다**고 생각하는데, 이는 **크나큰 착각**이다.
 
 🔍 **Linux에서도 Sysmon은 강력한 보안 모니터링 및 위협 탐지를 가능하게 한다.**
-
-<!--more-->
 
 ![sysmon_linux](https://blog.plura.io/cdn/respond/sysmon_linux.png)
 
