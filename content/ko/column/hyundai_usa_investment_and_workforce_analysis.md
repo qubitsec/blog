@@ -1,7 +1,7 @@
 ---
 title: "현대자동차 미국 31조 원 투자와 자동화·인력 구조 분석"
 date: 2025-04-09
-draft: false
+draft: true
 description: "현대차그룹의 미국 31조 원 투자 배경과 목표, 전기차 생산 자동화, 그리고 한국 본사와 미국 생산공장의 인력 구조 비교를 중심으로 노동 구조 변화를 심층 분석합니다."
 featured_image: "cdn/column/hyundai_usa_investment_and_workforce_analysis.png"
 tags: ["현대차", "현대자동차", "USA", "자동화", "노동구조", "전기차"]
