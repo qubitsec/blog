@@ -28,6 +28,8 @@ tags: ["SKT", "SK텔레콤", "USIM", "BPFDoor", "APT", "SIM-Swapping", "PLURA-XD
 * **BPFDoor**는 리눅스 커널 BPF 훅을 활용해 **패킷 흔적이 남지 않는** 포트리스닝(backdoor) 기법을 구현합니다.  
 * 내부 포렌식 초동 분석에서 `udp/53`·`tcp/443` 리버스 셸 흐름이 식별됐다는 제보가 KISA에 접수됐습니다(최종 보고 전). 
 
+👉 [BPFDoor 백도어 동작원리](https://blog.plura.io/ko/respond/bpfdoor/)  
+
 > **NDR 한계와 교훈**  
 > 포트리스·TLS 암호화로 가시성이 ‘0’에 수렴하는 스텔스형 백도어는 **패턴 기반 NDR/IDS만으로는 탐지 불가**합니다.
 
