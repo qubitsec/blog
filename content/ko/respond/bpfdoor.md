@@ -124,7 +124,7 @@ sequenceDiagram
 | **리버스 셸**         | `bash -i`, `nc -e`, `socat TCP4:`, `/bin/sh` 실행 등 |
 | **해시·IOC**        | BPFDoor 샘플 SHA-256, C2 도메인 블록                     |
 
-*PoC 신청 시* — 30일간 리눅스 서버 `/dev/shm` 실행 로그·AF\_PACKET 호출을 자동 수집·리포트해 드립니다.
+
 
 ---
 
