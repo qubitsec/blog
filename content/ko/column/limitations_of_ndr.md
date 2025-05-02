@@ -3,14 +3,14 @@ title: "NDR의 한계: 해결 불가능한 미션"
 date: 2024-02-29
 draft: false
 description: "NDR(Network Detection and Response)의 기술적 한계와 이를 극복하기 위한 현실적 접근 방안을 탐구합니다."
-featured_image: "cdn/column/ndr_limitations.jpg"
+featured_image: "cdn/column/ndr_limitations.png"
 tags: ["NDR", "네트워크 보안", "ETA", "암호화 트래픽", "보안 솔루션", "PLURA"]
 ---
 
 📡 **NDR**(Network Detection and Response)은 네트워크 보안 기술로 자리 잡았지만, 본질적으로 해결하기 어려운 한계를 가지고 있습니다.  
 암호화된 트래픽 분석의 구조적 한계와 고급 위협 탐지의 어려움 등, 이러한 도전 과제를 살펴보고 이를 극복하기 위한 방안을 모색합니다.
 
-![NDR의 한계](https://blog.plura.io/cdn/column/ndr_limitations.jpg)
+![NDR의 한계](https://blog.plura.io/cdn/column/ndr_limitations.png)
 
 <!--more-->
 ---
