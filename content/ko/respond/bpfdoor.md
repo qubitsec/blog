@@ -9,8 +9,7 @@ tags: ["BPFDoor", "APT", "eBPF", "SIM-Swap", "PLURA-XDR"]
 
 ![BPFdoor](https://blog.plura.io/cdn/respond/bpfdoor.png)
 
-> **핵심 한 줄 요약**  
-> **BPFDoor**는 eBPF 필터·매직 바이트·다중 프로토콜을 이용해 “패킷 흔적이 0”에 가까운 **포트리스(backdoor)** 상태를 구현합니다. 탐지 우회를 깨뜨리려면 **메모리 실행·AF\_PACKET 소켓·iptables 변조** 같은 *행위 시그널*을 교차 분석해야 합니다.
+> **BPFDoor**는 eBPF 필터·매직 바이트·다중 프로토콜을 이용해 “패킷 흔적이 0”에 가까운 **포트리스(backdoor)** 상태를 구현합니다. 기존 접근 방식으로는 탐지되지 않습니다. 이러한 탐지 우회를 깨뜨리려면 **메모리 실행·AF\_PACKET 소켓·iptables 변조** 같은 *행위 시그널*을 교차 분석해야 합니다.  
 
 ---
 
