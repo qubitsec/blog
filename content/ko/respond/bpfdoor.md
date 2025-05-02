@@ -47,6 +47,7 @@ struct magic_packet {
 
 * `pass` 값이 내부 키와 일치해야 세션 수립
 * RC4 스트림으로 입·출력을 실시간 암복호화
+* SKT 해킹 사고에 사용된 것으로 추측되는 BPFDoor의 패스워드 부분
 
 ![BPFdoor02](https://blog.plura.io/cdn/respond/bpfdoor02.png)
 
