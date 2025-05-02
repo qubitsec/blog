@@ -99,11 +99,8 @@ tags: ["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", 
 
 ---
 
-## 참고 자료 및 링크
-
-| ID | 자료 | 링크 |
-|----|------|------|
-| <a id="ref-ibm">IBM Report</a> | *IBM Cost of a Data Breach Report 2024* | <https://www.ibm.com/reports/data-breach> |
-| <a id="ref-trend">Trend Micro</a> | *BPFDoor: The Portless Backdoor Explained* | <https://www.trendmicro.com/en_us/research/22/e/bpfdoor-backdoor-analysis.html> |
-| <a id="ref-symb">BlackBerry & Intezer</a> | *Symbiote: A Novel Linux Rootkit* | <https://www.blackberry.com/us/en/cyberthreat-intelligence/symbiote> |
-| <a id="ref-lumma">SpyCloud</a> | *LummaC2 Stealer Deep Dive 2025* | <https://spycloud.com/blog/lummac2-stealer-deep-dive/> |
+### 📑 참고 자료
+* [IBM Cost of a Data Breach Report 2024](https://www.ibm.com/reports/data-breach)  
+* [BPFDoor: The Portless Backdoor Explained – Trend Micro](https://www.trendmicro.com/en_us/research/22/e/bpfdoor-backdoor-analysis.html)  
+* [Symbiote: A Novel Linux Rootkit – BlackBerry & Intezer](https://www.blackberry.com/us/en/cyberthreat-intelligence/symbiote)  
+* [LummaC2 Stealer Deep Dive 2025 – SpyCloud](https://spycloud.com/blog/lummac2-stealer-deep-dive/)  
