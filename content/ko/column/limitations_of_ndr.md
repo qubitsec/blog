@@ -58,8 +58,6 @@ tags: \["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote",
 
 ### 4. **한계를 극복하는 현실적 대안: PLURA-XDR**
 
-### 4. **한계를 극복하는 현실적 대안: PLURA-XDR**
-
 #### ✅ **PLURA-XDR의 통합적 접근**
 
 PLURA-XDR은 다음의 기능을 통합하여 NDR의 한계를 보완합니다:
