@@ -93,8 +93,9 @@ tags: ["NDR", "IDS", "IPS", "네트워크 보안", "스텔스 공격", "BPFdoor"
 ---
 
 ### 📖 함께 읽기
-* [이데일리 - 기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구](https://n.news.naver.com/article/018/0006002991)  
+* [이데일리 - 기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구](https://n.news.naver.com/article/018/0006002991)
 * [WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)  
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)  
 * [Cisco Encrypted Traffic Analytics(ETA)의 한계](https://community.cisco.com/t5/security-knowledge-base/cisco-eta-feature-encrypted-traffic-analysis-at-glance/ta-p/4783197)
 
 ---
