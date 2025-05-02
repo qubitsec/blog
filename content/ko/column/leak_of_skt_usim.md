@@ -94,5 +94,5 @@ SKT 유심 유출 사고는 단순한 기술 침해가 아닌 **보안 운영 �
 ---
 
 ### 📖 함께 읽기
-* [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/))  
+* [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/)
 
