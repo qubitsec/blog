@@ -88,8 +88,6 @@ PLURA-XDR은 다음의 기능을 통합하여 NDR의 한계를 보완합니다:
 
 ---
 
----
-
 ### 📖 **함께 읽기**
 * ["기사: 기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구"](https://n.news.naver.com/article/018/0006002991)
 * ["WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기"](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
