@@ -3,7 +3,7 @@ title: "SKT 유심 정보 유출 사건 정리: 무엇이 문제였고, 어떻�
 date: 2025-05-02T00:00:01
 draft: false
 description: "BPFDoor 백도어 실전 분석을 통한 동작 방식 이해 및 PLURA에서의 탐지"
-featured_image: "cdn/column/skt_usim.png"
+featured_image: "cdn/respond/bpfdoor.png"
 tags: ["BPFDoor", "usim", "해커", "hacking", "skt telecom", "PLURA-XDR"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["BPFDoor", "usim", "해커", "hacking", "skt telecom", "PLURA-XDR"]
 
 <!--more-->
 
-![BPFdoor](https://blog.plura.io/cdn/column/bpfdoor.png)
+![BPFdoor](https://blog.plura.io/cdn/respond/bpfdoor.png)
 
 ---
 
