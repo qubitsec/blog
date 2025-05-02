@@ -10,9 +10,9 @@ tags: ["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", 
 📡 **NDR**(Network Detection and Response)은 네트워크 트래픽 분석을 통해 위협을 탐지하는 기술이지만,  
 최근 SK텔레콤 해킹 사건처럼 고도화된 **스텔스형 공격** 앞에서는 분명한 기술적 한계를 드러냈습니다.
 
-![NDR 한계](https://blog.plura.io/cdn/column/limitations-ndr-bpfdoor.png)
-
 <!--more-->
+
+![NDR 한계](https://blog.plura.io/cdn/column/limitations-ndr-bpfdoor.png)
 
 ---
 
