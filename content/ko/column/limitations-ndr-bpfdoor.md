@@ -1,5 +1,5 @@
 ---
-title: "NDR의 한계: 스텔스형 공격 대응의 현실적 문제"
+title: "NDR의 한계: BPFdoor 스텔스형 공격 대응의 현실적 문제"
 date: 2025-05-02
 draft: false
 description: "NDR(Network Detection and Response)의 한계와 스텔스형 위협 대응을 위한 현실적인 접근 방안을 탐구합니다."
