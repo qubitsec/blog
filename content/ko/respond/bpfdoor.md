@@ -113,7 +113,27 @@ sequenceDiagram
 
 ---
 
-## 4️⃣ 실전 PLURA-XDR 탐지: Sysmon for Linux
+## 4️⃣ MITRE ATT\&CK 매핑 (Enterprise v17)
+
+| 전술(Tactic)        | 기법 · 서브기법                                          | TID           | 설명                      |
+| ----------------- | -------------------------------------------------- | ------------- | ----------------------- |
+| Execution         | Command & Scripting Interpreter: Unix Shell        | **T1059.004** | RC4 인증 후 로컬/리버스 셸 실행    |
+|                   | Execution Guardrails: Mutual Exclusion             | **T1480.002** | PID 파일로 중복 실행 방지        |
+| Defense-Evasion   | Hide Artifacts: Ignore Process Interrupts          | **T1564.011** | 백도어 프로세스에 시그널 무시        |
+|                   | Impair Defenses: Impair Command History Logging    | **T1562.003** | `HISTFILE=/dev/null` 설정 |
+|                   | Impair Defenses: Disable or Modify System Firewall | **T1562.004** | `iptables` 규칙 조작        |
+|                   | Indicator Removal: File Deletion                   | **T1070.004** | 원본 실행 파일 삭제             |
+|                   | Indicator Removal: Timestomp                       | **T1070.006** | 실행 파일 타임스탬프 조작          |
+|                   | Masquerading: Break Process Trees                  | **T1036.009** | `--init` 플래그로 PPID 끊기   |
+|                   | Masquerading: Overwrite Process Arguments          | **T1036.011** | `argv[0]`을 정상 데몬명으로 변경  |
+|                   | Obfuscated/Encrypted File or Information           | **T1027**     | RC4 트래픽 난독화             |
+| Command & Control | Traffic Signaling: Socket Filters                  | **T1205.002** | eBPF 필터로 매직 바이트 감지      |
+
+> **참조:** MITRE ATT\&CK 소프트웨어 항목 **S1161 (BPFDoor)**
+
+---
+
+## 5️⃣ 실전 PLURA-XDR 탐지: Sysmon for Linux
 
 | Sysmon 이벤트           | 탐지 포인트                         |
 | -------------------- | ------------------------------ |
@@ -151,7 +171,7 @@ sequenceDiagram
 
 ---
 
-## 5️⃣ PLURA-XDR 탐지 전략
+## 6️⃣ PLURA-XDR 탐지 전략
 
 | 카테고리              | 룰 예시                                              |
 | ----------------- | ------------------------------------------------- |
