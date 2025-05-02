@@ -60,7 +60,7 @@ tags: ["SKT", "SK텔레콤", "USIM", "BPFdoor", "APT", "SIM-Swapping", "PLURA-XD
 ---
 
 ### 📖 함께 읽기
-* [NDR의 한계: 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
+* [NDR의 한계: BPFdoor 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
 
 
 ### 📑 참고 자료
