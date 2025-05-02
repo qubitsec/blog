@@ -4,12 +4,14 @@ date: 2025-05-02
 draft: false
 description: "최신 APT 사건에도 등장한 BPFDoor의 동작 원리와 PLURA-XDR 기반 탐지·대응 전략을 한눈에 정리합니다."
 featured_image: "cdn/respond/bpfdoor.png"
-tags: ["BPFDoor", "APT", "eBPF", "SIM-Swap", "IPS", "NDR", "PLURA-XDR"]
+tags: ["BPFDoor", "APT", "eBPF", "SIM-Swapping", "IPS", "NDR", "PLURA-XDR"]
 ---
 
 ![BPFdoor](https://blog.plura.io/cdn/respond/bpfdoor.png)
 
 > **BPFDoor**는 eBPF 필터·매직 바이트·다중 프로토콜을 이용해 “패킷 흔적이 0”에 가까운 **포트리스(backdoor)** 상태를 구현합니다. 기존 접근 방식으로는 탐지되지 않습니다. 이러한 탐지 우회를 깨뜨리려면 **메모리 실행·AF_PACKET 소켓·iptables 변조** 같은 *행위 시그널*을 교차 분석해야 합니다.  
+
+<!--more-->
 
 ---
 
@@ -56,6 +58,7 @@ struct magic_packet {
 #### 📊 Sequence Diagram — 전체 흐름
 
 ```mermaid
+%%{ init: { "theme": "base" } }%%
 sequenceDiagram
     participant Attacker
     participant Internet
@@ -90,6 +93,10 @@ sequenceDiagram
 
 ---
 
+![Sequence Diagram](https://blog.plura.io/cdn/respond/bpfdoor-sequence-diagram.png)
+
+---
+
 ## 3️⃣ 왜 탐지가 어려운가?
 
 | 탐지 우회 포인트      | 상세                         |
@@ -108,8 +115,9 @@ sequenceDiagram
 | `ProcessCreate`      | `/dev/shm/*` 경로 실행 · 의심 데몬명    |
 | `FileDeleteDetected` | 실행 직후 원본 삭제 이력                 |
 | `NetworkConnect`     | PID = 1(daemonized) + 외부 C2 연결 |
-| `RawAccessRead`      | `AF_PACKET` 소켓 생성 시도           |
+| `RawAccessRead`(\*)  | `AF_PACKET` 소켓 생성 시도           |
 
+> *\* `RawAccessRead` 이벤트는 Linux Sysmon 5.8+ 빌드 기준*
 > **TIP** : `rule_id=BPFDoor_RawSocket` 같은 커스텀 태그를 달아 PLURA-XDR에 전송하면 후속 상관 분석이 용이합니다.
 
 ---
@@ -123,8 +131,6 @@ sequenceDiagram
 | **iptables 변조**   | `iptables -I` · `-t nat -A PREROUTING` 행위         |
 | **리버스 셸**         | `bash -i`, `nc -e`, `socat TCP4:`, `/bin/sh` 실행 등 |
 | **해시·IOC**        | BPFDoor 샘플 SHA-256, C2 도메인 블록                     |
-
-
 
 ---
 
@@ -145,4 +151,3 @@ sequenceDiagram
 
 * [NDR의 한계: 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
 * [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/)
-
