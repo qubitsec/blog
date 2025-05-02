@@ -33,6 +33,8 @@ tags: ["BPFDoor", "APT", "eBPF", "SIM-Swapping", "IPS", "NDR", "PLURA-XDR"]
 * **지원 프로토콜** → TCP · UDP · ICMP 모두 수락  
 * **허용 포트** → 22/80/443 등 일반 서비스 포트를 재사용 → *포트 스캔 회피*
 
+![BPFdoor01](https://blog.plura.io/cdn/respond/bpfdoor01.png)
+
 ### ② RC4 암호화∙패스워드 인증
 ```c
 struct magic_packet {
@@ -45,6 +47,8 @@ struct magic_packet {
 
 * `pass` 값이 내부 키와 일치해야 세션 수립
 * RC4 스트림으로 입·출력을 실시간 암복호화
+
+![BPFdoor02](https://blog.plura.io/cdn/respond/bpfdoor02.png)
 
 ### ③ 은폐·지속화 기법
 
@@ -119,6 +123,30 @@ sequenceDiagram
 
 > *\* `RawAccessRead` 이벤트는 Linux Sysmon 5.8+ 빌드 기준*
 > **TIP** : `rule_id=BPFDoor_RawSocket` 같은 커스텀 태그를 달아 PLURA-XDR에 전송하면 후속 상관 분석이 용이합니다.
+
+### 1. 파일이름 위장과 자가 삭제 탐지
+
+![BPFdoor03](https://blog.plura.io/cdn/respond/bpfdoor03.png)
+
+- `/dev/shm/kdmtmpflush` 파일 생성 및 삭제, 권한 부여 등 발생
+
+### 2. 프로세스 초기화 탐지
+
+![BPFdoor04](https://blog.plura.io/cdn/respond/bpfdoor04.png)
+
+- 메모리 기반으로 초기화하기 위한 `—init` 플래그 발생
+
+### 3. iptables 명령어를 통한 방화벽 설정 변경 탐지
+
+![BPFdoor05](https://blog.plura.io/cdn/respond/bpfdoor05.png)
+
+- 백도어로부터 발생한 리버스 쉘 연결을 위한 포트 오픈
+
+### 4. 리버스 쉘 연결 행위 탐지
+
+![BPFdoor06](https://blog.plura.io/cdn/respond/bpfdoor06.png)
+
+- 네트워크 연결을 의미하는 Sysmon의 EventID 3번 로그의 발생, iptables로 열린 포트로 부터 패킷 전송 탐지
 
 ---
 
