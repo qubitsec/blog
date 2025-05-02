@@ -4,7 +4,7 @@ date: 2025-05-02
 draft: false
 description: "최신 APT 사건에도 등장한 BPFDoor의 동작 원리와 PLURA-XDR 기반 탐지·대응 전략을 한눈에 정리합니다."
 featured_image: "cdn/respond/bpfdoor.png"
-tags: ["BPFDoor", "APT", "eBPF", "SIM-Swapping", "IPS", "NDR", "MITRE-ATT&CK", "PLURA-XDR"]
+tags: ["BPFDoor", "APT", "eBPF", "SIM-Swapping", "IPS", "NDR", "PLURA-XDR"]
 ---
 
 ![BPFdoor](https://blog.plura.io/cdn/respond/bpfdoor.png)
@@ -47,7 +47,7 @@ struct magic_packet {
 
 * `pass` 값이 내부 키와 일치해야 세션 수립
 * RC4 스트림으로 입·출력을 실시간 암복호화
-* (아래) SKT 사고에 사용된 것으로 추정되는 패스워드 영역
+* SKT 해킹 사고에 사용된 것으로 추측되는 BPFDoor의 패스워드 부분
 
 ![BPFdoor02](https://blog.plura.io/cdn/respond/bpfdoor02.png)
 
@@ -63,39 +63,40 @@ struct magic_packet {
 #### 📊 Sequence Diagram — 전체 흐름
 
 ```mermaid
-%%{ init: { "theme": "base" } }%%
 sequenceDiagram
+    %% Participants
     participant Attacker
     participant HSS
     participant Kernel/eBPF as eBPF
     participant BPFDoor
     participant Host OS as OS
 
-    %% 1) 매직 바이트
-    Attacker->>HSS: 임의 스캔/패킷
-    HSS-->>Attacker: (무응답) 포트리스
-    Attacker->>HSS: 0x7255/0x5293 매직 패킷
+    %% ① 매직 바이트 & 다중 프로토콜
+    Attacker->>HSS: 일반 스캔·패킷<br/>(매직 바이트 없음)
+    HSS-->>Attacker: (무응답) 포트리스 상태
+    Attacker->>HSS: Magic Packet 0x7255 (TCP/UDP, 22/80/443)
+    Attacker->>HSS: Magic Packet 0x5293 (ICMP)
     HSS->>eBPF: 패킷 전달
-    eBPF-->>BPFDoor: 일치 → 활성화
+    eBPF-->>BPFDoor: 매직 바이트 일치 → 활성화
 
-    %% 2) 패스워드·RC4
-    BPFDoor->>BPFDoor: pass 검증
-    alt OK
-        BPFDoor-->>Attacker: RC4 암복호화 세션
-    else NO
-        BPFDoor-->>Attacker: 무응답
+    %% ② RC4 암호화·패스워드 인증
+    BPFDoor->>BPFDoor: magic_packet 구조체 파싱<br/>pass 필드 검증
+    alt 패스워드 일치
+        BPFDoor-->>Attacker: 세션 수립 (RC4 암복호화 스트림)
+    else 불일치
+        BPFDoor-->>Attacker: 무응답·세션 거부
     end
 
-    %% 3) 은폐·지속화
-    BPFDoor->>OS: /dev/shm 복사·삭제
-    BPFDoor->>OS: 프로세스 위장
-    BPFDoor->>OS: iptables 허용·DNAT
-    BPFDoor->>OS: /dev/ptmx 쉘
-    Attacker-->>BPFDoor: 명령 실행
+    %% ③ 은폐·지속화 단계
+    BPFDoor->>OS: /dev/shm 경로로 자가 복사 → 원본 삭제
+    BPFDoor->>OS: 프로세스 이름 위장<br/>("/sbin/udevd -d" 등)
+    BPFDoor->>OS: iptables -I INPUT <attacker IP>
+    BPFDoor->>OS: iptables -t nat PREROUTING DNAT
+    BPFDoor->>OS: open /dev/ptmx → /bin/sh 생성
+    Attacker-->>BPFDoor: PTY 쉘 조작 (명령 실행)
 ```
 
 ---
-
 
 ![Sequence Diagram](https://blog.plura.io/cdn/respond/bpfdoor-sequence-diagram.png)
 
@@ -112,27 +113,7 @@ sequenceDiagram
 
 ---
 
-## 4️⃣ MITRE ATT\&CK 매핑 (Enterprise v17)
-
-| 전술(Tactic)        | 기법 · 서브기법                                          | TID           | 설명                      |
-| ----------------- | -------------------------------------------------- | ------------- | ----------------------- |
-| Execution         | Command & Scripting Interpreter: Unix Shell        | **T1059.004** | RC4 인증 후 로컬/리버스 셸 실행    |
-|                   | Execution Guardrails: Mutual Exclusion             | **T1480.002** | PID 파일로 중복 실행 방지        |
-| Defense-Evasion   | Hide Artifacts: Ignore Process Interrupts          | **T1564.011** | 백도어 프로세스에 시그널 무시        |
-|                   | Impair Defenses: Impair Command History Logging    | **T1562.003** | `HISTFILE=/dev/null` 설정 |
-|                   | Impair Defenses: Disable or Modify System Firewall | **T1562.004** | `iptables` 규칙 조작        |
-|                   | Indicator Removal: File Deletion                   | **T1070.004** | 원본 실행 파일 삭제             |
-|                   | Indicator Removal: Timestomp                       | **T1070.006** | 실행 파일 타임스탬프 조작          |
-|                   | Masquerading: Break Process Trees                  | **T1036.009** | `--init` 플래그로 PPID 끊기   |
-|                   | Masquerading: Overwrite Process Arguments          | **T1036.011** | `argv[0]`을 정상 데몬명으로 변경  |
-|                   | Obfuscated/Encrypted File or Information           | **T1027**     | RC4 트래픽 난독화             |
-| Command & Control | Traffic Signaling: Socket Filters                  | **T1205.002** | eBPF 필터로 매직 바이트 감지      |
-
-> **참조:** MITRE ATT\&CK 소프트웨어 항목 **S1161 (BPFDoor)**
-
----
-
-## 5️⃣ 실전 PLURA-XDR 탐지: Sysmon for Linux
+## 4️⃣ 실전 PLURA-XDR 탐지: Sysmon for Linux
 
 | Sysmon 이벤트           | 탐지 포인트                         |
 | -------------------- | ------------------------------ |
@@ -141,14 +122,36 @@ sequenceDiagram
 | `NetworkConnect`     | PID = 1(daemonized) + 외부 C2 연결 |
 | `RawAccessRead`(\*)  | `AF_PACKET` 소켓 생성 시도           |
 
-> *\* Linux Sysmon 5.8+ 빌드 필요*
-> **TIP** : `rule_id=BPFDoor_RawSocket` 태그로 PLURA-XDR 상관분석 자동화
+> *\* `RawAccessRead` 이벤트는 Linux Sysmon 5.8+ 빌드 기준*
+> **TIP** : `rule_id=BPFDoor_RawSocket` 같은 커스텀 태그를 달아 PLURA-XDR에 전송하면 후속 상관 분석이 용이합니다.
 
-(아래 ①–④ Sysmon 스크린샷 섹션 유지 – 생략)
+### 1. 파일이름 위장과 자가 삭제 탐지
+
+![BPFdoor03](https://blog.plura.io/cdn/respond/bpfdoor03.png)
+
+- `/dev/shm/kdmtmpflush` 파일 생성 및 삭제, 권한 부여 등 발생
+
+### 2. 프로세스 초기화 탐지
+
+![BPFdoor04](https://blog.plura.io/cdn/respond/bpfdoor04.png)
+
+- 메모리 기반으로 초기화하기 위한 `—init` 플래그 발생
+
+### 3. iptables 명령어를 통한 방화벽 설정 변경 탐지
+
+![BPFdoor05](https://blog.plura.io/cdn/respond/bpfdoor05.png)
+
+- 백도어로부터 발생한 리버스 쉘 연결을 위한 포트 오픈
+
+### 4. 리버스 쉘 연결 행위 탐지
+
+![BPFdoor06](https://blog.plura.io/cdn/respond/bpfdoor06.png)
+
+- 네트워크 연결을 의미하는 Sysmon의 EventID 3번 로그의 발생, iptables로 열린 포트로 부터 패킷 전송 탐지
 
 ---
 
-## 6️⃣ PLURA-XDR 탐지 전략
+## 5️⃣ PLURA-XDR 탐지 전략
 
 | 카테고리              | 룰 예시                                              |
 | ----------------- | ------------------------------------------------- |
@@ -174,7 +177,6 @@ sequenceDiagram
 ---
 
 ### 📖 함께 읽기
-
-* [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/)
+* [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/)  
 * [NDR의 한계: BPFDoor 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
-* [SKT 유심 정보 유출 사건: 원인·영향·대응 총정리](https://blog.plura.io/ko/column/leak_of_skt_usim/)
+* [SKT 유심 정보 유출 사건: 원인·영향·대응 총정리](https://blog.plura.io/ko/column/leak_of_skt_usim/)  
