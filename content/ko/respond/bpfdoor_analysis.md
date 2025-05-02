@@ -121,7 +121,7 @@ execve("/bin/sh", argv, envp);
 
 환경 변수에는 `HISTFILE=/dev/null`, `PS1`, `PATH`, `MYSQL_HISTFILE` 등 **기록 방지 및 환경 위장용 설정**이 포함되어 있습니다.
 
-![image.png](attachment:22ff130c-3fea-4290-92cd-c759c3e31c3b:image.png)
+![bpfdoor01](https://github.com/user-attachments/assets/eec8dff5-7ca4-434f-b37f-a140de85944e)
 
 - attacker 서버에서 controller를 작동하여 victim 서버의 쉘 획득
 
@@ -134,8 +134,8 @@ execve("/bin/sh", argv, envp);
 - 프로세스 이름과 경로를 정상 시스템 데몬처럼 위장해 관리자가 육안으로 식별하기 어려움
 - 의심을 피할 수 있는 이름으로 프로세스를 생성하기 때문에, 시스템 운영자가 정상 프로세스로 오인할 가능성이 높음
     
-    ![image.png](attachment:912d34d7-f6e9-4724-9cc5-3c28d193adaa:image.png)
-    
+    ![bpfdoor02](https://github.com/user-attachments/assets/89398f2a-e2a3-4bcd-bed9-6e3e4e9c4e6b)
+
     (/usr/sbin/smart으로 의심되지 않은 프로세스 이름 사용)
     
     → 사용된 위장 이름 예시:
@@ -154,7 +154,8 @@ execve("/bin/sh", argv, envp);
     ```
     
 
-![image.png](attachment:b351f546-0043-42d8-a72d-63c8ac4ed2fd:image.png)
+![bpfdoor03](https://github.com/user-attachments/assets/56da76ce-f1ab-441b-8849-d942687ce4aa)
+
 
 - `avahi-daemon: chroot helper` 위장 프로세스가 생성되어 작동 중임을 확인
 
@@ -191,8 +192,8 @@ struct magic_packet {
     
 - 공격자는 이 중 하나라도 정확히 일치하는 문자열을 보내야만 백도어가 세션을 열고 쉘을 제공합니다.
     
-    ![image (1).png](attachment:c6aea1f0-b672-4048-b929-453ef78935de:image_(1).png)
-    
+    ![bpfdoor04](https://github.com/user-attachments/assets/d09b5512-2b2d-4df0-be6f-9160b852ab21)
+
     (→SKT 해킹 사고에 사용된 것으로 추측되는 BPFDoor의 패스워드 부분)
     
 
@@ -213,25 +214,25 @@ struct magic_packet {
 
 ### 1. 파일이름 위장과 자가 삭제 탐지
 
-![image.png](attachment:a294135f-d199-42cc-bb09-7311789c9751:image.png)
+![bpfdoor05](https://github.com/user-attachments/assets/f5184cc2-2ddd-4393-b545-ff82ab1750b5)
 
 - `/dev/shm/kdmtmpflush` 파일 생성 및 삭제, 권한 부여 등 발생
 
 ### 2. 프로세스 초기화 탐지
 
-![image.png](attachment:74ade30f-87de-4a61-8baf-3228da0cf247:image.png)
+![bpfdoor06](https://github.com/user-attachments/assets/48ad5a5b-35a5-4be8-8f49-1dbe97828ea3)
 
 - 메모리 기반으로 초기화하기 위한 `—init` 플래그 발생
 
 ### 3. iptables 명령어를 통한 방화벽 설정 변경 탐지
 
-![image.png](attachment:ca08b37f-354d-41aa-9d80-2668af3b44e4:image.png)
+![bpfdoor07](https://github.com/user-attachments/assets/5712b77f-51ce-4506-8995-87a2d59cdc6a)
 
 - 백도어로부터 발생한 리버스 쉘 연결을 위한 포트 오픈
 
 ### 4. 리버스 쉘 연결 행위 탐지
 
-![image.png](attachment:e9a86004-0cde-45a4-b236-0ad431b62405:image.png)
+![bpfdoor08](https://github.com/user-attachments/assets/f39a37cf-e75b-4efb-bb47-648ca6a879b3)
 
 - 네트워크 연결을 의미하는 Sysmon의 EventID 3번 로그의 발생, iptables로 열린 포트로 부터 패킷 전송 탐지
 
@@ -260,7 +261,6 @@ BPFdoor는 **기존 EDR·SIEM만으로 탐지하기 어려운** 고도화된 백
 - IOC 기반의 정기 스캐닝 및 해시 차단
 
 > PLURA-XDR은 /dev/shm 실행, 소켓 생성, 숨겨진 프로세스 탐지 등 행위 기반 탐지 체계를 갖추고 있으며, 리눅스 기반 시스템에서도 실시간 침해 지표 감지 및 대응이 가능합니다.
-> 
 
 ---
 
