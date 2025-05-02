@@ -177,4 +177,5 @@ sequenceDiagram
 
 ### 📖 함께 읽기
 * [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/)  
-* [NDR의 한계: BPFDoor 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
+* [NDR의 한계: BPFDoor 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
+* [SKT 유심 정보 유출 사건: 원인·영향·대응 총정리](https://blog.plura.io/ko/column/leak_of_skt_usim/)  
