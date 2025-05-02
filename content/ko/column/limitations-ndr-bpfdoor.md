@@ -4,13 +4,13 @@ title: "NDR의 한계: 스텔스형 공격 대응의 현실적 문제"
 date: 2025-05-02
 draft: false
 description: "NDR(Network Detection and Response)의 한계와 스텔스형 위협 대응을 위한 현실적인 접근 방안을 탐구합니다."
-featured\_image: "cdn/column/ndr\_limitations.jpg"
-tags: \["NDR", "네트워크 보안", "스텔스 공격", "암호화 트래픽", "보안 솔루션", "PLURA"]
+featured_image: "cdn/column/limitations-ndr-bpfdoor.jpg"
+tags: ["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", "LummaC2", "암호화 트래픽", "보안 솔루션", "PLURA-XDR"]
 -----------------------------------------------------------------
 
 📡 **NDR**(Network Detection and Response)은 네트워크 트래픽 분석을 통해 위협을 탐지하는 보안 기술이지만, 최근 발생한 SK텔레콤 해킹 사건과 같은 고도화된 스텔스형 공격 대응에 분명한 기술적 한계를 가지고 있습니다.
 
-![NDR의 한계](https://blog.plura.io/cdn/column/ndr_limitations.jpg)
+![NDR의 한계](https://blog.plura.io/cdn/column/limitations-ndr-bpfdoor.jpg)
 
 <!--more-->
 
@@ -71,6 +71,6 @@ PLURA-XDR은 다음의 기능을 통합하여 NDR의 한계를 보완합니다:
 ---
 
 ### 📖 **함께 읽기**
-* [기사: "기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구"](https://n.news.naver.com/article/018/0006002991)
+* ["기사: 기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구"](https://n.news.naver.com/article/018/0006002991)
 * ["WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기"](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
 * ["Cisco Encrypted Traffic Analytics(ETA)의 한계"](https://community.cisco.com/t5/security-knowledge-base/cisco-eta-feature-encrypted-traffic-analysis-at-glance/ta-p/4783197)
