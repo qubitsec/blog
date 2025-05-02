@@ -112,14 +112,5 @@ struct magic_packet {
 * [NDR의 한계: 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
 * [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/)
 
-```
-
 ---
 
-#### ✨ 추가 팁
-* **이미지** : 코드·패킷 예시 스크린샷은 섹션별로 1장만 남기고 나머지는 링크로 대체하면 로딩 속도가 개선됩니다.  
-* **CTA** : “30일 무료 PoC” 문구에 **문의 폼 URL**을 걸어 두면 리드(잠재 고객) 전환율이 높아집니다.  
-* **태그** : `SIM-Swap` 대신 `SIM-Swapping`·`SK텔레콤` 같은 검색량 높은 키워드로 교체 가능.
-
-필요한 부분 더 다듬거나, 다른 칼럼도 비슷한 포맷으로 리팩터링 원하시면 말씀해 주세요!
-```
