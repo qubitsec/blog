@@ -7,10 +7,12 @@ featured_image: "cdn/column/skt_usim.png"
 tags: ["SKT", "SK텔레콤", "USIM", "BPFDoor", "APT", "SIM-Swapping", "PLURA-XDR"]
 ---
 
-![SKT 유심 유출](https://blog.plura.io/cdn/column/skt_usim.png)
 
 > **핵심 한 줄 요약**  
 > 2025년 4월 18일 확인된 SK텔레콤 **HSS** 해킹은 최대 **2,300만** 가입자의 USIM 인증 정보를 노출시켰으며, SKT는 4월 28일 전 고객 무료 USIM 교체를 발표했습니다.   
+
+<!--more-->
+![SKT 유심 유출](https://blog.plura.io/cdn/column/skt_usim.png)
 
 ---
 
