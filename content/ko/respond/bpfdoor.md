@@ -96,6 +96,11 @@ sequenceDiagram
 
 ---
 
+
+![Sequence Diagram](https://blog.plura.io/cdn/respond/bpfdoor-sequence-diagram.png)
+
+---
+
 ## 3️⃣ 왜 탐지가 어려운가?
 
 | 탐지 우회 포인트      | 상세                         |
