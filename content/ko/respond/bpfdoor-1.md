@@ -4,7 +4,7 @@ date: 2025-05-02
 draft: false
 description: "최신 APT 사건에도 등장한 BPFDoor의 동작 원리와 PLURA-XDR 기반 탐지·대응 전략을 한눈에 정리합니다."
 featured_image: "cdn/respond/bpfdoor.png"
-tags: ["BPFDoor", "APT", "eBPF", "SIM-Swap", "PLURA-XDR"]
+tags: ["BPFDoor", "APT", "eBPF", "SIM-Swap", "IPS", "NDR", "PLURA-XDR"]
 ---
 
 ![BPFdoor](https://blog.plura.io/cdn/respond/bpfdoor.png)
@@ -20,7 +20,7 @@ tags: ["BPFDoor", "APT", "eBPF", "SIM-Swap", "PLURA-XDR"]
 | 최초 공개 | PwC 위협 인텔리전스 보고서(2021) |
 | 주요 사용 조직 | 중국발 APT(스피어피싱·통신망 침투) |
 | 핵심 기술 | eBPF 필터링 · 매직 바이트 인증 · RC4 암호화 |
-| 탐지 난이도 | **매우 높음** – 패턴/포트 기반 NDR 무력화 |
+| 탐지 난이도 | **매우 높음** – 패턴/포트 기반 IPS · NDR 무력화 |
 
 ---
 
