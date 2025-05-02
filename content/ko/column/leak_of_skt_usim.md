@@ -4,7 +4,7 @@ date: 2025-05-02
 draft: false
 description: "2025년 4월, SK텔레콤에서 발생한 대규모 USIM 정보 유출 사건의 경과와 실질적 대응 방안을 한눈에 정리합니다."
 featured_image: "cdn/column/skt_usim.png"
-tags: ["SK텔레콤", "USIM", "BPFdoor", "APT", "SIM-Swapping", "PLURA-XDR"]
+tags: ["SKT", "SK텔레콤", "USIM", "BPFdoor", "APT", "SIM-Swapping", "PLURA-XDR"]
 ---
 
 ![SKT 유심 유출](https://blog.plura.io/cdn/column/skt_usim.png)
