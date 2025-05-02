@@ -3,7 +3,7 @@ title: "NDRの限界：解決不可能なミッション"
 date: 2024-02-29
 draft: false
 description: "NDR（Network Detection and Response）の技術的限界とそれを克服するための現実的なアプローチを探る"
-featured_image: "cdn/column/ndr_limitations.jpg"
+featured_image: "cdn/column/ndr_limitations.png"
 tags: ["NDR", "ネットワークセキュリティ", "ETA", "暗号化トラフィック", "セキュリティソリューション", "PLURA"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["NDR", "ネットワークセキュリティ", "ETA", "暗号化トラフ
 暗号化トラフィックの解析における構造的な制約や、高度な脅威検知の難しさなど、  
 こうした課題を詳しく掘り下げ、それを克服するための対策を考察します。
 
-![NDRの限界](https://blog.plura.io/cdn/column/ndr_limitations.jpg)
+![NDRの限界](https://blog.plura.io/cdn/column/ndr_limitations.png)
 
 <!--more-->
 ---
