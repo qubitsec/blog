@@ -5,7 +5,7 @@ date: 2025-05-02
 draft: false
 description: "NDR(Network Detection and Response)의 한계와 스텔스형 위협 대응을 위한 현실적인 접근 방안을 탐구합니다."
 featured\_image: "cdn/column/limitations-ndr-bpfdoor.jpg"
-tags: ["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", "LummaC2", "암호화 트래픽", "보안 솔루션", "PLURA-XDR"]
+tags: \["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", "LummaC2", "암호화 트래픽", "보안 솔루션", "PLURA-XDR"]
 ---
 
 📡 **NDR**(Network Detection and Response)은 네트워크 트래픽 분석을 통해 위협을 탐지하는 보안 기술이지만, 최근 발생한 SK텔레콤 해킹 사건과 같은 고도화된 스텔스형 공격 대응에 분명한 기술적 한계를 가지고 있습니다.
