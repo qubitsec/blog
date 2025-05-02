@@ -99,8 +99,11 @@ tags: ["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", 
 
 ---
 
-> **참고 자료**  
-> • *IBM Cost of a Data Breach Report 2024* – 평균 손실 4.88 M USD / AI·자동화 적용 조직 2.22 M USD 절감  
-> • Trend Micro – BPFDoor 포트리스(backdoor-less) 분석  
-> • BlackBerry & Intezer – Symbiote Linux 루트킷 기술 백서  
-> • SpyCloud Threat Report 2025 – LummaC2 변종 동향
+## 참고 자료 및 링크
+
+| ID | 자료 | 링크 |
+|----|------|------|
+| <a id="ref-ibm">IBM Report</a> | *IBM Cost of a Data Breach Report 2024* | <https://www.ibm.com/reports/data-breach> |
+| <a id="ref-trend">Trend Micro</a> | *BPFDoor: The Portless Backdoor Explained* | <https://www.trendmicro.com/en_us/research/22/e/bpfdoor-backdoor-analysis.html> |
+| <a id="ref-symb">BlackBerry & Intezer</a> | *Symbiote: A Novel Linux Rootkit* | <https://www.blackberry.com/us/en/cyberthreat-intelligence/symbiote> |
+| <a id="ref-lumma">SpyCloud</a> | *LummaC2 Stealer Deep Dive 2025* | <https://spycloud.com/blog/lummac2-stealer-deep-dive/> |
