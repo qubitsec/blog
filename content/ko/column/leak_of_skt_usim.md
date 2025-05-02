@@ -1,6 +1,6 @@
 ---
 title: "SKT 유심 정보 유출 사건 정리: 무엇이 문제였고, 어떻게 대응해야 할까?"
-date: 2025-05-022025-05-02T00:00:02
+date: 2025-05-02T00:00:02
 draft: false
 description: "2025년 4월, 국내 최대 이동통신사인 SK텔레콤(SKT)에서 대규모 USIM(유심) 정보 유출 사고가 발생했습니다."
 featured_image: "cdn/column/skt_usim.png"
