@@ -169,6 +169,12 @@ sequenceDiagram
 
 - 네트워크 연결을 의미하는 Sysmon의 EventID 3번 로그의 발생, iptables로 열린 포트로 부터 패킷 전송 탐지
 
+### 5. 리버스 쉘 연결 성공 탐지
+
+![BPFdoor07](https://blog.plura.io/cdn/respond/bpfdoor07.png)
+
+- 해당 명령어 및 프로세스가 로그에 발생 시 리버스 쉘 연결이 성공하였다는 것을 의미
+
 ---
 
 ## 6️⃣ PLURA-XDR 탐지 전략
