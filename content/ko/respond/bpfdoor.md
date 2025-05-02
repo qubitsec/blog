@@ -52,6 +52,43 @@ struct magic_packet {
 | **iptables 변조** | 공격자 IP 허용 + NAT PREROUTING 리다이렉션                         |
 | **PTY 쉘**       | `/dev/ptmx` 연결 → 기록 방지 환경변수 설정                           |
 
+
+### 구성도
+
+```mermaid
+sequenceDiagram
+    %% Participants
+    participant Attacker
+    participant HSS
+    participant Kernel/eBPF as eBPF
+    participant BPFDoor
+    participant Host OS as OS
+
+    %% ① 매직 바이트 & 다중 프로토콜
+    Attacker->>HSS: 일반 스캔·패킷<br/>(매직 바이트 없음)
+    Internet-->>Attacker: (무응답) 포트리스 상태
+    Attacker->>Internet: Magic Packet 0x7255 (TCP/UDP, 22/80/443)
+    Attacker->>Internet: Magic Packet 0x5293 (ICMP)
+    Internet->>eBPF: 패킷 전달
+    eBPF-->>BPFDoor: 매직 바이트 일치 → 활성화
+
+    %% ② RC4 암호화·패스워드 인증
+    BPFDoor->>BPFDoor: magic_packet 구조체 파싱<br/>pass 필드 검증
+    alt 패스워드 일치
+        BPFDoor-->>Attacker: 세션 수립 (RC4 암복호화 스트림)
+    else 불일치
+        BPFDoor-->>Attacker: 무응답·세션 거부
+    end
+
+    %% ③ 은폐·지속화 단계
+    BPFDoor->>OS: /dev/shm 경로로 자가 복사 → 원본 삭제
+    BPFDoor->>OS: 프로세스 이름 위장<br/>("/sbin/udevd -d" 등)
+    BPFDoor->>OS: iptables -I INPUT <attacker IP>
+    BPFDoor->>OS: iptables -t nat PREROUTING DNAT
+    BPFDoor->>OS: open /dev/ptmx → /bin/sh 생성
+    Attacker-->>BPFDoor: PTY 쉘 조작 (명령 실행)
+```
+
 ---
 
 ## 3️⃣ 왜 탐지가 어려운가?
