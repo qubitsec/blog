@@ -65,7 +65,6 @@ tags: ["SKT", "SK텔레콤", "USIM", "BPFDoor", "APT", "SIM-Swapping", "PLURA-XD
 * [BPFDoor 백도어 실전 분석 및 대응: 매직 바이트·방화벽 우회](https://blog.plura.io/ko/respond/bpfdoor/)  
 * [NDR의 한계: BPFDoor 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
 
-
 ### 📑 참고 자료
 * [Reuters - “SK Telecom shares plunge after data breach due to cyberattack” (2025-04-28)](https://www.reuters.com/sustainability/boards-policy-regulation/sk-telecom-shares-plunge-after-data-breach-due-cyberattack-2025-04-28)  
 * [연합뉴스 - “최근 해킹 수법 경고…KISA, SKT 연계 악성코드 정보 공개” (2025-04-25)](https://www.yna.co.kr/view/AKR20250425168300017)  
