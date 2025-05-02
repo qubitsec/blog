@@ -58,37 +58,37 @@ struct magic_packet {
 #### 📊 Sequence Diagram — 전체 흐름
 
 ```mermaid
-%%{ init: { "theme": "base" } }%%
 sequenceDiagram
+    %% Participants
     participant Attacker
-    participant Internet
+    participant HSS
     participant Kernel/eBPF as eBPF
     participant BPFDoor
     participant Host OS as OS
 
-    %% 매직 바이트 수신 전
-    Attacker->>Internet: 임의 스캔/패킷
-    Internet-->>Attacker: (응답 없음) 포트리스
-
-    %% 매직 바이트 & 활성화
-    Attacker->>Internet: Magic Packet 0x7255 / 0x5293
-    Internet->>eBPF: 패킷 전달
+    %% ① 매직 바이트 & 다중 프로토콜
+    Attacker->>HSS: 일반 스캔·패킷<br/>(매직 바이트 없음)
+    HSS-->>Attacker: (무응답) 포트리스 상태
+    Attacker->>HSS: Magic Packet 0x7255 (TCP/UDP, 22/80/443)
+    Attacker->>HSS: Magic Packet 0x5293 (ICMP)
+    HSS->>eBPF: 패킷 전달
     eBPF-->>BPFDoor: 매직 바이트 일치 → 활성화
 
-    %% 패스워드·RC4 인증
-    BPFDoor->>BPFDoor: pass 검증
-    alt 일치
-        BPFDoor-->>Attacker: 세션 수립 (RC4 암복호화)
+    %% ② RC4 암호화·패스워드 인증
+    BPFDoor->>BPFDoor: magic_packet 구조체 파싱<br/>pass 필드 검증
+    alt 패스워드 일치
+        BPFDoor-->>Attacker: 세션 수립 (RC4 암복호화 스트림)
     else 불일치
-        BPFDoor-->>Attacker: 무응답
+        BPFDoor-->>Attacker: 무응답·세션 거부
     end
 
-    %% 은폐·지속화
-    BPFDoor->>OS: /dev/shm 복사·원본 삭제
-    BPFDoor->>OS: 프로세스 이름 위장
-    BPFDoor->>OS: iptables 규칙 삽입
-    BPFDoor->>OS: /dev/ptmx PTY 쉘 생성
-    Attacker-->>BPFDoor: 명령 실행
+    %% ③ 은폐·지속화 단계
+    BPFDoor->>OS: /dev/shm 경로로 자가 복사 → 원본 삭제
+    BPFDoor->>OS: 프로세스 이름 위장<br/>("/sbin/udevd -d" 등)
+    BPFDoor->>OS: iptables -I INPUT <attacker IP>
+    BPFDoor->>OS: iptables -t nat PREROUTING DNAT
+    BPFDoor->>OS: open /dev/ptmx → /bin/sh 생성
+    Attacker-->>BPFDoor: PTY 쉘 조작 (명령 실행)
 ```
 
 ---
