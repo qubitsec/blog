@@ -1,5 +1,5 @@
 ---
-title: "BPFDoor 백도어 실전 분석 및 대응: 매직 바이트·방화벽 우회"
+title: "BPFDoor 백도어 실전 분석 및 PLURA-XDR 대응"
 date: 2025-05-02
 draft: false
 description: "최신 APT 사건에도 등장한 BPFDoor의 동작 원리와 PLURA-XDR 기반 탐지·대응 전략을 한눈에 정리합니다."
@@ -112,7 +112,7 @@ sequenceDiagram
 
 ---
 
-## 4️⃣ 실전 탐지: Sysmon for Linux
+## 4️⃣ 실전 PLURA-XDR 탐지: Sysmon for Linux
 
 | Sysmon 이벤트           | 탐지 포인트                         |
 | -------------------- | ------------------------------ |
