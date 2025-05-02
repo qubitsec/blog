@@ -65,9 +65,11 @@ tags: ["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", 
 
 ## 4. 한계를 극복하는 현실적 대안: **PLURA-XDR**
 
-스텔스형 위협은 사고당 평균 **USD 4.88 M**의 손실을 일으킨다는 2024 IBM 보고서 통계가 증명하듯, “보이지 않는 위험”은 곧 **재무 리스크**입니다. 그러나 TLS 1.3·QUIC·ESNI로 패킷 내부와 SNI·ALPN까지 완전히 암호화된 오늘날, 전통 NDR이 의존하던 ‘보이는 패킷’은 사실상 **0%**에 수렴합니다. 실제로 2024년 A은행을 강타한 **BPFdoor** 침해 사례는 ‘포트리스(portless)’ 메커니즘 때문에 IDS·NDR 장비 3대를 모두 무력화하고 **6 개월간 잠복**했습니다.  
+스텔스형 위협은 사고당 평균 **USD 4.88 M**의 손실을 일으킨다는 2024 IBM 보고서가 증명하듯, “보이지 않는 위험”은 곧 **재무 리스크**입니다. 특히 **BPFdoor**처럼 포트리스·매직 패킷 구조로 **네트워크에 ‘표본 패킷’을 남기지 않는** 공격은 전통 NDR·IDS를 논리적으로 무력화합니다. 실제로 2024년 A은행 사례에서 BPFdoor는 세 대의 IDS·NDR 장비를 모두 피해 간 뒤 **6 개월간 잠복**했습니다.  
 
-**PLURA-XDR**는 이 ‘관측 불가능 지대’를 엔드포인트·애플리케이션·로그 계층으로 확장된 **다층 가시성**과 GPT-기반 상관 분석으로 메웁니다. 보안 AI·자동화를 광범위하게 활용한 조직이 침해 비용을 평균 **USD 2.22 M** 절감했다는 동일 보고서의 수치는, PLURA-XDR이 단순 기술을 넘어 **재무 안전판**으로 작동함을 시사합니다. 지금 PoC를 신청하시면 **30일간 TLS 내부 가시성 리포트**를 무료로 제공해, 귀사의 맹점이 어디에 숨어 있는지 직접 확인하실 수 있습니다.
+여기에 TLS 1.3·QUIC 확산으로 **패킷 내용까지 암호화**되는 추세가 겹치면서, ‘보이는 패턴’ 기반 탐지 방식은 사실상 **가시성 0 %**에 수렴합니다.  
+
+**PLURA-XDR**는 이 ‘관측 불가능 지대’를 엔드포인트·애플리케이션·로그 계층으로 확장된 **다층 가시성**과 GPT 기반 상관 분석으로 메웁니다. 동일 IBM 보고서에 따르면 보안 AI·자동화를 도입한 조직은 침해 비용을 평균 **USD 2.22 M** 절감했습니다. PLURA-XDR은 기술을 넘어 **재무 안전판**으로 작동한다는 의미입니다. 지금 PoC를 신청하시면 **30일간 TLS 내부 가시성 리포트**를 무료 제공해, 귀사의 맹점을 직접 확인하실 수 있습니다.
 
 ### ✅ PLURA-XDR의 통합 접근
 1. **본문 로그 실시간 수집** – TLS 내부 요청·응답까지 가시화  
@@ -97,6 +99,6 @@ tags: ["NDR", "네트워크 보안", "스텔스 공격", "BPFdoor", "Symbiote", 
 
 ### 📑 참고 자료
 * [IBM Cost of a Data Breach Report 2024](https://www.ibm.com/reports/data-breach)  
-* [A Peek Behind the BPFDoor — Elastic Security Labs](https://www.elastic.co/security-labs/a-peek-behind-the-bpfdoor) 
-* [Symbiote: A New, Nearly-Impossible-to-Detect Linux Threat – BlackBerry & Intezer](https://blogs.blackberry.com/en/2022/06/symbiote-a-new-nearly-impossible-to-detect-linux-threat)  
-* [LummaC2 Revisited: What’s Making this Stealer Stealthier and More Lethal – SpyCloud](https://spycloud.com/blog/lummac2-malware-stealthier-capabilities/)  
+* [A Peek Behind the BPFDoor — Elastic Security Labs](https://www.elastic.co/security-labs/a-peek-behind-the-bpfdoor)  
+* [Symbiote: A New, Nearly-Impossible-to-Detect Linux Threat — BlackBerry & Intezer](https://blogs.blackberry.com/en/2022/06/symbiote-a-new-nearly-impossible-to-detect-linux-threat)  
+* [LummaC2 Revisited: What Makes This Stealer Stealthier and More Lethal — SpyCloud](https://spycloud.com/blog/lummac2-malware-stealthier-capabilities/)  
