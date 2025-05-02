@@ -204,7 +204,7 @@ sequenceDiagram
 ---
 
 ### 📺 함께 시청하기
-* [BPFDoor 공격, 어떻게 침투하는가? | PLURA 실시간 탐지 시연](https://blog.plura.io/ko/respond/linux_sysmon/)  
+* [BPFDoor 공격, 어떻게 침투하는가? | PLURA 실시간 탐지 시연](https://www.youtube.com/watch?v=bzGv1AwHy9k)
 
 ### 📖 함께 읽기
 * [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://youtu.be/bzGv1AwHy9k)
