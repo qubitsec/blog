@@ -1,10 +1,10 @@
 ---
-title: "SKT 유심 정보 유출 사건: 원인·영향·대응 총정리"
+title: "SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지"
 date: 2025-05-02
 draft: false
-description: "2025년 4월, SK텔레콤에서 발생한 대규모 USIM 정보 유출 사건의 경과와 실질적 대응 방안을 한눈에 정리합니다."
+description: "2025년 4월 발생한 SKT 유심 정보 대규모 유출 사건의 원인과 피해 규모, 그리고 현실적인 대응 방법까지 쉽게 정리했습니다"
 featured_image: "cdn/column/skt_usim.png"
-tags: ["SKT", "SK텔레콤", "USIM", "BPFDoor", "APT", "SIM-Swapping", "PLURA-XDR"]
+tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPFDoor", "APT 공격", "PLURA-XDR", "개인정보 유출"]
 ---
 
 
