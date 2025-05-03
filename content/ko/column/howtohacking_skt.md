@@ -12,7 +12,7 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPF
 
 <!--more-->
 
-![NDR 한계](https://blog.plura.io/cdn/column/howtohacking_skt.png)
+![해킹 공격 시퀀스 다이어그램](https://blog.plura.io/cdn/column/howtohacking_skt.png)
 
 ---
 
