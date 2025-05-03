@@ -207,6 +207,6 @@ sequenceDiagram
 * [BPFDoor 공격, 어떻게 침투하는가? | PLURA 실시간 탐지 시연](https://www.youtube.com/watch?v=bzGv1AwHy9k)
 
 ### 📖 함께 읽기
+* [SKT 해킹 악성코드 BPFDoor 분석 및 탐지 시연 영상 (PLURA-XDR 대응 전략 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
+* [SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지](https://blog.plura.io/ko/column/leak_of_skt_usim/)  
 * [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://youtu.be/bzGv1AwHy9k)
-* [NDR의 한계: BPFDoor 스텔스형 공격 대응의 현실적 문제](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
-* [SKT 유심 정보 유출 사건: 원인·영향·대응 총정리](https://blog.plura.io/ko/column/leak_of_skt_usim/)  
