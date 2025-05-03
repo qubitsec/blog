@@ -130,30 +130,121 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "RCE 취약점", "웹
 
 ---
 
-## 5. MITRE ATT&CK 매핑 (웹셸·RCE 기반)
+## 5. MITRE ATT\&CK 매핑 (웹셸·RCE 기반)
 
-- **Initial Access (TA0001)**:  
-  - *Exploit Public-Facing Application (T1190)*: 웹 RCE 취약점 공격  
-  - *Drive-by Compromise (T1189)* 혹은 *WebShell Upload (하위 T1190 사례)*  
+### 왜 MITRE ATT\&CK을 매핑했는가?
 
-- **Execution (TA0002)**:  
-  - *Command-Line Interface (T1059.004)*: 웹셸 호출 시, `shell_exec()` 등으로 실제 OS 명령어 구동  
+**MITRE ATT\&CK**은 전 세계 보안 전문가들이 **공격자의 전술**(Tactics)과 **기법**(Techniques)을 체계적으로 정리해놓은 지식 베이스입니다.
 
-- **Persistence (TA0003)**:  
-  - 웹셸 자체는 HTTP 요청만 있으면 재실행 가능. BPFDoor는 별도 디스크 등록 없이 메모리에 상주  
+* **객관적 기준**: 공격 흐름을 명확히 분류하므로, “이 공격이 어느 단계에 속하고, 어떤 기법을 사용했는지”를 표준화된 용어로 설명할 수 있음.
+* **보안 운영 최적화**: 각 전술·기법마다 대응 방안이 구체적으로 제시되어 있어, **조직의 보안 로드맵(방어 전략) 수립**에 활용할 수 있음.
+* **산업 표준 준수**: APT 보고서나 침해사고 분석 시, MITRE ATT\&CK 매핑은 사실상 업계 표준이 되고 있음. 이를 통해 **다른 조직, 다른 사건**과 비교·분석하기 쉬워짐.
 
-- **Privilege Escalation (TA0004)**:  
-  - *Exploitation for Privilege Escalation (T1068)*: 커널 취약점, SUID, sudo misconfig 등  
+결국, **SKT 해킹**과 **BPFDoor** 사용 시나리오를 MITRE ATT\&CK에 매핑하면, 공격자의 구체적 행위(웹셸 업로드, 커널 취약점 악용, 백도어 C2 등)를 **전술·기법**에 따라 정리하여 **체계적인 대응 방안을 마련**할 수 있습니다.
 
-- **Defense Evasion (TA0005)**:  
-  - 웹셸: 파일 확장자 우회, MIME 헤더 위장.  
-  - BPFDoor: 파일 삭제(T1070.004), 타임스템핑(T1070.006), 프로세스 위장(T1036) 등.  
+---
 
-- **Command and Control (TA0011)**:  
-  - BPFDoor: Traffic Signaling(T1205.002), Non-standard port(T1571), Encrypted Channel(T1573).  
+### 상세 매핑 항목
 
-- **Exfiltration (TA0010)**:  
-  - 공격자 셸(웹셸 or BPFDoor 역방향 셸)에서 DB 파일을 압축·전송.
+#### 1. Initial Access (TA0001)
+
+* **Exploit Public-Facing Application (T1190)**
+
+  * **웹 RCE 취약점 공격**: 공격자가 인터넷에 노출된 웹 서버(예: WebLogic, Tomcat 등)에 존재하는 RCE 취약점을 악용해 원격 코드 실행에 성공.
+  * **의의**: 대부분 APT 공격에서 가장 많이 발생하는 초기 침투 형태 중 하나. 망분리 환경이라도 80/443 포트는 열려 있으므로, 공격자가 이를 발판으로 내부망까지 진입 가능.
+
+* **Drive-by Compromise (T1189)** 또는 **WebShell Upload** (T1190의 하위 사례)
+
+  * **Drive-by Compromise**: 보통 사용자가 악성 웹사이트를 방문해 감염되는 경우이지만, 여기서는 서버 측에서 “웹셸 업로드”가 발생할 수 있음.
+  * **WebShell Upload**: 업로드 기능이 있는 웹 애플리케이션에 `.jsp`, `.php` 스크립트를 삽입해 **웹셸**을 생성.
+  * **의의**: 업로드 취약점으로 웹셸이 설치되면, 공격자는 서버 상에서 임의 명령을 실행할 수 있게 됨.
+
+#### 2. Execution (TA0002)
+
+* **Command-Line Interface (T1059.004)**
+
+  * **웹셸 호출 시, `shell_exec()` 등으로 실제 OS 명령어 구동**: JSP/PHP의 시스템 호출 함수를 이용해 쉘(commands)을 실행.
+  * **의의**: 공격자는 파일 탐색, wget/curl로 추가 악성코드 다운로드, 퍼미션 변경 등 **모든 OS 명령**을 원격에서 수행할 수 있음.
+  * 실무 예시:
+
+    * `system("uname -a")`, `shell_exec("cat /etc/passwd")` 등.
+
+#### 3. Persistence (TA0003)
+
+* **웹셸 자체는 HTTP 요청만 있으면 재실행 가능**
+
+  * 특정 URL(예: `/uploads/shell.jsp`)에 접근할 때마다 웹셸 코드가 실행 → 재부팅하더라도 파일이 지워지지 않는 한 **반영구적**으로 사용 가능.
+* **BPFDoor는 별도 디스크 등록 없이 메모리에 상주**
+
+  * `/dev/shm` 등 임시 디렉토리로 복사 후 원본 삭제.
+  * **의의**: 파일리스(fileless) 특성을 극대화해, 포렌식 시 발견이 어려움.
+
+> **실무 주의**: 웹셸은 `HTTP GET/POST`만 있으면 언제든 실행된다. BPFDoor는 서버가 재부팅되지 않으면 계속 상주. 둘 다 Persistence에 해당하나, 실장 방식이 다름.
+
+#### 4. Privilege Escalation (TA0004)
+
+* **Exploitation for Privilege Escalation (T1068)**
+
+  * 커널 취약점, SUID, sudo misconfig 등을 악용하여 관리자(root) 권한 획득.
+  * **의의**: 웹서버 기본 계정(tomcat, www-data)은 권한이 제한적이므로, 공격자는 **추가적인 루트 권한** 확보가 필요. 이 단계 성공 시 BPFDoor 같은 **고급 백도어** 설치도 자유로워짐.
+
+> **실무 주의**: “웹셸=곧바로 root”가 아니라, 대부분 낮은 권한이므로 *권한 상승*이 중간에 꼭 필요.
+
+#### 5. Defense Evasion (TA0005)
+
+* **웹셸**: 파일 확장자 우회, MIME 헤더 위장
+
+  * 공격자는 `.jsp` 파일을 `.jpg` 혹은 `.php.jpg`로 업로드, **MIME 헤더** 조작으로 보안 솔루션을 우회.
+  * **의의**: 단순 확장자 필터로는 차단 어려우며, 심층 본문 분석 필요.
+
+* **BPFDoor**:
+
+  * 파일 삭제 (T1070.004): `/dev/shm/kdmtmpflush` 원본 삭제로 디스크 흔적 제거.
+  * 타임스템핑 (T1070.006): `utimes()`로 변경 시간을 조작, 오래된 정상 파일처럼 위장.
+  * 프로세스 위장 (T1036): `prctl()`로 프로세스 이름·인자를 정상 데몬(`systemd-journald` 등)처럼 보이게 함.
+  * **의의**: 백도어가 존재해도, 관리자나 보안 솔루션이 쉽게 눈치채지 못함. 은밀성을 극대화.
+
+#### 6. Command and Control (TA0011)
+
+* **BPFDoor**: Traffic Signaling (T1205.002), Non-standard port (T1571), Encrypted Channel (T1573)
+
+  * **Traffic Signaling(T1205.002)**: 소켓 필터를 이용한 매직 패킷 감시 → “매직 바이트” 패턴이 일치해야만 통신 채널 생성.
+  * **Non-standard port(T1571)**: ICMP, TCP 등 **관습적이지 않은 포트**나 **패킷**을 사용. 방화벽 우회 목적.
+  * **Encrypted Channel(T1573)**: RC4 등 커스텀 암호화로 C2 트래픽을 평문 감추고, 침입방지솔루션(IPS) 탐지를 어렵게 함.
+  * **의의**: 일반 C2(80/443 포트 고정 리슨)와 달리, BPFDoor는 “수동형” 백도어. 포트 스캐닝으로 찾기 매우 어려움.
+
+#### 7. Exfiltration (TA0010)
+
+* **공격자 셸(웹셸 or BPFDoor 역방향 셸)에서 DB 파일을 압축·전송**
+
+  * 대량의 가입자 정보(예: USIM 인증키, IMSI, 전화번호)를 DB 덤프로 만든 뒤, HTTP·FTP·DNS 등 다양한 방식으로 외부로 빼돌림.
+  * **의의**: APT 공격의 마지막 단계로, 금전적·정보 수집 목적 달성. SKT 사건에서 **2,300만**건 유심 정보가 유출된 것으로 추정.
+
+---
+
+### 정리: MITRE ATT\&CK 매핑의 장점
+
+1. **공격 시나리오 전체를 표준화된 방법으로 설명**
+
+   * 단순히 “웹셸을 심었다”가 아니라, “TA0001: Exploit Public-Facing Application(T1190) → TA0002: Command-Line Interface(T1059.004) → …” 등 단계별로 구조화됨.
+
+2. **각 기법별 구체적 보안 대응책 연계**
+
+   * 예: “파일 삭제(T1070.004) 방어”를 위해선 **실시간 파일 무결성 모니터링**이나 **EDR** 정책이 필요함을 바로 연관 지을 수 있음.
+
+3. **재현성과 비교 가능성**
+
+   * 다른 침해사고에서도 동일 TTP(전술/기법)를 사용했는지 비교하여, 공격자 그룹의 특징, 재발 방지 방안을 수립할 수 있음.
+
+4. **조직 보안 체계 점검**
+
+   * 매핑된 기법마다 “현재 우리 조직이 얼만큼 방어 대비가 돼 있는가?”를 체크리스트로 삼을 수 있음.
+   * 궁극적으로 \*\*“우리 보안솔루션·시스템이 MITRE ATT\&CK 상 어떤 기법 방어에 취약한가”\*\*를 한눈에 파악.
+
+---
+
+> **결론**:
+> MITRE ATT\&CK 매핑은 SKT 해킹 시나리오(웹셸·RCE→권한 상승→BPFDoor 설치→C2 통신→데이터 유출)를 **표준화된 공격단계**로 분류하여, **각 단계별 방어 전략**을 체계화하는 데 큰 도움을 줍니다. 이로써 **보안 담당자가 재현성 높은 대응책**을 마련하고, **추가 공격 징후**를 빠르게 감지할 수 있습니다.
 
 ---
 
