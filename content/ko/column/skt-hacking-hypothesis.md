@@ -1,10 +1,10 @@
 ---
-title: "SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지"
+title: "SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?"
 date: 2025-05-03
 draft: false
 description: "2025년 4월 발생한 SKT 유심 정보 대규모 유출 사건의 원인과 피해 규모, 그리고 현실적인 대응 방법까지 쉽게 정리했습니다"
 featured_image: "cdn/column/howtohacking_skt.png"
-tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPFDoor", "APT 공격", "PLURA-XDR", "개인정보 유출"]
+tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "RCE 취약점", "웹셸 공격", "BPFDoor", "APT 공격", "PLURA-XDR", "개인정보 유출", "망분리 해킹"]
 ---
 
 > **핵심 한 줄 요약**  
