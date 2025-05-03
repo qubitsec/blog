@@ -1,10 +1,10 @@
 ---
-title: "BPFDoor 백도어 실전 분석 및 PLURA-XDR 대응"
+title: "BPFDoor SKT 해킹 사건에 사용된 BPFDoor 백도어 분석과 PLURA-XDR 대응 전략"
 date: 2025-05-02
 draft: false
-description: "최신 APT 사건에도 등장한 BPFDoor의 동작 원리와 PLURA-XDR 기반 탐지·대응 전략을 한눈에 정리합니다."
+description: "2025년 4월 SKT 해킹 사건의 핵심 악성코드 BPFDoor 분석과 PLURA-XDR을 이용한 탐지 및 대응 전략을 구체적으로 정리합니다"
 featured_image: "cdn/respond/bpfdoor.png"
-tags: ["BPFDoor", "APT", "eBPF", "SIM-Swapping", "IPS", "NDR", "PLURA-XDR"]
+tags: ["SKT 해킹", "BPFDoor", "SKT 유심 유출", "APT 공격", "SIM 스와핑", "PLURA-XDR", "NDR", "eBPF", "백도어 탐지"]
 ---
 
 
