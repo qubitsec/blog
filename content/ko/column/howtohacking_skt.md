@@ -1,6 +1,6 @@
 ---
 title: "SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지"
-date: 2025-05-02
+date: 2025-05-03
 draft: false
 description: "2025년 4월 발생한 SKT 유심 정보 대규모 유출 사건의 원인과 피해 규모, 그리고 현실적인 대응 방법까지 쉽게 정리했습니다"
 featured_image: "cdn/column/howtohacking_skt.png"
