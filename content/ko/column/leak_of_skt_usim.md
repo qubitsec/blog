@@ -78,7 +78,7 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPF
 ---
 
 ### 📖 함께 읽기
-* [SKT 해킹 악성코드 BPFDoor 분석 및 탐지 시연 영상 (PLURA-XDR 대응 전략 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
+* [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
 * [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
 
 ### 📑 참고 자료
