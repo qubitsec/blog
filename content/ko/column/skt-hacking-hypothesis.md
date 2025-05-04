@@ -251,8 +251,8 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "RCE 취약점", "웹
 ### 5.1 BPFDoor 공격 그룹과 LoL(Living off the Land) 기법
 
 BPFDoor를 사용하는 해킹 그룹은 주로 **중국계 APT 그룹**으로 분류되며,
-대표적으로 **APT27(Emissary Panda)**가 보고되었습니다.
-이들은 탐지 회피와 은밀한 장기 침투를 위해 **LoL (Living off the Land)** 기법을 광범위하게 활용하고 있습니다.
+대표적으로 **APT27**(Emissary Panda)가 보고되었습니다.
+이들은 탐지 회피와 은밀한 장기 침투를 위해 **LoL** (Living off the Land) 기법을 광범위하게 활용하고 있습니다.
 
 아래 표는 **MITRE ATT&CK 프레임워크** 기반으로, **BPFDoor 관련 공격 그룹**이 자주 사용하는
 **LoL 기술**을 요약한 것입니다.
