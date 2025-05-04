@@ -247,6 +247,30 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "RCE 취약점", "웹
 
 ---
 
+### 5.1 BPFDoor 공격 그룹과 LoL(Living off the Land) 기법
+
+BPFDoor를 사용하는 해킹 그룹은 주로 **중국계 APT 그룹**으로 분류되며,
+대표적으로 **APT27(Emissary Panda)**가 보고되었습니다.
+이들은 탐지 회피와 은밀한 장기 침투를 위해 **LoL (Living off the Land)** 기법을 광범위하게 활용하고 있습니다.
+
+아래 표는 **MITRE ATT&CK 프레임워크** 기반으로, **BPFDoor 관련 공격 그룹**이 자주 사용하는
+**LoL 기술**을 요약한 것입니다.
+
+---
+
+## **MITRE ATT&CK 기반 LoL 기법 (BPFDoor 관련)**
+
+| Tactic (전술)                       | Technique (기법)                                | ID        | 설명                                        |
+| ----------------------------------- | ---------------------------------------------- | --------- | ------------------------------------------ |
+| **Execution (실행)**                | Command and Scripting Interpreter: Bash        | T1059.004 | Bash 셸을 통한 명령 실행                          |
+|                                     | Command and Scripting Interpreter: PowerShell  | T1059.001 | PowerShell로 메모리 내 악성 코드 실행 (Windows 시) |
+| **Persistence (지속성)**           | Modify System Binary                           | T1543.003 | 시스템 바이너리 변조 또는 서비스 등록                    |
+| **Privilege Escalation (권한 상승)**| Sudo and Sudo Caching                          | T1548.003 | 합법적 권한 상승 도구 악용                           |
+| **Defense Evasion (탐지 회피)**     | Masquerading                                   | T1036     | 정상 프로세스 이름으로 위장 (예: sshd, syslogd 등)     |
+|                                     | Obfuscated Files or Information                | T102     
+
+---
+
 ### 정리: MITRE ATT\&CK 매핑의 의미
 
 * **BPFDoor**가 설치·활동했다면, 그 **이전 단계**(웹셸 업로드, OS 명령 실행, 권한 상승 등)에서도 충분히 **탐지할 수 있었을 이벤트**들이 발생했을 가능성이 높습니다.
