@@ -1,5 +1,5 @@
 ---
-title: "중소·중견 기업에 NIPS/NDR, 정말로 필요할까?"
+title: "중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?"
 date: 2024-12-22T00:00:01
 draft: false
 description: "특수 환경이 아니라면 WAF + EDR/HIPS로도 충분한 이유와 NIPS/NDR을 고려해야 하는 예외적 상황을 살펴봅니다."
