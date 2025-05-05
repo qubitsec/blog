@@ -13,7 +13,7 @@ tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 
 > - **2021년 6월:** 한국원자력연구원(KAERI)·한국항공우주산업(KAI)이 북한 소행으로 추정되는 **VPN 취약점** 공격을 당한 것은 여러 보안 보고서와 언론 보도를 통해 확인된 사실입니다.  
 > - **2025년 4월:** SKT 해킹에서 추가로 발표된 Ivanti(구 Pulse Secure)의 **제로데이** 취약점이 악용될 수 있음을 강조한 내용입니다.  
 
-![SSL VPN](https://blog.plura.io/cdn/column/ssl-vpn-ivanti-attack-defense.png)
+![SSL VPN](https://blog.plura.io/cdn/respond/ssl-vpn-ivanti-attack-defense.png)
 
 <!--more-->
 
