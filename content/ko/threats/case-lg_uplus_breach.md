@@ -68,5 +68,5 @@ sequenceDiagram
 ```
 
 ### 📑 참고 자료
-* [중앙일보 기](https://www.joongang.co.kr/article/25158501)  
+* [중앙일보 기사](https://www.joongang.co.kr/article/25158501)  
 
