@@ -10,6 +10,9 @@ tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 
 📡 **NDR**(Network Detection and Response)은 네트워크 트래픽 분석을 통해 위협을 탐지하려는 기술이지만,  
 최근 SK텔레콤 해킹 사건처럼 고도화된 **BPFdoor 스텔스형 공격** 앞에서는 분명한 기술적 한계를 드러냈습니다.
 
+> 다음과 같은 기사에 대응하고자 작성되었습니다.
+* [이데일리 - 기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구](https://n.news.naver.com/article/018/0006002991)
+
 <!--more-->
 
 ![NDR 한계](https://blog.plura.io/cdn/column/limitations-ndr-bpfdoor.png)
@@ -91,9 +94,6 @@ tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 
 **✅ PLURA-XDR은 NDR의 한계를 보완하는 현실적 차세대 보안 솔루션.**
 
 ---
-
-> 다음과 같은 기사에 대응하고자 작성되었습니다.
-* [이데일리 - 기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구](https://n.news.naver.com/article/018/0006002991)
 
 ### 📖 함께 읽기
 * [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)  
