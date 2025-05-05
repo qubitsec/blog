@@ -13,8 +13,6 @@ tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fati
 
 실제로 **다중 보안**은 아래와 같은 문제점을 야기할 수 있습니다.
 
-![Overkill Security](https://blog.plura.io/cdn/column/overkill-multi-layer-security.png)
-
 <!--more-->
 
 ---
@@ -75,6 +73,8 @@ tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fati
 
 동일하게, 보안에서도 **모든 잠재적 위협**을 막기 위해 수많은 솔루션을 쌓아올리면, 복잡성 증가와 비용 낭비, 그리고 집중력 분산 등의 문제가 생깁니다.  
 ‘**기능 과다(Feature Creep)**’가 일어나면 조직이 **중요한 부분에 집중**하기 어려워지고, 결과적으로 **보안 체계 자체가 취약**해질 가능성이 커집니다.
+
+![Overkill Security](https://blog.plura.io/cdn/column/overkill-multi-layer-security.png)
 
 ---
 
