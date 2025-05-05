@@ -82,4 +82,10 @@ tags: ["암호", "양자컴퓨팅", "PQC", "AES", "SHA-3"]
 
 ---
 
-> 요약하면, **“AES/SHA-3 + PQC”** 조합이 차세대 암호 인프라의 핵심이 될 것이며, 2024년 이후로 실제 상용 제품에 도입되는 흐름이 가속화될 것으로 예상됩니다.
+## References
+
+* [NIST Post-Quantum Cryptography](https://csrc.nist.gov/Projects/post-quantum-cryptography)  
+* [IETF PQC Mailing List & Drafts](https://datatracker.ietf.org/wg/pqc/about/)  
+* [Google Security Blog: Experimenting with Post-Quantum](https://security.googleblog.com/2019/06/experimenting-with-post-quantum.html)  
+* [Cloudflare Blog: Post-Quantum for All](https://blog.cloudflare.com/post-quantum-for-all/)  
+* [OpenSSL & liboqs Collaboration](https://www.openssl.org/blog/blog/2022/02/15/oqs-and-openssl3-alpha/)  
