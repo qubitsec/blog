@@ -4,7 +4,7 @@ date: 2025-05-05
 draft: false
 description: "다양한 보안 솔루션을 무작정 도입하는 것의 문제점과, 통합 보안 솔루션을 활용한 효율적인 대안 제시"
 featured_image: "cdn/column/overkill-multi-layer-security.png"
-tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fatigue"]
+tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fatigue", "다중 보안", "계층 보안"]
 ---
 
 ## 과도한 다중∙계층 보안, 정말 필요한가?
