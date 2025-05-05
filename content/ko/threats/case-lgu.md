@@ -47,4 +47,5 @@ sequenceDiagram
 
 📎 출처: 과학기술정보통신부 / The JoongAng
 
-
+참고 자료
+https://www.joongang.co.kr/article/25158501
