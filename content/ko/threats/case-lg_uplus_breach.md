@@ -67,4 +67,6 @@ sequenceDiagram
     웹서버-->>해커: 수집 정보 외부 전송
 ```
 
+### 📑 참고 자료
+* [중앙일보 기](https://www.joongang.co.kr/article/25158501)  
 
