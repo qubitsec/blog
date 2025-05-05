@@ -3,7 +3,7 @@ title: "LG유플러스 고객인증 시스템 유출 시나리오"
 date: 2025-05-05
 draft: false
 description: "LG유플러스 고객인증 시스템의 외부 노출 취약점을 악용한 공격 시나리오와 정보 유출 과정을 살펴봅니다."
-featured_image: "cdn/column/case-lg_uplus_breach.png"
+featured_image: "cdn/threats/case-lg_uplus_breach.png"
 tags: ["LG유플러스", "Data Breach", "보안 사고", "개인정보 유출", "웹셸 공격", "침투 테스트"]
 ---
 
