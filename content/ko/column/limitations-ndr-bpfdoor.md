@@ -94,8 +94,11 @@ tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 
 
 ### 📖 함께 읽기
 * [이데일리 - 기존 보안으론 못막아… 잇단 대형 해킹에 스텔스 위협 대응 촉구](https://n.news.naver.com/article/018/0006002991)
+
+* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)  
 * [WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)  
 * [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)  
+
 * [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
 * [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
 
