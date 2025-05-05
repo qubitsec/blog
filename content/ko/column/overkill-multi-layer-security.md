@@ -13,6 +13,10 @@ tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fati
 
 실제로 **다중 보안**은 아래와 같은 문제점을 야기할 수 있습니다.
 
+![Overkill Security](https://blog.plura.io/cdn/column/overkill-multi-layer-security.png)
+
+<!--more-->
+
 ---
 
 ## 1) 통합되지 않는 제품 간 호환성 문제 ⚙️
