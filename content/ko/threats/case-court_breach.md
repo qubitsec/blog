@@ -72,3 +72,5 @@ sequenceDiagram
     Note over 외부PC: 총 1,014GB 유출 (21.6~23.1)
 ```
 
+### 📑 참고 자료
+* [조선일보 기사](https://www.chosun.com/national/2024/05/13/VFMMY3PYINEL7IKHG4KNRAHTH4/)  
