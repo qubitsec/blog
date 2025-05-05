@@ -82,7 +82,7 @@ tags: ["암호", "양자컴퓨팅", "PQC", "AES", "SHA-3"]
 
 ---
 
-## References
+## 참고자료
 
 * [NIST Post-Quantum Cryptography](https://csrc.nist.gov/Projects/post-quantum-cryptography)  
 * [IETF PQC Mailing List & Drafts](https://datatracker.ietf.org/wg/pqc/about/)  
