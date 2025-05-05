@@ -7,7 +7,7 @@ featured_image: "cdn/column/quantum-era-cryptography.png"
 tags: ["암호", "양자컴퓨팅", "PQC", "AES", "SHA-3", "RAS", "ECC"]
 ---
 
-
+비록 많은 분야가 여전히 연구 단계에 머물러 있지만, 몇몇 알고리즘은 이미 구체화되어 실제 적용 가능성이 확인된 상태입니다.
 
 <!--more-->
 ![Quantum Era Cryptography](https://blog.plura.io/cdn/columnquantum-era-cryptography.png)
