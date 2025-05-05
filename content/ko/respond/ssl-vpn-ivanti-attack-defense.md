@@ -4,7 +4,7 @@ date: 2025-05-05
 draft: false
 description: "SKT 유심 해킹 사건에 사용된 BPFDoor 사례를 통해 NDR 기술의 한계를 분석하고, 스텔스 공격을 효과적으로 대응할 수 있는 현실적 방안을 정리했습니다"
 featured_image: "cdn/respond/ssl-vpn-ivanti-attack-defense.png"
-tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 보안", "IDS", "IPS", "Symbiote", "LummaC2", "PLURA-XDR"]
+tags: ["SKT 해킹", "한국원자력연구원(KAERI)", "한국항공우주산업(KAI)", "SSL VPN", "Ivanti", "PLURA-XDR"]
 ---
 
 # 📘 SSL VPN 취약점 공격 및 Ivanti 대응 전략
