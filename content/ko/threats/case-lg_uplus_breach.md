@@ -11,7 +11,7 @@ LG유플러스 고객인증 시스템이 외부에 노출되어 공격자에게 
 공격자는 기본 계정과 파일 업로드 취약점을 악용해 **웹셸**(WebShell)을 설치하였고, 이를 통해 **약 29만 7천여 명**의 고객 정보가 유출되었습니다.  
 유출 시점은 **DB 갱신일인 2018년 6월 15일 전후**로 추정됩니다.
 
-![LG유플러스 고객인증 시스템 유출](https://blog.plura.io/cdn/column/case-lg_uplus_breach.png)
+![LG유플러스 고객인증 시스템 유출](https://blog.plura.io/cdn/threats/case-lg_uplus_breach.png)
 
 <!--more-->
 ---
