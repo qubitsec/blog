@@ -457,4 +457,5 @@ BPFDoor를 사용하는 해킹 그룹은 주로 **중국계 APT 그룹**으로 �
 ### 📖 함께 읽기
 * [SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지](https://blog.plura.io/ko/column/leak_of_skt_usim/)  
 * [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
+* [SSL VPN 취약점 공격 및 Ivanti 대응 전략]([)](https://blog.plura.io/ko/respond/ssl-vpn-ivanti-attack-defense)  
 * [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
