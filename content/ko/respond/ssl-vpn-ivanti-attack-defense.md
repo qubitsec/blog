@@ -3,7 +3,7 @@ title: "SSL VPN 취약점 공격 및 Ivanti 대응 전략"
 date: 2025-05-05
 draft: false
 description: "SKT 유심 해킹 사건에 사용된 BPFDoor 사례를 통해 NDR 기술의 한계를 분석하고, 스텔스 공격을 효과적으로 대응할 수 있는 현실적 방안을 정리했습니다"
-featured_image: "cdn/column/ssl-vpn-ivanti-attack-defense.png"
+featured_image: "cdn/respond/ssl-vpn-ivanti-attack-defense.png"
 tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 보안", "IDS", "IPS", "Symbiote", "LummaC2", "PLURA-XDR"]
 ---
 
@@ -194,7 +194,16 @@ graph TD
 1. 2021년 한국원자력연구원·KAI 해킹(실제 사례)와 2025년 SKT 해킹(가정 시나리오)는 모두 **SSL VPN 웹 취약점**을 공략했다는 공통점을 갖습니다.
 2. Ivanti(구 Pulse Secure), FortiGate 등에서 보고된 **CVE-2019-11510**, **CVE-2023-46805**, **CVE-2018-13379** 등은 이미 공격에 널리 이용되며,
    **CVE-2023-27997**, **CVE-2024-21887** 등 신규 취약점도 계속 등장하고 있습니다.
-3. **정기 패치**와 함께 **PLURA-XDR** 같은 통합 보안 솔루션을 도입하여, \*\*네트워크 트래픽(NTA)\*\*와 \*\*시스템 행위(Agent/Agentless)\*\*를 **동시 모니터링**해야 **실질적 방어**가 가능합니다.
+3. **정기 패치**와 함께 **PLURA-XDR** 같은 통합 보안 솔루션을 도입하여, 네트워크 트래픽(NTA)와 시스템 행위(Agent/Agentless)를 **동시 모니터링**해야 **실질적 방어**가 가능합니다.
 4. **다중 인증(2FA), 룰셋 튜닝, IoC 기반 자동화 차단** 등을 병행하여, **조직 핵심 인프라**를 안전하게 보호해야 합니다.
 
 ---
+
+### 📺 함께 시청하기
+* [BPFDoor 공격, 어떻게 침투하는가? | PLURA 실시간 탐지 시연](https://www.youtube.com/watch?v=bzGv1AwHy9k)
+
+### 📖 함께 읽기
+* [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)  
+* [SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지](https://blog.plura.io/ko/column/leak_of_skt_usim/)  
+* [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
+* [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
