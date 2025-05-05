@@ -84,8 +84,8 @@ tags: ["암호", "양자컴퓨팅", "PQC", "AES", "SHA-3"]
 
 ## 참고자료
 
-* [NIST Post-Quantum Cryptography](https://csrc.nist.gov/Projects/post-quantum-cryptography)  
-* [IETF PQC Mailing List & Drafts](https://datatracker.ietf.org/wg/pqc/about/)  
+* [NIST: Post-Quantum Cryptography](https://csrc.nist.gov/Projects/post-quantum-cryptography)  
+* [IETF: Post-Quantum Cryptography for Engineers](https://datatracker.ietf.org/doc/draft-ietf-pquip-pqc-engineers/)  
 * [Google Security Blog: Experimenting with Post-Quantum](https://security.googleblog.com/2019/06/experimenting-with-post-quantum.html)  
 * [Cloudflare Blog: Post-Quantum for All](https://blog.cloudflare.com/post-quantum-for-all/)  
 * [OpenSSL & liboqs Collaboration](https://www.openssl.org/blog/blog/2022/02/15/oqs-and-openssl3-alpha/)  
