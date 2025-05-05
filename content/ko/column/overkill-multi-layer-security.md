@@ -1,5 +1,5 @@
 ---
-title: "과도한 다중∙계층 보안, 정말 필요한가?"
+title: "다중∙계층 보안, 정말 필요한가?"
 date: 2025-05-05
 draft: false
 description: "다양한 보안 솔루션을 무작정 도입하는 것의 문제점과, 통합 보안 솔루션을 활용한 효율적인 대안 제시"
@@ -7,7 +7,7 @@ featured_image: "cdn/column/overkill-multi-layer-security.png"
 tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fatigue", "다중 보안", "계층 보안"]
 ---
 
-## 과도한 다중∙계층 보안, 정말 필요한가?
+## 다중∙계층 보안, 정말 필요한가?
 
 오늘날 사이버 위협이 갈수록 다양해지고 교묘해지면서, 많은 기업이 ‘다중∙계층 보안 모델’로 전환하려 합니다. 그러나 과연 무작정 여러 솔루션을 겹겹이 도입하는 것이 최선일까요? 🔒
 
