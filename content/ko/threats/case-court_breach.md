@@ -1,6 +1,6 @@
 ---
 title: "법원행정처 전산망 해킹 시나리오"
-date: 2025-05-05
+date: 2025-05-01
 draft: false
 description: "사법부 전산망이 해킹당해 최소 1만7998명의 개인정보가 유출된 사건의 개요와 공격 방식을 살펴봅니다."
 featured_image: "cdn/threats/case-court_breach.png"
