@@ -4,7 +4,7 @@ date: 2025-05-02
 draft: false
 description: "SKT 유심 해킹 사건에 사용된 BPFDoor 사례를 통해 NDR 기술의 한계를 분석하고, 스텔스 공격을 효과적으로 대응할 수 있는 현실적 방안을 정리했습니다"
 featured_image: "cdn/column/limitations-ndr-bpfdoor.png"
-tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 보안", "IDS", "IPS", "Symbiote", "LummaC2", "PLURA-XDR"]
+tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 보안", "IDS", "IPS", "NDR", "Symbiote", "LummaC2", "PLURA-XDR"]
 ---
 
 📡 **NDR**(Network Detection and Response)은 네트워크 트래픽 분석을 통해 위협을 탐지하려는 기술입니다.
