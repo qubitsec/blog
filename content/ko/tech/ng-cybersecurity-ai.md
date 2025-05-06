@@ -12,7 +12,7 @@ PLURA-XDR은 **WAF, EDR, SIEM, XDR** 기능을 수직 통합한 클라우드 보
 
 비교 대상은 해외 솔루션인 **Palo Alto Networks Cortex XDR**, **CrowdStrike Falcon**, **SentinelOne Singularity**를 비롯하여, 국내 솔루션인 **안랩 XDR**, **이글루코퍼레이션 SPiDER ExD** 등을 포함합니다. 아래 표는 주요 제품들의 핵심 기능을 요약 비교한 것입니다.
 
-## 주요 제품 기능 비교\*\* 표
+## 주요 제품 기능 비교 표
 
 각 제품의 AI 및 자동화 기능, 제로데이/크리덴셜 스터핑 대응, 로그 수집 범위 등을 비교하면 다음과 같습니다:
 
