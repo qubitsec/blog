@@ -89,7 +89,7 @@ tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fati
 
 ---
 
-### 🐟 “그물코 간격” 비유로 보는 다중 보안의 함정
+## 🐟 “그물코 간격” 비유로 보는 다중 보안의 함정
 
 > **“그물코가 너무 넓으면, 아무리 겹겹이 쳐도 물고기는 빠져나간다.”**
 
