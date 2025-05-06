@@ -1,3 +1,12 @@
+---
+title: "PLURA-XDR 유사 보안 제품 비교 분석"
+date: 2025-05-06
+draft: true
+description: "국내 보안 플랫폼 PLURA-XDR과 주요 국내외 XDR 솔루션을 AI 기반 탐지, 자동화 대응, 제로데이 및 계정 탈취 방어 측면에서 비교한 분석 리포트"
+featured_image: "cdn/tech/plura-xdr-comparison.png"
+tags: ["XDR", "PLURA-XDR", "AI 보안", "자동화 대응", "제로데이", "크리덴셜 스터핑"]
+---
+
 # PLURA-XDR 유사 보안 제품 비교 분석
 
 ## 비교 대상 및 주요 평가 기준
