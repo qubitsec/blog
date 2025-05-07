@@ -61,7 +61,7 @@ struct magic_packet {
 | **iptables 변조** | 공격자 IP 허용 + NAT PREROUTING 리다이렉션                         |
 | **PTY 쉘**       | `/dev/ptmx` 연결 → 기록 방지 환경변수 설정                           |
 
-#### 📊 Sequence Diagram — 전체 흐름
+### 📊 Sequence Diagram — 전체 흐름
 
 ```mermaid
 sequenceDiagram
