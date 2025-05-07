@@ -1,11 +1,10 @@
 ---
-
 title: "CJ올리브네트웍스 인증서 유출 사건 분석 및 후속 대응 방안"
 date: 2025-05-07
 draft: false
 description: "CJ올리브네트웍스 디지털 인증서 유출 사건의 영향과 북한 해킹 그룹의 공격 전략 분석 및 긴급 대응 방안을 정리했습니다."
-featured\_image: "cdn/threats/case-cjolivenetworks\_digitalsignature\_breach.png"
-tags: \["CJ올리브네트웍스", "인증서 탈취", "김수키", "북한 해킹", "APT", "디지털 서명 위협", "보안 사고 대응"]
+featured\_image: "cdn/threats/case-cjolivenetworks_digitalsignature_breach.png"
+tags: ["CJ올리브네트웍스", "인증서 탈취", "김수키", "북한 해킹", "APT", "디지털 서명 위협", "보안 사고 대응"]
 ---
 
 아래는 중복되는 내용을 정리하되 핵심 정보와 대응 조치를 충분히 담아 깔끔하게 재구성한 문서입니다. 특히 “이미 인증서를 이용하여 악성코드가 배포되었을 가능성이 높으므로, 모든 시스템에 대한 점검이 반드시 필요하다”는 점을 강조하였습니다.
