@@ -88,7 +88,7 @@ tags: ["CJ올리브네트웍스", "인증서 탈취", "김수키", "공급망 �
 
 ---
 
-#### 📊 Sequence Diagram — 전체 흐름
+### 📊 Sequence Diagram — 전체 흐름
 
 ```mermaid
 sequenceDiagram
