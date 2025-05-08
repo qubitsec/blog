@@ -158,3 +158,10 @@ tags: ["공급망 보안", "Supply Chain", "협력사 보안", "Security", "PLUR
 
 **보다 상세한 도입 협의와 견적이 필요하시면 언제든 문의해 주시기 바랍니다.  
 PLURA-XDR을 통한 공급망 보안 강화에 귀사의 적극적인 참여와 협력을 기대합니다.**
+
+---
+
+### 📖 함께 읽기
+* [CJ올리브네트웍스 인증서 유출 사건: 김수키의 공급망 공격](https://blog.plura.io/ko/threats/case-cjolivenetworks_digitalsignature_mitre/)   
+
+
