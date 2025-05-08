@@ -258,3 +258,7 @@ sequenceDiagram
 탈취된 인증서는 단순 내부 보안 사고가 아니라, **전방위적 사이버 작전의 기폭제**가 될 수 있습니다. 따라서 지금 이 순간부터라도, **예방 중심의 보안 전략**으로 전환하는 것이 필수적입니다.
 
 ---
+
+### 📖 함께 읽기
+* [PLURA-XDR을 활용한 공급망 보안 강화 방안](https://blog.plura.io/ko/column/campaign_supplychain_security/)   
+
