@@ -495,5 +495,5 @@ BPFDoor는 `scp`, `sftp` 등과 같은 **비 C2 프로토콜 기반의 전송 �
 * [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
 * [LG유플러스 고객인증 시스템 유출 시나리오](https://blog.plura.io/ko/threats/case-lg_uplus_breach/)
 
-### 📖 PLURA 업데이트 안내
+### 🆙 PLURA 업데이트 안내
 * [PLURA Update](https://github.com/qubitsec/plura/blob/main/update/v5.5/ko/2025.md)
