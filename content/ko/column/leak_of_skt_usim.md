@@ -92,3 +92,5 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPF
 * [연합뉴스 - “최근 해킹 수법 경고…KISA, SKT 연계 악성코드 정보 공개” (2025-04-25)](https://www.yna.co.kr/view/AKR20250425168300017)  
 * [Business Korea - “BPFDoor malware confirmed in SKT hack” (2025-04-29)](https://www.businesskorea.co.kr/news/articleView.html?idxno=241318)  
 
+### 🆙 PLURA 업데이트 안내
+* [PLURA Update](https://github.com/qubitsec/plura/blob/main/update/v5.5/ko/2025.md)
