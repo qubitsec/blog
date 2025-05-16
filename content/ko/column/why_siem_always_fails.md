@@ -3,7 +3,7 @@ title: "SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다�
 date: 2025-05-16T00:00:01
 draft: false
 description: "SIEM을 도입했지만 제대로 된 로그 수집도 불가능하고, 수집한 로그를 분석할 역량도 없다면 그것은 그저 비싼 시각화 툴일 뿐입니다. 실질적인 한계를 정리해 봅니다."
-featured_image: "cdn/column/siem_log_fail.png"
+featured_image: "cdn/column/why_siem_always_fails.png"
 tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안", "Security", "PLURA-XDR"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안"
 **분석할 역량 또한 갖추지 못했습니다.**  
 이런 상황에서 SIEM은 **고가의 시각화 대시보드 그 이상도 이하도 아닙니다.**
 
-![SIEM 도입의 허상](https://blog.plura.io/cdn/column/siem_log_fail.png)
+![SIEM 도입의 허상](https://blog.plura.io/cdn/column/why_siem_always_fails.png)
 
 <!--more-->
 
