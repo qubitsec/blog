@@ -41,7 +41,7 @@ tags: ["오버엔지니어링", "Overengineering", "IPS", "NIPS", "HIPS", "NDR",
 - 중소·중견 기업의 **실제 공격 벡터**를 보면, 웹 트래픽을 통한 SQL 인젝션, XSS, 파일 업로드 취약점 공격 등이 대부분입니다.  
 - 이미 **WAF**가 웹 위협 방어에 특화되어 있고, **EDR**은 내부 시스템에 침투한 악성 행위를 실시간으로 차단할 수 있습니다.
 
-  👍 [WAF가 아직 없다면 지금 즉시 도입해야 합니다](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
+  👍 [WAF가 아직 없다면 지금 즉시 도입해야 합니다](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)  
   👍 [PLURA-WAF 서비스 소개](https://www.plura.io/platform/waf)
 
 ### (2) **거의 대부분 암호화 트래픽**
