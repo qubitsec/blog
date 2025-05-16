@@ -204,6 +204,36 @@ tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안"
   - 실제로는 **로그 수집 범위**와 **분석 룰 설계**가 동반되지 않으면,  
     - 아무리 고가의 SIEM을 도입해도 무용지물입니다.
 
+아래는 **(3) SIEM + AI ≠ 만능 보안 솔루션**을 기존 구조에 맞춰 추가한 예시입니다.
+**가성비 문제**, **AI 역시 사람의 룰(규칙)·전략이 필요**하다는 점을 강조했습니다.
+
+### (3) SIEM + AI ≠ 만능 보안 솔루션
+
+* 일각에서는 “**SIEM에 쌓인 모든 로그**를 **AI 엔진**에 넘기면
+  **자동으로 모든 공격**을 찾아낼 것”이라 기대합니다.
+* 그러나 **AI**라 해도 **분석할 대상**, **우선순위**, **평가 기준**을
+  **사람**이 설정해줘야 합니다.
+
+  * 무조건 모든 로그를 입력하면, **가성비**(비용 대비 효과)가 크게 떨어집니다.
+  * **의미 없는 로그**나 **정상 트래픽**이 대량으로 섞여 있으면,
+    AI도 **“어떤 이벤트가 실제 위협인지”** 정확히 판단하기 어렵습니다.
+* 결국 **AI 모델**도 **도메인 지식**(어떤 공격 패턴이 중요하며, 어떤 데이터가 의미 있는지)과
+  **체계적인 룰 설계**가 필요합니다.
+
+  * “가비지 인(입력)에는 가비지 아웃(출력)밖에 없다”는 말처럼,
+    **데이터가 엉망이면** AI 역시 제대로 된 결과를 내놓기 어렵습니다.
+
+* SIEM에 **AI 기능**을 접목한다 해도,
+
+  * **로그 수집 품질**, **분석 기준**, **운영자의 모니터링**이 뒷받침되지 않으면
+  * 궁극적으로 **사람**이 **직접 정의**하고 **최종 해석**해야 하는 문제가 남습니다.
+* 따라서 “**AI만 있으면 보안 문제가 해결된다**”는 기대 역시
+
+  * **과도한 낙관**에 불과하며,
+  * **사람 중심의 운영** 체계가 전제되지 않으면
+  * SIEM+AI도 **무용지물**이 될 수 있습니다.
+
+
 ---
 
 ## 4. 결론: SIEM 도입, 그 전에 할 일이 있다 ✅
@@ -251,9 +281,14 @@ SIEM 도입 전에 꼭 확인해야 할 항목을 간단히 정리했습니다.
 
 ### 📖 함께 읽기
 
-- [보안 로그 수집, 진짜 하고 계신가요?](https://blog.plura.io/ko/column/log-collection-reality/)  
-- [MITRE ATT&CK을 활용한 탐지 룰 설계](https://blog.plura.io/ko/column/mitre_detection_rules/)  
-- [XDR과 SIEM의 차이점은 무엇인가요?](https://blog.plura.io/ko/column/xdr_vs_siem/)  
+- [로그 분석으로 해킹 조사하기는 신화(Myth)?](https://blog.plura.io/ko/column/myth/)  
+- [Splunk 에서 요청 본문(request body) 로그 분석 알아보기](https://blog.plura.io/ko/column/splunk_request_body_analysis/)  
+- [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)  
+- [로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?](https://blog.plura.io/ko/column/log-analysis-tool-selection-guide/)
+
+### 📖 PLURA-XDR의 차별점
+- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)   
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)  
 
 > 실제 운영 환경에서 SIEM은 생각보다 **복잡**합니다.  
 > 그러나 로그 수집과 분석 체계를 **제대로** 준비한다면,  
