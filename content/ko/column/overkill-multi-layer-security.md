@@ -138,3 +138,4 @@ tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fati
 ### 📖 대표적인 낭비 제품
 - [NDR](https://blog.plura.io/ko/column/ips_ndr_needed/)
 - [IPS](https://blog.plura.io/ko/column/ips_understanding/)
+- [NAC](https://blog.plura.io/ko/tech/nac_evaluation/)
