@@ -2,7 +2,7 @@
 title: "SOAR 도입하면 뭐하나요? 자동 대응도 못하는데"
 date: 2025-05-17T00:00:01
 draft: false
-description: "SOAR는 SIEM으로부터 발생한 이벤트를 바탕으로 자동 대응을 수행하지만, SIEM 자체가 로그 수집·분석의 한계를 가지고 있다면 SOAR도 제대로 기능하기 어렵습니다. 왜 이런 일이 발생하는지, 그리고 어떻게 준비해야 하는지 정리해 봅니다."
+description: "SOAR는 SIEM으로부터 발생한 이벤트를 바탕으로 자동 대응을 수행하지만, <br> SIEM 자체가 로그 수집·분석의 한계를 가지고 있다면 SOAR도 제대로 기능하기 어렵습니다. 왜 이런 일이 발생하는지, 그리고 어떻게 준비해야 하는지 정리해 봅니다."
 featured_image: "cdn/column/why_soar_always_fails-2.png"
 tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Security", "PLURA-XDR"]
 ---
