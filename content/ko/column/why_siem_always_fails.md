@@ -40,7 +40,7 @@ tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안"
 > 일부 솔루션(WAF 등)이나 고급 로깅 기능을 통해 \*\*본문(Request/Response)\*\*을 캡처할 수 있지만,
 > **성능 저하**와 **추가 비용** 문제로 대부분의 기업에서 충분히 적용하지 못하는 현실입니다.
 
-👉 [웹을 통한 데이터유출 해킹 대응](https://blog.plura.io/ko/column/dlp/)
+👉 [웹을 통한 데이터유출 해킹 대응](https://blog.plura.io/ko/column/dlp/)  
 👉 [웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs/)
 
 ---
