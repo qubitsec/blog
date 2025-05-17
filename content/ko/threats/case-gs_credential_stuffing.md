@@ -72,4 +72,7 @@ sequenceDiagram
 
 ### 📑 참고 자료
 
+- [크리덴셜 스터핑 공격 대응하기](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)  
+- [크리덴셜 스터핑 이](https://blog.plura.io/ko/respond/credential_stuffing/)
+
 
