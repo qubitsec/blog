@@ -397,7 +397,7 @@ SIEM 도입 전에 꼭 확인해야 할 항목을 간단히 정리했습니다.
 - [로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?](https://blog.plura.io/ko/column/log-analysis-tool-selection-guide/)
 
 ### 📖 SIEM & SOAR 도입 실패 사례
-- [SKT 해킹 악성코드 BPFDoor](https://blog.plura.io/ko/respond/bpfdoor/)
+- [2025년 4월 SKT 해킹 악성코드 BPFDoor](https://blog.plura.io/ko/respond/bpfdoor/)
 - [2025년 1월 GS리테일 해킹](https://blog.plura.io/ko/threats/case-gs_credential_stuffing/)
 - [LG유플러스 고객인증 시스템 유출](https://blog.plura.io/ko/threats/case-lg_uplus_breach/)   
 - [법원행정처 전산망 해킹](https://blog.plura.io/ko/threats/case-court_breach/)
