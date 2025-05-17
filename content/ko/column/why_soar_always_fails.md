@@ -122,6 +122,10 @@ sequenceDiagram
 
 ---
 
+![SOAR, SIEM & WAF 동작 구성도](https://blog.plura.io/cdn/column/why_soar_always_fails-2.png)
+
+---
+
 ## 3. 왜 “SIEM 문제”가 곧 “SOAR 문제”인가?
 
 아래 문서에서도 강조하듯, **SIEM의 가장 큰 문제**는 “**로그 수집도 제대로 안 되고, 분석도 할 인력이 없다**”는 점이었습니다.
