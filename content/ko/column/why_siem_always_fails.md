@@ -406,6 +406,9 @@ SIEM 도입 전에 꼭 확인해야 할 항목을 간단히 정리했습니다.
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)   
 - [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)  
 
+### 🌟 PLURA-XDR의 서비스
+- [PLURA-XDR 소개](https://www.plura.io/platform/xdr)  
+
 > 실제 운영 환경에서 SIEM은 생각보다 **복잡**합니다.  
 > 그러나 로그 수집과 분석 체계를 **제대로** 준비한다면,  
 > SIEM은 **강력한 보안 인텔리전스**를 제공하는 든든한 도구가 될 수 있습니다.
