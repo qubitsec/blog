@@ -14,10 +14,10 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 그리고 현재 대부분의 SIEM 운영 환경이 *“로그 수집·분석이 불완전”*한 상태라면,
 **SOAR에서도 정확한 자동 대응을 기대하기 어렵게 되는** 것이죠.
 
-> 이번 글에서는 아래의 “SIEM, 도입하면 뭐하나요?” 문서를 참고하여,
+> 이번 글에서는 “[SIEM, 도입하면 뭐하나요?](https://blog.plura.io/ko/column/why_siem_always_fails/)” 문서를 참고하여,
 > **SOAR 도입에서 발생하는 어려움**과 그 **근본 원인**을 정리해 봅니다.
 
-![SOAR 도입의 허](https://blog.plura.io/cdn/column/why_soar_always_fails.png)
+![SOAR 도입 실패](https://blog.plura.io/cdn/column/why_soar_always_fails.png)
 
 <!--more-->
 
@@ -232,9 +232,20 @@ sequenceDiagram
 
 ### 📖 함께 읽기
 
-* [SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다면](https://blog.plura.io/ko/column/why_siem_always_fails/)
-* [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
-* [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
+- [SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다면](https://blog.plura.io/ko/column/why_siem_always_fails/)  
+- [로그 분석으로 해킹 조사하기는 신화(Myth)?](https://blog.plura.io/ko/column/myth/)  
+- [Splunk 에서 요청 본문(request body) 로그 분석 알아보기](https://blog.plura.io/ko/column/splunk_request_body_analysis/)  
+- [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)  
+- [로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?](https://blog.plura.io/ko/column/log-analysis-tool-selection-guide/)
+
+### 📖 SIEM & SOAR 도입 실패 사례  
+- [SKT 해킹 악성코드 BPFDoor](https://blog.plura.io/ko/respond/bpfdoor/)
+- [LG유플러스 고객인증 시스템 유출](https://blog.plura.io/ko/threats/case-lg_uplus_breach/)   
+- [법원행정처 전산망 해킹](https://blog.plura.io/ko/threats/case-court_breach/)
+
+### 🌟 PLURA-XDR의 차별점
+- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)   
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)  
 
 > **SOAR**를 통해 “**자동화된 보안**”을 달성하고 싶다면,
 > 먼저 **SIEM**이 “**정확하고 충분한 로그**”를 수집·분석할 수 있게
