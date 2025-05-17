@@ -17,7 +17,7 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 > 이번 글에서는 “[SIEM, 도입하면 뭐하나요?](https://blog.plura.io/ko/column/why_siem_always_fails/)” 문서를 참고하여,
 > **SOAR 도입에서 발생하는 어려움**과 그 **근본 원인**을 정리해 봅니다.
 
-![SOAR 도입 실패](https://blog.plura.io/cdn/column/why_soar_always_fails.png)
+![SOAR 도입 실패](https://blog.plura.io/cdn/column/why_soar_always_fails-2.png)
 
 <!--more-->
 
