@@ -90,7 +90,7 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 
 ---
 
-SOAR, SIEM & WAF 동작 구성도
+### SOAR, SIEM & WAF 동작 구성도
 
 ```mermaid
 sequenceDiagram
