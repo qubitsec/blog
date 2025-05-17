@@ -405,10 +405,12 @@ SIEM 도입 전에 꼭 확인해야 할 항목을 간단히 정리했습니다.
 
 ### 🌟 PLURA-XDR의 차별점
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)   
-- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)  
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
+- [데모 : 크리덴셜 스터핑 탐지 & 차단](https://www.youtube.com/watch?v=sDssT98NCg0)
 
 ### 🌟 PLURA-XDR의 서비스
 - [PLURA-XDR 소개](https://www.plura.io/platform/xdr)  
+- [PLURA-DOCS : Credential Stuffing](https://docs.plura.io/ko/fn/comm/sfilter/takeover)
 
 > 실제 운영 환경에서 SIEM은 생각보다 **매우 복잡**합니다.  
 > 그러나 로그 수집과 분석 체계를 **제대로** 준비한다면,  
