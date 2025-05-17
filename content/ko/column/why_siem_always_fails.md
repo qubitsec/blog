@@ -47,14 +47,14 @@ tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안"
 
 ### (1) SIEM에서 웹로그에 대한 공격 쿼리 검색이 가능할까요?
 
-**SIEM**을 통해 **SQL 인젝션**, **XSS** 같은 **웹 공격**을 찾으려면,
+**SIEM**을 통해 **SQL 인젝션**, **XSS**, **웹쉘" 같은 **웹 공격**을 찾으려면,
 
 * 우선 **악성 페이로드**가 들어 있는 **필드**(주로 **Request/Post Body**)를
   **수집**하고 **인덱싱**할 수 있어야 합니다.
 
 #### 왜 Request Body인가?
 
-* 대부분의 **웹 서버 액세스 로그**는 **URL, 상태 코드, 요청 헤더** 정도만 남깁니다.
+* 대부분의 **웹 서버 액세스 로그**는 **IP주소, URL, 상태 코드, 요청 헤더** 정도만 남깁니다.
 * **SQL 인젝션**은 주로 `POST`나 `PUT` 요청의 본문(Request Body)에
   “`SELECT * FROM ...`” 등 **악성 쿼리**가 포함되어 실행됩니다.
 * 그러나 일반적인 웹 서버나 SIEM 설정만으로는
@@ -235,7 +235,7 @@ tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안"
 * 실제로는 **“쿼리를 만들고, 로그를 일일이 뒤져야 하는”** 상황이 계속될 수밖에 없습니다.
 
 > **가장 중요한 교훈**: SIEM은 **수집된 데이터를 정제·쿼리**할 뿐,
-> “**어떤 로그가 악성인지**”를 **주도적으로** 판단해주진 않습니다.
+> “**어떤 로그가 악성인지**”를 **주도적으로** 판단해주진 않습니다.  
 > 이는 궁극적으로 **인력과 조직의 운영 역량**을 요구하는 문제입니다.
 
 ---
@@ -395,6 +395,7 @@ SIEM 도입 전에 꼭 확인해야 할 항목을 간단히 정리했습니다.
 - [Splunk 에서 요청 본문(request body) 로그 분석 알아보기](https://blog.plura.io/ko/column/splunk_request_body_analysis/)  
 - [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)  
 - [로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?](https://blog.plura.io/ko/column/log-analysis-tool-selection-guide/)
+- [PHP WEBSHELL 악성코드](https://blog.plura.io/ko/threats/php_webshell_malware/)
 
 ### 📖 SIEM & SOAR 도입 실패 사례
 - [2025년 4월 SKT 해킹 악성코드 BPFDoor](https://blog.plura.io/ko/respond/bpfdoor/)
@@ -409,6 +410,6 @@ SIEM 도입 전에 꼭 확인해야 할 항목을 간단히 정리했습니다.
 ### 🌟 PLURA-XDR의 서비스
 - [PLURA-XDR 소개](https://www.plura.io/platform/xdr)  
 
-> 실제 운영 환경에서 SIEM은 생각보다 **복잡**합니다.  
+> 실제 운영 환경에서 SIEM은 생각보다 **매우 복잡**합니다.  
 > 그러나 로그 수집과 분석 체계를 **제대로** 준비한다면,  
 > SIEM은 **강력한 보안 인텔리전스**를 제공하는 든든한 도구가 될 수 있습니다.
