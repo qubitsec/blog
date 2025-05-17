@@ -90,6 +90,38 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 
 ---
 
+SOAR, SIEM & WAF 동작 구성도
+
+```mermaid
+sequenceDiagram
+    participant SIEM as SIEM
+    participant SOAR as SOAR
+    participant WAF as WAF
+
+    Note over SIEM: 1. SIEM에서 이벤트(의심 로그) 탐지
+    SIEM ->> SIEM: 로그 분석 및 위협 판별
+    
+    Note over SIEM,SOAR: 2. SIEM이 SOAR에 보안 이벤트(알림) 전송
+    SIEM ->> SOAR: Suspicious Event Alert
+
+    Note over SOAR: 3. SOAR가 이벤트 분석/코릴레이션
+    SOAR ->> SOAR: Rule / Workflow 실행
+    
+    Note over SOAR,WAF: 4. SOAR가 WAF에 차단 명령
+    SOAR ->> WAF: Issue Block Request
+
+    Note over WAF: 5. WAF가 해당 트래픽 차단
+    WAF ->> WAF: Block/Drop Malicious Traffic
+    
+    Note over WAF,SOAR: 6. WAF가 차단 결과를 SOAR로 전달
+    WAF ->> SOAR: Block Confirmation
+    
+    Note over SOAR,SIEM: 7. SOAR가 차단 결과를 SIEM에 기록
+    SOAR ->> SIEM: Update Event Status
+```
+
+---
+
 ## 3. 왜 “SIEM 문제”가 곧 “SOAR 문제”인가?
 
 아래 문서에서도 강조하듯, **SIEM의 가장 큰 문제**는 “**로그 수집도 제대로 안 되고, 분석도 할 인력이 없다**”는 점이었습니다.
