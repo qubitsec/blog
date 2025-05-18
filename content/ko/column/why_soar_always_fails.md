@@ -7,7 +7,7 @@ featured_image: "cdn/column/why_soar_always_fails-2.png"
 tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Security", "PLURA-XDR"]
 ---
 
-📉 **SOAR**(Security Orchestration, Automation, and Response)는 **SIEM**(Security Information and Event Management)에서 발생한 이벤트를 받아 **자동 대응**을 수행해주는 솔루션으로 알려져 있습니다.
+📉 **SOAR**는 **SIEM**에서 발생한 이벤트를 받아 **자동 대응**을 수행해주는 솔루션으로 알려져 있습니다.
 하지만 막상 “**SOAR를 도입했는데도 자동 대응이 어렵다**”는 이야기가 꾸준히 나옵니다.
 
 가장 큰 이유는 **SOAR가 단독으로 동작**하지 않으며, **SIEM의 탐지 결과에 전적으로 의존**하기 때문입니다.
@@ -16,6 +16,9 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 
 > 이번 글에서는 “[SIEM, 도입하면 뭐하나요?](https://blog.plura.io/ko/column/why_siem_always_fails/)” 문서를 참고하여,  
 > **SOAR 도입에서 발생하는 어려움**과 그 **근본 원인**을 정리해 봅니다.
+
+* SORA: Security Orchestration, Automation, and Response
+* SIEM: Security Information and Event Management
 
 ![SOAR & SIEM & WAF 연동 구성도](https://blog.plura.io/cdn/column/why_soar_always_fails-2.png)
 
