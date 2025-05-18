@@ -87,6 +87,8 @@ tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안"
 👉 [IPS의 진화와 보안 환경의 변화](https://blog.plura.io/ko/column/ips_classification/)   
 👉 [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
 
+---
+
 ### [2] 네트워크 탐지 및 대응(NDR) 로그 수집의 한계
 
 **NDR**(Network Detection & Response)은 네트워크 트래픽을 **행위 기반**으로 분석·대응하지만, 아래 한계가 있습니다.
@@ -108,6 +110,8 @@ tags: ["SIEM", "보안운영", "오버엔지니어링", "로그분석", "보안"
    * 따라서 **IPS와 마찬가지**로, **NDR**만으론 암호화 트래픽 상세를 **SIEM**에 넘길 수 없습니다.
 
 👉 [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)  
+
+---
 
 ### [3] 웹방화벽(WAF) 로그 수집의 한계
 
