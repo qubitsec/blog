@@ -271,4 +271,4 @@ sequenceDiagram
 > 준비 없이 **SOAR**만 들여놓으면, **자동 대응**이 아니라 **자동 대란**이 될 수도 있습니다.
 
 > **[PLURA-XDR](https://www.plura.io/platform/xdr)의 자동화 플랫폼**을 도입해 보세요.    
-> SIEM, WAF, EDR과 자동 연동하여 대응하는 SOAR가 포함되어 있습니다.
+> SIEM, WAF, EDR과 연동하여 자동 대응하는 SOAR도 내장되어 있습니다.
