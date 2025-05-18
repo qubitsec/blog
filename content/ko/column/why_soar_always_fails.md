@@ -17,7 +17,7 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 > 이번 글에서는 “[SIEM, 도입하면 뭐하나요?](https://blog.plura.io/ko/column/why_siem_always_fails/)” 문서를 참고하여,  
 > **SOAR 도입에서 발생하는 어려움**과 그 **근본 원인**을 정리해 봅니다.
 
-* SORA: Security Orchestration, Automation, and Response
+* SOAR: Security Orchestration, Automation, and Response
 * SIEM: Security Information and Event Management
 
 ![SOAR & SIEM & WAF 연동 구성도](https://blog.plura.io/cdn/column/why_soar_always_fails-2.png)
@@ -46,7 +46,7 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
   * **잘못된 대상으로 차단·제재를 수행**하는 등의 문제를 일으킬 수 있습니다.
 * 즉, **SOAR**의 정확성은 곧 **SIEM 탐지 정확도**에 달려 있습니다.
 
-### (3) SIEM이 부실하면 자동 대응은 ‘그림의 떡’ 🍡
+### (3) SIEM이 부실하면 자동 대응은 ‘그림의 떡’ 
 
 * **SIEM이 불완전**하면, 탐지된 이벤트가 **부족**하거나 **신뢰도**가 낮아집니다.
 * 그런 상태에서 **SOAR**를 적용해도, “잘못된 데이터” 기반으로 자동화를 시도하기 때문에
@@ -73,7 +73,7 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 * 따라서 SIEM이 제대로 **정탐**(True Positive)을 못 해주면,
   SOAR가 **자동 차단·대응**할 근거도 얻을 수 없습니다.
 
-### (2) 공격 시나리오 룰의 미비
+### (2) 공격 시나리오 룰의 미비 → 룰 없이 자동 대응은 없다
 
 * **SOAR**가 “이 이벤트는 위험하니 자동 대응하자”라고 판단하려면,
 
@@ -82,7 +82,7 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
   완성도가 낮아 **오탐**과 **정탐** 구분이 어렵습니다.
 * “**룰이나 탐지 시그니처가 제대로 없으면, SOAR가 할 일도 없다**”는 말이 나오는 이유입니다.
 
-### (3) 운영 인력·프로세스 부재
+### (3) 운영 인력·프로세스 부재 → 자동화도 결국 사람 손이 필요
 
 * **자동화**라는 환상과 달리, **SOAR** 도입에도
 
