@@ -239,24 +239,36 @@ sequenceDiagram
 
 ### 📖 함께 읽기
 
-- [SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다면](https://blog.plura.io/ko/column/why_siem_always_fails/)  
 - [로그 분석으로 해킹 조사하기는 신화(Myth)?](https://blog.plura.io/ko/column/myth/)  
 - [Splunk 에서 요청 본문(request body) 로그 분석 알아보기](https://blog.plura.io/ko/column/splunk_request_body_analysis/)  
 - [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)  
 - [로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?](https://blog.plura.io/ko/column/log-analysis-tool-selection-guide/)
+- [PHP WEBSHELL 악성코드](https://blog.plura.io/ko/threats/php_webshell_malware/)
 
-### 📖 SIEM & SOAR 도입 실패 사례  
+### 📖 SIEM & SOAR 도입 실패 사례
+
 - [2025년 4월 SKT 해킹 악성코드 BPFDoor](https://blog.plura.io/ko/respond/bpfdoor/)
 - [2025년 1월 GS리테일 해킹](https://blog.plura.io/ko/threats/case-gs_credential_stuffing/)
 - [LG유플러스 고객인증 시스템 유출](https://blog.plura.io/ko/threats/case-lg_uplus_breach/)   
 - [법원행정처 전산망 해킹](https://blog.plura.io/ko/threats/case-court_breach/)
 
 ### 🌟 PLURA-XDR의 차별점
+
+- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)   
-- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)  
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
+- [데모 : 크리덴셜 스터핑 탐지 & 차단](https://www.youtube.com/watch?v=sDssT98NCg0)
+
+### 🌟 PLURA-XDR의 서비스
+
+- [PLURA-XDR 소개](https://www.plura.io/platform/xdr)  
+- [PLURA-DOCS : Credential Stuffing](https://docs.plura.io/ko/fn/comm/sfilter/takeover)
 
 > **SOAR**를 통해 “**자동화된 보안**”을 달성하고 싶다면,
 > 먼저 **SIEM**이 “**정확하고 충분한 로그**”를 수집·분석할 수 있게
 > **체계**를 갖추는 것이 **가장 중요**합니다.  
 > **자동화**의 기본은 **신뢰할 만한 탐지**이기 때문입니다.
 > 준비 없이 **SOAR**만 들여놓으면, **자동 대응**이 아니라 **자동 대란**이 될 수도 있습니다.
+
+> **[PLURA-XDR](https://www.plura.io/platform/xdr)의 자동화 플랫폼**을 도입해 보세요.    
+> SIEM, WAF, EDR과 자동 연동하여 대응하는 SOAR가 포함되어 있습니다.
