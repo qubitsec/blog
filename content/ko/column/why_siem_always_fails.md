@@ -516,6 +516,7 @@ SIEM 도입 전에 꼭 확인해야 할 항목을 간단히 정리했습니다.
 - [법원행정처 전산망 해킹](https://blog.plura.io/ko/threats/case-court_breach/)
 
 ### 🌟 PLURA-XDR의 차별점
+- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)   
 - [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
 - [데모 : 크리덴셜 스터핑 탐지 & 차단](https://www.youtube.com/watch?v=sDssT98NCg0)
