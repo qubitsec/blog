@@ -1,7 +1,7 @@
 ---
 date: 2025-01-31
 draft: false
-title: "얼마나 많은 사용자가 온프레미스 환경에서 인라인 WAF를 사용할까?"
+title: "웹방화벽(WAF)에 대한 이해"
 description: "실제로 온프레미스 환경에서 인라인 WAF는 얼마나 많이 사용되고 있을까요?"
 featured_image: "cdn/column/waf-img.png"
 tags: ["PLURA-WAF", "웹방화벽", "인라인", "리버스 프록시", "보안", "PLURA-XDR"]
