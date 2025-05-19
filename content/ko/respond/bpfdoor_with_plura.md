@@ -134,7 +134,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ![환경변수 분석](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_07.png)
 
-    - 의심 세션 및 포트 사용 분석: 비표준 포트 사용 (예: 42391~43390, 8000)
+    - 의심 세션 및 포트 사용 분석: 비표준 포트 사용(예: 42391~43390, 8000)
 
 ![의심 세션 및 포트 사용 분석](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_08.png)
 
