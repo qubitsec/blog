@@ -82,7 +82,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ![BPFDoor 파일 실행 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_04.png)
 
-  - 실행된 파일: "`/dev/shm/kdmtmpflush`"
+  - 실행된 파일: /dev/shm/kdmtmpflush
 
   - 분석: 파일이 루트 권한으로 실행됨. execve 시스템 호출로 프로세스 생성
 
