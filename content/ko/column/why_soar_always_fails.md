@@ -20,9 +20,8 @@ tags: ["SOAR", "SIEM", "보안운영", "오버엔지니어링", "보안", "Secur
 * SOAR: Security Orchestration, Automation, and Response
 * SIEM: Security Information and Event Management
 
-![why_soar_always_fails](https://blog.plura.io/cdn/column/why_soar_always_fails_00.png)
-
 <!--more-->
+![why_soar_always_fails](https://blog.plura.io/cdn/column/why_soar_always_fails_00.png)
 
 ---
 
