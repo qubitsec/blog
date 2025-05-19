@@ -88,11 +88,11 @@ Windows Enterprise Network에 대한 APT 공격의 TTPs(tactics, techniques, pro
   - TA0040 임팩트 (Impact) 공격 목표의 가용성과 무결성을 손상시키기 위한 행동
 
 * Techniques (205개)
-  - **초기 접근 단계(Initial Access)** Valid Account, Exploit Public-Facing Application, Supply Chain Compromise, Drive-By Compromise, SpearPhishing Link / Attachment
-  - **실행(Execution)** Command-Line Interface, PowerShell Scripting, WMI, Graphical User Interface, Rundll32, Scheduled Task, Service Execution
-  - **지속(Persistence)** Valid Accounts, Web Shell, Registry Run Key / Startup Folder, Scheduled Task, New Service, Create Account, Account Manipulation
-  - **방어 회피(Defense Evasion)** Valid Accounts, Scripting, Masquerading, Disabling Security Tools, File Deletion, Obfuscated Files or Information, Process Injection, Rundll32
-  - **내부 확산(Lateral Movement)** Windows Admin Shares, Remote File Copy, Remote Desktop Protocol, Remote Service, WMI
+  - 초기 접근 단계(Initial Access) Valid Account, Exploit Public-Facing Application, Supply Chain Compromise, Drive-By Compromise, SpearPhishing Link / Attachment
+  - 실행(Execution) Command-Line Interface, PowerShell Scripting, WMI, Graphical User Interface, Rundll32, Scheduled Task, Service Execution
+  - 지속(Persistence) Valid Accounts, Web Shell, Registry Run Key / Startup Folder, Scheduled Task, New Service, Create Account, Account Manipulation
+  - 방어 회피(Defense Evasion) Valid Accounts, Scripting, Masquerading, Disabling Security Tools, File Deletion, Obfuscated Files or Information, Process Injection, Rundll32
+  - 내부 확산(Lateral Movement) Windows Admin Shares, Remote File Copy, Remote Desktop Protocol, Remote Service, WMI
 
 ## PLURA 해킹 탐지 시연 영상
 ▶️[APT29 해킹 그룹](https://www.youtube.com/watch?v=fqLpY4NEDXc)
