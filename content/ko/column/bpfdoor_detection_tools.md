@@ -253,4 +253,4 @@ ls -l /proc/*/exe 2>/dev/null | grep '(deleted)' | grep -E '/dev/shm|/tmp'
 ### 🌟 PLURA-XDR의 서비스
 
 - [PLURA-XDR 소개](https://www.plura.io/platform/xdr)
-- [PLURA-DOCS : Credential Stuffing](https://docs.plura.io/ko/fn/comm/sfilter/takeover)
+
