@@ -28,7 +28,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ![BPFDoor 파일 삭제 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_01.png)
 
-  - 명령어: /bin/rm -f /dev/shm/kdmtmpflush
+  - 명령어: "`/bin/rm -f /dev/shm/kdmtmpflush`"
 
   - 분석: 임시 파일 시스템에 위치한 악성 실행 파일이 실행 후 곧바로 삭제됨
 
@@ -64,7 +64,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ![BPFDoor 파일 복제 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_03.png)
 
-  - 명령어: cp ./bpfdoor /dev/shm/kdmtmpflush
+  - 명령어: "`cp ./bpfdoor /dev/shm/kdmtmpflush`"
 
   - 분석: 실제 악성 실행 파일이 /dev/shm 경로로 복제됨
 
@@ -82,7 +82,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ![BPFDoor 파일 실행 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_04.png)
 
-  - 실행된 파일: /dev/shm/kdmtmpflush
+  - 실행된 파일: "`/dev/shm/kdmtmpflush`"
 
   - 분석: 파일이 루트 권한으로 실행됨. execve 시스템 호출로 프로세스 생성
 
@@ -100,7 +100,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ![BPFDoor 초기화 실행 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_05.png)
 
-  - 실행 명령: /dev/shm/kdmtmpflush --init
+  - 실행 명령: "`/dev/shm/kdmtmpflush --init`"
 
   - 분석: 파일 삭제와 동시에 메모리 상 실행 유지를 위한 초기화
 
