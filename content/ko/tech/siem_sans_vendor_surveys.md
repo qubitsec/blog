@@ -46,7 +46,7 @@ tags: ["SIEM", "SOC", "Security", "Survey", "Cybersecurity"]
 
 3. **IBM Security**
    * **‘Cost of a Data Breach Report’**(Ponemon Institute와 협업), **QRadar 관련 백서**에서 SIEM 활용 및 **위협 탐지** 전반에 관한 데이터를 제공합니다.
-   * 구체적인 “도입 실패율”보다는 **데이터 침해 비용**, **탐지 시간(MTTD)**, **대응 시간(MTTR)** 등 **보안 지표**에 초점을 맞춘 내용이 많습니다.
+   * **데이터 침해 비용**, **탐지 시간(MTTD)**, **대응 시간(MTTR)** 등 **보안 지표**에 초점을 맞춘 내용이 많습니다.
 
 4. **Elastic (Elasticsearch 기반 SIEM)**
    * **‘Elastic Security Lab 보고서’**, **‘Elastic Security 현황’** 등을 통해 SIEM/Endpoint 통합 사례, 위협 헌팅 시나리오, **데이터 볼륨 증가**에 따른 인프라 부담 등을 다룹니다.
