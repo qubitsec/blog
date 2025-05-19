@@ -12,7 +12,7 @@ tags: ["SIEM", "SOC", "Security", "Survey", "Cybersecurity"]
 ### (1) SANS 2021/2022 SOC Survey 개요
 
 <!--more-->
-![Why PLURA-XDR](https://blog.plura.io/cdn/column/siem_sans_vendor_surveys.png)
+![About SIEM](https://blog.plura.io/cdn/column/siem_sans_vendor_surveys.png)
 
 * **SANS 2021 SOC Survey**
   * SANS가 매년 진행하는 **SOC**(보안관제센터) 운영 실태 조사로, SOC 팀의 규모, 기술 스택, 업무 프로세스, 운영 애로사항 등을 분석합니다.
