@@ -3,11 +3,11 @@ title: "SIEM 도입 후 운영 어려움에 관한 주요 설문 조사 & 보고
 date: 2025-05-17
 draft: true
 description: "SANS SOC Survey, 벤더 보고서 등을 통해 살펴본 SIEM 운영 어려움(알람 과다, 인력 부족 등)에 관한 주요 통계와 트렌드 정리"
-featured_image: "cdn/column/SIEM_SANS_Vendor_Surveys.png"
+featured_image: "cdn/column/siem_sans_vendor_surveys.png"
 tags: ["SIEM", "SOC", "Security", "Survey", "Cybersecurity"]
 ---
 
-![Survey](https://blog.plura.io/cdn/column/SIEM_SANS_Vendor_Surveys.png)
+![Survey](https://blog.plura.io/cdn/column/siem_sans_vendor_surveys.png)
 
 <!--more-->
 
