@@ -25,7 +25,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
   - BPFDoor는 실행 후 흔적을 감추기 위해 자신의 실행 파일을 삭제합니다. 이 행위는 메모리 기반 실행(backdoor in memory)을 위한 사전 작업입니다.
 
 - 탐지 로그
-![bpfdoor_with_plura_01](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_01.png)
+![BPFDoor 파일 삭제 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_01.png)
 
   - 명령어: /bin/rm -f /dev/shm/kdmtmpflush
 
@@ -42,6 +42,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
   - BPFDoor는 실행 가능하도록 chmod 명령을 통해 파일에 실행 권한을 부여합니다.
 
 - 탐지 로그
+![BPFDoor 파일 권한 변경 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_02.png)
 
   - 명령어: chmod 755 /dev/shm/kdmtmpflush
 
@@ -58,6 +59,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
   - BPFDoor는 시스템 내에 복제되어 실행되며, 경로 또는 이름을 위장할 수 있습니다.
 
 - 탐지 로그
+![BPFDoor 파일 복제 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_03.png)
 
   - 명령어: cp ./bpfdoor /dev/shm/kdmtmpflush
 
@@ -74,6 +76,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
   - 파일이 실행되면서 실제로 백도어 기능이 활성화됩니다. execve 시스템 호출이 발생하며 실행 파일 경로가 확인됩니다.
 
 - 탐지 로그
+![BPFDoor 파일 실행 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_04.png)
 
   - 실행된 파일: /dev/shm/kdmtmpflush
 
@@ -90,6 +93,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
   - BPFDoor는 --init 플래그를 통해 메모리 기반으로 초기화 실행됩니다. 이는 파일 삭제 후에도 동작을 유지하게 해주는 핵심 기능입니다.
 
 - 탐지 로그
+![BPFDoor 초기화 실행 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_05.png)
 
   - 실행 명령: /dev/shm/kdmtmpflush --init
 
@@ -106,6 +110,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
   - 실행된 BPFDoor는 외부 명령 수신을 위해 socket() 시스템 호출을 사용하여 통신용 소켓을 생성합니다.
 
 - 탐지 로그
+![BPFDoor 소켓 생성 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_06.png)
 
   - 위장 comm 필드: Hex → /sbin/udevd -d
 
@@ -113,15 +118,17 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
   - 보안 의미: 백도어 통신 시작점, 위장 실행 감지 필요
 
-🔥BPFDoor 소켓이 탐지됐을 경우
+- 🔥BPFDoor 소켓이 탐지됐을 경우
 
-🔌 포렌식 기반 심층 분석
+  - 🔌 포렌식 기반 심층 분석
 
-PLURA는 이상 행위가 탐지된 이후, 포렌식 기능을 통해 다음을 심층 분석합니다:
+    - PLURA는 이상 행위가 탐지된 이후, 포렌식 기능을 통해 다음을 심층 분석합니다:
 
-환경변수 분석: 은닉된 악성 환경변수 노출 여부 파악
+    - 환경변수 분석: 은닉된 악성 환경변수 노출 여부 파악
+![환경변수 분석](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_07.png)
 
-의심 세션 및 포트 사용 분석: 비표준 포트 사용 (예: 42391~43390, 8000)
+    - 의심 세션 및 포트 사용 분석: 비표준 포트 사용 (예: 42391~43390, 8000)
+![의심 세션 및 포트 사용 분석](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_08.png)
 
 ---
 
@@ -132,6 +139,7 @@ PLURA는 이상 행위가 탐지된 이후, 포렌식 기능을 통해 다음을
   - BPFDoor는 공격자의 트래픽을 정상적으로 수신하기 위해 시스템 방화벽 규칙을 우회하거나 제거합니다.
 
 - 탐지 로그
+![iptables 명령어를 통한 방화벽 설정 변경 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_09.png)
 
   - 행위: NAT 테이블의 규칙 제거 (nft_unregister_rule)
 
