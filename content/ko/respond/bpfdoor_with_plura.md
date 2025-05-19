@@ -46,7 +46,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ![BPFDoor 파일 권한 변경 탐지](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_02.png)
 
-  - 명령어: chmod 755 /dev/shm/kdmtmpflush
+  - 명령어: "`chmod 755 /dev/shm/kdmtmpflush`"
 
   - 분석: 파일 실행을 위한 권한 변경으로, 공격 준비 단계에 해당
 
