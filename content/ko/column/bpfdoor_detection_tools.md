@@ -1,6 +1,6 @@
 ---
 title: "BPFDoor 악성코드 탐지 도구 비교 분석"
-date: 2025-05-19T00:02:00
+date: 2025-05-20
 draft: false
 description: "BPFDoor는 은밀하게 리눅스 시스템을 침투하는 백도어입니다. KISA에서 제공한 공식 점검 가이드를 기반으로 각 도구의 탐지 범위를 체크리스트 기준 10개 항목으로 비교하고, 추천 조합을 제안합니다."
 featured_image: "cdn/column/bpfdoor_detection_tools.png"
