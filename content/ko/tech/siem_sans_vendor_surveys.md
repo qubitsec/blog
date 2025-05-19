@@ -7,9 +7,6 @@ featured_image: "cdn/column/siem_sans_vendor_surveys.png"
 tags: ["SIEM", "SOC", "Security", "Survey", "Cybersecurity"]
 ---
 
-<!--more-->
-![Survey](https://blog.plura.io/cdn/column/siem_sans_vendor_surveys.png)
-
 ## 1. **SANS Institute 설문조사 & 보고서**
 
 ### (1) SANS 2021/2022 SOC Survey 개요
@@ -24,6 +21,8 @@ tags: ["SIEM", "SOC", "Security", "Survey", "Cybersecurity"]
   * 2021년과 유사한 포맷으로 진행되었으며, **클라우드 환경** 및 **원격근무**가 늘어난 뒤 SOC가 어떻게 변화하고 있는지를 다룹니다.
   * SIEM의 역할 변화(클라우드 로그 통합, XDR 연계 등)와 함께, ‘인력 부족’과 ‘툴 간 연동 문제’가 여전히 **최대 난관**이라는 설문 결과가 나타납니다.
   * 구체적인 설문 통계(예: “응답자 중 몇 %가 SIEM 알람 노이즈 문제를 호소한다”)는 보고서에 수록되어 있으므로 필요 시 **원문** 참조가 필요합니다.
+
+<!--more-->
 
 #### 참고 링크
 
