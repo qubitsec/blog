@@ -1,6 +1,6 @@
 ---
 title: "PLURA를 활용한 BPFDoor 탐지: Audit 로그와 포렌식 기반 대응"
-date: 2025-05-19
+date: 2025-05-19T00:01:00
 draft: false
 description: "BPFDoor는 은밀하게 리눅스 시스템을 침투하는 백도어입니다. PLURA는 audit 로그와 포렌식 분석을 통해 그 행위를 단계별로 식별하고 탐지합니다."
 featured_image: "cdn/respond/bpfdoor_with_plura.png"
