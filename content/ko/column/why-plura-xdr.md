@@ -60,6 +60,12 @@ tags: ["보안", "PLURA-XDR", "Security"]
 - [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
 - [NAC 도입이 필요한가요?](https://blog.plura.io/ko/tech/nac_evaluation/)
   
+#### SKT 해킹에 적용해 보
+
+- [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?]()
+- [PLURA를 활용한 BPFDoor 탐지](https://blog.plura.io/ko/respond/bpfdoor_with_plura/)
+- [BPFDoor 악성코드 탐지 도구 비교 분석](https://blog.plura.io/ko/column/bpfdoor_detection_tools/)
+
 #### PLURA-XDR 철학 및 소개
 
 - [PLURA-XDR 서비스 이해하기](https://w.plura.io/philosophy/ko/)
