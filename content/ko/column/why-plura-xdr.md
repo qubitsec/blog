@@ -1,6 +1,6 @@
 ---
 title: "해킹과 싸우는 지금, 당신을 응원합니다."
-date: 2025-5-20
+date: 2025-05-20
 draft: false
 description: "기본 원칙에 충실한 보안 체계를 통해 보이지 않는 위협까지 대응하는 PLURA-XDR의 필요성을 알아봅니다."
 featured_image: "cdn/column/why-plura-xdr.png"
