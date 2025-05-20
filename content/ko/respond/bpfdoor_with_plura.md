@@ -170,3 +170,10 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 BPFDoor는 고도로 은밀하고 정교한 리눅스 백도어이지만, PLURA는 다양한 행위 기반 탐지 및 포렌식 분석을 통해 그 위협을 실시간으로 식별하고 대응할 수 있습니다.
 
 리눅스 서버의 보안성을 강화하고, APT 공격에 대비하기 위해 PLURA를 통한 지속적인 모니터링과 탐지가 필요합니다.
+
+### 📖 함께 읽기
+* [리눅스에서도 Sysmon을 사용해야 하는 이유!](https://blog.plura.io/ko/respond/linux_sysmon/)
+* [PLURA에서 Microsoft Defender Antivirus 로그 확인하기](https://blog.plura.io/ko/respond/plura-microsoft-defender-logs/)
+* [Process Hollowing: 공격 기법과 탐지 전략](https://blog.plura.io/ko/respond/process_hollowing/)
+* [마이터 어택 관점에서 Emotet (이모텟) 탐지하기](https://blog.plura.io/ko/respond/detecting-emotet-with-mitre-attck/)
+* [RANSOMWARE 상관 분석 필터](https://blog.plura.io/ko/respond/ransomeware_correlation_filter/)
