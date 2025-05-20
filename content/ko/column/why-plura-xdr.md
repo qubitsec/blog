@@ -62,7 +62,7 @@ tags: ["보안", "PLURA-XDR", "Security"]
   
 #### SKT 해킹에 적용해 보기
 
-- [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?]()
+- [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)
 - [PLURA를 활용한 BPFDoor 탐지](https://blog.plura.io/ko/respond/bpfdoor_with_plura/)
 - [BPFDoor 악성코드 탐지 도구 비교 분석](https://blog.plura.io/ko/column/bpfdoor_detection_tools/)
 
