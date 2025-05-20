@@ -56,6 +56,9 @@ tags: ["보안", "PLURA-XDR", "Security"]
 
 - [SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다면](https://blog.plura.io/ko/column/why_siem_always_fails/)
 - [SOAR 도입하면 뭐하나요? 자동 대응도 못하는데](https://blog.plura.io/ko/column/why_soar_always_fails/)
+- [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+- [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
+- [NAC 도입이 필요한가요?](https://blog.plura.io/ko/tech/nac_evaluation/)
   
 #### PLURA-XDR 철학 및 소개
 
