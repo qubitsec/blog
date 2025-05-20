@@ -99,19 +99,17 @@ tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 
 ---
 
 ### 📖 함께 읽기
-* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)  
-* [WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)  
-* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)  
-
-* [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
-* [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
-
-* [과도한 다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)  
+* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+* [WAF vs IPS vs UTM 비교하여 웹 공격 최상의 제품 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+* [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)
+* [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
+* [과도한 다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)
 
 ---
 
 ### 📑 참고 자료
-* [IBM Cost of a Data Breach Report 2024](https://www.ibm.com/reports/data-breach)  
-* [A Peek Behind the BPFDoor — Elastic Security Labs](https://www.elastic.co/security-labs/a-peek-behind-the-bpfdoor)  
-* [Symbiote: A New, Nearly-Impossible-to-Detect Linux Threat — BlackBerry & Intezer](https://blogs.blackberry.com/en/2022/06/symbiote-a-new-nearly-impossible-to-detect-linux-threat)  
-* [LummaC2 Revisited: What Makes This Stealer Stealthier and More Lethal — SpyCloud](https://spycloud.com/blog/lummac2-malware-stealthier-capabilities/)  
+* [IBM Cost of a Data Breach Report 2024](https://www.ibm.com/reports/data-breach)
+* [A Peek Behind the BPFDoor — Elastic Security Labs](https://www.elastic.co/security-labs/a-peek-behind-the-bpfdoor)
+* [Symbiote: A New, Nearly-Impossible-to-Detect Linux Threat — BlackBerry & Intezer](https://blogs.blackberry.com/en/2022/06/symbiote-a-new-nearly-impossible-to-detect-linux-threat)
+* [LummaC2 Revisited: What Makes This Stealer Stealthier and More Lethal — SpyCloud](https://spycloud.com/blog/lummac2-malware-stealthier-capabilities/)
