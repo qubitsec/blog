@@ -17,7 +17,7 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 ![bpfdoor_with_plura](https://blog.plura.io/cdn/respond/bpfdoor_with_plura.png)
 
 
-❗**BPFDoor 공격은 기본적으로 일반 로그에 거의 남지 않습니다.** **이를 추적하기 위해서는 Audit 로그 설정이 필수적입니다.**
+❗**BPFDoor 공격은 기본적으로 일반 로그에 거의 남지 않습니다.** **이를 추적하기 위해서는 Audit 로그 설정이 필수입니다.**
 
 ---
 
