@@ -11,9 +11,6 @@ tags: ["SIEM", "SOC", "Security", "Survey", "Cybersecurity"]
 
 ### (1) SANS 2021/2022 SOC Survey 개요
 
-<!--more-->
-![About SIEM](https://blog.plura.io/cdn/column/siem_sans_vendor_surveys.png)
-
 * **SANS 2021 SOC Survey**
   * SANS가 매년 진행하는 **SOC**(보안관제센터) 운영 실태 조사로, SOC 팀의 규모, 기술 스택, 업무 프로세스, 운영 애로사항 등을 분석합니다.
   * **SIEM 활용** 관련 내용도 포함되며, “SOC에서 가장 많이 사용하는 툴”, “이벤트 처리량과 알람 우선순위 설정 어려움” 등이 주로 언급됩니다.
