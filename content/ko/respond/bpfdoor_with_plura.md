@@ -130,6 +130,10 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
     - PLURA는 이상 행위가 탐지된 이후, 포렌식 기능을 통해 다음을 심층 분석합니다:
 
+    - 매직바이트 분석: BPFDoor와 연관된 고유 시그니처 검색(21139, 29269, 960051513, 36204, 40783)
+
+![포렌식_매직바이트](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_10.png)
+
     - 환경변수 분석: 은닉된 악성 환경변수 노출 여부 파악
 
 ![환경변수 분석](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_07.png)
