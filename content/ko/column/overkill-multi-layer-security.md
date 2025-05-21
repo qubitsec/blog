@@ -139,3 +139,5 @@ tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fati
 - [NDR](https://blog.plura.io/ko/column/ips_ndr_needed/)
 - [IPS](https://blog.plura.io/ko/column/ips_understanding/)
 - [NAC](https://blog.plura.io/ko/tech/nac_evaluation/)
+- [SIEM](https://blog.plura.io/ko/column/why_siem_always_fails/)
+- [SOAR](https://blog.plura.io/ko/column/why_soar_always_fails/)
