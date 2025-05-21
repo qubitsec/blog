@@ -165,6 +165,26 @@ tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "�
 
 ---
 
+### 🛡️PLURA EDR 대응 필터
+
+PLURA는 탐지에 그치지 않고, EDR 대응 필터를 통해 BPFDoor 프로세스를 실시간으로 차단하고 강제 종료할 수 있습니다.
+
+- EDR 필터 적용 전
+
+  ![EDR 필터 적용 전](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_11.png)
+
+- EDR 필터 적용 후
+
+  ![EDR 필터 적용 후](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_12.png)
+
+BPFDoor 프로세스가 실행되면, PLURA는 이를 즉시 탐지하고 해당 프로세스를 자동으로 차단 및 종료합니다.
+이로 인해 리버스 쉘 연결 시도는 실패하며, 백도어는 정상적으로 작동하지 못합니다.
+결과적으로 공격자는 후속 명령이나 통신을 전혀 수행할 수 없게 됩니다.
+
+![BPFDoor 소켓 차단 필터](https://blog.plura.io/cdn/respond/bpfdoor_with_plura_13.png)
+
+---
+
 ### ✅ 결론
 
 BPFDoor는 고도로 은밀하고 정교한 리눅스 백도어이지만, PLURA는 다양한 행위 기반 탐지 및 포렌식 분석을 통해 그 위협을 실시간으로 식별하고 대응할 수 있습니다.
