@@ -203,6 +203,7 @@ sequenceDiagram
 
 ### 📺 함께 시청하기
 * [BPFDoor 공격, 어떻게 침투하는가? | PLURA 실시간 탐지 시연](https://www.youtube.com/watch?v=bzGv1AwHy9k)
+* [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
 
 ### 📖 함께 읽기
 * [SKT 해킹 악성코드 BPFDoor 분석 및 탐지 시연 영상 (PLURA-XDR 대응 전략 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
