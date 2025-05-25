@@ -253,6 +253,9 @@ ls -l /proc/*/exe 2>/dev/null | grep '(deleted)' | grep -E '/dev/shm|/tmp'
 - [**SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법**](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
 - [**SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다**](https://blog.plura.io/ko/column/why_siem_always_fails/)
 
+### 📺 함께 시청하기
+- [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
+
 ### 🌟 PLURA-XDR의 서비스
 
 - [PLURA-XDR 소개](https://www.plura.io/platform/xdr)
