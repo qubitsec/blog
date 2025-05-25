@@ -66,6 +66,9 @@ tags: ["보안", "PLURA-XDR", "Security"]
 - [PLURA를 활용한 BPFDoor 탐지](https://blog.plura.io/ko/respond/bpfdoor_with_plura/)
 - [BPFDoor 악성코드 탐지 도구 비교 분석](https://blog.plura.io/ko/column/bpfdoor_detection_tools/)
 
+### 📺 함께 시청하기
+- [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
+
 #### PLURA-XDR 철학 및 소개
 
 - [PLURA-XDR 서비스 이해하기](https://w.plura.io/philosophy/ko/)
