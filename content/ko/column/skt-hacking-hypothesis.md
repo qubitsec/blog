@@ -486,7 +486,7 @@ BPFDoor는 `scp`, `sftp` 등과 같은 **비 C2 프로토콜 기반의 전송 �
 ---
 
 ### 📺 함께 시청하기
-* [BPFDoor 공격, 어떻게 침투하는가? | PLURA 실시간 탐지 시연](https://www.youtube.com/watch?v=bzGv1AwHy9k)
+- [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
 
 ### 📖 함께 읽기
 * [SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지](https://blog.plura.io/ko/column/leak_of_skt_usim/)  
