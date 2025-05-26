@@ -4,7 +4,7 @@ date: 2025-05-02
 draft: false
 description: "2025년 4월 발생한 SKT 유심 정보 대규모 유출 사건의 원인과 피해 규모, 그리고 현실적인 대응 방법까지 쉽게 정리했습니다"
 featured_image: "cdn/column/skt_usim.png"
-tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPFDoor", "APT 공격", "PLURA-XDR", "개인정보 유출"]
+tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPFDoor", "APT 공격", "PLURA-XDR", "개인정보 유출", "시연", "데모", "demo"]
 ---
 
 
@@ -79,6 +79,7 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPF
 
 ### 📺 함께 시청하기
 * [BPFDoor 공격, 어떻게 침투하는가? | PLURA 실시간 탐지 시연](https://www.youtube.com/watch?v=bzGv1AwHy9k)
+* [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
 
 ### 📖 함께 읽기
 * [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
