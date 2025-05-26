@@ -4,7 +4,7 @@ date: 2025-05-20
 draft: false
 description: "BPFDoor는 은밀하게 리눅스 시스템을 침투하는 백도어입니다. PLURA는 audit 로그와 포렌식 분석을 통해 그 행위를 단계별로 식별하고 탐지합니다."
 featured_image: "cdn/respond/bpfdoor_with_plura.png"
-tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "침해사고대응", "소켓탐지" "시연", "데모", "demo"]
+tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "침해사고대응", "소켓탐지", "시연", "데모", "demo"]
 ---
 
 ## 🔍 PLURA로 BPFDoor 공격 탐지하기
