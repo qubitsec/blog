@@ -4,7 +4,7 @@ date: 2025-05-20
 draft: false
 description: "기본 원칙에 충실한 보안 체계를 통해 보이지 않는 위협까지 대응하는 PLURA-XDR의 필요성을 알아봅니다."
 featured_image: "cdn/column/why-plura-xdr.png"
-tags: ["보안", "PLURA-XDR", "Security"]
+tags: ["보안", "PLURA-XDR", "Security", "시연", "데모", "demo"]
 ---
 
 ## 🛡️ 피할 수도, 물러설 수도 없습니다. 오늘도 사이버 위협은 한 치의 틈을 노립니다
