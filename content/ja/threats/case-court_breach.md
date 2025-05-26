@@ -3,14 +3,14 @@ title: "裁判行政処 電算網ハッキングシナリオ"
 date: 2025-05-01
 draft: false
 description: "司法部の電算網がハッキングされ、少なくとも17,998人の個人情報が流出した事件の概要と攻撃手法を確認します。"
-featured_image: "cdn/threats/case-court_breach.png"
+featured_image: "cdn/threats/case-court_breach_01.png"
 tags: ["裁判行政処", "データ漏洩", "セキュリティ事故", "個人情報流出", "国家機関ハッキング", "侵入テスト"]
 ---
 
 司法部の電算網が**北朝鮮のハッキング組織**「ラザルス」と推定される集団の攻撃を受け、**少なくとも17,998人**の個人情報が流出しました。  
 **内部・外部ネットワーク間の「ポート」（ネットワーク通信経路）の開放**と**不十分なアカウント・パスワード管理**などのセキュリティ脆弱性を悪用し、合計で**1,014GB**におよぶ大量のデータが外部に流出したとされています。
 
-![裁判行政処 電算網ハッキング](https://blog.plura.io/cdn/threats/case-court_breach.png)
+![裁判行政処 電算網ハッキング](https://blog.plura.io/cdn/threats/case-court_breach_01.png)
 
 <!--more-->
 ---
