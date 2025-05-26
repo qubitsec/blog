@@ -3,7 +3,7 @@ title: "BPFDoor マルウェア検知ツール比較分析"
 date: 2025-05-20
 draft: false
 description: "BPFDoorは密かにLinuxシステムに侵入するバックドアです。KISAが提供する公式チェックガイドに基づき、各ツールの検知範囲をチェックリスト基準の10項目で比較し、推奨される組み合わせを提案します。"
-featured_image: "cdn/column/bpfdoor_detection_tools.png"
+featured_image: "cdn/column/bpfdoor_detection_tools_02.png"
 tags: ["BPFDoor", "Linuxバックドア", "フォレンジック", "Auditログ", "PLURA", "インシデント対応", "ソケット検知", "デモ", "demo"]
 ---
 
@@ -18,7 +18,7 @@ tags: ["BPFDoor", "Linuxバックドア", "フォレンジック", "Auditログ"
 本記事では、**KISAが提供する公式チェックガイド**に基づき、各ツールの検知範囲を**チェックリスト基準の10項目**で比較し、推奨される組み合わせを提案します。
 
 <!--more-->
-![bpfdoor_detection_tools](https://blog.plura.io/cdn/column/bpfdoor_detection_tools.png)
+![bpfdoor_detection_tools](https://blog.plura.io/cdn/column/bpfdoor_detection_tools_02.png)
 
 ---
 
