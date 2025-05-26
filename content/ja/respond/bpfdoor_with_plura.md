@@ -198,4 +198,3 @@ Linuxサーバーのセキュリティを強化し、APT攻撃に備えるため
 * [PLURAでMicrosoft Defender Antivirusログを確認する](https://blog.plura.io/ja/respond/plura-microsoft-defender-logs/)
 * [Process Hollowing：攻撃手法と検出戦略](https://blog.plura.io/ja/respond/process_hollowing/)
 * [MITRE ATT&CKの視点でEmotet（エモテット）を検出する](https://blog.plura.io/ja/respond/detecting-emotet-with-mitre-attck/)
-* [RANSOMWARE相関分析フィルター](https://blog.plura.io/ja/respond/ransomeware_correlation_filter/)
