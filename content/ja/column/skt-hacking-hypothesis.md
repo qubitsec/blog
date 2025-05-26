@@ -3,7 +3,7 @@ title: "SKTハッキング仮説：USIMデータの窃取とBPFDoorの設置、�
 date: 2025-05-03
 draft: false
 description: "2025年4月に発生したSKTのUSIM情報大規模流出事件を中心に、Webシェル・RCE攻撃仮説とBPFDoorバックドアの侵入シナリオ、そして実際に適用可能な対応策を分かりやすく整理しました。"
-featured_image: "cdn/column/skt-hacking-hypothesis.png"
+featured_image: "cdn/column/skt-hacking-hypothesis_01.png"
 tags: ["SKTハッキング", "SKT USIM流出", "USIMハッキング", "LG U+ハッキング", "LGU+ハッキング", "RCE", "Webshell", "ウェブシェル", "BPFDoor", "APT攻撃", "PLURA-XDR", "個人情報流出", "ネットワーク分離ハッキング"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["SKTハッキング", "SKT USIM流出", "USIMハッキング", "LG U+ハ�
 
 <!--more-->
 
-![SKTハッキング攻撃シーケンスダイアグラム例](https://blog.plura.io/cdn/column/skt-hacking-hypothesis.png)
+![SKTハッキング攻撃シーケンスダイアグラム例](https://blog.plura.io/cdn/column/skt-hacking-hypothesis_01.png)
 
 ---
 
