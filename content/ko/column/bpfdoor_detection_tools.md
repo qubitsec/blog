@@ -4,7 +4,7 @@ date: 2025-05-20
 draft: false
 description: "BPFDoor는 은밀하게 리눅스 시스템을 침투하는 백도어입니다. KISA에서 제공한 공식 점검 가이드를 기반으로 각 도구의 탐지 범위를 체크리스트 기준 10개 항목으로 비교하고, 추천 조합을 제안합니다."
 featured_image: "cdn/column/bpfdoor_detection_tools.png"
-tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "침해사고대응", "소켓탐지"]
+tags: ["BPFDoor", "리눅스백도어", "포렌식", "Audit로그", "PLURA", "침해사고대응", "소켓탐지", "시연", "데모", "demo"]
 ---
 
 ## 🔍 개요
