@@ -3,7 +3,7 @@ title: "LG U+ 顧客認証システム情報漏洩シナリオ"
 date: 2025-05-01
 draft: false
 description: "LG U+ の顧客認証システムにおける外部公開の脆弱性を悪用した攻撃シナリオと情報漏洩の流れを紹介します。"
-featured_image: "cdn/threats/case-lg_uplus_breach.png"
+featured_image: "cdn/threats/case-lg_uplus_breach_01.png"
 tags: ["LG U+", "データ漏洩", "セキュリティ事故", "個人情報漏洩", "WebShell攻撃", "侵入テスト"]
 ---
 
@@ -11,7 +11,7 @@ LG U+ の顧客認証システムが外部に公開されており、攻撃者�
 攻撃者は初期アカウントとファイルアップロードの脆弱性を悪用して**Webシェル**を設置し、これにより**約29万7千人**の顧客情報が漏洩しました。  
 漏洩の時期は**DBの更新日である2018年6月15日前後**と推定されています。
 
-![LG U+ 顧客認証システム情報漏洩](https://blog.plura.io/cdn/threats/case-lg_uplus_breach.png)
+![LG U+ 顧客認証システム情報漏洩](https://blog.plura.io/cdn/threats/case-lg_uplus_breach_01.png)
 
 <!--more-->
 ---
