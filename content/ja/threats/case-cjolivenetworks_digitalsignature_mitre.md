@@ -3,7 +3,7 @@ title: "CJオリーブネットワークス証明書流出事件：キムスキ�
 date: 2025-05-09
 draft: false
 description: "CJオリーブネットワークスのデジタル証明書流出事件を通じて、キムスキ組織がどのように攻撃を展開したのか、特にCJ大韓通運の配送プログラムに偽装した場合に発生し得る広範なサプライチェーン攻撃シナリオを分析します。"
-featured_image: "cdn/threats/case-cjolivenetworks_digitalsignature_mitre.png"
+featured_image: "cdn/threats/case-cjolivenetworks_digitalsignature_mitre_01.png"
 tags: ["CJオリーブネットワークス", "証明書流出", "キムスキ", "サプライチェーン攻撃", "CJ大韓通運", "コード署名偽装", "APT", "デジタル署名の悪用", "PLURA-XDR"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["CJオリーブネットワークス", "証明書流出", "キムスキ",
 キムスキ組織は**標的企業**（今回の場合はCJオリーブネットワークス）にまず侵入し、社内の開発サーバーやビルドサーバーから**コード署名証明書を取得**した後、この**盗まれた証明書**を用いてマルウェアを正規プログラムのように偽装・署名します。その後、**既存の信頼チェーン**を悪用して他の機関（例：韓国機械研究院）など最終標的組織にマルウェアを配布・実行させ、検知を回避しながら侵入範囲を拡大します。
 
 <!--more-->
-![Process](https://blog.plura.io/cdn/threats/case-cjolivenetworks_digitalsignature_mitre.png)
+![Process](https://blog.plura.io/cdn/threats/case-cjolivenetworks_digitalsignature_mitre_01.png)
 
 ---
 
