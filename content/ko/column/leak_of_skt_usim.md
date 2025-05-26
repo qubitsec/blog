@@ -82,16 +82,15 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPF
 * [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
 
 ### 📖 함께 읽기
-* [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)  
-* [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)  
-
-* [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)  
-* [다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)  
+* [SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)](https://blog.plura.io/ko/respond/bpfdoor/)
+* [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)
+* [SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
+* [다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)
 
 ### 📑 참고 자료
-* [Reuters - “SK Telecom shares plunge after data breach due to cyberattack” (2025-04-28)](https://www.reuters.com/sustainability/boards-policy-regulation/sk-telecom-shares-plunge-after-data-breach-due-cyberattack-2025-04-28)  
-* [연합뉴스 - “최근 해킹 수법 경고…KISA, SKT 연계 악성코드 정보 공개” (2025-04-25)](https://www.yna.co.kr/view/AKR20250425168300017)  
-* [Business Korea - “BPFDoor malware confirmed in SKT hack” (2025-04-29)](https://www.businesskorea.co.kr/news/articleView.html?idxno=241318)  
+* [Reuters - “SK Telecom shares plunge after data breach due to cyberattack” (2025-04-28)](https://www.reuters.com/sustainability/boards-policy-regulation/sk-telecom-shares-plunge-after-data-breach-due-cyberattack-2025-04-28)
+* [연합뉴스 - “최근 해킹 수법 경고…KISA, SKT 연계 악성코드 정보 공개” (2025-04-25)](https://www.yna.co.kr/view/AKR20250425168300017)
+* [Business Korea - “BPFDoor malware confirmed in SKT hack” (2025-04-29)](https://www.businesskorea.co.kr/news/articleView.html?idxno=241318)
 
 ### 🆙 PLURA 업데이트 안내
 * [PLURA Update](https://github.com/qubitsec/plura/blob/main/update/v5.5/ko/2025.md)
