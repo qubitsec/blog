@@ -3,7 +3,7 @@ title: "GSリテール・GSホームショッピング クレデンシャルス�
 date: 2025-05-01
 draft: false
 description: "2025年1〜2月に発生したGSリテールおよびGSホームショッピングの大規模クレデンシャルスタッフィング攻撃の概要と手口を紹介します。"
-featured_image: "cdn/threats/case-gs_credential_stuffing.png"
+featured_image: "cdn/threats/case-gs_credential_stuffing_01.png"
 tags: ["GSリテール", "GSホームショッピング", "Credential Stuffing", "セキュリティ事故", "個人情報漏洩", "Webセキュリティ"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["GSリテール", "GSホームショッピング", "Credential Stuffing",
 攻撃者は過去に流出したアカウント・パスワードの組み合わせを使用し、大規模な自動化スクリプトでログインを試みました。  
 一部のアカウントでは**他のウェブサイトと同一のパスワード**を使用していたことが被害を拡大させました。
 
-![GSリテール・GSホームショッピング クレデンシャルスタッフィング](https://blog.plura.io/cdn/threats/case-gs_credential_stuffing.png)
+![GSリテール・GSホームショッピング クレデンシャルスタッフィング](https://blog.plura.io/cdn/threats/case-gs_credential_stuffing_01.png)
 
 <!--more-->
 ---
