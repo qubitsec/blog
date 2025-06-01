@@ -105,3 +105,13 @@ tags: ["IPS", "NDR", "보안", "네트워크 보안", "암호화 패킷", "Endpo
 
 > **결과적으로**, IPS·NDR이 **무조건 필수**라고 보기 어렵습니다.  
 > 이미 **WAF**가 웹 영역의 공격을 막아주고, **호스트 보안**으로 내부 행위를 감시·차단한다면, **IPS·NDR**를 추가로 운영하는 것은 실제 보안 강화보다 **중복 투자**나 **과잉 구성**에 가까울 가능성이 있습니다.
+
+---
+
+### 📖 IDS/IPS/NDR 한계 이해하기
+* [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+* [WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
+* [IPS의 진화와 보안 환경의 변화](https://blog.plura.io/ko/column/ips_classification/)
+* [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
