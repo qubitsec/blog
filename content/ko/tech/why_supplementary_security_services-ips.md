@@ -84,3 +84,8 @@ tags: ["보안", "IDS", "IPS", "WAF", "EDR", "XDR"]
 ## 함께 읽기
 - [보안의 코어와 부가적 서비스를 구분해야 하는 이유](https://blog.plura.io/ko/column/core_security_vs_supplementary_security_services)
 - [다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)
+
+### 📖 IDS/IPS 이해하기
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+* [“IPS와 UTM의 역할 비교”](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
+* 
