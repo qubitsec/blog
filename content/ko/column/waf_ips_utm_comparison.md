@@ -134,6 +134,5 @@ tags: ["WAF", "IPS", "UTM", "웹 보안", "정보보안"]
 - [PLURA-WAF 바로가기](https://www.plura.io/platform/waf)  
 - [“IPS와 UTM의 역할 비교”](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)  
 - [“최신 웹 공격 사례와 대응 방안”](https://blog.plura.io/ko/respond/)  
-- [“웹 보안 필수: WAF vs. IPS vs. UTM 장비의 실제 탐지율은?” (플루라 블로그)](https://blog.plura.io/)  
 
 > 보안 전략은 **단순히 장비를 많이 놓는 것**이 아니라, **기업 특성**과 **실제 공격 패턴**에 맞춰 **선택과 집중**이 필요합니다.
