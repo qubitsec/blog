@@ -92,3 +92,11 @@ IPS는 크게 **NIPS**(Network-based IPS)와 **HIPS**(Host-based IPS)로 나뉩�
 > **주의**  
 > - 본 문서에 언급된 통계 수치(예: “99% 암호화”)는 서비스·시장 상황에 따라 달라질 수 있으며, 실제와 다를 수 있습니다.  
 > - 일부 참고 자료는 예시일 뿐, 정확한 연구 결과나 공식 보고서를 대체하지 않습니다.
+
+### 📖 IDS/IPS/NDR 한계 이해하기
+* [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+* [IPS와 NDR 차이와 한계](https://blog.plura.io/ko/column/ips_vs_ndr/)
+* [WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
+* [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
