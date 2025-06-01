@@ -110,3 +110,17 @@ PLURA-XDR은 **미래 지향적 보안 관제 모델**로서, 기존 SOC가 해�
 - ["2024년 데이터 유출 비용" - IBM (2024년 7월 21일)](https://www.ibm.com/kr-ko/reports/data-breach)
 - ["한국, 데이터 유출로 인한 평균 비용 지난 3년간 19% 증가... 45억 원 기록" - AI타임스 (2023년 7월 31일)](https://www.aitimes.kr/news/articleView.html?idxno=29379)
 - ["최근 사이버 공격 사례 및 기업 해킹 사례" - Fortinet](https://www.fortinet.com/kr/resources/cyberglossary/recent-cyber-attacks)
+
+### 📖 전통적인 제품의 한계
+- [NDR](https://blog.plura.io/ko/column/ips_ndr_needed/)
+- [IPS](https://blog.plura.io/ko/column/ips_understanding/)
+- [NAC](https://blog.plura.io/ko/tech/nac_evaluation/)
+- [SIEM](https://blog.plura.io/ko/column/why_siem_always_fails/)
+- [SOAR](https://blog.plura.io/ko/column/why_soar_always_fails/)
+
+#### PLURA-XDR 철학 및 소개
+
+- [PLURA-XDR 서비스 이해하기](https://w.plura.io/philosophy/ko/)
+- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
+- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
