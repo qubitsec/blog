@@ -12,7 +12,7 @@ tags: ["정보보안", "핵심보안", "부가서비스", "Core Security", "Supp
 
 **실제 해킹 상황에 즉각적으로 대응하기 위해**, 다음 **4가지 핵심 서비스 영역**(사전 취약점 점검, 예방, 탐지 및 대응, 모니터링)을 가장 중요한 축으로 제안합니다.
 
-![정보보안의 코어 vs 부가적 서비스](https://blog.plura.io/cdn/column/core_security_vs_supplementary_security_services..png)
+![정보보안의 코어 vs 부가적 서비스](https://blog.plura.io/cdn/column/core_security_vs_supplementary_security_services.png)
 
 <!--more-->
 
@@ -153,6 +153,8 @@ CPU, 메모리 과다 사용, 네트워크 트래픽 급증은 공격 징후일 
 > **결론적으로**, 이 목록에 나열된 서비스들은 **모두 보안에 역할**을 하지만,  
 > ‘**실시간 침해 탐지 및 대응**(코어)’과는 달리, **정책·운영·규정 준수** 등  
 > **지속적인 관리와 행정적 절차**가 더 강조되는 **부가적 운영 보안** 영역입니다.
+
+👉 [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)   
 
 ---
 
