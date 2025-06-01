@@ -114,3 +114,13 @@ tags: ["IPS", "OSI 모델", "보안"]
 
 > **💡 결론**: OSI 모델 전 계층을 고려하면서, **네트워크 기반**과 **호스트 기반** 보안을 함께 도입하는 것이 최신 환경에서의 IPS 전략 핵심입니다.  
 > 암호화가 진화하더라도, **상태 기반 검사**, **행위 분석**, **로그 통합 관리** 등을 통해 다각도로 위협을 파악하고 막아내야 합니다.
+
+---
+
+### 📖 IDS/IPS/NDR 한계 이해하기
+* [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+* [IPS와 NDR 차이와 한계](https://blog.plura.io/ko/column/ips_vs_ndr/)
+* [WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
+* [IPS의 진화와 보안 환경의 변화](https://blog.plura.io/ko/column/ips_classification/)
