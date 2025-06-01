@@ -141,3 +141,10 @@ tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fati
 - [NAC](https://blog.plura.io/ko/tech/nac_evaluation/)
 - [SIEM](https://blog.plura.io/ko/column/why_siem_always_fails/)
 - [SOAR](https://blog.plura.io/ko/column/why_soar_always_fails/)
+
+#### PLURA-XDR 철학 및 소개
+
+- [PLURA-XDR 서비스 이해하기](https://w.plura.io/philosophy/ko/)
+- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
+- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
