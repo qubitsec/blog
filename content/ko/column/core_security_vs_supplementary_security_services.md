@@ -273,7 +273,10 @@ tags: ["정보보안", "핵심보안", "부가서비스", "Core Security", "Supp
 
 ### 📖 **함께 읽기**
 - [다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
+- [온프레미스 DDoS 시대는 끝났다](https://blog.plura.io/ko/column/end_of_onprem_ddos/)
 - [보안은 보험일까?](https://blog.plura.io/ko/column/cybersecurity_vs_insurance/)
+- [제로 데이 공격 대응 전략](https://blog.plura.io/ko/column/responding_to_zero_day_attacks/)
   
 ### 📢 **캠페인**
 - [웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
