@@ -3,7 +3,7 @@ title: "IDS/IPS, 정말 코어 보안일까?"
 date: 2025-06-01
 draft: false
 description: "IDS/IPS를 부가적 보안 솔루션으로 분류해야 하는 이유와, WAF·EDR·XDR 중심 코어 보안 체계의 중요성을 살펴봅니다."
-featured_image: "cdn/column/core_security_vs_supplementary_security_services.png"
+featured_image: "cdn/tech/core_security_vs_supplementary_security_services.png"
 tags: ["보안", "IDS", "IPS", "WAF", "EDR", "XDR"]
 ---
 
