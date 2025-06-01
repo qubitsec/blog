@@ -81,7 +81,7 @@ tags: ["보안", "IDS", "IPS", "WAF", "EDR", "XDR"]
 
 ---
 
-## 함께 읽기
+## 📖 함께 읽기
 - [보안의 코어와 부가적 서비스를 구분해야 하는 이유](https://blog.plura.io/ko/column/core_security_vs_supplementary_security_services)
 - [다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)
 
