@@ -4,7 +4,7 @@ title: "정보보안의 코어 vs 부가적 서비스: 핵심과 보완 요소�
 date: 2025-06-02
 draft: false
 description: "정보보안 핵심에 집중해야 해킹에 올바르게 대응할 수 있습니다. 코어에 집중하세요!"
-featured_image: ""
+featured_image: "cdn/column/core_security_vs_supplementary_security_services.png"
 tags: ["정보보안", "핵심보안", "부가서비스", "WAF", "EDR", "통합보안"]
 
 ---
