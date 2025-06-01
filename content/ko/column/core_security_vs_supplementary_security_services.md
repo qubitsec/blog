@@ -181,7 +181,7 @@ tags: ["정보보안", "핵심보안", "부가서비스", "Core Security", "Supp
 
 ---
 
-## 부가서비스에 대한 추가 논의
+## 왜 부가서비스 이어야 할까?
 
 👉 [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)  
 
