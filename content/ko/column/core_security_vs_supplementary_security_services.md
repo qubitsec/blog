@@ -277,6 +277,8 @@ tags: ["정보보안", "핵심보안", "부가서비스", "Core Security", "Supp
 - [온프레미스 DDoS 시대는 끝났다](https://blog.plura.io/ko/column/end_of_onprem_ddos/)
 - [보안은 보험일까?](https://blog.plura.io/ko/column/cybersecurity_vs_insurance/)
 - [제로 데이 공격 대응 전략](https://blog.plura.io/ko/column/responding_to_zero_day_attacks/)
+- [정보보안 제품 선택 체크리스트](https://blog.plura.io/ko/column/security_product_checklist/)
+- [웹방화벽(WAF)에 대한 이해](https://blog.plura.io/ko/column/onpremise_inline_waf/)
   
 ### 📢 **캠페인**
 - [웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
@@ -286,4 +288,7 @@ tags: ["정보보안", "핵심보안", "부가서비스", "Core Security", "Supp
 - [PLURA-XDR 서비스 이해하기](https://w.plura.io/philosophy/ko/)  
 - [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)  
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)  
-- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)  
+- [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)
+- [해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성](https://blog.plura.io/ko/column/importance_of_cloud_security_platform_in_hacking_incidents/)
+- [로그 분석으로 해킹 조사하기는 신화(Myth)?](https://blog.plura.io/ko/column/myth/)
+- [웹방화벽 우회 공격에 대한 대응 전략](https://blog.plura.io/ko/column/waf_bypass_response/)
