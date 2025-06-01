@@ -132,7 +132,14 @@ tags: ["WAF", "IPS", "UTM", "웹 보안", "정보보안"]
 ## 📖 **함께 읽기**
 
 - [PLURA-WAF 바로가기](https://www.plura.io/platform/waf)  
-- [“IPS와 UTM의 역할 비교”](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)  
-- [“최신 웹 공격 사례와 대응 방안”](https://blog.plura.io/ko/respond/)  
+
+
+### 📖 IDS/IPS/NDR 한계 이해하기
+* [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+* [IPS와 NDR 차이와 한계](https://blog.plura.io/ko/column/ips_vs_ndr/)
+* [IPS의 진화와 보안 환경의 변화](https://blog.plura.io/ko/column/ips_classification/)
+* [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
 
 > 보안 전략은 **단순히 장비를 많이 놓는 것**이 아니라, **기업 특성**과 **실제 공격 패턴**에 맞춰 **선택과 집중**이 필요합니다.
