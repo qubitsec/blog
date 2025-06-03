@@ -6,17 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      const path = window.location.pathname;
+      const isRoot = (path === "/" || path === "/index.html");
       const lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+
+      console.log("Detected PATH:", path);
       console.log("Detected LANG:", lang);
 
-      if (lang.startsWith("ko")) {
-        window.location.href = "/en/";
-      } else if (lang.startsWith("en")) {
-        window.location.href = "/ko/";
-      } else if (lang.startsWith("ja")) {
-        window.location.href = "/ko/";
+      if (isRoot) {
+        if (lang.startsWith("ko")) {
+          window.location.replace("/en/");
+        } else if (lang.startsWith("en")) {
+          window.location.replace("/ko/");
+        } else if (lang.startsWith("ja")) {
+          window.location.replace("/ko/");
+        } else {
+          window.location.replace("/en/");
+        }
       } else {
-        window.location.href = "/en/";
+        // 루트가 아니면 아무것도 하지 않음 (무한루프 방지)
+        console.log("No redirect. Not root path.");
       }
     });
   </script>
