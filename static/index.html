@@ -6,15 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const lang = navigator.language || navigator.userLanguage;
+        // 현재 경로 확인
+        const path = window.location.pathname;
 
-      if (lang.startsWith('ko')) {
-        window.location.href = '/ko/';
-      } else if (lang.startsWith('ja')) {
-        window.location.href = '/ja/';
-      } else {
-        window.location.href = '/en/';
-      }
+        // 루트 경로일 때만 리디렉션 수행
+        if (path === "/" || path === "/index.html") {
+            const lang = navigator.language || navigator.userLanguage;
+
+            if (lang.startsWith("ko")) {
+                window.location.href = "/ko";
+            } else if (lang.startsWith("ja")) {
+                window.location.href = "/ja";
+            } else if (lang.startsWith("en")) {
+                window.location.href = "/en";
+            } else {
+                window.location.href = "/en";
+            }
+        }
     });
   </script>
 </head>
