@@ -21,6 +21,7 @@ pagerSize = 8
     languageCode = "ja"
     title = "PLURA Blog"
     weight = 2
+    languageName = "日本語"
     contentDir = "content/ja"
     
     [languages.ja.params]
@@ -32,6 +33,7 @@ pagerSize = 8
     languageCode = "en"
     title = "PLURA Blog"
     weight = 2
+    languageName = "English"
     contentDir = "content/en"
     
     [languages.en.params]
@@ -43,6 +45,7 @@ pagerSize = 8
     languageCode = "ko"
     title = "PLURA Blog"
     weight = 1
+    languageName = "한국어"
     contentDir = "content/ko"
     
     [languages.ko.params]
