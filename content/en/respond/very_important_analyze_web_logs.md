@@ -155,5 +155,5 @@ and build a response environment based on these insights.
 ---
 
 ### 📖 **Further Reading**  
-- [PLURA-Blog: Why Do We Analyze GET/POST Logs?](https://blog.plura.io/ko/column/why_analyze_get_post_logs/)  
-- [PLURA-Github: Living off the Land (LoL) Attack Examples](https://github.com/qubitsec/plura/tree/main/demo/ko)
+- [PLURA-Blog: Why Do We Analyze GET/POST Logs?](https://blog.plura.io/en/column/why_analyze_get_post_logs/)  
+- [PLURA-Github: Living off the Land (LoL) Attack Examples](https://github.com/qubitsec/plura/tree/main/demo/en)
