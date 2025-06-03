@@ -30,7 +30,7 @@ However, logs do not generate themselves.
 
 ---
 
-PLURA turns this myth into reality.
+### PLURA turns this myth into reality.
 
 PLURA fully supports **audit policy configuration** and **web request/response body logging** through the latest technology based on patented innovations. This provides a powerful solution where log analysis alone can effectively respond to hacking attacks.
 
