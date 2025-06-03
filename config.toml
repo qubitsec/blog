@@ -62,28 +62,28 @@ pagerSize = 8
     weight = 2
     [menu.main.params]
       lang = "ko"
-
+  
   [[menu.main]]
     name = "Tech"
     url = "/ko/tech/"
     weight = 3
     [menu.main.params]
       lang = "ko"
-
+  
   [[menu.main]]
     name = "Threats"
     url = "/ko/threats/"
     weight = 4
     [menu.main.params]
       lang = "ko"
-
+  
   [[menu.main]]
     name = "Respond"
     url = "/ko/respond/"
     weight = 5
     [menu.main.params]
       lang = "ko"
-
+  
   [[menu.main]]
     name = "News"
     url = "https://www.qubitsec.com/news"
