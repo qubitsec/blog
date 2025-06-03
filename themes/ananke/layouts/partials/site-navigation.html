@@ -15,8 +15,8 @@
             {{ $lang := .Params.lang | default "" }}
             {{ if eq $lang $.Site.Language.Lang }}
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }}"
-                  target="{{ .Params.target | default "_self" }}">
+                <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }}" 
+                   target="{{ .Params.target | default "_self" }}">
                   {{ .Name }}
                 </a>
               </li>
@@ -33,7 +33,12 @@
         <ul id="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; background: white; border: 1px solid #ccc; list-style: none; margin: 0; padding: 0;">
           {{ range .Site.Languages }}
             {{ if ne .Lang $.Site.Language.Lang }}
-              <li><a href="{{ .Lang | relLangURL }}" style="display: block; padding: 8px 12px; color: black; text-decoration: none;">{{ .LanguageName }}</a></li>
+              <li>
+                <a href="{{ .LanguagePrefix | relURL }}"
+                   style="display: block; padding: 8px 12px; color: black; text-decoration: none;">
+                  {{ .LanguageName }}
+                </a>
+              </li>
             {{ end }}
           {{ end }}
         </ul>
@@ -54,3 +59,12 @@
     }
   });
 </script>
+
+<!-- 디버깅 정보 -->
+<!--pre>
+현재 언어: {{ .Site.Language.Lang }}
+사용 가능한 메뉴 개수: {{ len .Site.Menus.main }}
+{{ range .Site.Menus.main }}
+  메뉴 이름: {{ .Name }} | 언어: {{ .Params.lang | default "미설정" }} | 언어 타입: {{ printf "%T" .Params.lang }}
+{{ end }}
+</pre-->
