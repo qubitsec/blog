@@ -50,118 +50,87 @@ pagerSize = 8
       background_image = "/images/ko-bg.jpg"
       summaryLength = 30
 
-[menu]
-
-  # 한국어 메뉴 (100번대)
-  [[menu.main]]
+# ✅ 언어별 메뉴 구조 분리
+[menu.ko]
+  [[menu.ko]]
     name = "Column"
     url = "/ko/column/"
-    weight = 101
-    [menu.main.params]
-      lang = "ko"
+    weight = 1
 
-  [[menu.main]]
+  [[menu.ko]]
     name = "Tech"
     url = "/ko/tech/"
-    weight = 102
-    [menu.main.params]
-      lang = "ko"
+    weight = 2
 
-  [[menu.main]]
+  [[menu.ko]]
     name = "Threats"
     url = "/ko/threats/"
-    weight = 103
-    [menu.main.params]
-      lang = "ko"
+    weight = 3
 
-  [[menu.main]]
+  [[menu.ko]]
     name = "Respond"
     url = "/ko/respond/"
-    weight = 104
-    [menu.main.params]
-      lang = "ko"
+    weight = 4
 
-  [[menu.main]]
+  [[menu.ko]]
     name = "News"
     url = "https://www.qubitsec.com/news"
-    weight = 105
-    [menu.main.params]
-      lang = "ko"
-      target = "_blank"
+    weight = 5
+    params.target = "_blank"
 
-  # 일본어 메뉴 (200번대)
-  [[menu.main]]
+[menu.ja]
+  [[menu.ja]]
     name = "コラム"
     url = "/ja/column/"
-    weight = 201
-    [menu.main.params]
-      lang = "ja"
+    weight = 1
 
-  [[menu.main]]
+  [[menu.ja]]
     name = "技術"
     url = "/ja/tech/"
-    weight = 202
-    [menu.main.params]
-      lang = "ja"
+    weight = 2
 
-  [[menu.main]]
+  [[menu.ja]]
     name = "脅威"
     url = "/ja/threats/"
-    weight = 203
-    [menu.main.params]
-      lang = "ja"
+    weight = 3
 
-  [[menu.main]]
+  [[menu.ja]]
     name = "対応"
     url = "/ja/respond/"
-    weight = 204
-    [menu.main.params]
-      lang = "ja"
+    weight = 4
 
-  [[menu.main]]
+  [[menu.ja]]
     name = "ニュース"
     url = "https://w.qubitsec.com/ja/news.html"
-    weight = 205
-    [menu.main.params]
-      lang = "ja"
-      target = "_blank"
+    weight = 5
+    params.target = "_blank"
 
-  # 영어 메뉴 (300번대)
-  [[menu.main]]
+[menu.en]
+  [[menu.en]]
     name = "Column"
     url = "/en/column/"
-    weight = 301
-    [menu.main.params]
-      lang = "en"
+    weight = 1
 
-  [[menu.main]]
+  [[menu.en]]
     name = "Tech"
     url = "/en/tech/"
-    weight = 302
-    [menu.main.params]
-      lang = "en"
+    weight = 2
 
-  [[menu.main]]
+  [[menu.en]]
     name = "Threats"
     url = "/en/threats/"
-    weight = 303
-    [menu.main.params]
-      lang = "en"
+    weight = 3
 
-  [[menu.main]]
+  [[menu.en]]
     name = "Respond"
     url = "/en/respond/"
-    weight = 304
-    [menu.main.params]
-      lang = "en"
+    weight = 4
 
-  [[menu.main]]
+  [[menu.en]]
     name = "News"
     url = "https://www.qubitsec.com/news"
-    weight = 305
-    [menu.main.params]
-      lang = "en"
-      target = "_blank"
+    weight = 5
+    params.target = "_blank"
 
 [sitemap]
   changefreq = "monthly"
