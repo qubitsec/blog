@@ -9,18 +9,16 @@
     </a>
 
     <div class="flex-l items-center ml-auto">
-      {{ if .Site.Menus.main }}
+      {{ $lang := .Site.Language.Lang }}
+      {{ if index .Site.Menus $lang }}
         <ul class="pl0 mr3">
-          {{ range .Site.Menus.main }}
-            {{ $lang := .Params.lang | default "" }}
-            {{ if eq $lang $.Site.Language.Lang }}
-              <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }}" 
-                   target="{{ .Params.target | default "_self" }}">
-                  {{ .Name }}
-                </a>
-              </li>
-            {{ end }}
+          {{ range index .Site.Menus $lang }}
+            <li class="list f5 f4-ns fw4 dib pr3">
+              <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }}"
+                 target="{{ .Params.target | default "_self" }}">
+                {{ .Name }}
+              </a>
+            </li>
           {{ end }}
         </ul>
       {{ end }}
@@ -63,8 +61,8 @@
 <!-- 디버깅 정보 -->
 <!--pre>
 현재 언어: {{ .Site.Language.Lang }}
-사용 가능한 메뉴 개수: {{ len .Site.Menus.main }}
-{{ range .Site.Menus.main }}
-  메뉴 이름: {{ .Name }} | 언어: {{ .Params.lang | default "미설정" }} | 언어 타입: {{ printf "%T" .Params.lang }}
+사용 가능한 메뉴 개수: {{ len (index .Site.Menus .Site.Language.Lang) }}
+{{ range index .Site.Menus .Site.Language.Lang }}
+  메뉴 이름: {{ .Name }} | URL: {{ .URL }}
 {{ end }}
 </pre-->
