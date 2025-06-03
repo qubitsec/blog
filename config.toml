@@ -1,7 +1,7 @@
 title = "PLURA XDR – Cloud SaaS Platform w/ MITRE ATT&CK"
 baseURL = "https://blog.plura.io"
 languageCode = "en"
-defaultContentLanguage = "en"
+#defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 #defaultContentLanguageInSubdir = false
 theme = "ananke"
