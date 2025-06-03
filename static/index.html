@@ -6,23 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const path = window.location.pathname;
       const lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
-
-      console.log("PATH:", path);
       console.log("Detected LANG:", lang);
 
-      // 루트 경로에서만 리디렉션
-      if (path === "/" || path === "/index.html") {
-        if (lang.startsWith("ko")) {
-          window.location.href = "/en/";
-        } else if (lang.startsWith("en")) {
-          window.location.href = "/ko/";
-        } else if (lang.startsWith("ja")) {
-          window.location.href = "/ko/";
-        } else {
-          window.location.href = "/en/";
-        }
+      if (lang.startsWith("ko")) {
+        window.location.href = "/en/";
+      } else if (lang.startsWith("en")) {
+        window.location.href = "/ko/";
+      } else if (lang.startsWith("ja")) {
+        window.location.href = "/ko/";
+      } else {
+        window.location.href = "/en/";
       }
     });
   </script>
