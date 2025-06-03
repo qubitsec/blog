@@ -7,6 +7,7 @@
         {{ .Site.Title }}
       {{ end }}
     </a>
+
     <div class="flex-l items-center ml-auto">
       {{ if .Site.Menus.main }}
         <ul class="pl0 mr3">
@@ -14,8 +15,8 @@
             {{ $lang := .Params.lang | default "" }}
             {{ if eq $lang $.Site.Language.Lang }}
               <li class="list f5 f4-ns fw4 dib pr3">
-                <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }}" 
-                   target="{{ .Params.target | default "_self" }}">
+                <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ .Name }}"
+                  target="{{ .Params.target | default "_self" }}">
                   {{ .Name }}
                 </a>
               </li>
@@ -23,15 +24,33 @@
           {{ end }}
         </ul>
       {{ end }}
+
+      <!-- 🌐 언어 선택 드롭다운 -->
+      <div class="language-selector relative" style="display: inline-block;">
+        <button onclick="toggleLangMenu()" style="background: transparent; border: 1px solid white; color: white; padding: 6px 12px; cursor: pointer;">
+          {{ .Site.Language.LanguageName }} ▼
+        </button>
+        <ul id="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; background: white; border: 1px solid #ccc; list-style: none; margin: 0; padding: 0;">
+          {{ range .Site.Languages }}
+            {{ if ne .Lang $.Site.Language.Lang }}
+              <li><a href="{{ .Lang | relLangURL }}" style="display: block; padding: 8px 12px; color: black; text-decoration: none;">{{ .LanguageName }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
 
-<!-- 디버깅 정보 -->
-<!--pre>
-현재 언어: {{ .Site.Language.Lang }}
-사용 가능한 메뉴 개수: {{ len .Site.Menus.main }}
-{{ range .Site.Menus.main }}
-  메뉴 이름: {{ .Name }} | 언어: {{ .Params.lang | default "미설정" }} | 언어 타입: {{ printf "%T" .Params.lang }}
-{{ end }}
-</pre-->
+<script>
+  function toggleLangMenu() {
+    var menu = document.getElementById("lang-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
+  }
+
+  window.addEventListener('click', function(e){
+    if (!e.target.closest('.language-selector')) {
+      document.getElementById('lang-menu').style.display = 'none';
+    }
+  });
+</script>
