@@ -1,0 +1,19 @@
+<div class="language-selector" style="position: relative; display: inline-block;">
+  <button onclick="toggleLangMenu()" style="background: transparent; border: 1px solid #fff; color: white; padding: 5px 10px;">
+    {{ .Site.Language.LanguageName }} ▼
+  </button>
+  <ul id="lang-menu" style="display: none; position: absolute; top: 100%; right: 0; background: white; border: 1px solid #ccc; list-style: none; padding: 0; margin: 0;">
+    {{ range .Site.Languages }}
+      {{ if ne .Lang $.Site.Language.Lang }}
+        <li><a href="{{ .Lang | relLangURL }}" style="display: block; padding: 8px 12px; color: black;">{{ .LanguageName }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>
+
+<script>
+  function toggleLangMenu() {
+    var menu = document.getElementById("lang-menu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+</script>
