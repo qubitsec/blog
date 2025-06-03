@@ -10,15 +10,19 @@
       const lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
       console.log("Detected language:", lang);
 
+      // 루트 경로일 때만 리디렉션
       if (path === "/" || path === "/index.html") {
         if (lang.startsWith("ko")) {
+          // 브라우저가 한글이면 → 영어로 리디렉션
+          window.location.href = "/en/";
+        } else if (lang.startsWith("en")) {
+          // 브라우저가 영어면 → 한글로 리디렉션
           window.location.href = "/ko/";
         } else if (lang.startsWith("ja")) {
+          // 일본어는 그대로
           window.location.href = "/ja/";
-        } else if (lang.startsWith("en")) {
-          window.location.href = "/en/";
         } else {
-          // 알 수 없는 언어는 영어로 fallback
+          // 기타 언어는 기본값으로 영어
           window.location.href = "/en/";
         }
       }
