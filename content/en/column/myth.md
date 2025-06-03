@@ -1,7 +1,7 @@
 ---
 date: 2023-03-12T00:00:00
 draft: false
-description:
+description: "Log analysis alone can't solve everything—unless it's done right. Discover how PLURA makes it possible."
 featured_image: "cdn/column/log_analysis_myth-1.png"
 tags: ["Log Analysis", "Hacking Investigation", "Security", "PLURA", "MITRE ATT&CK"]
 title: "Is Investigating Hacking Through Log Analysis Just a Myth?"
