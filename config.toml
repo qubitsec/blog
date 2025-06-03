@@ -111,11 +111,6 @@ url = "/en/column/"
 weight = 1
 
 [[menu.en]]
-name = "Tech"
-url = "/en/tech/"
-weight = 2
-
-[[menu.en]]
 name = "Threats"
 url = "/en/threats/"
 weight = 3
