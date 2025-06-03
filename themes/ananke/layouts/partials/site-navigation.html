@@ -25,7 +25,7 @@
         </ul>
       {{ end }}
 
-      <!-- 🌐 언어 선택 드롭다운 -->
+      <!-- 🌐 언어 선택 드롭다운 (중첩 경로 방지) -->
       <div class="language-selector relative" style="display: inline-block;">
         <button onclick="toggleLangMenu()" style="background: transparent; border: 1px solid white; color: white; padding: 6px 12px; cursor: pointer;">
           {{ .Site.Language.LanguageName }} ▼
@@ -34,7 +34,7 @@
           {{ range $.Site.Languages }}
             {{ if ne .Lang $.Site.Language.Lang }}
               <li>
-                <a href="{{ .Lang | relLangURL }}"
+                <a href="{{ printf "/%s/" .Lang | relURL }}"
                    style="display: block; padding: 8px 12px; color: black; text-decoration: none;">
                   {{ .LanguageName }}
                 </a>
