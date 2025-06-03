@@ -50,92 +50,91 @@ pagerSize = 8
       background_image = "/images/ko-bg.jpg"
       summaryLength = 30
 
-# ✅ 언어별 메뉴 구조 분리
-[menu.ko]
-  [[menu.ko]]
-    name = "Column"
-    url = "/ko/column/"
-    weight = 1
+# ✅ 한국어 메뉴
+[[menu.ko]]
+name = "Column"
+url = "/ko/column/"
+weight = 1
 
-  [[menu.ko]]
-    name = "Tech"
-    url = "/ko/tech/"
-    weight = 2
+[[menu.ko]]
+name = "Tech"
+url = "/ko/tech/"
+weight = 2
 
-  [[menu.ko]]
-    name = "Threats"
-    url = "/ko/threats/"
-    weight = 3
+[[menu.ko]]
+name = "Threats"
+url = "/ko/threats/"
+weight = 3
 
-  [[menu.ko]]
-    name = "Respond"
-    url = "/ko/respond/"
-    weight = 4
+[[menu.ko]]
+name = "Respond"
+url = "/ko/respond/"
+weight = 4
 
-  [[menu.ko]]
-    name = "News"
-    url = "https://www.qubitsec.com/news"
-    weight = 5
-    params.target = "_blank"
+[[menu.ko]]
+name = "News"
+url = "https://www.qubitsec.com/news"
+weight = 5
+params.target = "_blank"
 
-[menu.ja]
-  [[menu.ja]]
-    name = "コラム"
-    url = "/ja/column/"
-    weight = 1
+# ✅ 일본어 메뉴
+[[menu.ja]]
+name = "コラム"
+url = "/ja/column/"
+weight = 1
 
-  [[menu.ja]]
-    name = "技術"
-    url = "/ja/tech/"
-    weight = 2
+[[menu.ja]]
+name = "技術"
+url = "/ja/tech/"
+weight = 2
 
-  [[menu.ja]]
-    name = "脅威"
-    url = "/ja/threats/"
-    weight = 3
+[[menu.ja]]
+name = "脅威"
+url = "/ja/threats/"
+weight = 3
 
-  [[menu.ja]]
-    name = "対応"
-    url = "/ja/respond/"
-    weight = 4
+[[menu.ja]]
+name = "対応"
+url = "/ja/respond/"
+weight = 4
 
-  [[menu.ja]]
-    name = "ニュース"
-    url = "https://w.qubitsec.com/ja/news.html"
-    weight = 5
-    params.target = "_blank"
+[[menu.ja]]
+name = "ニュース"
+url = "https://w.qubitsec.com/ja/news.html"
+weight = 5
+params.target = "_blank"
 
-[menu.en]
-  [[menu.en]]
-    name = "Column"
-    url = "/en/column/"
-    weight = 1
+# ✅ 영어 메뉴
+[[menu.en]]
+name = "Column"
+url = "/en/column/"
+weight = 1
 
-  [[menu.en]]
-    name = "Tech"
-    url = "/en/tech/"
-    weight = 2
+[[menu.en]]
+name = "Tech"
+url = "/en/tech/"
+weight = 2
 
-  [[menu.en]]
-    name = "Threats"
-    url = "/en/threats/"
-    weight = 3
+[[menu.en]]
+name = "Threats"
+url = "/en/threats/"
+weight = 3
 
-  [[menu.en]]
-    name = "Respond"
-    url = "/en/respond/"
-    weight = 4
+[[menu.en]]
+name = "Respond"
+url = "/en/respond/"
+weight = 4
 
-  [[menu.en]]
-    name = "News"
-    url = "https://www.qubitsec.com/news"
-    weight = 5
-    params.target = "_blank"
+[[menu.en]]
+name = "News"
+url = "https://www.qubitsec.com/news"
+weight = 5
+params.target = "_blank"
 
 [sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
 
 [params]
   text_color = ""
