@@ -5,23 +5,24 @@
   <title>Redirecting...</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
       const path = window.location.pathname;
+      const lang = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      console.log("Detected language:", lang);
 
       if (path === "/" || path === "/index.html") {
-          const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-
-          console.log("Detected language:", lang); // 디버깅용
-
-          if (lang.startsWith("ko")) {
-              window.location.href = "/ko";
-          } else if (lang.startsWith("ja")) {
-              window.location.href = "/ja";
-          } else {
-              window.location.href = "/en";
-          }
+        if (lang.startsWith("ko")) {
+          window.location.href = "/ko/";
+        } else if (lang.startsWith("ja")) {
+          window.location.href = "/ja/";
+        } else if (lang.startsWith("en")) {
+          window.location.href = "/en/";
+        } else {
+          // 알 수 없는 언어는 영어로 fallback
+          window.location.href = "/en/";
+        }
       }
-  });
+    });
   </script>
 </head>
 <body>
