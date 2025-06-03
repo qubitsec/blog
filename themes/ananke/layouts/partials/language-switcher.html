@@ -1,0 +1,10 @@
+<div class="language-switcher" style="border: 1px solid #ffffffaa; padding: 5px 10px; background: #0fb5a9; display: inline-block;">
+  {{ $currentLang := .Site.Language.Lang }}
+  {{ range .Site.Languages }}
+    {{ if eq $currentLang .Lang }}
+      <span style="display: block; color: white;">{{ .LanguageName }} –</span>
+    {{ else }}
+      <a href="{{ .Lang | relLangURL }}" style="display: block; color: white; text-decoration: none;">{{ .LanguageName }}</a>
+    {{ end }}
+  {{ end }}
+</div>
