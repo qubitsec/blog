@@ -39,4 +39,4 @@ Take your cybersecurity to the next level through complete log analysis.
 
 ### 📖 **Read More**
 
-* [Using Advanced Audit Policy From a MITRE ATT\&CK Perspective](https://blog.plura.io/ko/threats/mitre-attack-advanced-audit-policy-with-chatgpt/)
+* [Using Advanced Audit Policy From a MITRE ATT\&CK Perspective](https://blog.plura.io/en/threats/mitre-attack-advanced-audit-policy-with-chatgpt/)
