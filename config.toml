@@ -28,6 +28,17 @@ pagerSize = 8
       background_image = "/images/ja-bg.jpg"
       summaryLength = 30
 
+  [languages.en]
+    languageCode = "en"
+    title = "PLURA Blog"
+    weight = 2
+    contentDir = "content/en"
+    
+    [languages.en.params]
+      lang = "en"
+      background_image = "/images/ko-bg.jpg"
+      summaryLength = 30
+
   [languages.ko]
     languageCode = "ko"
     title = "PLURA Blog"
