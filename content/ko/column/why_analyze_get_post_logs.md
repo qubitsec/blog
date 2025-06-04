@@ -69,13 +69,13 @@ PLURA Agent는 클라이언트의 요청 데이터를 **GET 방식**과 **POST �
 
 ## PLURA Agent GET 방식 웹로그 분석 예
 
-![GET 방식 분석 예시](https://github.com/user-attachments/assets/3394cebf-62da-4adc-9067-cf6597c71b27)
+![GET 방식 분석 예시](https://blog.plura.io/cdn/column/why_analyze_get_post_logs_01.png)
 
 ---
 
 ## PLURA Agent POST 방식 웹로그 분석 예
 
-![POST 방식 분석 예시](https://github.com/user-attachments/assets/37861a64-828c-49ea-9c5a-bfc8ee320726)
+![POST 방식 분석 예시](https://blog.plura.io/cdn/column/why_analyze_get_post_logs_02.png)
 
 ---
 
