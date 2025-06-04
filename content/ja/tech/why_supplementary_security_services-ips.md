@@ -9,6 +9,7 @@ tags: ["セキュリティ", "IDS", "IPS", "NDR", "WAF", "EDR", "XDR"]
 
 🔒IDS/IPS/NDRは以前のように「**無条件でコア**」として分類されるのではなく、**運用セキュリティ**（補助的要素）に近いと考えるべきです。
 
+<!--more-->
 ![補助的サービス](https://blog.plura.io/cdn/tech/why_supplementary_security_services-ips.png)
 
 ## IDS/IPS/NDRはどこに位置付けられるべきか？
