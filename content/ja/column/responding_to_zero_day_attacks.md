@@ -72,5 +72,5 @@ tags: ["ゼロデイ攻撃", "Zero-day", "未知の攻撃", "ウェブログ分�
 - [Netflix - Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)
 - [ウィキペディア-ゼロデイ攻撃](https://ja.wikipedia.org/wiki/%E3%82%BC%E3%83%AD%E3%83%87%E3%82%A4%E6%94%BB%E6%92%83)
 
-### 📖 PLURA Blog
+### 📚 PLURA Blog
 - [なぜウェブの全体的なログ分析が重要なのか？](https://blog.plura.io/ja/respond/very_important_analyze_web_logs)
