@@ -35,7 +35,7 @@ pagerSize = 8
 
     [languages.en.params]
       lang = "en"
-      background_image = "/images/ko-bg.jpg"
+      background_image = "/images/en-bg.jpg"
       summaryLength = 30
 
   [languages.ko]
