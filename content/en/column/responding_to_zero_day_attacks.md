@@ -71,5 +71,7 @@ In today’s cybersecurity landscape, **real-time data analysis and threat intel
 
 ### 📖 Related Resources  
 - [Netflix – Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)  
-- [PLURA Blog: Why Full Web Log Analysis Matters](https://blog.plura.io/en/respond/very_important_analyze_web_logs)  
 - [Wikipedia – Zero-Day Attack](https://en.wikipedia.org/wiki/Zero-day_(computing))
+
+### 📚 PLURA Blog
+- [Why Full Web Log Analysis Matters](https://blog.plura.io/en/respond/very_important_analyze_web_logs)  
