@@ -75,7 +75,7 @@ PLURA Agentは、クライアントのリクエストデータを**GET メソッ
 
 ## PLURA Agent POST メソッドのウェブログ分析例
 
-![POST メソッド分析例](https://blog.plura.io/cdn/column/why_analyze_get_post_logs_02.png)
+![POST メソッド分析例](https://blog.plura.io/cdn/column/why_analyze_get_post_logs_04.png)
 
 ---
 
