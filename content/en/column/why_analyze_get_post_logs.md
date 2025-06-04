@@ -80,7 +80,7 @@ The PLURA Agent analyzes client request data by separating **GET** and **POST** 
 
 ## Example: POST Log Analysis by PLURA Agent
 
-![POST Method Example](https://blog.plura.io/cdn/column/why_analyze_get_post_logs_02.png)
+![POST Method Example](https://blog.plura.io/cdn/column/why_analyze_get_post_logs_04.png)
 
 ---
 
