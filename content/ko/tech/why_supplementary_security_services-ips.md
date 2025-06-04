@@ -9,6 +9,7 @@ tags: ["보안", "IDS", "IPS", "NDR", "WAF", "EDR", "XDR"]
 
 🔒IDS/IPS/NDR이 예전처럼 “**무조건 코어**”로 분류되지 않고, **운영 보안**(부가적 요소)에 더 가깝다고 보아야 합니다.
 
+<!--more-->
 ![부가적 서비스](https://blog.plura.io/cdn/tech/why_supplementary_security_services-ips.png)
 
 ## IDS/IPS/NDR, 어디에 위치해야 할까?
