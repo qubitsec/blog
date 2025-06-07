@@ -116,7 +116,7 @@ sequenceDiagram
 
 ---
 
-![SOAR, SIEM & WAF Implementation Flow](https://blog.plura.io/cdn/column/why_soar_always_fails-2.png)
+![SOAR, SIEM & WAF Implementation Flow](https://blog.plura.io/cdn/column/why_soar_always_fails-2_en.png)
 
 ---
 
