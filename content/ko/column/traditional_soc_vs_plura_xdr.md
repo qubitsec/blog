@@ -1,14 +1,15 @@
 ---
-title: "전통적인 SOC vs PLURA-XDR 플랫폼"
+title: "전통적인 SOC vs. PLURA-XDR 기반 SOC: 사후 중심을 넘어 사전 예방으로"
 date: 2025-02-27
 draft: false
-description: "전통적인 SOC 환경과 PLURA-XDR 플랫폼의 차이를 살펴보고, 왜 PLURA-XDR이 새로운 보안 운영의 표준이 될 수밖에 없는지 알아봅니다."
+description: "전통적인 SOC와 PLURA-XDR 기반 SOC의 차이를 살펴보고, 왜 PLURA-XDR이 새로운 보안 운영의 표준이 될 수밖에 없는지 알아봅니다."
 featured_image: "cdn/column/traditional_soc_vs_plura_xdr.png"
 tags: ["보안", "SOC", "PLURA-XDR", "XDR", "통합 보안"]
 ---
 
-⛑️전통적인 SOC(Security Operation Center)와 PLURA-XDR은 모두 기업 보안을 위한 관제 체계라는 점에서 공통점이 있지만, **도입 비용, 운영 효율성, 그리고 본질적 역할** 측면에서 큰 차이를 보입니다.  
-`PLURA-XDR`은 단순한 관제를 넘어 **통합된 위협 예방과 대응**을 제공하여, 기업의 **장기적인 성장**과 **효율적인 운영**을 지원합니다.
+⛑️전통적인 SOC(Security Operation Center)와 **PLURA-XDR 기반 SOC**는 모두 기업 보안을 위한 관제 체계라는 점에서 공통점이 있지만, **도입 비용, 운영 효율성, 그리고 본질적 역할** 측면에서 큰 차이가 보입니다.
+
+`PLURA-XDR 기반 SOC`은 단순 관제를 넘어 **통합된 위협 예방과 대응**을 제공하여, 기업의 **장기적인 성장**과 **효율적인 운영**을 지원합니다.
 이는 전통적인 SOC와는 **본질적으로 다른 접근 방식**을 취하는 것입니다.
 
 ![전통적인 SOC와 PLURA-XDR의 차이점](https://blog.plura.io/cdn/column/traditional_soc_vs_plura_xdr.png)
