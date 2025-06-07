@@ -124,7 +124,6 @@ By doing so, it helps organizations **simplify security operations**, avert **co
 
 ## 📖 Related Resources  
 
-* ["Corporate Data Breach Costs Hit All-Time High Worldwide" - CIO (July 30, 2024)](https://www.cio.com/article/3537417/%EC%A7%80%EB%82%9C%ED%95%B4-%EC%A0%84-%EC%84%B8%EA%B3%84-%EA%B8%B0%EC%97%85-%ED%8F%89%EA%B7%A0-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9C%A0%EC%B6%9C-%EB%B9%84%EC%9A%A9-%EC%82%AC%EC%83%81-%EC%B5%9C.html)
 * ["Data Breach Costs in 2024" - IBM (July 21, 2024)](https://www.ibm.com/reports/data-breach)
 * ["Data Breach Costs in Korea Up 19% Over Three Years, Reaching KRW 4.5 Billion" - AI Times (July 31, 2023)](https://www.aitimes.kr/news/articleView.html?idxno=29379)
 * ["Recent Cyber Attack Incidents and Corporate Breach Cases" - Fortinet](https://www.fortinet.com/kr/resources/cyberglossary/recent-cyber-attacks)
