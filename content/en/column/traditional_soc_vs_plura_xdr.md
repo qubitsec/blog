@@ -137,6 +137,4 @@ By doing so, it helps organizations **simplify security operations**, avert **co
 ### 📚 PLURA-XDR Philosophy & Introduction
 
 * [Understanding the PLURA-XDR Service](https://w.plura.io/philosophy/en/)
-* [Immediate Visibility in Under a Minute—PLURA-XDR’s Instant Detection](https://blog.plura.io/en/respond/1-minute-detection/)
-* [Choose Only What You Need, When You Need It: PLURA vs. Traditional Security Solutions](https://blog.plura.io/en/column/plura_vs_traditional_security/)
 * [Why Full Web Log Analysis Matters](https://blog.plura.io/en/respond/very_important_analyze_web_logs)  
