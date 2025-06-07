@@ -125,8 +125,6 @@ By doing so, it helps organizations **simplify security operations**, avert **co
 ## 📖 Related Resources  
 
 * ["Data Breach Costs in 2024" - IBM (July 21, 2024)](https://www.ibm.com/reports/data-breach)
-* ["Data Breach Costs in Korea Up 19% Over Three Years, Reaching KRW 4.5 Billion" - AI Times (July 31, 2023)](https://www.aitimes.kr/news/articleView.html?idxno=29379)
-* ["Recent Cyber Attack Incidents and Corporate Breach Cases" - Fortinet](https://www.fortinet.com/kr/resources/cyberglossary/recent-cyber-attacks)
 
 ### 📖 Limitations of Legacy Tools
 
