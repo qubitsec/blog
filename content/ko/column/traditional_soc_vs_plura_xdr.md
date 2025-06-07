@@ -119,7 +119,7 @@ PLURA-XDR은 **미래 지향적 보안 관제 모델**로서, 기존 SOC가 해�
 - [SIEM](https://blog.plura.io/ko/column/why_siem_always_fails/)
 - [SOAR](https://blog.plura.io/ko/column/why_soar_always_fails/)
 
-#### PLURA-XDR 철학 및 소개
+### 📚PLURA-XDR 철학 및 소개
 
 - [PLURA-XDR 서비스 이해하기](https://w.plura.io/philosophy/ko/)
 - [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
