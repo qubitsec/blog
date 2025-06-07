@@ -134,9 +134,5 @@ Overcoming these challenges requires:
 
 ### 📖 Understanding the Limits of IDS/IPS/NDR
 
-* [Is IDS/IPS Really Core Security?](https://blog.plura.io/en/tech/why_supplementary_security_services-ips/)
 * [Do SMEs, Midsize, and Even Large Enterprises Truly Need NIPS/NDR?](https://blog.plura.io/en/column/ips_ndr_needed/)
-* [Differences and Limitations of IPS and NDR](https://blog.plura.io/en/column/ips_vs_ndr/)
-* [WAF vs IPS vs UTM: Choosing the Optimal Defense for Web Attacks](https://blog.plura.io/en/column/waf_ips_utm_comparison/)
-* [The Evolution of IPS and Changing Security Environments](https://blog.plura.io/en/column/ips_classification/)
 * [Understanding Intrusion Prevention Systems (IPS)](https://blog.plura.io/en/column/ips_understanding/)
