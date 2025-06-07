@@ -61,7 +61,7 @@ In such situations, a SIEM becomes nothing more than an **expensive dashboard** 
 
 As with web servers or operating systems, **IPS**, **NDR**, **WAF**, **EDR**, and other security solutions each face constraints on what logs they can collect.
 
-#### \[1] IPS (Intrusion Prevention System) Logging Limitations
+#### [1] IPS (Intrusion Prevention System) Logging Limitations
 
 1. **HTTPS Decryption**
 
@@ -79,12 +79,11 @@ As with web servers or operating systems, **IPS**, **NDR**, **WAF**, **EDR**, an
    * **HTTPS** decryption is usually handled by a **WAF** or **TLS proxy**, while protocols like SSH/RDP remain opaque.
    * Relying on the IPS alone to feed rich, decrypted data to a SIEM is impractical.
 
-👉 [The Evolution of IPS and Changing Security Environments](https://blog.plura.io/ko/column/ips_classification/)
-👉 [Understanding Intrusion Prevention Systems (IPS)](https://blog.plura.io/ko/column/ips_understanding/)
+👉 [Understanding Intrusion Prevention Systems (IPS)](https://blog.plura.io/en/column/ips_understanding/)
 
 ---
 
-#### \[2] NDR (Network Detection & Response) Logging Limitations
+#### [2] NDR (Network Detection & Response) Logging Limitations
 
 NDR (Network Detection & Response) analyzes traffic from a **behavioral** perspective, but still faces similar issues:
 
@@ -104,11 +103,11 @@ NDR (Network Detection & Response) analyzes traffic from a **behavioral** perspe
    * Full HTTPS body analysis is also uncommon.
    * Relying on NDR alone won’t capture the **granular** contents of encrypted traffic.
 
-👉 [NDR’s Limitations: A Mission Impossible](https://blog.plura.io/ko/column/limitations_of_ndr/)
+👉 [NDR’s Limitations: A Mission Impossible](https://blog.plura.io/en/column/limitations_of_ndr/)
 
 ---
 
-#### \[3] WAF (Web Application Firewall) Logging Limitations
+#### [3] WAF (Web Application Firewall) Logging Limitations
 
 1. **Limitations on Forwarding the Entire Original Payload**
 
@@ -117,11 +116,10 @@ NDR (Network Detection & Response) analyzes traffic from a **behavioral** perspe
    * Full data capture can introduce **performance** or **storage** overhead,
      so it’s highly dependent on product capabilities and careful configuration.
 
-👉 [Understanding WAF Deployment](https://blog.plura.io/ko/column/onpremise_inline_waf/)
 
 ---
 
-#### \[4] EDR (Endpoint Detection & Response) Logging Limitations
+#### [4] EDR (Endpoint Detection & Response) Logging Limitations
 
 1. **Requires OS Auditing to Be Enabled for Meaningful Logs**
 
