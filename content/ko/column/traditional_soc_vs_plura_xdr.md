@@ -12,8 +12,6 @@ tags: ["보안", "SOC", "PLURA-XDR", "XDR", "통합 보안", "Security Operation
 "**PLURA-XDR 기반 SOC**"은 단순 관제를 넘어 **통합된 위협 예방과 대응**을 제공하여, 기업의 **장기적인 성장**과 **효율적인 운영**을 지원합니다.
 이는 전통적인 SOC와는 **본질적으로 다른 접근 방식**을 취하는 것입니다.
 
-- SOC : Security Operation Center
-
 ![전통적인 SOC와 PLURA-XDR의 차이점](https://blog.plura.io/cdn/column/traditional_soc_vs_plura_xdr.png)
 
 <!--more-->
