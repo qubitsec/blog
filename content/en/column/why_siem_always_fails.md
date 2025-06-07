@@ -40,8 +40,7 @@ In such situations, a SIEM becomes nothing more than an **expensive dashboard** 
 > Some solutions (like WAF) or advanced logging can capture **request/response bodies**,
 > but **performance overhead** and **additional costs** often prevent widespread implementation.
 
-👉 [Responding to data exfiltration attacks via web traffic](https://blog.plura.io/en/column/dlp/)
-
+👉 [Responding to data exfiltration attacks via web traffic](https://blog.plura.io/en/column/dlp/)  
 👉 [Why analyzing entire web logs is crucial](https://blog.plura.io/en/respond/very_important_analyze_web_logs/)
 
 ---
