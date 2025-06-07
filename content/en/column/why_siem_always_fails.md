@@ -449,28 +449,14 @@ By thoroughly considering these items and creating a solid plan **before** adopt
 
 ---
 
-### 📖 Further Reading
+### 📚 PLURA Blog
 
-* [So You Deployed SOAR—Now What? If You Can’t Automate, It’s Useless](https://blog.plura.io/en/column/why_soar_always_fails/)
+* [If You Deploy SIEM, Then What? If Log Collection & Analysis Don’t Work](https://blog.plura.io/en/column/why_siem_always_fails/)
 * [Is Log Analysis for Hack Investigations a Myth?](https://blog.plura.io/en/column/myth/)
 * [Analyzing Request Body Logs in Splunk](https://blog.plura.io/en/column/splunk_request_body_analysis/)
 * [Introduction to Preventing Data Exfiltration via Web Traffic](https://blog.plura.io/en/column/dlp/)
-* [Which Log Analysis Tool Should Your Organization Choose?](https://blog.plura.io/en/column/log-analysis-tool-selection-guide/)
-* [PHP Webshell Malware](https://blog.plura.io/en/threats/php_webshell_malware/)
-
-### 📖 SIEM & SOAR Deployment Failures
-
-* [SK Telecom Hack in April 2025 via BPFDoor](https://blog.plura.io/en/respond/bpfdoor/)
-* [GS Retail Breach in January 2025](https://blog.plura.io/en/threats/case-gs_credential_stuffing/)
-* [LG Uplus Customer Authentication Leak (June 2018)](https://blog.plura.io/en/threats/case-lg_uplus_breach/)
-* [Court Administration Office Hack (May 2023)](https://blog.plura.io/en/threats/case-court_breach/)
-
-### 🌟 How PLURA-XDR Differs
-
-* [See Hacking Attempts in Under a Minute: PLURA-XDR’s Instant Visibility](https://blog.plura.io/en/respond/1-minute-detection/)
-* [Traditional SOC vs. PLURA-XDR](https://blog.plura.io/en/column/traditional_soc_vs_plura_xdr/)
-* [Choose Only What You Need, When You Need It: PLURA vs. Traditional Security Solutions](https://blog.plura.io/en/column/plura_vs_traditional_security/)
-* [Demo: Credential Stuffing Detection & Blocking](https://www.youtube.com/watch?v=sDssT98NCg0)
+* [Traditional SOC vs. PLURA-XDR Platform](https://blog.plura.io/en/column/traditional_soc_vs_plura_xdr/)
+* [If You Deploy SOAR, Then What? No Real Automated Response If It Can’t Act](https://blog.plura.io/en/column/why_soar_always_fails/)
 
 ### 🌟 PLURA-XDR Services
 
