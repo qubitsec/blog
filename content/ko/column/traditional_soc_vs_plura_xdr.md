@@ -106,7 +106,7 @@ PLURA-XDR은 **미래 지향적 보안 관제 모델**로서, 기존 SOC가 해�
 
 ---
 
-## 📖 **함께 읽기**  
+## 📖 **기사**  
 - ["지난해 전 세계 기업 평균 데이터 유출 비용, 사상 최고치 기록" - CIO (2024년 7월 30일)](https://www.cio.com/article/3537417/%EC%A7%80%EB%82%9C%ED%95%B4-%EC%A0%84-%EC%84%B8%EA%B3%84-%EA%B8%B0%EC%97%85-%ED%8F%89%EA%B7%A0-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%9C%A0%EC%B6%9C-%EB%B9%84%EC%9A%A9-%EC%82%AC%EC%83%81-%EC%B5%9C.html)
 - ["2024년 데이터 유출 비용" - IBM (2024년 7월 21일)](https://www.ibm.com/kr-ko/reports/data-breach)
 - ["한국, 데이터 유출로 인한 평균 비용 지난 3년간 19% 증가... 45억 원 기록" - AI타임스 (2023년 7월 31일)](https://www.aitimes.kr/news/articleView.html?idxno=29379)
