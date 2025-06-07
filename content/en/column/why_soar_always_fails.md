@@ -222,12 +222,11 @@ Ensuring these are “**checked**” and reasonably mature before rolling out SO
 
 ### 📚 PLURA Blog
 
-* [If You Deploy SIEM, Then What? If Log Collection & Analysis Don’t Work](https://blog.plura.io/en/column/why_siem_always_fails/)
+* [So You Deployed a SIEM—Now What? If You Can’t Collect or Analyze Logs Properly](https://blog.plura.io/en/column/why_siem_always_fails/)
 * [Is Log Analysis for Hack Investigations a Myth?](https://blog.plura.io/en/column/myth/)
 * [Analyzing Request Body Logs in Splunk](https://blog.plura.io/en/column/splunk_request_body_analysis/)
 * [Introduction to Preventing Data Exfiltration via Web Traffic](https://blog.plura.io/en/column/dlp/)
 * [Traditional SOC vs. PLURA-XDR Platform](https://blog.plura.io/en/column/traditional_soc_vs_plura_xdr/)
-* [So You Deployed a SIEM—Now What? If You Can’t Collect or Analyze Logs Properly](https://blog.plura.io/en/column/why_siem_always_fails/)
 
 ### 🌟 PLURA-XDR Services
 
