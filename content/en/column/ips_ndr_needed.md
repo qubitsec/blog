@@ -45,7 +45,6 @@ Given that a **majority of threats** enter through web traffic, a **WAF** (Web A
 * When looking at real-world attack vectors for SMEs, most exploits target **web traffic** (e.g., SQL injection, XSS, file upload vulnerabilities).
 * A **WAF** is specialized in mitigating these web threats, while an **EDR** can intercept and block malicious activities once they reach internal systems.
 
-  > 👍 [If you don’t have a WAF yet, it’s time to implement one](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
   > 👍 [Introduction to the PLURA-WAF service](https://www.plura.io/platform/waf)
 
 ### (2) **Predominantly Encrypted Traffic**
