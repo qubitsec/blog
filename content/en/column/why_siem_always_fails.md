@@ -475,7 +475,6 @@ By thoroughly considering these items and creating a solid plan **before** adopt
 ### 🌟 PLURA-XDR Services
 
 * [Introduction to PLURA-XDR](https://www.plura.io/platform/xdr)
-* [PLURA-DOCS: Credential Stuffing](https://docs.plura.io/ko/fn/comm/sfilter/takeover)
 
 > In practice, SIEM can be far **more complex** than expected.
 > But if you **properly** prepare log collection and analysis,
