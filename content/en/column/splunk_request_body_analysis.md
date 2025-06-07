@@ -1,16 +1,11 @@
-Sure
-
-
-Below is the English translation, retaining the structure, context, and technical details from the original Korean text, yet adapted to a natural, InfoSec-oriented style.
-
-```yaml
+---
 title: "[Q&A] Exploring Request Body Log Analysis in Splunk with ChatGPT"
 date: 2023-02-21
 draft: false
 description: "Learn how to properly manage request body data through Splunk log analysis, along with OWASP TOP 10-based insights."
 featured_image: "cdn/column/splunk_request_body_analysis.jpg"
 tags: ["Splunk", "Request Body Analysis", "Post-body", "Request-body", "ModSecurity", "OWASP TOP 10"]
-```
+---
 
 ### 💬 **Can Splunk Analyze Web Request Body Logs?**
 
