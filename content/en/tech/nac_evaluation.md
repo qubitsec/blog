@@ -125,9 +125,9 @@ flowchart TD
 
 NAC was originally implemented more for administrative convenience than for security enhancement. Under modern information security frameworks, **NAC often becomes an unnecessary element**—removing it is often more beneficial.
 
-☑️ NAC imposes high costs and operational burden.
-☑️ Pre-registering all IP addresses is inefficient.
-☑️ Using PLURA-XDR allows for real-time anomaly detection and response.
+☑️ NAC imposes high costs and operational burden.  
+☑️ Pre-registering all IP addresses is inefficient.  
+☑️ Using PLURA-XDR allows for real-time anomaly detection and response.  
 ☑️ Security operations can proceed **without** installing extra software.
 
 ---
