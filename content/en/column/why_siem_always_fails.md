@@ -180,7 +180,7 @@ To detect **SQL Injection**, **XSS**, or **web shells** via SIEM:
   * Write **detection rules** for suspicious patterns,
   * Exclude normal usage scenarios manually.
 
-👉 [Why Analyze GET/POST Logs?](https://blog.plura.io/ko/column/why_analyze_get_post_logs/)
+👉 [Why Analyze GET/POST Logs?](https://blog.plura.io/en/column/why_analyze_get_post_logs/)
 
 ---
 
