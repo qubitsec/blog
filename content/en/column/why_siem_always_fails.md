@@ -449,12 +449,11 @@ By thoroughly considering these items and creating a solid plan **before** adopt
 
 ### 📚 PLURA Blog
 
-* [If You Deploy SIEM, Then What? If Log Collection & Analysis Don’t Work](https://blog.plura.io/en/column/why_siem_always_fails/)
+* [If You Deploy SOAR, Then What? No Real Automated Response If It Can’t Act](https://blog.plura.io/en/column/why_soar_always_fails/)
 * [Is Log Analysis for Hack Investigations a Myth?](https://blog.plura.io/en/column/myth/)
 * [Analyzing Request Body Logs in Splunk](https://blog.plura.io/en/column/splunk_request_body_analysis/)
 * [Introduction to Preventing Data Exfiltration via Web Traffic](https://blog.plura.io/en/column/dlp/)
 * [Traditional SOC vs. PLURA-XDR Platform](https://blog.plura.io/en/column/traditional_soc_vs_plura_xdr/)
-* [If You Deploy SOAR, Then What? No Real Automated Response If It Can’t Act](https://blog.plura.io/en/column/why_soar_always_fails/)
 
 ### 🌟 PLURA-XDR Services
 
