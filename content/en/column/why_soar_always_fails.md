@@ -220,28 +220,13 @@ Ensuring these are “**checked**” and reasonably mature before rolling out SO
 
 ---
 
-### 📖 Further Reading
+### 📚 PLURA Blog
 
 * [If You Deploy SIEM, Then What? If Log Collection & Analysis Don’t Work](https://blog.plura.io/en/column/why_siem_always_fails/)
 * [Is Log Analysis for Hack Investigations a Myth?](https://blog.plura.io/en/column/myth/)
 * [Analyzing Request Body Logs in Splunk](https://blog.plura.io/en/column/splunk_request_body_analysis/)
 * [Introduction to Preventing Data Exfiltration via Web Traffic](https://blog.plura.io/en/column/dlp/)
-* [Which Log Analysis Tool Should Our Company Use?](https://blog.plura.io/en/column/log-analysis-tool-selection-guide/)
-* [PHP WebShell Malware](https://blog.plura.io/en/threats/php_webshell_malware/)
-
-### 📖 SIEM & SOAR Deployment Failures
-
-* [April 2025 SKT Hack via BPFDoor Malware](https://blog.plura.io/en/respond/bpfdoor/)
-* [GS Retail Hack in January 2025](https://blog.plura.io/en/threats/case-gs_credential_stuffing/)
-* [LG Uplus Customer Authentication Leak (June 2018)](https://blog.plura.io/en/threats/case-lg_uplus_breach/)
-* [Court Administration Office Hack (May 2023)](https://blog.plura.io/en/threats/case-court_breach/)
-
-### 🌟 How PLURA-XDR Differs
-
-* [Detect Hacks Within One Minute: PLURA-XDR’s Instant Visibility](https://blog.plura.io/en/respond/1-minute-detection/)
 * [Traditional SOC vs. PLURA-XDR Platform](https://blog.plura.io/en/column/traditional_soc_vs_plura_xdr/)
-* [Choose Only the Security You Need, When You Need It: PLURA vs. Traditional Security](https://blog.plura.io/en/column/plura_vs_traditional_security/)
-* [Demo: Credential Stuffing Detection & Blocking](https://www.youtube.com/watch?v=sDssT98NCg0)
 
 ### 🌟 PLURA-XDR Services
 
