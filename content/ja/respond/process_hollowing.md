@@ -20,7 +20,7 @@ title: "Process Hollowing: 攻撃技術と検出戦略"
 
 <!--more-->
 
-![process_hollowing1](https://github.com/user-attachments/assets/524b4574-0aa7-4878-abc2-60694b47cf9e)
+![process_hollowing1](https://blog.plura.io/cdn/respond/process_hollowing_01.png)
 
 [写真 1] Process Hollowing
 
@@ -30,7 +30,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-1) プロセスを一時停止状態で作成する
 
-![process_hollowing2](https://github.com/user-attachments/assets/011a705f-b35a-4612-8c46-d9a2e70025d5)
+![process_hollowing2](https://blog.plura.io/cdn/respond/process_hollowing_02.png)
 
 [写真 2] Process Hollowing Step 1
 
@@ -42,7 +42,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-2) プロセスのImageBaseアドレスを取得する。
 
-![process_hollowing3](https://github.com/user-attachments/assets/2d2c9524-e112-4798-91ce-b5e1bd2779d0)
+![process_hollowing3](https://blog.plura.io/cdn/respond/process_hollowing_03.png)
 
 [写真 4] Process Hollowing Step 2
 
@@ -54,7 +54,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-3) プロセスのImageBaseアドレスをUnmappingする。
 
-![process_hollowing4](https://github.com/user-attachments/assets/2d798777-6958-451d-a874-ab5422780f4a)
+![process_hollowing4](https://blog.plura.io/cdn/respond/process_hollowing_04.png)
 
 [写真 6] Process Hollowing Step 3
 
@@ -66,7 +66,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-4) プロセスのImageBaseアドレスに新しいイメージをマッピングする。
 
-![process_hollowing5](https://github.com/user-attachments/assets/8c892aca-1789-44c7-ac72-d04f3c4d4e9c)
+![process_hollowing5](https://blog.plura.io/cdn/respond/process_hollowing_05.png)
 
 [사진 8] Process Hollowing Step 4
 
@@ -85,7 +85,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-5) 一時的なメモリ領域を確保する。
 
-![process_hollowing6](https://github.com/user-attachments/assets/1f85d2b0-c132-4098-8c2d-569a877a5ac1)
+![process_hollowing6](https://blog.plura.io/cdn/respond/process_hollowing_06.png)
 
 [写真 11] Process Hollowing Step 5
 
@@ -99,7 +99,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-6) 一時的に確保したメモリ領域にマルウェアPEファイルのヘッダーを書き込む。
 
-![process_hollowing7](https://github.com/user-attachments/assets/b490090d-752f-4bd6-9742-b1f111e42910)
+![process_hollowing7](https://blog.plura.io/cdn/respond/process_hollowing_07.png)
 
 [写真 13] Process Hollowing Step 6
 
@@ -111,7 +111,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-7) 一時的に確保したメモリ領域にマルウェアPEファイルのセクションを書き込む。
 
-![process_hollowing8](https://github.com/user-attachments/assets/ed71f701-290c-4acb-a2de-f0ab19c7c7a9)
+![process_hollowing8](https://blog.plura.io/cdn/respond/process_hollowing_08.png)
 
 [写真 15] Process Hollowing Step 7
 
@@ -125,7 +125,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-8) ImageBaseを基準にマルウェアPEファイルのコードとデータを再配置する。
 
-![process_hollowing9](https://github.com/user-attachments/assets/27a5e07d-3a2c-49fb-b459-263691682c05)
+![process_hollowing9](https://blog.plura.io/cdn/respond/process_hollowing_09.png)
 
 [写真 17] Process Hollowing Step 8
 
@@ -138,7 +138,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-9) 再配置が完了したマルウェアPEファイルを正規PEファイルのメモリ領域に書き込む。
 
-![process_hollowing10](https://github.com/user-attachments/assets/e1b11d53-6e2d-4c9b-8324-5c49c7646981)
+![process_hollowing10](https://blog.plura.io/cdn/respond/process_hollowing_10.png)
 
 [写真 19] Process Hollowing Step 9
 
@@ -155,7 +155,7 @@ Process Hollowingは、一般的に以下の手順で実行されます。
 
 ## 2-10) コードの開始アドレスをImageBaseを基準に修正した後、プロセスを再開する。
 
-![process_hollowing11](https://github.com/user-attachments/assets/d2695498-3cab-4993-8754-bf19d1310143)
+![process_hollowing11](https://blog.plura.io/cdn/respond/process_hollowing_11.png)
 
 [写真 22] Process Hollowing Step 10
 
