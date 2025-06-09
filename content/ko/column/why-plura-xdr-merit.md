@@ -1,7 +1,7 @@
 ---
 title: "지금 해킹 공격이 진행 중인지 확인하려면?"
 date: 2025-06-09
-draft: true
+draft: false
 description: "PLURA-XDR은 단 1분 안에 해킹 여부를 확인하고, 공격 탐지부터 차단까지 자동으로 대응합니다."
 featured_image: "cdn/column/why-plura-xdr-merit.png"
 tags: ["사이버보안", "PLURA-XDR", "APT", "백도어", "자동차단"]
