@@ -94,6 +94,9 @@ sequenceDiagram
     BPFDoor->>OS: open /dev/ptmx → /bin/sh を生成
     Attacker-->>BPFDoor: PTYシェル操作（コマンド実行）
 ```
+---
+
+![Sequence Diagram](https://blog.plura.io/cdn/respond/bpfdoor-sequence-diagram_01.png)
 
 ---
 
