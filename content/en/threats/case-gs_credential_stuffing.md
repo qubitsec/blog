@@ -3,7 +3,7 @@ title: "Credential Stuffing Attack Cases: GS Retail & GS Home Shopping"
 date: 2025-05-01
 draft: false
 description: "An overview of the large-scale credential stuffing attacks on GS Retail and GS Home Shopping during January–February 2025, including attack techniques."
-featured_image: "cdn/threats/case-gs_credential_stuffing_01.png"
+featured_image: "cdn/threats/case-gs_credential_stuffing_02.png"
 tags: ["GS Retail", "GS Home Shopping", "Credential Stuffing", "Security Incident", "Data Breach", "Web Security"]
 ---
 
@@ -11,7 +11,7 @@ In **January–February 2025**, a **credential stuffing** attack occurred on the
 The attackers leveraged previously leaked account/password combinations to attempt mass automated logins. They exploited the vulnerability of some users reusing **the same passwords across different websites**, resulting in a breach.
 
 <!--more-->
-![Credential Stuffing on GS Retail & GS Home Shopping](https://blog.plura.io/cdn/threats/case-gs_credential_stuffing_01.png)
+![Credential Stuffing on GS Retail & GS Home Shopping](https://blog.plura.io/cdn/threats/case-gs_credential_stuffing_02.png)
 
 ---
 
