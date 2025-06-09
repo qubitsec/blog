@@ -70,7 +70,7 @@ In today’s cybersecurity landscape, **real-time data analysis and threat intel
 ---
 
 ### 📖 Related Resources  
-- [Netflix – Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)  
+- [Netflix – Zero Day](https://www.youtube.com/embed/FOfBiiPdQPI?si=FV0LoG7HpAocoEH-)  
 - [Wikipedia – Zero-Day Attack](https://en.wikipedia.org/wiki/Zero-day_(computing))
 
 ### 📚 PLURA Blog
