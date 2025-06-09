@@ -117,7 +117,7 @@ flowchart TD
   BlockIP --> Alert[Admin Alert]
 ```
 
-![Flowchart](https://blog.plura.io/cdn/tech/nac_evaluation-3.png)
+![Flowchart](https://blog.plura.io/cdn/tech/nac_evaluation-4.png)
 
 ---
 
