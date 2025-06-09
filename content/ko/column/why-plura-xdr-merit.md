@@ -147,7 +147,6 @@ PLURA-XDR의 빠른 탐지와 자동 대응이
 **실제로 어떤 효과를 주는지 직접 경험**해 보세요.
 
 - **무료 데모 문의**: [데모 요청 페이지](https://www.plura.io/contact)  
-- **기술 지원**: [기술 문의하기](https://www.plura.io/support)
 
 ---
 
