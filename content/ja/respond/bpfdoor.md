@@ -97,10 +97,6 @@ sequenceDiagram
 
 ---
 
-![Sequence Diagram](https://blog.plura.io/cdn/respond/bpfdoor-sequence-diagram.png)
-
----
-
 ## 3️⃣ なぜ検知が難しいのか？
 
 | 検知回避ポイント        | 詳細                                   |
