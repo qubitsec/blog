@@ -122,9 +122,6 @@ sequenceDiagram
     Note over SOAR,SIEM: 7. SOARがブロック結果をSIEMに記録
     SOAR ->> SIEM: イベントステータスを更新
 ```
----
-
-![SOAR, SIEM & WAF の動作構成図](https://blog.plura.io/cdn/column/why_soar_always_fails-2.png)
 
 ---
 
