@@ -72,10 +72,10 @@ tags: ["앨런 튜링", "Alan Mathison Turing", "The Imitation Game", "사이버
 
 우리는 지금, **다른 누구도 해내지 못한 일을 해내고 있습니다.**
 
-## 📖 **함께 읽기**  
+### 📖 함께 읽기
 - [앨런 튜링, 위키백과](https://ko.wikipedia.org/wiki/%EC%95%A8%EB%9F%B0_%ED%8A%9C%EB%A7%81)
 - [앨런 튜링, 나무위키](https://namu.wiki/w/%EC%95%A8%EB%9F%B0%20%ED%8A%9C%EB%A7%81)
 - [The Imitation Game, Wikipedia](https://en.wikipedia.org/wiki/The_Imitation_Game)
 
-#### 🚀 PLURA-XDR 철학 및 소개
-- [지금 해킹 공격이 진행 중인지 확인하려면?](https://blog.plura.io/ko/column/why-plura-xdr-merit/)  
+### 🚀 PLURA-XDR 소개
+- [지금 해킹 공격이 진행 중인지 확인하려면?](https://blog.plura.io/ko/column/why-plura-xdr-merit/)
