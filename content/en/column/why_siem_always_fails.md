@@ -189,7 +189,7 @@ To detect **SQL Injection**, **XSS**, or **web shells** via SIEM:
 **BPFDoor** is a **highly advanced backdoor** hidden at the **Linux kernel** level:
 
 * It rarely shows up as a **user-mode process** or standard **OS event logs**.
-* Used in major hacks like the [SK Telecom breach in April 2025](https://blog.plura.io/ko/column/leak_of_skt_usim/), causing serious damage. 💀
+* Used in major hacks like the [SK Telecom breach in April 2025](https://blog.plura.io/en/column/leak_of_skt_usim/), causing serious damage. 💀
 
 #### Why Doesn’t It Show in “Normal” Logs?
 
@@ -239,7 +239,7 @@ To detect **SQL Injection**, **XSS**, or **web shells** via SIEM:
 
 * Example: Using account credentials leaked from “Service A” to brute-force “Service B.”
 
-*(The [GS Retail breach in January 2025](https://blog.plura.io/ko/threats/case-gs_credential_stuffing/) leveraged such an attack. 💀)*
+*(The [GS Retail breach in January 2025](https://blog.plura.io/en/threats/case-gs_credential_stuffing/) leveraged such an attack. 💀)*
 
 #### Why Is SIEM Alone Insufficient?
 
