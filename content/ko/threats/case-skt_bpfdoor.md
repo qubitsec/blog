@@ -40,7 +40,7 @@ tags: ["i-Soon", "SK텔레콤", "BPFDoor", "APT", "중국 해킹 그룹"]
 
 ```mermaid
 flowchart TD
-    A[1. LGU+ 침투] --> B[통신망 구조 정찰 및 정보 수집]
+    A[LG유플러스 침투] --> B[통신망 구조 정찰 및 정보 수집]
     B --> C[기법 및 도구 확보]
     C --> D[SKT 시스템 구조와 유사]
     D --> E[VPN 취약점 이용 침입]
