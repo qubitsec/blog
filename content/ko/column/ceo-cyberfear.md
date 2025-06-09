@@ -1,7 +1,7 @@
 ---
 title: "CEO가 가장 두려워하는 문제, 사이버 해킹"
 date: 2025-06-08
-draft: false
+draft: true
 description: "사이버 보안은 CEO에게 가장 두렵고, 가장 알 수 없는 영역입니다. PLURA-XDR은 이 불확실성을 줄이고, 보안의 본질에 집중할 수 있는 대안을 제시합니다."
 featured_image: "cdn/column/ceo-cyberfear.png"
 tags: ["사이버보안", "CEO", "APT", "PLURA-XDR", "보안전략"]
