@@ -72,6 +72,8 @@ tags: ["앨런 튜링", "Alan Mathison Turing", "The Imitation Game", "사이버
 
 우리는 지금, **다른 누구도 해내지 못한 일을 해내고 있습니다.**
 
+---
+
 ### 📖 함께 읽기
 - [앨런 튜링, 위키백과](https://ko.wikipedia.org/wiki/%EC%95%A8%EB%9F%B0_%ED%8A%9C%EB%A7%81)
 - [앨런 튜링, 나무위키](https://namu.wiki/w/%EC%95%A8%EB%9F%B0%20%ED%8A%9C%EB%A7%81)
