@@ -4,7 +4,7 @@ date: 2025-06-10
 draft: false
 description: "엘런 튜링의 말처럼, 프루라 개발팀은 누구도 상상하지 못한 방식으로 해킹에 대응하는 전례 없는 보안 기술을 만들어 냈습니다."
 featured_image: "cdn/column/theory-of-imitation_game.png"
-tags: ["PLURA-XDR", "사이버보안", "이미테이션게임", "로그기반보안", "큐비트시큐리티"]
+tags: ["앨런 튜링", "Alan Mathison Turing", "The Imitation Game", "사이버보안", "이미테이션게임", "로그기반보안", "큐비트시큐리티"]
 ---
 
 ## 🎬 영화 *이미테이션 게임* 속 명대사
@@ -12,7 +12,7 @@ tags: ["PLURA-XDR", "사이버보안", "이미테이션게임", "로그기반보
 > “**Sometimes it is the people no one imagines anything of who do the things that no one can imagine.**”  
 > “생각지도 못한 누군가가, 누구도 상상하지 못한 일을 해내곤 합니다.”
 
-이 구절은 천재 수학자 **앨런 튜링**의 이야기를 다룬 영화 *이미테이션 게임*에서 가장 인상적인 대사입니다.  
+이 구절은 천재 수학자 **앨런 튜링**(Alan Mathison Turing)의 이야기를 다룬 영화 **이미테이션 게임**(The Imitation Game)에서 가장 인상적인 대사입니다.  
 그는 기존의 방식으로는 절대 풀 수 없던 **에니그마 암호를 해독**하며 2차 세계대전의 전세를 바꿨습니다.
 
 ![Imitation Game](https://blog.plura.io/cdn/column/theory-of-imitation_game.png)
@@ -71,3 +71,11 @@ tags: ["PLURA-XDR", "사이버보안", "이미테이션게임", "로그기반보
 **보안의 본질**에 집중하며, 기존의 틀을 깬 혁신을 현실로 만들어 낸 제품입니다.
 
 우리는 지금, **다른 누구도 해내지 못한 일을 해내고 있습니다.**
+
+## 📖 **함께 읽기**  
+- [앨런 튜링, 위키백과](https://ko.wikipedia.org/wiki/%EC%95%A8%EB%9F%B0_%ED%8A%9C%EB%A7%81)
+- [앨런 튜링, 나무위키](https://namu.wiki/w/%EC%95%A8%EB%9F%B0%20%ED%8A%9C%EB%A7%81)
+- [The Imitation Game, Wikipedia](https://en.wikipedia.org/wiki/The_Imitation_Game)
+
+#### 🚀 PLURA-XDR 철학 및 소개
+- [지금 해킹 공격이 진행 중인지 확인하려면?](https://blog.plura.io/ko/column/why-plura-xdr-merit/)  
