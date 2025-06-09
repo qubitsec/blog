@@ -134,12 +134,26 @@ PLURA-XDR은 보안의 본질에 집중합니다.
 
 ---
 
-#### 더 알아보기
+#### 보안 솔루션 다시 살펴 보기
 
-- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
-- [PLURA를 활용한 BPFDoor 탐지](https://blog.plura.io/ko/respond/bpfdoor_with_plura/)
-- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
+- [SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다면](https://blog.plura.io/ko/column/why_siem_always_fails/)
 - [SOAR 도입하면 뭐하나요? 자동 대응도 못하는데](https://blog.plura.io/ko/column/why_soar_always_fails/)
+- [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+- [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
+- [NAC 도입이 필요한가요?](https://blog.plura.io/ko/tech/nac_evaluation/)
+  
+#### SKT 해킹에 적용해 보기
+
+- [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)
+- [PLURA를 활용한 BPFDoor 탐지](https://blog.plura.io/ko/respond/bpfdoor_with_plura/)
+- [BPFDoor 악성코드 탐지 도구 비교 분석](https://blog.plura.io/ko/column/bpfdoor_detection_tools/)
 
 ### 📺 함께 시청하기
-- [PLURA의 Audit 로그 기반 실시간 탐지 시연 (BPFDoor)](https://youtu.be/Rkz7vNAM0ZY)
+- [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
+
+#### PLURA-XDR 철학 및 소개
+
+- [PLURA-XDR 서비스 이해하기](https://w.plura.io/philosophy/ko/)
+- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
+- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
+- [필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보안 솔루션](https://blog.plura.io/ko/column/plura_vs_traditional_security/)
