@@ -4,7 +4,7 @@ date: 2025-03-09
 draft: false
 description: "攻撃者の視点であるレッドチーム（ハッカー）とブルーチームの間で繰り広げられる『槍と盾の戦い』の中で、PLURA-XDRの必要性と強力なセキュリティの役割について探ります。"
 featured_image: "cdn/column/spear_vs_shield.png"
-tags: ["Spear", "Shield", "해커", "Red Team", "Blue Team", "Cybersecurity", "PLURA-XDR"]
+tags: ["Spear", "Shield", "hacker", "Red Team", "Blue Team", "Cybersecurity", "PLURA-XDR"]
 ---
 
 
