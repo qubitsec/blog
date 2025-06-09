@@ -3,7 +3,7 @@ title: "IPSの進化とセキュリティ環境の変化"
 date: 2024-12-22
 draft: false
 description: "IPS技術の発展とトラフィック暗号化の増加に伴うセキュリティ戦略の変化について議論します。"
-featured_image: "cdn/column/ips_classification-1.png"
+featured_image: "cdn/column/ips_classification-3.png"
 tags: ["IPS", "HIPS", "NIPS", "セキュリティ", "Security"]
 ---
 
@@ -16,7 +16,7 @@ tags: ["IPS", "HIPS", "NIPS", "セキュリティ", "Security"]
 以下では、IPS技術がどのように進化しているのか、そして現代においてどのようなセキュリティ対策が重要であるのかを簡単に説明します。
 
 
-![IPSの分類](https://blog.plura.io/cdn/column/ips_classification-1.png)
+![IPSの分類](https://blog.plura.io/cdn/column/ips_classification-3.png)
 
 <!--more-->
 
