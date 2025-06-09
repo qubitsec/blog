@@ -7,7 +7,7 @@ featured_image: "cdn/threats/case-skt_bpfdoor.png"
 tags: ["i-Soon", "SK텔레콤", "BPFDoor", "APT", "중국 해킹 그룹"]
 ---
 
-2025년 4월 발생한 **SK텔레콤 해킹 사건**은 은밀하고 장기적인 **APT 공격**으로, 핵심 통신 인프라인 **HSS(Home Subscriber Server)**까지 침해된 정황이 밝혀졌습니다.  
+2025년 4월 발생한 **SK텔레콤 해킹 사건**은 은밀하고 장기적인 **APT 공격**으로, 핵심 통신 인프라인 **HSS**(Home Subscriber Server)까지 침해된 정황이 밝혀졌습니다.  
 이 사건은 중국의 해커 용병 조직 **i-Soon**이 과거 수행한 LG유플러스 해킹 방식과 구조적으로 유사하며, 기술·전술적 연관성이 다수 포착되고 있습니다.
 
 <!--more-->
