@@ -31,7 +31,7 @@ tags: ["앨런 튜링", "Alan Mathison Turing", "The Imitation Game", "사이버
 
 ---
 
-## ✅ 프루라는 누구도 생각하지 못한 일을 해냈습니다
+## ✅ 프루라(PLURA)는 누구도 생각하지 못한 일을 해냈습니다
 
 **PLURA**는 사이버보안의 *제1원칙*(First Principle)인 **로그**에 집중합니다. 
 
