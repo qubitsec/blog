@@ -82,7 +82,7 @@ tags: ["보안", "IDS", "IPS", "NDR", "WAF", "EDR", "XDR"]
 
 ---
 
-## 📖 함께 읽기
+## 📖 PLURA Blog 함께 읽기
 - [보안의 코어와 부가적 서비스를 구분해야 하는 이유](https://blog.plura.io/ko/column/core_security_vs_supplementary_security_services)
 - [다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)
 
@@ -93,3 +93,4 @@ tags: ["보안", "IDS", "IPS", "NDR", "WAF", "EDR", "XDR"]
 * [WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
 * [IPS의 진화와 보안 환경의 변화](https://blog.plura.io/ko/column/ips_classification/)
 * [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
+* [What are the Disadvantages of NDR?](https://www.stamus-networks.com/blog/what-are-the-disadvantages-of-ndr)
