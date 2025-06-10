@@ -108,6 +108,7 @@ PLURA-XDR은 NDR의 한계를 극복하기 위해 다음과 같은 전략을 제
 
 ### 📖 **함께 읽기**
 - ["Cisco Encrypted Traffic Analytics(ETA)의 한계"](https://community.cisco.com/t5/security-knowledge-base/cisco-eta-feature-encrypted-traffic-analysis-at-glance/ta-p/4783197)
+- [What are the Disadvantages of NDR?](https://www.stamus-networks.com/blog/what-are-the-disadvantages-of-ndr)
 
 ### 📖 IDS/IPS/NDR 한계 이해하기
 * [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
