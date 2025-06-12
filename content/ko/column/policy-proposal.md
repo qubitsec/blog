@@ -1,7 +1,7 @@
 ---
 title: "[정책 제안] 해킹은 막지 못하는 인증제도: 이제는 현실을 반영해야 할 때"
 date: 2025-06-13
-draft: false
+draft: true
 description: "ISMS, CC인증, 보안적합성 인증 등 현행 정보보안 제도의 구조적 한계를 짚고, 예스24·GS리테일 등 해킹 사례를 통해 실효성 문제를 제기합니다. PLURA가 제안하는 웹 기반 위협 대응 전략을 통해 정책 개선의 방향을 제안합니다."
 featured_image: "cdn/column/policy-proposal.png"
 tags: ["정보보안", "ISMS", "PLURA", "웹방화벽", "로그분석", "정책제안"]
