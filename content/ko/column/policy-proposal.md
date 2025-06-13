@@ -7,7 +7,7 @@ featured_image: "cdn/column/policy-proposal.png"
 tags: ["정보보안", "ISMS", "PLURA", "웹방화벽", "로그분석", "정책제안"]
 ---
 
-# 대한민국 정보보안 인증 제도의 한계와 웹 기반 위협 대응 전략
+# 대한민국 정보보안 인증 제도의 철폐와 완벽한 공격 대응 전략
 
 ## 1. 도입 (Introduction)
 
