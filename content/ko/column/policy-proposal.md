@@ -71,6 +71,10 @@ KISA 집계(2025‑05 기준)에 따르면 **ISMS 인증 기업 침해사고 신
 
 ---
 
+### 2‑3) [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은지에 대한 보고서](https://blog.plura.io/ko/column/policy-proposal-example-useless/)
+
+---
+
 ## 3. 대안 (Solutions: Web-Based Threat Response Strategies)
 
 현장의 보안 대응력을 높이기 위해서는 **형식적 인증을 넘어 실효적인 기술·운영 대책**을 병행해야 합니다. **PLURA** 등이 강조하는 다음과 같은 **웹 기반 위협 대응 전략**들은 현행 제도의 빈틈을 보완할 수 있는 현실적인 대안입니다:
