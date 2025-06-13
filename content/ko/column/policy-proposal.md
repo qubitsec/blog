@@ -71,7 +71,7 @@ KISA 집계(2025‑05 기준)에 따르면 **ISMS 인증 기업 침해사고 신
 
 ---
 
-### 2‑3) [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은지에 대한 보고서](https://blog.plura.io/ko/column/policy-proposal-example-useless/)
+### 3) [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은지에 대한 보고서](https://blog.plura.io/ko/column/policy-proposal-example-useless/)
 
 ---
 
