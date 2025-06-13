@@ -1,6 +1,6 @@
 ---
 title: "[정책 제안] 우리나라 해킹은 정부의 인증 제도 때문이다"
-date: 2025-06-13
+date: 2025-06-14
 draft: true
 description: "정부가 강제하는 ISMS, CC인증, 보안적합성 인증 등 형식 위주의 정보보안 제도는 해킹을 막지 못하고 보안 인력만 낭비합니다. 반복되는 침해사고 사례를 바탕으로 인증 제도의 철폐를 요구하며, PLURA가 제안하는 웹 기반 완전 방어 전략을 통해 실효적 대안을 제시합니다."
 featured_image: "cdn/column/policy-proposal.png"
