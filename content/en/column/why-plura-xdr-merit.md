@@ -158,11 +158,6 @@ Experience firsthand
 - [Understanding Intrusion Prevention Systems (IPS)](https://blog.plura.io/en/column/ips_understanding/)  
 - [Do you really need NAC?](https://blog.plura.io/en/tech/nac_evaluation/)  
 
-#### 📱 Apply to the SKT Hacking Case
-
-- [SKT Hacking Hypothesis: How USIM data was stolen and BPFDoor installed](https://blog.plura.io/en/column/skt-hacking-hypothesis/)  
-- [Detecting BPFDoor with PLURA](https://blog.plura.io/en/respond/bpfdoor_with_plura/)  
-- [Comparative Analysis of BPFDoor Malware Detection Tools](https://blog.plura.io/en/column/bpfdoor_detection_tools/)  
 
 ### 📺 Watch This Together
 
@@ -171,6 +166,5 @@ Experience firsthand
 #### 🚀 Philosophy & Introduction to PLURA-XDR
 
 - [Understanding PLURA-XDR Services](https://w.plura.io/philosophy/en/)  
-- [Determine Hacking Status in 1 Minute: PLURA-XDR’s Instant Visibility](https://blog.plura.io/en/respond/1-minute-detection/)  
 - [Traditional SOC vs. PLURA-XDR Platform](https://blog.plura.io/en/column/traditional_soc_vs_plura_xdr/)  
-- [Choose Only the Security You Need: PLURA vs. Traditional Solutions](https://blog.plura.io/en/column/plura_vs_traditional_security/)  
+
