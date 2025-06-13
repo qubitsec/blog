@@ -226,7 +226,7 @@ ISMS-P 등의 관리체계 요구사항을 살펴보면 **접근통제**, **계�
 
 ### 국제 표준 및 가이드의 접근
 
-국제적으로는 Credential Stuffing과 같은 **인증 공격에 대비한 권고**가 활발합니다. **ENISA**와 **유럽 개인정보 감독기구(EDPS)** 등은 **크리덴셜 스터핑을 주요 위협으로 지목**하면서, **멀티팩터 인증(MFA)** 도입, **비밀번호 유출 모니터링(예: Have I Been Pwned 등의 DB 대조)**, **로그인 시도 패턴 분석** 등을 권장하고 있습니다. **NIST SP 800-63B(전자 인증 가이드)**에서도 사용자가 과거 유출된 비밀번호를 새 비밀번호로 설정하지 못하도록 **누출 목록과 대조하도록** 명시하고 있습니다. 또한 **OWASP**에서는 **Credential Stuffing 대응 Cheat Sheet**를 제공하여 IP별 rate limiting, Captcha 도입, MFA, 로그인 실패 모니터링 같은 구체적 수단을 안내합니다. 특히 **금융권**이나 **대형 플랫폼 서비스**는 사용자 보호 차원에서 **이상 로그인 탐지 시스템**(예: 동일 IP에서 다계정 로그인 시도, 동일 계정의 지리적 이격 로그인) 등을 구축하고 있습니다.
+국제적으로는 Credential Stuffing과 같은 **인증 공격에 대비한 권고**가 활발합니다. **ENISA**와 **유럽 개인정보 감독기구(EDPS)** 등은 **크리덴셜 스터핑을 주요 위협으로 지목**하면서, **멀티팩터 인증(MFA)** 도입, **비밀번호 유출 모니터링**(예: Have I Been Pwned 등의 DB 대조), **로그인 시도 패턴 분석** 등을 권장하고 있습니다. **NIST SP 800-63B(전자 인증 가이드)**에서도 사용자가 과거 유출된 비밀번호를 새 비밀번호로 설정하지 못하도록 **누출 목록과 대조하도록** 명시하고 있습니다. 또한 **OWASP**에서는 **Credential Stuffing 대응 Cheat Sheet**를 제공하여 IP별 rate limiting, Captcha 도입, MFA, 로그인 실패 모니터링 같은 구체적 수단을 안내합니다. 특히 **금융권**이나 **대형 플랫폼 서비스**는 사용자 보호 차원에서 **이상 로그인 탐지 시스템**(예: 동일 IP에서 다계정 로그인 시도, 동일 계정의 지리적 이격 로그인) 등을 구축하고 있습니다.
 
 LoL 공격에 대해서 국제 가이드는 **행위기반 탐지와 원천 차단** 양면을 강조합니다. 예를 들어 **MITRE ATT\&CK** 프레임워크는 PowerShell 사용, 스크립트 실행 등 **TTP**(전술/기술)를 카탈로그화하여 보안팀이 이를 모니터링하게 돕고 있습니다. **NSA**와 **CISA**에서는 **파일리스 악성코드 대응 지침**을 발행하여, **메모리 포렌식, 명령줄 로깅, 스크립트 실행 제한** 등을 권고합니다. **EDR 제품**들은 이러한 LoL 행위를 실시간 탐지하도록 설계되고 있고, MS의 Defender for Endpoint도 **의심스런 PowerShell 명령 차단 기능** 등을 제공합니다. ENISA의 사이버 위협보고서에서도 “**합법적 시스템 도구 악용이 증가하고 있어, 보안 통제가 이를 식별하도록 고도화되어야 한다**”는 언급이 있습니다.
 
@@ -282,3 +282,16 @@ IPS 구축, 연례 점검, 외부 백신 선호와 같은 구시대적 요건은
 그것이야말로 진짜 보안을 위한 첫 걸음입니다.
 
 따라서, 지금 우리가 바꿔야 할 것은 기술이 아니라 **이 기술을 바라보는 정책의 틀 그 자체입니다.**
+
+---
+
+## 참고 (References)
+
+1. 신지은, 「GS리테일, 크리덴셜 스터핑 공격 받아 고객 9만명 개인정보 유출」, *보안뉴스* (2025-01-05).
+2. 개인정보보호위원회, 「한국장학재단 홈페이지, 크리덴셜 스터핑으로 3만 2천명 개인정보 유출」 보도자료 (2024-11-18).
+3. Cloudflare Radar Team, *2024 Year in Review: Encryption on the Web* (2024-12).
+4. Gigamon, *State of SSL/TLS Visibility Report 2023* (2023-09).
+5. ISACA, 「Fileless Attacks on the Rise: 1,400 Percent Increase」 (2023-10).
+6. AV-TEST Institute, *Product Review and Certification Report – Microsoft Defender Antivirus (Windows 10) Nov-Dec 2024* (2025-01).
+7. Trend Micro, 「BPFDoor: Hidden Controller Used Against Asia, Middle East Targets」 (2025-04)
+
