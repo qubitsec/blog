@@ -100,7 +100,7 @@ weight = 4
 
 [[menu.ja]]
 name = "ニュース"
-url = "https://w.qubitsec.com/ja/news.html"
+url = "https://www.damda.cloud/news"
 weight = 5
 params.target = "_blank"
 
