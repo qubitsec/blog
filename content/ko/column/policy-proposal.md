@@ -156,4 +156,3 @@ MITRE ATT\&CK 기반의 운영은 곧 “**공격자 관점에서 스스로를 �
 7. PLURA 블로그, 「웹의 전체 로그 분석은 왜 중요한가？」 (2025‑02‑20).
 8. PLURA 블로그, 「마이터 어택 관점에서 고급 감사 정책 활용」 (2023‑02‑21).
 9. NIST, **Zero Trust Architecture (ZTA)**, Special Publication 800-207, National Institute of Standards and Technology (2020).
-
