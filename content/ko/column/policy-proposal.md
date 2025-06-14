@@ -71,7 +71,7 @@ KISA에 따르면 ISMS 인증 기업의 침해사고 신고 건수는 2021년 6�
 
 ---
 
-### 3) [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은지에 대한 보고서](https://blog.plura.io/ko/column/policy-proposal-example-useless/)
+### 3) [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은지에 대한 보고서](https://blog.plura.io/ko/column/policy-proposal-example-useless/) 🌐
 
 본 보고서에서는 **정보보안 인증 제도의 기술적 한계를 세 가지 사례 중심으로 분석**합니다. 또한 제도 설계의 구조적 문제뿐만 아니라, **크리덴셜 스터핑이나 Living off the Land(LoL)과 같은 최신 공격에 대한 대응 기준조차 마련되지 않은 현실**을 함께 짚어봅니다.
 
