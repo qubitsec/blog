@@ -247,7 +247,7 @@ ls -l /proc/*/exe 2>/dev/null | grep '(deleted)' | grep -E '/dev/shm|/tmp'
 ---
 
 ## 📖 함께 읽기
-
+- [250512 KISA BPFDoor 악성코드 점검 가이드](https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&pageIndex=1&nttId=71754&menuNo=205020)
 - [**SKT 유심 해킹 사건 총정리: 유출 원인, 피해 규모, 대응 방법까지**](https://blog.plura.io/ko/column/leak_of_skt_usim/)
 - [**SKT 해킹 악성코드 BPFDoor 분석 및 PLURA-XDR 대응 전략 (탐지 시연 영상 포함)**](https://blog.plura.io/ko/respond/bpfdoor/)
 - [**SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 대응법**](https://blog.plura.io/ko/column/limitations-ndr-bpfdoor/)
