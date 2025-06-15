@@ -123,6 +123,8 @@ MITRE ATT\&CK은 전 세계에서 발생한 실제 사이버 공격 기법을 �
 
 MITRE ATT\&CK 기반의 운영은 곧 “**공격자 관점에서 스스로를 점검하는 방어 전략**”이며, 이러한 방식이야말로 기존 인증제도의 한계를 보완하고, 국내 보안 수준을 실질적으로 향상시킬 수 있는 열쇠입니다.
 
+[PLURA-XDR] [완벽한 대응을 위한 정보보안 캠페인](https://blog.plura.io/ko/column/campaign_supplychain_security/) ↗️
+
 ---
 
 ## 4. 결론 (Conclusion)
