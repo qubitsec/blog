@@ -3,7 +3,7 @@ title: "디트리히 본회퍼의 멍청이 이론"
 date: 2025-03-05T10:38:00
 draft: false
 description: "디트리히 본회퍼의 멍청이 이론과 현대 사회에 미치는 영향을 분석합니다."
-featured_image: "cdn/column/theory-of-stupidity.png"
+featured_image: "cdn/column/theory-of-stupidity-2.png"
 tags: ["디트리히 본회퍼", "멍청이 이론", "사회 비판", "철학", "정치", "비판적 사고"]
 ---
 
@@ -14,7 +14,7 @@ tags: ["디트리히 본회퍼", "멍청이 이론", "사회 비판", "철학", 
 - **디트리히 본회퍼**(Dietrich Bonhoeffer, 1906~1945)는 독일의 신학자이자 철학자로, 나치 정권에 저항하다가 처형되었습니다.
 - 그의 저서 *저항과 복종*(Widerstand und Ergebung, Resistance and Submission)에서 **멍청이 이론**(Dummheitstheorie, Theory of Stupidity)을 제시하며, 독재 정권과 전체주의 사회에서 왜 사람들이 비이성적으로 행동하는지를 분석했습니다.
 
-![Theory of Stupidity](https://blog.plura.io/cdn/column/theory-of-stupidity.png)
+![Theory of Stupidity](https://blog.plura.io/cdn/column/theory-of-stupidity-2.png)
 <!--more-->
 
 ---
