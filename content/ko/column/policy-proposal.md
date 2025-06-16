@@ -236,22 +236,24 @@ LLM은 WAF·EDR가 수집한 탐지 로그 중 **샘플링된 이벤트**만 받
 ### 국내 공식 보고서 및 통계
 
 8. 한국인터넷진흥원(KISA), 『사이버 침해사고 통계연보 2024』 (2025‑03), [https://stat.kisa.or.kr](https://stat.kisa.or.kr)
+9. 한국인터넷진흥원, 『정보보호 관리체계(ISMS) 인증기준 해설서 v4.0』 (2024‑07).
 
 ### 기술 보고서 및 국제 보안 자료
 
-9. NIST, *Zero Trust Architecture (ZTA)*, Special Publication 800-207, National Institute of Standards and Technology (2020).
-10. NIST, *National Vulnerability Database (NVD)*, [https://nvd.nist.gov](https://nvd.nist.gov)
-11. CVE® Program, *2024 Year in Review* (2025‑01).
-12. MITRE, *ATT\&CK Framework*, [https://attack.mitre.org](https://attack.mitre.org)
-13. MITRE Engenuity, *CALDERA User Guide v4.2* (2024‑11).
-14. OWASP Foundation, *ModSecurity Core Rule Set 3.4 Release Notes* (2025‑01).
-15. Trend Micro Research, 「BPFDoor: A Covert Backdoor Using Raw Sockets」 (2025‑04).
-16. AV‑TEST GmbH, “Microsoft Defender Antivirus (Windows 10) – Nov–Dec 2024 Evaluation”, [https://www.av-test.org/en/antivirus/home-windows/](https://www.av-test.org/en/antivirus/home-windows/)
-17. Cloudflare Radar Team, 「Encryption on the Web 2024 Review」 (2024‑12).
-18. Google Cloud DORA Team, *Accelerate State of DevOps Report 2024* (2024‑10).
-19. OpenAI, *GPT‑4o System Card* (2025‑05).
+10. NIST, *Zero Trust Architecture (ZTA)*, Special Publication 800-207, National Institute of Standards and Technology (2020).
+11. NIST, *National Vulnerability Database (NVD)*, [https://nvd.nist.gov](https://nvd.nist.gov)
+12. CVE® Program, *2024 Year in Review* (2025‑01).
+13. MITRE, *ATT\&CK Framework*, [https://attack.mitre.org](https://attack.mitre.org)
+14. MITRE Engenuity, *CALDERA User Guide v4.2* (2024‑11).
+15. OWASP Foundation, *ModSecurity Core Rule Set 3.4 Release Notes* (2025‑01).
+16. Trend Micro Research, 「BPFDoor: A Covert Backdoor Using Raw Sockets」 (2025‑04).
+17. AV‑TEST GmbH, “Microsoft Defender Antivirus (Windows 10) – Nov–Dec 2024 Evaluation”, [https://www.av-test.org/en/antivirus/home-windows/](https://www.av-test.org/en/antivirus/home-windows/)
+18. Cloudflare Radar Team, 「Encryption on the Web 2024 Review」 (2024‑12).
+19. Google Cloud DORA Team, *Accelerate State of DevOps Report 2024* (2024‑10).
+20. OpenAI, *GPT‑4o System Card* (2025‑05).
+21. Cloud Security Alliance, WAAP Guidance v1.1 (2024‑03).
 
 ### 기업 블로그·기술 인사이트
 
-20. PLURA 블로그, 「웹의 전체 로그 분석은 왜 중요한가？」 (2025‑02‑20).
-21. PLURA 블로그, 「마이터 어택 관점에서 고급 감사 정책 활용」 (2023‑02‑21).
+22. PLURA 블로그, 「웹의 전체 로그 분석은 왜 중요한가？」 (2025‑02‑20).
+23. PLURA 블로그, 「마이터 어택 관점에서 고급 감사 정책 활용」 (2023‑02‑21).
