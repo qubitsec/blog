@@ -7,6 +7,10 @@ featured_image: "cdn/threats/case-jbnu_ewha_breach.png"
 tags: ["통합정보시스템", "개인정보유출", "SQL 인젝션", "파라미터 변조", "PLURA-XDR", "웹보안", "MITRE ATT&CK", "SIEM", "WAF"]
 ---
 
+전북대와 이화여대에서 발생한 대규모 개인정보 유출은 모두 초기 취약점 방치와 야간 관제 부재로 인한 해킹이 원인이었다.
+PLURA‑XDR은 SQL 인젝션 및 파라미터 변조와 같은 행위 기반 공격을 실시간으로 탐지·차단하고,
+24시간 자동 대응 체계(SOAR)를 통해 야간·주말의 보안 공백을 효과적으로 보완한다.
+
 ![전북대학교와 이화여자대학교 해킹](https://blog.plura.io/cdn/threats/case-jbnu_ewha_breach/)
 
 <!--more-->
