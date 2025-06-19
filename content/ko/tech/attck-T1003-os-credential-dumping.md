@@ -3,9 +3,16 @@ title: "RAM 안의 비밀번호를 노린다 – T1003.004: LSASS Memory Credent
 date: 2025-06-20
 draft: false
 description: "LSASS 메모리를 덤프해 윈도우 사용자 인증 정보를 훔치는 기술은 고급 침투 공격자의 대표적인 수법입니다. MITRE ATT&CK의 T1003.004 기술을 중심으로, 메모리 내 자격 증명 탈취 방법과 이를 탐지·차단하는 보안 전략을 소개합니다."
-featured_image: "cdn/threats/t1003-lsass-memory.png"
+featured_image: "cdn/threats/attck-T1003-os-credential-dumping.png"
 tags: ["MITRE ATT&CK", "T1003.004", "LSASS", "Credential Dumping", "RAM 공격", "침투탐지", "EDR", "PLURA-XDR", "사이버보안"]
 ---
+
+> 메모리를 노리는 자격 증명 탈취, T1003.004.
+> 단순한 백신으로는 막을 수 없습니다.
+> 고급 침해 대응 전략이 필요한 이유를 설명합니다.
+
+<!--more-->
+![BPFdoor](https://blog.plura.io/cdn/respond/attck-T1003-os-credential-dumping.png)
 
 ## 🔎 관련 MITRE ATT\&CK 기법
 
