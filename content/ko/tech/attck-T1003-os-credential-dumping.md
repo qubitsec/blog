@@ -12,7 +12,7 @@ tags: ["MITRE ATT&CK", "T1003.004", "LSASS", "Credential Dumping", "RAM 공격",
 > 고급 침해 대응 전략이 필요한 이유를 설명합니다.
 
 <!--more-->
-![BPFdoor](https://blog.plura.io/cdn/respond/attck-T1003-os-credential-dumping.png)
+![MITRE ATT&CK](https://blog.plura.io/cdn/respond/attck-T1003-os-credential-dumping.png)
 
 ## 🔎 관련 MITRE ATT\&CK 기법
 
