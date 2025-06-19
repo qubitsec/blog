@@ -161,3 +161,15 @@ PLURA-XDR와 같은 고급 EDR 솔루션에서는
 > ⚙️ 가능한 경우, **자동 대응 정책을 반드시 설정하여 수동 조치보다 빠르게 피해를 차단**할 수 있도록 합니다.
 
 ---
+
+## 📖 함께 읽기
+- [**지금 해킹 공격이 진행 중인지 확인하려면?**](https://blog.plura.io/ko/column/why-plura-xdr-merit/)
+- [**PLURA에서 Microsoft Defender Antivirus 로그 확인하기**](https://blog.plura.io/ko/respond/plura-microsoft-defender-logs/)
+
+### 📺 함께 시청하기
+- [BPFDoor, 이렇게 걸린다! | PLURA의 Audit 로그 기반 실시간 탐지 시연](https://youtu.be/Rkz7vNAM0ZY)
+
+### 🌟 PLURA-EDR 서비스
+- [PLURA-EDR 소개](https://www.plura.io/platform/edr)
+
+
