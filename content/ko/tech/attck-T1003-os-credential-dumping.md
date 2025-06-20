@@ -3,7 +3,7 @@ title: "RAM 안의 비밀번호를 노린다 – T1003.001: LSASS 메모리 
 date: 2025-06-20
 draft: false
 description: "T1003.001 기법(LSASS 메모리 덤프)을 활용한 자격 증명 탈취 방법과 Event ID 기반 탐지·LSASS PPL·Credential Guard 등 대응 전략을 정리합니다."
-featured_image: "cdn/threats/attck-T1003-os-credential-dumping.png"
+featured_image: "cdn/respond/attck-T1003-os-credential-dumping.png"
 tags: ["MITRE ATT&CK", "T1003.001", "LSASS Memory", "Credential Dumping", "RAM 공격", "EDR", "PLURA‑XDR", "사이버보안"]
 ---
 
