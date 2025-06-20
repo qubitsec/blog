@@ -52,7 +52,7 @@ tags: ["랜섬웨어(Ransomware)", "노트북", "사이버공격", "정보보안
 | **즉시 암호화 모듈 호출** | NTFS·exFAT 등 탐지 후 다단계 스레드로 암호화 |
 | **워처 프로세스** | Service / LaunchDaemon 형태로 백그라운드 상주, 드라이브 I/O 트랩 |
 
-👉 [마이터어택 공격 이해하기](https://blog.plura.io/ko/tech/attck-T1003-os-credential-dumping/)
+👉 [마이터어택 공격 이해하기](https://blog.plura.io/ko/respond/attck-T1003-os-credential-dumping/)
 
 ---
 
