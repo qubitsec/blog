@@ -12,6 +12,8 @@ tags: ["Cold Boot Attack", "RAM 잔류 데이터", "암호화 키", "B
 > 2️⃣ 2008년 프린스턴대 연구로 존재가 입증되었고, 2018년 F‑Secure가 최신 노트북에서도 재현했습니다.  
 > 3️⃣ 대규모 랜섬웨어보다 **표적 공격·포렌식**에 현실적이며, TPM 활용·MOR bit 보호가 주요 대응책입니다.
 
+![Cold‑Boot Attack](https://blog.plura.io/cdn/tech/cold-boot-attack.png)
+
 <!--more-->
 
 ## 🧊 Cold‑Boot 공격이란?
