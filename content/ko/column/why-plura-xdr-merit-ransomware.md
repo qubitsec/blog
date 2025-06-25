@@ -20,7 +20,7 @@ tags: ["랜섬웨어", "Ransomware", "PLURA-XDR", "사이버보안", "자동대�
 **이 모든 과정은 사용자가 눈치채기도 전에 진행**됩니다.  
 진짜 문제는 **지금 이 순간**, 이미 랜섬웨어가 **백그라운드에서 작동 중일 수도 있다**는 점입니다.
 
-![Why PLURA-XDR](https://blog.plura.io/cdn/column/why-plura-xdr-ransomware.png)
+![Why PLURA-XDR](https://blog.plura.io/cdn/column/why-plura-xdr-merit-ransomware.png)
 
 <!--more-->
 
