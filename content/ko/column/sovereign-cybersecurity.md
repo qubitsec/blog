@@ -99,5 +99,10 @@ PLURA-XDR은 **로그 수집부터 AI 기반 실시간 탐지와 차단, 포렌�
 
 ---
 
+## 📚 참고 콘텐츠
+
+- [지금 랜섬웨어가 진행 중이라면, 당신은 알 수 있습니까?](https://blog.plura.io/ko/column/why-plura-xdr-merit-ransomware/)  
+- [우리나라 해킹은 정부의 인증 제도 때문이다](https://blog.plura.io/ko/column/policy-proposal/)  
+
 ### 기사
 - ["韓에 해킹공격 몰릴것" 천재 해커의 경고](https://n.news.naver.com/mnews/article/009/0005517248)
