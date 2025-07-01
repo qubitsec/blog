@@ -1,3 +1,13 @@
+---
+title: "왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?"
+date: 2025-07-01 
+draft: false
+description: "소버린 사이버보안은 선택이 아닌 필수입니다. 국가 안보를 외부에 의존하지 않고 우리 스스로 지켜야 합니다."
+featured_image: "cdn/column/sovereign-cybersecurity.png" 
+tags: ["소버린 사이버보안", "Sovereign AI", "PLURA-XDR", "사이버보안", "디지털 주권", "AI 보안"]
+---
+
+
 # 🇰🇷 왜 지금 당장 ‘**소버린 사이버보안**’을 준비해야 하는가?
 
 “AI가 핵무기처럼 국가의 미래를 좌우하게 될 것이다.”
