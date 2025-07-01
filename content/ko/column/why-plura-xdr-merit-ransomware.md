@@ -120,7 +120,7 @@ PLURA-XDR은 **과정**(진행)을 포착합니다.
 
 ---
 
-## 📚 참고 콘텐츠
+## 📚 PLURA-Blog
 
 - [지금 해킹 공격이 진행 중인지 확인하려면?](https://blog.plura.io/ko/column/why-plura-xdr-merit/)  
 - [고급 랜섬웨어 대응 전략: 노트북 전원 차단이 왜 중요한가](https://blog.plura.io/ko/respond/ransomware-shutdown-awareness/)  
