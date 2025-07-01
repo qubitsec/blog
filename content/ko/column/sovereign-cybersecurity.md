@@ -97,4 +97,5 @@ PLURA-XDR은 **로그 수집부터 AI 기반 실시간 탐지와 차단, 포렌�
 
 ---
 
-- [기사 바로가기](https://n.news.naver.com/mnews/article/009/0005517248)
+### 기사
+- ["韓에 해킹공격 몰릴것" 천재 해커의 경고](https://n.news.naver.com/mnews/article/009/0005517248)
