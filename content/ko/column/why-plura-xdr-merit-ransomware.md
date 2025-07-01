@@ -3,7 +3,7 @@ title: "지금 랜섬웨어가 진행 중이라면, 당신은 알 수 있습니�
 date: 2025-06-25
 draft: false
 description: "PLURA-XDR은 진행 중인 랜섬웨어 감염 여부를 단 1분 안에 식별하고, 자동으로 대응합니다. 지금 당신의 시스템은 안전한가요?"
-featured_image: "cdn/column/why-plura-xdr-merit-ransomware.png"
+featured_image: "cdn/column/why-plura-xdr-merit-ransomware-00.png"
 tags: ["랜섬웨어", "Ransomware", "PLURA-XDR", "사이버보안", "자동대응", "실시간차단"]
 ---
 
@@ -20,9 +20,9 @@ tags: ["랜섬웨어", "Ransomware", "PLURA-XDR", "사이버보안", "자동대�
 **이 모든 과정은 사용자가 눈치채기도 전에 진행**됩니다.  
 진짜 문제는 **지금 이 순간**, 이미 랜섬웨어가 **백그라운드에서 작동 중일 수도 있다**는 점입니다.
 
-![Why PLURA-XDR](https://blog.plura.io/cdn/column/why-plura-xdr-merit-ransomware-00.png)
-
 <!--more-->
+
+![Why PLURA-XDR](https://blog.plura.io/cdn/column/why-plura-xdr-merit-ransomware-00.png)
 
 ---
 
