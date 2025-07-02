@@ -104,7 +104,7 @@ PLURA-XDR은 **로그 수집부터 AI 기반 실시간 탐지와 차단, 포렌�
 지치지 말고 끝까지 기술로 나아가길 바랍니다.
 
 **소버린 AI**와 **Cyber Security**,
-기반 중심에  **퍼블릭 클라우드 IaaS(Infrastructure as a Service)**가 함께합니다.
+기반 중심에  **퍼블릭 클라우드** IaaS(Infrastructure as a Service)가 함께합니다.
 
 ---
 
