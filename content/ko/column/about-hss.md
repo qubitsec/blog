@@ -31,9 +31,15 @@ HSS는 단순한 인증 서버가 아니라, **모든 가입자 인증, 위치 �
 
 ```mermaid
 flowchart TD
-    사용자 --> 인터넷망 -->[1]FW-->[2]LoadBalancer-->[3]Web/API Gateway-->[4]HSS관리UI
-    HSS관리UI -->[5]HSS Core Logic
-    HSS Core Logic --> MME & PCRF & IMS
+    사용자 --> 인터넷망
+    인터넷망 --> FW1["[1] FW"]
+    FW1 --> LB2["[2] LoadBalancer"]
+    LB2 --> GW3["[3] Web/API Gateway"]
+    GW3 --> UI4["[4] HSS관리UI"]
+    UI4 --> CORE5["[5] HSS Core Logic"]
+    CORE5 --> MME
+    CORE5 --> PCRF
+    CORE5 --> IMS
 ```
 
 ### 🔸2. 방어 구성 요소
