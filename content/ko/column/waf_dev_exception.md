@@ -87,6 +87,7 @@ tags: ["웹방화벽", "보안 예외", "웹 개발", "시큐어 개발", "보�
 
 ### 📖 함께 보면 좋은 글
 
-- [웹 서비스의 취약점은 대응할 수 있을까?](https://blog.plura.io/ko/column/vulnerabilities_web/)  
+- [웹 서비스의 취약점은 대응할 수 있을까?](https://blog.plura.io/ko/column/vulnerabilities_web/)
+- 
 - [워드프레스로 만든 사이트 필수 보안 TOP 10](https://blog.plura.io/ko/column/wordpress_security_top10/)  
 - [실시간 웹 공격 탐지: 크리덴셜 스터핑 대응 사례](https://blog.plura.io/ko/column/credential_stuffing/)  
