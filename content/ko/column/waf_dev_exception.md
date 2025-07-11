@@ -3,7 +3,7 @@ title: "웹방화벽 예외 처리는 왜 반복될까요?"
 date: 2025-07-10T15:30:00
 draft: false
 description: "웹 개발 중 발생하는 웹방화벽 차단 이슈는 단순한 기술 문제가 아니라 설계 초기 단계에서의 보안 고려 부족에서 시작됩니다. 반복되는 예외 처리를 줄이기 위한 현실적인 접근 방법을 소개합니다."
-featured_image: "cdn/column/waf_dev_exception.jpg"
+featured_image: "cdn/column/waf_dev_exception.png"
 tags: ["웹방화벽", "보안 예외", "웹 개발", "시큐어 개발", "보안 설계"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["웹방화벽", "보안 예외", "웹 개발", "시큐어 개발", "보�
 
 <!--more-->
 
-![웹방화벽 예외처리와 보안 허점](https://blog.plura.io/cdn/column/waf_dev_exception.jpg)
+![웹방화벽 예외처리와 보안 허점](https://blog.plura.io/cdn/column/waf_dev_exception.png)
 
 ---
 
