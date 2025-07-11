@@ -1,8 +1,8 @@
 ---
-title: "RansomHub의 몰락… 그 잔해 위에 탄생한 DragonForce"
+title: "DragonForce 랜섬웨어 실전 탐지: PLURA-XDR로 막아낸 위협"
 date: 2025-07-11
 draft: false
-description: "침투, 암호화, 탐지 대응 전략 완전 해부"
+description: "ChaCha8 기반의 신종 랜섬웨어, DragonForce를 PLURA-XDR로 탐지하고 분석한 실제 대응 사례"
 featured_image: "cdn/respond/dragonforce.png"
 tags: ["랜섬웨어", "DragonForce", "공격 탐지", "hacking", "ransomware", "RansomHub", "PLURA-XDR"]
 ---
