@@ -1,12 +1,10 @@
 ---
-
 title: "RansomHub의 몰락… 그 잔해 위에 탄생한 DragonForce"
 date: 2025-07-11
 draft: false
 description: "침투, 암호화, 탐지 대응 전략 완전 해부"
 featured_image: "cdn/respond/dragonforce.png"
 tags: ["랜섬웨어", "DragonForce", "공격 탐지", "hacking", "ransomware", "RansomHub", "PLURA-XDR"]
-
 ---
 
 ### 🧩 DragonForce 랜섬웨어 개요
