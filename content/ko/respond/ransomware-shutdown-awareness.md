@@ -12,9 +12,10 @@ tags: ["랜섬웨어(Ransomware)", "노트북", "사이버공격", "정보보안
 
 ---
 
-![랜섬웨어 경고 아이콘과 전원 버튼을 끄는 이미지](https://blog.plura.io/cdn/respond/ransomware-shutdown-awareness.png)
 
 <!--more-->
+
+![랜섬웨어 경고 아이콘과 전원 버튼을 끄는 이미지](https://blog.plura.io/cdn/respond/ransomware-shutdown-awareness.png)
 
 ## 💣 사용자의 “대응 패턴”까지 예측하는 최신 랜섬웨어
 
