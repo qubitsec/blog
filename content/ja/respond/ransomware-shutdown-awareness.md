@@ -122,8 +122,5 @@ tags: ["ランサムウェア", "ノートパソコン", "サイバー攻撃", "
 - [**今ハッキング攻撃が進行中か確認するには？**](https://blog.plura.io/ja/column/why-plura-xdr-merit/)
 - [**PLURAでMicrosoft Defender Antivirusログを確認する方法**](https://blog.plura.io/ja/respond/plura-microsoft-defender-logs/)
 
-### 📺 推奨動画視聴
-- [BPFDoor、こうして検出！ | PLURAの監査ログベース・リアルタイム検知デモ](https://youtu.be/Rkz7vNAM0ZY)
-
 ### 🌟 PLURA-EDR サービス
 - [PLURA-EDR 紹介](https://www.plura.io/platform/edr)
