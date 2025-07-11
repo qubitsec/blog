@@ -112,5 +112,3 @@ PLURA-XDRは**ログ収集からAIベースのリアルタイム検知・防御�
 - [今ランサムウェアが進行中なら、それを察知できますか？](https://blog.plura.io/ja/column/why-plura-xdr-merit-ransomware/)  
 - [わが国のハッキングは政府の認証制度が原因](https://blog.plura.io/ja/column/policy-proposal/)
 
-## 📰 記事
-- ["韓国にハッキング攻撃が集中する" 天才ハッカーの警告](https://n.news.naver.com/mnews/article/009/0005517248)
