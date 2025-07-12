@@ -86,4 +86,11 @@ tags: ["웹방화벽", "보안 예외", "웹 개발", "시큐어 개발", "보�
 
 - [웹 서비스의 취약점은 대응할 수 있을까?](https://blog.plura.io/ko/column/vulnerabilities_web/)
 - [워드프레스로 만든 사이트 필수 보안 TOP 10](https://blog.plura.io/ko/column/wordpress_security_top10/)
-- [실시간 웹 공격 탐지: 크리덴셜 스터핑 대응 사례](https://blog.plura.io/ko/column/credential_stuffing/)
+- [웹방화벽(WAF)에 대한 이해](https://blog.plura.io/ko/column/onpremise_inline_waf/)
+- [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)
+- [웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
+- [WEB 관리자 페이지 노출 대응](https://blog.plura.io/ko/respond/admin_page_exposure_mitigation/)
+- [SQL 인젝션](https://blog.plura.io/ko/respond/sql_injection/)
+- [크리덴셜 스터핑](https://blog.plura.io/ko/respond/credential_stuffing/)
+- [크리덴셜 스터핑 공격 대응하기](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)
+- [웹 서비스 공격에 대응하기 against 샤오치잉(Xiaoqiying)](https://blog.plura.io/ko/respond/web-service-attack-response-against-xiaoqiying/)
