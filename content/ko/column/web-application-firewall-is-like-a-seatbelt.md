@@ -4,8 +4,10 @@ draft: false
 title: "웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다."
 description: 
 featured_image: "cdn/column/web-application-firewall-is-like-a-seatbelt-ko.png"
-tags: ["웹방화벽", "WAF", "보안", "웹 공격", "랜섬웨어", "SQL 인젝션", "크로스 사이트 스크립팅"]
+tags: ["캠페인", "웹방화벽", "WAF", "보안", "웹 공격", "랜섬웨어", "SQL 인젝션", "크로스 사이트 스크립팅"]
 ---
+
+## 🕵️‍♂️ 캠페인: 웹방화벽은 홈페이지 보안을 위한 안전벨트입니다
 
 ## 🌐웹 공격의 위협
 
