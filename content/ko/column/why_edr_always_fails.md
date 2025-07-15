@@ -118,6 +118,7 @@ SentinelOne이 말하는 "자율형 AI"는 실제로는 **정해진 탐지 정�
 
 ### 📖 함께 읽기
 
+* [DragonForce 랜섬웨어 실전 탐지: PLURA-XDR로 막아낸 위협](https://blog.plura.io/ko/respond/dragonforce/)
 * [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
 * [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
 * [로그 분석으로 해킹 조사하기는 신화(Myth)?](https://blog.plura.io/ko/column/myth/)
