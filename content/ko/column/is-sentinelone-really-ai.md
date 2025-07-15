@@ -144,8 +144,8 @@ SentinelOne의 **에이전트 Local Upgrade Process**는 `msiexec.exe`를 통해
 | 출처                       | 주요 내용                                                                            |
 | ------------------------ | -------------------------------------------------------------------------------- |
 | **CVE‑2024‑38014**       | `msiexec.exe`의 ‘Repair’ 기능을 악용하여 SYSTEM 권한 탈취 가능 ([CVE 상세][1])                   |
-| **Sekoia Rule Catalog** | SentinelOne 환경에서 `msiexec.exe`를 통한 권한 상승 가능성을 다룬 탐지 룰 존재 (*Sekoia CTI Threat Detection Reference*) |
-| **Aon CyberLabs 분석 보고서** | Babuk 랜섬웨어가 SentinelOne anti-tamper를 우회하여 실행된 사례. EventID 1·93을 통해 실행 흔적 확인됨 (*공식 블로그 및 프레젠테이션 인용*) |
+| **Sekoia Rule Catalog** | SentinelOne 환경에서 `msiexec.exe`를 통한 권한 상승 가능성을 다룬 탐지 룰 존재 <br> (*Sekoia CTI Threat Detection Reference*) |
+| **Aon CyberLabs 분석 보고서** | Babuk 랜섬웨어가 SentinelOne anti-tamper를 우회하여 실행된 사례. EventID 1·93을 통해 실행 흔적 확인됨 <br> (*공식 블로그 및 프레젠테이션 인용*) |
 
 > 🔍 **결론:** SentinelOne은 "온-디바이스 자율 보호"를 주장하지만,
 > **서명된 드라이버 악용**(BYOVD)과 **로컬 업그레이드 절차**(BYOI)를 통한 우회 가능성이
