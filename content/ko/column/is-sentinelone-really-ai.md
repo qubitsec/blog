@@ -54,9 +54,10 @@ SentinelOne이 제시하는 **AI 기반 자율 대응**은 흔히 ChatGPT 같은
 | 학습 구조 | 보안 데이터셋 기반 ML       | 범용 언어 및 지식 기반 초거대 모델 |
 | 자율성   | 제한적 (정해진 범위 내 자동화)  | 높음 (문맥 해석 및 판단 가능)   |
 
-➡️ SentinelOne의 AI는 실질적인 자율성이나 판단 능력이 제한적입니다. 실제 보안 분석 시 로그의 맥락적 이해나 위협 판단에 있어서 오히려 **ChatGPT와 같은 LLM이 더 효과적인 경우가 많습니다.**
+> 📌 PLURA-XDR은 LLM 기반 로그 해석 기술을 실전 탐지에 적용하여,  
+> 기존 보안 제품의 맥락 해석 한계를 극복하고 있습니다.
 
-> PLURA-XDR은 내부적으로 보안 로그에 LLM을 연계해 공격 패턴과 사용자 맥락을 동적으로 분석하고 있습니다.
+➡️ SentinelOne의 AI는 실질적인 자율성이나 판단 능력이 제한적입니다. 실제 보안 분석 시 로그의 맥락적 이해나 위협 판단에 있어서 오히려 **ChatGPT와 같은 LLM이 더 효과적인 경우가 많습니다.**
 
 ---
 
@@ -150,7 +151,7 @@ SentinelOne의 **에이전트 Local Upgrade Process**는 `msiexec.exe`를 통해
 | ------------------------ | -------------------------------------------------------------------------------- |
 | **CVE‑2024‑38014**       | `msiexec.exe`의 ‘Repair’ 기능을 악용하여 SYSTEM 권한 탈취 가능 ([CVE 상세](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38014))                   |
 | **Sekoia Rule Catalog** | SentinelOne 환경에서 `msiexec.exe`를 통한 권한 상승 가능성을 다룬 탐지 룰 존재 <br> (*Sekoia CTI Threat Detection Reference*) |
-| **Aon CyberLabs 분석 보고서** | Babuk 랜섬웨어가 SentinelOne anti-tamper를 우회하여 실행된 사례. EventID 1·93을 통해 실행 흔적 확인됨 <br> (*공식 블로그 및 프레젠테이션 인용*) |
+| **Aon CyberLabs 분석 보고서** | Babuk 랜섬웨어가 SentinelOne anti-tamper를 우회하여 실행된 사례. EventID 1·93을 통해 실행 흔적 확인됨 <br> (*공식 발표 요약 발췌 / 링크 미공개*) |
 
 > 🔍 **결론:** SentinelOne은 "온-디바이스 자율 보호"를 주장하지만,
 > **서명된 드라이버 악용**(BYOVD)과 **로컬 업그레이드 절차**(BYOI)를 통한 우회 가능성이
