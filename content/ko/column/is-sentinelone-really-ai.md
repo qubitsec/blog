@@ -3,7 +3,7 @@ title: "SentinelOne의 자율형 AI 보안은 정말 AI인가?"
 date: 2025-07-15
 draft: false
 description: "SentinelOne의 AI 자율 보안이 실제로 어떤 기술을 의미하는지, ChatGPT와 같은 LLM과 비교하여 기술적 실체를 분석합니다."
-featured_image: "cdn/column/why_edr_always_fails.png"
+featured_image: "cdn/column/is-sentinelone-really-ai.png"
 tags: ["SentinelOne", "AI보안", "LLM", "보안운영", "자동화보안", "PLURA-XDR"]
 ---
 
