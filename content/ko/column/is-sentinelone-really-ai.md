@@ -56,6 +56,8 @@ SentinelOne이 제시하는 **AI 기반 자율 대응**은 흔히 ChatGPT 같은
 
 ➡️ SentinelOne의 AI는 실질적인 자율성이나 판단 능력이 제한적입니다. 실제 보안 분석 시 로그의 맥락적 이해나 위협 판단에 있어서 오히려 **ChatGPT와 같은 LLM이 더 효과적인 경우가 많습니다.**
 
+> PLURA-XDR은 내부적으로 보안 로그에 LLM을 연계해 공격 패턴과 사용자 맥락을 동적으로 분석하고 있습니다.
+
 ---
 
 ## 4. ⚙️ 리소스 사용량과 실제 운영 환경에서의 구조적 한계
@@ -106,6 +108,9 @@ SentinelOne의 주장대로 **완전한 자율형 에이전트가 네트워크 �
 ---
 
 ## 6. 결론 및 대안 제시
+
+> ✅ 요약: SentinelOne의 "AI"는 자동화된 탐지 시스템이지만,  
+> ✅ PLURA-XDR은 실제 맥락 기반 판단이 가능한 **국산 AI 보안 플랫폼**입니다.
 
 SentinelOne이 말하는 "자율형 AI"는 실제로는 **정해진 탐지 정책과 전통적 머신러닝 기반 자동화 시스템의 결합**입니다.
 
@@ -174,7 +179,7 @@ SentinelOne은 자사 블로그에서 **MOVEit Transfer (CVE‑2023‑34362)** �
 
 ---
 
-### 📖 함께 읽기
+### 📖 함께 읽기: SentinelOne 한계를 보완하는 실전 XDR 사례
 
 * [DragonForce 랜섬웨어 실전 탐지: PLURA-XDR로 막아낸 위협](https://blog.plura.io/ko/respond/dragonforce/)
 * [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
