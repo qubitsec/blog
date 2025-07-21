@@ -1,6 +1,6 @@
 ---
 title: "SSL VPN, 써도 되나요? 침해로 이어지는 엣지 장비의 허상"
-date: 2025-07-21T00:00:01
+date: 2025-07-22
 draft: false
 description: "SSL VPN은 외부에서 내부망으로 접근할 수 있도록 해주는 유용한 보안 장비입니다. 그러나 이 장비 자체가 침해의 첫 관문이 되고 있다는 점, 알고 계셨나요? 국내외 침해 사례를 통해 SSL VPN의 구조적 한계를 짚어봅니다."
 featured_image: "cdn/column/why_sslvpn_always_fails.png"
