@@ -130,4 +130,4 @@ VPN만 뚫는다고 끝나지 않습니다. 침해를 완성하려면:
 ---
 
 ### 📖 함께 읽기
-- 보안뉴스 기 [SGI서울보증 랜섬웨어, 최초 침투 경로는 ‘SSL-VPN’](https://www.boannews.com/media/view.asp?idx=138214)
+- 보안뉴스 기사 [SGI서울보증 랜섬웨어, 최초 침투 경로는 ‘SSL-VPN’](https://www.boannews.com/media/view.asp?idx=138214)
