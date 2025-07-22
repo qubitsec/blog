@@ -95,11 +95,12 @@ sequenceDiagram
 
 ### 📑 참고 자료
 
-* [보안뉴스: SGI서울보증 랜섬웨어, 최초 침투 경로는 ‘SSL-VPN’](https://www.boannews.com/media/view.asp?idx=138214)
-* [KBS 보도: “뚫릴 때까지 비번 넣었다”…SGI서울보증, VPN부터 해킹](https://v.daum.net/v/20250722074904005)
-* [보안뉴스: 금융보안원이 복호화 성공…랜섬 지불 없이 복구](https://www.boannews.com/media/view.asp?idx=138237)
-* [보안뉴스: 유출 여부는 아직 확인 안 돼](https://www.boannews.com/media/view.asp?idx=138242)
-* [이데일리: SGI서울보증 81시간 만에 복구](https://marketin.edaily.co.kr/News/ReadE?newsId=03975366642235504)
+- 보안뉴스 기사 [SGI서울보증 랜섬웨어, 최초 침투 경로는 ‘SSL-VPN’](https://www.boannews.com/media/view.asp?idx=138214)
+- KBS 뉴스 [“뚫릴 때까지 비번 넣었다”…SGI서울보증, VPN부터 해킹](https://tv.kakao.com/v/456721305)
+
+### 🌟 PLURA-Blog
+
+- [SSL VPN, 써도 되나요? 침해로 이어지는 엣지 장비의 허상](https://blog.plura.io/ko/column/why_sslvpn_always_fails/)
 
 ---
 
