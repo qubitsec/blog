@@ -15,7 +15,7 @@ tags: ["SSL VPN", "엣지보안", "VPN취약점", "침해사례", "보안운영"
 > 역설적이지만 현실입니다.
 
 <!--more-->
-![why_sslvpn_always_fails](https://blog.plura.io/cdn/column/why_sslvpn_always_fails_00.png.png)
+![why_sslvpn_always_fails](https://blog.plura.io/cdn/column/why_sslvpn_always_fails_00.png)
 
 ---
 
