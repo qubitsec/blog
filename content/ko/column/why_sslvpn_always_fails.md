@@ -3,7 +3,7 @@ title: "SSL VPN, 써도 되나요? 침해로 이어지는 엣지 장비의 허�
 date: 2025-07-22
 draft: false
 description: "SSL VPN은 외부에서 내부망으로 접근할 수 있도록 해주는 유용한 보안 장비입니다. 그러나 이 장비 자체가 침해의 첫 관문이 되고 있다는 점, 알고 계셨나요? 국내외 침해 사례를 통해 SSL VPN의 구조적 한계를 짚어봅니다."
-featured_image: "cdn/column/why_sslvpn_always_fails.png"
+featured_image: "cdn/column/why_sslvpn_always_fails_00.png"
 tags: ["SSL VPN", "엣지보안", "VPN취약점", "침해사례", "보안운영", "PLURA-XDR"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["SSL VPN", "엣지보안", "VPN취약점", "침해사례", "보안운영"
 > 역설적이지만 현실입니다.
 
 <!--more-->
-![why_sslvpn_always_fails](https://blog.plura.io/cdn/column/why_sslvpn_always_fails.png)
+![why_sslvpn_always_fails](https://blog.plura.io/cdn/column/why_sslvpn_always_fails_00.png.png)
 
 ---
 
