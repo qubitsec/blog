@@ -132,3 +132,8 @@ VPN만 뚫는다고 끝나지 않습니다. 침해를 완성하려면:
 ### 📖 함께 읽기
 - 보안뉴스 기사 [SGI서울보증 랜섬웨어, 최초 침투 경로는 ‘SSL-VPN’](https://www.boannews.com/media/view.asp?idx=138214)
 - KBS 뉴스 [“뚫릴 때까지 비번 넣었다”…SGI서울보증, VPN부터 해킹](https://tv.kakao.com/v/456721305)
+
+### 🌟 PLURA-Blog
+
+- [SGI서울보증보험 해킹 사고 분석 – 침투부터 랜섬웨어 유출까지](https://blog.plura.io/ko/threats/case-sgic_credential_stuffing/)
+
