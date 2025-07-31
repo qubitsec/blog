@@ -13,6 +13,8 @@ tags: ["Windows 보안", "RDP", "Brute Force", "계정 보안", "포트 변경",
 
 <!--more-->
 
+![rdp bruteforce protection](https://blog.plura.io/cdn/tech/rdp-bruteforce-protection.png)
+
 ---
 
 ## 💥 외부 공격자의 무차별 대입(Brute-force) 공격 시도
@@ -76,9 +78,9 @@ RDP 포트가 열려 있는 경우, 외부 공격자는 다음과 같은 방식�
 
 ## 📖 함께 읽기
 
-- [KISA 보안 설정 권고: 관리자 계정명 변경](https://www.kisa.or.kr/)
-- [윈도우 보안 로그로 이상 징후 탐지하기](https://blog.plura.io/ko/column/security-log-analysis/)
-- [중소기업을 노리는 RDP 기반 공격 사례 분석](https://blog.plura.io/ko/incident-analysis/rdp-breach-case/)
+- [ANONYMOUS LOGON, NTLM V1 사용 정책 중지](https://blog.plura.io/ko/tech/disable_anonymous_logon_ntlmv1_policy/)
+- [윈도우 공유 폴더 취약점 대응](https://blog.plura.io/ko/respond/windows_shared_folder_vulnerability_mitigation/)
+- [웹 관리자 페이지 노출 대응](https://blog.plura.io/ko/respond/admin_page_exposure_mitigation/)
 
 ---
 
