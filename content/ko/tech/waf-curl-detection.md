@@ -15,6 +15,10 @@ tags: ["WAF", "curl", "User-Agent", "false positive", "signature"]
 
 하지만 **단순히 `curl`이라는 User-Agent가 포함된 요청을 모두 악성으로 판단하는 것은 매우 위험한 과탐**(False Positive)을 초래할 수 있습니다.
 
+
+![What is cURL](https://blog.plura.io/cdn/tech/waf-curl-detection.png)
+<!--more-->
+
 ---
 
 ## 🤔 curl은 공격 도구인가?
