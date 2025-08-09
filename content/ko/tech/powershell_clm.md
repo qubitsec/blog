@@ -16,6 +16,10 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 기본적으로 PowerShell은 관리자 권한이 없어도 많은 시스템 리소스에 접근할 수 있습니다.  
 그러나 기업 환경에서는 **대부분의 PC 사용자가 PowerShell을 직접 사용할 필요가 없습니다.**
 
+
+<!--more-->
+![Windows is F1 car](https://blog.plura.io/cdn/tech/powershell_clm.png)
+
 ---
 
 ## 왜 CL​M이 필요한가? ⚠️
