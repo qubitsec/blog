@@ -68,7 +68,7 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 
 ---
 
-## 결론 ✅
+## ✅ 결론 
 
 PowerShell CL​M은  
 - 불필요한 권한을 제거  
