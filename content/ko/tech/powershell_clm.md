@@ -79,8 +79,6 @@ PowerShell CL​M은
 ---
 
 ### 📖 함께 읽기
-- [Microsoft 공식 문서 – PowerShell Constrained Language Mode](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_language_modes)
-- [Windows Defender Application Control과 CL​M 연계](https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/wdac-and-clm)
-- [실무 적용 가이드: 그룹 정책을 통한 CL​M 배포](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/)
+- [Microsoft 공식 문서 – PowerShell Constrained Language Mode](https://learn.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_language_modes)
 
 ---
