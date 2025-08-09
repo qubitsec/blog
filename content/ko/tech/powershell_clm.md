@@ -9,7 +9,7 @@ title: "왜 PowerShell Constrained Language Mode(CL​M)를 사용해야 하는�
 
 ## PowerShell Constrained Language Mode란?
 
-**PowerShell Constrained Language Mode(CL​M)**는  
+**PowerShell Constrained Language Mode**(CL​M)는  
 Windows 환경에서 PowerShell의 실행 기능을 제한하여  
 악성 스크립트 실행, 무단 시스템 변경, 권한 오남용 등을 방지하는 보안 모드입니다.
 
@@ -27,7 +27,8 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 - **보안 관리 효율성**
   - "아무도 타지 않는 F1 경주차를 회사 주차장에 세워두는 격" → 불필요한 성능·위험
 
-> 비유: 집 근처 마트에 가는데 굳이 F1 경주차를 타야 할까요?  
+비유:  
+> 집 근처 마트에 가는데 굳이 F1 경주차를 타야 할까요?  
 > CL​M은 ‘일반 승용차’처럼 일상 업무에 필요한 기능만 제공하게 합니다.
 
 ---
