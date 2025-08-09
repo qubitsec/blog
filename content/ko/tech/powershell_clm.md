@@ -4,10 +4,10 @@ draft: true
 description: "PowerShell Constrained Language Mode(CL​M)의 필요성과 운영 방법"
 featured_image: "cdn/tech/powershell_clm.png"
 tags: ["PowerShell", "Windows Security", "CLM", "Endpoint Security", "Privilege Management"]
-title: "왜 PowerShell Constrained Language Mode(CL​M)를 사용해야 하는가?"
+title: "왜 PowerShell Constrained Language Mode(CL​M)를 사용해야 하는가? 🔒"
 ---
 
-## PowerShell Constrained Language Mode란?
+## PowerShell Constrained Language Mode란? 🖥️
 
 **PowerShell Constrained Language Mode**(CL​M)는  
 Windows 환경에서 PowerShell의 실행 기능을 제한하여  
@@ -18,7 +18,7 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 
 ---
 
-## 왜 CL​M이 필요한가?
+## 왜 CL​M이 필요한가? ⚠️
 
 - **권한 과다 부여 문제**
   - 집 PC뿐만 아니라 회사 PC에도 불필요하게 강력한 명령 실행 권한이 부여되어 있음
@@ -27,13 +27,13 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 - **보안 관리 효율성**
   - "아무도 타지 않는 F1 경주차를 회사 주차장에 세워두는 격" → 불필요한 성능·위험
 
-비유:  
+💡 비유:  
 > 집 근처 마트에 가는데 굳이 F1 경주차를 타야 할까요?  
 > CL​M은 ‘일반 승용차’처럼 일상 업무에 필요한 기능만 제공하게 합니다.
 
 ---
 
-## CL​M 동작 방식
+## CL​M 동작 방식 ⚙️
 
 ![powershell_clm_mode](https://blog.plura.io/cdn/column/powershell_clm_diagram.png)
 
@@ -43,7 +43,7 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 
 ---
 
-## 운영 환경 예시
+## 운영 환경 예시 🏢
 
 ### 1. 그룹 정책(GPO) 적용
 - Active Directory 환경에서 OU별로 CL​M 강제 적용
@@ -55,7 +55,7 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 
 ---
 
-## 보안 효과
+## 보안 효과 🛡️
 
 - **제로데이 방어**
   - 아직 패치되지 않은 PowerShell 기반 악성 코드 차단
@@ -68,7 +68,7 @@ Windows 환경에서 PowerShell의 실행 기능을 제한하여
 
 ---
 
-## 결론
+## 결론 ✅
 
 PowerShell CL​M은  
 - 불필요한 권한을 제거  
@@ -81,5 +81,3 @@ PowerShell CL​M은
 
 ### 📖 함께 읽기
 - [Microsoft 공식 문서 – PowerShell Constrained Language Mode](https://learn.microsoft.com/ko-kr/powershell/module/microsoft.powershell.core/about/about_language_modes)
-
----
