@@ -98,7 +98,7 @@ sequenceDiagram
 - 보안뉴스 기사 [SGI서울보증 랜섬웨어, 최초 침투 경로는 ‘SSL-VPN’](https://www.boannews.com/media/view.asp?idx=138214)
 - KBS 뉴스 [“뚫릴 때까지 비번 넣었다”…SGI서울보증, VPN부터 해킹](https://tv.kakao.com/v/456721305)
 
-- 🔄 보안뉴스 기사 [SGI서울보증 랜섬웨어, 13.2T 규모 SGI 데이터 ‘매물’로 나왔다](https://www.boannews.com/media/view.asp?idx=138537)
+- 🔄 보안뉴스 기사 [SGI서울보증 랜섬웨어, 13.2T 규모 SGI 데이터 ‘매물’로 나왔다 (2025-08-05 09:18)](https://www.boannews.com/media/view.asp?idx=138537)
 
 ### 🌟 PLURA-Blog
 
