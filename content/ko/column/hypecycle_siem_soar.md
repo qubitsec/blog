@@ -1,7 +1,7 @@
 ---
 title: "Gartner 하이프 사이클로 본 SIEM과 SOAR – 왜 둘 다 한계가 있는가?"
 date: 2025-08-14
-draft: true
+draft: false
 description: "Gartner 하이프 사이클에 따르면 SOAR는 환멸의 골짜기에, SIEM은 생산성의 정상에 있지만, 두 기술 모두 현재 보안 문제를 해결하기엔 구조적 한계가 있습니다."
 featured_image: "cdn/threats/hypecycle_siem_soar.png"
 tags: ["SIEM", "SOAR", "하이프사이클", "보안운영", "Gartner", "Security", "PLURA-XDR"]
