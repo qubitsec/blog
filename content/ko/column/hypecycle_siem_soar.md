@@ -22,7 +22,7 @@ SOAR는 SIEM 탐지 결과에 전적으로 의존해 동작하며, SIEM은 여�
 * SIEM: Security Information and Event Management
 
 <!--more-->
-![why_soar_always_fails](https://blog.plura.io/cdn/column/why_soar_always_fails_00.png)
+![Hypecycle](https://blog.plura.io/cdn/column/hypecycle_siem_soar.png)
 
 ## 1. Gartner 하이프 사이클과 SIEM·SOAR의 위치
 
