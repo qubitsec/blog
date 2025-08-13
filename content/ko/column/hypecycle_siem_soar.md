@@ -28,13 +28,13 @@ SOAR는 SIEM 탐지 결과에 전적으로 의존해 동작하며, SIEM은 여�
 
 Gartner의 하이프 사이클(Hype Cycle)은 신기술이 시장에 도입되고 대중화되기까지 5단계로 구분합니다.
 
-| 단계 | 설명 | SOAR | SIEM |
-|------|------|------|------|
-| 기술 촉발 <br> Technology Trigger | 신기술이 주목받기 시작 | – | – |
-| 과도한 기대의 정점 <br> Peak of Inflated Expetations | 미디어와 업계가 과대평가 | – | – |
-| **환멸의 골짜기** <br> Trought of Disillusionment | 기대 대비 실망, 관심 하락 | **현재 위치** | – |
-| 계몽의 경사 <br> Slope of Enlightenment  | 가치와 적용범위 재정립 | – | – |
-| **생산성의 정상** <br> Plateau of Productivity | 표준화, 주류 채택 | – | **현재 위치** |
+| 단계                                            | 설명              | SOAR      | SIEM      |
+| --------------------------------------------- | --------------- | --------- | --------- |
+| 기술 촉발 <br> Technology Trigger                 | 신기술이 주목받기 시작    | –         | –         |
+| 과도한 기대의 정점 <br> Peak of Inflated Expectations | 미디어와 업계가 과대평가   | –         | –         |
+| **환멸의 골짜기** <br> Trough of Disillusionment    | 기대 대비 실망, 관심 하락 | **현재 위치** | –         |
+| 계몽의 경사 <br> Slope of Enlightenment            | 가치와 적용범위 재정립    | –         | –         |
+| **생산성의 정상** <br> Plateau of Productivity      | 표준화, 주류 채택      | –         | **현재 위치** |
 
 - **SOAR**: 2024년 Gartner 보안운영 하이프 사이클에서 *환멸의 골짜기*로 평가됨. 기술적·운영적 한계로 기대 대비 성과 저조.
 - **SIEM**: *생산성의 정상* 단계로 분류. 이미 주류 보안운영 도구로 자리잡음.
