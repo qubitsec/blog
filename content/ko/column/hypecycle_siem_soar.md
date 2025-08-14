@@ -96,5 +96,6 @@ Gartner 하이프 사이클 위치와 무관하게, SIEM과 SOAR 모두 **로그
 ---
 
 ### 📖 함께 읽기
+- [생각지도 못한 일을 해내는 PLURA](https://blog.plura.io/ko/column/theory-of-imitation_game/)  
 - [SOAR 도입하면 뭐하나요? 자동 대응도 못하는데](https://blog.plura.io/ko/column/why_soar_always_fails/)  
 - [SIEM, 도입하면 뭐하나요? 로그 수집도 분석도 안 된다면](https://blog.plura.io/ko/column/why_siem_always_fails/)  
