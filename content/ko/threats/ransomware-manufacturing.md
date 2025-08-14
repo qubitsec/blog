@@ -62,9 +62,10 @@ tags: ["Ransomware", "Manufacturing Security", "PLURA-XDR", "Remote Security", "
 ---
 
 ### 📖 뉴스 기사
-- []()  
+- [보안뉴스 기사, 제조업, 랜섬웨어 감염 ‘속출’](https://www.boannews.com/media/view.asp?idx=136275)  
+- [삼성SDS 블로그, 제조업을 위협하는 랜섬웨어, 공장을 지키는 보안 전략](https://www.samsungsds.com/kr/insights/ransomware-in-manufacturing.html)  
 
 ### 📌 함께 읽기
+- [PLURA-XDR을 활용한 공급망 보안 강화 방안](https://blog.plura.io/ko/column/campaign_supplychain_security/)
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
 - [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
-
