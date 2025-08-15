@@ -4,7 +4,7 @@ date: 2025-08-15
 draft: false
 description: "전문성 없는 인사와 형식 중심의 설계가 어떻게 '괴물 정책'을 만드는지, 이솝 우화처럼 비유한 이야기입니다."
 featured_image: "cdn/column/policy-fable.png"
-tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", "PLURA"]
+tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", "Aesop's Fables", "PLURA"]
 ---
 
 # 성을 지키는 방법 🏰
@@ -12,6 +12,9 @@ tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", 
 옛날 옛적, 커다란 나라에 **보물💎**로 가득한 성이 있었습니다.  
 왕👑은 이 성을 지키기 위해 관리인을 뽑았습니다.  
 관리인은 칼⚔️을 써본 적도, 전투를 해본 적도 없었지만, **시험📜**을 잘 봐서 뽑혔습니다.
+
+![Protect the Castle](https://blog.plura.io/cdn/column/policy-fable.png)
+<!--more-->
 
 왕은 걱정이 되어 관리인에게 물었습니다.  
 “적이 오면 어떻게 막을 셈이오?”  
@@ -59,3 +62,9 @@ tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", 
 
 이것을 막으려면 부지런히 **현장의 목소리에 귀 기울여야 합니다**.  
 그리고 그 목소리를 찾아 **스스로 걸어 나가야 합니다**.
+
+---
+
+### 📖 **함께 읽기**
+- [정책 제안, 우리나라 해킹은 정부의 인증 제도 때문이다](https://blog.plura.io/ko/column/policy-proposal/)  
+- [보고서, ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은가?](https://blog.plura.io/ko/column/policy-proposal-example-useless/) 
