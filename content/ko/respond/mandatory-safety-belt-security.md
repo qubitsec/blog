@@ -4,10 +4,9 @@ title: "안전벨트를 강제로 채우듯: SELinux·PowerShell CLM을 ‘끄�
 date: 2025-08-18
 draft: false
 description: "SELinux와 PowerShell Constrained Language Mode는 ‘중요한데 쉽게 꺼지는’ 보안 안전벨트다. OS 차원의 강제·차단·가시화 설계로 기본 모드 변경 자체를 원천 봉쇄하는 방법과 운영 체크리스트를 제안한다."
-featured\_image: "cdn/threats/mandatory-safety-belt-security.png"
-tags: \["SELinux", "PowerShell", "CLM", "기본값보안", "제로트러스트", "운영체제", "하드닝"]
--------------------------------------------------------------------------
-
+featured_image: "cdn/threats/mandatory-safety-belt-security.png"
+tags: ["SELinux", "PowerShell", "CLM", "기본값보안", "제로트러스트", "운영체제", "하드닝"]
+---
 # TL;DR
 
 * **핵심 문제**: SELinux(리눅스)와 PowerShell CLM(윈도우)은 필수 안전장치지만, **config 한 줄**로 꺼지거나 완화된다.
