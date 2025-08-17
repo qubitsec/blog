@@ -138,7 +138,13 @@ tags: ["보안", "SELinux", "PowerShell", "운영체제", "안전벨트", "PLURA
 * 더 이상 “편의상 꺼두자”라는 선택지가 존재하지 않아야 합니다.
 
 👉 이제는 운영체제가 **보안 안전벨트를 강제하는 시대**로 나아가야 합니다.
-그것이야말로 사이버 위협 시대의 \*\*진짜 기본값 보안(Default Security)\*\*입니다.
+그것이야말로 사이버 위협 시대의 진짜 기본값 보안(Default Security)입니다.
 
 ---
 
+### 📖 **함께 읽기**  
+- [성을 지키는 방법](https://blog.plura.io/ko/column/policy-fable/)
+- [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity/)
+- [보안은 보험일까?](https://blog.plura.io/ko/column/cybersecurity_vs_insurance/)
+- [다중∙계층 보안, 정말 필요한가?](https://blog.plura.io/ko/column/overkill-multi-layer-security/)
+- [디트리히 본회퍼의 멍청이 이론](https://blog.plura.io/ko/column/theory-of-stupidity/)
