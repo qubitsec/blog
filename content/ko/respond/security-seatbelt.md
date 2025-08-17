@@ -14,7 +14,7 @@ tags: ["보안", "SELinux", "PowerShell", "운영체제", "안전벨트", "PLURA
 안전벨트를 차지 않으면 자동차가 출발조차 할 수 없다면, 교통사고로 인한 피해는 훨씬 줄어들 것입니다.
 운영체제 보안도 마찬가지입니다. **SELinux와 CLM은 꺼버릴 수 없는 구조**여야 합니다.
 
-![보안 안전벨트](https://blog.plura.io/cdn/threats/security-seatbelt.png)
+![Security Seatbelt](https://blog.plura.io/cdn/threats/security-seatbelt.png)
 
 <!--more-->
 
