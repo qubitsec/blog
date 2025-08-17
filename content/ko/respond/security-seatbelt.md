@@ -1,11 +1,11 @@
 ---
 
-title: "안전벨트를 강제로 채우듯: SELinux·PowerShell CLM을 ‘끄지 못하게’ 만들자"
+title: "안전벨트 없는 운전처럼, 보안 없는 운영체제는 위험하다"
 date: 2025-08-18
 draft: false
-description: "SELinux와 PowerShell Constrained Language Mode는 운영체제 보안의 안전벨트와 같습니다. 그러나 현재는 사용자가 임의로 해제할 수 있습니다. 왜 강제가 필요하며, 어떤 방식으로 개선해야 하는지 제안합니다."
+description: "SELinux와 PowerShell Constrained Language Mode(CLM)는 운영체제 보안의 안전벨트와 같습니다. 그러나 현재는 사용자가 임의로 해제할 수 있습니다. 왜 강제가 필요하며, 어떤 방식으로 개선해야 하는지 제안합니다."
 featured_image: "cdn/respond/security-seatbelt.png"
-tags: ["보안", "SELinux", "PowerShell", "운영체제", "안전벨트", "PLURA-XDR"]
+tags: ["보안", "SELinux", "PowerShell", "CLM", "운영체제", "안전벨트", "PLURA-XDR"]
 ---
 
 🚦 **리눅스의 SELinux**, **윈도우의 PowerShell Constrained Language Mode(CLM)** 는 운영체제 보안의 **안전벨트**와 같은 존재입니다.
