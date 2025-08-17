@@ -143,6 +143,7 @@ tags: ["보안", "SELinux", "PowerShell", "CLM", "운영체제", "안전벨트",
 ---
 
 ### 📖 **함께 읽기**  
+- [웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
 - [성을 지키는 방법](https://blog.plura.io/ko/column/policy-fable/)
 - [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity/)
 - [보안은 보험일까?](https://blog.plura.io/ko/column/cybersecurity_vs_insurance/)
