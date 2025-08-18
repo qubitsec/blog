@@ -13,8 +13,9 @@ tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", 
 왕👑은 이 성을 지키기 위해 관리인을 뽑았습니다.  
 관리인은 칼⚔️을 써본 적도, 전투를 해본 적도 없었지만, **시험**📜을 잘 봐서 뽑혔습니다.
 
-![Protect the Castle](https://blog.plura.io/cdn/column/policy-fable.png)
 <!--more-->
+
+![Protect the Castle](https://blog.plura.io/cdn/column/policy-fable.png)
 
 왕은 걱정이 되어 관리인에게 물었습니다.  
 “적이 오면 어떻게 막을 셈이오?”  
