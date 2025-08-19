@@ -127,17 +127,12 @@ tags: ["NDR", "네트워크 보안", "암호화 트래픽", "ETA", "TLS", "PLURA
 ---
 ### 📖 IDS/IPS/NDR 한계 이해하기
 
-* IDS/IPS, 정말 코어 보안일까?
-  [https://blog.plura.io/ko/tech/why\_supplementary\_security\_services-ips/](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
-* 중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?
-  [https://blog.plura.io/ko/column/ips\_ndr\_needed/](https://blog.plura.io/ko/column/ips_ndr_needed/)
-* IPS와 NDR 차이와 한계
-  [https://blog.plura.io/ko/column/ips\_vs\_ndr/](https://blog.plura.io/ko/column/ips_vs_ndr/)
-* WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기
-  [https://blog.plura.io/ko/column/waf\_ips\_utm\_comparison/](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
-* IPS의 진화와 보안 환경의 변화
-  [https://blog.plura.io/ko/column/ips\_classification/](https://blog.plura.io/ko/column/ips_classification/)
-* 침입차단시스템(IPS) 이해하기
-  [https://blog.plura.io/ko/column/ips\_understanding/](https://blog.plura.io/ko/column/ips_understanding/)
+* [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
+* [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
+* [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
+* [IPS와 NDR 차이와 한계](https://blog.plura.io/ko/column/ips_vs_ndr/)
+* [WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기](https://blog.plura.io/ko/column/waf_ips_utm_comparison/)
+* [IPS의 진화와 보안 환경의 변화](https://blog.plura.io/ko/column/ips_classification/)
+* [침입차단시스템(IPS) 이해하기](https://blog.plura.io/ko/column/ips_understanding/)
 
 ---
