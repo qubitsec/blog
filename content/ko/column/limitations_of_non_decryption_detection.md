@@ -138,9 +138,15 @@ tags: ["NDR", "네트워크 보안", "암호화 트래픽", "ETA", "ETDR", "TLS"
 - NDR 한계: [What are the Disadvantages of NDR?](https://www.stamus-networks.com/blog/what-are-the-disadvantages-of-ndr)
 
 ---
-### 📖 IDS/IPS/NDR 한계 이해하기
+
+### 🤖 PassGAN은 AI 분석이 아니다
 
 * [PassGAN: AI 기반 패스워드 크래킹 이해와 대응 전략](https://blog.plura.io/ko/column/passgan_ai_password_cracking/)
+
+---
+
+### 📖 IDS/IPS/NDR 한계 이해하기
+
 * [NDR의 한계: 해결 불가능한 미션](https://blog.plura.io/ko/column/limitations_of_ndr/)
 * [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
 * [중소·중견 기업 심지어 대기업에서도 NIPS/NDR, 정말로 필요할까?](https://blog.plura.io/ko/column/ips_ndr_needed/)
