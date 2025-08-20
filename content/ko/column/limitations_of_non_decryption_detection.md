@@ -183,9 +183,8 @@ tags: ["NDR", "네트워크 보안", "암호화 트래픽", "ETA", "ETDR", "Pass
 
 ---
 
-### 📖 함께 읽기
-- Cisco ETA 한계: [Cisco Encrypted Traffic Analytics(ETA) at a glance](https://community.cisco.com/t5/security-knowledge-base/cisco-eta-feature-encrypted-traffic-analysis-at-glance/ta-p/4783197)
-- NDR 한계: [What are the Disadvantages of NDR?](https://www.stamus-networks.com/blog/what-are-the-disadvantages-of-ndr)
+### 📖 Cisco ETA
+- [Cisco Encrypted Traffic Analytics(ETA) at a glance](https://www.cisco.com/c/en/us/solutions/collateral/enterprise-networks/enterprise-network-security/at-a-glance-c45-740079.html)
 
 ---
 
