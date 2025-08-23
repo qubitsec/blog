@@ -1,9 +1,9 @@
 ---
-title: "[정책 제안] AI 100조 시대, 성공적 추진을 위한 10대 산업 생태계 구축"
+title: "[정책 제안] AI 100조 시대, 성공적 추진을 위한 10대 산업 생태계 구축 ✨"
 date: 2025-08-23
 draft: false
 description: "정부의 국가성장펀드 100조원 AI 전략을 실질적으로 성공시키기 위해서는, AI 본연의 연구개발을 넘어 이를 뒷받침하는 10대 산업 생태계 투자가 병행되어야 합니다. 본 제안은 국내에서 먼저 생태계를 완성한 뒤, 동일 모델을 해외로 수출할 수 있는 국가 성장 전략을 제시합니다."
-featured_image: "cdn/column/ai-policy-proposal.png"
+featured_image: "cdn/column/policy-proposal-ai.png"
 tags: ["AI정책", "국가성장펀드", "AI생태계", "정보보안", "스마트제조", "의료AI", "스마트시티", "핀테크", "교육AI", "K콘텐츠"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["AI정책", "국가성장펀드", "AI생태계", "정보보안", "스마�
 
 <!--more-->
 
-![AI Policy Proposal](https://blog.plura.io/cdn/column/ai-policy-proposal.png)
+![AI Policy Proposal](https://blog.plura.io/cdn/column/policy-proposal-ai.png)
 
 ---
 
