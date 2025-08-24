@@ -96,8 +96,7 @@ AI 주권은 곧 **사이버보안 주권**과 맞닿아 있습니다.
 
 ## 📚 참고: 이어 읽기
 
-* [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity-00/)
-* [지금 랜섬웨어가 진행 중이라면, 당신은 알 수 있습니까?](https://blog.plura.io/ko/column/why-plura-xdr-merit-ransomware/)
-* [우리나라 해킹은 정부의 인증 제도 때문이다](https://blog.plura.io/ko/column/policy-proposal/)
+* [[정책 제안] AI 100조 시대, 성공적 추진을 위한 10대 산업 생태계 구축](https://blog.plura.io/ko/column/policy-proposal-ai/)
+* [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity/)
 
 ---
