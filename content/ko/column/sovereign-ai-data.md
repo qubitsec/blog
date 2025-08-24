@@ -33,21 +33,6 @@ tags: ["소버린AI", "데이터주권", "GDPR", "AI정책", "정보보호", "�
 
 ---
 
-## 🔄 연결 다이어그램
-
-```mermaid
-flowchart LR
-    A["소버린 AI<br>(AI Sovereignty)"] 
-      <--> B["소버린 DATA<br>(Data Sovereignty)"]
-    B <--> C["GDPR<br>(EU Data Regulation)"]
-
-    style A fill:#f4f9ff,stroke:#4a90e2,stroke-width:2px
-    style B fill:#fef9f2,stroke:#f5a623,stroke-width:2px
-    style C fill:#f9f9f9,stroke:#7ed321,stroke-width:2px
-````
-
----
-
 ## 🔒 왜 데이터 주권 관점이 중요한가?
 
 1. **AI = 데이터 기반 산업**
