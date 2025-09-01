@@ -7,7 +7,10 @@ featured_image: "cdn/respond/xwaf_cloud_native.png"
 tags: ["웹방화벽", "차세대 WAF", "클라우드 보안", "API 보안", "크리덴셜 스터핑", "제로데이 대응"]
 ---
 
-[**🌐 xWAF (https://xwaf.io)**](https://xwaf.io) 는 **단순한 WAF가 아닙니다.**  
+## 🌐 [**xWAF (https://xwaf.io)**](https://xwaf.io)
+
+> **단순한 WAF가 아닙니다.**  
+> 클라우드 SaaS 기반 **차세대 웹방화벽**입니다.
 
 ✨ **클라우드 SaaS 기반 차세대 웹방화벽**으로,  
 빠르게 진화하는 공격과 복잡한 운영 환경에 최적화된 **보안 플랫폼**입니다.  
