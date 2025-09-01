@@ -101,6 +101,5 @@ xWAF는 그 해답을 제시합니다:
 
 - [웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
 - [웹방화벽 우회 공격에 대응하기](https://blog.plura.io/ko/column/waf_dev_exception/)
-- [API 보안, 왜 중요한가?](https://blog.plura.io/ko/column/api_security/)
 - [크리덴셜 스터핑 공격 대응하기](https://blog.plura.io/ko/respond/credential-stuffing-countermeasures/)
-- [제로데이 공격과 AI 기반 탐지](https://blog.plura.io/ko/column/zero-day_ai_detection/)
+
