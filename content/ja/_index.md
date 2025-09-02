@@ -5,4 +5,4 @@ featured_image: '/images/ja-bg.jpg'
 ---
 
 **「システムは、複雑であるほど失敗しやすい。」**  
-  — ピーター・F・ドラッカー(Peter F. Drucker)
+ [ ] — ピーター・F・ドラッカー(Peter F. Drucker)
