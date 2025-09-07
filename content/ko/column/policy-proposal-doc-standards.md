@@ -15,7 +15,7 @@ tags: ["디지털정부", "문서표준", "웹표준", "HTML", "Markdown", "PDF"
 
 <!--more-->
 
-![Policy Proposal – Document Standard](https://blog.plura.io/cdn/column/policy-doc-standards.png)
+![Policy Proposal – Document Standard](https://blog.plura.io/cdn/column/policy-proposal-doc-standards.png)
 
 ## 1. 도입 (Introduction)
 
@@ -236,7 +236,8 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 
 ## 16. AI 시대의 문서 표준과 마크다운
 
-> **핵심 메시지**: *AI 시대일수록, 문서는 “기계가 읽기 쉬운 구조”여야 합니다. 마크다운은 가볍고 표준화된 구조를 제공해 AI 활용의 토대를 만듭니다.*
+> **핵심 메시지**: *AI 시대일수록, 문서는 “기계가 읽기 쉬운 구조”여야 합니다.  
+> 마크다운은 가볍고 표준화된 구조를 제공해 AI 활용의 토대를 만듭니다.*
 
 ### 16-1) 왜 마크다운인가
 
@@ -257,7 +258,7 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 
 * [ ] `title`, `date`, `description`, `tags` 등 **YAML 프런트매터** 포함
 * [ ] **H1은 1개**, H2/H3로 **논리 계층** 유지
-* [ ] \*\*요약(3\~5줄)\*\*과 **핵심 bullet** 제공
+* [ ] 요약(3~5줄)과핵심 bullet 제공
 * [ ] 표·그림에 **대체텍스트/설명 문장** 제공
 * [ ] **내부/외부 링크**는 의미 있는 앵커 텍스트 사용
 * [ ] **파일 없는 링크 우선**(필요 시 PDF 동시 제공)
