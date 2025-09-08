@@ -1,12 +1,24 @@
+---
+title: "[정책 제안] 사이버 해킹 무사고 원칙(Zero-Incident Rule)과 징벌적 손해배상 도입"
+date: 2025-09-08
+draft: false
+description: 
+featured_image: "cdn/column/policy-proposal-zir.png"
+tags: 
+---
+
+
 # [정책 제안] 사이버 해킹 무사고 원칙(Zero-Incident Rule)과 징벌적 손해배상 도입
-
-
 
 ## 0) 정책 선언
 
 * 목표: **해킹·대규모 유출·중대한 서비스 중단 = 절대 금지(Never Events)**
 * 수단: **민사 징벌배상(3~5배) + 행정 징벌과징금(누진)**을 기본축으로, **반복·은폐·중과실**에 대한 가중을 명문화
 * 배경: 정부도 **반복 보안사고 기업에 징벌적 과징금** 기조를 발표했고(2025-09-04), 여론 역시 **징벌 손배 필요**에 압도적 공감대를 보임. ([boannews.com][1], [보안뉴스][2], [MBC NEWS][3])
+
+<!--more-->
+
+![policy-proposal-zir](https://blog.plura.io/cdn/column/policy-proposal-zir.png)
 
 ---
 
