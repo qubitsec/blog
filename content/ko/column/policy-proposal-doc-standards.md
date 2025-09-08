@@ -15,7 +15,7 @@ tags: ["디지털정부", "문서표준", "웹표준", "HTML", "Markdown", "PDF"
 
 <!--more-->
 
-![Policy Proposal – Document Standard](https://blog.plura.io/cdn/column/policy-proposal-doc-standards.png)
+![Policy Proposal – Document Standard](https://blog.plura.io/cdn/column/policy-doc-standards.png)
 
 ## 1. 도입 (Introduction)
 
