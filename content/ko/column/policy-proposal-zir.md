@@ -1,7 +1,7 @@
 ---
 title: "[정책 제안] 사이버 해킹 무사고 원칙(Zero-Incident Rule)과 징벌적 손해배상 도입"
 date: 2025-09-08T00:00:05
-draft: false
+draft: true
 description: "사이버 해킹과 대규모 유출을 'Never Events'로 금지하고, 반복·은폐·중과실에 대해 3~5배 징벌적 손해배상과 누진 과징금을 적용하는 정책 제안"
 featured_image: "cdn/column/policy-proposal-zir.png"
 tags: ["사이버보안", "무사고원칙", "징벌적손해배상", "보안정책", "데이터보호"]
