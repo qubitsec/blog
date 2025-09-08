@@ -4,7 +4,7 @@ title: "[정책제안] 정부 표준 문서, HWP에서 웹 표준(HTML+Markdown)
 date: 2025-09-08
 draft: false
 description: "2025년, 디지털 정부의 생산성·접근성·보안·AI 활용도를 동시에 끌어올리는 '문서 형식 전환' 정책 제안 — HWP 중심에서 HTML+Markdown+PDF 보관 체계로."
-featured_image: "cdn/column/policy-doc-standards.png"
+featured_image: "cdn/column/policy-doc-standards-00.png"
 tags: ["디지털정부", "문서표준", "웹표준", "HTML", "Markdown", "PDF", "접근성", "행정혁신", "전자정부", "AI행정"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["디지털정부", "문서표준", "웹표준", "HTML", "Markdown", "PDF"
 
 <!--more-->
 
-![Policy Proposal – Document Standard](https://blog.plura.io/cdn/column/policy-doc-standards.png)
+![Policy Proposal – Document Standard](https://blog.plura.io/cdn/column/policy-doc-standards-00.png)
 
 ## 1. 도입 (Introduction)
 
