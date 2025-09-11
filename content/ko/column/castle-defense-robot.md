@@ -1,11 +1,11 @@
 ---
 
-title: "\[공성전 비유] 성을 지키는 사이버 방어 — ‘돌처럼 보낸 로봇’ 🤖"
+title: "[공성전 비유] 성을 지키는 사이버 방어 — ‘돌처럼 보낸 로봇’ 🤖"
 date: 2025-09-11
 draft: false
 description: "방화벽·WAF·IPS로도 뚫리는 이유를 공성전으로 풀어 설명하고, 내부 행위·비콘(C2) 탐지와 자동 대응으로 막는 법을 제시합니다."
-featured\_image: "cdn/column/castle-defense-robot.png"
-tags: \["공성전", "사이버보안", "XDR", "EDR", "Zero Trust", "IR", "PLURA"]
+featured_image: "cdn/column/castle-defense-robot.png"
+tags: ["공성전", "사이버보안", "XDR", "EDR", "Zero Trust", "IR", "PLURA"]
 ---
 
 # 성을 지키는 사이버 방어 — ‘돌처럼 보낸 로봇’ 🤖
