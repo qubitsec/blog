@@ -16,14 +16,6 @@ tags: ["디지털정부", "문서표준", "웹표준", "HTML", "Markdown", "PDF"
 > **문서는 ‘사람이 읽기 쉬울 뿐 아니라 기계가 곧바로 쓰기 쉬운 구조’여야 합니다.**  
 > 구조화(HTML+Markdown)와 메타데이터(YAML) 없이는 **검색·요약·자동응답·다국어 퍼블리싱**이 안정적으로 돌아가지 않습니다.
 
-**AI-Ready 6 체크(서두 요약)**  
-- [ ] YAML 프런트매터: `title, date, tags, summary`  
-- [ ] H1 *한 개*, 의미 있는 H2/H3 계층  
-- [ ] 표·지표는 표준 표기 **+ (가능 시) CSV/JSON 링크 병행**  
-- [ ] 이미지에 **대체텍스트/캡션**  
-- [ ] 파일 첨부 대신 **링크 우선**(HTML 기본, PDF 병행)  
-- [ ] 공개 전 **자동 검사**: 맞춤법·링크·접근성·메타데이터
-
 <!--more-->
 
 ![Policy Proposal – Document Standard](https://blog.plura.io/cdn/column/policy-doc-standards-00.png)
