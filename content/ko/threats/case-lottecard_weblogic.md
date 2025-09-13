@@ -14,6 +14,8 @@ tags: ["롯데카드", "해킹", "데이터 유출", "웹셸", "Oracle WebLogic"
 
 <!--more-->
 
+![롯데카드 해킹 사건](https://blog.plura.io/cdn/threats/case-lottecard_weblogic.png)
+
 ---
 
 ### 1. **초기 침투 (Initial Access)**
