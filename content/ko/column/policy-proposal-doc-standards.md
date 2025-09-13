@@ -389,7 +389,7 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 
 ---
 
-## 참고 (References)
+## 🌐 참고 (References)
 
 **기술 표준**  
 - WHATWG, **HTML Living Standard** — <https://html.spec.whatwg.org/>  
@@ -444,7 +444,7 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 
 ---
 
-## PLURA 지원 예제
+## 💡 PLURA 지원 예제
 
 * **마크다운 뷰어** — 저장소의 Markdown을 브라우저에서 바로 읽을 수 있도록 **HTML로 렌더링**하는 예제. [How To](https://github.com/QubitSecurity/howto/blob/main/website/markdown/)
 * **프루라 철학 소개** — Markdown 원문을 **자동 변환해 HTML로 제공**합니다. [PLURA Philosophy](https://w.plura.io/index.html?doc=/philosophy/ko/README.md)
