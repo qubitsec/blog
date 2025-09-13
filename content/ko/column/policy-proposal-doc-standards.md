@@ -449,8 +449,9 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 * **마크다운 뷰어** — 저장소의 Markdown을 브라우저에서 바로 읽을 수 있도록 **HTML로 렌더링**하는 예제. [How To](https://github.com/QubitSecurity/howto/blob/main/website/markdown/)
 * **프루라 철학 소개** — Markdown 원문을 **자동 변환해 HTML로 제공**합니다. [PLURA Philosophy](https://w.plura.io/index.html?doc=/philosophy/ko/README.md)
 
+---
 
-# 📄 정책제안 문서를 통한 예시
+## 📄 정책제안 문서를 통한 예시
 
 * **[정책제안] AI 행정: HWP에서 웹 표준(HTML+Markdown)로** — Markdown 원문을 **자동 변환해 HTML로 제공**합니다.  
   👉 [정책제안: HTML](https://w.plura.io/url-index.html?doc=https://raw.githubusercontent.com/qubitsec/blog/refs/heads/main/content/ko/column/policy-proposal-doc-standards.md)
