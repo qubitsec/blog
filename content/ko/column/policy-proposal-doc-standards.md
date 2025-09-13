@@ -396,6 +396,7 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 - W3C, **Web Content Accessibility Guidelines (WCAG)** — <https://www.w3.org/WAI/standards-guidelines/wcag/>  
 - **CommonMark Specification** — <https://spec.commonmark.org/>  
 - ISO, **PDF/UA (Accessible PDF)** — <https://www.iso.org/standard/64599.html>
+- 마크다운, Wikipedia — <https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4>
 
 **전압 승압 사례·배경**  
 - KBS 뉴스(2005.11.4), “한전, 220V 승압공사 완료”  
