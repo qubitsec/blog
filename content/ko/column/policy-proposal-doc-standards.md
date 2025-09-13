@@ -302,7 +302,8 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 
 ## PLURA 지원 예제
 
-* **마크다운 뷰어** — [How To]([https://html.spec.whatwg.org/](https://github.com/QubitSecurity/howto/blob/main/website/markdown/)
+* **마크다운 뷰어** — [How To]([https://html.spec.whatwg.org/](https://github.com/QubitSecurity/howto/blob/main/website/markdown/)  
+* **프루라 철학 소개** — [PLURA Philosophy](https://w.plura.io/index.html?doc=/philosophy/ko/README.md)
 
 
 > ※ 본 문서는 정책 담당자·현장 공무원·국민 모두가 이해하기 쉬운 표현을 목표로 하였으며, 각 부처 상황에 맞춰 세부 지침과 템플릿은 유연하게 조정될 수 있습니다.
