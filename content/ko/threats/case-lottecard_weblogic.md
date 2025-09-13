@@ -1,7 +1,6 @@
 ---
-
 title: "롯데카드 해킹 사고 분석 – 오래된 취약점 방치"
-date: 2025-09-14
+date: 2025-09-10
 draft: false
 description: "2025년 8월 롯데카드 온라인 결제 서버 해킹 사건을 타임라인과 기술적 세부, 다크웹 유출 여부, 금융당국 후속 조치까지 종합 정리합니다."
 featured_image: "cdn/threats/case-lottecard_weblogic.png"
