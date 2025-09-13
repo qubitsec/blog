@@ -302,7 +302,7 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 
 ## PLURA 지원 예제
 
-* **마크다운 뷰어** — [How To]([https://html.spec.whatwg.org/](https://github.com/QubitSecurity/howto/blob/main/website/markdown/)  
+* **마크다운 뷰어** — [How To](https://github.com/QubitSecurity/howto/blob/main/website/markdown/)  
 * **프루라 철학 소개** — [PLURA Philosophy](https://w.plura.io/index.html?doc=/philosophy/ko/README.md)
 
 
