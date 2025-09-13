@@ -448,7 +448,8 @@ A. 접수는 웹 양식과 이메일을 병행합니다. 기존 형식 제출도
 
 * **마크다운 뷰어** — 저장소의 Markdown을 브라우저에서 바로 읽을 수 있도록 **HTML로 렌더링**하는 예제. [How To](https://github.com/QubitSecurity/howto/blob/main/website/markdown/)
 * **프루라 철학 소개** — Markdown 원문을 **자동 변환해 HTML로 제공**합니다. [PLURA Philosophy](https://w.plura.io/index.html?doc=/philosophy/ko/README.md)
-
+* **[정책제안] AI 행정: HWP에서 웹 표준(HTML+Markdown)로** — Markdown 원문을 **자동 변환해 HTML로 제공**합니다. [정책제안](https://w.plura.io/url_index.html?doc=)
+* 
 ---
 
 [^110v]: 북미(미국·캐나다·멕시코), 중미 일부(코스타리카, 파나마 등), 남미 일부(콜롬비아, 베네수엘라 등)도 100~127V 계열을 사용합니다.  
