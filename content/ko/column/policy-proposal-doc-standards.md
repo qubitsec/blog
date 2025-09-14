@@ -1,5 +1,5 @@
 ---
-title: "[정책제안] AI 행정: HWP에서 웹 표준(HTML+Markdown)로"
+title: "[정책제안] AI 행정: HWP에서 웹 표준(HTML+Markdown)으로"
 date: 2025-09-13
 draft: false
 description: "2025년, 디지털 정부의 생산성·접근성·보안·AI 활용도를 동시에 끌어올리는 '문서 형식 전환' 정책 제안 — HWP 중심에서 HTML+Markdown+PDF 보관 체계로."
