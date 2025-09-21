@@ -72,7 +72,7 @@ sequenceDiagram
 
 ## 🔎 왜 **WAF**가 막지 못했나 — 핵심 요약
 
-짧은 결론: **WAF가 “CVE-2017-10271 (WLS-WSAT SOAP/XML 역직렬화)”를 막지 못하는 흔한 이유**는  
+**WAF가 “CVE-2017-10271 (WLS-WSAT SOAP/XML 역직렬화)”를 막지 못하는 흔한 이유**는  
 
 (1) **본문(POST body) 심층 검사 미적용/제한**,   
 (2) **SOAP/XML 파싱·정규화 부재**,   
