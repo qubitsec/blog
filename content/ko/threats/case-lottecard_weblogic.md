@@ -83,7 +83,7 @@ sequenceDiagram
 
 이 취약점은 `WLS-WSAT`의 **`CoordinatorPortType`** 등 엔드포인트에서 **`java.beans.XMLDecoder` 기반 역직렬화**가 트리거되며, **URL/헤더 룰만으로는 놓치기 쉬운** 유형입니다. ([금융위원회][3])
 
-### 왜 못 막았을까 — 원인 체크리스트
+### ❓ 왜 못 막았을까 — 원인 체크리스트
 
 1. **본문 검사 미흡**
 
