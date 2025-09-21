@@ -188,4 +188,4 @@ CVE-2017-10271은 Oracle WebLogic Server의 **WLS WSAT(Web Services Atomic Trans
 [8]: https://www.sedaily.com/NewsView/2GXQFL6KS6 "'회원 수 970만' 롯데카드 해킹 공격…고객정보 유출 여부 확인 중 | 서울경제"
 [9]: https://www.khan.co.kr/article/202509012125001?utm_source=chatgpt.com "롯데카드도 '해킹 사고' 데이터 1.7GB 유출···“서버 악성코드 ..."
 
----
+
