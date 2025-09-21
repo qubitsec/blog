@@ -166,7 +166,7 @@ CVE-2017-10271은 Oracle WebLogic Server의 **WLS WSAT(Web Services Atomic Trans
 
 > 취약한 버전의 Oracle 환경 구축에 다소 시간이 걸려, 우선 **기존 설치되어 있는 웹서버로 테스트**를 진행하여 **로그 확인 및 탐지/차단 유무**를 확인했습니다.
 
-**PLURA-WAF 룰**에 따라 첨부 이미지와 같이 **탐지/차단**되었습니다.
+✅ **PLURA-WAF 룰**에 따라 **탐지/차단**되었습니다.
 
 ---
 
