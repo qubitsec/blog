@@ -141,8 +141,6 @@ sequenceDiagram
 
 ---
 
-필요하시면 위 **응답 본문/사이즈 모니터링 지표**를 **대시보드·알람 조건**으로 바로 쓸 수 있게 **체크리스트 1장/커스텀 룰 스니펫**으로도 정리해 드릴게요.
-
 [1]: https://www.fsc.go.kr/no010101/85319?utm_source=chatgpt.com "롯데카드 정보유출 관련 긴급 대책회의 개최"
 [2]: https://v.daum.net/v/20250918190600587?utm_source=chatgpt.com "뚫렸는데도 모르고, 얼마나 털렸는지도 깜깜…롯데카드 해킹 ..."
 [3]: https://www.khan.co.kr/article/202509181845001?utm_source=chatgpt.com "보안투자 늘렸다더니 해킹 인지조차 못한 롯데카드…“피해액 ..."
