@@ -70,6 +70,24 @@ sequenceDiagram
     내부망-->>외부: 최대 200GB 정보 반출(8/14~8/27)
 ```
 
+### 테스트용 (자체 검증)
+
+```bash
+# 1) /wls-wsat 경로 접근 차단 확인
+curl -i https://target.example.com/wls-wsat/CoordinatorPortType
+
+# 2) 의심 SOAPAction 헤더
+curl -i -H 'Content-Type: application/soap+xml' \
+     -H 'SOAPAction: "CoordinatorPortType"' \
+     --data '<soap:Envelope>...</soap:Envelope>' \
+     https://target.example.com/path
+
+# 3) XMLDecoder/WorkContext 문자열 포함 본문
+curl -i -H 'Content-Type: text/xml' \
+     --data '<!DOCTYPE x><x>java.beans.XMLDecoder</x>' \
+     https://target.example.com/path
+```
+
 ---
 
 ## 🔎 왜 **WAF**가 막지 못했나 — 핵심 요약
