@@ -156,7 +156,9 @@ CVE-2017-10271은 Oracle WebLogic Server의 **WLS WSAT(Web Services Atomic Trans
   * `/wls-wsat` 경로 **접근 차단** (예: WAF/방화벽)
   * WebLogic 서버 **외부 공개 차단**
   * **의심 트래픽 모니터링** (User-Agent, SOAP/XML POST 등)
-* **적용 확인 체크리스트:** WebLogic **버전/패치레벨 확인** → **외부 노출(7001/7002) 점검** → **`/wls-wsat` 경로 차단(WAF/FW)** → **의심 SOAP/XML POST 탐지 룰 활성화**
+* **적용 확인 체크리스트:**  
+
+  * WebLogic **버전/패치레벨 확인** → **외부 노출(7001/7002) 점검** → **`/wls-wsat` 경로 차단(WAF/FW)** → **의심 SOAP/XML POST 탐지 룰 활성화**  
 
 테스트는 아래 exploit-db의 PoC 코드를 사용하여 진행했습니다:  
 [https://www.exploit-db.com/exploits/43458](https://www.exploit-db.com/exploits/43458)  
