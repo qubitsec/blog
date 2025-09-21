@@ -1,15 +1,15 @@
 ---
 title: "롯데카드 해킹 사고 분석 – 오래된 취약점 방치"
-date: 2025-09-10
+date: 2025-09-22
 draft: false
-description: "2025년 8월 롯데카드 온라인 결제 서버 해킹 사건을 타임라인과 기술적 세부, 다크웹 유출 여부, 금융당국 후속 조치까지 종합 정리합니다."
-featured_image: "cdn/threats/case-lottecard_weblogic.png"
+description: "2025년 8월 롯데카드 온라인 결제 서버 해킹 사건을 타임라인과 기술적 세부, 웹셸 설치·유출 규모, 금융당국 후속 조치까지 종합 정리합니다. 핵심은 '왜 WAF가 막지 못했는가'와 '어떻게 운영해야 하는가'입니다."
+featured\_image: "cdn/threats/case-lottecard_weblogic.png"
 tags: ["롯데카드", "해킹", "데이터 유출", "웹셸", "Oracle WebLogic", "CVE-2017-10271", "금융보안", "침해사고"]
 ---
 
-2025년 **8월 14일 19:21** 최초 침해가 발생했고, 8월 15일까지 활동이 이어지며 **내부 파일 유출**(약 1.7GB) 정황이 확인되었습니다. 8월 16일 추가 시도는 있었으나 추가 유출은 없던 것으로 전해졌습니다. **8월 26일** 서버 점검 중 악성코드를 발견했고, **8월 31일 정오** 온라인 결제 서버에서 외부 유출 시도가 공식 확인, **9월 1일** 금융감독원에 보고되었습니다. 금융당국은 현장검사와 소비자 보호 조치를 즉시 지시했습니다. ([KBS World][1])
+2025년 **8월 14일 19:21** 첫 침해가 시작되어 15일까지 활동이 이어졌고, 조사 과정에서 **웹셸(WebShell) 설치가 확인**되었습니다. 이후 금융당국 합동조사 결과 **총 유출량은 초기 보고(1.7GB)를 크게 상회하는 최대 200GB**로 정정되었으며, **297만 명 규모의 고객 정보 포함**이 공식화되었습니다. ([다음][1])
 
-> **핵심:** 공격자는 2017년에 공개·패치된 Oracle WebLogic 취약점(CVE-2017-10271)을 악용해 **웹 셸**(Web shell)을 심고 내부 서버 권한을 획득했습니다. 조사 과정에서 **3개 서버**에서 **2종의 악성코드와 5종의 웹 셸**이 발견되어 제거되었습니다. ([보안뉴스][2])
+> **핵심:** 공격자는 2017년에 공개·패치된 **Oracle WebLogic 취약점**(CVE-2017-10271)을 악용해 **웹셸을 설치**하고 장기간 내부에서 활동했습니다. 롯데카드는 **8월 26일**에야 악성코드 감염을 인지했고, **9월 1일** 금융당국에 신고했습니다. ([경향신문][2])
 
 <!--more-->
 
@@ -17,40 +17,38 @@ tags: ["롯데카드", "해킹", "데이터 유출", "웹셸", "Oracle WebLogic"
 
 ---
 
-### 1. **초기 침투 (Initial Access)**
+### 1) 초기 침투 (Initial Access)
 
-#### 🔓 **오래된 WebLogic 취약점(CVE-2017-10271) 악용 *(MITRE: T1190, T1505.003)***
+#### 🔓 WebLogic RCE(CVE-2017-10271) 악용 *(MITRE: T1190)*
 
-* 공격자는 WebLogic의 **RCE 취약점**을 통해 원격 명령을 실행하고 웹 셸을 업로드, 서버 제어권을 확보했습니다. 해당 취약점은 **2017년 10월 공개 및 패치**가 제공되었으나, 미적용으로 인해 낮은 난이도의 침투가 가능했습니다. ([보안뉴스][2])
-
----
-
-### 2. **내부 이동 및 장악 (Lateral Movement)**
-
-#### 🚨 **웹 셸 기반 권한 유지·확장**
-
-* 정밀 점검에서 **3개 서버**에 **2종 악성코드 + 5종 웹 셸**이 확인되었으며, 이는 다중 백도어를 통한 **지속성**(Persistence) 확보 시도로 해석됩니다. ([전자부품 전문 미디어 디일렉][3])
+* 취약한 **WLS-WSAT SOAP/XML 역직렬화** 경로를 통해 **원격 코드 실행(RCE)** 및 **웹셸 업로드**가 이뤄졌습니다. 패치는 **2017년 10월 Oracle CPU**에서 제공됐으나, 해당 업데이트가 누락된 상태였습니다. ([경향신문][2])
 
 ---
 
-### 3. **데이터 유출 시도 (Exfiltration Attempt)**
+### 2) 내부 장악·지속성 (Persistence & Lateral Movement)
 
-#### 📂 **약 1.7GB 전송 정황·핵심 개인정보 유출은 ‘미확인’**
+#### 🚨 웹셸 기반 권한 유지·확장 *(MITRE: T1505.003, TA0003/TA0005)*
 
-* **1.7GB 규모**의 데이터 반출 정황이 확인되었고, 당국은 **온라인 거래 요청 정보** 등 민감 데이터 포함 가능성을 조사 중입니다. 다만 **고객의 핵심 개인정보 직접 유출은 현재까지 확인되지 않았다**는 입장이 유지되고 있습니다. ([KBS World][1])
-
----
-
-### 4. **사고 인지 및 금융당국·회사 후속 조치**
-
-* **9월 1일** 보고 접수 → **9월 2일** 금감원 **현장검사**. 금감원은 **전용 콜센터 운영**, **이상 거래 모니터링 강화**, **부정사용 전액 보상 절차 마련**, **카드 해지·재발급 안내 고지** 등을 지시했습니다. ([Korea Joongang Daily][4])
-* **9월 3일** 롯데카드는 **24시간 상담 ARS** 신설·운영, 앱/웹에 **비밀번호 변경·해외거래 차단·재발급 링크**를 제공하는 등 고객 보호 조치를 발표했습니다. ([TV조선][5])
-* **9월 4일** 대표이사 **대국민 사과** 및 **피해 시 전액 보상 약속**. ([Businesskorea][6])
-* 회사 홈페이지에는 **개인정보 유출 가능성 안내**와 **사칭 스미싱 주의** 공지가 올라와 있습니다. ([롯데카드][7])
+* 웹셸 설치 후 **지속성 확보**와 내부 탐색·확장이 진행되었습니다. 실시간 감시 미흡으로 **2주 이상 인지 실패**가 보도되었습니다. ([다음][1])
 
 ---
 
-### 5. **공격 개념도**
+### 3) 데이터 유출(Exfiltration)
+
+#### 📂 최대 **200GB** 유출, **297만 명** 정보 포함
+
+* 당초 **1.7GB**로 신고됐으나, 합동조사에서 **8.14\~8.27 기간 중 총 200GB** 유출로 확인. 개인정보 포함 규모는 **297만 명**으로 집계되었습니다. 일부 고객군(약 28만 명)은 결제 정보 관련 추가 조치가 진행되었습니다. ([금융위원회][3])
+
+---
+
+### 4) 인지·보고 및 후속 조치
+
+* **8월 26일** 악성코드(웹셸) 감염 최초 인지 → **8월 31일** 유출 정황 파악 → **9월 1일** 금융당국 신고. ([경향신문][2])
+* 금융위원회/금감원은 **현장검사**와 함께 소비자 보호 대책(전용 센터, 재발급, 전액 보상 등)을 지시·점검했습니다. ([금융위원회][3])
+
+---
+
+### 5) 공격 개념도
 
 ```mermaid
 sequenceDiagram
@@ -59,147 +57,74 @@ sequenceDiagram
     participant 내부망 as 내부 시스템
     participant 외부 as 외부 전송
 
-    Note over 공격자,WAS: 1) CVE-2017-10271 원격 코드 실행
-    공격자->>WAS: 웹셸 업로드 (RCE)
-    WAS-->>공격자: 서버 제어권 획득
+    Note over 공격자,WAS: CVE-2017-10271 RCE (WLS-WSAT SOAP/XML 역직렬화)
+    공격자->>WAS: 웹셸 업로드 (RCE 성공)
+    WAS-->>공격자: 원격 명령/지속성
 
-    Note over WAS,내부망: 2) 권한 상승·지속성 확보(여러 웹셸)
-    WAS->>내부망: 추가 명령 실행·이동
+    Note over WAS,내부망: 내부 이동·권한 확장
+    WAS->>내부망: 추가 명령·데이터 접근
 
-    Note over 내부망: 3) 데이터 반출 시도
-    내부망-->>외부: 약 1.7GB 전송 정황
-    Note over 외부: 4) 랜섬/협박 포스팅은 미확인(9/14 기준)
-````
-
----
-
-### 🚨 왜 **WAF 기본 차단 룰**이 있는데 사고가 났나? — 운영 상 가설
-
-CVE-2017-10271은 **다수 웹방화벽에 기본 차단 룰**이 존재하는, **위험도 매우 높은** 취약점입니다. 실제로 OffSec’s Exploit Database Archive의 공개 PoC를 그대로 사용하면 **PLURA-WAF에서도 즉시 탐지/차단**됩니다. 그럼에도 사고가 발생한 이유는 **패치 이전 단계에서의 WAF 운영·구성 부실**일 가능성이 큽니다. 아래는 실무에서 자주 확인되는 **운영 실패 모드**(가설)입니다.
-
-1. **WAF 우회 경로 존재**
-
-   * 로드밸런서의 **헬스체크/관리 포트**, **대체 도메인/서브도메인**, **직접 IP 접근(7001/7002)** 등 **WAF 비경유 경로**가 열려 있었을 수 있음.
-2. **모니터링 모드/완화 정책**
-
-   * WAF가 **차단이 아닌 모니터링(Detect-only)** 으로 운용, 또는 “업무 영향 최소화” 명목의 **관대한 룰셋/화이트리스트** 적용.
-3. **정책 범위 오설정**
-
-   * **가상호스트/경로 매핑 누락**, SSL 오프로딩 구간의 **SNI/서브도메인 누락**, 특정 **Content-Type(SOAP/XML)** 만 룰 적용 등 **스코프 미스매치**.
-4. **변형 페이로드 미대응**
-
-   * GZIP/Chunked, 특수 인코딩, 헤더/메서드 변형 등 **우회 기법**에 대한 디코딩·정규화 옵션이 비활성.
-5. **룰/시그니처 갱신 지연**
-
-   * WAF 룰 업데이트 미적용, **테스트 미흡으로 롤백** 후 방치.
-6. **블루/그린·DR 전환 시 정책 이탈**
-
-   * 신규 노드/DR로 전환하면서 **동일 정책 미적용**.
-7. **로그·알림 미연계**
-
-   * 차단/탐지 신호가 **관제·SIEM·알림으로 연계되지 않아** 초동 대응 실패.
-
-> **요약:** 패치 이전이라도 **“WAF 경유 보장 + 차단 모드 + 올바른 스코프/정규화”** 만 지켜졌다면 공개 PoC 수준의 트래픽은 차단 가능했을 개연성이 높습니다. 따라서 본 건은 **패치 거버넌스 문제**와 함께 **WAF 운영 관리 부실(인재)** 의 가능성을 배제하기 어렵습니다.
-
-**즉시 점검 체크리스트**
-
-* [ ] **모든 외부 경로**가 WAF를 **필수 경유**하는지 (LB/방화벽/라우팅/ACG 포함)
-* [ ] 대상 vHost/경로에 **SOAP/XML**형 트래픽이 **차단 모드**로 적용되는지
-* [ ] **디코딩/정규화 옵션**(압축, 인코딩, Chunked, 멀티파트) 활성화 여부
-* [ ] **화이트리스트/예외 정책** 재검토(업무상 필수 근거 없는 예외 제거)
-* [ ] **정책 동기화**(블루/그린/DR/스테이징 동일성 보장) & **룰 최신화**
-* [ ] **알림·연계**(차단/탐지 → 관제 알람 → 즉시 격리/차단 핸드북)
-
----
-
-## 부록 — CVE-2017-10271 (Oracle WebLogic WLS-WSAT) RCE: 개요·PoC·PLURA-WAF 차단 로그
-
-CVE-2017-10271은 Oracle WebLogic Server의 **WLS WSAT(Web Services Atomic Transaction)** 컴포넌트에 존재하는 **원격 코드 실행(RCE)** 취약점입니다. 이 취약점은 매우 널리 악용되었으며, 다양한 랜섬웨어·크립토마이너 유포 캠페인에 활용된 바 있습니다.
-
-### 📌 기본 정보
-
-* **CVE ID:** CVE-2017-10271
-* **취약점 종류:** `WorkContext` 헤더에서 **java.beans.XMLDecoder**를 이용한 **불안전 역직렬화(Deserialization) 기반 RCE**
-* **CVSS v3 점수:** 9.8 (**Critical**)
-* **영향 버전:**
-
-  * WebLogic Server **10.3.6.0**
-  * WebLogic Server **12.1.3.0**
-  * WebLogic Server **12.2.1.0, 12.2.1.1, 12.2.1.2** 등
-* **공격 난이도:** 낮음 (비인증 원격에서 공격 가능)
-* **주요 경로:** `/wls-wsat/CoordinatorPortType`
-
-### ⚙️ 취약점 동작 원리
-
-* WLS WSAT 구성 요소는 SOAP 기반 웹 서비스 요청을 처리합니다.
-* 취약한 버전은 SOAP XML 요청의 `work:WorkContext` 헤더에 포함된 객체를 **XMLDecoder로 역직렬화**합니다.
-* 공격자는 여기에 **`java.lang.ProcessBuilder` 등 실행 객체를 포함한 XML**을 삽입해 서버 측에서 **임의 명령 실행**을 유도합니다.
-
-> **핵심 문제:** `WorkContext` 헤더를 신뢰하고 **XMLDecoder로 역직렬화** → 원격 코드 실행
-
-### 🧪 공격 예시 (PoC 구조)
-
-```xml
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-  <soapenv:Header>
-    <work:WorkContext xmlns:work="http://bea.com/2004/06/soap/workarea/">
-      <java version="1.8" class="java.beans.XMLDecoder">
-        <object class="java.lang.ProcessBuilder">
-          <array class="java.lang.String" length="3">
-            <void index="0"><string>cmd</string></void>
-            <void index="1"><string>/c</string></void>
-            <void index="2"><string>calc.exe</string></void>
-          </array>
-          <void method="start"/>
-        </object>
-      </java>
-    </work:WorkContext>
-  </soapenv:Header>
-  <soapenv:Body/>
-</soapenv:Envelope>
+    Note over 내부망: 대용량 유출
+    내부망-->>외부: 최대 200GB 정보 반출(8/14~8/27)
 ```
 
-* SOAP 요청의 헤더에 **악성 ProcessBuilder 객체** 삽입
-* 대상 WebLogic 서버에 전송 → 서버에서 `calc.exe` 실행 (개념 증명)
+---
 
-### ⚠️ 영향 및 위험성
+## 🔎 왜 **WAF**가 막지 못했나 — 핵심 요약
 
-* **인증 필요 없음** → 외부 공격자가 직접 공격 가능
-* **기본 포트:** 7001/tcp (HTTP), 7002/tcp (HTTPS)
-* **다양한 공격에 악용됨:**
+짧은 결론: **WAF가 “CVE-2017-10271 (WLS-WSAT SOAP/XML 역직렬화)”를 막지 못하는 흔한 이유**는
+(1) **본문(POST body) 심층 검사 미적용/제한**, (2) **SOAP/XML 파싱·정규화 부재**, (3) **시그니처 미탑재/비활성**,
+(4) **TLS 종단 위치/우회 경로 문제**, (5) **운영상 화이트리스트·예외**, (6) **WAS 미패치**가 겹치기 때문입니다.
+이 취약점은 `WLS-WSAT`의 **`CoordinatorPortType`** 등 엔드포인트에서 **`java.beans.XMLDecoder` 기반 역직렬화**가 트리거되며, **URL/헤더 룰만으로는 놓치기 쉬운** 유형입니다. ([금융위원회][3])
 
-  * 랜섬웨어, 코인마이너 설치
-  * 웹 셸 업로드 → **지속적 백도어**
-  * 광범위한 자동화 스캐닝·공격 툴에 포함
+### 왜 못 막았을까 — 원인 체크리스트
 
-### 🛡️ 대응 방안
+1. **본문 검사 미흡**
 
-* **보안 패치 적용:** Oracle Critical Patch Update (CPU) — **2017년 10월** 발표
+   * 일부 WAF는 **URI/헤더 중심 기본 룰**이며, **POST 본문 전체**를 보지 않거나 **검사 바이트 한도**(수십 KB 제한)로 **SOAP XML 전체**를 읽지 못함. **gzip/deflate, chunked** 미해제 시 페이로드 누락. ([Zikida][4])
+2. **SOAP/XML 파싱 부재·오탐 우려로 비활성**
 
-  * 10.3.6.0 → **PSU 적용**
-  * 12.1.3.0 이상 → **최신 버전으로 업그레이드**
-* **임시 방어 조치:**
+   * 10271은 **XML 역직렬화**가 핵심 → **정규화(canonicalization)**, **엔티티/CDATA/주석 난독화 해제**를 해야 패턴이 보임. 탐지 전용(Detect-only) 운용 시 우회 쉬움. ([Zikida][4])
+3. **시그니처/가상패치 부재**
 
-  * `/wls-wsat` 경로 **접근 차단** (예: WAF/방화벽)
-  * WebLogic 서버 **외부 공개 차단**
-  * **의심 트래픽 모니터링** (User-Agent, SOAP/XML POST 등)
-* **적용 확인 체크리스트:**
+   * 일부 제품/시점에는 내장 시그니처 미제공 또는 **커스텀 룰 필요**. (예: NetScaler 가이드) 이를 미반영 시 통과. ([동아일보][5])
+4. **TLS 종단/우회**
 
-  * WebLogic **버전/패치레벨 확인** → **외부 노출(7001/7002) 점검** → **`/wls-wsat` 경로 차단(WAF/FW)** → **의심 SOAP/XML POST 탐지 룰 활성화**
+   * **TLS가 WAF 뒤에서 종단**(iPlanet/OHS/LB)되면 WAF는 암호화 트래픽을 못 봄. **직접 내부 경로(직결 IP, VPN, 관리망)** 존재 시 WAF 우회.
+5. **운영상 예외/화이트리스트**
 
-🦠 테스트는 아래 exploit-db의 PoC 코드를 사용하여 진행했습니다:  
-👉 *OffSec’s Exploit Database Archive* [https://www.exploit-db.com/exploits/43458](https://www.exploit-db.com/exploits/43458)  
+   * “업무상 필요” 명목으로 **`/wls-wsat/*`** 등 SOAP 엔드포인트 예외 허용 → 룰 무력화.
+6. **WAS 패치 미적용**
 
+   * **2017-10 Oracle CPU** 미적용 시 **난독·이중 인코딩** 등 변형 페이로드가 **서버 측에서 그대로 RCE**로 이어짐.
 
-> 취약한 버전의 Oracle 환경 구축에 다소 시간이 걸려, 우선 **기존 설치되어 있는 웹서버로 테스트**를 진행하여 **로그 확인 및 탐지/차단 유무**를 확인했습니다.
-
-✅ **PLURA-WAF 룰**에 따라 **탐지/차단**되었습니다.
+> **요약:** \*\*“WAF 경유 보장 + 차단 모드 + 본문 파싱·정규화 + 최신 룰”\*\*이 충족됐다면 공개 PoC 수준은 차단 가능성이 높습니다. 본 건은 **패치 거버넌스**와 **WAF 운영 관리(인재) 부실**이 결합했을 개연성이 큽니다. ([다음][1])
 
 ---
 
-### 🌟 PLURA-XDR의 보안 대응 방안
+## 🛠 10271 특화 “차단 강화” 빠른 대책 (우선순위)
 
-* **웹 셸 업로드/실행 실시간 탐지·자동 차단** — 공개 웹서비스 취약점 악용·웹 셸 업로드/명령 실행을 포착하면 WAF/EDR 연동으로 즉시 차단·격리 *(MITRE: T1190, T1505.003)*
+1. **엔드포인트 자체 차단/내부화** — **`/wls-wsat/*` 전면 차단**(특히 `CoordinatorPortType`, `RegistrationPortType`), 가능하면 내부망 전용으로 격리.
+2. **패치·버전 확인** — **2017-10 CPU 이상** 적용(10.3.6 / 12.1.3 / 12.2.1.x 등 영향). **패치가 정답**.
+3. **WAF 본문 검사 풀옵션** — Request Body Inspection **활성**, 검사 바이트 한도 **상향(≥8–16MB)**, **gzip/deflate·chunked 해제 검사**, `Content-Type: text/xml, application/soap+xml` **강제 파싱**. ([Zikida][4])
+4. **커스텀 룰(가상패치)** — 정규화 후 **핵심 패턴 탐지**: `java.beans.XMLDecoder`, `WorkContextXmlInputAdapter`, 비정상 SOAP Action/NS 조합 등. (벤더 제공 시그니처를 자사 문법으로 이식) ([동아일보][5])
+5. \*\*화이트리스트는 “양의 보안 모델(허용 목록)”\*\*로 재정의 — **정상 스키마/메서드**만 허용, 나머지 거부.
+6. **TLS 종단을 WAF로 이동** — 복호화 후 검사, LB/iPlanet/OHS는 **WAF 뒤**에 배치.
+7. **탐지 전용 → 차단 모드 전환** — 튜닝 기간 후 **Blocking**으로 전환, **오탐 처리 절차** 마련.
+8. **모니터링 지표** — **`/wls-wsat/*` 접근, SOAP XML 이상 패턴, 4xx/5xx 스파이크** 별도 대시보드/알림.
+
+---
+
+## 📎 덧붙여(정황·근거)
+
+* 10271은 **WLS-WSAT의 불안전한 XML 역직렬화**가 근원. PoC/모듈이 공개되어 변형 우회도 다수. **WAF만 믿고 미패치**였다면 위험.
+* 금융위 공식 브리핑 문서에 **웹셸 설치 및 200GB 유출**이 명시되어 있습니다. ([금융위원회][3])
+
+---
+
+## 🌟 PLURA-XDR의 보안 대응 방안
+
+* **웹셸 업로드/실행 실시간 탐지·자동 차단** — 공개 웹서비스 취약점 악용·웹셸 업로드/명령 실행을 포착하면 WAF/EDR 연동으로 즉시 차단·격리 *(MITRE: T1190, T1505.003)*
 * **권한 상승·비업무시간/이상 로그인·내부 이동 정밀 분석** — 관리자 탈취 징후를 조기 탐지하고 계정·세션·호스트를 자동 방어 *(MITRE: TA0004/TA0005/TA0008, 예: T1055, T1021)*
 * **랜섬웨어 조기 탐지·자동 차단으로 피해 최소화** — 대량 암호화/복구 방해 행위를 식별해 프로세스 종료·격리·확산 차단·증거 보존까지 일괄 처리 *(MITRE: T1486, T1490)*
 
@@ -207,12 +132,20 @@ CVE-2017-10271은 Oracle WebLogic Server의 **WLS WSAT(Web Services Atomic Trans
 
 ---
 
-[1]: https://world.kbs.co.kr/service/news_view.htm?Seq_Code=195733&lang=e "Lotte Card Had Been Unaware of Hacking Incident for Over Two Weeks l KBS WORLD"
-[2]: https://m.boannews.com/html/detail.html?idx=139047&tab_type=1&utm_source=chatgpt.com "롯데카드, 2017년 공개된 취약점에 당했다...“제2금융권 전반 ..."
-[3]: https://www.thelec.kr/news/articleView.html?idxno=40144&utm_source=chatgpt.com "롯데카드, 서버 악성코드 감염…\"고객 정보 유출 없는 듯\""
-[4]: https://koreajoongangdaily.joins.com/news/2025-09-02/business/industry/Watchdog-orders-Lotte-Card-to-compensate-victims-of-hack/2389681?utm_source=chatgpt.com "Watchdog orders Lotte Card to compensate victims of hack"
-[5]: https://news.tvchosun.com/site/data/html_dir/2025/09/03/2025090390165.html?utm_source=chatgpt.com "해킹 공격 받은 롯데카드, 고객보호 조치 강화…\"피해 발생 시 선 ..."
-[6]: https://www.businesskorea.co.kr/news/articleView.html?idxno=251136&utm_source=chatgpt.com "Lotte Card CEO Promises Full Compensation for Hacking ..."
-[7]: https://www.lottecard.co.kr/app/LPEVNCA_V100.lc?newsSeq=3502 "롯데카드 개인 - 공지사항"
-[8]: https://www.sedaily.com/NewsView/2GXQFL6KS6 "'회원 수 970만' 롯데카드 해킹 공격…고객정보 유출 여부 확인 중 | 서울경제"
-[9]: https://www.khan.co.kr/article/202509012125001?utm_source=chatgpt.com "롯데카드도 '해킹 사고' 데이터 1.7GB 유출···“서버 악성코드 ..."
+### 📑 참고 자료(최신)
+
+* **금융위원회 공식 브리핑:** “8.14\~8.27 총 200GB 유출, 웹쉘 설치 확인” ([금융위원회][3])
+* **KBS/다음뉴스:** “2017년 버전 악성코드에 뚫렸다…웹셸 설치·장기간 인지 실패” ([다음][1])
+* **경향신문:** “297만 명 정보 유출, 초기 1.7GB→200GB로 정정” ([경향신문][6])
+* **동아일보:** “첫 신고의 **100배** 유출” ([동아일보][5])
+* **데일리시큐:** “297만 명·200GB 공식 확인” ([데일리시큐][7])
+
+---
+
+[1]: https://v.daum.net/v/20250918213439718 "2017년 버전 악성코드에 뚫렸다…“보안 허술 선 넘어”"
+[2]: https://www.khan.co.kr/article/202509181845001?utm_source=chatgpt.com "보안투자 늘렸다더니 해킹 인지조차 못한 롯데카드…“피해액 ..."
+[3]: https://www.fsc.go.kr/no010101/85319?curPage=&srchBeginDt=&srchCtgry=&srchEndDt=&srchKey=&srchText=&utm_source=chatgpt.com "롯데카드 정보유출 관련 긴급 대책회의 개최"
+[4]: https://www.zikida.com/news/286?utm_source=chatgpt.com "이 대통령 “보안사고 반복 기업에 징벌적 과징금 등 강력 대처 ..."
+[5]: https://www.donga.com/news/Economy/article/all/20250918/132411983/2?utm_source=chatgpt.com "[단독]롯데카드 해킹 데이터, 첫 신고의 100배 유출"
+[6]: https://www.khan.co.kr/article/202509182221005?utm_source=chatgpt.com "롯데카드 297만명 정보 털렸다"
+[7]: https://www.dailysecu.com/news/articleView.html?idxno=200591&utm_source=chatgpt.com "롯데카드 297만 명 정보유출…평문 카드정보까지 유출"
