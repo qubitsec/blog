@@ -94,8 +94,9 @@ sequenceDiagram
 * **출구(Egress) 결합 부족**: **프록시/방화벽/DNS**와 **웹 응답 메트릭**을 **상호상관**하지 않으면 이상 전송의 “그림”이 보이지 않습니다.
 * **TLS 내부 종단**: WAF 앞에서 TLS가 종단되지 않으면 응답 내용이 **가시화되지 않음**(복호화 위치 설계 이슈).
 
-> PLURA는 \*\*응답 본문(DLP)·응답 사이즈(행동지표)\*\*를 함께 보는 방식을 권장합니다. 자세한 설계 철학과 룰 예시는 **PLURA 블로그 DLP 글**을 참고하세요.  
-> 👉 [https://blog.plura.io/ko/column/dlp/](https://blog.plura.io/ko/column/dlp/)
+> PLURA는 응답 본문(DLP)·응답 사이즈(행동지표)를 함께 보는 방식을 권장합니다.  
+> 자세한 설계 철학과 룰 예시는 **PLURA 블로그 DLP 글**을 참고하세요.  
+> 👉 [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)
 
 ---
 
