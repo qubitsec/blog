@@ -169,7 +169,8 @@ sequenceDiagram
 
 ### 마지막으로
 
-이번 건은 **웹방화벽(WAF) 중심의 요청(Request) 관점**만으로는 **서버 내부 이동·계정·키 조작·원격지원 경로 악용**을 막기 어렵다는 사실을 재확인시켰습니다. **실행(Execution)·인증(Authentication)·키(Key)·세션(Session)·이동(Movement)** 5축을 한 화면에 올려 **상관·차단 자동화**를 설계하는 것이 재발 방지의 출발점입니다.
+이번 건은 **웹방화벽(WAF) 중심의 요청(Request) 관점**만으로는 **서버 내부 이동·계정·키 조작·원격지원 경로 악용**을 막기 어렵다는 사실을 재확인시켰습니다.  
+**실행(Execution)·인증(Authentication)·키(Key)·세션(Session)·이동(Movement)** 5축을 한 화면에 올려 **상관·차단 자동화**를 설계하는 것이 재발 방지의 출발점입니다.
 
 [1]: https://www.hankyung.com/article/2025091960441?utm_source=chatgpt.com "소액결제 뚫린 KT, 서버도 해킹 당했다"
 [2]: https://v.daum.net/v/20250919155155660?utm_source=chatgpt.com "KT, 서버 침해 3일 뒤 신고…“내부 검증 거치느라 시간 걸려”"
