@@ -96,6 +96,93 @@ sequenceDiagram
 
 ---
 
+## 부록 — CVE‑2017‑10271 (Oracle WebLogic WLS‑WSAT) RCE: 개요·PoC·PLURA‑WAF 차단 로그
+
+CVE‑2017‑10271은 Oracle WebLogic Server의 **WLS WSAT(Web Services Atomic Transaction)** 컴포넌트에 존재하는 **원격 코드 실행(RCE)** 취약점입니다. 이 취약점은 매우 널리 악용되었으며, 다양한 랜섬웨어·크립토마이너 유포 캠페인에 활용된 바 있습니다.
+
+### 📌 기본 정보
+
+* **CVE ID:** CVE‑2017‑10271
+* **취약점 종류:** XML 외부 개체 주입을 통한 Java **XMLDecoder** 기반 deserialization RCE
+* **CVSS v3 점수:** 9.8 (**Critical**)
+* **영향 버전:**
+
+  * WebLogic Server **10.3.6.0**
+  * WebLogic Server **12.1.3.0**
+  * WebLogic Server **12.2.1.0, 12.2.1.1, 12.2.1.2** 등
+* **공격 난이도:** 낮음 (비인증 원격에서 공격 가능)
+
+### ⚙️ 취약점 동작 원리
+
+* WLS WSAT 구성 요소는 SOAP 기반 웹 서비스 요청을 처리합니다.
+* 취약한 버전은 SOAP XML 요청의 `work:WorkContext` 헤더를 신뢰하여 그대로 처리합니다.
+* 공격자는 이 위치에 `java.beans.XMLDecoder` 객체를 포함한 **악성 페이로드**를 삽입할 수 있습니다.
+* 서버는 이 XML을 **역직렬화(deserialize)** 하면서 공격자가 지정한 **임의 명령을 실행**하게 됩니다.
+
+> **핵심 문제:** 입력 검증 없이 XMLDecoder 사용 → 원격 코드 실행
+
+### 🧪 공격 예시 (PoC 구조)
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <work:WorkContext xmlns:work="http://bea.com/2004/06/soap/workarea/">
+      <java version="1.8" class="java.beans.XMLDecoder">
+        <object class="java.lang.ProcessBuilder">
+          <array class="java.lang.String" length="3">
+            <void index="0"><string>cmd</string></void>
+            <void index="1"><string>/c</string></void>
+            <void index="2"><string>calc.exe</string></void>
+          </array>
+          <void method="start"/>
+        </object>
+      </java>
+    </work:WorkContext>
+  </soapenv:Header>
+  <soapenv:Body/>
+</soapenv:Envelope>
+```
+
+* SOAP 요청의 헤더에 **악성 ProcessBuilder 객체** 삽입
+* 대상 WebLogic 서버에 전송 → 서버에서 `calc.exe` 실행
+
+### ⚠️ 영향 및 위험성
+
+* **인증 필요 없음** → 외부 공격자가 직접 공격 가능
+* **기본 포트:** 7001/tcp (HTTP), 7002/tcp (HTTPS)
+* **다양한 공격에 악용됨:**
+
+  * 랜섬웨어, 코인마이너 설치
+  * 웹셸 업로드 → **지속적 백도어** 확보
+  * 광범위한 자동화 스캐닝·공격 툴에 포함
+
+### 🛡️ 대응 방안
+
+* **보안 패치 적용:** Oracle Critical Patch Update (CPU) — **2017년 10월** 발표
+
+  * 10.3.6.0 → **PSU 적용**
+  * 12.1.3.0 이상 → **최신 버전으로 업그레이드**
+* **임시 방어 조치:**
+
+  * `wls-wsat` 경로 **접근 차단** (예: WAF/방화벽)
+  * WebLogic 서버 **외부 공개 차단**
+  * **의심 트래픽 모니터링** (User-Agent, SOAP/XML POST 등)
+
+테스트는 아래 exploit-db의 PoC 코드를 사용하여 진행했습니다.
+[https://www.exploit-db.com/exploits/43458](https://www.exploit-db.com/exploits/43458)
+*OffSec’s Exploit Database Archive*
+
+> 취약한 버전의 Oracle 환경 구축에 다소 시간이 걸려, 우선 **기존 설치되어 있는 웹서버로 테스트**를 진행하여 **로그 확인 및 탐지/차단 유무**를 확인했습니다.
+
+**PLURA‑WAF 룰**에 따라 첨부 이미지와 같이 **탐지/차단**되었습니다.
+
+![PLURA‑WAF 차단 로그 #1](cdn/threats/weblogic-wls-wsat-detect-1.png)
+![PLURA‑WAF 차단 로그 #2](cdn/threats/weblogic-wls-wsat-detect-2.png)
+
+---
+
+---
+
 ### 🌟 PLURA-XDR의 보안 대응 방안
 
 * **웹셸 업로드/실행 실시간 탐지·자동 차단** — 공개 웹서비스 취약점 악용·웹셸 업로드/명령 실행을 포착하면 WAF/EDR 연동으로 즉시 차단·격리 (MITRE: T1190, T1505.003)
