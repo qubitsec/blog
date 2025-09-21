@@ -73,7 +73,7 @@ sequenceDiagram
 
 ---
 
-### 🧩 왜 **기본 차단 룰**이 있는데 사고가 났나? — 운영 상 가설
+### 🚨 왜 **기본 차단 룰**이 있는데 사고가 났나? — 운영 상 가설
 
 CVE-2017-10271은 **다수 WAF에 기본 차단 룰**이 존재하는, **위험도 매우 높은** 취약점입니다. 실제로 OffSec’s Exploit Database Archive의 공개 PoC를 그대로 사용하면 **PLURA-WAF에서도 즉시 탐지/차단**됩니다. 그럼에도 사고가 발생한 이유는 **패치 이전 단계에서의 WAF 운영·구성 부실**일 가능성이 큽니다. 아래는 실무에서 자주 확인되는 **운영 실패 모드**(가설)입니다.
 
@@ -187,8 +187,8 @@ CVE-2017-10271은 Oracle WebLogic Server의 **WLS WSAT(Web Services Atomic Trans
 
   * WebLogic **버전/패치레벨 확인** → **외부 노출(7001/7002) 점검** → **`/wls-wsat` 경로 차단(WAF/FW)** → **의심 SOAP/XML POST 탐지 룰 활성화**
 
-테스트는 아래 exploit-db의 PoC 코드를 사용하여 진행했습니다:
-[https://www.exploit-db.com/exploits/43458](https://www.exploit-db.com/exploits/43458)
+테스트는 아래 exploit-db의 PoC 코드를 사용하여 진행했습니다:  
+[https://www.exploit-db.com/exploits/43458](https://www.exploit-db.com/exploits/43458)  
 *OffSec’s Exploit Database Archive*
 
 > 취약한 버전의 Oracle 환경 구축에 다소 시간이 걸려, 우선 **기존 설치되어 있는 웹서버로 테스트**를 진행하여 **로그 확인 및 탐지/차단 유무**를 확인했습니다.
