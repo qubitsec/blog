@@ -37,6 +37,36 @@
 
 *메모:* 위 두 타임코드(23:01, 29:10)는 22:50 구간의 연장 맥락과 WAF 단정 발언을 기준으로 **핵심 쟁점을 표준 팩트에 맞춰 보정**한 항목입니다. 추가로 **정확한 문장 인용**을 주시면 해당 행을 곧바로 교체해 드리겠습니다.
 
+
+---
+
+좋습니다. 표는 그대로 두고, 요청하신 **의견란**만 맨 하단에 붙여넣기용으로 드립니다.
+
+---
+
+### 의견(Attacker가 AI를 사용해 공격이 많아지는 이유)
+
+* **핵심 관점:** 최근 공격 증가는 **공격자도 AI/에이전트를 적극 활용**해 탐색·우회·코드 변종 생성·피싱 콘텐츠 생산을 **저비용·대량·고속**으로 수행하기 때문입니다.
+* **정량 근거(간접):** 글로벌 위협 리포트들은 AI·자동화 결합으로 **스캐닝/준비단계가 폭증**했다고 보고합니다(예: 자동 스캔 **초당 3.6만 건** 수준으로 상승). 또한 보안 책임자 다수가 “현 보안 체계가 AI 구동 위협에 미흡”하다고 응답했습니다. ([TechRadar][9])
+
+* **메커니즘:**  
+  1. **우회/변종 자동화**—서명 회피를 위한 페이로드 변형을 대량 생성
+  2. **콘텐츠 대량 생산**—스피어피싱·사회공학 메시지의 현지화·개인화 자동화
+  3. **준비 단계 가속**—열린 포트/취약 서비스 탐색, TTP(LOTL 등) 시뮬레이션 자동화
+  4. **도구 체인 연계**—스크립트·PoC 재활용, 에이전트로 연속 작업 실행
+     (오펜시브 AI 연구 및 업계 리포트 다수에서 관찰됩니다.) ([arXiv][10])
+
+* **“우회 공격 코드 생산량이 100만배” 주장에 대하여:** 이것은 **의견/수사적 표현**으로 이해됩니다. 현재 **동일 조건에서 ‘100만 배’ 가속을 실증한 동료심사 문헌은 확인되지 않았습니다.** 다만 특정 하위 작업(예: 변종 문자열·프롬프트 변형·피싱 베리에이션 생성 등)은 **‘수십~수천 배’ 수준의 규모화**가 가능하다는 정성·정량 지표가 축적되고 있어, **‘폭발적(scale-out) 증가’라는 방향성**은 타당합니다. 정확한 수치를 제시할 때는 업계 리포트(스캔/캠페인 지표)나 **사내 실험 메트릭**으로 보강하시길 권합니다. ([TechRadar][9])
+
+* **실무적 시사점:**  
+  * **방어도 AI로 상쇄**: L7 본문 해석형(요청/응답)·행위 연관·에이전트형 대응 플레이북 자동화
+  * **우회 대비**: 가상패치, **T3 등 비HTTP 경로 차단/중개**, TLS 종단 가시성 확보, 예외 최소화
+  * **콘텐츠형 위협 억제**: DMARC·MFA·브라우저 격리·사용자 경보 자동화
+  * **지표 기반 운영**: 차단율/오탐률 + **정책 반영 시간(MTTU)**, **우회 시나리오 커버리지** 모니터링
+* **참고:** 주요 플랫폼 사업자도 **AI 악용 시도 탐지·차단 사례**를 정기 공개 중입니다(정치·여론 조작 맥락이지만, **대량 생성·자동화**라는 동일 패턴을 시사). ([Reuters][11])
+
+---
+
 [1]: https://www.youtube.com/%40maebulshow "[팟빵] 매불쇼"
 [2]: https://www.youtube.com/watch?v=4XwhXsUVHN0 "충격적 사실! 외국 해커에게 완전히 뚫린 한국정부기관! [코너별 ..."
 [3]: https://biz.chosun.com/en/en-it/2025/09/10/B7VVFIDGLZG5BDBNJWBGGXYSIM/ "South Korea overhauls network security with tiered N2SF ..."
@@ -45,3 +75,6 @@
 [6]: https://www.pcisecuritystandards.org/documents/PCIDSS_QRGv3_1.pdf "PCI DSS Quick Reference Guide"
 [7]: https://nvd.nist.gov/vuln/detail/cve-2017-10271 "CVE-2017-10271 Detail - NVD"
 [8]: https://www.reuters.com/sustainability/boards-policy-regulation/mbk-controlled-lotte-card-says-personal-data-nearly-3-million-customers-leaked-2025-09-18/ "MBK-controlled Lotte Card says personal data of nearly 3 ..."
+[9]: https://www.techradar.com/pro/security/ai-powering-a-dramatic-surge-in-cyberthreats-as-automated-scans-hit-36-000-per-second "AI powering a \"dramatic surge\" in cyberthreats as automated scans hit 36,000 per second"
+[10]: https://arxiv.org/html/2410.03566v1 "A Survey on Offensive AI Within Cybersecurity"
+[11]: https://www.reuters.com/technology/cybersecurity/openai-has-stopped-five-attempts-misuse-its-ai-deceptive-activity-2024-05-30/ "OpenAI has stopped five attempts to misuse its AI for 'deceptive activity'"
