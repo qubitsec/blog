@@ -164,16 +164,17 @@ curl -i -H 'Content-Type: text/xml' \
 
 ---
 
-### 📑 참고 자료(최신)
+### 📑 참고 자료
 
 * **금융위원회 브리핑:** “8.14\~8.27 총 200GB 유출, 웹셸 설치 확인” (보도자료/파일) ([금융위원회][1])
 * **경향신문:** “297만 명·200GB 확인, 28만 명 고위험” / “소량 다회 전송 설명” ([경향신문][4])
 * **동아일보·디지털데일리 등:** “초기 신고의 100배” “웹셸 설치” 후속 보도 ([동아일보][5])
-
+* **매불쇼** 외국 해커에게 완전히 뚫린 한국정부기관 ([매불쇼][6])
 ---
 
-[1]: https://www.fsc.go.kr/no010101/85319?utm_source=chatgpt.com "롯데카드 정보유출 관련 긴급 대책회의 개최"
-[2]: https://v.daum.net/v/20250918190600587?utm_source=chatgpt.com "뚫렸는데도 모르고, 얼마나 털렸는지도 깜깜…롯데카드 해킹 ..."
-[3]: https://www.khan.co.kr/article/202509181845001?utm_source=chatgpt.com "보안투자 늘렸다더니 해킹 인지조차 못한 롯데카드…“피해액 ..."
-[4]: https://www.khan.co.kr/article/202509182221005?utm_source=chatgpt.com "롯데카드 297만명 정보 털렸다"
-[5]: https://www.donga.com/news/Economy/article/all/20250918/132411983/2?utm_source=chatgpt.com "[단독]롯데카드 해킹 데이터, 첫 신고의 100배 유출"
+[1]: https://www.fsc.go.kr/no010101/85319 "롯데카드 정보유출 관련 긴급 대책회의 개최"
+[2]: https://v.daum.net/v/20250918190600587 "뚫렸는데도 모르고, 얼마나 털렸는지도 깜깜…롯데카드 해킹 ..."
+[3]: https://www.khan.co.kr/article/202509181845001 "보안투자 늘렸다더니 해킹 인지조차 못한 롯데카드…“피해액 ..."
+[4]: https://www.khan.co.kr/article/202509182221005 "롯데카드 297만명 정보 털렸다"
+[5]: https://www.donga.com/news/Economy/article/all/20250918/132411983/2 "[단독]롯데카드 해킹 데이터, 첫 신고의 100배 유출"
+[6]: https://www.youtube.com/watch?v=4XwhXsUVHN0 "외국 해커에게 완전히 뚫린 한국정부기관"
