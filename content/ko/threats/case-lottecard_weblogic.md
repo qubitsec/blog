@@ -206,5 +206,3 @@ curl -i -H 'Content-Type: text/xml' \
 [4]: https://www.khan.co.kr/article/202509182221005 "롯데카드 297만명 정보 털렸다"
 [5]: https://www.donga.com/news/Economy/article/all/20250918/132411983/2 "[단독]롯데카드 해킹 데이터, 첫 신고의 100배 유출"
 [6]: https://www.youtube.com/watch?v=4XwhXsUVHN0 "외국 해커에게 완전히 뚫린 한국정부기관"
-
----
