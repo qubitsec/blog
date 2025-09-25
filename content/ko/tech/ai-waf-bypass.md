@@ -22,7 +22,7 @@ tags: ["AI보안", "WAF", "LLM", "SOAP", "XML", "DLP", "PLURA-XDR", "보안운�
 
 ---
 
-## [시각화] LLM 기반 우회 자동화 플로우
+## LLM을 활용한 우회 자동화 업무 플로우
 
 ```mermaid
 sequenceDiagram
