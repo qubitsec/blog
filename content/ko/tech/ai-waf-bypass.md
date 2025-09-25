@@ -25,77 +25,47 @@ tags: ["AI보안", "WAF", "LLM", "SOAP", "XML", "DLP", "PLURA-XDR", "보안운�
 ## [시각화] LLM 기반 우회 자동화 플로우
 
 ```mermaid
-flowchart LR
-  %% ========== ROLES / SUBGRAPHS ==========
-  subgraph A[공격자 사이드]
-    direction TB
-    A1[목표/제약 정의<br/>(차단 회피, Low-and-Slow, SLA 유지)]
-    A2[스키마/엔드포인트 조사<br/>(WSDL, SOAPAction, /wls-wsat/*)]
-    A3[LLM 프롬프트 설계<br/>(합법적 구조 유지 + 변형 지시)]
-    A4[페이로드 생성기(LLM)]
-    A5[오케스트레이터/에이전트<br/>(대량 전송·스케줄·레이트 제어)]
-  end
+sequenceDiagram
+    %% 시퀀스 다이어그램: LLM 보조 WAF 우회(방어 관점)
+    participant A as 공격자
+    participant G as LLM(페이로드 생성기)
+    participant O as 에이전트/오케스트레이터
+    participant L as 클라이언트↔LB/프록시
+    participant W as WAF
+    participant S as 애플리케이션/WAS
+    participant T as 텔레메트리/로그 수집
+    participant E as 평가자(Evaluator/Auto-Tuner)
+    participant D as 수비측 컨트롤(브리징·정규화·화이트리스트·응답DLP)
 
-  subgraph B[우회 전략(자동 변형·퍼징)]
-    direction TB
-    B1[구문/시맨틱 변형<br/>(네임스페이스, Prefix, 순서, CDATA, 엔티티)]
-    B2[인코딩/프레이밍 변형<br/>(gzip/deflate, chunked, 이중인코딩)]
-    B3[헤더-본문 불일치/경계값 공략<br/>(Content-Type↔SOAPAction, Body 한도)]
-    B4[정상 스키마 위장<br/>(화이트리스트 모델 흔들기)]
-  end
+    Note over A,G: 목표/제약 정의(차단 회피, Low-and-Slow, SLA 유지)
+    A->>G: 프롬프트 설계(스키마 합치 유지 + 변형 지시)
+    G-->>A: 페이로드 변형 후보들(네임스페이스/인코딩/프레이밍/헤더 조합)
+    A->>O: 후보 세트(전송 스케줄·레이트·우선순위)
 
-  subgraph C[타깃 경로 & WAF]
-    direction TB
-    C1[클라이언트→LB/프록시]
-    C2[WAF]
-    C3{검사/정규화?}
-    C4[애플리케이션/WAS<br/>(WebLogic 등)]
-  end
+    loop 자동 퍼징/우회 탐색
+        O->>L: 변형 페이로드 전송
+        L->>W: 트래픽 전달
+        alt 정규화/본문검사 OFF · Detect-only · Passthrough
+            W-->>S: 우회되어 애플리케이션 도달
+            S-->>T: 실행 결과(응답 코드/바이트/지연/로그)
+            Note right of S: (예) RCE/웹셸 시도 또는 오류/예외
+        else 정규화/본문검사 ON · Block
+            W-->>T: 차단 로그(룰 ID/사유/매칭 포인트)
+        end
 
-  subgraph D[피드백 루프]
-    direction TB
-    D1[응답/로그 수집<br/>(HTTP 코드, 차단 사유, 지연, 규칙ID)]
-    D2[평가자(Evaluator)<br/>(강화학습·베이지안 최적화)]
-    D3[프롬프트/파라미터 업데이트]
-  end
+        %% 수비 측 훅: 가시성/대응 신호가 모두 T로 취합됨
+        D-->>W: TLS 브리징/정규화/화이트리스트/정책(차단) 적용
+        D-->>T: 응답 본문·사이즈(DLP)·상관분석 결과
+        T-->>E: 피드백 신호(HTTP코드, 룰ID, 지연, 응답바이트, 이상치)
 
-  subgraph E[수비 측 가시성·대응(참고)]
-    direction TB
-    E1[WAF TLS 브리징/본문 검사/정규화 강제]
-    E2[양의 보안(화이트리스트) 모델<br/>(스키마/메서드 계약)]
-    E3[응답 본문·사이즈(DLP형) 상관분석]
-    E4[오탐 핸들링/예외 TTL/감사]
-  end
+        E->>G: 프롬프트/제약 업데이트(더 적게 걸리는 조합 탐색)
+        E->>O: 전송 파라미터 조정(레이트·경계값·우선순위)
+    end
 
-  %% ========== FLOWS ==========
-  A1 --> A2 --> A3 --> A4 --> A5
-  A5 --> B1
-  A5 --> B2
-  A5 --> B3
-  A5 --> B4
-  B1 --> C1
-  B2 --> C1
-  B3 --> C1
-  B4 --> C1
-  C1 --> C2 --> C3
-
-  %% Decision at WAF
-  C3 -->|정규화/본문 검사 OFF, Detect-only, Passthrough| C4
-  C3 -->|정규화/본문 검사 ON, Block| D1
-
-  %% App result
-  C4 -->|실행 결과(차단/오류/성공)| D1
-
-  %% Feedback loop
-  D1 --> D2 --> D3 --> A3
-  D3 --> A4
-
-  %% Defender hooks (dashed advisory)
-  C2 -. telemetry .-> D1
-  E1 -. 강화 .-> C2
-  E2 -. 계약 위반 즉시 차단 .-> C2
-  E3 -. 유출 징후 경보 .-> C2
-  E4 -. 운영 통제 .-> C2
+    Note over D,W: 방어 측 성공 조건
+    Note over D,W: TLS 브리징 + 본문검사 + 정규화 강제
+    Note over D,W: 스키마 계약(화이트리스트)·정책 Block·예외 TTL
+    Note over D,W: 응답 DLP/사이즈·상관분석으로 Low-and-Slow 경보 승격
 ````
 
 > **요점:** 생성(LLM)→우회 시도→WAF 판정→피드백 최적화의 루프가 **정규화·가시성·운영통제**가 약한 지점을 반복 공략합니다.
