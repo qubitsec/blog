@@ -1,6 +1,6 @@
 ---
 title: "AI 보조 WAF 우회: 가능성과 방어 전략 (심화)"
-date: 2025-05-01
+date: 2025-09-26
 draft: false
 description: "LLM/에이전트를 활용한 공격 페이로드 자동화·우회 시나리오를 방어 관점에서 구조화하고, TLS 브리징·정규화·양의 보안 모델·응답 DLP를 중심으로 실무형 대응 프레임을 제시합니다."
 featured_image: "cdn/tech/ai-waf-bypass.png"
