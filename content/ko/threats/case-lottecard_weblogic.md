@@ -190,6 +190,9 @@ curl -i -H 'Content-Type: text/xml' \
      https://target.example.com/path
 ```
 
+### 📺 함께 시청하기
+* [WebLogic 취약점(CVE-2017-10271) 해킹 데모 | 리버스 쉘에서 PLURA 자동 차단까지](https://youtu.be/blN1LoMGSAk)
+
 ---
 
 ## 참고 자료
