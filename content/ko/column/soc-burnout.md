@@ -4,7 +4,7 @@ date: 2025-09-27
 draft: false
 description: "‘처리량 경쟁’ 대신 ‘의미 있는 일’에 집중하도록, 소음↓·맥락↑·자동화↑를 축으로 한 30/60/90일 로드맵과 야간·주말 스트레스 최소화 전략(Quiet Hours·승인형 자동화·아침 요약 브리핑)을 제시합니다."
 featured_image: "cdn/column/soc-burnout.png"
-tags: ["SOC", "번아웃", "XDR", "AI SecOps", "PLURA"]
+tags: ["SOC", "Burnout", "번아웃", "XDR", "AI SecOps", "PLURA"]
 ---
 
 # SOC 분석가의 번아웃: 왜 심해졌고, **AI·PLURA-XDR**로 무엇을 바꿀 것인가
