@@ -14,6 +14,8 @@ tags: ["SOC", "Burnout", "번아웃", "XDR", "AI SecOps", "PLURA"]
 > 해법은 **경보 총량을 줄이고(Noise ↓), 첫 10초에 맥락을 자동 보강하며(Context ↑), 조치를 반자동화(Automation ↑)** 하는 것입니다.  
 > 그리고 무엇보다 **의미 없는 숫자(티켓 수) 경쟁을 멈추고, “의미 있는 일”에 시간을 쓴다**는 원칙을 복원해야 합니다. 🎯
 
+* **SOC:** *Security Operation Center* — **보안 관제 센터**
+
 ## Executive Summary ✨
 
 보안팀(특히 SOC/IR)은 **경보 과부하·수동 반복·인력난**으로 만성 피로에 빠져 있습니다. 해결의 핵심은:
