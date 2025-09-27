@@ -29,6 +29,8 @@ tags: ["Sovereign AI", "Sovereign Data", "웹 로그", "감사 로그", "Sysmon"
 * **PII 우려로 전면 비수집**: **마스킹/토큰화** 없이 “아예 안 남김”을 선택
 * **스키마 부재**: 필드 난립·중복·비정형으로 **AI 학습/규칙화 불가**
 
+* **PII:** *Personally Identifiable Information* — **개인 식별 정보**
+
 ---
 
 ## 3) 방어용 데이터는 ‘생성’할 수 있다 — 원리
