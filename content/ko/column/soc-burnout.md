@@ -13,6 +13,7 @@ tags: ["SOC", "Burnout", "번아웃", "XDR", "AI SecOps", "PLURA"]
 > 그리고 무엇보다 **의미 없는 숫자(티켓 수) 경쟁을 멈추고, “의미 있는 일”에 시간을 쓴다**는 원칙을 복원해야 합니다. 🎯
 
 * **SOC:** *Security Operation Center* — **보안 관제 센터**
+* **IR:** *Incident Response* — **침해사고 대응**
 
 
 <!--more-->
