@@ -14,6 +14,12 @@ tags: ["공공기관", "표준", "HTTPS", "보안운영", "방화벽", "HTTP3", 
 > **금지: 비표준 포트(8080·8443 등) 대외 공개.**  
 > **이유: 접근성·규정준수·보안운영·성능 저해 + 타 기관 아웃바운드 완화 강제 → 공격면 급증.**  
 
+
+<!--more-->
+
+![Policy Proposal – Website Standard](https://blog.plura.io/cdn/column/policy-proposal-why-443-standard-port.png)
+
+
 ---
 
 ## 0) 정책 제안 요지
