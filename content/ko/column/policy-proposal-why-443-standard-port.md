@@ -3,7 +3,7 @@ title: "[정책제안] 공공 웹사이트는 왜 기본 포트(80, 443)를 써�
 date: 2025-09-27
 draft: false
 description: "대국민 서비스는 HTTPS 443 고정 + 80→443 리다이렉트가 표준입니다. 비표준 포트(8080, 8443 등)를 대외 공개에 쓰면 접근성·규정준수·보안운영·성능이 무너지고, 접속 기관들의 아웃바운드 방화벽까지 열게 만들어 공격면을 확장합니다."
-featured_image: "cdn/column/why-443-standard-port.png"
+featured_image: "cdn/column/policy-proposal-why-443-standard-port.png"
 tags: ["공공기관", "표준", "HTTPS", "보안운영", "방화벽", "HTTP3", "HSTS", "ACME"]
 ---
 
