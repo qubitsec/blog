@@ -26,10 +26,8 @@ tags: ["Sovereign AI", "Sovereign Data", "웹 로그", "감사 로그", "Sysmon"
 * **웹 본문 미수집**: URI·상태코드만 있고 **POST/Response Body가 없다**
 * **호스트 가시성 제로**: **Advanced Audit Policy 비활성**, Sysmon/auditd 미구성
 * **TLS 가시성 결핍**: WAF/프록시·ALB에서 **복호화 지점의 본문 로깅 부재**
-* **PII 우려로 전면 비수집**: **마스킹/토큰화** 없이 “아예 안 남김”을 선택
+* **PII(Personally Identifiable Information, 개인 식별 정보) 우려로 전면 비수집**: **마스킹/토큰화** 없이 “아예 안 남김”을 선택
 * **스키마 부재**: 필드 난립·중복·비정형으로 **AI 학습/규칙화 불가**
-
-* **PII:** *Personally Identifiable Information* — **개인 식별 정보**
 
 ---
 
