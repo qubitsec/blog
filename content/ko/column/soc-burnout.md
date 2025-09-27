@@ -16,6 +16,12 @@ tags: ["SOC", "Burnout", "번아웃", "XDR", "AI SecOps", "PLURA"]
 
 * **SOC:** *Security Operation Center* — **보안 관제 센터**
 
+
+<!--more-->
+
+![SOC](https://blog.plura.io/cdn/column/soc-burnout.png)
+
+
 ## Executive Summary ✨
 
 보안팀(특히 SOC/IR)은 **경보 과부하·수동 반복·인력난**으로 만성 피로에 빠져 있습니다. 해결의 핵심은:
