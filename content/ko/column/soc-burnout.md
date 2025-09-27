@@ -7,8 +7,6 @@ featured_image: "cdn/column/soc-burnout.png"
 tags: ["SOC", "Burnout", "번아웃", "XDR", "AI SecOps", "PLURA"]
 ---
 
-# SOC 분석가의 번아웃: 왜 심해졌고, **AI·PLURA-XDR**로 무엇을 바꿀 것인가
-
 > **한 줄 요약**:  
 > 🚨 경보는 많고 ⏰ 시간은 부족하며, 🛠️ 도구는 늘어도 🧠 맥락은 부족합니다.  
 > 해법은 **경보 총량을 줄이고(Noise ↓), 첫 10초에 맥락을 자동 보강하며(Context ↑), 조치를 반자동화(Automation ↑)** 하는 것입니다.  
