@@ -160,48 +160,7 @@ tags: ["공성전", "아웃바운드", "Egress", "데이터유출", "사이버�
 
 ---
 
-## 9) 정책 템플릿 (초안)
-
-```yaml
-egress_policy:
-  default: deny
-  resolution: fqdn_via_proxy   # 모든 외부 통신은 프록시 경유
-  dns:
-    allow: ["intranet.dns.local"]
-    block_encrypted: ["DoH","DoT"]
-  roles:
-    web_server:
-      allow_fqdns:
-        - "updates.vendor.tld"
-        - "api.payment.tld"
-      allow_methods: ["GET","POST"]
-      notes: "신규 도메인 추가는 보안승인 필수"
-    app_server:
-      allow_cidrs: ["10.0.0.0/8","192.168.0.0/16"]  # 내부만
-    batch_gateway:
-      allow_fqdns: ["sftp.partner.tld"]
-      protocol: ["SFTP"]
-monitoring:
-  required_metrics:
-    - "egress.bytes_per_minute_by(process,user,host)"
-    - "new_destination_count_per_day"
-    - "large_response_stddev_drift"
-response_playbook:
-  high_risk_storyline:
-    - "webroot_file_create"
-    - "suspicious_child_process"
-    - "new_external_connection"
-  actions:
-    - isolate_session
-    - quarantine_file
-    - lock_account
-    - open_ticket
-    - preserve_evidence
-```
-
----
-
-## 10) 자주 틀리는 반론과 답변
+## 9) 자주 틀리는 반론과 답변
 
 **Q. 아웃바운드를 막으면 운영이 느려집니다.**  
 A. *막는 게 아니라 **경유**하게 합니다.* 프록시/게이트웨이로 통로를 **좁히고 보이게** 만드는 겁니다.
@@ -214,7 +173,7 @@ A. **종단·재암호화** 설계와 **민감정보 마스킹**으로 균형을
 
 ---
 
-## 11) 결론 — 성문지기의 마지막 질문
+## 10) 결론 — 성문지기의 마지막 질문
 
 > “그대가 들고 나가는 것은 **무엇**인가?”
 
