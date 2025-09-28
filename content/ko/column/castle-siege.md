@@ -143,9 +143,10 @@ AI 시대의 공성전에서 **공격의 기술은 세작 대량생산**으로 �
 
 ### 📖 함께 읽기
 
-* 정책 제안: **웹 본문 로그·감사 로그가 왜 AI 보안의 전제인가**  
-* 실전 가이드: **WAF 본문/정규화 설정과 TLS 종단 배치 패턴**  
-* 플레이북 예시: **웹셸 업로드→실행→외부 유출 스토리라인 자동 대응**
+* [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity/)  
+* [성을 지키는 방법](https://blog.plura.io/ko/column/policy-fable/)  
+* [[정책 제안] AI 100조 시대, 성공적 추진을 위한 10대 산업 생태계 구축](https://blog.plura.io/ko/column/policy-proposal-ai/)
+* []()  
 
 > PLURA-XDR는 **웹 본문 로그 + 호스트 감사로그**를 수집·상관·자동대응(SOAR)까지 연결하여  
 > “**보이지 않던 세작**“을 **가시화→격리→증거화**합니다.
