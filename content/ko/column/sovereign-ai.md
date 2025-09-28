@@ -1,7 +1,7 @@
 ---
 title: "소버린 AI의 시작은 ‘소버린 데이터’다"
 date: 2025-09-28
-draft: true
+draft: false
 description: "AI 방어가 안 되는 이유는 데이터가 없기 때문, 방어용 데이터는 ‘생성’할 수 있습니다."
 tags: ["Sovereign AI", "Sovereign Data", "웹 로그", "감사 로그", "Sysmon", "auditd", "PLURA-XDR", "MITRE ATT&CK"]
 ---
