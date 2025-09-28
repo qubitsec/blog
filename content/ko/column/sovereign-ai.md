@@ -205,7 +205,7 @@ reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Audit /v 
 * [ ] Linux **auditd(execve, 웹루트 w) + journald 보강**
 * [ ] **수명주기/압축** 및 **성능 가드레일**
 * [ ] **MITRE 룰팩** 연동 및 **스토리라인 재구성**
-* [ ] **QoD KPI** 운영 (커버리지·연결성·프라이버시)
+* [ ] **QoD(Quality of Data) KPI** 운영 (커버리지·연결성·프라이버시)
 
 ---
 
