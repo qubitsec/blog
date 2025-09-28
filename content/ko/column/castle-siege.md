@@ -57,7 +57,7 @@ tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", 
 > **AI 방어는 ‘데이터’ 없이는 불가능**합니다.
 > 웹 **요청/응답 *본문***, 서버 **감사 로그**가 없으면, AI는 볼 것도, 배울 것도 없습니다.
 
-👉 [우리나라 해킹은 정부의 인증 제도 때문이다](https://blog.plura.io/ko/column/policy-proposal/)
+👉 [우리나라 해킹은 정부의 인증 제도 때문이다](https://blog.plura.io/ko/column/policy-proposal/)  
 👉 [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은가?](https://blog.plura.io/ko/column/policy-proposal-example-useless/)
 
 ---
