@@ -143,10 +143,10 @@ AI 시대의 공성전에서 **공격의 기술은 세작 대량생산**으로 �
 
 ### 📖 함께 읽기
 
+* [소버린 AI의 시작은 ‘소버린 데이터’다](https://blog.plura.io/ko/column/sovereign-ai/)  
 * [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity/)  
+* [[정책 제안] AI 100조 시대, 성공적 추진을 위한 10대 산업 생태계 구축](https://blog.plura.io/ko/column/policy-proposal-ai/)  
 * [성을 지키는 방법](https://blog.plura.io/ko/column/policy-fable/)  
-* [[정책 제안] AI 100조 시대, 성공적 추진을 위한 10대 산업 생태계 구축](https://blog.plura.io/ko/column/policy-proposal-ai/)
-* []()  
 
 > PLURA-XDR는 **웹 본문 로그 + 호스트 감사로그**를 수집·상관·자동대응(SOAR)까지 연결하여  
 > “**보이지 않던 세작**“을 **가시화→격리→증거화**합니다.
