@@ -7,8 +7,6 @@ featured_image: "cdn/column/castle-siege.png"
 tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", "Aesop's Fables", "PLURA"]
 ---
 
-# 성을 지키는 방법 🏰
-
 옛날, 성벽🧱이 높고 해자🌊가 깊은 나라가 있었습니다.
 적은 성벽을 넘을 수 없었고, 남은 길은 **성문**뿐이었죠.
 
