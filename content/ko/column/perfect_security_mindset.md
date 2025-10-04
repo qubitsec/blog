@@ -7,7 +7,7 @@ featured_image: "cdn/column/perfect_security_mindset.png"
 tags: ["보안", "완벽", "Security", "Risk", "Assurance", "SLO", "PLURA-XDR"]
 ---
 
-> **한 줄 문구**
+> **한 줄 문구**  
 > **“완벽은 선언이 아니라 증거다 — 문제를 정확히 정의하고 충분히 준비하면, 우리는 ‘완벽’을 운영할 수 있다.”**
 
 “완벽한 보안은 없다”는 말은 경계심을 주지만, 때로는 팀의 추진력을 꺾는 구호가 되기도 합니다.
