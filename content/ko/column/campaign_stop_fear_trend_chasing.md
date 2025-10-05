@@ -4,7 +4,7 @@ date: 2025-10-05
 draft: false
 description: "공포 마케팅과 신종 보안 유행어 추격을 멈추고, 정의·증거·성과로 말하는 ‘증거 중심 보안’ 캠페인. PLURA-XDR 기반 실행 체크리스트·측정지표 포함."
 featured_image: "cdn/column/campaign_stop_fear_trend_chasing.png"
-tags: ["캠페인", "보안문화", "Evidence-based Security", "PLURA-XDR", "SLO", "공급망 보안"]
+tags: ["캠페인", "보안문화", "Evidence-based Security", "PLURA-XDR", "SLO", "Service Level Objectivies", "공급망 보안"]
 ---
 
 # 🕵️‍♂️ 캠페인: 그만 두자 캠페인
@@ -24,7 +24,7 @@ tags: ["캠페인", "보안문화", "Evidence-based Security", "PLURA-XDR", "SLO
 * **공포 마케팅의 부작용:** 불필요한 과투자·과대응을 유발하고, 실제 위험과 우선순위를 흐립니다.
 * **유행어 추격의 비용:** *SIEM → SOAR → ZTA → SASE/SSE → SaAT …* 이름만 바뀔 뿐 **조직의 핵심 리스크**는 그대로입니다.
 * **현장의 피로:** 도구가 전략을 지배하면 운영자는 **알림·대시보드 노동**에 매몰되고, **사고의 본질·증거**가 사라집니다.
-* **대안:** **증거 중심 보안(Evidence-based Security)** — *측정 가능한 위협 가설*을 세우고, **로그·텔레메트리·사건 기록**으로 검증하며, **SLO로 책임**집니다.
+* **대안:** **증거 중심 보안(Evidence-based Security)** — *측정 가능한 위협 가설*을 세우고, **로그·텔레메트리·사건 기록**으로 검증하며, **서비스 수준 목표(SLO, Service Level Objectivies)로 책임**집니다.
 
 ---
 
