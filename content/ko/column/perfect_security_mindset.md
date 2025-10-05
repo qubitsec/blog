@@ -56,7 +56,7 @@ tags: ["보안", "완벽", "Security", "Risk", "Assurance", "SLO", "PLURA-XDR"]
 
 ---
 
-## 4) 현실적으로 강한 SLO 예시 (복붙 가이드)
+## 4) 현실적으로 강한 SLO 예시
 
 **예방(Prevent)**
 
