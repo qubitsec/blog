@@ -40,7 +40,7 @@ tags: ["KT", "ハッキング", "サーバー侵害", "Smominru", "Metasploit", 
 
 2) **「Smominru」ボット感染**
 - **MITRE**: *Resource Hijacking* — **T1496**, *Exploitation of Remote Services* — **T1210** *(一般的な伝播特性)*
-- **意味**: **モネロ採掘**で有名なボットネット。過去 **MS17-010(EternalBlue)** 悪用事例が広く報告されている。 *KT 件で同一脆弱性の悪用が確認されたわけではない（未確定）。 * ([Daum][4])
+- **意味**: **モネロ採掘**で有名なボットネット。過去 **MS17-010(EternalBlue)** 悪用事例が広く報告されている。 *KT 件で同一脆弱性の悪用が確認されたわけではない（未確定）。* ([Daum][4])
 
 3) **VBScriptベースのリモートコード実行と機密情報の奪取**
 - **MITRE**: *Execution* — **T1059.005 (Visual Basic)**, *Collection/Exfiltration* — **TA0009/TA0010**
