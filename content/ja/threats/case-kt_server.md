@@ -36,7 +36,7 @@ tags: ["KT", "ハッキング", "サーバー侵害", "Smominru", "Metasploit", 
 
 1) **Windows サーバーの侵入後のサイド移動の試み**
 - **MITRE**: *Lateral Movement* — **T1021.002 (SMB/Windows Admin Shares)**, **TA0008**
-- **意味**: 初期侵入ポイントを確保した後、Windowsドメイン/サーバーに**SMBベースの移動**しようとする状況。 **アドミン共有（C \ $、ADMIN \ $）**アクセス、セッションの再利用、ローカル管理者アカウントの乱用の可能性。 ([Daum][4])
+- **意味**: 初期侵入ポイントを確保した後、Windowsドメイン/サーバーに**SMBベースの移動**しようとする状況。 **アドミン共有（C \ $、ADMIN \ $）** アクセス、セッションの再利用、ローカル管理者アカウントの乱用の可能性。 ([Daum][4])
 
 2) **「Smominru」ボット感染**
 - **MITRE**: *Resource Hijacking* — **T1496**, *Exploitation of Remote Services* — **T1210** *(一般的な伝播特性)*
