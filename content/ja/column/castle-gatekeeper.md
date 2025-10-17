@@ -76,7 +76,7 @@ tags: ["攻城戦", "アウトバウンド", "Egress", "データ漏洩", "サ�
 
 * **Exfiltration**
 
-   * T1041: **ネットワーク経由の流出**(HTTP(S) POST/Chunked、WebSocketなど)
+   * T1041 : **ネットワーク経由の流出**(HTTP(S) POST/Chunked、WebSocketなど)
    * T1048：**代替プロトコル**（ICMP、SMTP、FTPなど）
    * T1567：**クラウドストレージのアップロード**（パブリックオブジェクトストレージ、コードストアの悪用）
 * **Command & Control**
