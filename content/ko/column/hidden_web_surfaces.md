@@ -76,19 +76,12 @@ tags: ["웹방화벽", "WAF", "엣지보안", "관리콘솔", "APPM", "HSS", "SS
 ```mermaid
 flowchart LR
     Internet["인터넷/외부 사용자"]
-    FW["경계 방화벽 (IP 허용/화이트리스트)"]
-    WAF["WAF/WAAP (mTLS · 봇 차단 · 속도 제한 · 가상 패치)"]
-    SSO["SSO/MFA (있으면)"]
-    RP["역프록시 (경로/메서드 화이트리스트)"]
+    Edge["경계 방화벽 + WAF/WAAP<br/>(허용 IP · mTLS · 봇/속도 제한 · 가상패치)"]
+    AuthProxy["Auth/Proxy<br/>(SSO/MFA 강제 · 경로/메서드 화이트리스트)"]
     Admin["관리 포털/장비 (API 포함)"]
     Log["SIEM/XDR (접속·차단·행위 로그)"]
 
-    Internet --> FW
-    FW --> WAF
-    WAF --> SSO
-    SSO --> RP
-    RP --> Admin
-    Admin --> Log
+    Internet --> Edge --> AuthProxy --> Admin --> Log
 ```
 
 * **WAF 앞단**: **고정 IP 화이트리스트**가 가능하면 반드시 적용.
