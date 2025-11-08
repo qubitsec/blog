@@ -1,7 +1,7 @@
 ---
 title: "‘웹서버인 줄 모르는’ 보안·인프라 장비들 — WAF 없이 운영하면 왜 사고로 이어질까"
 date: 2025-11-07
-draft: true
+draft: false
 description: "SSL VPN·APPM·HSS처럼 웹서버 기반 관리 포털을 노출하는 장비를 ‘웹이 아니다’라고 판단해 WAF 밖에 두는 순간, 공격 노출면이 폭증합니다. 실제 사고와 최신 취약점 사례로 심각성을 짚고, 바로 적용 가능한 대처 아키텍처를 제시합니다."
 featured_image: "cdn/column/hidden_web_surfaces.png"
 tags: ["웹방화벽", "WAF", "엣지보안", "관리콘솔", "APPM", "HSS", "SSL VPN", "Citrix", "vCenter", "백업콘솔", "PLURA-XDR"]
