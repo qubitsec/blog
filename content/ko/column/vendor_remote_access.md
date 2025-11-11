@@ -221,21 +221,22 @@ flowchart LR
 
 ---
 
-[3]: https://www.group-ib.com/blog/estate-ransomware/ "Patch or Peril: A Veeam vulnerability incident"
-[4]: https://www.cisa.gov/news-events/alerts/2021/07/02/kaseya-vsa-supply-chain-ransomware-attack "Kaseya VSA Supply-Chain Ransomware Attack"
+### 📖 참고/권고 자료
+
+* **농협 전산망 마비(2011)**: 유지보수 협력사 노트북에서 삭제 명령 → 전산 마비 / 백업 데이터 동시 삭제 보도. ([Korea Times][1]; [Korea JoongAng Daily][2])
+* **SolarWinds(2020)**: CISA **Emergency Directive 21-01**로 Orion **즉시 분리·전원차단** 명령 및 보완지침. ([CISA ED-21-01][3]; [CISA 보완지침][4])
+* **원격접속 보안 가이드(2023)**: CISA 권고. ([CISA Guide][5])
+* **Veeam CVE-2023-27532**: 백업 자격증명 악용·RCE 위협. ([Veeam KB][6]; [Group-IB][7])
+* **Kaseya VSA(2021)**: 관리 툴 악용한 공급망 랜섬웨어. ([CISA][8])
+* **연방 대응 종합 보고(2022)**: GAO — ED-21-01 관련 평가 포함. ([GAO][9])
+
+[1]: https://www.koreatimes.co.kr/business/companies/20110414/nh-blames-ibm-for-network-crash "NH blames IBM for network crash"
+[2]: https://koreajoongangdaily.joins.com/2011/04/18/finance/Server-attack-purely-destructive-Nonghyup/2935041.html "'Server attack purely destructive': Nonghyup"
+[3]: https://www.cisa.gov/news-events/directives/ed-21-01-mitigate-solarwinds-orion-code-compromise "ED 21-01: Mitigate SolarWinds Orion Code Compromise"
+[4]: https://www.cisa.gov/news-events/alerts/2021/01/06/cisa-updates-emergency-directive-21-01-supplemental-guidance-and-activity-alert-solarwinds-orion "ED 21-01 Supplemental Guidance"
 [5]: https://www.cisa.gov/sites/default/files/2023-06/Guide%20to%20Securing%20Remote%20Access%20Software_clean%20Final_508c.pdf "Guide to Securing Remote Access Software"
 [6]: https://www.veeam.com/kb4424 "KB4424: CVE-2023-27532"
+[7]: https://www.group-ib.com/blog/estate-ransomware/ "Patch or Peril: A Veeam vulnerability incident"
+[8]: https://www.cisa.gov/news-events/alerts/2021/07/02/kaseya-vsa-supply-chain-ransomware-attack "Kaseya VSA Supply-Chain Ransomware Attack"
+[9]: https://www.gao.gov/assets/gao-22-104746.pdf "Federal Response to SolarWinds and Microsoft Exchange"
 
-**농협·SolarWinds 근거 링크**
-
-* NH 사례: The Korea Times(2011) — 유지보수 노트북 → 실행파일 삭제 명령, 서비스 장애. ([Korea Times][1]) / Korea JoongAng Daily(2011) — 메인·백업 서버 동시 삭제 보도. ([Korea Joongang Daily][6])
-* SolarWinds: CISA ED 21-01 본문(2020) / 보완지침 업데이트(2022). ([CISA][3])
-
----
-
-[1]: https://www.koreatimes.co.kr/business/companies/20110414/nh-blames-ibm-for-network-crash?utm_source=chatgpt.com "NH blames IBM for network crash"
-[2]: https://www.cisa.gov/news-events/alerts/2021/01/06/cisa-updates-emergency-directive-21-01-supplemental-guidance-and-activity-alert-solarwinds-orion?utm_source=chatgpt.com "CISA Updates Emergency Directive 21-01 Supplemental ..."
-[3]: https://www.cisa.gov/news-events/directives/ed-21-01-mitigate-solarwinds-orion-code-compromise?utm_source=chatgpt.com "ED 21-01: Mitigate SolarWinds Orion Code Compromise"
-[4]: https://ko.wikipedia.org/wiki/%EB%86%8D%ED%98%91_%EC%A0%84%EC%82%B0%EB%A7%9D_%EB%A7%88%EB%B9%84_%EC%82%AC%ED%83%9C?utm_source=chatgpt.com "농협 전산망 마비 사태 - 위키백과, 우리 모두의 백과사전"
-[5]: https://www.gao.gov/assets/gao-22-104746.pdf?utm_source=chatgpt.com "Federal Response to SolarWinds and Microsoft Exchange ..."
-[6]: https://koreajoongangdaily.joins.com/2011/04/18/finance/Server-attack-purely-destructive-Nonghyup/2935041.html?utm_source=chatgpt.com "'Server attack purely destructive': Nonghyup"
