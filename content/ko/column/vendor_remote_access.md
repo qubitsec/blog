@@ -20,8 +20,7 @@ tags: ["공급망보안", "유지보수", "원격접속", "SSH", "RDP", "VPN", "
 대부분의 기업은 규모와 관계없이 **여러 개**(소규모 2\~3개, 대기업은 수십\~수백 개)의 유지보수 업체와 계약합니다. 이들 중 상당수는 정기 점검·비상 조치 등을 이유로 **VPN, SSH, RDP, 전용 툴**을 통해 **원격 접속**을 사용합니다. 모든 유지보수 인력이 보안 숙련도가 높은 것도 아니며, **업체 관리 PC에 고객사 접근 정보(ID/비밀번호, 접속 IP 목록, 터미널 히스토리)가 저장**되는 경우가 흔합니다.  
 그 결과, **관리 PC 탈취 → 저장 자격증명 도용 → 내부망 측면이동**이라는 공격이 성립합니다.
 
-실제 역사적 사례도 이를 뒷받침합니다. **Target(2013)** 침해에서 공격자는 **HVAC(냉난방) 협력업체의 자격증명**으로 초기 침입에 성공했습니다. ([상원 상업 과학 및 운송 위원회][1])
-**Okta(2022)** 사건에서도 **서드파티 고객지원 업체(Sitel/Sykes)** 단말·계정이 핵심 축으로 지목되면서, Okta는 **서드파티 단말 직접 관리·제로트러스트 강화** 방침을 발표했습니다. ([okta.com][2])
+실제 역사적 사례도 이를 뒷받침합니다. 한국의 **농협(2011)** 사건에서는 **유지보수 협력사(IBM Korea) 직원 노트북**이 공격 경로로 지목되어 **핵심 시스템 실행 파일 삭제 명령**이 내려져 전산망이 마비되었고, **일부 거래 데이터가 메인·백업 서버에서 동시에 삭제**됐다는 보도도 있었습니다. 미국의 **SolarWinds(2020)** 공급망 공격에서는 **여러 미 연방 민간기관**이 영향권에 들었고, CISA가 **Emergency Directive 21-01**로 Orion 시스템의 **즉시 분리·전원차단**을 명령했습니다. ([Korea Times][1])
 
 ---
 
@@ -170,14 +169,12 @@ flowchart LR
 
 ## 8) 사례로 배우는 교훈
 
-* **서드파티 자격증명 = 초기 침입의 지름길**
-  Target 침해는 **HVAC 협력사 계정**으로 시작됐습니다. **협력사 경로를 내부와 동일하게 보호**해야 합니다. ([상원 상업 과학 및 운송 위원회][1])
-* **서드파티 단말의 보안 수준이 ‘당신의 보안’**
-  Okta 사건 후 Okta가 **3rd party 단말을 직접 관리**하겠다고 밝힌 이유입니다. **디바이스 신뢰** 없이는 **제로트러스트**가 완성되지 않습니다. ([okta.com][2])
+* **서드파티 자격증명/단말 = 초기 침입의 지름길**
+  농협(2011) 사례처럼 **협력사 단말 경로**가 전산 마비로 이어질 수 있습니다. SolarWinds(2020)처럼 **서드파티 관리 채널**은 조직 전반으로의 **측면이동 발판**이 됩니다. ([Korea Times][1])
 * **관리·백업 도구가 뚫리면 전사 피해**
-  **Kaseya VSA**, **Veeam** 관련 위협처럼 관리 계층이 공격되면 **동시다발** 피해가 납니다. **Jump 단일화·PAM·망분리**가 답입니다. ([CISA][4]; [Veeam Software][6])
+  **Kaseya VSA**, **Veeam** 관련 위협처럼 관리 계층이 공격되면 **동시다발** 피해가 납니다. **Jump 단일화·PAM·망분리**가 답입니다. [4][6]
 * **공식 가이드를 정책화하라**
-  **CISA 원격접속 보안 가이드**를 참고해 **조직 표준**으로 내재화하세요. ([CISA][5])
+  **CISA 원격접속 보안 가이드**와 **ED 21-01 보완지침** 수준으로 **조직 표준**을 수립하세요. ([CISA][2])
 
 ---
 
@@ -193,11 +190,13 @@ flowchart LR
 
 ### 📖 참고/권고 자료
 
-* **Target 침해(2013)**: HVAC 협력업체 계정 악용. ([상원 상업 과학 및 운송 위원회][1])
-* **Okta(2022)**: 서드파티 단말·계정 이슈 → 3rd party 단말 직접 관리 선언. ([okta.com][2])
-* **Veeam CVE-2023-27532**: 백업 자격증명 악용·RCE 관련 위협 동향. ([Group-IB][3]) · ([Veeam Software][6])
-* **Kaseya VSA(2021)**: 관리 툴 악용한 공급망 랜섬웨어. ([CISA][4])
-* **CISA 원격접속 보안 가이드(2023)**: 정책·구성 권고. ([CISA][5])
+* **농협 전산망 마비(2011)**: 유지보수 협력사 노트북에서 삭제 명령 → 전산 마비 / 백업 데이터 동시 삭제 보도. ([Korea Times][1])
+* **SolarWinds(2020)**: CISA **Emergency Directive 21-01**로 Orion **즉시 분리·전원차단** 명령. ([CISA][3])
+* **추가 참고**: 사건 개요·경과 정리(위키): 농협 전산망 마비 사태. ([위키백과][4])
+* **연방 대응 종합 보고**: GAO 보고서(2022) — ED 21-01 보완지침 포함. ([정부 회계 감사국][5])
+* **Veeam CVE-2023-27532**: 백업 자격증명 악용·RCE 관련 위협 동향. [3][6]
+* **Kaseya VSA(2021)**: 관리 툴 악용한 공급망 랜섬웨어. [4]
+* **CISA 원격접속 보안 가이드(2023)**: 정책·구성 권고. [5]
 
 ---
 
@@ -209,9 +208,21 @@ flowchart LR
 
 ---
 
-[1]: https://www.commerce.senate.gov/services/files/24d3c229-4f2f-405d-b8db-a3a67f183883 "A “Kill Chain” Analysis of the 2013 Target Data Breach"
-[2]: https://www.okta.com/blog/company-and-culture/okta-concludes-its-investigation-into-the-january-2022-compromise/ "Okta Concludes its Investigation Into the January 2022 ..."
 [3]: https://www.group-ib.com/blog/estate-ransomware/ "Patch or Peril: A Veeam vulnerability incident"
 [4]: https://www.cisa.gov/news-events/alerts/2021/07/02/kaseya-vsa-supply-chain-ransomware-attack "Kaseya VSA Supply-Chain Ransomware Attack"
 [5]: https://www.cisa.gov/sites/default/files/2023-06/Guide%20to%20Securing%20Remote%20Access%20Software_clean%20Final_508c.pdf "Guide to Securing Remote Access Software"
 [6]: https://www.veeam.com/kb4424 "KB4424: CVE-2023-27532"
+
+**농협·SolarWinds 근거 링크**
+
+* NH 사례: The Korea Times(2011) — 유지보수 노트북 → 실행파일 삭제 명령, 서비스 장애. ([Korea Times][1]) / Korea JoongAng Daily(2011) — 메인·백업 서버 동시 삭제 보도. ([Korea Joongang Daily][6])
+* SolarWinds: CISA ED 21-01 본문(2020) / 보완지침 업데이트(2022). ([CISA][3])
+
+---
+
+[1]: https://www.koreatimes.co.kr/business/companies/20110414/nh-blames-ibm-for-network-crash?utm_source=chatgpt.com "NH blames IBM for network crash"
+[2]: https://www.cisa.gov/news-events/alerts/2021/01/06/cisa-updates-emergency-directive-21-01-supplemental-guidance-and-activity-alert-solarwinds-orion?utm_source=chatgpt.com "CISA Updates Emergency Directive 21-01 Supplemental ..."
+[3]: https://www.cisa.gov/news-events/directives/ed-21-01-mitigate-solarwinds-orion-code-compromise?utm_source=chatgpt.com "ED 21-01: Mitigate SolarWinds Orion Code Compromise"
+[4]: https://ko.wikipedia.org/wiki/%EB%86%8D%ED%98%91_%EC%A0%84%EC%82%B0%EB%A7%9D_%EB%A7%88%EB%B9%84_%EC%82%AC%ED%83%9C?utm_source=chatgpt.com "농협 전산망 마비 사태 - 위키백과, 우리 모두의 백과사전"
+[5]: https://www.gao.gov/assets/gao-22-104746.pdf?utm_source=chatgpt.com "Federal Response to SolarWinds and Microsoft Exchange ..."
+[6]: https://koreajoongangdaily.joins.com/2011/04/18/finance/Server-attack-purely-destructive-Nonghyup/2935041.html?utm_source=chatgpt.com "'Server attack purely destructive': Nonghyup"
