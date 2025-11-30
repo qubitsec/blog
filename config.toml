@@ -47,7 +47,7 @@ pagerSize = 8
 
     [languages.ko.params]
       lang = "ko"
-      background_image = "/images/ko-bg.jpg"
+      background_image = "/images/ko-bg.png"
       summaryLength = 30
 
 # ✅ 한국어 메뉴
