@@ -284,19 +284,14 @@ tags: ["쿠팡 해킹", "쿠팡 개인정보 유출", "서버 인증 취약점",
 
 ## 📚 참고하기
 
-- **AI 보조 WAF 우회: 공격 자동화 시나리오**  
-  https://blog.plura.io/ko/tech/ai-waf-bypass/
+- [AI 보조 WAF 우회: 공격 자동화 시나리오](https://blog.plura.io/ko/tech/ai-waf-bypass/)
 
-- **Gartner 하이프 사이클로 본 SIEM과 SOAR – 왜 둘 다 한계가 있는가?**  
-  https://blog.plura.io/ko/column/hypecycle_siem_soar/
+- [Gartner 하이프 사이클로 본 SIEM과 SOAR – 왜 둘 다 한계가 있는가?](https://blog.plura.io/ko/column/hypecycle_siem_soar/)
 
-- **[정책 제안] 우리나라 해킹은 정부의 인증 제도 때문이다**  
-  https://blog.plura.io/ko/column/policy-proposal/
+- [우리나라 해킹은 정부의 인증 제도 때문이다](https://blog.plura.io/ko/column/policy-proposal/)
 
-- **[보고서] ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은가?**  
-  https://blog.plura.io/ko/column/policy-proposal-example-useless/
+- [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은가?](https://blog.plura.io/ko/column/policy-proposal-example-useless/)
 
-- **SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?**  
-  https://blog.plura.io/ko/column/skt-hacking-hypothesis/
+- [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)
 
 
