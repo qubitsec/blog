@@ -292,6 +292,8 @@ tags: ["쿠팡 해킹", "쿠팡 개인정보 유출", "서버 인증 취약점",
 
 - [ISMS 인증제도, 왜 지금은 더 이상 유효하지 않은가?](https://blog.plura.io/ko/column/policy-proposal-example-useless/)
 
+- [롯데카드 해킹 사고 분석 - 왜 웹방화벽은 무용지물이 되었을까](https://blog.plura.io/ko/threats/case-lottecard_weblogic/)
+
 - [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)
 
 
