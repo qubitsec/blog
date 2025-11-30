@@ -3,7 +3,7 @@ title: "쿠팡 해킹 가설: 서버 인증 취약점과 내부자, 3,370만 계
 date: 2025-12-01
 draft: false
 description: "3370만 계정 개인정보 유출을 초래한 쿠팡 서버 인증 취약점 이슈를 중심으로, ‘정상 로그인 없이’ 대량 정보가 빠져나간 과정에 대한 가설 시나리오와, PLURA-XDR 관점에서의 현실적인 대응·탐지 전략을 정리했습니다."
-featured_image: "cdn/column/coupang-auth-breach-hypothesis.png"
+featured_image: "cdn/column/coupang-auth-breach-hypothesis-2.png"
 tags: ["쿠팡 해킹", "쿠팡 개인정보 유출", "서버 인증 취약점", "내부자 공격", "Insider Threat", "Broken Authentication", "접근통제", "PLURA-XDR", "데이터 유출", "요청 본문", "응답 본문"]
 ---
 
@@ -12,7 +12,7 @@ tags: ["쿠팡 해킹", "쿠팡 개인정보 유출", "서버 인증 취약점",
 
 <!--more-->
 
-![쿠팡 서버 인증 취약점 기반 공격 시퀀스 가설](https://blog.plura.io/cdn/column/coupang-auth-breach-hypothesis.png)
+![쿠팡 서버 인증 취약점 기반 공격 시퀀스 가설](https://blog.plura.io/cdn/column/coupang-auth-breach-hypothesis-2.png)
 
 ---
 
