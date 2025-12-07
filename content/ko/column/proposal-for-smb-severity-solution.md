@@ -147,3 +147,16 @@ AI 탐지, 포렌식, 업데이트, 로그 관리 등
 
 📺 **보안 플랫폼 소개 인터뷰 영상 보기**  
 ▶️ https://docs.plura.io/ko/video/company/broadcast/2024-sbs
+
+
+### 📌 함께 읽기
+- [해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성](https://blog.plura.io/ko/column/importance_of_cloud_security_platform_in_hacking_incidents/)
+- [제조업, 랜섬웨어 감염 ‘속출’…왜 보안 체계 재정비가 필요한가?](https://blog.plura.io/ko/threats/ransomware-manufacturing/)
+- [PLURA-XDR을 활용한 공급망 보안 강화 방안](https://blog.plura.io/ko/column/campaign_supplychain_security/)
+- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
+- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
+
+
+
+
+
