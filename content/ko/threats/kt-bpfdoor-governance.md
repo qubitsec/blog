@@ -3,7 +3,7 @@ date: 2025-12-07
 draft: false
 title: "KT의 BPFdoor 은폐 — 한국 보안 생태계가 잃어버린 ‘1년’에 대하여"
 description:
-featured_image: "cdn/column/kt-bpfdoor-governance.png"
+featured_image: "cdn/threats/kt-bpfdoor-governance.png"
 tags: ["보안", "사이버공격", "위협인텔리전스", "통신사해킹", "국가기반시설", "정보공유거버넌스"]
 ---
 
