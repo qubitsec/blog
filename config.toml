@@ -23,7 +23,7 @@ pagerSize = 8
 
     [languages.ja.params]
       lang = "ja"
-      background_image = "/images/ja-bg.jpg"
+      background_image = "/images/ja-bg.png"
       summaryLength = 30
 
   [languages.en]
