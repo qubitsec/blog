@@ -14,6 +14,9 @@ tags: ["쿠팡 해킹", "JWT 서명키", "내부자 공격", "Broken Authenticat
 특히 국내 대규모 플랫폼 서비스가 **요청/응답 본문 기반 관제 부재**로 인해, 장기간 진행된 대규모 데이터 유출을 전혀 감지하지 못했다는 점에서 심각한 경고 신호로 받아들여야 합니다.
 
 <!--more-->
+
+![coupang_authkey](https://blog.plura.io/cdn/threats/case-coupang_authkey.png)
+
 ---
 
 ## 1. 사건 개요
