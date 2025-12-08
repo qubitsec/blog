@@ -193,6 +193,8 @@ Qilin은 **RaaS(서비스형 랜섬웨어)** 그룹으로,
 
 ## 🧭 공격 개념도 (정황 기반 시나리오)
 
+![Asahi_flowchart_ko](https://blog.plura.io/cdn/threats/Asahi_flowchart_ko.png)
+
 ```mermaid
 sequenceDiagram
     participant A as 공격자(Qilin 계열)
