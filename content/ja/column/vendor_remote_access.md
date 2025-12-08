@@ -13,6 +13,8 @@ tags: ["サプライチェーンセキュリティ", "保守", "遠隔接続", "
 
 <!--more-->
 
+![vendor_remote_access](https://blog.plura.io/cdn/column/vendor_remote_access.png)
+
 ---
 
 ## 1) 背景 — なぜ保守経路が危険なのか
