@@ -73,6 +73,8 @@ tags: ["웹방화벽", "WAF", "엣지보안", "관리콘솔", "APPM", "HSS", "SS
 
 ## 5) **표준 대처 아키텍처** (관리 포털 보호)
 
+![hidden_web_surfaces_flowchart_ko](https://blog.plura.io/cdn/column/hidden_web_surfaces_flowchart_ko.png)
+
 ```mermaid
 flowchart LR
     Internet["인터넷/외부 사용자"]
