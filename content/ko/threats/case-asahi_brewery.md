@@ -374,13 +374,6 @@ Qilin 일반 TTP를 기준으로, SIEM/XDR에서 최소한 다음은 **사전 �
 
 하는 계기가 되어야 합니다.
 
-원하시면 이 글을 기반으로:
-
-* 일본 고객용 **일문 브리핑 버전**,
-* 한국 제조사 대상 **PLURA-XDR 제안용 요약본(2~3p)**
-
-도 따로 정리해 드리겠습니다.
-
 * [TechRadar](https://www.techradar.com/pro/security/asahi-stops-pouring-after-cyberattack-stops-production?utm_source=chatgpt.com)
 * [Business Insider](https://www.businessinsider.com/japan-asahi-super-dry-beer-stocks-lawson-family-mart-cyberattack-2025-10?utm_source=chatgpt.com)
 * [Reuters](https://www.reuters.com/world/asia-pacific/cybercriminals-claim-hack-japans-asahi-group-2025-10-07/?utm_source=chatgpt.com)
