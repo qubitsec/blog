@@ -3,7 +3,7 @@ title: "유지보수 업체를 통한 침투, 이렇게 막는다 — 원격 점
 date: 2025-11-11
 draft: false
 description: "방화벽·네트워크·보안·백업 등 장비 유지보수 과정에서 생기는 원격 접속과 관리 PC의 취약점을 짚고, 공급망(3rd party) 관점에서 실효성 있는 통제·계약·운영 체크리스트를 제시합니다."
-featured_image: "cdn/column/cg"
+featured_image: "cdn/column/vendor_remote_access.png"
 tags: ["공급망보안", "유지보수", "원격접속", "SSH", "RDP", "VPN", "MFA", "EDR", "PLURA-EDR", "JumpHost", "PAM", "백업콘솔"]
 ---
 
