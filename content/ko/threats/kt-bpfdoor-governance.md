@@ -41,7 +41,7 @@ KT가 공유하지 않은 1년은,
 
 ## 🧨 BPFdoor는 “은폐할 수 있는 종류의 위협”이 아니다
 
-![BPFdoor](https://blog.plura.io/cdn/column/kt-bpfdoor-governance.png)
+![BPFdoor](https://blog.plura.io/cdn/threats/kt-bpfdoor-governance.png)
 
 BPFdoor는 단순한 악성코드가 아닙니다.  
 다음과 같은 성질을 가진 **고도화된 침투형 백도어**입니다.
