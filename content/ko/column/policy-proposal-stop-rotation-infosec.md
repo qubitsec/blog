@@ -14,7 +14,7 @@ tags: ["공공기관", "지자체", "정보보안", "순환근무", "전문인�
 
 <!--more-->
 
-![Protect the Castle](https://blog.plura.io/cdn/column/policy-fable.png)
+![Protect the Castle](https://blog.plura.io/cdn/column/policy-proposal-stop-rotation-infosec.png)
 
 ---
 
