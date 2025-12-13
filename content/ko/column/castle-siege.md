@@ -15,7 +15,7 @@ tags: ["공성전", "Siege", "AI", "사이버보안", "정책실패"]
 
 <!--more-->
 
-![Protect the Castle](https://blog.plura.io/cdn/column/policy-fable.png)
+![Protect the Castle](https://blog.plura.io/cdn/column/policy-proposal-stop-rotation-infosec.png)
 
 ## 1) 우화로 보는 현재: 성문·배수로·세작
 
