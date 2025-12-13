@@ -3,7 +3,7 @@ title: "[정책제안] 공공기관 정보보안은 왜 순환 근무제를 적�
 date: 2025-12-13
 draft: false
 description: "정보보안은 단기간 숙련이 불가능한 고위험·고전문 영역입니다. 공공기관의 순환 근무제는 보안 전문성 축적을 원천적으로 차단하며, 사고 반복·외주 의존·책임 공백을 구조화합니다. 미국을 포함한 주요 국가에서는 정보보안 직무에 순환 근무제를 적용하지 않습니다."
-featured_image: "cdn/column/policy-proposal-stop-rotation-infosec.png"
+featured_image: "cdn/column/policy-proposal-stop-rotation-infosec-2.png"
 tags: ["공공기관", "지자체", "정보보안", "순환근무", "전문인력", "정책제안", "사이버보안"]
 ---
 
