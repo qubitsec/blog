@@ -1,7 +1,7 @@
 ---
 title: "[정책제안] ISMS-P 강화는 왜 실질 보안을 강화하지 못하는가 — 인증 중심 정책이 만드는 구조적 실패"
-date: 2025-12-16
-draft: true
+date: 2025-12-19
+draft: false
 description: "ISMS-P 강화는 보안을 높이기보다 인증 산업 확장·현장 대응력 약화·보안 인력 번아웃을 초래할 위험이 큽니다. 정보보안은 인증이 아니라 운영 역량의 문제이며, 정책은 가이드·성과·인력 지속가능성 중심으로 전환되어야 합니다."
 featured_image: "cdn/column/policy-proposal-isms-p-beyond-certification.png"
 tags: ["정책제안", "ISMS-P", "정보보안", "사이버보안", "컴플라이언스", "보안인력", "징벌적과징금"]
