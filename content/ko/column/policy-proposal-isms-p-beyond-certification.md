@@ -364,3 +364,7 @@ Sysmon for Linux 단독 사용이 아니라,
 ISMS-P 정책은 이제
 **강화냐 완화냐의 문제가 아니라,
 방향을 바꿀 시점**이다.
+
+## 📖 함께 읽기
+[리눅스에서도 Sysmon을 사용해야 하는 이유](https://blog.plura.io/ko/respond/linux_sysmon/)
+
