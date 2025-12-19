@@ -202,6 +202,9 @@ PLURA-XDR 시나리오 예:
 
 ---
 
+### 📺 함께 시청하기
+- [탈취된 JWT 토큰의 역습, 3천만 계정은 어떻게 털렸나? | PLURA의 API 브루트포스 탐지 시연](https://youtu.be/l6JeCeWeVSo)
+
 ## 📚 참고하기
 
 - [AI 보조 WAF 우회: 공격 자동화 시나리오](https://blog.plura.io/ko/tech/ai-waf-bypass/)
