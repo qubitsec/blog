@@ -52,7 +52,7 @@ Sysmon은 **eBPF(Extended Berkeley Packet Filter)** 기반으로 동작하며, �
 
 
 
-### ** 2-2. eBPF 기반 Sysmon이 강력한 이유**
+### 2-2. eBPF 기반 Sysmon이 강력한 이유
 
 🔹 **eBPF(Extended Berkeley Packet Filter)란?**
 
@@ -71,9 +71,6 @@ Sysmon은 **eBPF(Extended Berkeley Packet Filter)** 기반으로 동작하며, �
 
 **즉, Sysmon은 리눅스 커널과 직접 연동하여 보다 정밀하고 효율적인 보안 로깅을 가능하게 한다.**
 
-
-
-
 ### **2-3. Sysmon for Linux의 주요 기능 (TID 매핑)**
 
 Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로깅 기능**을 제공한다.
@@ -88,9 +85,7 @@ Sysmon은 MITRE ATT&CK 프레임워크와 매핑되는 **중요한 이벤트 로
 
 **이를 통해 Sysmon을 활용하면 리눅스에서도 보안 이벤트를 정밀하게 분석하고, 위협 탐지 정확도를 높일 수 있다.**
 
-
 ---
-
 
 ## **3. Sysmon for Linux를 활용한 실전 위협 탐지 시나리오**
 
