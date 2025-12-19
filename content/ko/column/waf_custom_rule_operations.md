@@ -14,6 +14,8 @@ tags: ["웹방화벽", "WAF", "시그니처우회", "커스텀룰", "AI공격", 
 
 <!--more-->
 
+![waf_custom_rule_operations](https://blog.plura.io/cdn/column/waf_custom_rule_operations.png)
+
 ---
 
 ## 1️⃣ 웹방화벽은 왜 “관리”가 핵심인가
