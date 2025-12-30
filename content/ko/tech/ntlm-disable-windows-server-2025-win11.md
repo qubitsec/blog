@@ -3,7 +3,7 @@ title: "Pass-the-Hash가 ‘너무 쉬운’ 이유: NTLM Disable + Windows Serv
 date: 2025-12-30
 draft: false
 description: "PtH는 특정 CVE가 아니라 ‘NTLM을 허용하는 한’ 구조적으로 재현되는 위험입니다. 해시 탈취면을 줄이고(Anti-dumping), NTLM을 감사→차단으로 줄이기 위해 Server 2025·Win11(22H2 이상)을 기준선으로 삼아야 합니다."
-featured_image: "cdn/column/ntlm-disable.png"
+featured_image: "cdn/tech/ntlm-disable.png"
 tags: ["Windows", "Windows Server 2025", "Windows 11", "Active Directory", "NTLM", "Pass-the-Hash", "Credential Guard", "LSA Protection", "LAPS", "Hardening"]
 ---
 
@@ -19,7 +19,7 @@ tags: ["Windows", "Windows Server 2025", "Windows 11", "Active Directory", "NTLM
 
 <!--more-->
 
-![NTLM Disable](https://blog.plura.io/cdn/column/ntlm-disable.png)
+![NTLM Disable](https://blog.plura.io/cdn/tech/ntlm-disable.png)
 
 ## Executive Summary ✨
 
