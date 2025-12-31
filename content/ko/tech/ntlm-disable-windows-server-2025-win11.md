@@ -147,8 +147,7 @@ Pass-the-Hash는 **혼자서 끝나는 공격이 아닙니다.**
 
 ## 5️⃣ 최신 OS가 주는 현실적인 차이
 
-### ✅ Windows Server 2025
-### ✅ Windows 11(22H2 이상)의 변화
+### ✅ Windows Server 2025 / Windows 11(22H2 이상)의 변화
 
 최신 Windows는 명확한 방향으로 변화하고 있습니다.
 
