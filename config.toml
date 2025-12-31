@@ -4,7 +4,7 @@ languageCode = "en"
 defaultContentLanguageInSubdir = true
 theme = "ananke"
 buildFuture = true
-copyright = "© 2014-2025 Qubit Security Inc. All Rights Reserved."
+copyright = "© 2014-2026 Qubit Security Inc. All Rights Reserved."
 
 SectionPagesMenu = ""
 googleAnalytics = ""
