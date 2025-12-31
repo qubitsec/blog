@@ -1,6 +1,6 @@
 ---
-title: "Pass-the-Hash가 ‘너무 쉬운’ 이유: NTLM Disable + Windows Server 2025·Windows 11(22H2 기준)로 가야 하는 이유 🔐"
-date: 2025-12-30
+title: "왜 그나마 최신 운영체제를 빠르게 바꾸어야 합니다. Pass-the-Hash가 ‘너무 쉽다’ 🔐"
+date: 2026-01-02
 draft: false
 description: "PtH는 특정 CVE가 아니라 ‘NTLM을 허용하는 한’ 구조적으로 재현되는 위험입니다. 해시 탈취면을 줄이고(Anti-dumping), NTLM을 감사→차단으로 줄이기 위해 Server 2025·Win11(22H2 이상)을 기준선으로 삼아야 합니다."
 featured_image: "cdn/tech/ntlm-disable.png"
@@ -8,7 +8,7 @@ tags: ["Windows", "Windows Server 2025", "Windows 11", "Active Directory", "NTLM
 ---
 
 > **한 줄 요약**:  
-> 🧨 **PtH는 ‘취약점’이 아니라 ‘NTLM을 허용할 때 생기는 구조적 리스크’**입니다.  
+> 🧨 **PtH**는 ‘취약점’이 아니라 ‘NTLM을 허용할 때 생기는 구조적 리스크’입니다.  
 > 🔓 해시가 한 번 털리면 “재사용”이 가능해지므로, **운영 목표는 NTLM Disable(감사→예외정리→차단)** 입니다.  
 > 🚀 그 목표를 현실적으로 달성하려면 **Windows Server 2025 + Windows 11(22H2 이상)** 을 기준선으로 빠르게 올려야 합니다.
 
