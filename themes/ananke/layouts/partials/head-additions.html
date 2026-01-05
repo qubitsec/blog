@@ -1,1 +1,21 @@
 <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}">
+
+<link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}">
+
+{{ if eq .RelPermalink "/" }}
+<script>
+    (function() {
+        var userLang = navigator.language || navigator.userLanguage; 
+        var langCode = userLang.substr(0, 2).toLowerCase();
+
+        if (langCode === 'ko') {
+            window.location.replace('/ko/');
+        } else if (langCode === 'ja') {
+            window.location.replace('/ja/');
+        } else {
+            // 그 외 언어는 영어로
+            window.location.replace('/en/');
+        }
+    })();
+</script>
+{{ end }}
