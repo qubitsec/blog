@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PLURA Blog - Redirecting...</title>
+    <script>
+        (function() {
+            // 브라우저 언어 감지 (예: 'ko-KR', 'en-US', 'ja')
+            var userLang = navigator.language || navigator.userLanguage; 
+            
+            // 언어 코드가 2자리일 수도 있고 5자리일 수도 있으므로 앞 2자리만 추출
+            var langCode = userLang.substr(0, 2).toLowerCase();
+
+            if (langCode === 'ko') {
+                window.location.replace('/ko/');
+            } else if (langCode === 'ja') {
+                window.location.replace('/ja/');
+            } else {
+                // 그 외 모든 언어는 영어로 리다이렉트
+                window.location.replace('/en/');
+            }
+        })();
+    </script>
+    <meta http-equiv="refresh" content="0; url=/en/">
+</head>
+<body>
+    <p>Redirecting to <a href="/en/">PLURA Blog</a>...</p>
+</body>
+</html>
