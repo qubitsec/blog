@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>PLURA Blog</title>
-    <script>
-        (function() {
-            var userLang = navigator.language || navigator.userLanguage; 
-            var langCode = userLang.substr(0, 2).toLowerCase();
+  <meta charset="UTF-8" />
+  <title>PLURA Blog - Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow">
+  
+  <script>
+    (function() {
+      // 1. 현재 경로 확인 (무한 루프 방지용 2차 방어선)
+      const path = window.location.pathname;
+      
+      // 루트('/')나 '/index.html'이 아니면 리다이렉트 하지 않음
+      if (path !== "/" && path !== "/index.html") {
+        return;
+      }
 
-            if (langCode === 'ko') {
-                window.location.replace('/ko/');
-            } else if (langCode === 'ja') {
-                window.location.replace('/ja/');
-            } else {
-                window.location.replace('/en/');
-            }
-        })();
-    </script>
-    <meta http-equiv="refresh" content="0; url=/en/">
+      // 2. 브라우저 언어 감지
+      const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+      
+      // 3. 언어별 리다이렉트 (수정된 부분)
+      if (lang.startsWith("ko")) {
+        window.location.replace("/ko/");     // 한국어 -> /ko/
+      } else if (lang.startsWith("ja")) {
+        window.location.replace("/ja/");     // 일본어 -> /ja/
+      } else {
+        window.location.replace("/en/");     // 그 외(영어 포함) -> /en/
+      }
+    })();
+  </script>
+  
+  <meta http-equiv="refresh" content="0; url=/en/">
 </head>
 <body>
 </body>
