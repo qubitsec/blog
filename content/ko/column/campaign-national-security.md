@@ -23,6 +23,10 @@ AI 주권, AI 경쟁력, AI 생태계 육성에 대한 논의는 활발하지만
 
 > **국가대표 AI는 있는데, 왜 국가대표 보안은 없는가?**
 
+
+<!--more-->
+![캠페인-국가대표 보안 제품](https://blog.plura.io/cdn/column/campaign-national-security.png)
+
 ---
 
 ## 당위성 – 왜 ‘국가대표 보안 제품’ 논의가 필요한가
