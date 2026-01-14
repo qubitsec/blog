@@ -1,7 +1,7 @@
 ---
 title: "국가대표 AI 시대, 국가대표 보안 제품은 왜 논의되지 않는가"
 date: 2026-01-14
-draft: true
+draft: false
 description: "국가대표 AI 선정 논의 속에서 빠져 있는 ‘국가대표 보안’의 필요성을 짚고, 국가 차원의 보안 제품 선정 기준을 제안한다."
 featured_image: "cdn/column/campaign-national-security.png"
 tags: ["국가대표AI", "사이버보안", "국가안보", "보안정책", "AI와보안"]
