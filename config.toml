@@ -72,9 +72,14 @@ url = "/ko/respond/"
 weight = 4
 
 [[menu.ko]]
+name = "QnA"
+url = "/ko/qna/"
+weight = 5
+
+[[menu.ko]]
 name = "News"
 url = "https://www.qubitsec.com/news"
-weight = 5
+weight = 6
 params.target = "_blank"
 
 # ✅ 일본어 메뉴
@@ -99,9 +104,14 @@ url = "/ja/respond/"
 weight = 4
 
 [[menu.ja]]
+name = "QnA"
+url = "/ja/qna/"
+weight = 5
+
+[[menu.ja]]
 name = "ニュース"
 url = "https://www.damda.cloud/news"
-weight = 5
+weight = 6
 params.target = "_blank"
 
 # ✅ 영어 메뉴
@@ -126,9 +136,14 @@ url = "/en/respond/"
 weight = 4
 
 [[menu.en]]
+name = "QnA"
+url = "/en/qna/"
+weight = 5
+
+[[menu.en]]
 name = "News"
 url = "https://w.qubitsec.com/en/news.html"
-weight = 5
+weight = 6
 params.target = "_blank"
 
 [sitemap]
