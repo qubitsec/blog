@@ -42,14 +42,15 @@ tags: ["방화벽", "웹방화벽", "WAF", "네트워크보안", "웹보안"]
 
 ```mermaid
 flowchart LR
-    FW[방화벽<br/>(IP·Port 제어)]
-    WAF[웹방화벽<br/>(웹 패킷 분석)]
-    WEB[웹 서버]
+    USER["👤 WEB 사용자"]
+    FW["🧱 방화벽<br/>(IP·Port 제어)"]
+    WAF["🛡️ 웹방화벽<br/>(웹 패킷 분석)"]
+    WEB["🖥️ 웹 서버"]
 
-    FW --> WAF --> WEB
+    USER --> FW --> WAF --> WEB
 ```
 
-![Web Flow](https://blog.plura.io/cdn/qna/q6-2.png)
+![Web Flow](https://blog.plura.io/cdn/qna/q6-1.png)
 
 > 방화벽은 **문을 지키는 역할**,  
 > 웹방화벽은 **내용을 검사하는 역할**입니다.  
