@@ -1,6 +1,6 @@
 ---
 title: "Q4. 공급망 보안은 어떻게 해야 하나요?"
-date: 2026-01-15
+date: 2026-01-13
 draft: false
 description: "공급망 보안 위협의 구조적 문제와 대기업·공급업체 간 보안 격차를 현실적으로 설명합니다."
 featured_image: "cdn/qna/q4.png"
