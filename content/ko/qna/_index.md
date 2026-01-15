@@ -1,7 +1,7 @@
 ---
 title: "QnA 💬"
 description: "보안 현장의 질문과 답변"
-featured_image: "/images/qna.png"
+featured_image: "/images/bg-qna.png"
 ---
 
 보안 현장에서 실제로 가장 많이 받는 질문들을 중심으로,  
