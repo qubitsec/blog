@@ -1,9 +1,9 @@
 ---
 title: "Q8. 정보보안 담당자의 번아웃 문제, 어떻게 해결할 수 있을까요? 우리 동료가 아파요."
-date: 2026-01-15
+date: 2026-01-13
 draft: false
 description: "해킹이 일상화된 시대, 정보보안 담당자의 번아웃이 왜 구조적으로 발생하는지와 이를 완화할 수 있는 현실적인 해법을 제시합니다."
-featured_image: "cdn/qa/q8.png"
+featured_image: "cdn/qna/q8.png"
 tags: ["보안번아웃", "SOC", "Burnout", "정보보안담당자", "ISMS", "AI보안", "PLURA"]
 ---
 
