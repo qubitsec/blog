@@ -3,7 +3,7 @@ title: "Q1. 요청본문(Post-body)·응답본문(Response-body) 로그를 모�
 date: 2026-01-15
 draft: false
 description: "요청본문·응답본문 로그 수집이 실제로 로그 폭증을 유발하는지, NDR과의 차이를 통해 기술적으로 설명합니다."
-featured_image: "cdn/qa/q1.png"
+featured_image: "cdn/qna/q1.png"
 tags: ["로그수집", "PostBody", "ResponseBody", "NDR비교", "보안로그"]
 ---
 
