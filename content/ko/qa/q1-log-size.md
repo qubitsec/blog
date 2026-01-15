@@ -7,7 +7,7 @@ featured_image: "cdn/qa/q1.png"
 tags: ["로그수집", "PostBody", "ResponseBody", "NDR비교", "보안로그"]
 ---
 
-### Q1. 요청본문(Post-body)·응답본문(Response-body) 로그를 모두 수집하면 로그량이 너무 많아지지 않나요?
+### ❓1. 요청본문(Post-body)·응답본문(Response-body) 로그를 모두 수집하면 로그량이 너무 많아지지 않나요?
 
 **A. 전혀 그렇지 않습니다.**  
 요청본문·응답본문 로그는 흔히 **NDR(Network Detection & Response)** 과 비교되곤 하지만, 실제 로그 규모는 **비교 자체가 성립하지 않습니다.**
