@@ -47,3 +47,5 @@ tags: ["공급망보안", "랜섬웨어", "중소기업보안", "서드파티리
 > 📚 **PLURA-XDR을 활용한 공급망 보안 강화 방안**  
 > https://blog.plura.io/ko/column/campaign_supplychain_security/
 
+> 📚 **제조업, 랜섬웨어 감염 ‘속출’…왜 보안 체계 재정비가 필요한가?**  
+> https://blog.plura.io/ko/threats/ransomware-manufacturing/
