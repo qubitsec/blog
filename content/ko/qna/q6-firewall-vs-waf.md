@@ -50,7 +50,7 @@ flowchart LR
     USER --> FW --> WAF --> WEB
 ```
 
-![Web Flow](https://blog.plura.io/cdn/qna/q6-1.png)
+![Web Flow](https://blog.plura.io/cdn/qna/q6-2.png)
 
 > 방화벽은 **문을 지키는 역할**,  
 > 웹방화벽은 **내용을 검사하는 역할**입니다.  
