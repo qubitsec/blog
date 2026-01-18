@@ -1,5 +1,5 @@
 ---
-title: "Q1. 요청본문(Post-body)·응답본문(Response-body) 로그를 모두 수집하면 로그량이 너무 많아지지 않나요?"
+title: "Q01. 요청본문(Post-body)·응답본문(Response-body) 로그를 모두 수집하면 로그량이 너무 많아지지 않나요?"
 date: 2026-01-13
 draft: false
 description: "요청본문·응답본문 로그 수집이 실제로 로그 폭증을 유발하는지, NDR과의 차이를 통해 기술적으로 설명합니다."
