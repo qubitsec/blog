@@ -1,6 +1,6 @@
 ---
 title: "Q13. 왜 보안은 온프레미스의 종말을 맞았고, 클라우드 SaaS로 가야 할까요?"
-date: 2026-01-15
+date: 2026-01-13
 draft: false
 description: "담당자 퇴사와 함께 보안 맥락이 사라지는 ‘보안 치매’ 현상이 왜 심각한 문제인지, 그리고 왜 클라우드 SaaS 보안으로 전환해야 하는지를 설명합니다."
 featured_image: "cdn/qna/q13.png"
