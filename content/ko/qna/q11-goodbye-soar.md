@@ -12,7 +12,7 @@ tags: ["SOAR", "SIEM", "보안자동화", "SOC현실", "GartnerHypeCycle", "ROI"
 **A. 기술 때문이 아니라, ‘기대·제도·책임 구조’ 때문입니다.**
 
 SOAR(Security Orchestration, Automation and Response)는  
-등장 당시 **“사람 없는 자동 대응 보안”**을 약속했습니다.
+등장 당시 “**사람 없는 자동 대응 보안**”을 약속했습니다.
 
 하지만 실제 SOC 현장에서는  
 자동 차단이 거의 사용되지 않고,  
