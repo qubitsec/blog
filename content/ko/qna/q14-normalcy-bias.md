@@ -7,8 +7,6 @@ featured_image: "cdn/qa/q14.png"
 tags: ["보안인지편향", "SecurityCognitiveBias", "정상성편향", "위험회피", "보안의사결정"]
 ---
 
-### Q14. 정보보안은 왜 기술이 아니라 ‘심리’로 결정될까요?
-
 **A. 사이버 보안 의사결정은 인간의 ‘인지 편향(Cognitive Bias)’을 피할 수 없기 때문입니다.**
 
 우리는 흔히  
