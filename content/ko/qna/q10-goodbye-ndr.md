@@ -3,7 +3,7 @@ title: "Q10. NDR 벤더의 주장, 실제 현장에서도 사실일까요? (Fact
 date: 2026-01-15
 draft: false
 description: "NDR(Network Detection & Response) 벤더들이 주장하는 핵심 가치가 실제 운영 환경에서도 유효한지, 기술적·현장 관점에서 검증합니다."
-featured_image: "cdn/qa/q10.png"
+featured_image: "cdn/qna/q10.png"
 tags: ["NDR", "IPS", "네트워크보안", "암호화트래픽", "FactCheck", "보안현실"]
 ---
 
