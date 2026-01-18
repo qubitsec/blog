@@ -1,6 +1,6 @@
 ---
 title: "Q11. 이미 한계에 도달한 SOAR는 왜 아직도 현장에서 사용되고 있을까요?"
-date: 2026-01-14
+date: 2026-01-13
 draft: false
 description: "자동 대응을 약속했던 SOAR가 왜 현장에서 한계에 부딪혔음에도 계속 사용되는지, 제도·운영·심리 구조 관점에서 분석합니다."
 featured_image: "cdn/qna/q11.png"
