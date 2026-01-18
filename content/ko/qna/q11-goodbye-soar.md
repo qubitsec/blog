@@ -7,8 +7,6 @@ featured_image: "cdn/qna/q11.png"
 tags: ["SOAR", "SIEM", "보안자동화", "SOC현실", "GartnerHypeCycle", "ROI"]
 ---
 
-### Q11. 이미 한계에 도달한 SOAR는 왜 아직도 현장에서 사용되고 있을까요?
-
 **A. 기술 때문이 아니라, ‘기대·제도·책임 구조’ 때문입니다.**
 
 SOAR(Security Orchestration, Automation and Response)는  
