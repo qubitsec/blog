@@ -146,8 +146,8 @@ NDR과 비복호화 탐지에 대한 한계는
 아래 글을 함께 읽으면,
 왜 이 문제가 **구현의 문제가 아니라 ‘불가능한 미션’에 가까운지** 더 명확해집니다.
 
-> 📚 **NDR의 한계: 해결 불가능한 미션**
+> 📚 **NDR의 한계: 해결 불가능한 미션**  
 > [https://blog.plura.io/ko/column/limitations_of_ndr/](https://blog.plura.io/ko/column/limitations_of_ndr/)
 
-> 📚 **“비복호화 탐지(Non-Decryption Detection)?” — 불가능을 포장한 마케팅**
+> 📚 **“비복호화 탐지(Non-Decryption Detection)?” — 불가능을 포장한 마케팅**  
 > [https://blog.plura.io/ko/column/limitations_of_non_decryption_detection/](https://blog.plura.io/ko/column/limitations_of_non_decryption_detection/)
