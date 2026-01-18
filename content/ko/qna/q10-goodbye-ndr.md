@@ -7,8 +7,6 @@ featured_image: "cdn/qna/q10.png"
 tags: ["NDR", "IPS", "네트워크보안", "암호화트래픽", "FactCheck", "보안현실"]
 ---
 
-### Q10. NDR 벤더의 주장, 실제 현장에서도 사실일까요? (Fact Check)
-
 NDR 벤더의 Sales Kit에는 공통적인 메시지가 있습니다.  
 “암호화 시대에도 네트워크 분석은 여전히 유효하다”는 주장입니다.
 
