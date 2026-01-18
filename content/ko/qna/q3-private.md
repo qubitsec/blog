@@ -3,7 +3,7 @@ title: "Q3. 요청본문·응답본문 로그를 수집하면 개인정보 문�
 date: 2026-01-13
 draft: false
 description: "요청본문·응답본문 로그 수집 시 개인정보 이슈를 어떻게 기술적으로 통제할 수 있는지 설명합니다."
-featured_image: "cdn/qna/q3.png"
+featured_image: "cdn/qna/q03.png"
 tags: ["개인정보보호", "로그마스킹", "보안설계", "API로그", "컴플라이언스"]
 ---
 
