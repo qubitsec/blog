@@ -64,7 +64,7 @@ SOAR는 아주 좋은 답변이 됩니다.
 “**SOAR를 운영 중**”이라는 문장은  
 보고서에 쓰기 좋은 문구이기 때문입니다.
 
-Q9에서 IPS·NDR이  
+[Q9](https://blog.plura.io/ko/qna/q9-goodbye-ips/)에서 IPS·NDR이  
 ‘보험 장비’로 남는 것과  
 **정확히 같은 구조**입니다.
 
