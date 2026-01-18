@@ -13,12 +13,12 @@ tags: ["AI보안", "웹로그", "PostBody", "ResponseBody", "ISMS", "로그분�
 
 ---
 
-#### 1️⃣ 개인정보 이슈에 대한 오해 (Q3)
+#### 1️⃣ 개인정보 이슈에 대한 오해 ([Q3](https://blog.plura.io/ko/qna/q3-private/))
 
 많은 조직은  
 “**요청본문·응답본문 로그를 수집하면 개인정보 문제가 발생한다**”고 인식해 왔습니다.
 
-하지만 [Q3](https://blog.plura.io/ko/qna/q3-private/)에서 설명했듯이, 이는  
+하지만 Q3에서 설명했듯이, 이는  
 - 마스킹
 - 부분 수집
 - 조건부 저장  
@@ -30,9 +30,9 @@ tags: ["AI보안", "웹로그", "PostBody", "ResponseBody", "ISMS", "로그분�
 
 ---
 
-#### 2️⃣ 로그량에 대한 오해 (Q1)
+#### 2️⃣ 로그량에 대한 오해 ([Q1]((https://blog.plura.io/ko/qna/q1-log-size/)))
 
-또 다른 이유는 [Q1](https://blog.plura.io/ko/qna/q1-log-size/)에서 설명했듯이,  
+또 다른 이유는  
 “**이전에는 없던 로그를 수집하면 시스템이 감당하지 못할 것**”이라는 우려입니다.
 
 하지만 현재의 서버 환경은:
