@@ -30,7 +30,7 @@ tags: ["AI보안", "웹로그", "PostBody", "ResponseBody", "ISMS", "로그분�
 
 ---
 
-#### 2️⃣ 로그량에 대한 오해 ([Q1]((https://blog.plura.io/ko/qna/q1-log-size/)))
+#### 2️⃣ 로그량에 대한 오해 ([Q1](https://blog.plura.io/ko/qna/q1-log-size/))
 
 또 다른 이유는  
 “**이전에는 없던 로그를 수집하면 시스템이 감당하지 못할 것**”이라는 우려입니다.
