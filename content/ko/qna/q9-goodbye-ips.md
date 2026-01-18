@@ -3,7 +3,7 @@ title: "Q9. 이미 한계에 도달한 IPS·NDR은 왜 아직도 현장에서 �
 date: 2026-01-13
 draft: false
 description: "기술적 한계가 분명한 IPS·NDR이 왜 여전히 현장에서 사용되는지, 제도·책임·운영 현실 관점에서 분석합니다."
-featured_image: "cdn/qa/q9.png"
+featured_image: "cdn/qna/q9.png"
 tags: ["IPS", "NDR", "ISMS", "SOC현실", "보안운영", "ROI"]
 ---
 
