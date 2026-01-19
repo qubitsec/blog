@@ -1,32 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>PLURA Blog - Redirecting...</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Redirecting...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow">
-  
+
   <script>
-    (function() {
-      // 1. 현재 경로 확인 (무한 루프 방지용 2차 방어선)
+    (function () {
+      const SUPPORTED = ["en", "ko", "ja"];
+      const DEFAULT_LANG = "en";
+      const STORAGE_KEY = "site_lang";
+
+      // 1) 가드: 루트에서만 동작 (원치 않는 강제 이동 방지)
       const path = window.location.pathname;
-      
-      // 루트('/')나 '/index.html'이 아니면 리다이렉트 하지 않음
-      if (path !== "/" && path !== "/index.html") {
+      if (path !== "/" && path !== "/index.html") return;
+
+      // 2) 이미 언어 경로 아래라면 종료 (이 파일이 루트에서만 쓰이는 게 정상)
+      // (안전장치로 남겨둠)
+      const current = path.split("/")[1];
+      if (SUPPORTED.includes(current)) return;
+
+      // 3) URL 파라미터 우선: ?lang=ko
+      const params = new URLSearchParams(window.location.search);
+      const forced = (params.get("lang") || "").toLowerCase();
+      if (SUPPORTED.includes(forced)) {
+        localStorage.setItem(STORAGE_KEY, forced);
+        window.location.replace("/" + forced + "/");
         return;
       }
 
-      // 2. 브라우저 언어 감지
-      const lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-      
-      // 3. 언어별 리다이렉트 (수정된 부분)
-      if (lang.startsWith("ko")) {
-        window.location.replace("/ko/");     // 한국어 -> /ko/
-      } else if (lang.startsWith("ja")) {
-        window.location.replace("/ja/");     // 일본어 -> /ja/
-      } else {
-        window.location.replace("/en/");     // 그 외(영어 포함) -> /en/
+      // 4) 사용자가 과거에 선택한 언어가 있으면 그걸 우선
+      const saved = (localStorage.getItem(STORAGE_KEY) || "").toLowerCase();
+      if (SUPPORTED.includes(saved)) {
+        window.location.replace("/" + saved + "/");
+        return;
       }
+
+      // 5) 브라우저 언어 기반 선택
+      // navigator.languages 가 있으면 우선 사용 (예: ["ko-KR","en-US"...])
+      const langs = (navigator.languages && navigator.languages.length)
+        ? navigator.languages
+        : [navigator.language || DEFAULT_LANG];
+
+      function pickLang(list) {
+        for (const l of list) {
+          const base = String(l).toLowerCase().split("-")[0]; // "ko-KR" -> "ko"
+          if (SUPPORTED.includes(base)) return base;
+        }
+        return DEFAULT_LANG;
+      }
+
+      const target = pickLang(langs);
+      localStorage.setItem(STORAGE_KEY, target);
+      window.location.replace("/" + target + "/");
     })();
   </script>
 </head>
