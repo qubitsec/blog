@@ -1,10 +1,10 @@
 ---
 date: 2026-01-24T09:00:00
 draft: false
+title: "ShimCache와 Prefetch: 실행 흔적 입증에서 실행 체인 복원까지 (LOLBAS 로그 연계 포함)"
 description: "윈도우 포렌식 핵심 아티팩트인 ShimCache와 Prefetch를 비교하고, Prefetch 단독 조회를 넘어 Amcache·이벤트 로그(LOLBAS 포함)까지 교차해 ‘실행 체인(Execution Chain)’을 복원하는 실무 접근을 정리합니다."
 featured_image: "cdn/tech/shimcache_prefetch_comparison.png"
 tags: ["Digital Forensics", "ShimCache", "Prefetch", "Amcache", "Sysmon", "Windows Event Log", "LOLBAS", "침해 사고 분석", "Windows", "Execution Chain", "지속성(Persistence)"]
-title: "ShimCache와 Prefetch: 실행 흔적 입증에서 실행 체인 복원까지 (LOLBAS 로그 연계 포함)"
 ---
 
 📖 **ShimCache와 Prefetch, 왜 ‘둘 다’ 봐야 할까? 그리고 어떻게 ‘연계 실행 체인’까지 복원할까**
