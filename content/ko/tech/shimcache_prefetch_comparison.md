@@ -38,7 +38,7 @@ tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windo
 요청하신 대로 **Sysmon 1번 → 보고서**로 “끊기지 않게” 한 장으로 이어집니다.
 
 ```mermaid
-flowchart TD
+flowchart LR
   A[분석 시작] --> B{Sysmon Event ID 1 로그 있음}
 
   B -->|Yes| C[Sysmon ID 1로 뼈대 고정]
