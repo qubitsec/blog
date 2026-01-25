@@ -158,7 +158,7 @@ Amcache에 남는 **식별 정보**(메타/해시 등)로
 
 ---
 
-## 6) 한눈에 비교: Sysmon · Prefetch · ShimCache · Amcache
+## 6) 🔍 한눈에 비교: Sysmon · Prefetch · ShimCache · Amcache
 
 | 구분     | Sysmon (Event ID 1) | Prefetch        | ShimCache       | Amcache          |
 | ------ | ------------------- | --------------- | --------------- | ---------------- |
