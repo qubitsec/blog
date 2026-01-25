@@ -1,388 +1,310 @@
 ---
 date: 2026-01-24T09:00:00
 draft: false
-title: "ShimCache와 Prefetch: 실행 흔적 입증에서 실행 체인 복원까지 (LOLBAS 로그 연계 포함)"
-description: "윈도우 포렌식 핵심 아티팩트인 ShimCache와 Prefetch를 비교하고, Prefetch 단독 조회를 넘어 Amcache·이벤트 로그(LOLBAS 포함)까지 교차해 ‘실행 체인(Execution Chain)’을 복원하는 실무 접근을 정리합니다."
+title: "Sysmon → Prefetch → ShimCache → Amcache: 실행 체인 복원 실무 가이드 (LOLBAS 로그 연계 포함)"
+description: "Sysmon Event ID 1을 출발점으로 Prefetch·ShimCache·Amcache를 교차해 ‘실행 여부’에서 ‘실행 체인(Execution Chain)’까지 복원하는 실무 흐름을 정리합니다. (LOLBAS 로그 연계 포함)"
 featured_image: "cdn/tech/shimcache_prefetch_comparison.png"
-tags: ["Digital Forensics", "ShimCache", "Prefetch", "Amcache", "Sysmon", "Windows Event Log", "LOLBAS", "침해 사고 분석", "Windows", "Execution Chain", "지속성(Persistence)"]
+tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windows Event Log", "LOLBAS", "침해 사고 분석", "Execution Chain", "지속성(Persistence)"]
 ---
 
-📖 **ShimCache와 Prefetch, 왜 ‘둘 다’ 봐야 할까? 그리고 어떻게 ‘연계 실행 체인’까지 복원할까**
-
-> 목표: 침해 사고 분석(Incident Response)에서 가장 중요한 질문은 결국 이것입니다.  
-> **“악성 파일이 실제로 실행되었는가?”**  
-> 하지만 실무에서 더 중요한 질문은 한 단계 더 나아갑니다.  
-> ✅ **“이 악성 파일을 실행·지원·은폐·전달한 프로그램 체인은 무엇인가?”**  
->
-> 이 글은 기존 **ShimCache vs Prefetch 비교**를 기반으로, Prefetch/ShimCache를 시작점으로 **실행 체인(Execution Chain)을 복원**하는 확장 분석 흐름까지 정리합니다.
+📌 **이 글의 목표는 하나입니다.**  
+“악성 파일이 실행됐는가?”에서 끝내지 않고, 한 단계 더 들어가서  
+✅ **“누가(부모) → 무엇을(자식) → 어떤 인자(CommandLine)로 → 언제 실행했고, 그 다음에 뭘 했나?”**  
+즉 **실행 체인(Execution Chain)**을 **보고서로 흔들리지 않게** 복원하는 겁니다.
 
 ---
 
-## 1. ShimCache (AppCompatCache): “존재”의 증명
+## 0) 왜 이 순서가 제일 친절한가요?
 
-ShimCache(Application Compatibility Cache)는 프로그램의 **호환성 유지**를 위해 설계된 기능입니다.  
-포렌식 관점에서는 파일이 시스템에 ‘**존재했음**’을 증명하는 강력한 증거가 됩니다.
+침해사고 분석은 보통 이렇게 시작합니다.
 
-### ❌ 분석 시 주의할 점 (오해와 진실)
+- “이상한 실행이 있었던 것 같은데요…”
+- “이 파일이 악성 같은데 실행됐나요?”
+- “EDR이 없거나 로그가 중간에 끊겼어요…”
 
-- **실행 시간이 아니다**: ShimCache의 타임스탬프는 보통 **실행 시각이 아니라 파일의 마지막 수정 시간(Last Modified Time)** 성격으로 해석해야 합니다. 이를 실행 시간으로 단정하면 타임라인이 크게 틀어질 수 있습니다.
-- **실행 여부의 모호성**: Windows 버전/조건에 따라 “캐싱됨 = 실행됨”이 항상 성립하지 않습니다.
-- **휘발성 특성**: 일반적으로 **정상 종료/재부팅 시점에 기록**되는 성격이 있어, 강제 종료/크래시 상황에서는 최신 흔적이 누락될 수 있습니다.
+이럴 때 **가장 덜 헤매는 순서**가 있습니다.
 
-### ✅ ShimCache의 핵심 가치
-
-- **파일 존재 입증**: 원본이 self-delete 되었어도 경로 흔적이 남을 수 있습니다.
-- **이동 경로 추적**: 악성 파일이 어느 경로에 있었는지 전체 경로 기반 추적이 가능합니다.
-
----
-
-## 2. Prefetch: “실행”의 확증
-
-Prefetch는 윈도우의 **부팅 및 실행 속도 향상**을 위한 메커니즘이며, 분석가에게는 “**실행되었다**”를 가장 강하게 뒷받침합니다.
-
-### 📌 Prefetch가 제공하는 결정적 증거
-
-- **확실한 실행 단서**: Prefetch 파일(`.pf`)이 생성되었다면 해당 실행 파일은 **실제로 실행**되었을 가능성이 매우 높습니다.
-- **정확한 실행 시각**: 마지막 실행 시각뿐 아니라(Windows 8+에서 흔히 관찰) **최근 여러 회(대개 8회)의 실행 시각**을 기록하는 구조가 일반적입니다.
-- **실행 횟수(Run Count)**: 실행 빈도 추정에 유리합니다.
-
-### ❌ 한계점
-
-- **개수 제한/덮어쓰기**: 시스템에 따라 Prefetch 저장 개수 제한으로 오래된 기록이 덮일 수 있습니다.
-- **환경에 따라 비활성/부재 가능**: 일부 서버/정책/저장장치 환경에서는 Prefetch가 기대대로 남지 않을 수 있어 “없다 = 실행 안 했다”로 단정하면 위험합니다.
-- **단독으로는 ‘연계’가 약함**: Prefetch는 “실행”을 잘 말해주지만, **누가 실행했는지(부모 프로세스), 어떤 체인인지**는 Prefetch만으로 완전 복원이 어렵습니다.
+1) **Sysmon Event ID 1**: 실행 체인의 뼈대(부모-자식-커맨드라인-해시)  
+2) **Prefetch**: “진짜 실행됨”을 가장 직관적으로 확증  
+3) **ShimCache**: 실행이 애매해도 “그 파일이 그 경로에 있었다”를 고정  
+4) **Amcache**: 파일명이 바뀌어도 “이게 그 파일”임을(메타/해시) 확정  
+5) (있으면) **PowerShell/Task/WMI 로그**로 LOLBAS·지속성까지 연결  
+6) 마지막에 **보고서**: 시간/경로/동일성/체인 근거를 세트로 제시
 
 ---
 
-## 3. 한눈에 보는 비교: ShimCache vs Prefetch
+## 1) 실행 체인 복원 흐름도 (Sysmon 1번부터 보고서까지 쭉)
 
-두 아티팩트는 상호 보완적입니다. 하나만으로는 전체 그림을 그리기 어렵습니다.
-
-| 비교 항목 | 🔹 ShimCache (AppCompatCache) | 🔹 Prefetch |
-| --- | --- | --- |
-| 원래 목적 | 애플리케이션 호환성 유지 | 프로그램 실행 속도 향상 |
-| 저장 위치 | 레지스트리 (`SYSTEM` Hive) | 파일 시스템 (`C:\Windows\Prefetch`) |
-| 기록 시점 | 시스템 종료/재부팅 시 반영되는 성격 | 프로그램 실행 시 생성되는 성격 |
-| 시간 정보 | 실행 시각이 아닌 값으로 오해 위험 | 실행 시간(Last Run Time) 중심 |
-| 포렌식 의미 | 파일이 시스템에 **존재했음**을 입증 | 파일이 **실행되었음**을 뒷받침 |
-| 삭제 시 | 원본 파일 삭제돼도 흔적이 남을 수 있음 | 원본 파일 삭제돼도 `.pf`가 남을 수 있음 |
-
-### 한눈에 보는 비교 (Comparison Table)
-
-| 아티팩트 | 저장 위치 (주요 경로) | 핵심 정보 | 특징 |
-| --- | --- | --- | --- |
-| **Prefetch** | `C:\Windows\Prefetch` | 실행 횟수, 마지막 실행 시간 | 가장 직관적인 실행 증거 |
-| **Shimcache** | 레지스트리 (SYSTEM Hive) | 파일 경로, 수정 시간 | 삭제된 악성코드 추적에 유용 |
-| **Amcache** | `C:\Windows\appcompat\Programs\Amcache.hve` | **파일 해시(SHA-1)**, 전체 경로 | 파일 무결성 및 변조 확인 |
-
-
----
-
-## 4. 현실적인 분석 시나리오: “실행 후 삭제” 대응
-
-### 📌 시나리오: 공격자가 `malware.exe` 실행 후 삭제하고 도망감
-
-#### 1) ShimCache에서 흔적 포착
-
-- **발견**: `C:\Temp\malware.exe`
-- **의미**: “이 시스템에 해당 파일이 존재했었다.”
-
-#### 2) Prefetch로 행위 확증/강화
-
-- **발견**: `MALWARE.EXE-12A3B456.pf`
-- **의미**: “정확히 언제, 몇 번 실행되었는지”에 대한 강한 단서 확보  
-- **추가 단서**: 로드 DLL/참조 파일 목록에서 네트워크/암호화/스크립트 흔적 등 정황 확보 가능
-
----
-
-## 5. 추천 기본 흐름도 (존재 → 실행 입증)
+요청하신 대로 **Sysmon 1번 → 보고서**로 “끊기지 않게” 한 장으로 이어집니다.
 
 ```mermaid
 flowchart TD
-  Start[사고 발생 및 분석 시작] --> CheckFile[파일 존재 여부 확인]
+  A[분석 시작: 의심 실행/파일 단서] --> B{Sysmon Event ID 1<br/>Process Create 로그 있음?}
 
-  CheckFile -->|파일 삭제됨| CheckShim[ShimCache 분석]
-  CheckShim -->|기록 없음| DeepScan[MFT/저널링 분석]
-  CheckShim -->|기록 있음| CheckPrefetch[Prefetch 폴더 확인]
+  B -->|Yes| C[Sysmon ID 1로 뼈대 고정<br/>ParentImage / Image / CommandLine / Hashes / 시간]
+  B -->|No| C2[Sysmon 없음/누락 가정<br/>아티팩트 중심으로 체인 복원 시작]
 
-  CheckPrefetch -->|pf 파일 존재| ConfirmExec["실행 확정 & 시간/횟수 분석"]
-  CheckPrefetch -->|pf 파일 없음| InferredExec["실행 여부 불투명 (단순 존재 가능성)"]
+  C --> D[Prefetch 확인<br/>실행 여부·시간·횟수 확증]
+  C2 --> D
 
-  ConfirmExec --> Report[보고서 작성: 실행 입증]
-  InferredExec --> Report
-```
+  D --> E{Prefetch(.pf) 존재?}
+  E -->|Yes| F[실행 강하게 확정<br/>Last Run / Run Count / 참조 흔적 피벗]
+  E -->|No| F2[Prefetch 부재 가능성<br/>비활성/덮어쓰기/삭제/환경 요인 고려]
 
----
+  F --> G[ShimCache 확인<br/>파일 존재·경로 고정]
+  F2 --> G
 
-## 6. 관점 전환: Prefetch는 ‘결론’이 아니라 ‘시작점’
+  G --> H[Amcache 확인<br/>해시/메타로 파일 정체 확정]
 
-Prefetch는 “**이 실행 파일이 실행된 적이 있다**”를 말해주는 도구입니다.  
-하지만 실무에서 우리가 복원해야 하는 것은 보통 이것입니다.
+  H --> I{추가 로그로 체인 확장 가능?}
+  I -->|Yes| J[LOLBAS/지속성 로그 연계<br/>PowerShell(4104)/Task/WMI/4688 등]
+  I -->|No| K[아티팩트 교차로 체인 최소 복원]
 
-> ❌ “이 악성 파일이 실행됐나?”  
-> ✅ **“이 악성 파일을 실행·지원·은폐·전달한 프로그램은 무엇인가?”**
+  J --> L[지속성 점검<br/>Task/Service/WMI 구독 등]
+  K --> L
 
-즉, 중심을 **‘연계 흔적’**(Correlation)으로 옮기면 분석이 확장됩니다.
-
----
-
-## 7. Prefetch 내부에서 바로 뽑을 수 있는 “연계 단서”
-
-### 7.1 DLL 로드/참조 흔적: 인젝션·사이드로딩 정황
-
-Prefetch에는 실행 시점에 **참조된 파일 경로**(특히 DLL 포함)가 남는 경우가 많습니다.  
-아래 패턴은 실무에서 자주 “연계 단서”가 됩니다.
-
-- 정상 앱에선 보기 힘든 DLL
-- `Temp`, `AppData`, `ProgramData` 하위 DLL
-- 파일명 위장 DLL (`version.dll`, `wininet.dll` 등)
-
-➡️ **의미**
-
-- 인젝션/사이드로딩 여부 판단
-- 드로퍼·로더 구분에 도움
+  L --> M[타임라인·체인 정리<br/>(Sysmon↔Prefetch↔ShimCache↔Amcache↔로그)]
+  M --> N[보고서 작성<br/>무엇이/언제/누가/어떻게 + 근거 세트]
+````
 
 ---
 
-## 8. ShimCache와 Prefetch를 “시간 축”으로 결합하기
+## 2) 1번(Sysmon Event ID 1)부터 보는 이유: “실행 체인의 척추”를 먼저 세우기
 
-둘을 교차하면 단순히 “있다/없다”를 넘어 **상황을 분기**할 수 있습니다.
+Sysmon **Event ID 1 (Process Create)**는 말 그대로
+**“프로세스가 생성(실행)된 순간”**을 기록합니다.
 
-| 상황 | 해석(현장 관점) |
-| --- | --- |
-| ShimCache만 있음 | 드롭/유입만 됐을 가능성, 또는 실행 증거가 다른 곳에 존재 |
-| Prefetch + ShimCache | 실행 + 반복 가능성(타임라인 강화) |
-| Prefetch 없음 + ShimCache 있음 | 1회성/특수 환경/Prefetch 비활성/덮어쓰기 등 가능성(추가 증거 필요) |
+여기서 중요한 건, Sysmon이 있으면 **실행 체인을 “사람 감”이 아니라 “근거”로** 묶을 수 있다는 점이에요.
 
-➡️ **연계 포인트(실무 체크)**
+### ✅ Sysmon ID 1에서 특히 중요한 필드
 
-- 동일 디렉터리에 존재했던 **다른 실행 파일/스크립트**(드로퍼/다운로더/로더)
-- 시간 흐름상 “먼저 등장한 파일”과 “뒤이어 실행된 파일”의 관계
+* **ParentImage**: “누가 이걸 실행시켰나?”
+* **Image**: “무엇이 실행됐나(정확한 경로)?”
+* **CommandLine**: “어떤 인자로 실행됐나?” (LOLBAS에서 거의 핵심)
+* **Hashes**: “이 파일이 진짜 그 파일 맞나?” (동일성 확정)
+* **Time**: 타임라인의 기준점
 
----
+📌 한 줄 요약
 
-## 9. Amcache.hve: “설치형 악성코드/유입 경로” 추적의 핵심
-
-ShimCache/Prefetch가 “존재/실행”을 다룬다면, Amcache는 경우에 따라 **유입(설치) 관점**에서 훨씬 강력해집니다.
-
-확인 포인트(대표):
-
-- File ID / SHA1(또는 식별 해시)
-- Program Name
-- First Install Time(환경/버전에 따라 상이)
-- Parent Path / Source 경로 단서
-
-➡️ **의미**
-
-- 드로퍼 → 페이로드 구조 파악(“누가 무엇을 떨어뜨렸나”)
-- 정상 프로그램 위장 여부 판단
-- 실행이 불확실해도 **시스템 유입 사실**을 입증
+> **Sysmon 1번은 ‘체인’을 만들고, Prefetch/ShimCache/Amcache는 그 체인을 ‘흔들리지 않게’ 고정합니다.**
 
 ---
 
-## 10. (로그가 있다면 최강) Sysmon/보안 로그로 “프로세스 트리” 복원
+## 3) 2번(Prefetch)을 붙이는 이유: “실행됐다”를 가장 직관적으로 확증
 
-Prefetch로는 절대 완전하게 보기 어려운 것이 **부모-자식 프로세스 관계**입니다.  
-Sysmon(또는 EDR/XDR/보안로그)이 있다면, 실행 체인 복원이 급격히 쉬워집니다.
+Prefetch는 원래 **실행 속도 최적화** 기능이지만, 포렌식에서는 단순합니다.
 
-### ✔ Sysmon Event ID 1 (Process Create)에서 보는 핵심 필드
+> `.pf`가 남아있다면, **그 프로그램은 실행된 적이 있을 가능성이 매우 높습니다.**
 
-- `ParentImage`
-- `CommandLine`
-- `CurrentDirectory`
-- `Hashes`
-- `ProcessGUID`
+### ✅ Prefetch가 주는 실무형 증거 3종
 
-예시(전형적인 체인 형태):
+* **실행 시간(Last Run Time)**: “언제 실행됐나?”
+* **실행 횟수(Run Count)**: “몇 번 실행됐나?”
+* **참조 흔적(로드/접근 파일 경로)**: “실행하면서 무엇을 만졌나?”
 
-```text
-powershell.exe
- └── rundll32.exe
-      └── evil.dll
-```
+### ❗ Prefetch 단독으로 끝내면 아쉬운 이유
 
-➡️ **핵심**  
-Prefetch는 “rundll32가 실행됐다”를 말해줄 수 있어도,  
-“**누가 rundll32를 불렀는지, 어떤 커맨드라인이었는지**”는 로그가 훨씬 강합니다.
+Prefetch는 “실행”은 강하지만,
+
+* “누가 실행했는지(부모 프로세스)”
+* “정확한 커맨드라인”
+  을 **완벽하게 복원하기가 어렵습니다.**
+
+그래서 **Sysmon(부모/커맨드) ↔ Prefetch(실행 확증/시간/횟수)** 조합이 제일 안정적이에요.
 
 ---
 
-### 10.1 LOLBAS 탐지 후, ShimCache / Amcache / Prefetch와 “바로” 붙이기 좋은 로그 5개 (채널 기준)
+## 4) 3번(ShimCache)을 보는 이유: “그 파일이 그 경로에 있었던 건 확실”로 고정
 
-LOLBAS(“Living off the Land Binaries and Scripts”)는 **운영체제에 원래 포함된 정상 바이너리/스크립트**를 악용해 공격을 진행하는 패턴을 말합니다. ([LOLBAS Project][8])  
-이 경우 탐지의 시작점이 이벤트 로그인 경우가 많기 때문에, 아래 5개 채널을 우선 보면 **아티팩트(ShimCache/Amcache/Prefetch)와 즉시 교차**하기가 좋습니다.
+공격자는 흔히 이런 걸 합니다.
 
----
+* 실행 후 **self-delete**
+* 파일 이동/이름 변경
+* 흔적 삭제 시도
 
-#### 1) Sysmon 로그: Process Create
+이때 ShimCache(AppCompatCache)는 “실행 여부”보다도 먼저,
+✅ **“그 파일이 시스템에 존재했었다(경로 포함)”**를 고정하는 데 강합니다.
 
-- **채널**: `Applications and Services Logs > Microsoft > Windows > Sysmon > Operational`
-- **주요 Event ID**: **1 (Process creation)**
-- **왜 1순위인가**
-  - 실행 파일 경로, **전체 CommandLine**, **ParentImage**, **Hashes**, **ProcessGUID** 등 “연동 키”가 가장 풍부합니다. ([Microsoft Learn][1])
-- **아티팩트 연동 포인트**
-  - `Image`(실행 파일 전체 경로) ↔ Prefetch/ShimCache/Amcache의 동일 경로/파일명 매칭
-  - `Hashes` ↔ Amcache에 남는 식별정보(해시) 기반 교차검증
-  - `ProcessGUID` ↔ 다른 Sysmon 이벤트(네트워크/파일 생성 등)와 체인 구성에 유리
+### ❌ ShimCache에서 자주 하는 오해(중요)
 
----
+* ShimCache의 타임스탬프는 보통 **‘실행 시각’이 아닐 수 있습니다.**
+  (환경에 따라 “파일 마지막 수정 시간 성격” 등으로 해석하는 것이 더 안전한 경우가 많습니다.)
+* 따라서 ShimCache만으로 “이 시간에 실행됐다”라고 단정하면 **타임라인이 틀어질 수 있어요.**
 
-#### 2) Windows 보안 로그: 프로세스 생성(기본 감사)
+📌 ShimCache는 이렇게 쓰면 딱 좋아요
 
-- **채널**: `Windows Logs > Security`
-- **주요 Event ID**: **4688 (A new process has been created)**
-- **왜 포함하나**
-  - Sysmon이 없는 환경에서도 “최소한의 실행 증거(프로세스 생성)”를 가장 표준적으로 확보합니다. ([Microsoft Learn][2])
-- **주의/권장 설정**
-  - 4688을 보려면 **Audit Process Creation**이 필요하고,
-  - 커맨드라인까지 남기려면 **“프로세스 생성 시 명령줄 포함(Include command line in process creation events)”** 정책 설정이 중요합니다. ([Microsoft Learn][3])
-- **아티팩트 연동 포인트**
-  - `NewProcessName`(실행 경로) + `CommandLine`(옵션) ↔ Prefetch(실행 사실/시간) + ShimCache(존재 경로) + Amcache(파일 메타)로 교차
+> “Prefetch/Sysmon으로 실행을 잡고, ShimCache로 **존재/경로**를 못 박는다.”
 
 ---
 
-#### 3) PowerShell 로그: Script Block Logging
+## 5) 4번(Amcache)을 마지막에 붙이는 이유: “이게 그 파일”임을 확정하기
 
-- **채널**: `Applications and Services Logs > Microsoft > Windows > PowerShell > Operational`
-- **주요 Event ID**: **4104 (Script Block Logging)**
-- **왜 포함하나**
-  - LOLBAS에서 가장 흔한 축이 PowerShell이고, 4104는 **실제 실행된 스크립트 블록 내용**을 남겨 “무엇을 했는지”까지 붙습니다. ([Microsoft Learn][4])
-- **아티팩트 연동 포인트**
-  - 4104 내용에서 드롭/다운로드/실행 경로가 나오면  
-    ↔ 그 경로를 ShimCache/Amcache에서 “존재/유입” 확인  
-    ↔ 해당 실행 파일은 Prefetch로 “실행” 확증
+Amcache는 경우에 따라 **결정타**가 됩니다.
 
----
+* 파일명이 바뀌었어도
+* 경로가 이동했어도
+* 원본이 삭제됐어도
 
-#### 4) 작업 스케줄러 로그: Task를 통한 실행(LOLBAS 호출 경로)
+Amcache에 남는 **식별 정보(메타/해시 등)**로
+✅ “동일 파일” 여부를 훨씬 강하게 주장할 수 있어요.
 
-- **채널**: `Applications and Services Logs > Microsoft > Windows > TaskScheduler > Operational`
-- **주요 Event ID(자주 쓰는 축)**: **200 (Action started), 201 (Action completed)** *(환경에 따라 100/102 등도 함께)*
-- **왜 포함하나**
-  - 공격자가 `schtasks`로 LOLBAS를 실행/지속화하는 경우가 흔하고, TaskScheduler Operational의 200/201은 **액션(실행 프로그램/인자)** 관찰에 유용합니다. ([Splunk Research][5])
-- **아티팩트 연동 포인트**
-  - Task action에 나온 실행 파일/인자 경로 ↔ Prefetch/ShimCache/Amcache로 동일 파일 교차
-  - “누가(계정/권한)” + “무엇을(액션/인자)”로 실행 체인을 보강
+### ✅ Amcache가 특히 빛나는 상황
+
+* IOC(해시)로 **동일 파일 여부를 확정**해야 할 때
+* 정상 파일로 위장했지만 메타/식별 정보로 **거짓말을 깨야** 할 때
+* Prefetch가 없거나 애매할 때 **보강 근거**가 필요할 때
 
 ---
 
-#### 5) WMI Activity 로그: WMI 기반 실행/지속성 단서
+## 6) 한눈에 비교: Sysmon · Prefetch · ShimCache · Amcache
 
-- **채널**: `Applications and Services Logs > Microsoft > Windows > WMI-Activity > Operational`
-- **주요 Event ID(대표 묶음)**: **5857, 5858, 5859, 5860, 5861**
-  - 예: 5857(작업 시작), 5858(클라이언트 실패) 등 WMI 동작 단서를 남깁니다. ([NXLog][6])
-  - 특히 **5861은 “영구 WMI 이벤트 구독(permanent subscription)”** 단서로 자주 활용됩니다. ([Red Canary][7])
-- **아티팩트 연동 포인트**
-  - WMI 이벤트에서 보이는 실행/커맨드/관련 프로세스 단서 ↔ Prefetch(실행) + ShimCache/Amcache(경로/유입)로 교차
-
----
-
-#### (보너스) 위 5개 로그를 아티팩트와 “붙일 때” 최소 연동 키
-
-- **실행 파일 Full Path**: `Image / NewProcessName / Task Action path`
-- **CommandLine**: LOLBAS는 인자에 본체(페이로드/DLL/스크립트/URL)를 숨기는 경우가 많아 핵심 피벗
-- **시간(UTC/로컬) + 호스트 식별자**
-- (가능하면) **Hash**: Sysmon이 가장 강함 ([Microsoft Learn][1])
+| 구분     | Sysmon (Event ID 1) | Prefetch        | ShimCache       | Amcache          |
+| ------ | ------------------- | --------------- | --------------- | ---------------- |
+| 한 줄 역할 | 실행 체인 “뼈대”          | 실행 “확증”         | 존재/경로 “고정”      | 파일 “정체 확정”       |
+| 강점     | 부모/자식, 커맨드라인, 해시    | 실행 시간·횟수, 참조 흔적 | 삭제/이동 후에도 경로 흔적 | 메타/식별 정보로 동일성    |
+| 약점     | 없을 수 있음(미설치/보관기간)   | 없다고 실행 안 한 건 아님 | 실행 시각으로 오해 위험   | 환경/상황에 따라 가용성 편차 |
+| 실무 포지션 | 시작점(가능하면 1순위)       | 2순위 “실행 확인”     | 3순위 “존재 고정”     | 4순위 “동일성 확정”     |
 
 ---
 
-## 11. “누가 다시 살렸는가”: 지속성(Persistence) 트리거 추적
+## 7) 실전 시나리오로 이해하기: “실행 후 삭제” 대응
 
-최초 실행 파일과 **재실행(지속성) 트리거**는 다른 경우가 많습니다.  
-따라서 실행 체인의 마지막 퍼즐은 보통 **지속성 메커니즘**입니다.
+### 📌 시나리오: 공격자가 `malware.exe` 실행 후 삭제하고 도망감
 
-대표 확인 대상:
+1. **Sysmon ID 1**이 있으면
 
-- Scheduled Tasks (`schtasks /query /v`)
-- Services (`HKLM\System\CurrentControlSet\Services`)
-- WMI Event Subscription (Filter/Consumer/Binding)
+* 어떤 부모가 실행했는지(ParentImage)
+* 어떤 인자였는지(CommandLine)
+* 어떤 해시였는지(Hashes)
+  까지 뼈대를 바로 세웁니다.
 
-➡️ **의미**
+2. **Prefetch**로 강화
 
-- “최초 실행 프로그램 ≠ 지속성 트리거”를 분리해서 봐야 합니다.
-- 정상 프로그램 이름을 쓴 악성 서비스/작업이 숨어 있을 수 있습니다.
+* `MALWARE.EXE-****.pf`가 남아있으면 “실행”을 강하게 확증
+* 실행 시간/횟수로 **반복 실행** 여부까지 잡습니다.
 
----
+3. **ShimCache**로 못 박기
 
-## 12. Prefetch가 없거나 약할 때: MFT / USN Journal로 “드롭 묶음” 찾기
+* `C:\Temp\malware.exe` 같은 경로가 남아 있으면
+  “그 경로에 실제로 존재했다”를 고정합니다.
 
-Prefetch가 비활성/덮어쓰기/삭제 등으로 비어 있으면, 파일시스템 레벨이 특히 중요해집니다.
+4. **Amcache**로 동일성 확정
 
-확인 포인트:
-
-- 악성 파일 생성 직후 생성된 `.exe`, `.dll`, `.ps1`
-- 동일 초 단위에 생성된 파일 묶음
-
-➡️ **의미**
-
-- 드롭 행위 입증
-- 실행 파일 간 관계성 도출
+* 파일명이 바뀌거나 경로가 바뀐 흔적이 있어도
+  “그 파일이 맞다”를 식별 정보로 보강합니다.
 
 ---
 
-## 13. 실무용 “연계 실행 분석(Execution Correlation)” 요약 흐름
+## 8) (로그가 있다면 최강) LOLBAS/지속성까지 “체인 확장”하기
 
-```text
-[악성 파일 발견]
-      ↓
-[Prefetch 존재 여부]
-      ↓
-[DLL / 실행 시간 확보]
-      ↓
-[ShimCache / Amcache 교차]
-      ↓
-[Sysmon / Event Log]
-      ↓
-[지속성 메커니즘]
-      ↓
-[실행 체인 재구성]
-```
+아티팩트는 강력하지만, **로그는 체인을 더 길고 선명하게** 만들어줍니다.
+특히 LOLBAS는 **CommandLine과 부모-자식 관계**가 핵심이라, 로그 연계가 효과가 큽니다.
 
----
+### 8.1 아티팩트와 “바로 붙이기 좋은” 로그 5개 (채널 기준)
 
-## 14. PLURA-Forensic 관점 제안: “Execution Correlation Analysis”로 격상
+#### 1) Sysmon: Process Create
 
-Prefetch를 **단일 결과 항목**으로 두는 순간, 분석은 “점”에서 멈춥니다.  
-현장 대응은 **선**(체인)을 복원해야 합니다.
+* **채널**: `Applications and Services Logs > Microsoft > Windows > Sysmon > Operational`
+* **주요 Event ID**: **1 (Process creation)**
+* **붙이는 방법**: `Image/CommandLine/Hashes` ↔ Prefetch/ShimCache/Amcache 교차
 
-### ▶ 카테고리 제안: “연계 실행 분석(Execution Correlation Analysis)”
+#### 2) 보안 로그: 프로세스 생성(4688)
 
-포함 요소(권장 묶음):
+* **채널**: `Windows Logs > Security`
+* **주요 Event ID**: **4688**
+* **포인트**: Sysmon이 없을 때 최소한의 “프로세스 생성” 근거 확보
+  (커맨드라인 로깅 정책 설정 여부가 품질을 좌우합니다.)
 
-- Prefetch
-- ShimCache
-- Amcache
-- Process Tree(로그 기반)
-- Persistence Artifacts
+#### 3) PowerShell: Script Block Logging(4104)
 
-➡️ 최종 목표는  
-**“악성 파일 단독 입증” → “공격 시나리오 복원”** 입니다.
+* **채널**: `Microsoft > Windows > PowerShell > Operational`
+* **주요 Event ID**: **4104**
+* **포인트**: LOLBAS/다운로드/실행 경로가 스크립트에 그대로 남는 경우가 많아
+  → 그 경로를 ShimCache/Amcache에서 존재/유입으로 고정
+  → 실행 파일은 Prefetch로 실행 확증
 
----
+#### 4) TaskScheduler: 작업 기반 실행
 
-## 15. 현장에서 바로 쓰는 체크리스트 (10문 10답)
+* **채널**: `Microsoft > Windows > TaskScheduler > Operational`
+* **예시 Event ID**: **200/201** 등(환경에 따라 상이)
+* **포인트**: 지속성(스케줄 작업)으로 “다시 실행되게 만든 트리거”를 잡기 좋음
 
-1️⃣ **이 파일은 실행됐나?** → Prefetch로 확인  
-2) **몇 번 실행됐나?** → Run Count/최근 실행 기록  
-3) **실행 시각은 언제였나?** → Prefetch 시간 기반 타임라인  
-4) **실행 시 무엇을 로드/참조했나?** → Prefetch의 DLL/참조 파일  
-5) **같은 폴더에 연계 파일(드로퍼/스크립트)이 있나?** → ShimCache/파일시스템  
-6) **유입(설치) 흔적은 더 없나?** → Amcache로 강화  
-7) **누가 실행시켰나(부모 프로세스)?** → Sysmon/보안로그  
-8) **커맨드라인은 무엇이었나?** → PowerShell/rundll32/mshta 등 식별  
-9) **다시 실행되게 만든 트리거는?** → 작업/서비스/WMI  
-10) **Prefetch가 비어 있다면?** → MFT/USN으로 생성 군집 재구성  
+#### 5) WMI Activity: WMI 기반 실행/지속성 단서
+
+* **채널**: `Microsoft > Windows > WMI-Activity > Operational`
+* **대표 Event ID 묶음**: **5857~5861** 등(환경에 따라 상이)
+* **포인트**: WMI를 통한 실행/지속성은 흔적이 “로그 쪽”에 남는 편이라 연결 가치가 큼
 
 ---
 
-## 📌 결론
+## 9) 마지막 퍼즐: “누가 다시 살렸는가” (지속성 트리거)
 
-- **ShimCache는 “존재”의 강한 단서**입니다.  
-- **Prefetch는 “실행”을 뒷받침하는 강력한 증거**입니다.  
-- 그러나 악성코드 분석의 핵심은 결국 이것입니다.
+최초 실행 파일과 **재실행(지속성) 트리거**는 다른 경우가 많습니다.
+그래서 실행 체인의 끝은 보통 여기로 갑니다.
 
-> **Prefetch는 시작점이지 결론이 아니다.**  
-> 핵심은 “**누가 실행했는가, 무엇을 불렀는가, 어떻게 다시 살아났는가**”다.
+* Scheduled Tasks (schtasks)
+* Services (서비스 등록)
+* WMI 이벤트 구독(영구 구독)
+
+📌 실무 팁
+
+> “최초 실행(초기 침투) 체인”과 “재실행(지속성) 체인”을 **분리**해서 그리면 보고서가 훨씬 명확해집니다.
+
+---
+
+## 10) Prefetch가 없거나 약할 때: “없다 = 실행 안 했다” 금지
+
+Prefetch가 비어 있을 수 있는 이유는 꽤 많습니다.
+
+* 정책/환경으로 Prefetch 비활성
+* 저장 개수 제한으로 덮어쓰기
+* 공격자 삭제
+* 서버/특수 구성
+
+그래서 Prefetch가 없으면,
+
+* ShimCache/Amcache로 존재·정체를 보강하고
+* (가능하면) 이벤트 로그로 실행을 보강하고
+* 그래도 부족하면 MFT/USN 같은 파일시스템 레벨로 확장합니다.
+
+---
+
+## 11) 보고서에 이렇게 쓰면 흔들리지 않습니다 (근거 세트)
+
+보고서에서 가장 흔들리는 순간은 이거예요.
+
+* “실행된 것 같아요” → 근거가 약하면 바로 반박당함
+* “악성 맞아요” → 동일성(해시/식별)이 없으면 논쟁으로 번짐
+
+그래서 보고서 문장은 가능하면 **세트로** 씁니다.
+
+* **체인**: Parent → Child
+* **시간**: 실행 시간(로그/Prefetch)
+* **경로**: Full Path(아티팩트 교차)
+* **동일성**: Hash/식별(가능하면 Amcache/Sysmon)
+
+예시 문장(템플릿)
+
+> (시간) (부모 프로세스)가 (커맨드라인)으로 (자식 프로세스)를 실행했으며,
+> Prefetch에서 실행 흔적(횟수/시간)이 확인되고, ShimCache에서 해당 경로 존재가 확인되며,
+> Amcache/Sysmon 해시로 동일 파일임을 교차 검증했다.
+
+---
+
+## 12) 현장에서 바로 쓰는 체크리스트 (10문 10답)
+
+Q1. **지금 내가 잡은 단서는 “실행(로그)”인가 “파일(아티팩트)”인가?**
+→ 시작점을 정해야 삽질이 줄어듭니다. 로그면 Sysmon부터, 파일이면 Prefetch/ShimCache부터.
+
+2️⃣ **누가 실행했나(부모 프로세스)?** → Sysmon ID 1의 `ParentImage`
+3️⃣ **무엇이 실행됐나(정확한 경로)?** → Sysmon `Image` ↔ Prefetch/ShimCache 경로 교차
+4️⃣ **정말 실행됐나(로그가 불완전해도)?** → Prefetch `.pf` 존재로 실행 근거 강화
+5️⃣ **언제 실행됐나?** → Prefetch 실행 시각 + Sysmon 이벤트 시간으로 타임라인 고정
+6️⃣ **몇 번 실행됐나(반복/지속 여부)?** → Prefetch `Run Count`
+7️⃣ **그 파일이 시스템에 ‘있었던 건’ 확실한가?** → ShimCache로 존재/경로 고정
+8️⃣ **이 파일, 이름만 바꾼 거 아냐? 동일 파일 맞아?** → Amcache(식별/해시)로 동일성 확정
+9️⃣ **LOLBAS/스크립트 우회 실행 흔적은?** → Sysmon CommandLine + PowerShell(4104)/Task/WMI 로그 연계
+🔟 **보고서에서 흔들리지 않는 근거 세트는?** → 체인(부모→자식) + 시간 + 경로 + 동일성(해시)
 
 ---
 
@@ -396,3 +318,4 @@ Prefetch를 **단일 결과 항목**으로 두는 순간, 분석은 “점”에
 [6]: https://docs.nxlog.co/integrate/wmi.html "Windows Management Instrumentation (WMI) (NXLog Documentation)"
 [7]: https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/ "Windows Management Instrumentation (Red Canary)"
 [8]: https://lolbas-project.github.io/ "LOLBAS Project"
+
