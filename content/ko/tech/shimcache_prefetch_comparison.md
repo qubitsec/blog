@@ -39,34 +39,32 @@ tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windo
 
 ```mermaid
 flowchart TD
-  A[분석 시작: 의심 실행/파일 단서] --> B{Sysmon Event ID 1<br/>Process Create 로그 있음?}
+  A[분석 시작] --> B{Sysmon Event ID 1 로그 있음}
 
-  B -->|Yes| C[Sysmon ID 1로 뼈대 고정<br/>ParentImage / Image / CommandLine / Hashes / 시간]
-  B -->|No| C2[Sysmon 없음/누락 가정<br/>아티팩트 중심으로 체인 복원 시작]
+  B -->|Yes| C[Sysmon ID 1로 뼈대 고정]
+  B -->|No| C2[Sysmon 누락 가정]
 
-  C --> D[Prefetch 확인<br/>실행 여부·시간·횟수 확증]
+  C --> D[Prefetch 확인]
   C2 --> D
 
-  D --> E{Prefetch pf 존재?}
+  D --> E{Prefetch pf 존재}
+  E -->|Yes| F[실행 확정]
+  E -->|No| F2[Prefetch 부재 가능성]
 
-  E -->|Yes| F[실행 강하게 확정<br/>Last Run / Run Count / 참조 흔적 피벗]
-  E -->|No| F2[Prefetch 부재 가능성<br/>비활성/덮어쓰기/삭제/환경 요인 고려]
-
-  F --> G[ShimCache 확인<br/>파일 존재·경로 고정]
+  F --> G[ShimCache 확인]
   F2 --> G
 
-  G --> H[Amcache 확인<br/>해시/메타로 파일 정체 확정]
+  G --> H[Amcache 확인]
 
-  H --> I{추가 로그로 체인 확장?}
+  H --> I{추가 로그로 확장 가능}
+  I -->|Yes| J[PowerShell Task WMI 4688 연계]
+  I -->|No| K[아티팩트 교차로 최소 복원]
 
-  I -->|Yes| J[LOLBAS/지속성 로그 연계<br/>PowerShell 4104 / Task / WMI / 4688]
-  I -->|No| K[아티팩트 교차로 체인 최소 복원]
-
-  J --> L[지속성 점검<br/>Task / Service / WMI 구독]
+  J --> L[지속성 점검]
   K --> L
 
-  L --> M[타임라인·체인 정리<br/>Sysmon↔Prefetch↔ShimCache↔Amcache↔로그]
-  M --> N[보고서 작성<br/>체인 + 시간 + 경로 + 동일성(해시)]
+  L --> M[타임라인 정리]
+  M --> N[보고서 작성\n체인 시간 경로 동일성]
 ```
 
 ---
