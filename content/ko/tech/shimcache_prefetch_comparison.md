@@ -35,7 +35,7 @@ tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windo
 
 ## 1) 실행 체인 복원 흐름도 (Sysmon 1번부터 보고서까지 쭉)
 
-요청하신 대로 **Sysmon 1번 → 보고서**로 “끊기지 않게” 한 장으로 이어집니다.
+**Sysmon 1번 → 보고서**로 “끊기지 않게” 한 장으로 설명하겠습니다.
 
 ```mermaid
 flowchart TD
