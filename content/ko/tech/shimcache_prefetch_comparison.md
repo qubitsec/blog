@@ -329,13 +329,12 @@ Prefetch가 비어 있을 수 있는 이유는 꽤 많습니다.
 ---
 
 ## 참고 링크
-
-[1]: https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon "Sysmon - Sysinternals (Microsoft Learn)"
-[2]: https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688 "4688(S) A new process has been created (Microsoft Learn)"
-[3]: https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing "Command line process auditing (Microsoft Learn)"
-[4]: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logging_windows?view=powershell-7.5 "about_Logging_Windows - PowerShell (Microsoft Learn)"
-[5]: https://research.splunk.com/endpoint/b3632472-310b-11ec-9aab-acde48001122/ "WinEvent Windows Task Scheduler Event Action Started (Splunk Research)"
-[6]: https://docs.nxlog.co/integrate/wmi.html "Windows Management Instrumentation (WMI) (NXLog Documentation)"
-[7]: https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/ "Windows Management Instrumentation (Red Canary)"
-[8]: https://lolbas-project.github.io/ "LOLBAS Project"
+- [Sysmon - Sysinternals (Microsoft Learn)](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) 
+- [4688(S) A new process has been created (Microsoft Learn)](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688)
+- [Command line process auditing (Microsoft Learn)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing)
+- [about_Logging_Windows - PowerShell (Microsoft Learn)](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_logging_windows?view=powershell-7.5)
+- [WinEvent Windows Task Scheduler Event Action Started (Splunk Research)](https://research.splunk.com/endpoint/b3632472-310b-11ec-9aab-acde48001122/)
+- [Windows Management Instrumentation (WMI) (NXLog Documentation)](https://docs.nxlog.co/integrate/wmi.html)
+- [Windows Management Instrumentation (Red Canary)](https://redcanary.com/threat-detection-report/techniques/windows-management-instrumentation/)
+- [LOLBAS Project](https://lolbas-project.github.io/)
 
