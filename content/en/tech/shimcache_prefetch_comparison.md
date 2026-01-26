@@ -1,334 +1,273 @@
 ---
 date: 2026-01-24T09:00:00
 draft: false
-title: "Sysmon → Prefetch → ShimCache → Amcache: 実行チェーン復元 実務ガイド (LOLBAS ログ連携含む)"
-description: "Sysmon Event ID 1を出発点にPrefetch・ShimCache・Amcacheを交差させ、『実行の有無』から『実行チェーン(Execution Chain)』まで復元する実務フローを整理します。(LOLBAS ログ連携含む)"
+title: "Sysmon → Prefetch → ShimCache → Amcache: Practical Guide to Reconstructing Execution Chains (Including LOLBAS Log Correlation)"
+description: "Starting from Sysmon Event ID 1, this guide walks through cross‑referencing Prefetch, ShimCache, and Amcache to move from simply determining execution to reconstructing the full Execution Chain. (Includes LOLBAS log correlation)"
 featured_image: "cdn/tech/shimcache_prefetch_comparison.png"
-tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windows Event Log", "LOLBAS", "侵害事故分析", "Execution Chain", "持続性(Persistence)"]
+tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windows Event Log", "LOLBAS", "Incident Response", "Execution Chain", "Persistence"]
 ---
 
-📌 **この記事の目的は一つです。**  
-「悪性ファイルが実行されたのか？」で終わらせず、さらに一段踏み込んで  
-✅ **「誰が(親) → 何を(子) → どんな引数(CommandLine)で → いつ実行し、その後に何をしたのか？」**  
-つまり **実行チェーン**(Execution Chain) を **報告書として揺るがない形で** 復元することです。
-
----
-
-## 0) なぜこの順序がいちばん親切なのか？
-
-侵害事故分析は通常このように始まります。
-
-- 「怪しい実行があった気がしますが…」
-- 「このファイルは悪性っぽいですが実行されましたか？」
-- 「EDRが無い、またはログが途中で途切れています…」
-
-こういうとき **最も迷いにくい順序** があります。
-
-1) **Sysmon Event ID 1**: 実行チェーンの骨格(親-子-コマンドライン-ハッシュ)  
-2) **Prefetch**: 「本当に実行された」を最も直感的に確証  
-3) **ShimCache**: 実行が曖昧でも「そのファイルがそのパスに存在した」を固定  
-4) **Amcache**: ファイル名が変わっても「これがそのファイル」であることを(メタ/ハッシュ)で確定  
-5) (あれば) **PowerShell/Task/WMIログ**でLOLBAS・持続性まで接続  
-6) 最後に **レポート**: 時間/パス/同一性/チェーン根拠をセットで提示
+📌 **This article has one goal.**  
+We don’t stop at “Was the malicious file executed?” — we go one step further:  
+✅ **“Who (parent) → executed what (child) → with which arguments (CommandLine) → when → and what happened next?”**  
+In other words, we focus on restoring the **Execution Chain** in a way that stands firm in a forensic report.
 
 ---
 
-## 1) 実行チェーン復元フロー図 (Sysmon 1番からレポートまで一直線)
+## 0) Why is this order the most intuitive?
 
-**Sysmon 1番 → レポート** までを「途切れずに」1枚で説明します。
+Incident investigations often start like this:
+
+- “We think something suspicious was executed…”
+- “This file looks malicious — was it actually run?”
+- “There’s no EDR, or the logs are incomplete…”
+
+In these situations, there is an **order that minimizes confusion**:
+
+1) **Sysmon Event ID 1**: The backbone of the execution chain (parent–child–command line–hash)  
+2) **Prefetch**: The most intuitive confirmation that execution truly occurred  
+3) **ShimCache**: Even if execution is unclear, confirms “that file existed at that path”  
+4) **Amcache**: Even if the filename changes, confirms “this is the same file” (via metadata/hash)  
+5) (If available) **PowerShell / Task / WMI logs** to connect LOLBAS activity and persistence  
+6) Finally, the **report**: Present time, path, identity, and chain evidence together
+
+---
+
+## 1) Execution Chain Reconstruction Flow (From Sysmon ID 1 to the Final Report)
+
+We’ll explain the full path from **Sysmon Event ID 1 → Report** in one continuous flow.
 
 ```mermaid
 flowchart TD
-  A[分析開始] --> B{Sysmon Event ID 1 ログあり}
+  A[Start Analysis] --> B{Sysmon Event ID 1 Present?}
 
-  B -->|Yes| C[Sysmon ID 1で骨格固定]
-  B -->|No| C2[Sysmon欠落を想定]
+  B -->|Yes| C[Anchor Execution Chain with Sysmon ID 1]
+  B -->|No| C2[Assume Sysmon Missing]
 
-  C --> D[Prefetch確認]
+  C --> D[Check Prefetch]
   C2 --> D
 
-  D --> E{Prefetch pf存在}
-  E -->|Yes| F[実行確定]
-  E -->|No| F2[Prefetch不在の可能性]
+  D --> E{Prefetch File Exists?}
+  E -->|Yes| F[Execution Confirmed]
+  E -->|No| F2[Prefetch May Be Absent]
 
-  F --> G[ShimCache確認]
+  F --> G[Check ShimCache]
   F2 --> G
 
-  G --> H[Amcache確認]
+  G --> H[Check Amcache]
 
-  H --> I{追加ログで拡張可能}
-  I -->|Yes| J[PowerShell Task WMI 4688 連携]
-  I -->|No| K[アーティファクト交差で最小復元]
+  H --> I{Can We Expand with Additional Logs?}
+  I -->|Yes| J[Correlate PowerShell, Task, WMI, 4688]
+  I -->|No| K[Minimum Reconstruction via Artifacts]
 
-  J --> L[持続性点検]
+  J --> L[Check Persistence]
   K --> L
 
-  L --> M[タイムライン整理]
-  M --> N[レポート作成\nチェーン 時間 パス 同一性]
+  L --> M[Build Timeline]
+  M --> N[Write Report
+Chain Time Path Identity]
 ```
 
 ---
 
-## 2) 1番(Sysmon Event ID 1)から見る理由: 「実行チェーンの背骨」を先に立てる
+## 2) Why Start with Sysmon Event ID 1: Establish the “Spine” of the Execution Chain
 
-Sysmon **Event ID 1**(Process Create) は文字通り  
-「**プロセスが生成(実行)された瞬間**」を記録します。
+Sysmon **Event ID 1 (Process Create)** literally records  
+the moment **a process is created (executed)**.
 
-ここで重要なのは、Sysmonがあれば **実行チェーンを『勘』ではなく『根拠』で** 束ねられる点です。
+The key point is that if Sysmon exists, you can build the execution chain based on **evidence rather than intuition**.
 
-### ✅ Sysmon ID 1で特に重要なフィールド
+### ✅ Critical Fields in Sysmon Event ID 1
 
-* **ParentImage**: 「誰がこれを実行したのか？」
-* **Image**: 「何が実行されたのか(正確なパス)？」
-* **CommandLine**: 「どんな引数で実行されたのか？」 (LOLBASではほぼ核心)
-* **Hashes**: 「このファイルが本当にそのファイルか？」 (同一性確定)
-* **Time**: タイムラインの基準点
+* **ParentImage**: “Who launched this process?”
+* **Image**: “What exactly was executed (full path)?”
+* **CommandLine**: “With what arguments?” (often critical for LOLBAS)
+* **Hashes**: “Is this truly that file?” (identity verification)
+* **Time**: The anchor point of the timeline
 
-📌 一行要約
+📌 One‑line summary
 
-> **Sysmon 1番は“チェーン”を作り、  
-> Prefetch/ShimCache/Amcacheはそのチェーンを“揺るがないよう固定する”。**
-
----
-
-## 3) 2番(Prefetch)を組み合わせる理由: 「実行された」を最も直感的に裏付ける
-
-Prefetchは元々 **実行速度最適化** 機能ですが、フォレンジックでは単純です。
-
-> `.pf` が残っていれば、**そのプログラムは実行された可能性が非常に高い** です。
-
-### ✅ Prefetchが与える実務的証拠3種
-
-* **実行時間(Last Run Time)**: 「いつ実行されたのか？」
-* **実行回数(Run Count)**: 「何回実行されたのか？」
-* **参照痕跡(ロード/アクセスファイルパス)**: 「実行中に何に触れたか？」
-
-### ❗ Prefetch単独で終えると惜しい理由
-
-Prefetchは「実行」には強いですが、
-
-* 「誰が実行したか(親プロセス)」
-* 「正確なコマンドライン」  
-  を **完全に復元するのは難しい** です。
-
-そのため **Sysmon(親/コマンド) ↔ Prefetch(実行裏付け/時間/回数)** の組み合わせが最も安定します。
+> **Sysmon ID 1 builds the chain.  
+> Prefetch, ShimCache, and Amcache make that chain stable.**
 
 ---
 
-## 4) 3番(ShimCache)を見る理由: 「そのファイルがそのパスに存在したのは確実」で固定
+## 3) Why Add Prefetch: The Most Intuitive Proof of Execution
 
-攻撃者はよく次のようなことを行います。
+Prefetch was originally designed for **performance optimization**,  
+but in forensics, it becomes very simple:
 
-* 実行後 **self-delete**
-* ファイル移動/名前変更
-* 痕跡削除の試み
+> If a `.pf` file exists, **there is a very high probability that the program was executed.**
 
-このときShimCache(AppCompatCache)は「実行の有無」よりも先に、  
-✅ 「**そのファイルがシステムに存在していた**(パス含む)」ことを固定するのに強いです。
+### ✅ Three Practical Artifacts from Prefetch
 
-### ❌ ShimCacheでよくある誤解(重要)
+* **Last Run Time**: When was it executed?
+* **Run Count**: How many times was it executed?
+* **Referenced Files**: What files were accessed during execution?
 
-* ShimCacheのタイムスタンプは通常 **『実行時刻』ではない可能性があります。**  
-  (環境によっては「ファイル最終更新時刻の性質」等として解釈するほうが安全な場合が多いです。)
-* したがってShimCacheだけで「この時間に実行された」と断定すると **タイムラインが歪む恐れがあります。**
+### ❗ Why Prefetch Alone Is Not Enough
 
-📌 ShimCacheはこう使うとちょうど良いです
+Prefetch is strong evidence of execution, but weak at telling you:
 
-> **Prefetch/Sysmonで実行を捉え、**  
-> **ShimCacheで存在/パスを釘打ちする。**
+* Who executed it (parent process)
+* The exact command line
 
----
-
-## 5) 4番(Amcache)を最後に付ける理由: 「これがそのファイル」であることを確定する
-
-Amcacheは場合によって **決定打** になります。
-
-* ファイル名が変わっていても
-* パスが移動していても
-* 元ファイルが削除されていても
-
-Amcacheに残る **識別情報**(メタ/ハッシュ等)により  
-✅ 「同一ファイル」かどうかを、より強く主張できます。
-
-### ✅ Amcacheが特に輝く状況
-
-* IOC(ハッシュ)で **同一ファイルか確定** しなければならないとき
-* 正常ファイルに偽装していても、メタ/識別情報で **嘘を崩す** 必要があるとき
-* Prefetchが無い/曖昧なときに **補強根拠** が必要なとき
+That’s why **Sysmon (parent/command line) + Prefetch (execution/time/count)** is the most reliable combination.
 
 ---
 
-## 6) 🔍 一目で比較: Sysmon · Prefetch · ShimCache · Amcache
+## 4) Why Examine ShimCache: Locking in “The File Existed at That Path”
 
-| 区分     | Sysmon (Event ID 1) | Prefetch        | ShimCache       | Amcache          |
-| ------ | ------------------- | --------------- | --------------- | ---------------- |
-| 一行役割 | 実行チェーン「骨格」          | 実行「確証」         | 存在/パス「固定」      | ファイル「正体確定」       |
-| 強み     | 親/子, コマンドライン, ハッシュ    | 実行時間・回数, 参照痕跡 | 削除/移動後もパス痕跡 | メタ/識別情報で同一性    |
-| 弱み     | 無い可能性あり(未導入/保存期間)   | 無い=未実行ではない | 実行時刻と誤解リスク   | 環境/状況で可用性差 |
-| 実務ポジション | 開始点(可能なら最優先)       | 2番手「実行確認」     | 3番手「存在固定」     | 4番手「同一性確定」     |
+Attackers often:
 
----
+* Self-delete after execution
+* Move or rename files
+* Attempt to erase traces
 
-## 7) 実戦シナリオで理解する: 「実行後削除」対応
+ShimCache (AppCompatCache) helps confirm not just execution, but:
 
-### 📌 シナリオ: 攻撃者が `malware.exe` を実行後に削除して逃走
+✅ **“That file existed on the system (including path).”**
 
-1. **Sysmon ID 1** があれば
+### ❌ Common Misconception About ShimCache (Important)
 
-* どの親が実行したか(ParentImage)
-* どんな引数だったか(CommandLine)
-* どのハッシュだったか(Hashes)  
-  まで、骨格をすぐに立てられます。
+ShimCache timestamps are **not always execution times**.  
+In many environments, they are closer to “file last modified” indicators.
 
-2. **Prefetch** で強化
+Therefore, using ShimCache alone to claim “execution at this time” can distort your timeline.
 
-* `MALWARE.EXE-****.pf` が残っていれば「実行」を強く確証
-* 実行時間/回数で **反復実行** の有無まで掴めます。
+📌 Best Practice
 
-3. **ShimCache** で釘打ち
-
-* `C:\Temp\malware.exe` のようなパスが残っていれば  
-  「そのパスに実際に存在した」ことを固定します。
-
-4. **Amcache** で同一性確定
-
-* ファイル名やパスが変わった痕跡があっても  
-  「そのファイルである」ことを識別情報で補強します。
+> Use **Sysmon/Prefetch to prove execution**,  
+> and **ShimCache to prove presence and path**.
 
 ---
 
-## 8) (ログがあれば最強) LOLBAS/持続性まで「チェーン拡張」する
+## 5) Why Use Amcache Last: Confirming “This Is That File”
 
-アーティファクトは強力ですが、**ログはチェーンをより長く、より鮮明に** してくれます。  
-特にLOLBASは **CommandLineと親子関係** が核心なので、ログ連携が非常に効果的です。
+Amcache can sometimes be the **decisive artifact**.
 
-### 8.1 アーティファクトと「すぐ結び付けやすい」ログ5種 (チャンネル基準)
+Even if:
 
-#### 1) Sysmon: Process Create
+* The filename changed
+* The path changed
+* The original file was deleted
 
-* **チャンネル**: `Applications and Services Logs > Microsoft > Windows > Sysmon > Operational`
-* **主要 Event ID**: **1 (Process creation)**
-* **結び付け方**: `Image/CommandLine/Hashes` ↔ Prefetch/ShimCache/Amcache を交差
+Amcache preserves **identifying metadata and hashes**, allowing you to strongly assert:
 
-#### 2) セキュリティログ: プロセス生成(4688)
+✅ “This is the same file.”
 
-* **チャンネル**: `Windows Logs > Security`
-* **主要 Event ID**: **4688**
-* **ポイント**: Sysmonが無いときに最低限の「プロセス生成」根拠を確保  
-  (コマンドラインロギングのポリシー設定有無で品質が左右されます。)
+### When Amcache Is Especially Valuable
 
-#### 3) PowerShell: Script Block Logging(4104)
-
-* **チャンネル**: `Microsoft > Windows > PowerShell > Operational`
-* **主要 Event ID**: **4104**
-* **ポイント**: LOLBAS/ダウンロード/実行パスがスクリプトにそのまま残ることが多く、  
-  → そのパスをShimCache/Amcacheで存在/流入として固定  
-  → 実行ファイルはPrefetchで実行確証
-
-#### 4) TaskScheduler: タスク起点の実行
-
-* **チャンネル**: `Microsoft > Windows > TaskScheduler > Operational`
-* **例 Event ID**: **200/201** など(環境により異なる)
-* **ポイント**: 持続性(スケジュールタスク)として「再実行させるトリガー」を捉えやすい
-
-#### 5) WMI Activity: WMI起点の実行/持続性の手掛かり
-
-* **チャンネル**: `Microsoft > Windows > WMI-Activity > Operational`
-* **代表的な Event ID 群**: **5857~5861** など(環境により異なる)
-* **ポイント**: WMIによる実行/持続性は痕跡が「ログ側」に残りやすく、紐付け価値が高い
+* When confirming file identity via IOC hashes
+* When malware masquerades as a legitimate file
+* When Prefetch is missing or inconclusive
 
 ---
 
-## 9) 最後のパズル: 「誰が再び動かしたのか」 (持続性トリガー)
+## 6) 🔍 At-a-Glance Comparison: Sysmon · Prefetch · ShimCache · Amcache
 
-初回実行ファイルと **再実行(持続性)トリガー** は別であることが多いです。  
-そのため実行チェーンの終点はたいていここに向かいます。
-
-* Scheduled Tasks (schtasks)
-* Services (サービス登録)
-* WMIイベント購読(永続購読)
-
-📌 実務ヒント
-
-> 「初回実行(初期侵入)チェーン」と「再実行(持続性)チェーン」を **分離** して描くと、レポートがはるかに明確になります。
+| Category | Sysmon (Event ID 1) | Prefetch | ShimCache | Amcache |
+|----------|---------------------|----------|-----------|---------|
+| Core Role | Execution chain backbone | Execution confirmation | Presence/path confirmation | File identity confirmation |
+| Strengths | Parent/child, command line, hash | Run time/count, references | Path traces after deletion | Metadata & hash identity |
+| Weaknesses | May not exist | Absence ≠ no execution | Timestamp confusion risk | Availability varies |
+| Practical Use | Starting point | Confirm execution | Confirm presence | Confirm identity |
 
 ---
 
-## 10) Prefetchが無い/弱いとき: 「無い = 実行していない」禁止
+## 7) Practical Scenario: “Executed Then Deleted”
 
-Prefetchが空になり得る理由はかなり多いです。
+### 📌 Scenario: Attacker runs `malware.exe` then deletes it
 
-* ポリシー/環境によりPrefetch無効
-* 保存数制限による上書き
-* 攻撃者による削除
-* サーバ/特殊構成
+1. **Sysmon ID 1** gives you:
+   * Parent process
+   * Command line
+   * File hash
 
-そのためPrefetchが無い場合は、
+2. **Prefetch** confirms execution and frequency.
 
-* ShimCache/Amcacheで存在・正体を補強し
-* (可能なら)イベントログで実行を補強し
-* それでも不足ならMFT/USNのようなファイルシステムレベルへ拡張します。
+3. **ShimCache** confirms that `C:\Temp\malware.exe` existed.
 
----
-
-## 11) レポートにこう書けば揺らぎません (根拠セット)
-
-レポートで最も揺らぐ瞬間はこれです。
-
-* 「実行された気がします」 → 根拠が弱いとすぐ反論される
-* 「悪性です」 → 同一性(ハッシュ/識別)が無いと議論に発展する
-
-そのためレポート文は可能な限り **セット** で書きます。
-
-* **チェーン**: Parent → Child
-* **時間**: 実行時間(ログ/Prefetch)
-* **パス**: Full Path(アーティファクト交差)
-* **同一性**: Hash/識別(可能ならAmcache/Sysmon)
-
-例文(テンプレート)
-
-> (時間) に (親プロセス) が (コマンドライン) で (子プロセス) を実行し、  
-> Prefetchで実行痕跡(回数/時間)が確認され、ShimCacheで当該パスの存在が確認され、  
-> Amcache/Sysmonハッシュで同一ファイルであることを交差検証した。  
+4. **Amcache** confirms it is the same file even if renamed.
 
 ---
 
-## 12) 現場でそのまま使えるチェックリスト (10問10答)
+## 8) Expanding the Chain with Logs: LOLBAS & Persistence
 
-1️⃣ **今つかんだ手掛かりは「実行(ログ)」か「ファイル(アーティファクト)」か？**  
-→ 分析の開始点を正確に定義してこそ、調査工程の無駄を最小化できます。  
-→ ログならSysmonから、ファイルならPrefetch/ShimCacheから。
+Artifacts are powerful, but logs make the execution chain **longer and clearer**.
 
-2️⃣ **誰が実行したか(親プロセス)?**   
-→ Sysmon ID 1 の `ParentImage`  
+### Logs That Pair Well with Artifacts
 
-3️⃣ **何が実行されたか(正確なパス)?**   
-→ Sysmon `Image` ↔ Prefetch/ShimCache パス交差  
+1) Sysmon Process Create (ID 1)  
+2) Security Event 4688  
+3) PowerShell Script Block Logging (4104)  
+4) Task Scheduler logs  
+5) WMI Activity logs  
 
-4️⃣ **本当に実行されたか(ログが不完全でも)?**   
-→ Prefetch `.pf` の存在で実行根拠を強化  
-
-5️⃣ **いつ実行されたか?**   
-→ Prefetch実行時刻 + Sysmonイベント時刻でタイムライン固定  
-
-6️⃣ **何回実行されたか(反復/持続の有無)?**   
-→ Prefetch `Run Count`  
-
-7️⃣ **そのファイルがシステムに「存在した」ことは確実か?**   
-→ ShimCacheで存在/パス固定  
-
-8️⃣ **このファイル、名前だけ変えたのでは？ 同一ファイルか?**   
-→ Amcache(識別/ハッシュ)で同一性確定  
-
-9️⃣ **LOLBAS/スクリプト回避実行の痕跡は?**   
-→ Sysmon CommandLine + PowerShell(4104)/Task/WMIログ連携  
-
-🔟 **レポートで揺らがない根拠セットは?**   
-→ チェーン(親→子) + 時間 + パス + 同一性(ハッシュ)
+These help connect LOLBAS techniques and persistence mechanisms.
 
 ---
 
-## 参考リンク
+## 9) The Final Puzzle: “Who Brought It Back?” (Persistence)
+
+Initial execution and re-execution triggers are often different.
+
+Common persistence mechanisms:
+
+* Scheduled Tasks  
+* Services  
+* WMI Event Subscriptions  
+
+📌 Tip: Separate the **initial execution chain** from the **persistence chain** in your report.
+
+---
+
+## 10) When Prefetch Is Missing
+
+Prefetch absence does **not** mean no execution. Reasons include:
+
+* Prefetch disabled
+* Overwritten
+* Deleted by attacker
+* Server environments
+
+Then rely on ShimCache, Amcache, and logs instead.
+
+---
+
+## 11) How to Write an Unshakeable Report
+
+Strong forensic reporting requires a **set of evidence**:
+
+* **Chain**: Parent → Child
+* **Time**: Log/Prefetch timestamps
+* **Path**: Full path from artifacts
+* **Identity**: Hash/metadata
+
+Example statement:
+
+> At (time), (parent process) executed (child process) with (command line).  
+> Execution is confirmed by Prefetch, presence by ShimCache,  
+> and identity by Amcache/Sysmon hashes.
+
+---
+
+## 12) Field Checklist (10 Questions)
+
+1️⃣ Is this evidence of execution or file presence?  
+2️⃣ Who executed it?  
+3️⃣ What path was executed?  
+4️⃣ Was it truly executed?  
+5️⃣ When was it executed?  
+6️⃣ How many times?  
+7️⃣ Did the file exist on the system?  
+8️⃣ Is it truly the same file?  
+9️⃣ Any LOLBAS/script-based execution?  
+🔟 Do we have chain + time + path + identity?
+
+---
+
+## References
 - [Sysmon - Sysinternals (Microsoft Learn)](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) 
 - [4688(S) A new process has been created (Microsoft Learn)](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688)
 - [Command line process auditing (Microsoft Learn)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing)
