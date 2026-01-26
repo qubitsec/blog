@@ -2,143 +2,140 @@
 date: 2026-01-24T09:00:00
 draft: false
 title: "Sysmon → Prefetch → ShimCache → Amcache: Practical Guide to Reconstructing Execution Chains (Including LOLBAS Log Correlation)"
-description: "Starting from Sysmon Event ID 1, this guide walks through cross‑referencing Prefetch, ShimCache, and Amcache to move from simply determining execution to reconstructing the full Execution Chain. (Includes LOLBAS log correlation)"
+description: "Starting from Sysmon Event ID 1, this guide cross-references Prefetch, ShimCache, and Amcache to move from ‘whether execution occurred’ to restoring the full ‘Execution Chain.’ (Includes LOLBAS log correlation)"
 featured_image: "cdn/tech/shimcache_prefetch_comparison.png"
-tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windows Event Log", "LOLBAS", "Incident Response", "Execution Chain", "Persistence"]
+tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windows Event Log", "LOLBAS", "Incident Analysis", "Execution Chain", "Persistence"]
 ---
 
 📌 **This article has one goal.**  
 We don’t stop at “Was the malicious file executed?” — we go one step further:  
 ✅ **“Who (parent) → executed what (child) → with which arguments (CommandLine) → when → and what happened next?”**  
-In other words, we focus on restoring the **Execution Chain** in a way that stands firm in a forensic report.
+In other words, we aim to restore the **Execution Chain** in a way that stands firm in a forensic report.
 
 ---
 
 ## 0) Why is this order the most intuitive?
 
-Incident investigations often start like this:
+Incident analysis usually starts like this.
 
-- “We think something suspicious was executed…”
-- “This file looks malicious — was it actually run?”
+- “There seems to have been some suspicious execution…”  
+- “This file looks malicious — was it actually executed?”  
 - “There’s no EDR, or the logs are incomplete…”
 
-In these situations, there is an **order that minimizes confusion**:
+In these situations, there is an **order that minimizes confusion**.
 
 1) **Sysmon Event ID 1**: The backbone of the execution chain (parent–child–command line–hash)  
 2) **Prefetch**: The most intuitive confirmation that execution truly occurred  
 3) **ShimCache**: Even if execution is unclear, confirms “that file existed at that path”  
 4) **Amcache**: Even if the filename changes, confirms “this is the same file” (via metadata/hash)  
-5) (If available) **PowerShell / Task / WMI logs** to connect LOLBAS activity and persistence  
+5) (If available) **PowerShell/Task/WMI logs** to connect LOLBAS activity and persistence  
 6) Finally, the **report**: Present time, path, identity, and chain evidence together
 
 ---
 
-## 1) Execution Chain Reconstruction Flow (From Sysmon ID 1 to the Final Report)
+## 1) Execution Chain Reconstruction Flow (From Sysmon ID 1 to the Report)
 
-We’ll explain the full path from **Sysmon Event ID 1 → Report** in one continuous flow.
+We’ll explain the full path from **Sysmon Event ID 1 → report** in one continuous flow.
 
 ```mermaid
 flowchart TD
-  A[Start Analysis] --> B{Sysmon Event ID 1 Present?}
+  A[Start Analysis] --> B{Sysmon Event ID 1 log present}
 
-  B -->|Yes| C[Anchor Execution Chain with Sysmon ID 1]
-  B -->|No| C2[Assume Sysmon Missing]
+  B -->|Yes| C[Anchor backbone with Sysmon ID 1]
+  B -->|No| C2[Assume Sysmon missing]
 
   C --> D[Check Prefetch]
   C2 --> D
 
-  D --> E{Prefetch File Exists?}
-  E -->|Yes| F[Execution Confirmed]
-  E -->|No| F2[Prefetch May Be Absent]
+  D --> E{Prefetch pf exists}
+  E -->|Yes| F[Execution confirmed]
+  E -->|No| F2[Prefetch may be absent]
 
   F --> G[Check ShimCache]
   F2 --> G
 
   G --> H[Check Amcache]
 
-  H --> I{Can We Expand with Additional Logs?}
-  I -->|Yes| J[Correlate PowerShell, Task, WMI, 4688]
-  I -->|No| K[Minimum Reconstruction via Artifacts]
+  H --> I{Can expand with additional logs}
+  I -->|Yes| J[Correlate PowerShell Task WMI 4688]
+  I -->|No| K[Minimum reconstruction via artifact cross-reference]
 
-  J --> L[Check Persistence]
+  J --> L[Check persistence]
   K --> L
 
-  L --> M[Build Timeline]
-  M --> N[Write Report
-Chain Time Path Identity]
+  L --> M[Organize timeline]
+  M --> N[Write report\nChain Time Path Identity]
 ```
 
 ---
 
-## 2) Why Start with Sysmon Event ID 1: Establish the “Spine” of the Execution Chain
+## 2) Why Start with Sysmon Event ID 1: Build the “Spine” of the Execution Chain First
 
-Sysmon **Event ID 1 (Process Create)** literally records  
+Sysmon **Event ID 1** (Process Create) literally records  
 the moment **a process is created (executed)**.
 
 The key point is that if Sysmon exists, you can build the execution chain based on **evidence rather than intuition**.
 
-### ✅ Critical Fields in Sysmon Event ID 1
+### ✅ Especially Important Fields in Sysmon Event ID 1
 
-* **ParentImage**: “Who launched this process?”
-* **Image**: “What exactly was executed (full path)?”
-* **CommandLine**: “With what arguments?” (often critical for LOLBAS)
-* **Hashes**: “Is this truly that file?” (identity verification)
-* **Time**: The anchor point of the timeline
+* **ParentImage**: “Who launched this?”  
+* **Image**: “What was executed (exact path)?”  
+* **CommandLine**: “With what arguments?” (critical for LOLBAS)  
+* **Hashes**: “Is this really that file?” (identity confirmation)  
+* **Time**: Anchor point of the timeline  
 
-📌 One‑line summary
+📌 One-line summary
 
-> **Sysmon ID 1 builds the chain.  
-> Prefetch, ShimCache, and Amcache make that chain stable.**
+> **Sysmon Event 1 builds the chain,  
+> Prefetch/ShimCache/Amcache make that chain stable.**
 
 ---
 
-## 3) Why Add Prefetch: The Most Intuitive Proof of Execution
+## 3) Why Add Prefetch: The Most Intuitive Confirmation of Execution
 
-Prefetch was originally designed for **performance optimization**,  
-but in forensics, it becomes very simple:
+Prefetch was originally a **performance optimization** feature, but in forensics it’s simple:
 
-> If a `.pf` file exists, **there is a very high probability that the program was executed.**
+> If a `.pf` file remains, **there is a very high probability that the program was executed.**
 
-### ✅ Three Practical Artifacts from Prefetch
+### ✅ Three Practical Pieces of Evidence from Prefetch
 
-* **Last Run Time**: When was it executed?
-* **Run Count**: How many times was it executed?
-* **Referenced Files**: What files were accessed during execution?
+* **Last Run Time**: When was it executed?  
+* **Run Count**: How many times was it executed?  
+* **Referenced Traces**: What files were touched during execution?  
 
 ### ❗ Why Prefetch Alone Is Not Enough
 
-Prefetch is strong evidence of execution, but weak at telling you:
+Prefetch is strong for “execution,” but weak at telling you:
 
-* Who executed it (parent process)
-* The exact command line
+* Who executed it (parent process)  
+* The exact command line  
 
-That’s why **Sysmon (parent/command line) + Prefetch (execution/time/count)** is the most reliable combination.
+That’s why **Sysmon (parent/command) ↔ Prefetch (execution proof/time/count)** is the most reliable combination.
 
 ---
 
-## 4) Why Examine ShimCache: Locking in “The File Existed at That Path”
+## 4) Why Examine ShimCache: Locking in “That File Existed at That Path”
 
-Attackers often:
+Attackers often do things like:
 
-* Self-delete after execution
-* Move or rename files
-* Attempt to erase traces
+* Self-delete after execution  
+* Move or rename files  
+* Attempt to remove traces  
 
-ShimCache (AppCompatCache) helps confirm not just execution, but:
+ShimCache (AppCompatCache) is strong at confirming, even before execution:
 
-✅ **“That file existed on the system (including path).”**
+✅ “**That file existed on the system (including path).**”
 
 ### ❌ Common Misconception About ShimCache (Important)
 
-ShimCache timestamps are **not always execution times**.  
-In many environments, they are closer to “file last modified” indicators.
+* ShimCache timestamps are often **not actual execution times.**  
+  (Depending on the environment, they may reflect file last-modified characteristics.)
+* Therefore, concluding “it was executed at this time” using ShimCache alone can **distort the timeline.**
 
-Therefore, using ShimCache alone to claim “execution at this time” can distort your timeline.
+📌 Best Way to Use ShimCache
 
-📌 Best Practice
-
-> Use **Sysmon/Prefetch to prove execution**,  
-> and **ShimCache to prove presence and path**.
+> **Use Prefetch/Sysmon to prove execution**,  
+> **Use ShimCache to lock in existence and path.**
 
 ---
 
@@ -148,126 +145,190 @@ Amcache can sometimes be the **decisive artifact**.
 
 Even if:
 
-* The filename changed
-* The path changed
-* The original file was deleted
+* The filename changed  
+* The path moved  
+* The original file was deleted  
 
-Amcache preserves **identifying metadata and hashes**, allowing you to strongly assert:
+The **identifying information** (metadata/hash) left in Amcache  
+allows you to strongly assert:
 
 ✅ “This is the same file.”
 
-### When Amcache Is Especially Valuable
+### ✅ When Amcache Is Especially Valuable
 
-* When confirming file identity via IOC hashes
-* When malware masquerades as a legitimate file
-* When Prefetch is missing or inconclusive
+* When confirming file identity via IOC hashes  
+* When malware disguises itself as a legitimate file  
+* When Prefetch is missing or inconclusive and **supporting evidence** is needed  
 
 ---
 
 ## 6) 🔍 At-a-Glance Comparison: Sysmon · Prefetch · ShimCache · Amcache
 
-| Category | Sysmon (Event ID 1) | Prefetch | ShimCache | Amcache |
-|----------|---------------------|----------|-----------|---------|
-| Core Role | Execution chain backbone | Execution confirmation | Presence/path confirmation | File identity confirmation |
-| Strengths | Parent/child, command line, hash | Run time/count, references | Path traces after deletion | Metadata & hash identity |
-| Weaknesses | May not exist | Absence ≠ no execution | Timestamp confusion risk | Availability varies |
-| Practical Use | Starting point | Confirm execution | Confirm presence | Confirm identity |
+| Category | Sysmon (Event ID 1) | Prefetch        | ShimCache       | Amcache          |
+| -------- | ------------------- | --------------- | --------------- | ---------------- |
+| One-line role | Execution chain “backbone” | Execution “confirmation” | Presence/path “fixation” | File “identity confirmation” |
+| Strengths | Parent/child, command line, hash | Run time/count, referenced traces | Path traces even after deletion/move | Identity via metadata/hash |
+| Weaknesses | May not exist (not installed/retention limits) | Absence ≠ no execution | Risk of misinterpreting execution time | Availability varies by environment |
+| Practical position | Starting point (1st priority if possible) | 2nd “execution confirmation” | 3rd “presence fixation” | 4th “identity confirmation” |
 
 ---
 
-## 7) Practical Scenario: “Executed Then Deleted”
+## 7) Understanding Through a Real-World Scenario: “Executed Then Deleted”
 
-### 📌 Scenario: Attacker runs `malware.exe` then deletes it
+### 📌 Scenario: Attacker runs `malware.exe`, then deletes it and escapes
 
-1. **Sysmon ID 1** gives you:
-   * Parent process
-   * Command line
-   * File hash
+1. If **Sysmon ID 1** exists:
 
-2. **Prefetch** confirms execution and frequency.
+* Which parent executed it (ParentImage)  
+* What arguments were used (CommandLine)  
+* What hash it had (Hashes)  
+  → You immediately establish the backbone.
 
-3. **ShimCache** confirms that `C:\Temp\malware.exe` existed.
+2. Strengthen with **Prefetch**
 
-4. **Amcache** confirms it is the same file even if renamed.
+* If `MALWARE.EXE-****.pf` remains, execution is strongly confirmed  
+* Execution time/count helps detect **repeated execution**
 
----
+3. Nail it down with **ShimCache**
 
-## 8) Expanding the Chain with Logs: LOLBAS & Persistence
+* If a path like `C:\Temp\malware.exe` remains,  
+  you confirm “it actually existed at that path.”
 
-Artifacts are powerful, but logs make the execution chain **longer and clearer**.
+4. Confirm identity with **Amcache**
 
-### Logs That Pair Well with Artifacts
-
-1) Sysmon Process Create (ID 1)  
-2) Security Event 4688  
-3) PowerShell Script Block Logging (4104)  
-4) Task Scheduler logs  
-5) WMI Activity logs  
-
-These help connect LOLBAS techniques and persistence mechanisms.
+* Even if filename/path changed,  
+  identifying data reinforces “it is the same file.”
 
 ---
 
-## 9) The Final Puzzle: “Who Brought It Back?” (Persistence)
+## 8) (If Logs Exist, Even Stronger) Expanding the Chain to LOLBAS and Persistence
 
-Initial execution and re-execution triggers are often different.
+Artifacts are powerful, but **logs make the chain longer and clearer**.  
+Especially for LOLBAS, where **CommandLine and parent-child relationships** are key, log correlation is highly effective.
 
-Common persistence mechanisms:
+### 8.1 Five Logs That Pair Well with Artifacts (by Channel)
 
-* Scheduled Tasks  
+#### 1) Sysmon: Process Create
+* **Channel**: `Applications and Services Logs > Microsoft > Windows > Sysmon > Operational`
+* **Key Event ID**: **1 (Process creation)**
+* **How to link**: Cross-reference `Image/CommandLine/Hashes` with Prefetch/ShimCache/Amcache
+
+#### 2) Security Log: Process Creation (4688)
+* **Channel**: `Windows Logs > Security`
+* **Key Event ID**: **4688**
+* **Point**: Minimum process creation evidence when Sysmon is absent  
+  (Command-line logging policy affects quality)
+
+#### 3) PowerShell: Script Block Logging (4104)
+* **Channel**: `Microsoft > Windows > PowerShell > Operational`
+* **Key Event ID**: **4104**
+* **Point**: LOLBAS/download/execution paths often remain in scripts  
+  → Fix presence via ShimCache/Amcache  
+  → Confirm execution via Prefetch
+
+#### 4) TaskScheduler: Task-based Execution
+* **Channel**: `Microsoft > Windows > TaskScheduler > Operational`
+* **Example Event IDs**: **200/201** (varies by environment)
+* **Point**: Good for catching persistence triggers via scheduled tasks
+
+#### 5) WMI Activity: WMI-based Execution/Persistence Clues
+* **Channel**: `Microsoft > Windows > WMI-Activity > Operational`
+* **Typical Event ID Range**: **5857–5861** (varies by environment)
+* **Point**: WMI execution/persistence often leaves traces in logs
+
+---
+
+## 9) Final Puzzle: “Who Brought It Back?” (Persistence Triggers)
+
+The initial execution file and the **re-execution (persistence) trigger** are often different.  
+So the execution chain usually ends here:
+
+* Scheduled Tasks (schtasks)  
 * Services  
 * WMI Event Subscriptions  
 
-📌 Tip: Separate the **initial execution chain** from the **persistence chain** in your report.
+📌 Practical Tip
+
+> Separate the **initial execution (initial compromise) chain** and the **re-execution (persistence) chain** in your report for clarity.
 
 ---
 
-## 10) When Prefetch Is Missing
+## 10) When Prefetch Is Missing or Weak: “Absent ≠ Not Executed”
 
-Prefetch absence does **not** mean no execution. Reasons include:
+There are many reasons Prefetch may be empty:
 
-* Prefetch disabled
-* Overwritten
-* Deleted by attacker
-* Server environments
+* Disabled by policy/environment  
+* Overwritten due to storage limits  
+* Deleted by attacker  
+* Server/special configurations  
 
-Then rely on ShimCache, Amcache, and logs instead.
+If Prefetch is missing:
 
----
-
-## 11) How to Write an Unshakeable Report
-
-Strong forensic reporting requires a **set of evidence**:
-
-* **Chain**: Parent → Child
-* **Time**: Log/Prefetch timestamps
-* **Path**: Full path from artifacts
-* **Identity**: Hash/metadata
-
-Example statement:
-
-> At (time), (parent process) executed (child process) with (command line).  
-> Execution is confirmed by Prefetch, presence by ShimCache,  
-> and identity by Amcache/Sysmon hashes.
+* Reinforce presence/identity with ShimCache/Amcache  
+* Reinforce execution with event logs (if possible)  
+* If still insufficient, expand to file system artifacts like MFT/USN  
 
 ---
 
-## 12) Field Checklist (10 Questions)
+## 11) How to Write It in a Report So It Doesn’t Get Challenged (Evidence Set)
 
-1️⃣ Is this evidence of execution or file presence?  
-2️⃣ Who executed it?  
-3️⃣ What path was executed?  
-4️⃣ Was it truly executed?  
-5️⃣ When was it executed?  
-6️⃣ How many times?  
-7️⃣ Did the file exist on the system?  
-8️⃣ Is it truly the same file?  
-9️⃣ Any LOLBAS/script-based execution?  
-🔟 Do we have chain + time + path + identity?
+The most vulnerable moments in a report are:
+
+* “It seems to have executed” → Easily challenged if evidence is weak  
+* “It is malicious” → Becomes a debate if identity (hash/identifier) isn’t proven  
+
+So report sentences should be written as a **set**:
+
+* **Chain**: Parent → Child  
+* **Time**: Execution time (log/Prefetch)  
+* **Path**: Full Path (artifact cross-reference)  
+* **Identity**: Hash/identifier (preferably Amcache/Sysmon)
+
+Example sentence (template)
+
+> At (time), (parent process) executed (child process) with (command line),  
+> execution traces (count/time) are confirmed in Prefetch, the path is confirmed in ShimCache,  
+> and file identity is cross-verified using Amcache/Sysmon hashes.
+
+---
+
+## 12) Field Checklist You Can Use Immediately (10 Q&A)
+
+1️⃣ **Is the clue I found “execution (log)” or “file (artifact)”?**  
+→ Define the starting point precisely to minimize wasted investigation effort.  
+→ If log, start with Sysmon; if file, start with Prefetch/ShimCache.
+
+2️⃣ **Who executed it (parent process)?**  
+→ Sysmon ID 1 `ParentImage`
+
+3️⃣ **What was executed (exact path)?**  
+→ Sysmon `Image` ↔ Prefetch/ShimCache path cross-check
+
+4️⃣ **Was it really executed (even if logs are incomplete)?**  
+→ Strengthen execution evidence with Prefetch `.pf`
+
+5️⃣ **When was it executed?**  
+→ Combine Prefetch run time + Sysmon event time
+
+6️⃣ **How many times was it executed (repetition/persistence)?**  
+→ Prefetch `Run Count`
+
+7️⃣ **Are we sure the file “existed” on the system?**  
+→ Confirm presence/path via ShimCache
+
+8️⃣ **Was the file just renamed? Is it truly the same file?**  
+→ Confirm identity via Amcache (metadata/hash)
+
+9️⃣ **Any signs of LOLBAS/script-based execution?**  
+→ Sysmon CommandLine + PowerShell (4104)/Task/WMI log correlation
+
+🔟 **What is the unshakable evidence set for the report?**  
+→ Chain (parent→child) + time + path + identity (hash)
 
 ---
 
 ## References
+
 - [Sysmon - Sysinternals (Microsoft Learn)](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) 
 - [4688(S) A new process has been created (Microsoft Learn)](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4688)
 - [Command line process auditing (Microsoft Learn)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing)
