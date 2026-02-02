@@ -162,6 +162,6 @@ tags: ["정책제안", "사이버안보", "민관협력", "K-방산", "K-시큐�
 
 ---
 
-### 📖 함께 논의하
+### 📖 함께 논의하기
 
 * [국가대표 AI 시대, 국가대표 보안 제품 논의가 필요한 이유](https://blog.plura.io/ko/column/campaign-national-security/)
