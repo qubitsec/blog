@@ -11,6 +11,10 @@ tags: ["정책제안", "사이버안보", "민관협력", "K-방산", "K-시큐�
 
 ### — 국가 사이버 안보를 위한 **민관 원팀(One Team) 정책 전환 제안**
 
+<!--more-->
+
+![One Team](https://blog.plura.io/cdn/policy-proposal-cyber-oneteam.png)
+
 ---
 
 ## 1. 문제 제기: 같은 국가 안보, 다른 정책 논리
