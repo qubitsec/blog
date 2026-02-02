@@ -7,8 +7,6 @@ featured_image: "cdn/column/policy-proposal-cyber-oneteam.png"
 tags: ["정책제안", "사이버안보", "민관협력", "K-방산", "K-시큐리티", "국가안보"]
 ---
 
-# 방산은 되는데, 왜 사이버보안은 안 되는가
-
 ### — 국가 사이버 안보를 위한 **민관 원팀(One Team) 정책 전환 제안**
 
 <!--more-->
