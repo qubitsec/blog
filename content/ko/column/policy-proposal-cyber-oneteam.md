@@ -13,7 +13,7 @@ tags: ["정책제안", "사이버안보", "민관협력", "K-방산", "K-시큐�
 
 <!--more-->
 
-![One Team](https://blog.plura.io/cdn/policy-proposal-cyber-oneteam.png)
+![One Team](https://blog.plura.io/cdn/column/policy-proposal-cyber-oneteam.png)
 
 ---
 
