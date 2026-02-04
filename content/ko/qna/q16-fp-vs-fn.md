@@ -3,7 +3,7 @@ title: "Q16. PLURA-EDR의 오탐(False Positive)과 미탐(False Negative) 비�
 date: 2026-01-13
 draft: false
 description: "PLURA-EDR이 오탐과 미탐을 어떻게 구조적으로 줄이는지, 기존 시그니처·네트워크 기반 보안 대비 정확도가 왜 달라질 수밖에 없는지를 설명합니다."
-featured_image: "cdn/qa/q16.png"
+featured_image: "cdn/qna/q16.png"
 tags: ["PLURA-EDR", "오탐", "미탐", "EDR정확도", "행위기반탐지", "AI보안"]
 ---
 
