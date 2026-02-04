@@ -7,8 +7,6 @@ featured_image: "cdn/qna/q16.png"
 tags: ["PLURA-EDR", "오탐", "미탐", "EDR정확도", "행위기반탐지", "AI보안"]
 ---
 
-### Q16. PLURA-EDR의 오탐(False Positive)과 미탐(False Negative) 비율은 어떻게 되나요? 기존 장비 대비 얼마나 정확한가요?
-
 **A. PLURA-EDR은 ‘비율’을 약속하기보다,  
 오탐과 미탐이 발생하지 않도록 설계된 구조를 제공합니다.**
 
