@@ -134,12 +134,12 @@ Brute Force(브루트포스) 탐지 시스템을 통해,
 
 ## 정리하면
 
-> **개발자 퇴사는 인사 이벤트가 아니라,
+> **개발자 퇴사는 인사 이벤트가 아니라,  
 > 키 유출을 전제로 한 보안 이벤트입니다.**
 
 * 키는 반드시 교체되어야 하고
 * 공격은 이미 시작되었을 수 있으며
-* 그 공격을 멈추는 것은
+* 그 공격을 멈추는 것은  
   **실시간 행위 기반 탐지와 차단**입니다.
 
 [Q20](https://blog.plura.io/ko/qna/q20-hello-coupang/)이  
@@ -151,9 +151,9 @@ Q21은 분명히 말합니다.
 
 ---
 
-## 📚 참고 문서
+## 📚 PLURA 매뉴얼
 
-* PLURA 매뉴얼 – Brute Force 탐지
+* PLURA Brute Force 대응 방법  
   👉 [https://docs.plura.io/ko/v6/fn/comm/sdetection/bruteforce](https://docs.plura.io/ko/v6/fn/comm/sdetection/bruteforce)
 
 ---
