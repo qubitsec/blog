@@ -200,7 +200,7 @@ Brute Force 공격은 충분히 알려진 유형이었습니다.
 
 ## 📚 PLURA 매뉴얼
 
-PLURA Brute Force 대응 방법
+PLURA Brute Force 대응 방법  
 👉 [https://docs.plura.io/ko/v6/fn/comm/sdetection/bruteforce](https://docs.plura.io/ko/v6/fn/comm/sdetection/bruteforce)
 
 ---
