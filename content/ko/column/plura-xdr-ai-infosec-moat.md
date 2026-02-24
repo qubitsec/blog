@@ -205,5 +205,10 @@ AI 시대 사이버 보안의 새로운 이정표를 제시합니다.
 
 ---
 
+### 📰 참고 기사
+- https://zdnet.co.kr/view/?no=20260223094534
+
 ### 📖 함께 읽기
 - PLURA에서 Microsoft Defender Antivirus 로그 확인하기: https://blog.plura.io/ko/respond/plura-microsoft-defender-logs/
+- 국가대표 AI 시대, 국가대표 보안 제품 논의가 필요한 이유: https://blog.plura.io/ko/column/campaign-national-security/
+- 소버린 AI의 시작은 ‘소버린 데이터’다: https://blog.plura.io/ko/column/sovereign-ai/
