@@ -3,7 +3,7 @@ title: "PLURA Is a New Milestone in Cybersecurity in the AI Era"
 date: 2026-02-24
 draft: false
 description: "In the LLM era, it is difficult to build sustainable competitiveness with only wrappers and platforms. As an ‘information (security data) company,’ PLURA presents a new standard for AI-driven cybersecurity built on proprietary data, workflow, and UX."
-featured_image: "cdn/column/plura-xdr-ai-infosec-moat.png"
+featured_image: "cdn/column/plura-xdr-ai-infosec-moat-en.png"
 tags: ["PLURA", "PLURA-XDR", "AI Security", "LLM", "Cybersecurity", "Security Data", "XDR", "SOC", "Threat Hunting"]
 ---
 
