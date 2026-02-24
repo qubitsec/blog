@@ -206,7 +206,7 @@ AI 시대 사이버 보안의 새로운 이정표를 제시합니다.
 ---
 
 ### 📰 참고 기사
-- https://zdnet.co.kr/view/?no=20260223094534
+- "AI 껍데기 장사는 그만"…구글 부사장이 경고한 생존 어려운 두 사업모델: https://zdnet.co.kr/view/?no=20260223094534
 
 ### 📖 함께 읽기
 - [PLURA에서 Microsoft Defender Antivirus 로그 확인하기](https://blog.plura.io/ko/respond/plura-microsoft-defender-logs/)
