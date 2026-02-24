@@ -177,6 +177,8 @@ sequenceDiagram
     SOC->>SOC: 영향 범위·로그 포렌식
 ```
 
+![Odido 데이터 유출 케이스 데이터 흐름](https://blog.plura.io/cdn/threats/case-odido_breach-ko.png)
+
 ---
 
 ## 7. Odido의 공개된 대응(요약)
