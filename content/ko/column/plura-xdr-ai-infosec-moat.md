@@ -3,7 +3,7 @@ title: "PLURA는 AI 시대 사이버 보안의 새로운 이정표입니다"
 date: 2026-02-24
 draft: false
 description: "LLM 시대, 래퍼(Wrapper)와 중개(Platform)만으로는 지속 가능한 경쟁력을 만들기 어렵습니다. PLURA는 ‘정보(보안 데이터) 회사’로서 독점 데이터·워크플로우·UX를 갖춘 AI 정보보안의 새로운 기준을 제시합니다."
-featured_image: "cdn/column/plura-ai-cybersecurity-moat.png"
+featured_image: "cdn/column/plura-xdr-ai-infosec-moat.png"
 tags: ["PLURA", "PLURA-XDR", "AI 보안", "LLM", "사이버 보안", "정보보안 데이터", "XDR", "SOC", "Threat Hunting"]
 ---
 
