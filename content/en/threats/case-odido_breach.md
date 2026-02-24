@@ -235,5 +235,3 @@ the moment when **“the download itself is the web response”** can be detecte
 - NVIDIA Related (Reference): Reuters (2022-03-01) https://www.reuters.com/technology/nvidia-says-employee-company-information-leaked-online-after-cyber-attack-2022-03-01/ / The Verge (2022-03-01) https://www.theverge.com/2022/3/1/22957212/nvidia-confirms-hack-proprietary-information-lapsus
 - Samsung Related (Reference): The Verge (2022-03-07) https://www.theverge.com/2022/3/7/22965220/samsung-hack-lapsus-galaxy-source-code-confirmed-nvidia
 - PLURA-WAF Overview: https://www.plura.io/en/platform_waf.html
-  
-```
