@@ -149,3 +149,94 @@ Odido事案のこの区間は、過去に **Lapsus$**（Microsoft: DEV-0537 → 
 
 ---
 
+## 6. 流出手法の概念図（シナリオ）
+```mermaid
+sequenceDiagram
+    participant Attacker as 攻撃者
+    participant CS as コールセンター職員（被害者）
+    participant IT as （なりすまし）ITサポート
+    participant MFA as MFA／追加承認
+    participant CRM as 顧客連絡先／CRMシステム（SaaS／CRM）
+    participant SOC as セキュリティ／対応チーム
+
+    Note over Attacker, CS: 1) フィッシングで認証情報を窃取
+    Attacker->>CS: フィッシングメール（偽ログインページ）
+    CS->>Attacker: ID／PW入力（窃取）
+
+    Note over Attacker, IT: 2) ITサポートなりすまし電話で承認を誘導
+    Attacker->>CS: 電話（ITサポートなりすまし）「ログイン承認が必要」
+    CS->>MFA: プッシュ／コード承認（追加セキュリティ段階を通過）
+
+    Note over Attacker, CRM: 3) 正常アカウントでCRMに接続後、スクレイピング／ダウンロード
+    Attacker->>CRM: 従業員アカウントでログイン
+    Attacker->>CRM: 大量照会／ダウンロード（スクレイピング／Export）
+    CRM-->>Attacker: 顧客個人情報（大規模）
+
+    Note over SOC: 4) 検知／対応
+    SOC->>CRM: セッション終了／アクセス遮断
+    SOC->>SOC: 影響範囲・ログフォレンジック
+```
+
+![Odido データ流出ケース データフロー](https://blog.plura.io/cdn/threats/case-odido_breach-ja.png)
+
+---
+
+## 7. Odidoの公表された対応（要約）
+- 不正アクセスを終了させ、調査（社内・社外専門家）および関係機関（AP）への通知を実施したと案内しています。
+- 顧客に対しては、フィッシング／詐欺連絡（スミッシング・ボイスフィッシング）への注意を呼びかけました。
+
+---
+
+# PLURAの観点整理
+
+## 8. PLURA-EDRの観点：監査ポリシー基盤の異常兆候検知と流出ファイルの確認
+**PLURA-EDRの監査ポリシーにより異常兆候を検知し、ダウンロードされた顧客情報ファイルを確認できます。**
+
+PLURA-EDRは次のフローを提供します。
+1) **監査ポリシー設定を通じてログを生成**  
+2) **Windowsイベントログ／Linux syslog・auditログを収集**  
+3) 収集したログを **分析して異常兆候を検知**  
+4) 検知ポリシーに基づき **遮断を実行**  
+
+したがって、次のような「証拠ベースの確認」が可能です。
+- 特定のアカウント／端末で **大量Export／ダウンロードが発生した時点** の行為を監査ログで追跡  
+- 端末にダウンロードされた **顧客情報ファイル**（CSV／XLSX／ZIPなど）の生成・移動・圧縮の痕跡をログで確認  
+- 事案対応過程で当該ファイルを **調査対象として確保し内容を確認（フォレンジック証拠）**  
+
+---
+
+## 9. PLURA-XDRの観点：「大規模流出」はなぜ見逃されやすいのか、そしてリアルタイム検知はどう可能か
+**Webアプリケーションファイアウォールのデータ流出検知により、大容量データ流出をリアルタイムで検知できます。**
+
+### 9-1) なぜ見逃されやすいのか
+- **正常アカウント + 正常機能**（照会／Export）は「業務」と誤認されやすい。  
+- ダウンロードがWeb応答（HTTPS）形式であれば、ネットワークのみを監視する体制では「正常トラフィック」に見える可能性があります。
+- ログインイベントとダウンロードイベントが分離されている場合、単一イベントではリスクが過小評価される可能性があります。
+
+### 9-2) PLURA-WAFデータ流出検知で「リアルタイム」に捉える方式
+PLURA-WAF（ドキュメント基準）は次を提示しています。
+- **応答本文（Resp-body）分析基盤のデータ流出検知**
+- **リクエスト／レスポンスボディサイズ基盤の異常検知（Resp-size）**
+- 流出検知時の **即時遮断**
+
+つまり、「CRMから顧客情報が大量に返却される応答」のように、  
+**『ダウンロード自体がWeb応答である瞬間』** をリアルタイムで検知・遮断するアプローチです。
+
+---
+
+## 参考資料（出典）
+- Odido公式案内: https://www.odido.nl/veiligheid-eng
+- Reuters（2026-02-12）: https://www.reuters.com/business/media-telecom/dutch-telecom-odido-hacked-6-million-accounts-affected-2026-02-12/
+- Cybernews: https://cybernews.com/security/odido-hackers-phishing-attack/
+- CPO Magazine: https://www.cpomagazine.com/cyber-security/cyber-attack-on-dutch-telecom-giant-odido-exposes-customer-data-of-6-2-million/
+- SecurityWeek: https://www.securityweek.com/dutch-carrier-odido-discloses-data-breach-impacting-6-million/
+- Microsoft Security Blog（DEV-0537 / Strawberry Tempest）: https://www.microsoft.com/en-us/security/blog/2022/03/22/dev-0537-criminal-actor-targeting-organizations-for-data-exfiltration-and-destruction/
+- CSRB LAPSUS$ Report（2023）: https://www.cisa.gov/sites/default/files/2023-08/CSRB_Lapsus%24_508c.pdf
+- MITRE ATT&CK（LAPSUS$ Group G1004）: https://attack.mitre.org/groups/G1004/
+- MITRE ATT&CK（Valid Accounts T1078）: https://attack.mitre.org/techniques/T1078/
+- NVIDIA関連（参考）: Reuters（2022-03-01） https://www.reuters.com/technology/nvidia-says-employee-company-information-leaked-online-after-cyber-attack-2022-03-01/ / The Verge（2022-03-01） https://www.theverge.com/2022/3/1/22957212/nvidia-confirms-hack-proprietary-information-lapsus
+- Samsung関連（参考）: The Verge（2022-03-07） https://www.theverge.com/2022/3/7/22965220/samsung-hack-lapsus-galaxy-source-code-confirmed-nvidia
+- PLURA-EDR文書: https://docs.plura.io/ja/agents/edr
+- PLURA-WAF紹介: https://www.plura.io/ja/platform_waf.html
+- PLURAデータ流出検知文書: https://docs.plura.io/ja/fn/comm/sdetection/breach
+```
