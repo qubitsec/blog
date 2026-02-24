@@ -18,7 +18,7 @@ tags: ["Odido", "Data Breach", "Phishing", "Social Engineering", "Vishing", "CRM
 
 ---
 
-## 핵심 요약 (가독성용)
+## 핵심 요약
 - **공식 확인(ODIDO):** 고객 연락처 시스템(Customer contact system)에서 개인정보가 유출될 수 있음. ‘Mijn Odido’ 로그인 비밀번호는 포함되지 않음.
 - **보도 정황(Cybernews 등):** 고객센터 직원 대상 피싱 → IT지원 사칭 전화로 승인 유도 → CRM(일부 매체는 Salesforce 언급) 접근 → 대량 다운로드.
 - **왜 커 보이는데 늦게 알아차리나:** 정상 계정(Valid Accounts)로 “정상 기능(조회/Export)”을 수행하면, 로그가 **업무 행위처럼 보일 수 있음**.
