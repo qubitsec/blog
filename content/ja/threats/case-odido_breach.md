@@ -239,4 +239,3 @@ PLURA-WAF（ドキュメント基準）は次を提示しています。
 - PLURA-EDR文書: https://docs.plura.io/ja/agents/edr
 - PLURA-WAF紹介: https://www.plura.io/ja/platform_waf.html
 - PLURAデータ流出検知文書: https://docs.plura.io/ja/fn/comm/sdetection/breach
-```
