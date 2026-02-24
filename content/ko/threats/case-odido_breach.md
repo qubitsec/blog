@@ -77,7 +77,7 @@ tags: ["Odido", "Data Breach", "Phishing", "Social Engineering", "Vishing", "CRM
   - 접근 자체가 “정상 사용자 활동” 형태로 기록될 수 있고,
   - 조회/Export/다운로드가 “고객 응대 업무”처럼 보일 수 있습니다.
 
-MITRE ATT&CK에서도 이를 **Valid Accounts**(T1078)로 정리합니다.  
+**MITRE ATT&CK**에서도 이를 **Valid Accounts**(T1078)로 정리합니다.  
 즉, “해킹은 로그인 순간에 끝났고”, 이후는 “권한으로 실행되는 데이터 접근”이 되는 구조입니다.
 
 ---
