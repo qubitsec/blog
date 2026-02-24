@@ -2,7 +2,7 @@
 date: 2026-02-24
 description: LLM時代に急増した製品は大きく（1）LLMラッパーと（2）AI仲介・プラットフォームに分かれますが、いずれも構造的な限界を持ちます。PLURAは「情報（セキュリティデータ）会社」として、独自データ・ワークフロー・UXを備えたAI情報セキュリティの新基準を提示します。
 draft: false
-featured_image: cdn/column/plura-xdr-ai-infosec-moat.png
+featured_image: cdn/column/plura-xdr-ai-infosec-moat-ja.png
 tags:  ["PLURA", "PLURA-XDR", "AIセキュリティ", "LLM", "サイバーセキュリティ", "情報セキュリティデータ", "XDR", "SOC", "Threat Hunting"]
 title: PLURAはAI時代のサイバーセキュリティにおける新たなマイルストーンです
 ---
