@@ -237,5 +237,5 @@ PLURA-WAF(문서 기준)는 다음을 제시합니다.
 - NVIDIA 관련(참고): Reuters(2022-03-01) https://www.reuters.com/technology/nvidia-says-employee-company-information-leaked-online-after-cyber-attack-2022-03-01/ / The Verge(2022-03-01) https://www.theverge.com/2022/3/1/22957212/nvidia-confirms-hack-proprietary-information-lapsus
 - Samsung 관련(참고): The Verge(2022-03-07) https://www.theverge.com/2022/3/7/22965220/samsung-hack-lapsus-galaxy-source-code-confirmed-nvidia
 - PLURA-EDR 문서: https://docs.plura.io/ko/agents/edr
-- PLURA-WAF 소개: https://www.plura.io/en/platform_waf.html
+- PLURA-WAF 소개: https://www.plura.io/ko/platform_waf.html
 - PLURA 데이터 유출 탐지 문서: https://docs.plura.io/ko/fn/comm/sdetection/breach
