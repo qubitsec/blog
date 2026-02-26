@@ -7,7 +7,7 @@ featured_image: "cdn/qna/q22.png"
 tags: ["SASE", "ZTNA", "ZeroTrust", "TLS", "가시성", "XDR", "PLURA-XDR"]
 ---
 
-**A. ‘통합’은 맞지만, ‘통합 보안의 완성’은 아닙니다.  
+**A. SASE는 통합 보안이 아닙니다.  
 SASE는 접근 경로(Edge)를 통합한 것이지,  
 침해 행위(Host/App)를 끝까지 관찰·대응하는 플랫폼이 아닙니다.**
 
