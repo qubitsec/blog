@@ -11,6 +11,10 @@ tags: ["SASE", "ZTNA", "ZeroTrust", "TLS", "가시성", "XDR", "PLURA-XDR"]
 SASE는 접근 경로(Edge)를 통합한 것이지,  
 침해 행위(Host/App)를 끝까지 관찰·대응하는 플랫폼이 아닙니다.**
 
+> ※ SASE(Secure Access Service Edge)는  
+> 네트워크(SD-WAN)와 보안 기능(SWG, CASB, FWaaS, ZTNA 등)을  
+> 클라우드 기반으로 통합 제공하는 아키텍처를 의미합니다.
+
 ---
 
 ### 1️⃣ “SASE 기반 통합 보안 플랫폼”이라는 표현이 만들어내는 착시
