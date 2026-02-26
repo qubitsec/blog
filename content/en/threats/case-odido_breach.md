@@ -212,7 +212,7 @@ Therefore, the following “evidence-based verification” is possible:
 - If login events and download events are separated, risk may be underestimated when evaluating single events.
 
 ### 9-2) Real-Time Detection with PLURA-WAF Data Exfiltration Detection
-PLURA-WAF (according to documentation) provides:
+PLURA-WAF provides:
 - **Data exfiltration detection based on response body (Resp-body) analysis**
 - **Anomaly detection based on request/response body size (Resp-size)**
 - **Immediate blocking upon detection of exfiltration**
