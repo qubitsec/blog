@@ -65,3 +65,7 @@ flowchart LR
 > 📚 **방화벽(Firewall)에 대한 올바른 이해**  
 > https://blog.plura.io/ko/column/understanding_firewall/
 
+> 📚 ‘웹서버인 줄 모르는’ 보안·인프라 장비들    
+> https://blog.plura.io/ko/column/hidden_web_surfaces/
+
+
