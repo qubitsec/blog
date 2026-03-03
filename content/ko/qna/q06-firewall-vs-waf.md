@@ -48,7 +48,7 @@ tags: ["방화벽", "웹방화벽", "WAF", "네트워크보안", "웹보안"]
 flowchart LR
     USER["👤 WEB 사용자"]
     FW["🧱 방화벽<br/>(IP·Port 제어)"]
-    WAF["🛡️ 웹방화벽<br/>(웹 패킷 분석)"]
+    WAF["🔍 웹방화벽<br/>(웹 패킷 분석)"]
     WEB["🖥️ 웹 서버"]
 
     USER --> FW --> WAF --> WEB
