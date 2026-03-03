@@ -70,3 +70,7 @@ flowchart LR
 
 > 📚 웹방화벽 우회 공격에 대응하기    
 > https://blog.plura.io/ko/column/waf_dev_exception/
+
+> 📚 웹방화벽(WAF)에 대한 이해    
+> https://blog.plura.io/ko/column/onpremise_inline_waf/
+
