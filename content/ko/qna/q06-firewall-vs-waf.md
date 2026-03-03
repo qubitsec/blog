@@ -68,4 +68,5 @@ flowchart LR
 > 📚 ‘웹서버인 줄 모르는’ 보안·인프라 장비들    
 > https://blog.plura.io/ko/column/hidden_web_surfaces/
 
-
+> 📚 웹방화벽 우회 공격에 대응하기    
+> https://blog.plura.io/ko/column/waf_dev_exception/
