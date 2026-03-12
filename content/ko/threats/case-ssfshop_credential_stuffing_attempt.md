@@ -1,7 +1,7 @@
 ---
 title: "삼성물산 SSF샵 크리덴셜 스터핑 공격 시도 사례"
 date: 2026-03-12
-draft: false
+draft: true
 description: "2026년 3월 삼성물산 패션부문 온라인숍 SSF샵에서 탐지된 크리덴셜 스터핑 공격 시도와 선제 대응 조치를 정리합니다."
 featured_image: "cdn/threats/case-ssfshop_credential_stuffing_attempt.png"
 tags: ["삼성물산", "SSF샵", "Credential Stuffing", "계정탈취", "보안 사고", "온라인 쇼핑몰"]
