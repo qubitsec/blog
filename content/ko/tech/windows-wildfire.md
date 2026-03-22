@@ -71,8 +71,8 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 이는 다음과 같은 상황을 만듭니다.
 
-🔥 PowerShell이 관리자 권한으로 무제한 실행
-🔥 LOLBAS 도구들이 아무 제한 없이 사용
+🔥 PowerShell이 관리자 권한으로 무제한 실행  
+🔥 LOLBAS 도구들이 아무 제한 없이 사용  
 🔥 감사 로그가 없거나, 있어도 분석 불가
 
 결국,
