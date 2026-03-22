@@ -148,10 +148,10 @@ PLURA-SecureOS는 이 문제를 “추가 솔루션”이 아니라
 
 대신 이렇게 질문해야 합니다.
 
-- ✅ 누가 실행했는가 (Parent)
-- ✅ 무엇을 실행했는가 (Image)
-- ✅ 어떤 인자로 실행했는가 (CommandLine)
-- ✅ 이후 무엇을 했는가
+✅ 누가 실행했는가 (Parent)  
+✅ 무엇을 실행했는가 (Image)  
+✅ 어떤 인자로 실행했는가 (CommandLine)  
+✅ 이후 무엇을 했는가
 
 이것이 바로 **Execution Chain**입니다.
 
@@ -166,10 +166,10 @@ PLURA-SecureOS는 이 문제를 “추가 솔루션”이 아니라
 
 SecureOS가 없는 Windows 환경은 다음과 같습니다.
 
-- 🔥 통제되지 않는 PowerShell
-- 🔥 무제한 LOLBAS 실행
-- 🔥 보이지 않는 실행 체인
-- 🔥 사후 분석 불가능
+🔥 통제되지 않는 PowerShell  
+🔥 무제한 LOLBAS 실행  
+🔥 보이지 않는 실행 체인  
+🔥 사후 분석 불가능
 
 즉,
 
