@@ -165,8 +165,6 @@ PLURA-SecureOS는 이 문제를 “추가 솔루션”이 아니라
 👉 단순 실행 여부가 아니라  
 👉 **Execution Chain(부모→자식→행위)** 확보  
 
-:contentReference[oaicite:2]{index=2}
-
 ---
 
 ### 3️⃣ 지속적 관리 (Operational Control)
