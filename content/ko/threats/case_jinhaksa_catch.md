@@ -15,6 +15,8 @@ tags: ["진학사", "캐치", "Credential Stuffing", "보안 사고", "개인정
 특히 수백만 건에 달하는 로그인 시도가 발생한 것으로 알려지며,  
 일부 사용자 계정이 실제로 침해된 것으로 확인되었습니다.
 
+![진학사 캐치 크리덴셜 스터핑 공격](https://blog.plura.io/cdn/threats/case_jinhaksa_catch.png)
+
 ---
 
 ## 1. **정찰 (Reconnaissance)**
