@@ -9,6 +9,10 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 ## 🔥 와일드파이어: 힘과 파괴의 양면성
 
+
+::contentReference[oaicite:0]{index=0}
+
+
 드라마 **왕좌의 게임(Game of Thrones)** 시즌 2, 5화.  
 강렬한 장면 하나가 등장합니다.
 
@@ -24,9 +28,27 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 > “이것은 무기가 아니라, 통제되지 않으면 재앙이다.”
 
-![SecureOS](https://blog.plura.io/cdn/tech/windows-wildfire.png)
+---
 
-<!--more-->
+## 🧨 진짜 위험한 이유: “이미 내부에 존재한다”
+
+
+::contentReference[oaicite:1]{index=1}
+
+
+와일드파이어가 정말 위험했던 이유는 단순한 파괴력이 아닙니다.
+
+> **이미 킹스랜딩 성 “지하”에 저장되어 있었다는 점입니다.**
+
+즉,
+
+- 외부에서 가져온 무기가 아니라  
+- **도시 내부에, 그것도 보이지 않는 곳에 존재하는 폭탄**이었습니다  
+
+그리고 결국 시리즈 후반,
+
+> 이 와일드파이어는 실제로 폭발하며  
+> **킹스랜딩 전체를 파괴하는 결과**로 이어집니다
 
 ---
 
@@ -36,10 +58,10 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 ### ✅ 강력한 기능
 
-- PowerShell
-- WMI
-- Scheduled Task
-- LOLBAS (Living off the land binaries)
+- PowerShell  
+- WMI  
+- Scheduled Task  
+- LOLBAS (Living off the land binaries)  
 
 이들은 모두 **정상적인 운영을 위한 필수 기능**입니다.
 
@@ -47,13 +69,33 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 ### ❌ 공격자의 입장에서는
 
-- 파일 없이 공격 (Fileless)
-- 정식 도구를 이용한 침투
-- 로그를 남기지 않는 우회 실행
+- 파일 없이 공격 (Fileless)  
+- 정식 도구를 이용한 침투  
+- 로그를 남기지 않는 우회 실행  
 
 즉,
 
 > **와일드파이어처럼, “도구”는 언제든 “무기”가 될 수 있습니다.**
+
+---
+
+## 💣 Windows의 LOLBAS: 우리 안에 있는 와일드파이어
+
+LOLBAS는 특별한 악성코드가 아닙니다.
+
+- 외부에서 들어온 것이 아니라  
+- **Windows 내부에 기본적으로 존재하는 기능**입니다  
+
+예를 들어,
+
+- `powershell.exe`  
+- `mshta.exe`  
+- `rundll32.exe`  
+- `certutil.exe`  
+
+이 모든 것은
+
+> **이미 시스템 내부에 존재하는 “와일드파이어”입니다**
 
 ---
 
@@ -73,11 +115,11 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 🔥 PowerShell이 관리자 권한으로 무제한 실행  
 🔥 LOLBAS 도구들이 아무 제한 없이 사용  
-🔥 감사 로그가 없거나, 있어도 분석 불가
+🔥 감사 로그가 없거나, 있어도 분석 불가  
 
 결국,
 
-> **와일드파이어를 창고에 쌓아두고 있는 것과 동일한 상태**입니다.
+> **와일드파이어를 성 지하 창고에 쌓아두고, 그 위에서 생활하는 것과 동일한 상태입니다**
 
 ---
 
@@ -89,15 +131,15 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 공격자는 이렇게 사용합니다.
 
-- 정상 도구를 악용
-- 흔적을 최소화
-- 탐지를 회피
+- 정상 도구를 악용  
+- 흔적을 최소화  
+- 탐지를 회피  
 
 반면, 방어자는 종종
 
-- 도구를 방치하거나
-- 로그를 수집하지 않거나
-- 정책 없이 운영합니다
+- 도구를 방치하거나  
+- 로그를 수집하지 않거나  
+- 정책 없이 운영합니다  
 
 이 차이가 바로 **침해 사고의 시작점**입니다.
 
@@ -110,31 +152,33 @@ PLURA-SecureOS는 이 문제를 “추가 솔루션”이 아니라
 
 ### 1️⃣ 실행 통제 (Execution Control)
 
-- AppLocker / WDAC 기반 허용 정책
-- PowerShell 사용 제한
-- LOLBAS 실행 통제
+- AppLocker / WDAC 기반 허용 정책  
+- PowerShell 사용 제한  
+- LOLBAS 실행 통제  
 
-👉 “누가 무엇을 실행할 수 있는가”를 정의
+👉 “누가 무엇을 실행할 수 있는가”를 정의  
 
 ---
 
 ### 2️⃣ 행위 가시화 (Visibility)
 
-- Sysmon + 고급 감사 정책
-- 실행 체인 기반 로그 확보
+- Sysmon + 고급 감사 정책  
+- 실행 체인 기반 로그 확보  
 
 👉 단순 실행 여부가 아니라  
 👉 **Execution Chain(부모→자식→행위)** 확보  
+
+:contentReference[oaicite:2]{index=2}
 
 ---
 
 ### 3️⃣ 지속적 관리 (Operational Control)
 
-- 정책 상태 점검 (ON/OFF/Drift)
-- 자동화된 설정 및 검증
-- SecureOS 상태 관리
+- 정책 상태 점검 (ON/OFF/Drift)  
+- 자동화된 설정 및 검증  
+- SecureOS 상태 관리  
 
-👉 보안은 설정이 아니라 **상태(State)** 입니다
+👉 보안은 설정이 아니라 **상태(State)** 입니다  
 
 ---
 
@@ -149,7 +193,7 @@ PLURA-SecureOS는 이 문제를 “추가 솔루션”이 아니라
 ✅ 누가 실행했는가 (Parent)  
 ✅ 무엇을 실행했는가 (Image)  
 ✅ 어떤 인자로 실행했는가 (CommandLine)  
-✅ 이후 무엇을 했는가
+✅ 이후 무엇을 했는가  
 
 이것이 바로 **Execution Chain**입니다.
 
@@ -158,47 +202,39 @@ PLURA-SecureOS는 이 문제를 “추가 솔루션”이 아니라
 
 ---
 
-## 🚨 SecureOS가 없는 환경 = 와일드파이어 창고
+## 🚨 결론: 우리는 폭탄 위에서 운영하고 있다
 
-정리하면,
+이제 정리해 보겠습니다.
 
-SecureOS가 없는 Windows 환경은 다음과 같습니다.
+- 와일드파이어는 외부 무기가 아니라  
+  👉 **도시 내부에 존재하는 폭탄이었습니다**
 
-🔥 통제되지 않는 PowerShell  
-🔥 무제한 LOLBAS 실행  
-🔥 보이지 않는 실행 체인  
-🔥 사후 분석 불가능
+- Windows의 LOLBAS도 동일합니다  
+  👉 **시스템 내부에 존재하는 실행 도구입니다**
 
-즉,
-
-> **언제 터질지 모르는 와일드파이어를 안고 운영하는 것과 같습니다.**
+- 그리고 통제하지 않으면  
+  👉 **언젠가 반드시 터집니다**
 
 ---
 
-## ✅ 결론: 보안은 “기능”이 아니라 “운영”이다
+## 🎯 마지막 메시지
 
-와일드파이어를 다루는 방법은 단 하나입니다.
-
-> **통제(Control)**
-
-Windows도 동일합니다.
-
-> **운영(Operate)하지 않으면, 반드시 공격당합니다.**
-
----
-
-## 🎯 마지막 한 문장
-
-> 강력한 시스템은 안전한 것이 아니라,  
-> **잘 통제될 때만 안전하다.**
+> 우리는 안전한 시스템을 운영하는 것이 아닙니다.  
+>  
+> **폭탄을 내부에 가지고 운영하고 있습니다.**  
+>  
+> 차이는 단 하나입니다.  
+>  
+> 👉 통제하면 도구  
+> 👉 통제하지 않으면 공격 무기  
 
 ---
 
 ## 🚀 PLURA-SecureOS
 
-- 실행 통제 (WDAC / AppLocker)
-- 행위 가시화 (Sysmon / Audit)
-- 상태 기반 운영 (SecureOS Status)
+- 실행 통제 (WDAC / AppLocker)  
+- 행위 가시화 (Sysmon / Audit)  
+- 상태 기반 운영 (SecureOS Status)  
 
 👉 편리함과 안전함을 동시에 제공하는  
 👉 **실전형 Windows 보안 운영 체계**
