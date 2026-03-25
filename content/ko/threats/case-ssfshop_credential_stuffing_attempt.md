@@ -13,7 +13,7 @@ tags: ["삼성물산", "SSF샵", "Credential Stuffing", "계정탈취", "보안 
 
 기사에 따르면 전체 회원 **800만명 중 약 5% 수준**이 공격 대상이 된 것으로 파악됐습니다. 다만 현재까지 공개된 정보만으로는 **실제 계정 탈취 및 정보 반출이 확인된 사건**이라기보다, **대규모 로그인 시도를 조기에 탐지하고 보호조치를 시행한 사례**로 보는 것이 더 정확합니다.
 
-![삼성물산 SSF샵 크리덴셜 스터핑 공격 시도](https://blog.plura.io/cdn/threats/case-ssfshop_credential_stuffing_attempt.png)
+![삼성물산 SSF샵 크리덴셜 스터핑 공격](https://blog.plura.io/cdn/threats/case-ssfshop_credential_stuffing_attempt.png)
 
 <!--more-->
 ---
