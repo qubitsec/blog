@@ -9,10 +9,6 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 ## 🔥 와일드파이어: 힘과 파괴의 양면성
 
-
-::contentReference[oaicite:0]{index=0}
-
-
 드라마 **왕좌의 게임(Game of Thrones)** 시즌 2, 5화.  
 강렬한 장면 하나가 등장합니다.
 
@@ -28,13 +24,13 @@ tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", 
 
 > “이것은 무기가 아니라, 통제되지 않으면 재앙이다.”
 
+![SecureOS](https://blog.plura.io/cdn/tech/windows-wildfire.png)
+
+<!--more-->
+
 ---
 
 ## 🧨 진짜 위험한 이유: “이미 내부에 존재한다”
-
-
-::contentReference[oaicite:1]{index=1}
-
 
 와일드파이어가 정말 위험했던 이유는 단순한 파괴력이 아닙니다.
 
