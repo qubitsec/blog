@@ -179,6 +179,8 @@ flowchart LR
     Internal --> FW --> Outbound
 ```
 
+![Flow](https://blog.plura.io/cdn/column/understanding_firewall-2.png)
+
 이 구조의 핵심은 두 가지입니다.
 
 * 외부에서 내부로는 **최소 허용**
