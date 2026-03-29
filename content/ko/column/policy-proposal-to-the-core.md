@@ -291,3 +291,9 @@ ISMS는 조직의 보안 수준을 실질적으로 높이는 기준이어야지,
 공공·준공공 보안은  
 반드시 그 전문성을 가진 사람이  
 처음부터 끝까지 주도해야 합니다.
+
+## 함께 읽기
+
+- [“비복호화 탐지(Non-Decryption Detection)?” — 불가능을 포장한 마케팅](https://blog.plura.io/ko/column/limitations_of_non_decryption_detection/)
+- [[정책제안] AI 행정: HWP에서 웹 표준(HTML+Markdown)으로](https://blog.plura.io/ko/column/policy-proposal-doc-standards/)
+- [[정책제안] 공공 웹사이트는 왜 기본 포트(80, 443)를 써야 하나 — 비표준 포트의 숨은 비용과 위험](https://blog.plura.io/ko/column/policy-proposal-why-443-standard-port/)
