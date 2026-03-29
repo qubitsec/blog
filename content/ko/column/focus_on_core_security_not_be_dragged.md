@@ -31,9 +31,9 @@ SIEM, SOAR, Zero Trust, SASE, XDR, CNAPP, DSPM.
 실제 공격을 막는 일에서  
 산업이 만들어낸 개념을 따라가는 일로 조금씩 이동했기 때문입니다.
 
-![Thank you, but here is where we draw the line. This is becoming a waste of resources](https://blog.plura.io/cdn/column/focus_on_core_security_not_be_dragged.png)
-
 <!--more-->
+
+![Thank you, but here is where we draw the line. This is becoming a waste of resources](https://blog.plura.io/cdn/column/focus_on_core_security_not_be_dragged.png)
 
 ---
 
