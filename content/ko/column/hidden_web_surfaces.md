@@ -234,11 +234,11 @@ flowchart LR
 * 따라서 **모든 관리 포털/관리 API는 반드시 WAF 뒤**에 두고, **허용 IP·MFA·속도 제한·가상 패치**로 다중 방어를 구성해야 합니다.
 * 그리고 차단 이후에는 **PLURA-XDR과 같은 로그 정밀 분석 체계**로 탐지·분석·대응까지 연결해야 합니다.
 
-> **한 문장 요약**
+> **한 문장 요약**  
 > *“관리 포털은 전부 WAF로 감싸고, 그 뒤의 행위는 XDR로 끝까지 보라.”*
 
-이 기본만 지켜도
-대부분의 초기 침투를 입구에서 줄이고,
+이 기본만 지켜도  
+대부분의 초기 침투를 입구에서 줄이고,  
 설령 일부가 통과하더라도 **행위 단계에서 다시 잡을 수 있습니다.**
 
 ---
@@ -258,8 +258,8 @@ flowchart LR
 
 ---
 
-> (참고) 본 글은 **운영 관점의 최소 보호 체계**를 다룹니다.
-> 취약점 관리·자격증명 보안·로그 정밀 분석(XDR/SIEM)을 결합하면,
+> (참고) 본 글은 **운영 관점의 최소 보호 체계**를 다룹니다.  
+> 취약점 관리·자격증명 보안·로그 정밀 분석(XDR/SIEM)을 결합하면,  
 > Hidden Web Surface에 대한 **탐지·대응 성숙도**를 한 단계 더 끌어올릴 수 있습니다.
 
 [1]: https://blog.cloudflare.com/cve-2020-5902-helping-to-protect-against-the-f5-tmui-rce-vulnerability/?utm_source=chatgpt.com "Helping to protect against the F5 TMUI RCE vulnerability"
