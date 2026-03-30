@@ -161,7 +161,7 @@ tags: ["하드코딩", "키관리", "서명키", "인증보안", "운영보안",
 
 ---
 
-## 📚 참고 읽기
+### 📚 참고 읽기
 
 * 쿠팡 인증키 노출 사례 분석
   👉 [https://blog.plura.io/ko/threats/case-coupang_authkey/](https://blog.plura.io/ko/threats/case-coupang_authkey/)
