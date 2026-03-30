@@ -25,7 +25,7 @@ tags: ["보안", "완벽", "Security", "Risk", "Assurance", "SLO", "PLURA-XDR"]
 > **명시된 범위와 위협 모델 안에서,  
 > 합의한 목표 수준(SLO)을 지속적으로 충족하고,  
 > 그 사실을 증거로 입증할 수 있는 상태**  
-> — 이것을 우리는 **‘정의된 완벽(Defined Perfection)’**이라 부릅니다.
+> — 이것을 우리는 ‘정의된 완벽(Defined Perfection)’이라 부릅니다.
 
 ![정의된 완벽](https://blog.plura.io/cdn/column/perfect_security_mindset.png)
 
