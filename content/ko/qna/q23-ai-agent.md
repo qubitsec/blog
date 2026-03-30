@@ -296,7 +296,7 @@ AI 에이전트 보안은 LOLBAS 대응과 닮아 있습니다.
 
 ### 📚 참고 읽기
 
-* 보안의 본질: 와일드파이어와 Windows, 그리고 SecureOS
+* 보안의 본질: 와일드파이어와 Windows, 그리고 SecureOS  
   👉 [https://blog.plura.io/ko/tech/windows-wildfire/](https://blog.plura.io/ko/tech/windows-wildfire/)
 
 ---
