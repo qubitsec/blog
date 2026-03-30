@@ -482,4 +482,3 @@ PLURA-XDR의 전체 로그 기반 통합 분석이 의미를 가집니다.
 ### 📖 함께 읽기
 
 - [PLURA-Blog: 우리는 왜 GET/POST 로그를 분석하는가?](https://blog.plura.io/ko/column/why_analyze_get_post_logs/)
-- [PLURA-Github: LoL(Living off the Land) 공격 설명](https://github.com/qubitsec/plura/tree/main/demo/ko)
