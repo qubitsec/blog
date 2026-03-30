@@ -443,6 +443,5 @@ PLURA의 GET/POST 및 본문 로그 분석은 의미를 가집니다.
 
 * [웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/column/very_important_analyze_web_logs/)
 * [웹을 통한 데이터유출 해킹 대응 개론](https://blog.plura.io/ko/column/dlp/)
-* [PLURA-Github: LoL(Living off the Land) 공격 설명](https://github.com/qubitsec/plura/tree/main/demo/ko)
 
 ---
