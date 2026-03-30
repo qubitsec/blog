@@ -293,3 +293,11 @@ AI 에이전트 보안은 LOLBAS 대응과 닮아 있습니다.
 
 보안은 AI의 답변에서 끝나지 않습니다.  
 **운영체제 수준의 통제와 로그 기반 행위 분석에서 완성됩니다.**
+
+### 📚 참고 읽기
+
+* 보안의 본질: 와일드파이어와 Windows, 그리고 SecureOS
+  👉 [https://blog.plura.io/ko/tech/windows-wildfire/](https://blog.plura.io/ko/tech/windows-wildfire/)
+
+---
+
