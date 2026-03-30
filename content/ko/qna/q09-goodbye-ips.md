@@ -122,6 +122,8 @@ flowchart LR
     D --> E["여전히 사람 판단 필요"]
 ```
 
+![Flow](https://blog.plura.io/cdn/qna/q9-2.png)
+
 즉, SOAR는 오탐 문제를 해결하지 못한 채,  
 **운영 구조와 비용만 증가시키는 역할**을 하게 됩니다.
 
