@@ -299,6 +299,12 @@ PLURA-XDR의 핵심은
 로 판단해야 합니다.
 
 ---
+## 📺 함께 읽기
+
+쿠팡 등 API 인증 키(JWT) 유출 사고  
+👉 [https://blog.plura.io/ko/threats/case-coupang_authkey/](https://blog.plura.io/ko/threats/case-coupang_authkey/)
+
+
 
 ## 📚 PLURA 매뉴얼
 
