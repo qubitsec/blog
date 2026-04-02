@@ -85,7 +85,7 @@ HTTP, FTP, Telnet, 평문 SMTP처럼
 - SaaS, 클라우드, 모바일 앱, 서비스 간 통신도 암호화가 기본입니다
 
 Google은 HTTPS 관련 공개 지표를 오랫동안 제공해 왔고,  
-2024년에는 관련 차트가 보관(archive) 처리될 정도로 HTTPS 보급이 일반화되었음을 보여 주었습니다. :contentReference[oaicite:0]{index=0}
+2024년에는 관련 차트가 보관(archive) 처리될 정도로 HTTPS 보급이 일반화되었음을 보여 주었습니다. 
 
 즉, 이제는  
 **“네트워크에서 내용을 직접 본다”는 전제 자체가 약해진 것**입니다.
@@ -156,7 +156,7 @@ CPU, 메모리, 지연 시간에 큰 부담을 줍니다.
 네트워크 보안의 대표 도구였습니다.
 
 Snort는 지금도 유지·개발되고 있으며,  
-Snort 3 관련 공식 문서와 규칙 작성/마이그레이션 가이드도 계속 제공되고 있습니다. :contentReference[oaicite:1]{index=1}
+Snort 3 관련 공식 문서와 규칙 작성/마이그레이션 가이드도 계속 제공되고 있습니다. 
 
 즉, Snort가 “죽었다”는 뜻은 아닙니다.
 
@@ -244,7 +244,7 @@ HIPS의 강점은 단순합니다.
 - eBPF 기반 관측·보안 계층
 
 예를 들어 Cilium 생태계는  
-eBPF 기반으로 네트워킹, 관측, 보안을 제공하는 클라우드 네이티브 접근을 강조하고 있습니다. :contentReference[oaicite:2]{index=2}
+eBPF 기반으로 네트워킹, 관측, 보안을 제공하는 클라우드 네이티브 접근을 강조하고 있습니다. 
 
 즉, 오늘날 HIPS를 말할 때는  
 단순히 “호스트에 설치하는 옛날 보안 프로그램”이 아니라,
@@ -339,9 +339,9 @@ NIPS와 HIPS 중 하나를 버리는 것이 아니라,
 ---
 
 > **참고 메모**  
-> - Snort는 지금도 유지·발전 중인 대표적 NIDS/NIPS입니다. :contentReference[oaicite:3]{index=3}  
-> - Google의 HTTPS 관련 공개 지표는 2024년 아카이브 처리될 정도로 암호화가 보편적 전제가 되었습니다. :contentReference[oaicite:4]{index=4}  
-> - 클라우드 네이티브 환경에서는 eBPF 기반 관측·보안 접근도 빠르게 중요해지고 있습니다. :contentReference[oaicite:5]{index=5}
+> - Snort는 지금도 유지·발전 중인 대표적 NIDS/NIPS입니다.   
+> - Google의 HTTPS 관련 공개 지표는 2024년 아카이브 처리될 정도로 암호화가 보편적 전제가 되었습니다. 
+> - 클라우드 네이티브 환경에서는 eBPF 기반 관측·보안 접근도 빠르게 중요해지고 있습니다. 
 
 ### 📖 함께 읽기
 - [IDS/IPS, 정말 코어 보안일까?](https://blog.plura.io/ko/tech/why_supplementary_security_services-ips/)
