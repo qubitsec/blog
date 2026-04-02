@@ -3,8 +3,8 @@ title: "정보보안 제품 선택 체크리스트"
 date: 2025-03-04
 draft: false
 description: "정보보안 제품 도입 시 반드시 확인해야 할 핵심 기준을 정리합니다. 실질적인 공격 대응 중심 제품인지, 아니면 관리 편의성 중심의 과잉 대응 제품인지 구분하는 체크리스트입니다."
-featured_image: "cdn/column/security_product_checklist.png"
-tags: ["정보보안", "Security", "보안 제품 선택", "기업 보안", "CISO", "RFP", "PoC"]
+featured_image: "cdn/column/checklist-cybersecurity-saas.png"
+tags: ["정보보안", "Security", "보안 제품 선택", "기업 보안", "CISO", "RFP", "PoC", "Check List"]
 ---
 
 ## 🛡️ 정보보안 제품 선택 체크리스트
