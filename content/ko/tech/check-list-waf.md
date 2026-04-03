@@ -1,5 +1,5 @@
 ---
-title: "웹방화벽(WAF) SaaS 선택 체크리스트"
+title: "웹방화벽(WAF) 선택 체크리스트"
 date: 2026-04-02
 draft: false
 featured_image: "cdn/tech/check-list-waf.png"
