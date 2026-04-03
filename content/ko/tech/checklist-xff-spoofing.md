@@ -7,7 +7,7 @@ description: "공격자가 X-Forwarded-For(XFF)를 조작해 자신의 실제 IP
 tags: ["XFF", "X-Forwarded-For", "WAF", "HAProxy", "SaaS WAF", "IP 우회", "웹보안", "PLURA", "체크리스트", "Checklist"]
 ---
 
-## 공격자는 왜 X-Forwarded-For를 조작할까
+## 🛡️공격자는 왜 X-Forwarded-For를 조작할까
 
 웹 서비스 앞단에 프록시, CDN, 로드밸런서, WAF가 놓이면  
 원 서버는 TCP 연결의 실제 원발신자가 아니라  
