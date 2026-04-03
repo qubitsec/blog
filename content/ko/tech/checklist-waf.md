@@ -2,7 +2,7 @@
 title: "웹방화벽(WAF) 선택 체크리스트"
 date: 2026-04-02
 draft: false
-featured_image: "cdn/tech/check-list-waf.png"
+featured_image: "cdn/tech/checklist-waf.png"
 description: "클라우드 SaaS 기반 웹방화벽 선택 시 반드시 고려해야 할 핵심 기준. 단순 차단이 아닌, 실제 공격 탐지·분석·대응 중심으로 평가해야 한다."
 tags: ["xWaf", "WAF", "웹방화벽", "SaaS", "보안 체크리스트", "XDR", "EDR", "Froensic"]
 ---
