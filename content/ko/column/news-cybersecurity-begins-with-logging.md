@@ -1,5 +1,5 @@
 ---
-title: "보안의 출발점은 기록이다"
+title: "[전자신문] 보안의 출발점은 기록이다"
 date: 2026-04-05
 draft: false
 featured_image: "cdn/column/news-cybersecurity-begins-with-logging.png"
