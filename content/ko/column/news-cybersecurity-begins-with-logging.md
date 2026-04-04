@@ -4,7 +4,7 @@ date: 2026-04-05
 draft: false
 featured_image: "cdn/column/news-cybersecurity-begins-with-logging.png"
 description: "해킹 사고가 반복될수록 더 분명해지는 사실이 있다. 공격은 있었지만 무엇이 어떻게 일어났는지 설명하지 못하는 이유는 대부분 기록의 부재에 있다. 정보보안의 출발점은 제품이 아니라 로그이며, 이제는 표준 로그 가이드라인이 필요하다."
-tags: ["보안칼럼","전자신문", "로그", "로그분석", "디지털포렌식", "침해사고대응", "MITRE ATT&CK", "웹로그", "감사정책", "PLURA-Blog"]
+tags: ["전자신문","보안칼럼","로그", "로그분석", "디지털포렌식", "침해사고대응", "MITRE ATT&CK", "웹로그", "감사정책", "PLURA-Blog"]
 ---
 
 # 보안의 출발점은 기록이다
