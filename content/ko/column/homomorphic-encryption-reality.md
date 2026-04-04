@@ -506,6 +506,14 @@ FHE 기반 프라이버시 보존 머신러닝 프레임워크로 소개되며,
 **아주 좁지만 대체 불가능한 문제를 해결하는 정밀 기술**에 더 가깝습니다.
 
 ---
+## 함께 읽기
+- [동형암호 알고리즘 소개](https://blog.plura.io/ko/column/homomorphic-encryption-algorithm/)
+
+- [퀀텀 알고리즘 소개](https://blog.plura.io/ko/column/qubit-algorithm/)
+- [양자컴퓨팅 시대의 암호기술](https://blog.plura.io/ko/column/quantum-era-cryptography/)
+- [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum-computing-progress/)
+
+---
 
 ## 참고 자료
 
