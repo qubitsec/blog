@@ -1,6 +1,6 @@
 ---
 title: "홈네트워크 보안, 불안을 줄이려면 구조부터 이해해야 한다"
-date: 2026-04-05
+date: 2026-04-04
 draft: false
 description: "월패드 해킹 이슈는 막연한 공포로 소비될 문제가 아니다. 홈네트워크의 구조를 정확히 이해하면 어디를 보호해야 하는지 분명해진다. 핵심은 월패드 자체만이 아니라 인증서버와 단지서버를 포함한 전체 경로를 통제하는 것이다."
 featured_image: "cdn/column/news-home-network-security.png"
