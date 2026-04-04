@@ -413,8 +413,8 @@ CISA·NSA·NIST 문서도 이 단계를 가장 먼저 요구합니다.
 
 ## 함께 읽기
 
-- [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum_computing_progress/)
-- [퀀텀 알고리즘 소개](https://blog.plura.io/ko/column/qubit_algorithm/)
+- [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum-computing-progress/)
+- [퀀텀 알고리즘 소개](https://blog.plura.io/ko/column/qubit-algorithm/)
 
 ---
 
