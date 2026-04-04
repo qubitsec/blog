@@ -453,7 +453,7 @@ qubitsec 블로그 관점에서 보면
 
 ## 함께 읽기
 
-- [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum_computing_progress/)
+- [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum-computing-progress/)
 - [양자컴퓨팅 시대의 암호기술: AES, SHA-3, PQC 정리](https://blog.plura.io/ko/column/quantum-era-cryptography/)
 
 ---
