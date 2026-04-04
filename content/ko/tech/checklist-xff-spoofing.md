@@ -677,7 +677,7 @@ X-Forwarded-For 문제의 본질은 헤더가 아니라,
 신뢰 경계다.
 ---
 
-## 🌟 PLURA-Blog
+### 🌟 PLURA-Blog
 
 - [‘웹서버인 줄 모르는’ 보안·인프라 장비들](https://blog.plura.io/ko/column/hidden_web_surfaces/)
 
