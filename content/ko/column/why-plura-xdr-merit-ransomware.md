@@ -185,6 +185,9 @@ sequenceDiagram
     X->>S: 세션 차단 및 확산 차단
 ```
 
+![Flow](https://blog.plura.io/cdn/threats/why-plura-xdr-merit-ransomware-3.png)
+
+
 따라서 좋은 대응 체계는 보통 다음 질문에 답할 수 있어야 합니다.
 
 * 어느 프로세스가 암호화를 시작했는가
