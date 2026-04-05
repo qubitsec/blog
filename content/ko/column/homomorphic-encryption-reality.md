@@ -462,6 +462,7 @@ tags: ["동형암호", "FHE", "데이터보안", "금융보안", "헬스케어",
 
 ## 함께 읽기
 - [동형암호 알고리즘 소개](https://blog.plura.io/ko/column/homomorphic-encryption-algorithm/)
+- [동형암호의 현주소와 가능성](https://blog.plura.io/ko/column/homomorphic-encryption-reality/)
 - [퀀텀 알고리즘 소개](https://blog.plura.io/ko/column/qubit-algorithm/)
 - [양자컴퓨팅 시대의 암호기술](https://blog.plura.io/ko/column/quantum-era-cryptography/)
 - [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum-computing-progress/)
