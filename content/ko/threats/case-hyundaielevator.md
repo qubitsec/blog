@@ -252,6 +252,9 @@ sequenceDiagram
     SOC->>SOC: 로그 분석 및 재발 방지
 ```
 
+
+![Flow](https://blog.plura.io/cdn/threats/case-hyundaielevator-2.png)
+
 ---
 
 # PLURA 관점 정리
