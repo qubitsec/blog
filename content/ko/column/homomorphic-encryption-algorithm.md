@@ -594,3 +594,4 @@ CKKS 같은 구조 덕분에 AI와 자주 연결되지만,
 - [큐비트(퀀텀) 알고리즘 소개](https://blog.plura.io/ko/column/qubit-algorithm/)
 - [양자컴퓨팅 시대의 암호기술](https://blog.plura.io/ko/column/quantum-era-cryptography/)
 - [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum-computing-progress/)
+- [양자 내성 암호(PQC)의 현주소](https://blog.plura.io/ko/column/pqc-current-state)
