@@ -1,6 +1,6 @@
 ---
 title: "동형암호 알고리즘 소개: 무엇이 가능하고, 왜 어려운가"
-date: 2026-04-04
+date: 2026-04-05
 draft: false
 description: "동형암호는 암호문 상태에서 연산할 수 있는 기술이다. 부분 동형암호, 준동형암호, 완전동형암호의 차이와 BGV, BFV, CKKS, TFHE 계열의 핵심 개념을 입문자 관점에서 정리한다."
 featured_image: "cdn/column/homomorphic-encryption-algorithm.png"
