@@ -253,7 +253,7 @@ sequenceDiagram
 ```
 
 
-![Flow](https://blog.plura.io/cdn/threats/case-hyundaielevator-2.png)
+![Flow](https://blog.plura.io/cdn/threats/case-hyundaielevator-3.png)
 
 ---
 
