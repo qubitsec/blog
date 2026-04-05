@@ -359,6 +359,14 @@ PLURA-EDR 관점에서는 감사 정책과 행위 로그를 통해 다음을 추
 
 ---
 
+### 📖 함께 읽기
+
+* [제조업, 랜섬웨어 감염 ‘속출’](https://blog.plura.io/ko/threats/ransomware-manufacturing/)
+* [지금 랜섬웨어가 진행 중이라면, 당신은 알 수 있습니까?](https://blog.plura.io/ko/column/why-plura-xdr-merit-ransomware/)
+* [PLURA-XDR을 활용한 공급망 보안 강화 방안](https://blog.plura.io/ko/column/campaign_supplychain_security/)
+
+---
+
 ## 참고 자료(출처)
 
 * ZDNet Korea, `[단독] 국제 랜섬웨어 "현대엘리베이터 해킹 성공" 주장` (2026-03-08) ([ZDNet Korea][2])
