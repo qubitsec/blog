@@ -84,7 +84,6 @@ flowchart TD
     G --> H[금전 요구 및 운영 중단]
 ```
 
-![Flow](https://blog.plura.io/cdn/column/why-plura-xdr-merit-ransomware-3.png)
 
 이 흐름에서 중요한 것은  
 맨 마지막 결과가 아니라  
