@@ -335,10 +335,10 @@ NIST는 동형암호를 외면하고 있지 않습니다.
 
 **너무 빨리 하나로 고정할 수 없을 만큼 복잡하고,  
 그래서 더 신중한 방식의 표준화가 필요한 기술**입니다.
-
 ---
 
 ## 함께 읽기
 - [동형암호 알고리즘 소개](https://blog.plura.io/ko/column/homomorphic-encryption-algorithm/)
 - [동형암호의 현주소와 가능성](https://blog.plura.io/ko/column/homomorphic-encryption-reality/)
-- [동형암호의 미래는 밝은가](https://blog.plura.io/ko/column/homomorphic-quantum-computing)
+- [왜 동형암호와 PQC는 모두 격자를 택했을까](https://blog.plura.io/ko/column/homomorphic-why-lattices/)
+- [동형암호의 미래는 밝은가](https://blog.plura.io/ko/column/homomorphic-quantum-computing/)
