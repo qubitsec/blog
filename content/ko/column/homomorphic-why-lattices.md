@@ -347,7 +347,12 @@ PQC는
 ---
 
 ## 함께 읽기
+## 함께 읽기
 - [동형암호 알고리즘 소개](https://blog.plura.io/ko/column/homomorphic-encryption-algorithm/)
 - [동형암호의 현주소와 가능성](https://blog.plura.io/ko/column/homomorphic-encryption-reality/)
+- [동형암호의 미래는 밝은가](https://blog.plura.io/ko/column/homomorphic-quantum-computing/)
 - [동형암호의 미래: NIST는 왜 아직 AES나 PQC처럼 다루지 않는가](https://blog.plura.io/ko/column/homomorphic_encryption_nist_roadmap/)
+- [큐비트(퀀텀) 알고리즘 소개](https://blog.plura.io/ko/column/qubit-algorithm/)
 - [양자컴퓨팅 시대의 암호기술](https://blog.plura.io/ko/column/quantum-era-cryptography/)
+- [양자 컴퓨팅의 현주소와 가능성](https://blog.plura.io/ko/column/quantum-computing-progress/)
+
