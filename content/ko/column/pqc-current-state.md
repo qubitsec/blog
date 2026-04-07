@@ -222,6 +222,17 @@ PQC 전환은
 전환의 폭이 넓어져야  
 비로소 PQC가 “실제 운영” 단계로 들어갑니다.
 
+### OpenSSL 및 브라우저별 PQC 로드맵 요약
+
+| 기술 명 | 현재 체감 도입 속도 | 실제 의존성 | 핵심 포인트 |
+| --- | --- | --- | --- |
+| **OpenSSL** | 빠름 | NIST FIPS 표준 구현, 배포판·애플리케이션 연동 | 3.5부터 ML-KEM, ML-DSA, SLH-DSA 지원 시작 |
+| **Chrome** | 가장 빠름 | BoringSSL, Chromium TLS/QUIC 스택 | Chrome 131부터 최종 ML-KEM 기반 하이브리드 전환 적용 |
+| **Firefox** | 빠름 | NSS, Firefox 네트워크 스택 | 2025년부터 ML-KEM 기반 지원 흐름에 진입, WebRTC/HTTP 계층까지 확대 중 |
+| **Safari** | 보통~빠름 | Apple 플랫폼 TLS 스택, OS 보안 프레임워크 | iOS 26 / macOS Tahoe 26 계열의 `X25519MLKEM768` 지원이 핵심 |
+| **Microsoft Edge** | 보통~빠름 | Chromium/BoringSSL + Windows 플랫폼 정책 | Chromium 흐름을 따라가지만, 기업 적용은 Edge 정책·Windows 환경 영향이 큼 |
+
+
 ### 인프라 기술별 PQC 로드맵 요약
 
 | 기술 명 | 현재 체감 도입 속도 | 실제 의존성 | 핵심 포인트 |
