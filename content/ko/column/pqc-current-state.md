@@ -227,8 +227,8 @@ PQC 전환은
 | 기술 명 | 현재 체감 도입 속도 | 실제 의존성 | 핵심 포인트 |
 | --- | --- | --- | --- |
 | **SSH (OpenSSH)** | 가장 빠름 | OpenSSH 자체 구현 | 이미 PQC 하이브리드 기본값 단계 |
-| **NGINX** | 빠름 | OpenSSL / BoringSSL | TLS 라이브러리 버전이 사실상 핵심 |
 | **HAProxy** | 보통~빠름 | OpenSSL / QUIC TLS 스택 | 자체보다 하부 TLS 스택 의존성이 큼 |
+| **NGINX** | 빠름 | OpenSSL / BoringSSL | TLS 라이브러리 버전이 사실상 핵심 |
 | **RDP** | 보통 | Windows CNG / TLS 스택 | RDP 자체보다 Windows OS 지원이 핵심 |
 | **OpenVPN** | 보통 | OpenSSL | 컨트롤 채널(TLS) 하이브리드 전환이 우선 |
 | **Kubernetes** | 느림 | Go TLS, etcd, Ingress, Service Mesh | 계층이 너무 많아 가장 복잡한 전환 대상 |
