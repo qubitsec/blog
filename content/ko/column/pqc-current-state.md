@@ -1,6 +1,6 @@
 ---
 title: "양자 내성 암호(PQC)의 현주소: 지금 무엇을 준비해야 하는가"
-date: 2026-04-05
+date: 2026-04-06
 draft: false
 description: "PQC는 먼 미래의 연구 주제가 아니라, 이미 표준화와 구현이 시작된 전환 과제다. NIST 표준화, OpenSSL 지원 현황, 브라우저·애플리케이션 확산 조건, 현실 적용 단계, 그리고 한국형 PQC의 방향성까지 현재 시점에서 정리한다."
 featured_image: "cdn/column/pqc-current-state.png"
