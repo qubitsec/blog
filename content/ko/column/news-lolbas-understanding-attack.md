@@ -278,7 +278,7 @@ LOLBAS 공격은
 
 * [[전자신문] 보안의 출발점은 기록이다](https://blog.plura.io/ko/column/news-cybersecurity-begins-with-logging/)
 * [MITRE ATT&CK 프레임워크에 대한 이해: 왜 LOLBAS와 LOLDrivers도 ATT&CK 관점으로 봐야 하는가](https://blog.plura.io/ko/column/mitre-attack-framework-understanding/)
-
+* [보안의 본질: 와일드파이어와 Windows, 그리고 SecureOS](https://blog.plura.io/ko/tech/windows-wildfire/)
 ---
 
 ## 📰 원문 뉴스
