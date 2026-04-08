@@ -374,6 +374,11 @@ MITRE ATT&CK 같은 실제 공격 프레임워크를 기준으로
 
 보안의 출발점은 기록입니다.  
 그리고 기록 없는 보안은, 결국 설명할 수 없는 보안입니다.
+---
+
+## 함께 읽기
+
+* [[전자신문] 지금 해킹을 이해하려면, LOLBAS부터 다시 봐야 한다](https://blog.plura.io/ko/column/news-lolbas-understanding-attack/)
 
 ---
 
