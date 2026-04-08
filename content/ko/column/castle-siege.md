@@ -29,7 +29,7 @@ AI 시대가 되면서 이 문제는 더 심각해졌습니다.
 
 <!--more-->
 
-![Protect the Castle](https://blog.plura.io/cdn/column/policy-proposal-stop-rotation-infosec.png)
+![Protect the Castle](https://blog.plura.io/cdn/column/policy-fable.png)
 
 > 이 글의 주요 독자는  
 > **보안 실무자, WAF/EDR 운영자, CISO, 정책 담당자**입니다.  
