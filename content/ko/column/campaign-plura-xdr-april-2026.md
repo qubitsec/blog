@@ -3,7 +3,7 @@ title: "PLURA-XDR 캠페인 시작: 보안은 맡겨 두세요. 안전하게 일
 date: 2026-04-09
 draft: false
 description: "큐비트시큐리티는 2026년 4월, 해킹 대응 플랫폼 PLURA-XDR의 가치를 알리기 위한 전자신문 전면 광고 캠페인을 시작합니다. 해킹은 멈추지 않습니다. 이제 보안은 통합 플랫폼으로 대응해야 합니다."
-featured_image: "cdn/column/plura_xdr_campaign_april_2026.png"
+featured_image: "cdn/column/campaign-plura-xdr-april-2026.png"
 tags: ["PLURA-XDR", "캠페인", "전자신문", "통합보안플랫폼", "클라우드보안", "해킹대응", "XDR", "WAF", "EDR", "SIEM", "SOAR", "Forensic", "SecureOS"]
 ---
 
