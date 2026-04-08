@@ -1,10 +1,10 @@
 ---
-title: "지금 해킹을 이해하려면, LOLBAS부터 다시 봐야 한다"
+title: "[전자신문] 지금 해킹을 이해하려면, LOLBAS부터 다시 봐야 한다"
 date: 2026-04-08
 draft: false
 featured_image: "cdn/column/news-lolbas-understanding-attack.png"
 description: "오늘날 해킹은 더 이상 악성코드 중심이 아니다. 운영체제에 내장된 정상 도구를 활용하는 LOLBAS/LOTL 공격이 중심이 되었으며, 이를 이해하지 못하면 어떤 보안 제품도 제대로 대응할 수 없다."
-tags: ["LOLBAS", "LOTL", "MITRE ATT&CK", "EDR", "보안칼럼", "행위기반탐지", "디지털포렌식", "침해사고대응", "PLURA-Blog"]
+tags: ["전자신문", "LOLBAS", "LOTL", "MITRE ATT&CK", "EDR", "보안칼럼", "행위기반탐지", "디지털포렌식", "침해사고대응", "PLURA-Blog"]
 ---
 
 오늘의 해킹을 이해하려면  
