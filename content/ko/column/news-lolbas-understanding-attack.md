@@ -249,6 +249,12 @@ LOLBAS / LOTL 공격이 중심이다.
 
 이것이 바로  
 지금 우리가 다시 세워야 할 보안의 기준이다.
+---
+
+
+## 함께 읽기
+- [MITRE ATT&CK 프레임워크에 대한 이해: 왜 LOLBAS와 LOLDrivers도 ATT&CK 관점으로 봐야 하는가](https://blog.plura.io/ko/column/mitre-attack-framework-understanding/)
+- [[전자신문] 보안의 출발점은 기록이다](https://blog.plura.io/ko/column/news-cybersecurity-begins-with-logging/)
 
 ---
 
