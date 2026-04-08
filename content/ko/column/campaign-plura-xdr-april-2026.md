@@ -7,8 +7,6 @@ featured_image: "cdn/column/campaign-plura-xdr-april-2026.png"
 tags: ["PLURA-XDR", "캠페인", "전자신문", "통합보안플랫폼", "클라우드보안", "해킹대응", "XDR", "WAF", "EDR", "SIEM", "SOAR", "Forensic", "SecureOS"]
 ---
 
-# PLURA-XDR 캠페인 시작: 보안은 맡겨 두세요. 안전하게 일하세요.
-
 해킹은 멈추지 않습니다.  
 공격자는 쉬지 않고 새로운 침투 경로를 찾고, 이미 알려진 취약점은 물론 크리덴셜 스터핑, 계정 탈취, 랜섬웨어, 그리고 제로데이 공격까지 끊임없이 확장하고 있습니다.
 
