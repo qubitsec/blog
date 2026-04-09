@@ -112,6 +112,8 @@ flowchart LR
     D --> E[Web]
 ```
 
+![Flow-2](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_02.png)
+
 핵심은 단순합니다.
 
 외부 요청은 기존과 동일하게 **방화벽**과 **일반 WAF**를 먼저 통과합니다.  
