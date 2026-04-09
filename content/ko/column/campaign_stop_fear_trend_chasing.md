@@ -1,13 +1,11 @@
 ---
-title: "그만 두자 캠페인 — 공포·유행어 추격을 멈추고 ‘증거 중심 보안’으로"
+title: "🕵️‍♂️ [캠페인] 공포·유행어 추격을 멈추고 ‘증거 중심 보안’으로"
 date: 2025-10-05
 draft: false
 description: "공포 마케팅과 신종 보안 유행어 추격을 멈추고, 정의·증거·성과로 말하는 ‘증거 중심 보안’ 캠페인. 실행 체크리스트와 측정 지표 포함."
 featured_image: "cdn/column/campaign_stop_fear_trend_chasing.png"
 tags: ["캠페인", "보안문화", "Evidence-based Security", "SLO", "Service Level Objectives", "공급망 보안", "PLURA-XDR"]
 ---
-
-# 🕵️‍♂️ 캠페인: 공포와 유행어 추격을 멈추고, 증거 중심 보안으로
 
 🛑 **공포에만 기대는 보안을 멈추고,**  
 ⛔ **유행어를 따라다니는 보안을 멈추고,**  
