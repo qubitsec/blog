@@ -99,6 +99,11 @@ PLURA-XDR은 단순히 경고를 많이 보여주는 플랫폼이 아니라,
 
 > [통합정보보안 플랫폼 PLURA-XDR](https://www.plura.io/ko/platform_xdr.html)
 
+**크리덴셜 스터핑 공격이 진행 중인가요?  
+PLURA-XDR은 30분 내 방어 체계 구축을 지원합니다.**
+
+> [공격 대응 개요](https://www.plura.io/ko/underattack.html)
+
 ---
 
 ## 로그의 깊이가 보안의 차이를 만듭니다
