@@ -7,8 +7,6 @@ featured_image: "cdn/column/overkill-multi-layer-security.png"
 tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fatigue", "Burnout", "심리적 소진", "기능 과다", "다중 보안", "계층 보안", "통합 보안"]
 ---
 
-## 다중∙계층 보안, 정말 필요한가?
-
 오늘날 사이버 위협은 점점 더 다양해지고 교묘해지고 있습니다.  
 이 때문에 많은 기업이 “보안은 많을수록 좋다”는 생각으로  
 여러 솔루션을 **겹겹이 추가**하는 방향으로 움직이곤 합니다.
