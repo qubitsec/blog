@@ -33,7 +33,7 @@ Splunk에서 request body 분석이 가능한가?
 네, 가능합니다.
 
 Splunk는 HEC, Stream, Forwarder, 사용자 정의 sourcetype, props/transforms, SPL 검색 등을 통해  
-HTTP 본문 데이터를 수집하고 분석할 수 있습니다. Splunk의 HTTP Event Collector는 HTTP/HTTPS를 통해 이벤트를 수집할 수 있고, Splunk Cloud와 Enterprise 모두에서 사용할 수 있습니다. :contentReference[oaicite:1]{index=1}
+HTTP 본문 데이터를 수집하고 분석할 수 있습니다. Splunk의 HTTP Event Collector는 HTTP/HTTPS를 통해 이벤트를 수집할 수 있고, Splunk Cloud와 Enterprise 모두에서 사용할 수 있습니다. 
 
 즉, Splunk가 request body 분석을 못 하는 것은 아닙니다.
 
@@ -47,7 +47,7 @@ HTTP 본문 데이터를 수집하고 분석할 수 있습니다. Splunk의 HTTP
 
 Splunk는 강력합니다.  
 하지만 대부분의 경우 자동으로 바로 된다기보다  
-설계와 튜닝이 필요한 플랫폼에 가깝습니다. Splunk는 props.conf, transforms.conf 같은 구성 파일 기반 파싱과 필드 처리 구조를 계속 사용하고 있습니다. :contentReference[oaicite:2]{index=2}
+설계와 튜닝이 필요한 플랫폼에 가깝습니다. Splunk는 props.conf, transforms.conf 같은 구성 파일 기반 파싱과 필드 처리 구조를 계속 사용하고 있습니다. 
 
 ---
 
@@ -95,7 +95,7 @@ Splunk의 강점은 분명합니다.
 그리고 여기서 현실적인 포인트가 하나 더 있습니다.
 
 Splunk는 request body는 물론 response body까지 본격적으로 수집·분석 범위에 넣기 시작하면  
-비용 구조가 빠르게 무거워질 수 있습니다. Splunk Enterprise는 전통적으로 **일일 인덱싱 데이터 볼륨** 기준 라이선스를 사용해 왔고, Splunk Cloud도 구독 유형에 따라 ingest 기반 과금이 적용될 수 있다고 공식 문서에서 설명합니다. 즉, 웹 본문처럼 데이터 양이 큰 영역을 분석 대상으로 포함할수록 비용 부담이 커지기 쉬운 구조입니다. :contentReference[oaicite:3]{index=3}
+비용 구조가 빠르게 무거워질 수 있습니다. Splunk Enterprise는 전통적으로 **일일 인덱싱 데이터 볼륨** 기준 라이선스를 사용해 왔고, Splunk Cloud도 구독 유형에 따라 ingest 기반 과금이 적용될 수 있다고 공식 문서에서 설명합니다. 즉, 웹 본문처럼 데이터 양이 큰 영역을 분석 대상으로 포함할수록 비용 부담이 커지기 쉬운 구조입니다. 
 
 특히 웹의 request body, response body 분석 영역을 Splunk로 가져가면  
 실제 운영 환경에서는 사용 비용이 급격히 상승할 수 있습니다.  
@@ -233,12 +233,12 @@ PLURA는 웹 공격 대응과 운영 단순화에 더 초점을 둔 플랫폼입
 ## 결론
 
 Splunk에서도 request body 분석은 가능합니다.  
-잘 설계하면 충분히 강력한 분석 체계를 만들 수 있습니다. HEC와 인덱싱 구조 자체는 공식적으로 잘 지원됩니다. :contentReference[oaicite:4]{index=4}
+잘 설계하면 충분히 강력한 분석 체계를 만들 수 있습니다. HEC와 인덱싱 구조 자체는 공식적으로 잘 지원됩니다. 
 
 하지만 실제 현장에서는  
 구성 난도, 운영 부담, 저장 비용, 인력 의존도까지 함께 따라옵니다.  
 이 점은 특히 request body처럼 용량이 큰 데이터는 물론,  
-response body까지 함께 다루기 시작할 때 훨씬 더 크게 드러납니다. Splunk Enterprise의 볼륨 기반 라이선스와 Splunk Cloud의 ingest 기반 구독 구조는 이런 부담이 왜 커지는지 설명해 줍니다. :contentReference[oaicite:5]{index=5}
+response body까지 함께 다루기 시작할 때 훨씬 더 크게 드러납니다. Splunk Enterprise의 볼륨 기반 라이선스와 Splunk Cloud의 ingest 기반 구독 구조는 이런 부담이 왜 커지는지 설명해 줍니다. 
 
 실제 운영 관점에서는  
 이 웹 본문 분석 영역을 Splunk로 본격 운영할 경우  
