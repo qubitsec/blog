@@ -129,7 +129,7 @@ PLURA-XDR은
 
 우리는 2024년 6월에 SBS를 통하여 1차 캠페인을 진행하였습니다.
 
-> [해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성](https://blog.plura.io/ko/column/importance_of_cloud_security_platform_in_hacking_incidents/)
+> 📺[해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성](https://blog.plura.io/ko/column/importance_of_cloud_security_platform_in_hacking_incidents/)
 
 이번 전자신문 캠페인은 그 문제의식을 다시 한 번 더 분명하게 알리는 자리이기도 합니다.
 
