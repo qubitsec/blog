@@ -26,8 +26,6 @@ tags: ["PLURA 포렌식", "라이브 포렌식", "디지털 포렌식", "보안 
 그래서 포렌식의 핵심은 “분석을 많이 하는 것”보다  
 **먼저 확인해야 할 것을 빠르게 보여주는 것**입니다.
 
-![보안과 보험의 차이점](https://blog.plura.io/cdn/column/plura_forensic_quick_analysis.png)
-
 <!--more-->
 ---
 
