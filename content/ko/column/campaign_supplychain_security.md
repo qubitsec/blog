@@ -1,13 +1,11 @@
 ---
-title: "PLURA-XDR을 활용한 공급망 보안 강화 방안"
+title: "🕵️‍♂️ [캠페인] PLURA-XDR을 활용한 공급망 보안 강화 방안"
 date: 2025-02-19
 draft: false
 description: "PLURA-XDR을 활용해 대기업과 협력사 간 보안 격차를 줄이고, 공급망 전체의 최소 보안 수준을 끌어올리는 현실적인 운영 방안을 소개합니다."
 featured_image: "cdn/column/campaign_supplychain_security.png"
 tags: ["캠페인", "공급망 보안", "Supply Chain", "협력사 보안", "Security", "PLURA-XDR", "클라우드 보안"]
 ---
-
-## 🕵️‍♂️ 캠페인: PLURA-XDR을 활용한 공급망 보안 강화 방안
 
 ## 1. 제안 배경
 
