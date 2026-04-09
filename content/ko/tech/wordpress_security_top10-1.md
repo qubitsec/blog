@@ -3,7 +3,7 @@ date: 2026-04-09
 draft: false
 title: "워드프레스로 만든 사이트 필수 보안 TOP 10"
 description: "WordPress 사이트 운영자가 2026년 기준으로 꼭 점검해야 할 보안 TOP 10을 정리합니다. 업데이트, 2FA, XML-RPC, REST API, 파일 권한, 로그 점검, 백업, WAF와 실시간 탐지까지 실무 중심으로 설명합니다."
-featured_image: "cdn/column/wordpress_security_top10-1.png"
+featured_image: "cdn/tech/wordpress_security_top10.png"
 tags: ["WordPress", "WordPress 보안", "WordPress Plugin", "워드프레스 플러그인", "웹보안", "WAF", "PLURA-XDR"]
 ---
 
