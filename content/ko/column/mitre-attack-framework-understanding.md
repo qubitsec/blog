@@ -623,3 +623,5 @@ LOLBAS도, LOLDrivers도, LOTL도
 현실 대응이 됩니다.
 ---
 
+## 📖 함께 읽기
+* [마이터 어택 관점에서 고급감사정책 활용: 2026년 실무 가이드](https://blog.plura.io/ko/column/mitre_attack_audit_policy/)
