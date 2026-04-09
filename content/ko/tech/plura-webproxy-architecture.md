@@ -195,6 +195,7 @@ flowchart LR
     B --> C[WAF]
     C --> D[Web]
 ```
+![Flow-3](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_03.png)
 
 이 구조의 장점은 단순함입니다.  
 하지만 Web Body 정보 관리는 제한적일 수 있습니다.
@@ -208,6 +209,7 @@ flowchart LR
     C --> D[PLURA-WebProxy]
     D --> E[Web]
 ```
+![Flow-4](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_04.png)
 
 이 구조의 핵심은 다음과 같습니다.
 
@@ -275,6 +277,7 @@ flowchart LR
     D --> F[Web Service 2]
     D --> G[Web Service N]
 ```
+![Flow-5](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_05.png)
 
 이 구조에서는
 
@@ -304,6 +307,7 @@ flowchart LR
     C --> D[PLURA-WebProxy on Kubernetes]
     D --> E[Service / Pod - Web]
 ```
+![Flow-6](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_06.png)
 
 이 구조는 다음과 같은 장점이 있습니다.
 
@@ -324,6 +328,7 @@ flowchart LR
     C --> D[PLURA-WebProxy on VM/Hypervisor]
     D --> E[Web]
 ```
+![Flow-7](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_07.png)
 
 이 구조는 기존 온프레미스나 VM 기반 운영 환경에 적합합니다.
 
@@ -379,6 +384,7 @@ flowchart LR
     C --> D[PLURA-WebProxy]
     D --> E[Web]
 ```
+![Flow-8](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_08.png)
 
 이 구조의 장점은 명확합니다.
 
