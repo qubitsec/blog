@@ -1,6 +1,3 @@
-좋습니다. 기존 글은 **“소개” 중심**이었고, 평가대로 최근 PLURA 기술 컬럼 수준에 맞추려면 **MITRE ATT&CK 매핑, 이벤트 ID, auditpol/GPO 예시, 추천 체크리스트**가 반드시 들어가야 합니다. 원본 글의 구조와 문제의식은 유지하되, 2026년 기준으로 실무형 컬럼으로 다시 쓴 최종본을 아래에 정리했습니다. 원본은 2023년 작성본으로 개요 중심이었고, PowerShell 채널·로그인 이벤트·PLURA-XDR 연계를 다루고 있었습니다.  Microsoft는 고급 감사 정책을 Group Policy의 **Advanced Audit Policy Configuration** 아래에서 구성하도록 안내하고, `auditpol`로 세부 하위 범주를 제어할 수 있다고 설명합니다. 또한 프로세스 생성 감사와 명령줄 포함, PowerShell Script Block Logging, Protected Event Logging은 현재도 공식 권장 구성으로 다뤄집니다. ([Microsoft Learn][1])
-
-````markdown
 ---
 title: "마이터 어택 관점에서 고급감사정책 활용: 2026년 실무 가이드"
 date: 2026-04-09
