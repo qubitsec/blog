@@ -355,10 +355,7 @@ ATT&CK 기법은 멋진 분류표가 아니라
 
 ## 📖 함께 읽기
 
-* Microsoft Learn: Advanced Audit Policy Configuration
-* Microsoft Learn: Command line process auditing
-* Microsoft Learn: PowerShell logging on Windows
-* MITRE ATT&CK: T1078, T1059.001, T1021, T1053.005
+* [MITRE ATT&CK 프레임워크에 대한 이해: 왜 LOLBAS와 LOLDrivers도 ATT&CK 관점으로 봐야 하는가](https://blog.plura.io/ko/column/mitre-attack-framework-understanding/)
 
 ---
 
