@@ -277,6 +277,7 @@ LOLBAS 공격은
 ## 함께 읽기
 
 * [[전자신문] 보안의 출발점은 기록이다](https://blog.plura.io/ko/column/news-cybersecurity-begins-with-logging/)
+* [[전자신문] 24시간 관제의 역설: 왜 아무도 대응하지 못했는가](https://blog.plura.io/ko/column/news-saving-soc/)
 * [MITRE ATT&CK 프레임워크에 대한 이해: 왜 LOLBAS와 LOLDrivers도 ATT&CK 관점으로 봐야 하는가](https://blog.plura.io/ko/column/mitre-attack-framework-understanding/)
 * [보안의 본질: 와일드파이어와 Windows, 그리고 SecureOS](https://blog.plura.io/ko/tech/windows-wildfire/)
 ---
@@ -286,7 +287,5 @@ LOLBAS 공격은
 이 글은 아래 네이버 뉴스 기고문을 바탕으로  
 PLURA-Blog 형식에 맞게 확장·재구성한 내용입니다.
 
-- **전자신문 / 네이버 뉴스**
-- https://n.news.naver.com/article/030/0003415789?sid=105
-
----
+- **전자신문 : 2026-04-10 온라인판**
+- [https://www.etnews.com/20260408000161](https://n.news.naver.com/article/030/0003415789?sid=105)
