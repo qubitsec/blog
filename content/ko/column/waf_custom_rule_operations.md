@@ -40,7 +40,7 @@ tags: ["웹방화벽", "WAF", "시그니처우회", "커스텀룰", "AI공격", 
 즉,  
 **“알려진 시그니처만 막는 WAF는 이미 과거형 보안”** 입니다.
 
-클라우드 WAF들도 이제 custom rules, rate limiting, bot 대응을 핵심 기능으로 내세우고 있습니다. 이는 “기본 룰셋만으로는 부족하다”는 시장 현실을 그대로 보여 줍니다. :contentReference[oaicite:2]{index=2}
+클라우드 WAF들도 이제 custom rules, rate limiting, bot 대응을 핵심 기능으로 내세우고 있습니다. 이는 “기본 룰셋만으로는 부족하다”는 시장 현실을 그대로 보여 줍니다. 
 
 ---
 
@@ -87,7 +87,7 @@ WAF 운영은 사실상 불가능합니다.
 - 업무 시간 외 관리자 페이지 접근 전면 차단
 - 특정 API에 대한 rate limit 또는 challenge 적용
 
-클라우드 WAF들도 custom rules와 rate limiting을 공식 핵심 기능으로 제공합니다. 결국 제품이 달라도 운영 원칙은 같습니다. **기본 룰셋 위에 우리 서비스 전용 정책을 덧입혀야 실제 방어력**이 생깁니다. :contentReference[oaicite:3]{index=3}
+클라우드 WAF들도 custom rules와 rate limiting을 공식 핵심 기능으로 제공합니다. 결국 제품이 달라도 운영 원칙은 같습니다. **기본 룰셋 위에 우리 서비스 전용 정책을 덧입혀야 실제 방어력**이 생깁니다. 
 
 ---
 
@@ -97,10 +97,10 @@ WAF 운영은 사실상 불가능합니다.
 지금은 조금 더 넓게 봐야 합니다.
 
 ### 4-1. OWASP CRS는 여전히 중요하지만, 최신 버전을 봐야 합니다
-OWASP CRS는 여전히 대표적인 오픈소스 룰셋이며, 현재 4.x 계열이 최신입니다. CRS는 ModSecurity뿐 아니라 Coraza 같은 호환 엔진에서도 사용됩니다. :contentReference[oaicite:4]{index=4}
+OWASP CRS는 여전히 대표적인 오픈소스 룰셋이며, 현재 4.x 계열이 최신입니다. CRS는 ModSecurity뿐 아니라 Coraza 같은 호환 엔진에서도 사용됩니다. 
 
 ### 4-2. Coraza 같은 대안도 실무에서 의미가 커졌습니다
-Coraza는 Go 기반 WAF로, ModSecurity SecLang과 CRS v4 호환을 강조합니다. 컨테이너, 프록시, 클라우드 네이티브 환경에서 관심이 커지는 이유가 여기에 있습니다. :contentReference[oaicite:5]{index=5}
+Coraza는 Go 기반 WAF로, ModSecurity SecLang과 CRS v4 호환을 강조합니다. 컨테이너, 프록시, 클라우드 네이티브 환경에서 관심이 커지는 이유가 여기에 있습니다. 
 
 ### 4-3. 웹 보안은 이제 API Security와 Bot 대응까지 포함합니다
 지금의 WAF 운영은 단순히 SQLi, XSS 차단만이 아닙니다.
@@ -113,7 +113,7 @@ Coraza는 Go 기반 WAF로, ModSecurity SecLang과 CRS v4 호환을 강조합니
 - 파일 업로드 검증
 
 즉, 커스텀 룰 운영은 더 이상 “예외적인 심화 작업”이 아니라  
-**WAF 실무의 기본 작업**이 되었습니다. :contentReference[oaicite:6]{index=6}
+**WAF 실무의 기본 작업**이 되었습니다. 
 
 ---
 
