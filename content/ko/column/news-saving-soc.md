@@ -1,5 +1,5 @@
 ---
-title: "24시간 관제의 역설: 왜 아무도 대응하지 못했는가"
+title: "[전자신문] 24시간 관제의 역설: 왜 아무도 대응하지 못했는가"
 date: 2026-04-10
 draft: false
 featured_image: "cdn/column/news-saving-soc.png"
