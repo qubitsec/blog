@@ -379,12 +379,14 @@ MITRE ATT&CK 같은 실제 공격 프레임워크를 기준으로
 ## 함께 읽기
 
 * [[전자신문] 지금 해킹을 이해하려면, LOLBAS부터 다시 봐야 한다](https://blog.plura.io/ko/column/news-lolbas-understanding-attack/)
+* [[전자신문] 24시간 관제의 역설: 왜 아무도 대응하지 못했는가](https://blog.plura.io/ko/column/news-saving-soc/)
 
 ---
 
 ## 📰 원문 뉴스
 
-이 글은 아래 전자신문 기고문을 바탕으로 PLURA-Blog 형식에 맞게 확장·재구성한 내용입니다.
+이 글은 아래 네이버 뉴스 기고문을 바탕으로  
+PLURA-Blog 형식에 맞게 확장·재구성한 내용입니다.
 
 - **전자신문 : 2026-03-18 온라인판**
-- https://www.etnews.com/20260318000409
+- [https://www.etnews.com/20260318000409](https://n.news.naver.com/mnews/article/030/0003408848?sid=110)
