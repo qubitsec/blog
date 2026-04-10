@@ -4,7 +4,7 @@ date: 2026-04-10
 draft: false
 featured_image: "cdn/column/news-saving-soc.png"
 description: "24시간 보안 관제를 운영하고도 침해를 막지 못한 이유는 무엇인가. 문제는 인력이 아니라 구조다. 로그, 통합, 그리고 AI 기반 운영이 없으면 관제는 작동하지 않는다."
-tags: ["SOC", "보안관제", "침해사고대응", "로그", "SIEM", "XDR", "보안칼럼", "PLURA-Blog"]
+tags: ["전자신문", "SOC", "보안관제", "침해사고대응", "로그", "SIEM", "XDR", "보안칼럼", "PLURA-Blog"]
 ---
 
 2025년 일련의 해킹 사건은  
