@@ -108,3 +108,7 @@ PLURA-XDR의 차별점은 바로 여기에 있습니다.
 
 그리고 그 출발점은 언제나  
 **로그**입니다.
+---
+
+## 함께 읽기
+- [생각지도 못한 일을 해내는 PLURA](https://blog.plura.io/ko/column/theory-of-imitation_game/)
