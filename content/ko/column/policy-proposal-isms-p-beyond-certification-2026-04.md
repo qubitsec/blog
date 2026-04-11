@@ -402,3 +402,6 @@ ISMS-P를 없애자는 뜻은 아니다.
 
 이제는 인증을 넘는 보안으로 가야 한다.
 ---
+
+## 📖 함께 읽기
+[[정책제안] ISMS-P 강화는 왜 실질 보안을 강화하지 못하는가](https://blog.plura.io/ko/column/policy-proposal-isms-p-beyond-certification/)
