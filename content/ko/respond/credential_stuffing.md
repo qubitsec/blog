@@ -1,7 +1,7 @@
 ---
 date: 2022-03-14T01:00:00
 draft: false
-title: "크리덴셜 스터핑"
+title: "(데모영상) 크리덴셜 스터핑"
 description: "유출된 계정 정보를 다른 사이트에 반복 대입하는 크리덴셜 스터핑 공격과, 이를 탐지하기 위한 대응 포인트를 정리합니다."
 featured_image: "cdn/respond/credential_stuffing-1.png"
 tags: ["크리덴셜 스터핑", "보안", "PLURA", "계정 공격", "개인정보 보호", "MITRE ATT&CK"]
