@@ -422,6 +422,7 @@ AI는 공격자의 탐색과 변형과 재시도 속도를 높일 수 있지만,
 ---
 
 ## 📖 함께 읽기
-- [[정책제안] ISMS-P 강화는 왜 실질 보안을 강화하지 못하는가](https://blog.plura.io/ko/column/policy-proposal-isms-p-beyond-certification/)
+- [ISMS-P 강화는 왜 실질 보안을 강화하지 못하는가](https://blog.plura.io/ko/column/policy-proposal-isms-p-beyond-certification/)
 - [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
-
+- [MITRE ATT&CK 프레임워크에 대한 이해](https://blog.plura.io/ko/column/mitre-attack-framework-understanding/)
+- [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity/)
