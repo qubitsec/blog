@@ -424,3 +424,13 @@ AI는 공격자의 탐색과 변형과 재시도 속도를 높일 수 있지만,
 - [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
 - [MITRE ATT&CK 프레임워크에 대한 이해](https://blog.plura.io/ko/column/mitre-attack-framework-understanding/)
 - [왜 지금 당장 '소버린 사이버보안'을 준비해야 하는가?](https://blog.plura.io/ko/column/sovereign-cybersecurity/)
+
+---
+
+## 📰 원문 뉴스
+
+이 글은 아래 네이버 뉴스 기고문을 바탕으로  
+PLURA-Blog 형식에 맞게 확장·재구성한 내용입니다.
+
+- **전자신문 : 2026-04-17 온라인판**
+- [https://www.etnews.com/20260417000076](https://n.news.naver.com/mnews/article/030/0003418825?sid=110)
