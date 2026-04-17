@@ -1,6 +1,6 @@
 ---
 title: "[전자신문] 보안 인증은 'KS 마크'가 아니다… 실전 대응력 키워야"
-date: 2026-04-16
+date: 2026-04-17
 draft: false
 description: "AI 해킹 시대, 문서에 갇힌 정보보호 및 개인정보보호 관리체계(ISMS-P)의 한계"
 featured_image: "cdn/column/news-isms-not-ks-2026-04.png"
