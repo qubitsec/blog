@@ -7,7 +7,7 @@ featured_image: "cdn/column/first-principles-thinking.png"
 tags: ["제1원리", "First Principles", "일론 머스크", "사고법", "사이버보안", "전문성", "복잡성", "유추"]
 ---
 
-우리는 모르는 것이 많습니다.
+### 우리는 모르는 것이 많습니다.
 
 병원에 가면  
 의사와 약사가 쓰는 말이 어렵습니다. 🤔
