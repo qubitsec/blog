@@ -459,4 +459,5 @@ AI 해킹 시대에 필요한 것도
 - [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
 - [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
 - [로그 분석으로 해킹 조사하기는 신화(Myth)?](https://blog.plura.io/ko/column/myth/)
+- [핵심 보안에 집중하면, 더 이상 끌려다니지 않습니다](https://blog.plura.io/ko/column/focus_on_core_security_not_be_dragged/)
 - [화성을 향한 머스크의 거대한 퍼즐](https://blog.plura.io/ko/column/mars-colonization-strategy-musk/)
