@@ -457,4 +457,5 @@ AI 해킹 시대에 필요한 것도
 
 - [생각지도 못한 일을 해내는 PLURA](https://blog.plura.io/ko/column/theory-of-imitation_game/)
 - [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
+- [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
 - [화성을 향한 머스크의 거대한 퍼즐](https://blog.plura.io/ko/column/mars-colonization-strategy-musk/)
