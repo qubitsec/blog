@@ -3,7 +3,7 @@ date: 2025-02-23
 draft: false
 title: "제로 데이 공격 대응 전략"
 description: "새로운 취약점(제로데이)과 알려지지 않은 공격 기법을 탐지하고 대응하는 방법을, 웹 로그 분석과 행위 기반 관점에서 정리합니다."
-featured_image: "cdn/column/responding_to_zero_day_attacks.png"
+featured_image: "cdn/respond/responding_to_zero_day_attacks.png"
 tags: ["제로 데이 공격", "Zero-day", "알려지지 않은 공격", "웹로그 분석", "보안", "PLURA-XDR", "OWASP Top 10", "MITRE ATT&CK"]
 ---
 
@@ -19,7 +19,7 @@ tags: ["제로 데이 공격", "Zero-day", "알려지지 않은 공격", "웹로
 왜 **전체 웹 로그 분석**과 **행위 기반 탐지**가 중요한지,  
 그리고 PLURA-XDR이 이 지점에서 어떤 역할을 할 수 있는지를 정리합니다.
 
-![Zero-day Attack](https://blog.plura.io/cdn/column/responding_to_zero_day_attacks.png)
+![Zero-day Attack](https://blog.plura.io/cdn/respond/responding_to_zero_day_attacks.png)
 
 <!--more-->
 
