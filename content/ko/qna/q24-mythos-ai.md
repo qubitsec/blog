@@ -4,7 +4,7 @@ date: 2026-04-20
 draft: false
 description: "Mythos 같은 AI 신위협 시대에는 기존의 '몇 건은 놓쳐도 된다'는 보안 운영 관성이 더 이상 통하지 않습니다. 중요한 것은 AI라는 이름이 아니라 공격의 속도와 변형이며, 이에 대응하려면 full 로그 기반의 흐름 분석과 실시간 대응 체계가 필요합니다."
 featured_image: "cdn/qna/q24.png"
-tags: ["Mythos", "미토스", "AI 해킹", "PLURA-XDR", "제로데이", "XDR", "Full Log", "보안 대응", "QnA"]
+tags: ["Mythos", "미토스", "AI 해킹", "공세적 보안", "Offensive Security", "PLURA-XDR", "제로데이", "XDR", "Full Log", "보안 대응", "QnA"]
 ---
 
 **A. Mythos 같은 AI 신위협 대응의 핵심은  
