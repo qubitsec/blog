@@ -1,7 +1,7 @@
 ---
 title: "AI 보조 WAF 우회: 공격 자동화 시나리오와 방어 설계 원칙"
 date: 2026-04-21
-draft: false
+draft: true
 description: "LLM/에이전트가 SOAP/XML 기반 요청을 대량 변형하고 피드백 루프로 우회 조합을 최적화하는 과정을 위협 모델 관점에서 정리합니다. 재현용 코드와 구체 페이로드는 제외하고, 2026년 기준 방어 설계 원칙까지 함께 제시합니다."
 featured_image: "cdn/tech/ai-waf-bypass.png"
 tags: ["AI보안", "WAF", "LLM", "SOAP", "XML", "우회", "자동화", "API보안"]
