@@ -514,7 +514,7 @@ Mythos 같은 AI 신위협 시대에는
 ### 📖 참고 읽기
 
 * [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
-* [AI 에이전트 보안 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q23-ai-agent/)
+* [Q23. AI 에이전트 보안 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q23-ai-agent/)
 * [복잡한 세상을 이해하는 법: 유추가 아닌 제1원리 사고](https://blog.plura.io/ko/column/first-principles-thinking/)
 
 ### 📚 매뉴얼
