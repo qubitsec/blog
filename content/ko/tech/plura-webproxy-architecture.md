@@ -403,4 +403,4 @@ flowchart LR
 - [웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다.](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
 - [공격자는 왜 X-Forwarded-For를 조작하는가](https://blog.plura.io/ko/tech/checklist-xff-spoofing/)
 - [‘웹서버인 줄 모르는’ 보안·인프라 장비들](https://blog.plura.io/ko/column/hidden_web_surfaces/)
-
+- [웹방화벽(WAF) 선택 체크리스트](https://blog.plura.io/ko/tech/checklist-waf/)
