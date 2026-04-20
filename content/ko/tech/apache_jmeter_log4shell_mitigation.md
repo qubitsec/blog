@@ -39,7 +39,7 @@ Apache JMeter는 2021년 12월 대응 릴리스인 **5.4.2**에서 Log4j를 **2.
 
 ### 3. 주의 사항
 - 기존에 안내되던 아래 방식은 초기 완화책으로 사용되었지만, 이후 추가 이슈가 확인되었습니다.
-  ```bash
+```bash
   -Dlog4j2.formatMsgNoLookups=true
 ```
 
