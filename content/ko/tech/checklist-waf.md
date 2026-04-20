@@ -403,3 +403,11 @@ WAF 경보가 단순한 “알림”이 아니라
 제로데이 대응이나 실전형 WAF를 말하는 것은  
 기술이라기보다 기대에 가깝습니다.
 ---
+
+---
+
+### 함께 읽기
+- [웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다.](https://blog.plura.io/ko/column/web-application-firewall-is-like-a-seatbelt/)
+- [일반 WAF 환경에서 PLURA-WebProxy로 Web Body 정보를 관리하는 방법](https://blog.plura.io/ko/tech/plura-webproxy-architecture/)
+- [공격자는 왜 X-Forwarded-For를 조작하는가](https://blog.plura.io/ko/tech/checklist-xff-spoofing/)
+- [‘웹서버인 줄 모르는’ 보안·인프라 장비들](https://blog.plura.io/ko/column/hidden_web_surfaces/)
