@@ -399,11 +399,7 @@ flowchart LR
 
 ---
 
-## 함께 보면 좋은 글
-
-* 웹방화벽 우회 공격 대응
-* 크리덴셜 스터핑 대응 전략
-* 제로데이 대응을 위한 전체 로그 분석 구조
-* X-Forwarded-For 신뢰 경계 설계
-* API 보안과 요청/응답 데이터 관리
+### 함께 읽기
+- [공격자는 왜 X-Forwarded-For를 조작하는가](https://blog.plura.io/ko/tech/checklist-xff-spoofing/)
+- [‘웹서버인 줄 모르는’ 보안·인프라 장비들](https://blog.plura.io/ko/column/hidden_web_surfaces/)
 
