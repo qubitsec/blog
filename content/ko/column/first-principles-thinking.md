@@ -515,7 +515,8 @@ AI 해킹 시대에 필요한 것도
 ### 📖 함께 읽기
 
 - [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
-- [AI 에이전트 보안 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q23-ai-agent/)
+- [Q24. Mythos(미토스) AI 신위협 공격 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q24-mythos-ai/)
+- [Q23. AI 에이전트 보안 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q23-ai-agent/)
 - [생각지도 못한 일을 해내는 PLURA](https://blog.plura.io/ko/column/theory-of-imitation_game/)
 - [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
 - [로그 분석으로 해킹 조사하기는 신화(Myth)?](https://blog.plura.io/ko/column/myth/)
