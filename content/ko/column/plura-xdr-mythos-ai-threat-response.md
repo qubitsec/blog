@@ -4,7 +4,7 @@ date: 2026-04-14
 draft: false
 description: "Mythos 같은 AI 신위협은 이제 공격이 더 빨라지고 더 많이 변형되는 시대가 왔음을 보여준다. 이는 곧 AI가 주도하는 공세적 보안(Offensive Security) 시대의 시작을 의미하며, 방어 역시 full 로그 기반 흐름 분석과 실시간 판단·즉시 대응 중심으로 전환되어야 한다."
 featured_image: "cdn/column/plura-xdr-mythos-ai-threat-response.png"
-tags: ["PLURA-XDR", "Mythos", "미토스", "AI 해킹", "공세적 보안", "Offensive Security", "제로데이", "XDR", "웹 보안", "크리덴셜 스터핑", "APT", "랜섬웨어", "Full Log", "실시간 대응"]
+tags: ["PLURA-XDR", "Mythos", "미토스", "미션 임파서블", "엔티티", "The Entity", "AI 해킹", "공세적 보안", "Offensive Security", "제로데이", "XDR", "웹 보안", "크리덴셜 스터핑", "APT", "랜섬웨어", "Full Log", "실시간 대응"]
 ---
 
 ### 🧭 이 글의 결론(3줄 요약)
