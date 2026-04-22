@@ -448,10 +448,15 @@ PLURA-EDR은 향후 Mythos급 AI 해킹 공격과 같은
 
 ---
 
-## 📖 함께 읽기
+## 📖 참고 문서
 - [Elastic Defend 공식 문서: Event capture and Elastic Defend](https://www.elastic.co/docs/solutions/security/manage-elastic-defend/event-capture-elastic-defend)
 - [Elastic Defend 공식 문서: Configure an integration policy for Elastic Defend](https://www.elastic.co/docs/solutions/security/configure-elastic-defend/configure-an-integration-policy-for-elastic-defend)
 - [Elastic 블로그: Windows Event Logging / WEC 가이드](https://www.elastic.co/blog/the-essentials-of-windows-event-logging)
 - [PLURA 호스트보안(EDR)](https://docs.plura.io/ko/v6/fn/comm/edr)
 - [PLURA 마이터어택](https://docs.plura.io/ko/v6/fn/comm/mitre)
 - [PLURA 상관분석](https://docs.plura.io/ko/v6/fn/comm/correlation)
+
+### 함께 읽기
+- [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
+- [Q24. Mythos(미토스) AI 신위협 공격 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q24-mythos-ai/)
+- [Q23. AI 에이전트 보안 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q23-ai-agent/)
