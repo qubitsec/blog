@@ -587,7 +587,6 @@ AI 시대 정보보안이 가야 할 방향입니다.
 - [Mythos 같은 AI 신위협 시대, PLURA-XDR은 어떻게 대응하는가](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
 - [Q24. Mythos(미토스) AI 신위협 공격 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q24-mythos-ai/)
 - [Q23. AI 에이전트 보안 어떻게 대응해야 할까요?](https://blog.plura.io/ko/qna/q23-ai-agent/)
-
 - [PLURA는 AI 시대 사이버 보안의 새로운 이정표입니다](https://blog.plura.io/ko/column/plura-xdr-ai-infosec-moat/)
 - [국가대표 AI 시대, 국가대표 보안 제품 논의가 필요한 이유](https://blog.plura.io/ko/column/campaign-national-security/)
 - [24시간 관제의 역설: 왜 아무도 대응하지 못했는가](https://blog.plura.io/ko/column/news-saving-soc/)
