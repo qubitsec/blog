@@ -3,7 +3,7 @@ title: "SentinelOne의 자율형 AI 보안은 정말 AI인가?"
 date: 2025-07-15
 draft: false
 description: "SentinelOne이 말하는 AI가 실제로 어떤 기술을 뜻하는지, 행동 기반 탐지·전통적 ML·생성형 AI를 구분해 공정하게 분석하고, 보안 제품의 AI 주장 평가 기준을 제시합니다."
-featured_image: "cdn/column/is-sentinelone-really-ai.png"
+featured_image: "cdn/tech/is-sentinelone-really-ai.png"
 tags: ["SentinelOne", "AI보안", "LLM", "보안운영", "자동화보안", "Purple AI", "EDR", "XDR"]
 ---
 
