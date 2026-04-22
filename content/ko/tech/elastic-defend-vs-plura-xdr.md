@@ -1,9 +1,9 @@
 ---
 title: "Elastic Defend와 PLURA-XDR, 무엇이 어떻게 다른가?"
 date: 2026-04-22
-draft: false
+draft: true
 description: "Elastic Defend와 PLURA-XDR을 공정하게 비교하여, 엔드포인트 중심 EDR과 웹·시스템 통합형 XDR/SECaaS의 차이를 구조적으로 설명합니다."
-featured_image: "cdn/column/elastic-defend-vs-plura-xdr.png"
+featured_image: "cdn/tech/elastic-defend-vs-plura-xdr.png"
 tags: ["Elastic Defend", "PLURA-XDR", "EDR", "XDR", "Elastic Security", "고급감사정책", "포렌식", "보안로그", "MITRE ATT&CK"]
 ---
 
