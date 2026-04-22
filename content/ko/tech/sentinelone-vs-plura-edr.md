@@ -42,7 +42,7 @@ SentinelOne과 PLURA-EDR도 이름만 보면 비슷해 보일 수 있습니다.
 SentinelOne과 PLURA-EDR은  
 둘 다 **보호가 우선인 EDR**입니다.
 
-SentinelOne 공식 자료를 보면, 이 회사는 **Behavioral AI**, **Storyline(공격 이벤트를 하나의 흐름으로 엮어 보여 주는 기능)**, **Deep Visibility(과거와 현재 텔레메트리를 탐색하는 가시성 기능)**, **Autonomous Response**, **Rollback(감염 이후 변경 사항 복구 기능)**, **Purple AI(자연어 기반 조사 보조 기능)**를 통해 예방·탐지·조사·대응을 통합하겠다는 방향을 분명히 보여 줍니다. 즉, SentinelOne은 행위 기반 탐지와 자동 대응, 그리고 Storyline 기반 맥락 제공에 강점을 둔 보호형 EDR이라고 볼 수 있습니다.
+SentinelOne 공식 자료를 보면, 이 회사는 **Behavioral AI**, **Storyline(공격 이벤트를 하나의 흐름으로 엮어 보여 주는 기능)**, **Deep Visibility(과거와 현재 텔레메트리를 탐색하는 가시성 기능)**, **Autonomous Response**, **Rollback(감염 이후 변경 사항 복구 기능)**, **Purple AI**(자연어 기반 조사 보조 기능)를 통해 예방·탐지·조사·대응을 통합하겠다는 방향을 분명히 보여 줍니다. 즉, SentinelOne은 행위 기반 탐지와 자동 대응, 그리고 Storyline 기반 맥락 제공에 강점을 둔 보호형 EDR이라고 볼 수 있습니다.
 
 반면 PLURA 공식 문서는  
 PLURA-EDR을 계정 탈취 공격, 원격 접속 시도, 권한 상승, 측면 이동 공격을 탐지·대응하고,  
