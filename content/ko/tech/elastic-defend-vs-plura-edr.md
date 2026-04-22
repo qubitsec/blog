@@ -119,7 +119,7 @@ Elastic 블로그는 WEC cookbook을 통해 Domain Controller, Server, Workstati
 또 Sysmon 설치는 cookbook이 직접 다루지 않으며, 사용자가 Sysmon과 `sysmonconfig.xml`을 내려받아 직접 설치하는 예를 보여 줍니다. 
 
 즉, Elastic 쪽에는 **“어떻게 할 수 있는가”에 대한 가이드**는 있습니다.  
-하지만 그것은 곧 **“운영 가능한 형태로 자동 관리된다”**는 뜻이 아닙니다.
+하지만 그것은 곧 “**운영 가능한 형태로 자동 관리된다**”는 뜻이 아닙니다.
 
 오히려 Elastic 공식 자료를 종합하면 다음과 같은 구조에 가깝습니다.
 
