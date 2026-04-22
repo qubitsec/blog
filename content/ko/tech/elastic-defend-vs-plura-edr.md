@@ -167,7 +167,7 @@ PLURA-EDR도 보호가 우선입니다.
 
 > **Efficient Protection vs Context-Rich Protection**
 
-에 더 가깝습니다. :contentReference[oaicite:17]{index=17}
+에 더 가깝습니다. 
 
 ---
 
