@@ -3,7 +3,7 @@ title: "Elastic Defend와 PLURA-EDR, 무엇이 어떻게 다른가?"
 date: 2026-04-22
 draft: false
 description: "Elastic Defend와 PLURA-EDR을 공정하게 비교하여, 둘 다 보호가 우선인 EDR이지만 보호를 위해 어떤 수준의 기록과 행위 맥락을 확보하는지, 그리고 그 차이가 향후 AI 해킹 대응성에 어떤 의미를 갖는지 설명합니다."
-featured_image: "cdn/column/elastic-defend-vs-plura-edr.png"
+featured_image: "cdn/tech/elastic-defend-vs-plura-edr.png"
 tags: ["Elastic Defend", "PLURA-EDR", "EDR", "Elastic Security", "AI 해킹", "Mythos", "고급감사정책", "감사로그", "MITRE ATT&CK", "보안로그"]
 ---
 
