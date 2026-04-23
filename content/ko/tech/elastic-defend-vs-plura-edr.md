@@ -298,8 +298,6 @@ PLURA-XDR은 WAF, EDR, Forensic, SOAR, SIEM 등을 수직 통합한 구조이며
 
 이 하나의 논리로 연결됩니다.
 
-### 6.1 PLURA의 상관분석 흐름을 간단히 보면
-
 ---
 
 ## 8. 그래서 왜 Mythos 대응 논리로 이어지는가?
@@ -472,7 +470,7 @@ Microsoft Defender를 기본 안티바이러스 계층으로 전제한 위에서
 > **더 무게를 둡니다.**
 
 따라서  
-효율적인 선별 수집형 EDR과 Elastic 확장성이 중요하면 Elastic Defend가 강하고,  
+효율적인 선별 수집형 EDR과 Elastic 확장성이 중요하면 Elastic Defend가,  
 AI 해킹 시대에 웹과 호스트를 끊김 없이 연결해 더 깊게 탐지·차단하고 싶다면  
 PLURA-EDR / PLURA-XDR의 논리가 더 직접적이라고 정리할 수 있습니다.
 
