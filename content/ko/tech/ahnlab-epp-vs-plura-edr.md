@@ -127,10 +127,10 @@ EPP를 단순 V3 제품으로 설명하지 않습니다.
 비교가 더 정확해집니다.
 
 > 🚨 다만 이 점은 분명히 짚고 넘어갈 필요가 있습니다.  
-> Windows 환경에서는 제3자 안티바이러스가 활성화되면 Microsoft Defender Antivirus가 비활성화되거나 passive mode로 전환될 수 있습니다.  
+> Windows 환경에서는 제3자 안티바이러스가 기본 보호 계층으로 동작할 경우 Microsoft Defender Antivirus가 비활성화되거나 passive mode로 전환될 수 있습니다.  
 > 즉, V3를 기본 보호 엔진으로 두는 구조는 결과적으로 **Microsoft Defender 기본 보호 계층을 대체하는 방향**에 가깝습니다.  
 > PLURA는 바로 이 지점을 다르게 봅니다.  
-> **기본 안티바이러스는 Microsoft Defender가 맡고, 그 위에서 EDR/XDR이 더 깊은 로그·행위·상관분석으로 대응력을 높이는 것이 더 현대적인 구조**라고 보기 때문입니다.
+> **기본 안티바이러스는 Microsoft Defender가 맡고, 그 위에서 EDR/XDR이 더 깊은 로그·행위·상관분석으로 대응력을 높이는 것이 더 안정적이고 심층적인 구조**라고 보기 때문입니다.
 
 ---
 
