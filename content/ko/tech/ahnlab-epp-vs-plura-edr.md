@@ -73,7 +73,7 @@ PLURA-XDR은 WAF, EDR, SIEM, SOAR 등을 수직 통합한 구조로
 이 부분은 이번 비교에서 매우 중요합니다.
 
 PLURA의 철학은  
-**Windows 환경에서 기본 안티바이러스는 Microsoft Defender를 전제로 보는 것**입니다.
+🌟**Windows 환경에서 기본 안티바이러스는 Microsoft Defender를 전제로 보는 것**입니다.
 
 Microsoft 공식 문서도 Microsoft Defender Antivirus가  
 Windows 10, Windows 11, Windows Server에서 제공되며,  
