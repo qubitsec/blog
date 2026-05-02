@@ -1316,6 +1316,7 @@ AI 공격 시대에
 
 ## 📖 함께 읽기
 
+- [Q25. 로트러스트, 도입해야 하나요?](https://blog.plura.io/ko/qna/q25-zta/)
 - [웹서버인 줄 모르는 보안·인프라 장비들](https://blog.plura.io/ko/column/hidden_web_surfaces/)
 - [React2Shell 취약점 대응](https://blog.plura.io/ko/threats/vulnerability-react2shell/)
 - [Windows Wildfire: 정상 기능이 공격 도구가 되는 순간](https://blog.plura.io/ko/tech/windows-wildfire/)
