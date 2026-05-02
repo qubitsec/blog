@@ -2,7 +2,7 @@
 title: "Q25. 제로트러스트, 도입해야 하나요?"
 date: 2026-05-02
 draft: false
-description: "제로트러스트는 반드시 검토해야 할 보안 원칙이지만, ZTNA나 IAM 제품 도입만으로 침해 대응이 완성되지는 않습니다. 제로트러스트를 어떻게 이해하고, 어디까지 적용하며, 왜 XDR 기반 실시간 행위 분석과 함께 운영해야 하는지 정리합니다."
+description: "제로트러스트는 제품을 도입하는 문제가 아니라 접근·권한·행위 검증 원칙을 보안 운영에 적용하는 문제입니다. ZTNA·IAM·SASE의 역할과 한계, 그리고 XDR 기반 실시간 행위 분석이 왜 함께 필요한지 정리합니다."
 featured_image: "cdn/qna/q25.png"
 tags: ["ZeroTrust", "ZTA", "ZTNA", "SASE", "IAM", "AI보안", "XDR", "PLURA-XDR"]
 ---
@@ -52,13 +52,12 @@ tags: ["ZeroTrust", "ZTA", "ZTNA", "SASE", "IAM", "AI보안", "XDR", "PLURA-XDR"
 
 따라서 결론은 단순합니다.
 
-> 제로트러스트는 제품으로 도입하는 것이 아니라,  
-> 보안 운영 원칙으로 적용해야 합니다.  
-> 그리고 그 원칙은 XDR 기반 실시간 행위 분석과 함께 운영될 때 의미가 있습니다.
+> 제로트러스트는 구매 대상이 아니라 적용해야 할 원칙입니다.  
+> 그러나 그 원칙만으로 침해 탐지와 대응이 완성된다고 말해서는 안 됩니다.
 
 ---
 
-### 1️⃣ 왜 지금 제로트러스트 도입을 검토해야 할까요?
+### 1️⃣ 왜 지금 제로트러스트 원칙이 중요할까요?
 
 예전에는 보안을 이렇게 생각했습니다.
 
@@ -106,9 +105,10 @@ tags: ["ZeroTrust", "ZTA", "ZTNA", "SASE", "IAM", "AI보안", "XDR", "PLURA-XDR"
 IAM 제품도 아니고,  
 ZTNA 제품 하나로 완성되는 것도 아닙니다.
 
-NIST SP 800-207은 제로트러스트 아키텍처를  
-조직의 IT 환경을 제로트러스트 원칙에 맞게 전환하기 위한  
-아키텍처와 배포 모델로 설명합니다. ([NIST][1])
+NIST SP 800-207은 제로트러스트를  
+정적인 네트워크 경계 중심 방어에서 벗어나  
+사용자, 자산, 리소스 중심으로 보안을 재구성하는  
+사이버보안 패러다임으로 설명합니다. ([NIST][1])
 
 CISA의 Zero Trust Maturity Model도  
 제로트러스트를 한 번에 끝나는 구축 사업이 아니라  
@@ -121,7 +121,7 @@ CISA의 Zero Trust Maturity Model도
 > 최소 권한으로 제한하며,  
 > 접근 이후의 상태 변화를 지속적으로 확인하는 보안 운영 방식
 
-그래서 제로트러스트 도입은  
+그래서 제로트러스트는  
 “제품을 샀는가?”가 아니라  
 다음 질문으로 평가해야 합니다.
 
@@ -136,7 +136,7 @@ CISA의 Zero Trust Maturity Model도
 | 7 | 모든 변경과 행위를 로그로 남기는가 | Visibility |
 | 8 | 이상 행위를 탐지하고 대응하는가 | Detection & response |
 
-이 중 일부만 도입하고  
+이 중 일부만 적용하고  
 “제로트러스트 구축 완료”라고 말하면 위험합니다.
 
 ---
@@ -246,7 +246,7 @@ CISA의 Zero Trust Maturity Model도
 
 ### 5️⃣ “정상 계정”은 제로트러스트 시대에도 가장 위험합니다
 
-제로트러스트 도입 이후에도  
+제로트러스트 원칙을 적용해도  
 정상 계정 기반 침해는 계속 발생할 수 있습니다.
 
 오히려 공격자는 더 적극적으로 정상 계정을 노립니다.
@@ -327,7 +327,24 @@ CISA의 Zero Trust Maturity Model도
 - 에이전트 업데이트 공급망 공격
 - 정책 배포 API 악용
 
-제로트러스트 제품이 안전하다는 말은  
+이 문제는 추상적인 가능성만은 아닙니다.
+
+2024년 CISA는 Ivanti Connect Secure와 Ivanti Policy Secure의  
+여러 취약점이 실제 공격에 악용되었다고 경고했습니다.  
+CISA 권고에 따르면 이 취약점들에는 웹 컴포넌트의 권한 상승 취약점도 포함되어 있었습니다. ([CISA Ivanti Advisory][3])
+
+또한 Okta는 2023년 고객 지원 시스템 침해 사고에서  
+일부 HAR 파일에 세션 토큰이 포함되어 있었고,  
+이 토큰이 세션 하이재킹 공격에 사용될 수 있었다고 설명했습니다. ([Okta RCA][4])  
+이후 Okta는 지원 시스템 사용자 정보가 포함된 보고서가 다운로드되었고,  
+영향 범위를 모든 Workforce Identity Cloud 및 Customer Identity Solution 고객으로 확대해 공지했습니다. ([Okta Update][5])
+
+이 사례들이 말해주는 것은 분명합니다.
+
+> 접근 보안 제품과 IAM 시스템도  
+> 조직의 핵심 공격 표면이 될 수 있습니다.
+
+따라서 제로트러스트 제품이 안전하다는 말은  
 제품 이름으로 증명되지 않습니다.
 
 다음 로그와 증거로 검증되어야 합니다.
@@ -350,7 +367,7 @@ CISA의 Zero Trust Maturity Model도
 
 ---
 
-### 7️⃣ 제로트러스트가 장악되면 더 위험할 수 있습니다
+### 7️⃣ 제로트러스트 제어면은 더 엄격하게 보호해야 합니다
 
 제로트러스트 제어면은  
 조직의 접근 정책을 결정하는 핵심 위치에 있습니다.
@@ -381,11 +398,14 @@ CISA의 Zero Trust Maturity Model도
 - 정상 에이전트 배포 체계가 내부 확산 경로가 될 수 있습니다.
 - 정상 관리자 콘솔이 공격 지휘 체계가 될 수 있습니다.
 
-그래서 제로트러스트는  
-도입보다 **검증과 보호**가 더 중요합니다.
+따라서 제로트러스트는  
+적용보다 **검증과 보호**가 더 중요합니다.
 
-> 제로트러스트를 도입한다면,  
+> 제로트러스트 원칙을 적용한다면,  
 > 제로트러스트 제어면 자체를 가장 중요한 보호 대상으로 지정해야 합니다.
+
+이 주제는 별도 정책제안 문서에서도 다룬 바와 같이,  
+미토스급 AI 공격 시대에는 더 중요해집니다.
 
 ---
 
@@ -405,7 +425,7 @@ AI는 다음을 자동화할 수 있습니다.
 - 정상 계정 기반 행위 위장
 - 취약점과 권한의 체이닝
 
-이 상황에서 제로트러스트는 여전히 필요합니다.
+이 상황에서 제로트러스트는 여전히 중요합니다.
 
 그러나 제로트러스트만으로는  
 AI 공격의 전체 흐름을 막기 어렵습니다.
@@ -451,7 +471,7 @@ XDR은 들어온 뒤의 행위를 봅니다.
 | WAF | 웹/API 요청이 공격인가 | 요청·응답·본문 기반 웹 공격 탐지 |
 | EDR | 호스트에서 무엇이 실행되는가 | 프로세스·파일·계정·서비스 행위 탐지 |
 | XDR | 전체 공격 흐름은 무엇인가 | 웹·계정·호스트·네트워크·포렌식 상관분석 |
-| SOAR / 자동 대응 | 무엇을 즉시 차단할 것인가 | IP·계정·세션·프로세스·네트워크 대응 |
+| 자동 대응 | 무엇을 즉시 차단할 것인가 | IP·계정·세션·프로세스·네트워크 대응 |
 
 이렇게 보면 제로트러스트는  
 보안의 출입 통제 레이어입니다.
@@ -469,9 +489,9 @@ XDR 없이 제로트러스트만 있으면
 
 ---
 
-### 🔟 PLURA-XDR은 제로트러스트의 어떤 공백을 메우나요?
+### 🔟 XDR 계층은 제로트러스트의 어떤 공백을 메우나요?
 
-PLURA-XDR의 역할은  
+XDR의 역할은  
 제로트러스트를 대체하는 것이 아닙니다.
 
 오히려 제로트러스트가 잘하는 영역을 인정하면서,  
@@ -483,8 +503,8 @@ PLURA-XDR의 역할은
 하지만 웹 애플리케이션 안에서 실제로 어떤 요청이 들어왔는지는  
 별도의 웹 보안 가시성이 필요합니다.
 
-PLURA-XDR은 웹 요청과 응답, 본문을 기반으로  
-다음 공격 정황을 분석해야 한다는 관점을 가집니다.
+XDR과 WAF 계층은 웹 요청과 응답, 본문을 기반으로  
+다음 공격 정황을 분석할 수 있어야 합니다.
 
 - SQL Injection
 - 인증 우회 시도
@@ -545,13 +565,16 @@ AI 공격 시대에는 의미가 줄어듭니다.
 - 차단 후 무엇이 바뀌었는지 확인할 수 있는가
 - CEO와 보안 담당자가 같은 근거를 보고 판단할 수 있는가
 
-PLURA-XDR의 핵심 가치는  
+PLURA-XDR 역시 이러한 관점에서  
 제로트러스트 이후의 행위를  
-원본 로그, 상관분석, 자동 대응, 포렌식 검증으로 이어가는 데 있습니다.
+원본 로그, 상관분석, 자동 대응, 포렌식 검증으로 이어가는 구조를 지향합니다.
+
+중요한 것은 제품명이 아니라  
+**제로트러스트 이후의 행위를 실제로 볼 수 있느냐**입니다.
 
 ---
 
-### 1️⃣1️⃣ 제로트러스트 도입 순서는 이렇게 잡는 것이 현실적입니다
+### 1️⃣1️⃣ 제로트러스트 적용 순서는 이렇게 잡는 것이 현실적입니다
 
 제로트러스트는 한 번에 끝내는 사업으로 접근하면 실패하기 쉽습니다.
 
@@ -575,7 +598,7 @@ PLURA-XDR의 핵심 가치는
 | 10 | 훈련과 검증 | 계정 탈취, 정책 서버 침해, 내부 확산 시나리오 훈련 |
 
 이 순서에서 중요한 것은  
-제로트러스트 도입과 동시에  
+제로트러스트 적용과 동시에  
 로그·탐지·대응 체계를 함께 설계해야 한다는 점입니다.
 
 접근 정책만 바꾸고  
@@ -584,9 +607,9 @@ PLURA-XDR의 핵심 가치는
 
 ---
 
-### 1️⃣2️⃣ 도입 전에 반드시 물어야 할 질문
+### 1️⃣2️⃣ 적용 전에 반드시 물어야 할 질문
 
-제로트러스트 도입을 검토한다면  
+제로트러스트 적용을 검토한다면  
 다음 질문에 답해야 합니다.
 
 #### 접근 통제 관점
@@ -619,17 +642,17 @@ PLURA-XDR의 핵심 가치는
 * CEO에게 몇 분 안에 공격 흐름을 보고할 수 있는가?
 
 이 질문에 답하지 못하면  
-제로트러스트 도입은 보안 강화가 아니라  
+제로트러스트 적용은 보안 강화가 아니라  
 보안 제품 추가에 그칠 수 있습니다.
 
 ---
 
-### 1️⃣3️⃣ 제로트러스트 도입 시 흔한 착각
+### 1️⃣3️⃣ 제로트러스트 적용 시 주의해야 할 점
 
 제로트러스트는 좋은 원칙이지만,  
-도입 과정에서 흔히 다음과 같은 착각이 생깁니다.
+적용 과정에서 다음과 같은 오해가 생기기 쉽습니다.
 
-| No | 착각 | 현실 |
+| No | 주의해야 할 점 | 현실 |
 |---:|---|---|
 | 1 | 제로트러스트 제품을 사면 완성된다 | 제품이 아니라 운영 아키텍처다 |
 | 2 | VPN을 ZTNA로 바꾸면 끝난다 | 접근 이후 행위 분석이 남는다 |
@@ -640,8 +663,10 @@ PLURA-XDR의 핵심 가치는
 | 7 | 성숙도 모델 점수가 높으면 안전하다 | 실제 공격 흐름을 막는지는 별도 문제다 |
 | 8 | 회복 계획이 있으면 충분하다 | 데이터 유출과 암호화 전 차단이 우선이다 |
 
-제로트러스트를 제대로 도입하려면  
-이 착각부터 제거해야 합니다.
+이 항목들은 제로트러스트를 반대하기 위한 것이 아닙니다.
+
+오히려 제로트러스트를 제대로 적용하기 위해  
+반드시 확인해야 할 운영 리스크입니다.
 
 ---
 
@@ -719,5 +744,7 @@ AI 공격 시대에는 둘 다 필요합니다.
 
 [1]: https://csrc.nist.gov/pubs/sp/800/207/final "NIST SP 800-207, Zero Trust Architecture"
 [2]: https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf "CISA Zero Trust Maturity Model Version 2.0"
-[3]: https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3784301/nsa-releases-guidance-on-zero-trust-maturity-throughout-the-application-and-wor/ "NSA Zero Trust Guidance"
-[4]: https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3791171/nsa-releases-guidance-on-the-visibility-and-analytics-pillar-of-zero-trust/ "NSA Visibility and Analytics Pillar of Zero Trust"
+[3]: https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-060b "CISA: Threat Actors Exploit Multiple Vulnerabilities in Ivanti Connect Secure and Ivanti Policy Secure"
+[4]: https://sec.okta.com/articles/2023/11/unauthorized-access-oktas-support-case-management-system-root-cause/ "Okta: Unauthorized Access to Support Case Management System Root Cause"
+[5]: https://sec.okta.com/articles/october-security-incident-recommended-actions/ "Okta: October Customer Support Security Incident Update and Recommended Actions"
+[6]: https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3791171/nsa-releases-guidance-on-the-visibility-and-analytics-pillar-of-zero-trust/ "NSA: Visibility and Analytics Pillar of Zero Trust"
