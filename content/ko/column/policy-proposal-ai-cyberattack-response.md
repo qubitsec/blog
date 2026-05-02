@@ -694,7 +694,7 @@ CEO에게 먼저 말해야 할 것은 이것이다.
 
 AI 공격 시대의 CEO 행동 수칙은  
 “신속한 회복”이 아니라  
-**“데이터 유출 전에 탐지하고 차단할 수 있는가”**에서 출발해야 한다.
+“**데이터 유출 전에 탐지하고 차단할 수 있는가**”에서 출발해야 한다.
 
 참고:  
 - [Coupang 33.7 million customer accounts breached](https://www.reuters.com/sustainability/boards-policy-regulation/south-korean-e-commerce-firm-coupang-says-337-million-customer-accounts-breached-2025-11-29/)  
