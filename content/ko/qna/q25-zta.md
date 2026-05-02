@@ -1002,14 +1002,14 @@ AI 공격 시대에는 모두 필요합니다.
 
 ## 📖 함께 읽기
 
-- [Q22. SASE만으로 통합 보안이 완성될까요?](https://blog.plura.io/ko/qna/q22-sase/)
 - [[정책제안] AI 공격 시대, 정부 안내문은 왜 실전 대응 기준이 되지 못하는가](https://blog.plura.io/ko/column/policy-proposal-ai-cyberattack-response/)
 - [웹서버인 줄 모르는 보안·인프라 장비들](https://blog.plura.io/ko/column/hidden_web_surfaces/)
 - [React2Shell 취약점 대응](https://blog.plura.io/ko/threats/vulnerability-react2shell/)
 - [Windows Wildfire: 정상 기능이 공격 도구가 되는 순간](https://blog.plura.io/ko/tech/windows-wildfire/)
 - [PLURA-XDR은 Mythos AI 해킹 공격에 어떻게 대응하는가?](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
 - [SIEM·SOAR 하이프사이클, 왜 현실과 맞지 않는가](https://blog.plura.io/ko/column/hypecycle_siem_soar/)
-
+- [Q22. SASE만으로 통합 보안이 완성될까요?](https://blog.plura.io/ko/qna/q22-sase/)
+- 
 ---
 
 [1]: https://csrc.nist.gov/pubs/sp/800/207/final "NIST SP 800-207, Zero Trust Architecture"
