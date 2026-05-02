@@ -1009,7 +1009,7 @@ AI 공격 시대에는 모두 필요합니다.
 - [PLURA-XDR은 Mythos AI 해킹 공격에 어떻게 대응하는가?](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
 - [SIEM·SOAR 하이프사이클, 왜 현실과 맞지 않는가](https://blog.plura.io/ko/column/hypecycle_siem_soar/)
 - [Q22. SASE만으로 통합 보안이 완성될까요?](https://blog.plura.io/ko/qna/q22-sase/)
-- 
+
 ---
 
 [1]: https://csrc.nist.gov/pubs/sp/800/207/final "NIST SP 800-207, Zero Trust Architecture"
