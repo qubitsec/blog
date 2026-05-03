@@ -3,7 +3,7 @@ date: 2026-05-03
 draft: false
 title: "미토스 AI를 활용한 공세적 공격 대응 전략"
 description: "Mythos급 AI가 제로데이 취약점을 찾아내는 시대에, 웹/API 실시간 분석과 SSLVPN·OpenVPN·VPN·RDP·SSH·TeamViewer·AnyDesk Any 오픈 차단을 중심으로 공격면 최소화 전략을 정리합니다."
-featured_image: "cdn/respond/responding_to_mythos_ai_offensive_attack.png"
+featured_image: "cdn/respond/responding_to_mythos_ai_offensive_attack-1.png"
 tags: ["Mythos", "미토스", "AI 해킹", "공세적 보안", "제로데이", "공격면 관리", "웹 공격면", "VPN", "SSLVPN", "OpenVPN", "TeamViewer", "AnyDesk", "Any 차단", "PLURA-XDR"]
 ---
 
