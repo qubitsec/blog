@@ -831,8 +831,12 @@ AI에 의해 다시 무기화될 수 있는 대표적인 웹 공격입니다.
 🚨**더 이상 Any 오픈은 없습니다.**
 
 ---
+### 🎬 함께 보고 & 읽기
+- [Netflix - Zero Day](https://www.youtube.com/watch?v=f3dNCBKY1Hg)
+- [위키백과 - 제로 데이 공격](https://ko.wikipedia.org/wiki/%EC%A0%9C%EB%A1%9C_%EB%8D%B0%EC%9D%B4_%EA%B3%B5%EA%B2%A9)
 
-### 📖 함께 보고 & 읽기
+
+### 📖 참고 자료
 - [Anthropic Red Team - Assessing Claude Mythos Preview’s cybersecurity capabilities](https://red.anthropic.com/2026/mythos-preview/)
 - [Anthropic - Project Glasswing: Securing critical software for the AI era](https://www.anthropic.com/glasswing)
 - [CISA - Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
