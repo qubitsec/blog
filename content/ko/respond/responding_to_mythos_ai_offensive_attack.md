@@ -2,9 +2,9 @@
 date: 2026-05-03
 draft: false
 title: "미토스 AI를 활용한 공세적 공격 대응 전략"
-description: "Mythos급 AI가 제로데이 취약점을 찾아내는 시대에, 웹/API 실시간 분석과 SSLVPN·OpenVPN·VPN·RDP·SSH Any 오픈 차단을 중심으로 공격면 최소화 전략을 정리합니다."
+description: "Mythos급 AI가 제로데이 취약점을 찾아내는 시대에, 웹/API 실시간 분석과 SSLVPN·OpenVPN·VPN·RDP·SSH·TeamViewer·AnyDesk Any 오픈 차단을 중심으로 공격면 최소화 전략을 정리합니다."
 featured_image: "cdn/respond/responding_to_mythos_ai_offensive_attack.png"
-tags: ["Mythos", "미토스", "AI 해킹", "공세적 보안", "제로데이", "공격면 관리", "웹 공격면", "VPN", "SSLVPN", "OpenVPN", "Any 차단", "PLURA-XDR"]
+tags: ["Mythos", "미토스", "AI 해킹", "공세적 보안", "제로데이", "공격면 관리", "웹 공격면", "VPN", "SSLVPN", "OpenVPN", "TeamViewer", "AnyDesk", "Any 차단", "PLURA-XDR"]
 ---
 
 🤖 Mythos는 보안에 매우 진심인 BSD 계열 운영체제에서도  
@@ -28,7 +28,7 @@ AI를 이용해 직접 새로운 취약점을 찾고,
 핵심은 단순합니다.
 
 > **웹/API는 반드시 실시간으로 보고,  
-> SSLVPN·OpenVPN·VPN·RDP·SSH는 Any로 열지 않습니다.**
+> SSLVPN·OpenVPN·VPN·RDP·SSH·TeamViewer·AnyDesk는 Any로 열지 않습니다.**
 
 ![Mythos AI Offensive Attack Response](https://blog.plura.io/cdn/respond/responding_to_mythos_ai_offensive_attack.png)
 
@@ -261,10 +261,10 @@ Mythos 시대의 첫 번째 대응 원칙은 분명합니다.
 
 ---
 
-## 4. 두 번째 공격면은 원격 접속·암호화 통신 소프트웨어입니다
+## 4. 두 번째 공격면은 원격 접속·원격제어·암호화 통신 소프트웨어입니다
 
 **두 번째로 반드시 봐야 할 영역은**  
-**외부 접속과 암호화 통신을 담당하는 소프트웨어입니다.**
+**외부 접속, 원격제어, 암호화 통신을 담당하는 소프트웨어입니다.**
 
 대표적으로 다음이 있습니다.
 
@@ -273,6 +273,14 @@ Mythos 시대의 첫 번째 대응 원칙은 분명합니다.
 - VPN
 - SSLVPN
 - OpenVPN
+- TeamViewer
+- AnyDesk
+- Chrome Remote Desktop
+- RemotePC
+- Splashtop
+- RustDesk
+- 원격지원 도구
+- 원격제어 서비스
 - OpenSSL
 - LibreSSL
 - TLS 처리 모듈
@@ -285,20 +293,26 @@ Mythos 시대의 첫 번째 대응 원칙은 분명합니다.
 SSH, RDP, VPN, SSLVPN, OpenVPN은  
 “관리자와 원격 근무자의 문”입니다.
 
+TeamViewer, AnyDesk 같은 원격지원 도구도 예외가 아닙니다.
+
+이들은 VPN이나 RDP처럼 보이지 않을 수 있지만,  
+실제로는 외부에서 내부 PC와 서버를 제어할 수 있는  
+원격 접속 통로입니다.
+
 문제는 이 통로가 공격자에게도 보인다는 점입니다.
 
 Mythos급 AI가 이 영역에서 CVSS 10.0급 제로데이를 찾아낸다면  
 공격자는 웹 취약점을 통하지 않고도  
 원격 접속 경로를 통해 내부 시스템으로 진입할 수 있습니다.
 
-따라서 원격 접속 소프트웨어는  
+따라서 원격 접속·원격제어 소프트웨어는  
 편의 기능이 아니라  
 웹/API 다음으로 반드시 줄이고 통제해야 할 핵심 공격면으로 봐야 합니다.
 
 지금 즉시 점검해야 합니다.
 
 원격 근무자, 지사, 외주 협력사, 유지보수 업체가  
-SSH, RDP, VPN, SSLVPN, OpenVPN 등을 통해 접속하는 경우가 있다면  
+SSH, RDP, VPN, SSLVPN, OpenVPN, TeamViewer, AnyDesk 같은 원격 접속 도구를 통해 접속하는 경우가 있다면  
 반드시 방화벽 또는 L3 스위치에서 IP와 Port를 통제해야 합니다.
 
 **어떤 경우에도 Any로 접속을 허용해서는 안 됩니다.**
@@ -307,12 +321,21 @@ SSH, RDP, VPN, SSLVPN, OpenVPN 등을 통해 접속하는 경우가 있다면
 특정 Port로만,  
 승인된 목적지로만 접속할 수 있어야 합니다.
 
+TeamViewer, AnyDesk 같은 원격지원 도구는  
+외부 중계 서버를 통해 연결되는 경우가 많으므로  
+단순 Port 차단만으로는 충분하지 않을 수 있습니다.
+
+따라서 조직에서 승인한 원격지원 도구만 허용하고,  
+미승인 원격제어 도구는 차단해야 합니다.
+
+또한 사용 계정, 접속 승인, MFA, 세션 기록, 파일 전송 제한, 실행 파일 통제까지 함께 적용해야 합니다.
+
 거창한 보안 장비를 새로 도입하지 않아도 됩니다.  
 우선은 기존 방화벽과 L3 스위치에서 접근 제어만 정확히 해도 됩니다.
 
 해커가 노리는 곳이 바로 여기입니다.
 
-외부에서 내부로 들어오는 원격 접속 통로가 열려 있고,  
+외부에서 내부로 들어오는 원격 접속·원격제어 통로가 열려 있고,  
 그 접근 정책이 Any로 풀려 있다면  
 그 자체가 Mythos 시대의 가장 위험한 침투 경로가 될 수 있습니다.
 
@@ -393,6 +416,8 @@ Gmail, Microsoft 365 Outlook 같은 클라우드 SaaS 메일을 사용하면
 - UTM
 - SSLVPN 장비
 - OpenVPN 서버
+- TeamViewer 같은 원격지원 서비스
+- AnyDesk 같은 원격제어 서비스
 - WAF
 - ADC
 - Load Balancer
@@ -409,7 +434,7 @@ Gmail, Microsoft 365 Outlook 같은 클라우드 SaaS 메일을 사용하면
 하지만 인터넷에 노출되는 순간  
 공격자가 가장 먼저 노리는 대상이 될 수 있습니다.
 
-특히 방화벽, UTM, SSLVPN 장비, OpenVPN 서버는  
+특히 방화벽, UTM, SSLVPN 장비, OpenVPN 서버, 원격지원 서비스는  
 “보안 장비” 또는 “원격 접속 장비”라는 이름 때문에  
 오히려 안전하다고 착각하기 쉽습니다.
 
@@ -433,7 +458,7 @@ SSLVPN과 OpenVPN은
 
 문제는 이 통로가 공격자에게도 보인다는 점입니다.
 
-SSLVPN, OpenVPN, VPN, RDP, SSH가  
+SSLVPN, OpenVPN, VPN, RDP, SSH, TeamViewer, AnyDesk가  
 Any로 열려 있다면  
 그 자체가 내부 침투 경로가 됩니다.
 
@@ -454,6 +479,9 @@ IP와 Port를 기준으로 접근을 통제해야 합니다.
 - VPN 관리 포트
 - RDP 접속 포트
 - SSH 접속 포트
+- TeamViewer 접속 경로
+- AnyDesk 접속 경로
+- 승인되지 않은 원격지원 도구
 - 방화벽 관리 콘솔
 - UTM 관리 콘솔
 - WAF 관리 콘솔
@@ -472,16 +500,20 @@ SSLVPN, OpenVPN, VPN, RDP, SSH, 관리 콘솔의
 출발지 IP와 목적지 Port를 제한하는 것만으로도  
 위험을 크게 줄일 수 있습니다.
 
+TeamViewer, AnyDesk처럼 외부 중계 방식으로 동작하는 원격지원 도구는  
+승인된 제품만 허용하고,  
+미승인 실행 파일과 외부 연결을 차단하는 정책이 함께 필요합니다.
+
 해커가 노리는 곳이 바로 여기입니다.
 
-외부에서 보이는 SSLVPN, OpenVPN, VPN, RDP, SSH,  
+외부에서 보이는 SSLVPN, OpenVPN, VPN, RDP, SSH, TeamViewer, AnyDesk,  
 방화벽, UTM, 라우터, 스위치, 관리 콘솔은  
 Mythos 시대에 가장 먼저 점검해야 할 경계 공격면입니다.
 
 Mythos 시대의 원칙은 단순합니다.
 
 > **웹/API는 반드시 실시간으로 보고,  
-> SSLVPN·OpenVPN·VPN·RDP·SSH는 Any로 열지 않습니다.**
+> SSLVPN·OpenVPN·VPN·RDP·SSH·TeamViewer·AnyDesk는 Any로 열지 않습니다.**
 
 ---
 
@@ -511,6 +543,12 @@ Mythos 시대의 외부 접속 정책은 단순해야 합니다.
 - VPN
 - SSLVPN
 - OpenVPN
+- TeamViewer
+- AnyDesk
+- Chrome Remote Desktop
+- RemotePC
+- Splashtop
+- RustDesk
 - 방화벽 관리 콘솔
 - UTM 관리 콘솔
 - 라우터·스위치 관리 포트
@@ -552,10 +590,14 @@ Gmail, Microsoft 365 Outlook 같은 클라우드 SaaS로 분리하는 것이 바
 계정 보안과 접근 통제 중심으로 방어 구조를 재편하는 것입니다.
 
 ### 2) 원격 접속은 전체 공개가 아니라 지정 IP 기반으로 제한
-VPN, SSLVPN, OpenVPN, SSH, RDP는  
+VPN, SSLVPN, OpenVPN, SSH, RDP, TeamViewer, AnyDesk 같은 원격 접속·원격제어 도구는  
 인터넷 전체에 공개해서는 안 됩니다.
 
 가능하면 지정 IP, 전용 회선, ZTNA, Bastion Host, MFA, 단말 검증을 함께 사용해야 합니다.
+
+특히 TeamViewer, AnyDesk 같은 원격지원 도구는  
+승인된 사용자와 승인된 장비에서만 사용할 수 있도록 제한하고,  
+세션 기록과 파일 전송 제한을 함께 적용해야 합니다.
 
 단, ZTNA나 Bastion Host를 도입하더라도  
 그 관리 콘솔이나 접속 포트가 Any로 열려 있으면  
@@ -592,6 +634,7 @@ VPN, SSLVPN, OpenVPN, SSH, RDP는
 | 메일 | 내부 메일 서버 직접 노출 | SaaS 메일 분리, 계정·MFA 중심 관리 |
 | SSLVPN / OpenVPN | 인터넷 전체 Any 오픈 | 지정 IP·Port·사용자·단말 기준 허용 |
 | SSH / RDP | 외부 전체 접근 허용 | Bastion Host, ZTNA, 지정 IP 기반 제한 |
+| TeamViewer / AnyDesk | 미승인 원격제어 도구 사용 | 승인 도구만 허용, MFA·세션 기록·파일 전송 제한 |
 | 관리 콘솔 | 방화벽·UTM·라우터 콘솔 외부 노출 | 관리망 또는 승인 IP에서만 접근 |
 | 웹/API | 통과 로그 미분석 | 요청·응답·본문·세션·호스트 행위 상관분석 |
 | 서버 내부 행위 | 웹 로그와 분리 | EDR/eBPF/감사 로그와 연결 분석 |
@@ -657,7 +700,7 @@ Mythos 시대의 핵심 대응은
 | 1 | 웹 요청 로그 | URI, method, header, cookie, parameter, body |
 | 2 | 웹 응답 로그 | status code, response size, 오류 패턴, 응답 본문 변화 |
 | 3 | 인증·세션 로그 | 로그인 성공·실패, 세션 재사용, 계정 전환, 권한 변화 |
-| 4 | 원격 접속 로그 | SSH, RDP, VPN, SSLVPN, OpenVPN 접속 성공·실패 |
+| 4 | 원격 접속·원격제어 로그 | SSH, RDP, VPN, SSLVPN, OpenVPN, TeamViewer, AnyDesk 접속 성공·실패 |
 | 5 | 경계 장비 로그 | 방화벽, UTM, WAF, 라우터, 스위치, 관리 콘솔 접근 |
 | 6 | 호스트 행위 로그 | 프로세스 실행, 파일 생성, 서비스 등록, 계정 변경 |
 | 7 | 런타임 관찰 | EDR, eBPF, 시스템 감사 로그 기반 이상 행위 |
@@ -672,10 +715,10 @@ Mythos 시대의 핵심 대응은
 특히 SQL Injection처럼 입력값, 응답 차이, 오류 패턴, 조회 결과 변화가 중요한 공격은  
 요청과 응답을 함께 보지 못하면 대응이 어렵습니다.
 
-### 2) 원격 접속 로그 분석
-SSH, RDP, VPN, SSLVPN, OpenVPN 접속 기록을 봐야 합니다.
+### 2) 원격 접속·원격제어 로그 분석
+SSH, RDP, VPN, SSLVPN, OpenVPN, TeamViewer, AnyDesk 접속 기록을 봐야 합니다.
 
-특히 비정상 시간대, 비정상 IP, 실패 후 성공, 관리자 계정 사용을 확인해야 합니다.
+특히 비정상 시간대, 비정상 IP, 실패 후 성공, 관리자 계정 사용, 미승인 원격지원 도구 실행을 확인해야 합니다.
 
 ### 3) 경계 장비 접근 로그 분석
 방화벽, UTM, WAF, 라우터, 스위치, 클라우드 관리 콘솔 접근 기록을 봐야 합니다.
@@ -706,7 +749,7 @@ PLURA-XDR은 이러한 원칙을
 중요한 것은 제품명이 아니라 기준입니다.
 
 > **공개 서비스는 전체 흐름을 보고,  
-> 원격 접속 통로는 Any 오픈을 없애고,  
+> 원격 접속·원격제어 통로는 Any 오픈을 없애고,  
 > 침해 징후는 웹·계정·호스트·포렌식으로 연결해서 봐야 합니다.**
 
 ---
@@ -728,16 +771,17 @@ Mythos 시대의 보안 원칙은 단순합니다.
 | 2 | SQL Injection | 낡은 공격이 아니라 AI에 의해 다시 무기화될 수 있는 핵심 웹 위협으로 관리 |
 | 3 | SSLVPN / OpenVPN | Any 오픈 금지, 지정 IP·Port·사용자·단말 기준 허용 |
 | 4 | VPN / RDP / SSH | 인터넷 전체 공개 금지, Bastion Host·ZTNA·MFA·단말 검증 적용 |
-| 5 | 메일·협업·파일 전송 | 내부 서버 직접 노출 최소화, SaaS 분리 검토 |
-| 6 | 방화벽·UTM·라우터·스위치 관리 콘솔 | 외부 공개 금지, 관리망 또는 승인 IP에서만 접근 |
-| 7 | 클라우드 관리자 콘솔 | MFA, 관리자 분리, 접속 IP 제한, 감사 로그 필수 |
-| 8 | 공개 서비스 로그 | 요청·응답·본문·계정·호스트 행위까지 연결 분석 |
-| 9 | 사고 대응 | 지연 분석이 아니라 즉시 판단과 즉시 차단 |
+| 5 | TeamViewer / AnyDesk | 승인 도구만 허용, 미승인 원격제어 차단, 세션 기록·파일 전송 제한 |
+| 6 | 메일·협업·파일 전송 | 내부 서버 직접 노출 최소화, SaaS 분리 검토 |
+| 7 | 방화벽·UTM·라우터·스위치 관리 콘솔 | 외부 공개 금지, 관리망 또는 승인 IP에서만 접근 |
+| 8 | 클라우드 관리자 콘솔 | MFA, 관리자 분리, 접속 IP 제한, 감사 로그 필수 |
+| 9 | 공개 서비스 로그 | 요청·응답·본문·계정·호스트 행위까지 연결 분석 |
+| 10 | 사고 대응 | 지연 분석이 아니라 즉시 판단과 즉시 차단 |
 
 핵심은 이 한 줄입니다.
 
 > **웹/API는 실시간으로 보고,  
-> SSLVPN·OpenVPN·VPN·RDP·SSH는 Any로 열지 않습니다.**
+> SSLVPN·OpenVPN·VPN·RDP·SSH·TeamViewer·AnyDesk는 Any로 열지 않습니다.**
 
 ---
 
@@ -760,9 +804,13 @@ AI가 보안 취약점을 더 빠르게 찾을 수 있다는 사실입니다.
 둘째, SQL Injection은 과거의 낡은 공격이 아닙니다.  
 AI에 의해 다시 무기화될 수 있는 대표적인 웹 공격입니다.
 
-셋째, SSLVPN, OpenVPN, VPN, RDP, SSH는 Any로 열어두면 안 됩니다.  
+셋째, SSLVPN, OpenVPN, VPN, RDP, SSH, TeamViewer, AnyDesk는 Any로 열어두면 안 됩니다.  
 원격 근무자, 지사, 외주 협력사, 유지보수 업체가 접속해야 한다면  
 반드시 IP와 Port를 기준으로 통제해야 합니다.
+
+특히 TeamViewer, AnyDesk 같은 원격지원 도구는  
+승인된 제품만 허용하고,  
+미승인 원격제어 도구 실행과 외부 연결을 차단해야 합니다.
 
 넷째, 내부 메일 서버와 웹메일도 외부 전체에 열어두어서는 안 됩니다.  
 가능하면 SaaS 메일로 분리하고, 내부 운영이 불가피하다면 접속자 IP와 Port를 제한해야 합니다.
@@ -778,7 +826,7 @@ AI에 의해 다시 무기화될 수 있는 대표적인 웹 공격입니다.
 마지막으로 기억해야 할 문장은 이것입니다.
 
 > **웹/API는 반드시 실시간으로 보고,  
-> SSLVPN·OpenVPN·VPN·RDP·SSH는 Any로 열지 않습니다.**
+> SSLVPN·OpenVPN·VPN·RDP·SSH·TeamViewer·AnyDesk는 Any로 열지 않습니다.**
 
 더 이상 Any 오픈은 없습니다.
 
