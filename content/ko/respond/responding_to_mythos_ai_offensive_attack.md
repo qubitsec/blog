@@ -462,7 +462,7 @@ SSLVPN, OpenVPN, VPN, RDP, SSH, TeamViewer, AnyDesk가
 Any로 열려 있다면  
 그 자체가 내부 침투 경로가 됩니다.
 
-**더 이상 Any 오픈은 없습니다.**
+🚨**더 이상 Any 오픈은 없습니다.**
 
 반드시 방화벽 또는 L3 스위치에서  
 IP와 Port를 기준으로 접근을 통제해야 합니다.
