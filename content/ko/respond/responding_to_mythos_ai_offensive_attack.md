@@ -30,7 +30,7 @@ AI를 이용해 직접 새로운 취약점을 찾고,
 > **웹/API는 반드시 실시간으로 보고,  
 > SSLVPN·OpenVPN·VPN·RDP·SSH·TeamViewer·AnyDesk는 Any로 열지 않습니다.**
 
-![Mythos AI Offensive Attack Response](https://blog.plura.io/cdn/respond/responding_to_mythos_ai_offensive_attack.png)
+![Mythos AI Offensive Attack Response](https://blog.plura.io/cdn/respond/responding_to_mythos_ai_offensive_attack-1.png)
 
 <!--more-->
 
