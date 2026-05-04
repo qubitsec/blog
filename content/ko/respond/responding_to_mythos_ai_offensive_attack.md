@@ -7,7 +7,7 @@ featured_image: "cdn/respond/responding_to_mythos_ai_offensive_attack-1.png"
 tags: ["Mythos", "미토스", "AI 해킹", "공세적 보안", "제로데이", "공격면 관리", "웹 공격면", "VPN", "SSLVPN", "OpenVPN", "원격제어", "Any 차단", "PLURA-XDR"]
 ---
 
-🤖 Mythos급 AI가 BSD 계열 운영체제에서도  
+🤖 Mythos는 보안에 매우 진심인 BSD 계열 운영체제에서도  
 수십 년 동안 발견되지 않았던 취약점을 찾아냈다는 사실은  
 단순한 기술 뉴스가 아닙니다.
 
