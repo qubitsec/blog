@@ -5,6 +5,7 @@ defaultContentLanguageInSubdir = true
 theme = "ananke"
 buildFuture = true
 copyright = "© 2014-2026 Qubit Security Inc. All Rights Reserved."
+googleAnalytics = "G-CV7F2BTZ1R"
 
 SectionPagesMenu = ""
 googleAnalytics = ""
