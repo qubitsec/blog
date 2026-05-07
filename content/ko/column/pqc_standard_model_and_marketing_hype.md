@@ -526,7 +526,7 @@ PQC는 독자 모델 경쟁이 아닙니다.
 따라서 이 글의 결론은 분명합니다.
 
 > **PQC는 준비해야 하지만, 호들갑을 떨 일은 아닙니다.  
-> NIST 표준과 OpenSSL·브라우저·IETF·CA/Browser Forum 생태계를 준용하면 됩니다.  
+> NIST 표준과 OpenSSL·브라우저·IETF·CA/Browser Forum 생태계를 준용하면 됩니다.**  
 
 ---
 
