@@ -1,8 +1,8 @@
 ---
 title: "[전자신문] AI 해킹 공격, 방어도 AI로 해야 한다"
 date: 2026-05-13
-draft: false
-featured_image: "cdn/column/ai-cyberattack-defense-with-ai.png"
+draft: true
+featured_image: "cdn/column/news-ai-cyberattack-defense-with-ai.png"
 description: "AI가 취약점 탐지와 공격 자동화를 가속화하고 있다. 공격자가 AI를 사용한다면 방어자도 AI 속도로 움직여야 한다. 핵심은 공격면 축소, 원본 로그 확보, 실시간 AI 분석, 그리고 소버린 사이버 시큐리티다."
 tags: ["전자신문", "AI해킹", "AI보안", "소버린AI", "소버린사이버시큐리티", "제로데이", "로그", "XDR", "사이버보안", "PLURA-Blog"]
 ---
