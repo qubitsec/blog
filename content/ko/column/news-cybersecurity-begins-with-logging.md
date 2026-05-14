@@ -380,7 +380,7 @@ MITRE ATT&CK 같은 실제 공격 프레임워크를 기준으로
 
 * [[전자신문] 지금 해킹을 이해하려면, LOLBAS부터 다시 봐야 한다](https://blog.plura.io/ko/column/news-lolbas-understanding-attack/)
 * [[전자신문] 24시간 관제의 역설: 왜 아무도 대응하지 못했는가](https://blog.plura.io/ko/column/news-saving-soc/)
-
+* [[전자신문] AI 해킹 공격, 방어도 AI로 해야 한다](https://blog.plura.io/ko/column/news-ai-cyberattack-defense-with-ai/)
 ---
 
 ## 📰 원문 뉴스
