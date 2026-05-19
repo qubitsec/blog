@@ -1,6 +1,6 @@
 ---
 title: "[머니투데이방송] AI 사이버보안, 공개 시험으로 국민을 안심시켜야 한다"
-date: 2026-05-18
+date: 2026-05-19
 draft: false
 featured_image: "cdn/column/news-national-ai-cyber-defense-challenge.png"
 description: "AI 해킹 시대에는 보안 기술도 공개 검증되어야 한다. 공격 AI와 방어 AI를 같은 시험대에 세우고, 실제 로그와 침해 흐름을 기준으로 탐지·분석·차단 능력을 검증해야 한다."
@@ -593,4 +593,4 @@ AI로 국가를 지킬 수 있는 기업과 기술이 있다는 것을
 PLURA-Blog 형식에 맞게 확장·재구성한 내용입니다.
 
 - **머니투데이방송: 2026-05-19 온라인판**
-- 원문 링크는 게재 후 입력
+- [https://news.mtn.co.kr/news-detail/2026051914400395301](https://news.mtn.co.kr/news-detail/2026051914400395301)
