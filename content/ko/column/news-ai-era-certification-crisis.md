@@ -2,7 +2,7 @@
 title: "[기고] AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다"
 date: 2026-05-19
 draft: false
-featured_image: "cdn/column/ai-era-certification-crisis.png"
+featured_image: "cdn/column/news-ai-era-certification-crisis.png"
 description: "AI 해킹은 웹, 계정, 서버, 엔드포인트, 포렌식 증적을 하나의 공격 흐름으로 연결한다. 그러나 현행 보안제품 인증 체계는 여전히 제품 유형과 기능 항목을 분리해 묻는다. AI 시대의 공공 보안 도입을 위해서는 실전 공격 흐름을 기준으로 탐지·분석·차단·증거 확보 능력을 검증하는 새로운 제도 언어가 필요하다."
 tags: ["IT시론", "AI해킹", "AI보안", "보안인증", "보안적합성검증", "CC인증", "보안기능확인서", "WAF", "EDR", "SIEM", "XDR", "제로데이", "로그", "PLURA-Blog"]
 ---
