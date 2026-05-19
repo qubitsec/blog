@@ -1,5 +1,5 @@
 ---
-title: "[기고] AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다"
+title: "[전자신문] AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다"
 date: 2026-05-19
 draft: false
 featured_image: "cdn/column/news-ai-era-certification-crisis.png"
