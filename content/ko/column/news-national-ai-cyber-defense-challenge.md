@@ -1,7 +1,7 @@
 ---
 title: "정보보안이라는 이름으로 사이버보안을 흐리지 말아야 한다"
 date: 2026-05-21
-draft: false
+draft: true
 description: "정보보안은 중요하지만 너무 넓은 개념입니다. 문서 암호화, DRM, DLP, NAC, DB 암호화, ISMS-P 인증 대응, SAST, SBOM은 대부분 IT 통제와 정책 집행 또는 사전 점검에 가깝습니다. 이 글은 왜 사이버보안을 정보보안과 구분해 실시간 공격 탐지·차단·대응 영역으로 다루어야 하는지 설명합니다."
 featured_image: "cdn/column/information-security-vs-cybersecurity.png"
 tags: ["정보보안", "사이버보안", "IT보안", "ISMS-P", "PLURA-XDR", "웹보안", "로그분석", "SAST", "SBOM"]
