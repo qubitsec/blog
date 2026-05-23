@@ -580,6 +580,7 @@ AI로 국가를 지킬 수 있는 기업과 기술이 있다는 것을
 
 ## 함께 읽기
 
+- [[전자신문] AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다](https://blog.plura.io/ko/column/news-ai-era-certification-crisis/)
 - [[전자신문] AI 해킹 공격, 방어도 AI로 해야 한다](https://blog.plura.io/ko/column/news-ai-cyberattack-defense-with-ai/)
 - [[전자신문] 24시간 관제의 역설: 왜 아무도 대응하지 못했는가](https://blog.plura.io/ko/column/news-saving-soc/)
 - [[전자신문] 보안의 출발점은 기록이다](https://blog.plura.io/ko/column/news-cybersecurity-begins-with-logging/)
