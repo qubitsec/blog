@@ -7,8 +7,9 @@ featured_image: "cdn/column/information-security-vs-cybersecurity.jpg"
 tags: ["정보보안", "사이버보안", "IT보안", "ISMS-P", "PLURA-XDR", "웹보안", "로그분석", "SAST", "SBOM"]
 ---
 
-우리 회사는 ISMS-P 인증도 받고, DLP·NAC·문서 암호화까지 다 갖췄다.    
-그런데 왜 해킹 사고가 여전히 무서운가?  
+"ISMS-P 인증을 받았다는 기업이 랜섬웨어로 수십억 피해를 입었다.   
+DLP, NAC, DB 암호화까지 다 갖췄는데도 해킹을 당한다.  
+왜 이런 일이 반복될까?"
 
 이유는 **정보보안**과 **사이버보안**을 같은 것으로 착각하기 때문이다.
 
