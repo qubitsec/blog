@@ -1,5 +1,5 @@
 ---
-title: "[보안칼럼] ISMS-P 인증받고도 뚫린다… 미토스 시대, 실전 사이버보안으로 가야 한다"
+title: "[전자신문] ISMS-P 인증받고도 뚫린다… 미토스 시대, 실전 사이버보안으로 가야 한다"
 date: 2026-05-31
 draft: false
 featured_image: "cdn/column/news-isms-p-cybersecurity-op-ed.png"
