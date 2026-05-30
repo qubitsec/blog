@@ -743,7 +743,7 @@ AI 해킹 시대의 해법은
 
 ---
 
-## 함께 읽기 (기사)
+## 📰 함께 읽기
 
 - [[전자신문] AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다](https://blog.plura.io/ko/column/news-ai-era-certification-crisis/)
 - [[전자신문] AI 해킹 공격, 방어도 AI로 해야 한다](https://blog.plura.io/ko/column/news-ai-cyberattack-defense-with-ai/)
@@ -753,7 +753,7 @@ AI 해킹 시대의 해법은
 
 ---
 
-## 함께 읽기
+## 📚 함께 읽기
 
 - [ISMS-P 인증을 받아도 해킹 당하는 이유](https://blog.plura.io/ko/column/information-security-vs-cybersecurity/)
 
