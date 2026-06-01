@@ -7,8 +7,6 @@ featured_image: "cdn/column/the-dilemma-of-edr.png"
 tags: ["EDR", "안티바이러스", "커널 모드", "프로세스 메모리", "CrowdStrike", "BYOVD", "PLURA-XDR", "사이버보안"]
 ---
 
-# EDR은 감시자인가, 새로운 커널 공격면인가
-
 안티바이러스와 EDR은 현대 보안 운영에서 중요한 역할을 합니다.
 
 엔드포인트에서는 다음과 같은 행위가 발생합니다.
