@@ -3,7 +3,7 @@ title: "Q26. PQC(양자내성암호), 지금 도입해야 하나요?"
 date: 2026-06-01
 draft: false
 description: "PQC는 준비해야 하지만 Y2K처럼 모든 기업이 지금 당장 양자보안 제품을 도입해야 하는 문제는 아닙니다. HNDL 과장과 현실성 검증, ARIA식 한국형 독자 암호의 실패 경험, 국제 전환 일정, NIST·IETF·OpenSSL·브라우저·CDN 생태계 흐름을 Q&A 형식으로 정리합니다."
-featured_image: "cdn/qna/q26.jpg"
+featured_image: "cdn/qna/q26.jpeg"
 tags: ["PQC", "양자내성암호", "HNDL", "NIST", "IETF", "OpenSSL", "TLS", "ML-KEM", "ARIA", "양자보안", "표준전환", "Q&A"]
 ---
 
