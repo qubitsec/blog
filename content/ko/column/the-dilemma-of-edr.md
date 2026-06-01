@@ -3,7 +3,7 @@ title: "EDR은 감시자인가, 새로운 커널 공격면인가"
 date: 2026-06-02
 draft: false
 description: "안티바이러스와 EDR은 공격을 탐지하기 위해 운영체제 깊숙한 곳까지 들어간다. 그러나 커널 모드와 프로세스 메모리 접근은 보안 제품 자체를 새로운 공격면으로 만들 수 있다."
-categories: ["column"]
+featured_image: "cdn/column/the-dilemma-of-edr.png"
 tags: ["EDR", "안티바이러스", "커널 모드", "프로세스 메모리", "CrowdStrike", "BYOVD", "PLURA-XDR", "사이버보안"]
 ---
 
