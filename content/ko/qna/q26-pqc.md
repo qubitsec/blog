@@ -445,7 +445,7 @@ TLS 1.3 안에서 키 교환을 확장하고,
 | Cloudflare | 2029 | Cloudflare는 post-quantum authentication까지 포함해 2029년 full post-quantum security를 목표로 제시했습니다.[^cloudflare-2029] |
 | OpenSSL / IETF / 브라우저 / CDN | 2025~2029 | 실제 웹/TLS 생태계는 하이브리드 키 교환 구현과 배포를 통해 이미 움직이고 있습니다.[^openssl-35][^ietf-mlkem] |
 
-따라서 q26의 관점은 이렇게 정리하는 것이 적절합니다.
+따라서 관점은 이렇게 정리하는 것이 적절합니다.
 
 > 전체 암호 생태계 전환은 2035년까지 이어질 수 있습니다.  
 > 그러나 일반 웹/TLS 영역의 가시적 전환은 2029년 전후부터 훨씬 뚜렷하게 나타날 가능성이 높습니다.
