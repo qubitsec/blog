@@ -1086,14 +1086,17 @@ HNDL은 현실성을 검증한다.
 
 ---
 
-## 📖 함께 읽기
+## 📚 함께 읽기
 
 - [PQC(양자내성암호)는 독자 모델이 아니라 표준 전환이다](https://blog.plura.io/ko/column/pqc_standard_model_and_marketing_hype/)
+- [양자 내성 암호(PQC)의 현주소: 지금 무엇을 준비해야 하는가](https://blog.plura.io/ko/column/pqc-current-state/)
+- [양자컴퓨팅 시대의 암호기술: AES, SHA-3, PQC, 그리고 지금 해야 할 준비](https://blog.plura.io/ko/column/quantum-era-cryptography/)
+- [공포·유행어 추격을 멈추고 ‘증거 중심 보안’으로](https://blog.plura.io/ko/column/campaign_stop_fear_trend_chasing/)
+- [ISMS-P 인증을 받아도 해킹 당하는 이유](https://blog.plura.io/ko/column/information-security-vs-cybersecurity/)
 - [Q25. 제로트러스트, 도입해야 하나요?](https://blog.plura.io/ko/qna/q25-zta/)
+
+## 📖 함께 읽기
 - [ARIA (cipher) - Wikipedia](https://en.wikipedia.org/wiki/ARIA_(cipher))
-- [웹서버인 줄 모르는 보안·인프라 장비들](https://blog.plura.io/ko/column/hidden_web_surfaces/)
-- [PLURA-XDR은 Mythos AI 해킹 공격에 어떻게 대응하는가?](https://blog.plura.io/ko/column/plura-xdr-mythos-ai-threat-response/)
-- [SIEM·SOAR 하이프사이클, 왜 현실과 맞지 않는가](https://blog.plura.io/ko/column/hypecycle_siem_soar/)
 
 ---
 
