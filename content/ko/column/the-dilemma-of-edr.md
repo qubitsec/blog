@@ -329,10 +329,8 @@ EDR은 필요합니다.
 
 ---
 
-## 함께 읽어볼 글
-
-* 보안의 출발점은 기록이다
-* 전통적인 SOC vs PLURA-XDR 플랫폼
-* WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기
-* 웹의 전체 로그 분석은 왜 중요한가?
-* PLURA-XDR을 활용한 공급망 보안 강화 방안
+### 📚 함께 읽기
+* [SentinelOne과 PLURA-EDR, 무엇이 어떻게 다른가?](https://blog.plura.io/ko/tech/sentinelone-vs-plura-edr/)
+* [Elastic Defend와 PLURA-EDR, 무엇이 어떻게 다른가?](https://blog.plura.io/ko/tech/elastic-defend-vs-plura-edr/) 
+* [AhnLab EPP와 PLURA-EDR, 무엇이 어떻게 다른가?](https://blog.plura.io/ko/tech/ahnlab-epp-vs-plura-edr/)
+* [정보보안의 코어 vs 부가적 서비스: 핵심과 보완 요소의 구분](https://blog.plura.io/ko/column/core_security_vs_supplementary_security_services/)
