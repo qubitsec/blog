@@ -480,4 +480,5 @@ EDR은 필요합니다.
 * [SentinelOne과 PLURA-EDR, 무엇이 어떻게 다른가?](https://blog.plura.io/ko/tech/sentinelone-vs-plura-edr/)
 * [Elastic Defend와 PLURA-EDR, 무엇이 어떻게 다른가?](https://blog.plura.io/ko/tech/elastic-defend-vs-plura-edr/) 
 * [AhnLab EPP와 PLURA-EDR, 무엇이 어떻게 다른가?](https://blog.plura.io/ko/tech/ahnlab-epp-vs-plura-edr/)
+* [지니언스 EDR과 PLURA-EDR, 무엇이 어떻게 다른가?](https://blog.plura.io/ko/tech/genians-edr-vs-plura-edr/)
 * [정보보안의 코어 vs 부가적 서비스: 핵심과 보완 요소의 구분](https://blog.plura.io/ko/column/core_security_vs_supplementary_security_services/)
