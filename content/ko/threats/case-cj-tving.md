@@ -721,7 +721,7 @@ EDR 관점에서는 다음 행위가 중요합니다.
 
 ---
 
-## 업데이트 예정
+## 🆙 업데이트 예정
 
 이 글은 2026년 6월 3일 공개된 티빙 공지와 언론 보도를 기준으로 작성했습니다.  
 향후 다음 내용이 확인되면 업데이트가 필요합니다.
@@ -743,9 +743,10 @@ EDR 관점에서는 다음 행위가 중요합니다.
 ### 📖 함께 읽기
 
 * [현대엘리베이터 해킹 사건: 에베레스트(Everest) 랜섬웨어의 1.1TB 유출 주장과 제조 도면 노출 가능성](https://blog.plura.io/ko/threats/case-hyundaielevator/)
-* [닛산 오세아니아 해킹 사건: Akira 랜섬웨어의 금융·신분증 정보 탈취와 10만 명 피해](https://blog.plura.io/ko/threats/case-nissan/)
-* [SQL 인젝션 공격은 왜 여전히 위험한가](https://blog.plura.io/ko/)
-* [PLURA-XDR을 활용한 개인정보 유출 탐지](https://blog.plura.io/ko/)
+* [진학사 캐치(CATCH) 개인정보 유출 사고 사례](https://blog.plura.io/ko/threats/case_jinhaksa_catch/)
+* [CJ올리브네트웍스 인증서 유출 사건: 김수키의 공급망 공격](https://blog.plura.io/ko/threats/case-cjolivenetworks_digitalsignature_mitre/)
+* [웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs/)
+* [[Demo]SQL 인젝션 공격](https://blog.plura.io/ko/respond/sql_injection/)
 
 ---
 
