@@ -873,59 +873,7 @@ EDR 관점에서는 다음 행위가 중요합니다.
 
 ---
 
-## 16. PLURA-XDR 탐지 Rule / Hunting Query 예시
-
-아래 예시는 제품 기능 설명을 위한 **개념형 탐지 로직**입니다.  
-실제 운영 환경에서는 로그 필드명, 개인정보 마스킹 정책, 정상 업무 배치 시간, 허용된 운영자 IP, API Gateway 구조에 맞게 조정해야 합니다.
-
-### Rule 1. 웹/API 대량 개인정보 응답 + SQLi·IDOR 의심 흐름
-
-```sql
--- 개념형 Hunting Query
-FROM waf_http_logs
-WHERE service IN ("CUPOST", "member", "parcel")
-  AND status BETWEEN 200 AND 299
-  AND (
-        request_uri LIKE "%member%"
-     OR request_uri LIKE "%user%"
-     OR request_uri LIKE "%address%"
-     OR request_uri LIKE "%delivery%"
-      )
-  AND (
-        response_body CONTAINS_ANY ("phone", "email", "address", "ci")
-     OR response_size > BASELINE(response_size, 7d) * 5
-      )
-  AND (
-        request_param MATCHES "(?i)(union select|information_schema|sleep\(|benchmark\(|waitfor delay|dbms_lock|load_file|into outfile)"
-     OR COUNT_DISTINCT(object_id) BY src_ip, session_id WITHIN 10m > 100
-      )
-GROUP BY src_ip, session_id, user_agent, request_uri
-```
-
-이 룰은 SQL 인젝션 문자열만 보는 것이 아니라, **개인정보가 포함된 응답·응답 크기 급증·객체 ID 반복 조회**를 함께 봅니다.  
-따라서 SQLi와 IDOR/BOLA성 대량 조회를 동시에 사냥하는 데 유용합니다.
-
-### Rule 2. 웹서버 침해 후 DB Dump·압축·외부 전송 흐름
-
-```sql
--- 개념형 Correlation Rule
-FROM xdr_events
-MATCH
-  waf_event   AS A WHERE A.attack_type IN ("file_upload", "rce", "sql_injection", "webshell")
-  FOLLOWED BY edr_proc AS B WHERE B.parent_process IN ("nginx", "httpd", "tomcat", "java", "node")
-                         AND B.process_name IN ("sh", "bash", "cmd", "powershell", "mysqldump", "mysql", "psql", "zip", "7z", "tar", "curl", "wget", "scp", "sftp")
-  FOLLOWED BY file_event AS C WHERE C.file_name MATCHES "(?i).*(member|user|customer|ci|address|dump).*(csv|sql|zip|7z|tar|gz)$"
-  FOLLOWED BY net_event  AS D WHERE D.direction = "outbound" AND D.bytes_out > 100MB
-WITHIN 30m
-GROUP BY host, user, src_ip, process_tree
-```
-
-이 룰은 “웹 취약점 탐지” 하나로 끝내지 않고, **웹 요청 → 서버 명령 실행 → 개인정보 파일 생성·압축 → 외부 전송**을 하나의 공격 흐름으로 연결합니다.  
-개인정보 유출 사고에서는 이런 상관분석이 실제 반출 여부와 피해 범위 산정에 직접 연결됩니다.
-
----
-
-## 17. 이용자 관점의 대응
+## 16. 이용자 관점의 대응
 
 CUPOST를 사용한 적이 있는 이용자는 다음 조치를 해야 합니다.
 
