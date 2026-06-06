@@ -962,10 +962,8 @@ CI와 비밀번호 해시는 어떻게 보호되어 있었는가.
 ### 📖 함께 읽기
 
 * [티빙 개인정보 유출 사고: SQL 인젝션 가능성과 클라우드/IAM 권한 침해의 위험](https://blog.plura.io/ko/threats/case-cj-tving/)
-* [현대엘리베이터 해킹 사건: 에베레스트(Everest) 랜섬웨어의 1.1TB 유출 주장과 제조 도면 노출 가능성](https://blog.plura.io/ko/threats/case-hyundaielevator/)
-* [닛산 오세아니아 해킹 사건: Akira 랜섬웨어의 금융·신분증 정보 탈취와 10만 명 피해](https://blog.plura.io/ko/threats/case-nissan/)
-* [SQL 인젝션 공격은 왜 여전히 위험한가](https://blog.plura.io/ko/)
-* [PLURA-XDR을 활용한 개인정보 유출 탐지](https://blog.plura.io/ko/)
+* [웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs/)
+* [[Demo]SQL 인젝션 공격](https://blog.plura.io/ko/respond/sql_injection/)
 
 ---
 
