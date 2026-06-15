@@ -861,7 +861,7 @@ AI와 XDR은
 PLURA-Blog 형식에 맞게 확장·재구성한 내용입니다.
 
 - **머니투데이방송 : 2026-06-15 온라인판**
-- [https://v.daum.net/v/20260615132100796](https://v.daum.net/v/20260615132100796)
+- [https://news.mtn.co.kr/news-detail/2026061509421622322](https://v.daum.net/v/20260615132100796)
 
 ---
 
