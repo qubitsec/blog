@@ -1,68 +1,37 @@
 {{ define "main" }}
-  <article class="pa3 pa4-ns nested-copy-line-height">
-    <!-- 상단 섹션 -->
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy {{ $.Param "text_color" | default "mid-gray" }}">
-      {{- .Content -}}
-    </section>
 
-    <!-- 그리드 레이아웃 -->
-    <section class="grid-layout mt5">
-      {{ range .Paginator.Pages }}
-        <div class="bg-white br3 shadow-1">
-          <!-- Featured Image -->
-          {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
-          {{ if $featured_image }}
-          <a href="{{ .Permalink }}" class="db">
-            <img src="{{ $featured_image }}" alt="{{ .Title }}"
-                 class="w-100 db br--top" style="height: 180px; object-fit: cover;">
-          </a>
-          {{ end }}
+  {{- .Content -}}
 
-          <!-- Content Section -->
-          <div class="pa3">
-            <!-- Title -->
-            <h2 class="f4 fw6 mt0 mb3 lh-title">
-              <a href="{{ .Permalink }}" class="link near-black dim">{{ .Title }}</a>
-            </h2>
+  {{ range .Paginator.Pages }}
+    <article class="pv4 bt bb b--black-10">
 
-            <!-- Summary -->
-            <p class="f6 lh-copy mid-gray">
-              {{ if .Summary }}
-                {{ .Summary | safeHTML | truncate 150 "..." }}
-              {{ else }}
-                {{ .Plain | truncate 150 "..." }}
-              {{ end }}
-            </p>
-
-            <!-- Read More Link -->
-            <a href="{{ .Permalink }}"
-               class="link ba b--moon-gray bg-light-gray br2 hover-bg-moon-gray black-70 f6 tc pv2 ph3 mt3"
-               style="min-width: 120px; display: inline-block; text-align: center;">
-               {{ i18n "readMore" }}
-            </a>
-          </div>
-        </div>
+      {{ $featured_image := partial "func/GetFeaturedImage.html" . }}
+      {{ if $featured_image }}
+        <a href="{{ .RelPermalink }}" class="db">
+          <img src="{{ $featured_image }}" alt="{{ .Title }}" class="w-100">
+        </a>
       {{ end }}
-    </section>
 
-    <!-- Pagination -->
-    <div class="w-100 tc mv4">
-      {{- template "_internal/pagination.html" . -}}
-    </div>
-  </article>
+      <h2>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
 
-  <!-- 반응형 스타일: CSS Grid -->
-  <style>
-    .grid-layout {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1rem;
-    }
+      {{ $summary := "" }}
+      {{ with .Description }}
+        {{ $summary = . | plainify | htmlUnescape }}
+      {{ else }}
+        {{ $summary = .Summary | plainify | htmlUnescape }}
+      {{ end }}
 
-    @media (max-width: 768px) {
-      .grid-layout {
-        grid-template-columns: 1fr; /* 모바일에서 1열 */
-      }
-    }
-  </style>
+      {{ with $summary }}
+        <p>{{ . | truncate 150 "..." }}</p>
+      {{ end }}
+
+      <a href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
+
+    </article>
+  {{ end }}
+
+  {{- template "_internal/pagination.html" . -}}
+
 {{ end }}
