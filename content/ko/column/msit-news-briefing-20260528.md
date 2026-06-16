@@ -3,7 +3,7 @@ title: "AI 사이버위협, 2027년을 기다릴 수 없다: 지금 작동하는
 date: 2026-06-16
 draft: false
 description: "과학기술정보통신부의 AI 기반 사이버위협 대응 민간 정보보호 추진계획을 긴급 대응, KISA 실행 역량, 민간 전문기업 위탁, 중소기업 직접 보호, AI 방어 PoC, XDR 기반 통합 대응 관점에서 검토합니다. 핵심은 정부 발표의 방향성을 부정하는 것이 아니라, AI 취약점 대량 발굴과 공격 자동화가 이미 현실이 된 상황에서 지금 당장 작동하는 민관합동 침해대응 체계를 만들어야 한다는 점입니다."
-featured_image: "cdn/respond/msit-news-briefing-20260528.png"
+featured_image: "cdn/column/msit-news-briefing-20260528.png"
 tags: ["과학기술정보통신부", "AI 사이버위협", "민간 정보보호", "사이버보안", "정보보호", "KISA", "KNVD", "취약점", "패치", "민관합동", "MDR", "XDR", "WAF", "EDR", "SIEM", "AI 보안주권", "중소기업 보안", "공급망 보안"]
 ---
 
