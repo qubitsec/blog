@@ -258,4 +258,4 @@ VC의 대표가 보안 전문가가 될 필요는 없습니다.
 - [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
 - [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
-
+- [[머니투데이방송] 쿠팡 사태, 로그 기준 없는 과징금 산정 기준은?](https://news.mtn.co.kr/news-detail/2026061509421622322)
