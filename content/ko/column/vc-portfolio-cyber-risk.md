@@ -258,4 +258,4 @@ VC의 대표가 보안 전문가가 될 필요는 없습니다.
 - [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
 - [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
-- [SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 이뤄졌나?](https://blog.plura.io/ko/column/skt-hacking-hypothesis/)
+
