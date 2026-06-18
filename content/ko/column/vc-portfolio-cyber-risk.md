@@ -237,8 +237,8 @@ VC의 대표가 보안 전문가가 될 필요는 없습니다.
 
 > **투자 전에는 실사하고, 투자 후에는 PLURA-XDR로 관제하십시오.**
 
-### [PLURA-XDR 무료 평가판 시작하기](https://www.plura.io/signup)
-### [포트폴리오 사이버보안관제 상담하기](https://www.plura.io/contact)
+### [PLURA-XDR 무료 평가판 시작하기](https://xdr.plura.io/auth/signup)
+### [포트폴리오 사이버보안관제 상담하기](https://www.qubitsec.com/contact)
 
 ---
 
