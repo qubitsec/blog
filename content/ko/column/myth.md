@@ -2,7 +2,7 @@
 date: 2023-03-12T00:00:00
 draft: false
 description: "많은 조직이 ‘사고가 나면 로그를 보면 된다’고 믿지만, 실제로는 필요한 로그가 애초에 남아 있지 않은 경우가 훨씬 많습니다. 왜 로그 분석이 신화가 되는지, 그리고 무엇을 준비해야 현실이 되는지 설명합니다."
-featured_image: "cdn/column/log_analysis_myth-1.png"
+featured_image: "/cdn/column/log_analysis_myth-1.png"
 tags: ["로그 분석", "해킹 조사", "보안", "PLURA", "MITRE ATT&CK", "감사정책", "웹로그"]
 title: "로그 분석으로 해킹 조사하기는 신화(Myth)?"
 ---
