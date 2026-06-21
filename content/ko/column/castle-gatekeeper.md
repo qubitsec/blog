@@ -3,7 +3,7 @@ title: "성문지기의 마지막 임무: 아웃바운드 통제 🏰👮"
 date: 2025-09-28
 draft: false
 description: "공성전 비유로 이해하는 아웃바운드 트래픽의 절대적 중요성 — 세작(백도어)은 침입 후 반드시 ‘문’을 통해 나간다. 방어의 무게중심을 인입에서 아웃바운드까지 확장하는 실전 가이드."
-featured_image: "cdn/column/policy-fable.png"
+featured_image: "/cdn/column/policy-fable.png"
 tags: ["공성전", "아웃바운드", "Egress", "데이터유출", "사이버보안", "정책실패", "Zero Trust", "MITRE ATT&CK"]
 ---
 
