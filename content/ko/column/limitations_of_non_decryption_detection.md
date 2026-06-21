@@ -3,7 +3,7 @@ title: "비복호화 탐지의 기술적 한계와 마케팅 과장"
 date: 2025-08-19
 draft: false
 description: "암호화 트래픽을 ‘복호화 없이’ 분석·탐지한다는 주장과 실제 가능한 메타데이터 분석을 구분하고, 기술적 한계와 마케팅 표현의 문제를 차분히 짚어봅니다."
-featured_image: "cdn/column/limitations_of_non_decryption_detection.png"
+featured_image: "/cdn/column/limitations_of_non_decryption_detection.png"
 tags: ["NDR", "네트워크 보안", "암호화 트래픽", "ETA", "ETDR", "TLS", "AES", "PLURA-XDR", "팩트체크"]
 ---
 
