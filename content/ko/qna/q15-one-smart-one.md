@@ -3,7 +3,7 @@ title: "Q15. 우리는 보안을 고르는 걸까요, 브랜드를 고르는 걸
 date: 2026-01-13
 draft: false
 description: "글로벌 보안 제품 선택의 이면에 작동하는 정상성 편향을 분석하고, 브랜드가 아닌 실제 대응력 중심의 보안 선택 기준을 제시합니다."
-featured_image: "cdn/qna/q15.png"
+featured_image: "/cdn/qna/q15.png"
 tags: ["정상성편향", "GlobalSecurityBias", "보안의사결정", "보안구매", "인지편향", "PLURA-XDR"]
 ---
 
