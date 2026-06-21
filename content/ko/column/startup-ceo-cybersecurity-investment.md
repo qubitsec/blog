@@ -448,6 +448,7 @@ PLURA-XDR은 스타트업이 적은 인력으로도 웹 공격, 서버 침해, P
 
 **보안은 나중의 문제가 아니라, 지금 대표가 결정해야 할 경영 과제입니다.**
 
+### [PLURA-XDR 무료 평가판 시작하기](https://xdr.plura.io/auth/signup)
 ### [스타트업 사이버보안관제 상담하기](https://www.qubitsec.com/contact)
 
 ---
