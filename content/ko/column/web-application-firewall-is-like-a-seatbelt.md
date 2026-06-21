@@ -3,7 +3,7 @@ date: 2023-08-30
 draft: false
 title: "웹방화벽 없는 홈페이지 운영은 안전벨트 없는 운전과 같습니다."
 description: "웹방화벽(WAF)은 웹 서비스 운영에서 선택이 아니라 기본 안전장치입니다. 왜 WAF가 필요한지, 어떤 공격을 줄여주는지, 그리고 PLURA가 어떻게 이를 확장하는지 설명합니다."
-featured_image: "cdn/column/web-application-firewall-is-like-a-seatbelt-ko.png"
+featured_image: "/cdn/column/web-application-firewall-is-like-a-seatbelt-ko.png"
 tags: ["캠페인", "웹방화벽", "WAF", "보안", "웹 공격", "랜섬웨어", "SQL 인젝션", "크로스 사이트 스크립팅", "PLURA-WAF", "PLURA-XDR"]
 ---
 
