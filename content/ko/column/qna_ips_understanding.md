@@ -3,7 +3,7 @@ title: "침입차단시스템(IPS)에 대한 이해"
 date: 2023-02-23
 draft: false
 description: "IPS, WAF, SIEM, 및 암호화된 패킷 분석에 대한 이해와 활용 방안"
-featured_image: "cdn/column/qna_ips_understanding.jpg"
+featured_image: "/cdn/column/qna_ips_understanding.jpg"
 tags: ["IPS", "네트워크보안", "암호화 패킷 분석", "호스트보안", "NDR", "EDR", "WAF", "SIEM", "Zeek", "Wireshark", "tcpdump"]
 ---
 
