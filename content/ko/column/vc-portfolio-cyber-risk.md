@@ -3,7 +3,7 @@ title: "VC는 포트폴리오사의 해킹까지 관리해야 할까?"
 date: 2026-06-18
 draft: false
 description: "포트폴리오사의 해킹이 왜 VC의 투자 성과 리스크인지, 미토스급 AI 공격 시대에 왜 지속적인 사이버보안관제가 필요한지, PLURA-XDR로 어떻게 관리할 수 있는지 설명합니다."
-featured_image: "cdn/column/vc-portfolio-cyber-risk.png"
+featured_image: "/cdn/column/vc-portfolio-cyber-risk.png"
 tags: ["VC", "벤처캐피털", "포트폴리오사", "사이버보안관제", "AI해킹", "Mythos", "투자리스크", "PLURA-XDR"]
 ---
 
