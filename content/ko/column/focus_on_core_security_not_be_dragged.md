@@ -3,7 +3,7 @@ title: "핵심 보안에 집중하면, 더 이상 끌려다니지 않습니다"
 date: 2026-03-29
 draft: false
 description: "보안의 본질은 새로운 이름의 솔루션을 끝없이 따라가는 것이 아니라, 실제 공격을 막고 탐지하고 대응하는 핵심 축에 집중하는 것입니다."
-featured_image: "cdn/column/focus_on_core_security_not_be_dragged.png"
+featured_image: "/cdn/column/focus_on_core_security_not_be_dragged.png"
 tags: ["정보보안", "핵심보안", "SIEM", "SOAR", "MITRE ATT&CK", "가트너", "XDR", "보안운영", "PLURA-XDR"]
 ---
 
