@@ -3,7 +3,7 @@ title: "필요할 때, 필요한 보안만 선택하세요: PLURA vs. 기존 보
 date: 2026-04-09
 draft: false
 description: "보안은 많을수록 좋은 것이 아닙니다. 중요한 것은 우리 조직에 실제 필요한 공격 대응 기능을 얼마나 효율적으로 운영할 수 있는가입니다. PLURA-XDR은 핵심 공격 대응에 집중하는 현실적인 보안 플랫폼을 지향합니다."
-featured_image: "cdn/column/plura_vs_traditional_security.png"
+featured_image: "/cdn/column/plura_vs_traditional_security.png"
 tags: ["보안", "Security", "PLURA-XDR", "WAF", "EDR", "Forensic", "SIEM", "SOAR", "ZTA"]
 ---
 
