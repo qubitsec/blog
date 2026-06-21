@@ -445,8 +445,8 @@ PLURA-XDR은 스타트업이 적은 인력으로도 웹 공격, 서버 침해, P
 
 ---
 
-### 🎯 관련 읽을거리
-
+### 📚 함께 읽기
+- [VC는 포트폴리오사의 해킹까지 관리해야 할까?](https://blog.plura.io/ko/column/vc-portfolio-cyber-risk/)
 - [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
 - [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
 - [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
