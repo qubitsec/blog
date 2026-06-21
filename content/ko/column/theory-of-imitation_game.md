@@ -3,7 +3,7 @@ title: "생각지도 못한 일을 해내는 PLURA"
 date: 2025-06-10
 draft: false
 description: "앨런 튜링의 말을 빌리면, PLURA 개발팀은 누구도 상상하지 못한 방식으로 해킹에 대응하는 로그 중심 보안 기술을 만들었습니다."
-featured_image: "cdn/column/theory-of-imitation_game.png"
+featured_image: "/cdn/column/theory-of-imitation_game.png"
 tags: ["앨런 튜링", "Alan Mathison Turing", "The Imitation Game", "사이버보안", "이미테이션게임", "로그기반보안", "큐비트시큐리티"]
 ---
 
