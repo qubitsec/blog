@@ -3,7 +3,7 @@ title: "방화벽(Firewall)에 대한 올바른 이해"
 date: 2025-02-23
 draft: false
 description: "온프레미스와 클라우드 환경에서 방화벽의 역할과 효과적인 운영 방법을 살펴봅니다. 핵심은 단순한 포트 허용이 아니라, 정책 단순화와 Outbound 통제입니다."
-featured_image: "cdn/column/understanding_firewall.png"
+featured_image: "/cdn/column/understanding_firewall.png"
 tags: ["방화벽", "네트워크 보안", "트래픽 관리", "Zero Trust", "PLURA-XDR"]
 ---
 
