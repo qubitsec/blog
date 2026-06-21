@@ -2,7 +2,7 @@
 date: 2025-01-12
 draft: true
 description: 
-featured_image: "cdn/column/"
+featured_image: "/cdn/column/"
 tags: ["자동차", "KG모빌리티", "전략"]
 title: "차별화 경쟁력 회복 전략"
 ---
