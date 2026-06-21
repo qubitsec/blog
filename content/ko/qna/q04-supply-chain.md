@@ -3,7 +3,7 @@ title: "Q04. 공급망 보안은 어떻게 해야 하나요?"
 date: 2026-01-13
 draft: false
 description: "공급망 보안 위협의 구조적 문제와, 중앙 기업과 공급업체가 현실적으로 적용할 수 있는 대응 방안을 설명합니다."
-featured_image: "cdn/qna/q4.png"
+featured_image: "/cdn/qna/q4.png"
 tags: ["공급망보안", "랜섬웨어", "중소기업보안", "서드파티리스크", "XDR"]
 ---
 
