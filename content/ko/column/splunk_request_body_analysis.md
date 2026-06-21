@@ -3,7 +3,7 @@ title: "[QnA] Splunk와 PLURA로 요청 본문(Request Body) 로그 분석하기
 date: 2026-04-09
 draft: false
 description: "웹 공격 탐지에서 request body 분석은 왜 중요한가? Splunk와 PLURA를 비교해 수집 가능 여부, 운영 복잡도, 비용 구조, OWASP Top 10 대응, 실무 활용 관점에서 정리합니다."
-featured_image: "cdn/column/splunk_request_body_analysis.jpg"
+featured_image: "/cdn/column/splunk_request_body_analysis.jpg"
 tags: ["Splunk", "요청 본문 분석", "Request Body", "Post-body", "OWASP Top 10", "PLURA", "WAF", "SIEM"]
 ---
 
