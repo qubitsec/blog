@@ -3,7 +3,7 @@ title: "Q06. 방화벽과 웹방화벽의 차이는 무엇인가요?"
 date: 2026-01-13
 draft: false
 description: "방화벽과 웹방화벽의 역할 차이를 구조와 트래픽 관점에서 명확히 비교하고, 웹 서비스 보호에 왜 둘 다 필요한지 설명합니다."
-featured_image: "cdn/qna/q6.png"
+featured_image: "/cdn/qna/q6.png"
 tags: ["방화벽", "웹방화벽", "WAF", "네트워크보안", "웹보안", "API보안"]
 ---
 
