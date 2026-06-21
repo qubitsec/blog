@@ -3,7 +3,7 @@ title: "화성을 향한 머스크의 거대한 퍼즐"
 date: 2025-02-23
 draft: false
 description: "일론 머스크의 여러 기업은 각자 따로 움직이는 것처럼 보이지만, 더 크게 보면 하나의 장기 전략으로 연결된다. 화성 정착이라는 관점에서 그 퍼즐을 다시 읽어본다."
-featured_image: "cdn/column/mars-colonization-strategy-musk.png"
+featured_image: "/cdn/column/mars-colonization-strategy-musk.png"
 tags: ["Elon Musk", "Tesla", "SpaceX", "Starlink", "xAI", "Solar", "ESS", "The Boring Company", "Neuralink Corporation", "Boxabl", "Mars"]
 ---
 
