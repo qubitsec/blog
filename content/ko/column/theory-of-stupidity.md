@@ -3,7 +3,7 @@ title: "디트리히 본회퍼의 멍청이 이론"
 date: 2025-03-05T10:38:00
 draft: false
 description: "디트리히 본회퍼의 멍청이 이론을 통해, 왜 사실과 근거를 보지 않는 태도가 더 위험한지 돌아봅니다."
-featured_image: "cdn/column/theory-of-stupidity-2.png"
+featured_image: "/cdn/column/theory-of-stupidity-2.png"
 tags: ["디트리히 본회퍼", "멍청이 이론", "철학", "비판적 사고", "로그기반보안", "PLURA-XDR"]
 ---
 
