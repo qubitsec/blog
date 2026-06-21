@@ -3,7 +3,7 @@ title: "웹방화벽 우회 공격에 대한 대응 전략"
 date: 2023-05-01
 draft: false
 description: "WAF는 여전히 중요하지만, 시그니처 우회 공격은 이미 일상화되었습니다. 본문 로그와 행위 기반 분석까지 포함한 현실적인 대응 전략을 정리합니다."
-featured_image: "cdn/column/waf_bypass_response.jpg"
+featured_image: "/cdn/column/waf_bypass_response.jpg"
 tags: ["WAF", "웹방화벽", "웹 보안", "우회 공격", "정보보안", "PLURA", "PLURA-XDR", "API Security"]
 ---
 
