@@ -3,7 +3,7 @@ date: 2026-04-09
 draft: false
 title: "PLURA 포렌식으로 빠르게 대응하세요: 몇 분 안에 확인해야 할 것들"
 description: "침해 의심 상황에서 포렌식은 빨라야 합니다. PLURA 포렌식은 시스템 설정, 계정, 프로세스, 네트워크, 파일, 로그 등 핵심 데이터를 자동 수집하고 변경점을 비교해 몇 분 안에 우선 판단할 수 있도록 돕습니다."
-featured_image: "cdn/column/plura_forensic_quick_analysis.png"
+featured_image: "/cdn/column/plura_forensic_quick_analysis.png"
 tags: ["PLURA 포렌식", "라이브 포렌식", "디지털 포렌식", "보안 대응", "사고 분석", "자동 데이터 수집", "변경점 비교"]
 ---
 
