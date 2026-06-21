@@ -3,7 +3,7 @@ title: "[보고서] ISMS 인증제도, 왜 지금은 더 이상 유효하지 않
 date: 2025-06-14
 draft: false
 description: "IPS 구축, 연 1회 점검, 외부 백신, 최신 공격 대응 부재 등 ISMS 인증제도의 구조적 한계를 분석하고, 실제 방어 역량 중심으로 제도 전환이 필요한 이유를 네 가지 사례를 통해 설명합니다."
-featured_image: "cdn/column/policy-proposal-example-useless.png"
+featured_image: "/cdn/column/policy-proposal-example-useless.png"
 tags: ["정보보안", "ISMS", "보안기능확인서", "인증제도", "정책제안", "Credential Stuffing", "LoL", "Defender", "모의해킹"]
 ---
 
