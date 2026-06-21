@@ -3,7 +3,7 @@ title: "IPS와 NDR 차이와 한계"
 date: 2023-02-23
 draft: false
 description: "IPS와 NDR의 주요 차이와 한계를 비교하고, 암호화가 기본이 된 환경에서 왜 WAF와 호스트 기반 보안, 그리고 XDR 중심 구조가 더 현실적인 대안이 되는지 설명합니다."
-featured_image: "cdn/column/ips_vs_ndr.jpg"
+featured_image: "/cdn/column/ips_vs_ndr.jpg"
 tags: ["IPS", "NDR", "보안", "네트워크 보안", "암호화 패킷", "Endpoint Security", "WAF", "PLURA-XDR"]
 ---
 
