@@ -101,8 +101,6 @@ LG유플러스,코스피,"정부 통보 2025-07-19 / 신고 2025-10-23 / 정부 
 
 ![2025년 월별 상장사 해킹 사례 수](https://blog.plura.io/cdn/threats/krx_hacking_cases_2025_by_month.png)
 
-월별 사건 수 PNG: [다운로드](https://blog.plura.io/cdn/threats/krx_hacking_cases_2025_by_month.png)
-
 유형별로는 **외부 해킹·정보 유출 3건**, **크리덴셜 스터핑 2건**, **랜섬웨어 2건**, **악성코드·서버 침해 2건**, **통신 인프라 악용 1건**, **공급망·협력사 경유 1건**으로 정리됩니다.
 
 ![2025년 해킹 유형 비율](https://blog.plura.io/cdn/threats/krx_hacking_type_share_2025.png)
