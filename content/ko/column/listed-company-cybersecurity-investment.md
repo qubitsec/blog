@@ -128,6 +128,11 @@ IBM의 「Cost of a Data Breach Report 2025」는 데이터 침해의 전 세계
 
 상장사라면 이제 사고 이후 대응보다 사고 이전의 관리 체계를 먼저 설명할 수 있어야 합니다.
 
+상세한 국내 상장사 해킹 피해 사례는 별도 문서에서 확인할 수 있습니다.  
+해당 문서에는 2025년부터 2026년 6월 21일까지 공개 자료를 기준으로 확인된 국내 상장사 해킹 사례, 피해 유형, 영향 범위, 대응 조치와 신뢰도 근거가 정리되어 있습니다.
+
+### [대한민국 상장사 해킹 피해 사례 보고서 보기](https://blog.plura.io/ko/column/listed-company-hacking-cases/)
+
 > **투자자와 시장은 “보안 제품이 있었는가”보다 “회사가 사이버 리스크를 경영 리스크로 관리하고 있었는가”를 묻고 있습니다.**
 
 ---
@@ -473,6 +478,7 @@ PLURA-XDR은 상장사가 합리적인 비용으로 시작할 수 있고, 사이
 
 ### 📚 함께 읽기
 
+- [대한민국 상장사 해킹 피해 사례 보고서](https://blog.plura.io/ko/column/listed-company-hacking-cases/)
 - [스타트업 대표가 사이버보안 투자를 미루면 안 되는 이유](https://blog.plura.io/ko/column/startup-ceo-cybersecurity-investment/)
 - [VC는 포트폴리오사의 해킹까지 관리해야 할까?](https://blog.plura.io/ko/column/vc-portfolio-cyber-risk/)
 - [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
