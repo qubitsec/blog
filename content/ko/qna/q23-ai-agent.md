@@ -3,7 +3,7 @@ title: "Q23. AI 에이전트 보안 어떻게 대응해야 할까요?"
 date: 2026-03-30
 draft: false
 description: "AI 에이전트는 단순한 챗봇이 아니라 권한을 가진 실행 주체입니다. 중요한 것은 AI를 믿는 것이 아니라, LOLBAS 대응처럼 할 수 있는 것과 없는 것을 명확히 통제하고 그 행위를 실시간으로 분석하는 것입니다."
-featured_image: "cdn/qna/q23.png"
+featured_image: "/cdn/qna/q23.png"
 tags: ["AI Agent", "Agent Security", "LOLBAS", "SecureOS", "XDR", "PLURA-XDR"]
 ---
 
