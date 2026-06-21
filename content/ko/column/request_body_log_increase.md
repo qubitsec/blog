@@ -3,7 +3,7 @@ title: "요청 본문 로그 저장 시 용량 증가율 분석"
 date: 2023-05-05T10:37:00
 draft: false
 description: "요청 본문(Post-body)을 로그로 남길 경우 실제 용량이 얼마나 증가하는지, 계산 예시와 운영 전략 중심으로 설명합니다."
-featured_image: "cdn/column/request_body_log_increase.jpg"
+featured_image: "/cdn/column/request_body_log_increase.jpg"
 tags: ["요청 본문", "Post-body", "Request-body", "로그 분석", "로그 용량"]
 ---
 
