@@ -3,7 +3,7 @@ title: "NDR의 한계: 해결 불가능한 미션"
 date: 2024-02-29
 draft: false
 description: "NDR(Network Detection and Response)의 기술적 한계와 이를 극복하기 위한 현실적 접근 방안을 탐구합니다."
-featured_image: "cdn/column/ndr_limitations.png"
+featured_image: "/cdn/column/ndr_limitations.png"
 tags: ["NDR", "네트워크 보안", "ETA", "암호화 트래픽", "보안 솔루션", "PLURA"]
 ---
 
