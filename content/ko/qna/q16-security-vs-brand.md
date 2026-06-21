@@ -3,7 +3,7 @@ title: "Q16. 우리는 보안을 고르는 걸까요, 브랜드를 고르는 걸
 date: 2026-02-04
 draft: true
 description: "기업이 아웃바운드 보안에 집중해야 하는 이유와 실전 아웃바운드 통제 전략에 대해 알아봅니다."
-featured_image: "cdn/qna/q16.png"
+featured_image: "/cdn/qna/q16.png"
 tags: ["인바운드", "아웃바운드", "통제 전략", "Assume Breach", "침투 전제 철학", "제로 트러스트"]
 ---
 
