@@ -3,7 +3,7 @@ date: 2024-06-12
 draft: false
 title: "웹방화벽의 장단점, 하드웨어 vs 소프트웨어 기반"
 description:
-featured_image: "cdn/column/waf_hardware_vs_software-1.png"
+featured_image: "/cdn/column/waf_hardware_vs_software-1.png"
 tags: ["웹방화벽", "보안", "하드웨어", "소프트웨어", "PLURA-WAF"]
 ---
 
