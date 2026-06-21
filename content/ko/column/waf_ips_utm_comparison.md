@@ -3,7 +3,7 @@ title: "WAF vs IPS vs UTM: 웹 공격 최적의 방어 솔루션 선택하기"
 date: 2023-05-01
 draft: false
 description: "웹 공격 방어를 위한 WAF, IPS, UTM의 차이와 2026년 기준 현실적인 선택 기준을 정리합니다."
-featured_image: "cdn/column/waf_ips_utm_comparison.jpg"
+featured_image: "/cdn/column/waf_ips_utm_comparison.jpg"
 tags: ["WAF", "IPS", "UTM", "웹 보안", "정보보안", "API Security", "Bot Management", "PLURA-XDR"]
 ---
 
