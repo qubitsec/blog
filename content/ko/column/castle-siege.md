@@ -3,7 +3,7 @@ title: "공성전에서 성을 지키는 방법 🏰⚔️"
 date: 2025-09-28
 draft: false
 description: "공성전 비유로 이해하는 현대 해킹 전술과 방어 전략 — 왜 웹이 유일한 성문이 되고, AI 시대에는 세작(백도어) 탐지가 더 어려워졌는지, 그리고 무엇을 준비해야 하는지 정리합니다."
-featured_image: "cdn/column/policy-fable.png"
+featured_image: "/cdn/column/policy-fable.png"
 tags: ["공성전", "Siege", "AI", "사이버보안", "정책실패", "WAF", "EDR", "XDR", "MITRE ATT&CK"]
 ---
 
