@@ -242,6 +242,13 @@ VC의 대표가 보안 전문가가 될 필요는 없습니다.
 
 ---
 
+### 📚 함께 읽기
+- [스타트업 대표가 사이버보안 투자를 미루면 안 되는 이유](https://blog.plura.io/ko/column/startup-ceo-cybersecurity-investment/)
+- [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
+- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
+- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
+- [[머니투데이방송] 쿠팡 사태, 로그 기준 없는 과징금 산정 기준은?](https://news.mtn.co.kr/news-detail/2026061509421622322)
+
 ### 참고 문헌 및 기사
 
 - [경향신문, 김세훈 기자, 「개인정보 유출 과징금 상한 매출액 3%→10% 올린다...보안 투자기업엔 감경 ‘인센티브’」](https://www.khan.co.kr/article/202605121429001)
@@ -252,10 +259,3 @@ VC의 대표가 보안 전문가가 될 필요는 없습니다.
 - [NIST, Information Security Continuous Monitoring, SP 800-137](https://csrc.nist.gov/pubs/sp/800/137/final)
 - [NIST, Cybersecurity Framework 2.0](https://www.nist.gov/cyberframework)
 - [PLURA Blog, 「전통적인 SOC vs. PLURA-XDR 기반 SOC」](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
-
-### 🎯 관련 읽을거리
-
-- [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
-- [전통적인 SOC vs PLURA-XDR 플랫폼](https://blog.plura.io/ko/column/traditional_soc_vs_plura_xdr/)
-- [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
-- [[머니투데이방송] 쿠팡 사태, 로그 기준 없는 과징금 산정 기준은?](https://news.mtn.co.kr/news-detail/2026061509421622322)
