@@ -3,7 +3,7 @@ title: "SIEM은 왜 아직도 쓰이나요? 한계에 도달한 로그 창고의
 date: 2026-01-13
 draft: false
 description: "로그 수집과 상관분석을 약속했던 SIEM이 왜 현장에서 실질적인 보안 효과를 내지 못함에도 여전히 유지되는지, 제도·운영·심리 구조 관점에서 분석합니다."
-featured_image: "cdn/qna/q12.png"
+featured_image: "/cdn/qna/q12.png"
 tags: ["SIEM", "로그분석", "SOC현실", "ISMS", "GartnerHypeCycle", "보안운영", "PLURA-XDR"]
 ---
 
