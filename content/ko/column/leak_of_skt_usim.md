@@ -3,7 +3,7 @@ title: "SKT USIM 유출 사건, 무엇이 문제인가?"
 date: 2025-05-02
 draft: false
 description: "2025년 SKT USIM 정보 유출 사건을 바탕으로, 통신사 보안에서 무엇이 실패했는지와 앞으로 어떤 최소 보안 아키텍처가 필요한지 정리합니다."
-featured_image: "cdn/column/skt_usim.png"
+featured_image: "/cdn/column/skt_usim.png"
 tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "SIM 스와핑", "BPFDoor", "APT 공격", "개인정보 유출", "통신 보안", "XDR"]
 ---
 
