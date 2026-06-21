@@ -3,7 +3,7 @@ title: "PC와 서버의 백신은 윈도우즈 디펜더만으로 충분하다"
 date: 2024-12-17
 draft: false
 description: "전통적인 백신(AV)의 한계를 넘어, 왜 Windows Defender는 기본 보호로 충분하고 고도화된 위협 대응에는 EDR이 필요한지 실무 관점에서 정리합니다."
-featured_image: "cdn/column/why-edr-is-necessary.png"
+featured_image: "/cdn/column/why-edr-is-necessary.png"
 tags: ["안티바이러스", "Antivirus", "AV", "Windows Defender", "EDR", "APT 공격", "PLURA-EDR", "PLURA-XDR"]
 ---
 
