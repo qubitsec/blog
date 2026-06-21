@@ -3,7 +3,7 @@ title: "Q25. 제로트러스트, 도입해야 하나요?"
 date: 2026-05-02
 draft: true
 description: "제로트러스트는 제품을 도입하는 문제가 아니라 접근·권한·행위 검증 원칙을 보안 운영에 적용하는 문제입니다. 제어면 서버 보호, 가시성·분석 필러, 그리고 WAF·EDR·XDR 기반 실시간 행위 분석이 왜 함께 필요한지 정리합니다."
-featured_image: "cdn/qna/q25.png"
+featured_image: "/cdn/qna/q25.png"
 tags: ["ZeroTrust", "ZTA", "ZTNA", "SASE", "IAM", "Visibility", "XDR", "PLURA-XDR"]
 ---
 
