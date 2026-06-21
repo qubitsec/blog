@@ -3,7 +3,7 @@ title: "Q22. SASE만으로 통합 보안이 완성될까요?"
 date: 2026-02-26
 draft: false
 description: "SASE는 분명 중요한 보안 아키텍처이지만, 암호화(TLS) 시대에는 네트워크 레이어만으로 침해를 끝까지 관찰·대응할 수 없습니다. SASE의 구조적 한계와 XDR이 왜 함께 필요해지는지를 정리합니다."
-featured_image: "cdn/qna/q22.png"
+featured_image: "/cdn/qna/q22.png"
 tags: ["SASE", "ZTNA", "ZeroTrust", "TLS", "가시성", "XDR", "PLURA-XDR"]
 ---
 
