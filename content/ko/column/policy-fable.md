@@ -3,7 +3,7 @@ title: "[이솝 우화] 성을 지키는 방법 🏰"
 date: 2025-08-15
 draft: false
 description: "전문성 없는 인사와 형식 중심의 설계가 어떻게 '괴물 정책'을 만드는지, 이솝 우화처럼 비유한 이야기입니다."
-featured_image: "cdn/column/policy-fable.png"
+featured_image: "/cdn/column/policy-fable.png"
 tags: ["정보보안정책", "이솝우화", "사이버보안", "정책실패", "Aesop's Fables", "PLURA"]
 ---
 
