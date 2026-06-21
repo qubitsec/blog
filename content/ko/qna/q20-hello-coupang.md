@@ -3,7 +3,7 @@ title: "Q20. 서명키 하드코딩은 문제의 본질일까요?"
 date: 2026-02-11
 draft: false
 description: "쿠팡 인증키 노출 사례를 통해, 하드코딩이 아닌 ‘교체 불가능한 구조와 운영 부재’가 왜 보안 사고의 본질인지 정리합니다."
-featured_image: "cdn/qna/q20.png"
+featured_image: "/cdn/qna/q20.png"
 tags: ["하드코딩", "키관리", "서명키", "인증보안", "운영보안", "키로테이션"]
 ---
 
