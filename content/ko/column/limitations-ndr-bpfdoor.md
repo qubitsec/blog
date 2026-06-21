@@ -3,7 +3,7 @@ title: "SKT 해킹으로 본 NDR 기술 한계: BPFDoor 같은 스텔스 공격 
 date: 2025-05-02
 draft: false
 description: "SKT 유심 해킹 사건에 사용된 BPFDoor 사례를 통해 NDR 기술의 한계를 분석하고, 스텔스 공격을 효과적으로 대응할 수 있는 현실적 방안을 정리했습니다"
-featured_image: "cdn/column/limitations-ndr-bpfdoor.png"
+featured_image: "/cdn/column/limitations-ndr-bpfdoor.png"
 tags: ["SKT 해킹", "BPFDoor", "NDR 한계", "스텔스 공격", "네트워크 보안", "IDS", "IPS", "NDR", "Symbiote", "LummaC2", "PLURA-XDR"]
 ---
 
