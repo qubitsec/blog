@@ -3,7 +3,7 @@ title: "다중∙계층 보안, 정말 필요한가?"
 date: 2025-05-05
 draft: false
 description: "보안 솔루션을 여러 겹으로 쌓는 접근이 왜 오히려 비효율과 사각지대를 만들 수 있는지, 그리고 이를 줄이기 위한 통합 보안 접근을 정리합니다."
-featured_image: "cdn/column/overkill-multi-layer-security.png"
+featured_image: "/cdn/column/overkill-multi-layer-security.png"
 tags: ["Multi-layer Security", "Overkill Security", "Feature Creep", "Alert Fatigue", "Burnout", "심리적 소진", "기능 과다", "다중 보안", "계층 보안", "통합 보안"]
 ---
 
