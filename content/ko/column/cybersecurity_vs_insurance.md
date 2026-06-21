@@ -3,7 +3,7 @@ title: "보안은 보험일까?"
 date: 2024-12-15
 draft: false
 description: "보안과 보험은 모두 위험에 대비하지만, 역할은 완전히 다릅니다. 이 글은 왜 보안을 보험처럼 보면 안 되는지, 그리고 기업이 왜 예방과 실시간 대응 중심의 보안을 갖춰야 하는지 설명합니다."
-featured_image: "cdn/column/cybersecurity_vs_insurance.png"
+featured_image: "/cdn/column/cybersecurity_vs_insurance.png"
 tags: ["보안", "보험", "Security", "Insurance", "PLURA-XDR", "경영리스크"]
 ---
 
