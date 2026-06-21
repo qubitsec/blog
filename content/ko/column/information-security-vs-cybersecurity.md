@@ -3,7 +3,7 @@ title: "ISMS-P 인증을 받아도 해킹 당하는 이유"
 date: 2026-05-21
 draft: false
 description: "정보보안은 중요하지만 너무 넓은 개념입니다. ISMS-P, 문서 암호화, DRM, DLP, NAC, DB 암호화, SAST, SBOM, 모의해킹은 대부분 관리체계·IT 통제·사전 점검·공격면 검증에 가깝습니다. 이 글은 해킹 피해에 대비하려면 ISMS-P 중심이 아니라 사이버보안 침해대응 중심으로 예산과 책임을 바꾸어야 한다고 설명합니다."
-featured_image: "cdn/column/information-security-vs-cybersecurity.jpg"
+featured_image: "/cdn/column/information-security-vs-cybersecurity.jpg"
 tags: ["정보보안", "사이버보안", "IT보안", "ISMS-P", "PLURA-XDR", "웹보안", "로그분석", "SAST", "SBOM", "모의해킹"]
 ---
 
