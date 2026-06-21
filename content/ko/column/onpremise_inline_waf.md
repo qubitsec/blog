@@ -3,7 +3,7 @@ date: 2025-01-31
 draft: false
 title: "웹방화벽(WAF)에 대한 이해"
 description: "온프레미스 환경에서 인라인 WAF와 리버스 프록시 WAF의 차이, 한계, 그리고 어떤 환경에서 어떤 방식을 선택해야 하는지를 실무 관점에서 설명합니다."
-featured_image: "cdn/column/waf-img.png"
+featured_image: "/cdn/column/waf-img.png"
 tags: ["PLURA-WAF", "웹방화벽", "인라인", "리버스 프록시", "보안", "PLURA-XDR"]
 ---
 
