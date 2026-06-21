@@ -3,7 +3,7 @@ date: 2025-12-07
 draft: false
 title: "랜섬웨어 시대, 문제는 과징금이 아니다 — 중소기업에 보안 도입을 제안하며"
 description:
-featured_image: "cdn/column/proposal-for-smb-severity-solution.png"
+featured_image: "/cdn/column/proposal-for-smb-severity-solution.png"
 tags: ["보안", "랜섬웨어", "중소기업 보안", "클라우드 보안", "구독형 보안", "정보보호"]
 ---
 
