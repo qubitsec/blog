@@ -104,4 +104,92 @@ timeline
 
 셋째, 통신사 사건에서는 **탐지 그 자체보다 설명 가능성**이 더 중요하게 드러났습니다. SK텔레콤은 악성코드 탐지 이후 정부 조사에서 침해 경로, 계정정보 평문 저장, 과거 신고 누락, 자료보전 이슈까지 문제로 확장됐고, KT는 단순 정보유출을 넘어 실제 소액결제 피해와 위약금 면제 검토로 이어졌습니다. 경영진 관점에서 보면, 사고 이후 가장 먼저 필요한 것은 “보안 솔루션 목록”이 아니라 **언제 침해가 시작됐는지, 어떤 시스템과 계정이 영향을 받았는지, 어떤 고객이 피해 가능성이 있는지, 어떤 근거로 투자자와 감독당국에 설명할 수 있는지**입니다. citeturn8view0turn9view1turn9view6turn8view2
 
-마지막으로, 이번 조사 자체가 보여주는 한계도 분명합니다. **공식 공시 가시성은 실제 사건 가시성보다 좁습니다.** 즉, 상장사 보안사고는 존재 여부보다 **어떤 형식으로 공개됐는가**가 더 큰 문제였습니다. DART나 KRX에서 독립 사건공시로 바로 나오는 경우는 드물었고, 회사 공지 원문이 사라졌거나 파싱이 되지 않는 경우도 있었습니다. 그래서 이번 보고서는 “2021–2025년 모든 상장사 침해사고의 완전 목록”이 아니라, **현재 시점에 재검증 가능한 공시·공지 기준 사건집**으로 이해하는 것이 가장 정확합니다. citeturn7view0turn7view3turn23view1turn24view3turn33view0
+마지막으로, 이번 조사 자체가 보여주는 한계도 분명합니다. **공식 공시 가시성은 실제 사건 가시성보다 좁습니다.** 즉, 상장사 보안사고는 존재 여부보다 **어떤 형식으로 공개됐는가**가 더 큰 문제였습니다. DART나 KRX에서 독립 사건공시로 바로 나오는 경우는 드물었고, 회사 공지 원문이 사라졌거나 파싱이 되지 않는 경우도 있었습니다. 그래서 이번 보고서는 “2021–2025년 모든 상장사 침해사고의 완전 목록”이 아니라, **현재 시점에 재검증 가능한 공시·공지 기준 사건집**으로 이해하는 것이 가장 정확합니다. citeturn7view0turn7view3turn23view1turn24view3turn33view0# 2021–2025년 상장사 해킹 조사
+
+## Executive Summary
+
+본 문서는 2021년부터 2025년까지 공개 자료로 확인 가능한 KOSPI·KOSDAQ 상장사 해킹·침해 사례를 사건 발생연도와 공개·공시연도로 나누어 정리한 블로그용 리포트다. 금융감독원·DART, 회사 공지, 정부 조사결과, 주요 언론, 전문 보안 매체를 우선 사용했고, 해외 자회사·합작법인·외부 협력사에서 발생했더라도 상장사 정보자산·임직원·고객정보가 직접 연루된 경우는 `scope_note`로 구분해 포함했다. 종합표 기준으로 정리된 공개 확인 사례는 9건이며, 시장별로는 KOSPI 8건, KOSDAQ 1건이다. 사건 발생연도 기준 분포는 2021년 1건, 2022년 1건, 2023년 1건, 2024년 1건, 2025년 5건이다. citeturn55view0turn56view0turn24news0turn23news0turn33view0turn45view0turn37view3turn31view0turn28view1turn29view2
+
+가장 큰 재무·규제 파급은 SK텔레콤과 KT에서 확인된다. SK텔레콤은 2025년 4월 유심 정보 유출 정황을 공지했고, 정부 최종조사는 최초 침투를 2021년 8월로, 유출 규모를 IMSI 기준 약 2,696만 건으로 제시했다. 이후 Reuters 보도 기준 개인정보보호위원회는 약 134억 원대 과징금을 발표했고, SK텔레콤은 5년간 약 7000억 원 투자 계획과 2025년 매출 전망 8000억 원 하향을 함께 밝혔다. KT는 정부 최종조사에서 가입자 식별정보 2만 2227명 유출, 368명 대상 777건의 무단 소액결제로 약 2억 4300만 원 피해가 발생한 것으로 확인됐고, 정부는 위약금 면제 규정 적용 가능성까지 언급했다. citeturn55view0turn56view0turn36view0turn36view5turn37view1turn37view3
+
+2021–2024년에도 의미 있는 사례는 분명 존재한다. 2022년 삼성전자 소스코드 유출은 고객정보가 아니라 내부 기술정보 노출의 위험을 보여줬고, 2023년 NAVER 연계 LINE Yahoo 사건은 해외 합작법인 침해가 지배구조와 규제 이슈로 번질 수 있음을 드러냈다. 2024년 GS리테일 사건은 크리덴셜 스터핑만으로도 장기간 누적된 개인정보 노출이 편의점 9만여 명과 홈쇼핑 약 158만 건 수준으로 확대될 수 있음을 보여줬다. 예스24는 개인정보 유출 여부와 별개로 랜섬웨어가 영업중단·주가·보상 문제로 즉시 전이되는 전형적 사례였다. citeturn24news0turn42search0turn23news0turn23news1turn33view0turn34view2turn45view0turn46view1
+
+<!--more-->
+
+## 범위와 판정 기준
+
+이번 정리는 **상장사 거버넌스 관점에서 의미가 큰 공개 확인 사례**에 초점을 맞췄다. 사건 발생연도와 공개·공시연도를 분리했고, DART나 투자위험 공시가 명시적으로 확인되는 경우에는 `영향` 열에서 반영했다. 다만 실제 한국 상장사의 해킹 공시는 미국 SEC 8-K처럼 표준화되어 있지 않기 때문에, 회사 공지와 정부 조사결과, 연합뉴스·경향·전문 보안 매체 보도, 해외 공식·주요 외신을 함께 대조하는 방식이 필요했다. SK텔레콤과 KT처럼 정부 조사결과가 매우 구체적인 사례도 있었지만, 삼성전자 2022년 소스코드 유출처럼 공개 공식자료가 제한되어 해외 보도를 통해 보수적으로 반영한 사례도 있다. citeturn56view0turn37view3turn24news0turn42search0
+
+해외 자회사·합작법인·공급망 사건은 무조건 포함하지 않았다. NAVER의 경우 LINE Yahoo 침해가 NAVER Cloud 시스템과 연결되어 일본 규제와 지배구조 논란으로 번졌기 때문에 포함했고, 대한항공은 외부 협력업체 KC&D 사고였지만 대한항공 임직원 개인정보가 실제로 연루되었다는 점에서 포함했다. 반대로 공개 근거가 약하거나 상장사 본체와의 연계성이 불명확한 사건은 제외했다. citeturn23news0turn23news1turn29view2turn51news0
+
+## 파일 목록
+
+- [Markdown 본문 다운로드](sandbox:/mnt/data/krx_listed_company_cyber_incidents_2021_2025_blog_v2.md)
+- [CSV 원자료 다운로드](sandbox:/mnt/data/krx_listed_company_cyber_incidents_2021_2025_v2.csv)
+- [PNG 연도별 사건 수](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_by_incident_year_v2.png)
+- [PNG 시장별 분포](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_market_stack_v2.png)
+- [PNG 해킹 유형 비율](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_type_share_v2.png)
+- [PNG 주요 사건 타임라인](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_timeline_v2.png)
+
+## 전체 사건 종합표
+
+| 사건명 | 기업명 | 시장 | 사건 발생연도 | 공개·공시연도 | 피해규모 | 유형 | 영향 | scope_note | 출처 링크 |
+|---|---|---:|---:|---:|---|---|---|---|---|
+| SK텔레콤 유심정보 유출 장기침해 | SK텔레콤 | KOSPI | 2021 | 2025 | 과징금 1,347.91억원 + 고객혜택 약 5,000억원 + 보안투자 7,000억원 계획 | 장기 잠복형 악성코드·유심정보 유출 | 정부 최종조사, 유심 무상교체, 2025년 매출 전망 8,000억원 하향, 대규모 가입자 신뢰 훼손 | 국내 본사 사건 | [공지](https://www.sktelecom.com/customer/notice_detail.do?currentPage=1&index=411&keyword=&type=) · [정부](https://www.korea.kr/news/policyNewsView.do?newsId=156721622) · [Reuters1](https://www.reuters.com/sustainability/boards-policy-regulation/south-korea-agency-fines-sk-telecom-97-million-over-major-data-leak-2025-08-28/) · [Reuters2](https://www.reuters.com/sustainability/boards-policy-regulation/south-korea-orders-sk-telecom-strengthen-data-security-after-leak-2025-07-04/) |
+| 삼성전자 소스코드 유출 | 삼성전자 | KOSPI | 2022 | 2022 | 미상 | 소스코드·내부 기술정보 유출 | 고객·임직원 개인정보 유출은 없다고 회사가 설명했으나, 보안설계·부트로더 관련 코드 노출 우려 | 국내 본사 사건 | [Wired](https://www.wired.com/story/lapsus-hacking-group-extortion-nvidia-samsung) · [보조](https://en.wikipedia.org/wiki/Lapsus%24) |
+| LINE Yahoo 무단접근과 NAVER 클라우드 연계 리스크 | NAVER | KOSPI | 2023 | 2023 | 미상 | 해외 합작법인·클라우드 경유 무단접근 | 30만건 이상 개인정보 유출, 일본 행정지도, NAVER-SoftBank 지배구조 논란 | 해외 합작법인·클라우드 연계 사건 | [Reuters1](https://www.reuters.com/markets/deals/softbank-talks-with-naver-over-control-line-operator-ly-2024-05-10/) · [Reuters2](https://www.reuters.com/world/asia-pacific/south-korea-consult-naver-after-report-firm-faces-japan-pressure-divest-stake-2024-04-27/) · [FT](https://www.ft.com/content/b4f31495-d391-4265-bc2a-3129cccbf96f) |
+| GS리테일 편의점·홈쇼핑 크리덴셜 스터핑 | GS리테일 | KOSPI | 2024 | 2025 | 금액 미상 | 크리덴셜 스터핑·계정탈취 | 편의점 9만여명, 홈쇼핑 약 158만건 개인정보 유출 공지, 2차 피해 우려와 비밀번호 변경 조치 | 국내 본사 사건 | [경향](https://www.khan.co.kr/article/202501061605011) · [보안뉴스](https://m.boannews.com/html/detail.html?idx=136291) |
+| 예스24 랜섬웨어로 인한 전면 서비스 장애 | 예스24 | KOSDAQ | 2025 | 2025 | 금액 미상 | 랜섬웨어·서비스 마비 | 도서·티켓·eBook 등 전 서비스 중단, 주가 하락, 대표이사 사과 및 보상안 공지 | 국내 본사 사건 | [공지](https://m.ticket.yes24.com/notice/Detail.aspx?bid=16153&order=1) · [연합](https://www.yna.co.kr/view/AKR20250611040351008) · [보안뉴스](https://m.boannews.com/html/detail.html?idx=137687) |
+| KT 불법 펨토셀·소액결제 침해사고 | KT | KOSPI | 2025 | 2025 | 무단 소액결제 피해 2억4,300만원 | 불법 펨토셀·통신망 침해 | 2만2,227명 식별정보 유출, 368명 금전피해, 서버 94대·악성코드 103종 확인, 위약금 면제 규정 적용 가능 판단 | 국내 본사 사건 | [중간](https://www.korea.kr/briefing/policyBriefingView.do?newsId=156726252) · [최종](https://www.korea.kr/news/policyNewsView.do?newsId=148957231) |
+| LG유플러스 APPM 서버 침해 정황 | LG유플러스 | KOSPI | 2025 | 2025 | 금액 미상 | 내부 계정관리 서버 침해 | 8,938대 서버 정보, 4만2,256개 계정, 직원 167명 정보 탈취 주장, KISA 신고, 후속 수사·투자위험 공시 연결 | 국내 본사 사건 | [연합1](https://www.yna.co.kr/view/AKR20251023063651017) · [연합2](https://www.yna.co.kr/view/AKR20260121134000017) |
+| 신세계그룹 내부 인트라넷 정보 유출 | 신세계I&C | KOSPI | 2025 | 2025 | 금액 미상 | 악성코드 감염·내부 인트라넷 유출 | 약 8만여명 사번과 일부 이름·부서·IP 주소 유출, 고객정보 유출은 없다고 설명, 관계기관 신고 | 국내 본사 사건 | [연합](https://www.yna.co.kr/view/AKR20251226132851030) · [ZDNet](https://zdnet.co.kr/view/?no=20251226191853) |
+| 대한항공 협력업체 KC&D 서버 해킹 | 대한항공 | KOSPI | 2025 | 2025 | 금액 미상 | 외부 협력업체 서버 해킹 | 임직원 성명·계좌번호 등 개인정보 연루, 협력업체 영역 사고이나 즉시 보안 조치와 관계기관 신고 진행 | 국내 본사 정보가 포함된 외부 공급망 사건 | [연합](https://www.yna.co.kr/view/AKR20251229029200003) · [TechRadar](https://www.techradar.com/pro/security/thousands-of-employees-exposed-as-korean-air-compromised-in-oracle-breach) |
+
+## 요약 표
+
+| 사건 | 피해규모 | 주요파급 | 교훈 |
+|---|---|---|---|
+| SK텔레콤 유심정보 유출 장기침해 | 과징금 1,347.91억원, 고객혜택 약 5,000억원, 보안투자 7,000억원 계획 | 유심 무상교체, 2025년 매출 전망 8,000억원 하향, 대규모 이용자 신뢰 훼손 | 통신 핵심인증정보는 평시부터 분리·암호화·장기 로그보존이 필수 |
+| KT 불법 펨토셀·소액결제 침해사고 | 무단 소액결제 피해 2억4,300만원 | 2만2,227명 식별정보 유출, 368명 금전피해, 위약금 면제 판단 | 네트워크 장비·공급망·로그·암호화 정책을 한 체계로 관리해야 함 |
+| GS리테일 편의점·홈쇼핑 크리덴셜 스터핑 | 금액 미상 | 편의점 9만여명·홈쇼핑 약 158만건 개인정보 유출 공지 | 비정상 로그인 탐지, MFA, 계정잠금, 대량 시도 통계감시가 기본 방어선 |
+| 예스24 랜섬웨어 | 금액 미상 | 전면 서비스 장애, 주가 하락, 대표이사 사과와 고객 보상 | 랜섬웨어는 개인정보 유출 여부와 별개로 영업중단 리스크가 매우 큼 |
+| LG유플러스 APPM 서버 침해 | 금액 미상 | 계정·서버·직원정보 유출 주장, 후속 수사와 투자위험 공시 연결 | 외주 보안업체 계정과 내부 운영계정은 별도 통제·포렌식 보존이 핵심 |
+| LINE Yahoo와 NAVER 클라우드 연계 리스크 | 금액 미상 | 30만건+ 유출, 일본 행정지도, 지배구조 논란 | 해외 자회사·합작법인도 그룹 차원 공급망 보안과 거버넌스 범위에 포함해야 함 |
+
+## 정량 요약과 시각화
+
+사건 유형별로 보면 악성코드·시스템 침해가 4건으로 가장 많고, 공급망·제3자 연계 침해가 2건, 계정탈취·크리덴셜 스터핑 1건, 랜섬웨어·서비스 장애 1건, 소스코드·IP 유출 1건이다. 시장별로는 KOSPI 비중이 높지만, KOSDAQ에서도 예스24처럼 서비스 연속성에 직접 영향을 준 사례가 확인된다. 이 분포는 “공시 리스크를 동반한 대형 통신·유통·플랫폼 사건”과 “영업중단형 랜섬웨어 사건”이 동시에 증가하고 있음을 시사한다. citeturn36view5turn37view3turn34view2turn46view1turn32view2turn29view2
+
+![연도별 사건 수](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_by_incident_year_v2.png)
+
+![시장별 분포](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_market_stack_v2.png)
+
+![해킹 유형 비율](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_type_share_v2.png)
+
+예스24는 2025년 6월 9일 오전 4시경 랜섬웨어로 서비스가 마비됐고, 연합뉴스 기준 6월 11일 주가가 3.90% 하락했다. 이후 대표이사 사과문과 1차 보상안이 공지됐다. GS리테일은 2025년 1월 공지에서 9만여 명 개인정보 유출을 알렸고, 2월 추가 분석에서는 2024년 6월 21일부터 2025년 2월 13일 사이 홈쇼핑 웹사이트에서 약 158만 건 개인정보 유출 가능성을 공지했다. LG유플러스는 2025년 10월 KISA 신고 시점에 8,938대 서버 정보, 4만2,256개 계정, 167명 직원 정보 탈취 주장이 보도됐고, 2026년 1월 연합뉴스는 이를 둘러싼 경찰 수사와 투자위험 공시를 전했다. 신세계I&C는 약 8만여명 사번과 일부 이름·부서·IP 주소 유출을 인정했고, 고객정보 유출은 없다고 밝혔다. 대한항공은 외부 협력업체 KC&D 사고로 임직원 성명·계좌번호 등이 연루됐다고 밝혔다. citeturn45view0turn46view1turn33view0turn34view2turn31view0turn32view2turn28view1turn29view5turn29view2turn51news0
+
+## 주요 사건 타임라인
+
+```mermaid
+timeline
+    title 2021–2025 상장사 해킹 주요 타임라인
+    2021 : SK텔레콤 장기 침해 시작 정황
+    2022 : 삼성전자 소스코드 유출
+    2023 : LINE Yahoo 무단접근과 NAVER 클라우드 연계 리스크
+    2024 : GS리테일 편의점·홈쇼핑 크리덴셜 스터핑 장기 노출 구간
+    2025 : 예스24 랜섬웨어
+         : KT 불법 펨토셀·소액결제 침해사고
+         : LG유플러스 APPM 서버 침해 정황
+         : 신세계I&C 내부 인트라넷 정보 유출
+         : 대한항공 협력업체 KC&D 서버 해킹
+```
+
+![주요 사건 타임라인](sandbox:/mnt/data/krx_cyber_incidents_2021_2025_timeline_v2.png)
+
+SK텔레콤은 정부 최종조사에서 최초 침투를 2021년 8월 6일, 음성통화인증 관리서버 감염을 2021년 12월 24일, 추가 거점 확보를 2022년 6월, 광범위한 악성코드 설치를 2023년 11월 30일부터 2025년 4월 21일까지로 설명했다. 이 사건 하나만 보더라도 “사고 공시는 2025년이지만, 실제 침해 연혁은 수년에 걸친 장기 잠복”이라는 점이 분명해진다. NAVER 연계 LINE Yahoo 사건 역시 2023년 발생, 2024년 행정지도로 이어진 후 그룹 지배구조 리스크로 비화했다. citeturn56view0turn23news0turn23news1
+
+## 시사점과 한계
+
+이번 정리에서 반복적으로 나타난 공통점은 세 가지다. 첫째, **평시 탐지 실패와 장기 잠복**이다. SK텔레콤, KT, LG유플러스는 사고 그 자체보다 늦은 인지, 계정정보 평문 저장, 포렌식 보존 미흡, 자산 식별·로그 관리 실패가 더 큰 위험으로 이어졌다는 공통점을 보였다. 둘째, **공급망·외주·합작법인 리스크의 확대**다. NAVER-라인야후, 대한항공, GS리테일 사례는 경계 밖 사건이 결국 고객·임직원 데이터, 규제 대응, 투자위험 공시로 귀결될 수 있음을 보여준다. 셋째, **영업중단과 공시 리스크의 결합**이다. 예스24와 신세계I&C 사례는 즉각적인 서비스 중단이나 내부 인트라넷 사고가 바로 평판·보상·주가·이사회 이슈로 번질 수 있음을 보여준다. citeturn56view0turn37view3turn32view2turn23news0turn29view2turn34view2turn45view0turn28view1
+
+다만 이 보고서는 **공개 확인 가능한 사례만** 포함한다. 비공개 포렌식 사고, 수사 단계 미공개 사건, 회사가 고객 안내만 하고 폭넓은 공시를 하지 않은 사건은 누락될 수 있다. 또한 삼성전자 2022년 사례처럼 DART나 국내 공식 공시보다 해외 보도 의존도가 높은 건은 보수적으로 반영했다. 피해 금액이 공식적으로 확인되지 않은 경우에는 `미상`으로 두고, 대신 서비스 중단, 과징금, 보상 패키지, 투자위험 공시, 가이던스 하향 같은 **간접 재무지표**를 `영향` 열에 따로 기록했다. citeturn24news0turn42search0turn36view0turn36view5turn46view1
