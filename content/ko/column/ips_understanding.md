@@ -3,7 +3,7 @@ title: "침입차단시스템(IPS) 이해하기"
 date: 2024-02-23T00:00:02
 draft: false
 description: "침입차단시스템(IPS)을 OSI 모델 기반으로 분석하고, 네트워크 및 호스트 보안의 포괄적 전략으로 이해합니다."
-featured_image: "cdn/column/ips_understanding-1.png"
+featured_image: "/cdn/column/ips_understanding-1.png"
 tags: ["IDS", "IPS", "NDR", "OSI 모델", "보안"]
 ---
 
