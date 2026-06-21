@@ -3,7 +3,7 @@ title: "Q14. 정보보안은 왜 기술만으로 결정되지 않고, 결국 심
 date: 2026-01-13
 draft: false
 description: "정보보안 의사결정이 기술적 비교만으로 이루어지지 않는 이유를 정상성 편향, 위험 회피, 인지 부담 등 심리적 요인 관점에서 분석합니다."
-featured_image: "cdn/qna/q14.png"
+featured_image: "/cdn/qna/q14.png"
 tags: ["보안인지편향", "SecurityCognitiveBias", "정상성편향", "위험회피", "보안의사결정", "PLURA-XDR"]
 ---
 
