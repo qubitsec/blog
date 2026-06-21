@@ -3,7 +3,7 @@ date: 2024-06-12
 draft: false
 title: "해킹 사건에 대응하는 클라우드 보안 플랫폼의 중요성"
 description: "반복되는 해킹 사고 앞에서 왜 로그 중심의 클라우드 보안 플랫폼이 중요해졌는지, 그리고 조직이 실제로 무엇을 준비해야 하는지 정리합니다."
-featured_image: "cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
+featured_image: "/cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
 tags: ["보안", "클라우드 보안", "정보보호", "해킹 대응", "로그 관리", "구독형 보안 서비스", "PLURA-XDR"]
 ---
 
