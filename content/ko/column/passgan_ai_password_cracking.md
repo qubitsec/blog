@@ -3,7 +3,7 @@ title: "PassGAN: AI 기반 패스워드 크래킹 이해와 현대적 대응 전
 date: 2023-04-23
 draft: false
 description: "PassGAN의 원리와 한계를 정확히 이해하고, 2025~2026년 기준으로 패스워드 기반 인증이 왜 더 위험해졌는지, 그리고 passkeys·현대적 인증 통제로 어떻게 대응해야 하는지 정리합니다."
-featured_image: "cdn/column/passgan_ai_password_cracking.jpg"
+featured_image: "/cdn/column/passgan_ai_password_cracking.jpg"
 tags: ["PassGAN", "AI", "패스워드 크래킹", "보안", "GAN 알고리즘", "Passkeys", "Authentication"]
 ---
 
