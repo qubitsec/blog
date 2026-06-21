@@ -3,7 +3,7 @@ title: "마이터 어택 관점에서 고급감사정책 활용: 2026년 실무 
 date: 2026-04-09
 draft: false
 description: "Windows 고급감사정책을 MITRE ATT&CK 관점에서 다시 정리합니다. 이벤트 ID, auditpol, GPO, PowerShell 로깅, 추천 체크리스트까지 실무 중심으로 설명합니다."
-featured_image: "cdn/column/mitre_attack_audit_policy.jpg"
+featured_image: "/cdn/column/mitre_attack_audit_policy.jpg"
 tags: ["MITRE ATT&CK", "고급감사정책", "Windows Event Log", "Audit Policy", "PowerShell", "PLURA-XDR", "Security"]
 ---
 
