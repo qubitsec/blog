@@ -3,7 +3,7 @@ date: 2024-12-22
 draft: false
 title: "웹을 통한 데이터유출 해킹 대응 개론"
 description: "웹 기반 데이터 유출의 원리와 기존 DLP의 한계, 그리고 응답 본문(Resp-Body) 및 행위 맥락 기반 실시간 탐지의 필요성을 정리합니다."
-featured_image: "cdn/column/web_data_Loss_Prevention-1.png"
+featured_image: "/cdn/column/web_data_Loss_Prevention-1.png"
 tags: ["데이터 유출 방지", "DLP솔루션", "웹 데이터 유출 탐지", "SQL인젝션 대응", "PLURA-XDR"]
 ---
 
