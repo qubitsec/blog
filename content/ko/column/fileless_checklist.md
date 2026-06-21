@@ -3,7 +3,7 @@ title: "파일리스(Fileless) 공격 대응 필수 체크리스트"
 date: 2025-04-08T00:00:01
 draft: false
 description: "파일리스 공격은 디스크에 흔적을 거의 남기지 않고 정상 도구와 메모리를 악용하기 때문에 탐지가 어렵습니다. 이 글은 파일리스 공격 대응을 위한 실전 체크리스트를 정리합니다."
-featured_image: "cdn/column/fileless_checklist_02.png"
+featured_image: "/cdn/column/fileless_checklist_02.png"
 tags: ["정보보안", "Security", "파일리스 공격", "EDR", "XDR", "기업 보안", "PLURA-XDR"]
 ---
 
