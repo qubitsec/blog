@@ -3,7 +3,7 @@ date: 2020-06-04T00:00:00
 draft: false
 title: "홈페이지 위변조 해킹 탐지 방법 — 파일 무결성 모니터링과 실시간 행위 분석이 필요한 이유"
 description: "홈페이지 위변조는 여전히 흔하고 실질적인 공격입니다. 파일 무결성 모니터링(FIM), 웹 로그, 감사 로그를 함께 활용해 위변조를 더 빠르게 탐지하고 대응하는 방법을 정리합니다."
-featured_image: "cdn/column/homepage_hack-1.png"
+featured_image: "/cdn/column/homepage_hack-1.png"
 tags: ["홈페이지 변조", "보안", "악성코드", "웹쉘", "파일 무결성 모니터링", "FIM", "PLURA"]
 ---
 
