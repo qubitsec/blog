@@ -3,7 +3,7 @@ title: "쿠팡 해킹 가설: 서버 인증 취약점과 내부자, 3,370만 계
 date: 2025-12-01
 draft: false
 description: "3,370만 계정 개인정보 유출을 초래한 쿠팡 서버 인증 취약점 이슈를 중심으로, 정상 로그인 없이 대량 정보가 빠져나간 과정에 대한 합리적 가설과 현실적인 대응 전략을 정리합니다."
-featured_image: "cdn/column/coupang-auth-breach-hypothesis-2.png"
+featured_image: "/cdn/column/coupang-auth-breach-hypothesis-2.png"
 tags: ["쿠팡 해킹", "쿠팡 개인정보 유출", "서버 인증 취약점", "내부자 공격", "Insider Threat", "Broken Authentication", "접근통제", "데이터 유출", "요청 본문", "응답 본문", "PLURA-XDR"]
 ---
 
