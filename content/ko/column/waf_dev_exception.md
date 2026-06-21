@@ -3,7 +3,7 @@ title: "웹방화벽 우회 공격에 대응하기"
 date: 2025-07-10T15:30:00
 draft: false
 description: "웹방화벽은 웹 서비스를 보호하는 가장 강력한 방어선입니다. 그러나 반복되는 예외 처리와 우회 공격은 운영자와 개발자 모두에게 고민을 안겨줍니다. 그 원인과 해결 방안을 제시합니다."
-featured_image: "cdn/column/waf_dev_exception.png"
+featured_image: "/cdn/column/waf_dev_exception.png"
 tags: ["웹방화벽", "우회 공격", "보안 예외", "웹 개발", "보안 설계", "시큐어 코딩", "PLURA-XDR"]
 ---
 
