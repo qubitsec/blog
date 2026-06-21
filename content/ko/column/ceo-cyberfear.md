@@ -3,7 +3,7 @@ title: "CEO가 가장 두려워하는 문제, 사이버 해킹"
 date: 2025-06-08
 draft: false
 description: "사이버 보안은 CEO에게 가장 두렵고 통제하기 어려운 영역입니다. 이 글은 왜 해킹이 경영진의 핵심 리스크가 되었는지, 그리고 그 불확실성을 줄이기 위해 무엇이 필요한지 설명합니다."
-featured_image: "cdn/column/ceo-cyberfear.png"
+featured_image: "/cdn/column/ceo-cyberfear.png"
 tags: ["사이버보안", "CEO", "APT", "PLURA-XDR", "보안전략", "경영리스크"]
 ---
 
