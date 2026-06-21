@@ -3,7 +3,7 @@ title: "SOAR는 왜 아직도 쓰이나요? 이미 한계에 도달한 자동화
 date: 2026-01-13
 draft: false
 description: "자동 대응을 약속했던 SOAR가 왜 현장에서 한계에 부딪혔음에도 계속 사용되는지, 제도·운영·심리 구조 관점에서 분석합니다."
-featured_image: "cdn/qna/q11.png"
+featured_image: "/cdn/qna/q11.png"
 tags: ["SOAR", "SIEM", "보안자동화", "SOC현실", "GartnerHypeCycle", "ROI", "PLURA-XDR"]
 ---
 
