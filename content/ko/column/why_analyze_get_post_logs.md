@@ -3,7 +3,7 @@ date: 2017-02-23T00:00:00
 draft: false
 title: "우리는 왜 GET/POST 로그를 분석하는가?"
 description: "GET/POST의 차이를 넘어, 왜 특히 POST Body와 전체 웹 로그 분석이 실제 공격 탐지와 대응에서 중요한지 정리합니다."
-featured_image: "cdn/column/why_analyze_get_post_logs-1.png"
+featured_image: "/cdn/column/why_analyze_get_post_logs-1.png"
 tags: ["HTTP", "GET 방식", "POST 방식", "웹로그 분석", "보안", "PLURA-XDR"]
 ---
 
