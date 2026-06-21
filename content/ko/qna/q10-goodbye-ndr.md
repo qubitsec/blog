@@ -3,7 +3,7 @@ title: "Q10. NDR Fact Check: 암호화 시대, NDR은 실제 현장에서도 유
 date: 2026-01-13
 draft: false
 description: "NDR(Network Detection & Response) 벤더들이 말하는 핵심 가치가 실제 운영 환경에서도 얼마나 유효한지, 기술적·운영적 관점에서 차분히 점검합니다."
-featured_image: "cdn/qna/q10.png"
+featured_image: "/cdn/qna/q10.png"
 tags: ["NDR", "Fact Check", "암호화트래픽", "네트워크보안", "EDR", "XDR", "PLURA-XDR"]
 ---
 
