@@ -3,7 +3,7 @@ title: "한국형 Cloudflare xWAF 도입 필요성 및 기대효과"
 date: 2025-03-14
 draft: true
 description: "한국형 Cloudflare xWAF 구축의 필요성과 기대효과를 소개합니다."
-featured_image: "cdn/column/korean_xwaf_security.png"
+featured_image: "/cdn/column/korean_xwaf_security.png"
 tags: ["웹방화벽", "Cloudflare", "개인정보 보호", "xWAF", "클라우드 보안", "국내 IDC"]
 ---
 
