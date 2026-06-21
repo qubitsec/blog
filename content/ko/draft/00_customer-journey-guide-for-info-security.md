@@ -2,7 +2,7 @@
 date: 2025-01-04
 draft: true
 description: 
-featured_image: "cdn/column/"
+featured_image: "/cdn/column/"
 tags: ["Bastion Host", "AWS", "VPC", "EC2", "보안", "Private Subnet"]
 title: "정보보안 서비스 고객 여정 가이드"
 ---
