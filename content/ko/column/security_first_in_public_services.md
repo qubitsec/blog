@@ -3,7 +3,7 @@ date: 2026-04-11
 draft: false
 title: "퍼블릭 서비스 선택 시 가장 먼저 확인할 보안 체크리스트"
 description: "2026년 기준으로 협업툴, 화상회의, 클라우드 스토리지, SaaS형 업무 서비스 도입 시 반드시 확인해야 할 보안 기준을 정리합니다."
-featured_image: "cdn/column/untact_ontact-1.png"
+featured_image: "/cdn/column/untact_ontact-1.png"
 tags: ["퍼블릭클라우드", "SaaS", "보안", "ISMS-P", "MFA", "Zero Trust", "데이터주권", "PLURA"]
 ---
 
