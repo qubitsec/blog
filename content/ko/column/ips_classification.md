@@ -3,7 +3,7 @@ title: "IPS의 진화와 보안 환경의 변화"
 date: 2024-12-22
 draft: false
 description: "IPS 기술의 발전과 트래픽 암호화, 클라우드 전환에 따른 보안 전략의 변화를 정리합니다. 왜 NIPS 중심 사고에서 HIPS·호스트 기반 행위 분석 중심으로 무게가 이동하고 있는지 설명합니다."
-featured_image: "cdn/column/ips_classification-1.png"
+featured_image: "/cdn/column/ips_classification-1.png"
 tags: ["IPS", "HIPS", "NIPS", "보안", "Security", "클라우드 보안", "eBPF"]
 ---
 
