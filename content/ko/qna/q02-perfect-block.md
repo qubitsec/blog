@@ -3,7 +3,7 @@ title: "Q02. 정말 100% 해킹 대응이 가능한가요?"
 date: 2026-01-13
 draft: false
 description: "충분한 로그와 실시간 분석·대응 체계가 갖춰진 환경에서는 왜 100% 해킹 대응이 가능하다고 보는지 설명합니다."
-featured_image: "cdn/qna/q2.png"
+featured_image: "/cdn/qna/q2.png"
 tags: ["AI보안", "해킹대응", "공격탐지", "XDR", "보안자동화"]
 ---
 
