@@ -3,7 +3,7 @@ title: "웹 서비스의 취약점은 대응할 수 있을까?"
 date: 2023-05-06T11:42:00
 draft: false
 description: "웹 서비스 취약점은 점검만으로 끝나지 않습니다. OWASP Top 10 2025와 API 보안 흐름을 기준으로, 지금 실제로 필요한 대응 전략을 정리합니다."
-featured_image: "cdn/column/web_vulnerability_response.jpg"
+featured_image: "/cdn/column/web_vulnerability_response.jpg"
 tags: ["웹 취약점", "OWASP Top 10", "API Security", "웹방화벽", "웹 보안", "PLURA-XDR"]
 ---
 
