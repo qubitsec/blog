@@ -3,7 +3,7 @@ title: "보안은 지켜보는 것이 아니라, 대응하는 것이다"
 date: 2025-04-08T00:00:05
 draft: false
 description: "에이전트 기반 보안으로의 패러다임 전환은 더 이상 선택이 아닙니다. 이제 보안의 기준은 얼마나 잘 보는지가 아니라, 얼마나 빠르고 정확하게 대응할 수 있는가입니다."
-featured_image: "cdn/column/agent_based_security_shift_01.png"
+featured_image: "/cdn/column/agent_based_security_shift_01.png"
 tags: ["에이전트기반보안", "실시간대응", "행위기반탐지", "보안패러다임전환", "PLURA-XDR"]
 ---
 
