@@ -3,7 +3,7 @@ title: "SOAR 자동 대응이 실패하는 진짜 이유"
 date: 2025-05-17T00:00:01
 draft: false
 description: "SOAR는 SIEM에서 발생한 이벤트를 받아 자동 대응을 수행하지만, SIEM 자체의 로그 수집·탐지 한계가 크다면 SOAR도 제대로 동작하기 어렵습니다. 왜 이런 일이 발생하는지, 무엇을 먼저 준비해야 하는지 정리합니다."
-featured_image: "cdn/column/why_soar_always_fails_00.png"
+featured_image: "/cdn/column/why_soar_always_fails_00.png"
 tags: ["SOAR", "SIEM", "보안운영", "자동대응", "Security", "PLURA-XDR"]
 ---
 
