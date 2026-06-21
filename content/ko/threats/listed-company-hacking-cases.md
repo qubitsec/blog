@@ -3,7 +3,7 @@ title: "2025년 대한민국 상장사 해킹 피해 사례 보고서"
 date: 2026-06-21
 draft: false
 description: "2025년 1월 1일부터 12월 31일까지 공개 자료를 기준으로 국내 상장사의 주요 해킹 피해 사례를 정리한 보고서입니다."
-featured_image: "cdn/threats/listed-company-hacking-cases.png"
+featured_image: "/cdn/threats/listed-company-hacking-cases.png"
 tags: ["상장사", "해킹사례", "사이버보안", "개인정보유출", "랜섬웨어", "크리덴셜스터핑", "공시", "IR", "이사회", "PLURA-XDR"]
 ---
 
