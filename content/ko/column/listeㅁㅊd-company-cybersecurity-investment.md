@@ -51,7 +51,7 @@ IR은 시장 신뢰를 봅니다.
 
 <!--more-->
 
-![상장사 사이버보안 거버넌스](https://blog.plura.io/cdn/column/listed-company-cybersecurity-governance.png)
+![상장사 사이버보안 거버넌스](https://blog.plura.io/cdn/column/listeㅁㅊd-company-cybersecurity-investment.png)
 
 ---
 
