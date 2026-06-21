@@ -3,7 +3,7 @@ title: "샤오치잉(Xiaoqiying) 해킹 공격 대응하기"
 date: 2024-02-23
 draft: false
 description: "샤오치잉 해킹 그룹의 활동과 대응 방안에 대해 알아보고, 효과적인 보안 솔루션과 예방책을 제시합니다."
-featured_image: "cdn/column/xiaoqiying_hacking_response.jpg"
+featured_image: "/cdn/column/xiaoqiying_hacking_response.jpg"
 tags: ["샤오치잉", "Xiaoqiying", "해킹", "WAF", "SIEM"]
 ---
 
