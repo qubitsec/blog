@@ -3,7 +3,7 @@ title: "Q18. Sysmon과 감사 로그를 켜면 로그 폭증으로 인한 부하
 date: 2026-01-13
 draft: false
 description: "Sysmon과 운영체제 감사 로그 활성화 시 로그 증가에 대한 우려가 왜 과장인지, 실제 운영 환경에서의 부하·용량 영향과 로그 부재의 위험성을 설명합니다."
-featured_image: "cdn/qna/q18.png"
+featured_image: "/cdn/qna/q18.png"
 tags: ["Sysmon", "감사로그", "로그폭증", "성능부하", "보안운영", "PLURA-EDR"]
 ---
 
