@@ -3,7 +3,7 @@ title: "‘완벽한 보안은 없다’에 매몰되지 말자 — 정의하고
 date: 2025-10-05
 draft: false
 description: "‘완벽한 보안은 없다’는 구호를 실행 가능한 프레임으로 바꾸고, 범위·위협 모델·SLO·증거를 기반으로 ‘정의된 완벽’을 운영하는 방법을 정리합니다."
-featured_image: "cdn/column/perfect_security_mindset.png"
+featured_image: "/cdn/column/perfect_security_mindset.png"
 tags: ["보안", "완벽", "Security", "Risk", "Assurance", "SLO", "PLURA-XDR"]
 ---
 
