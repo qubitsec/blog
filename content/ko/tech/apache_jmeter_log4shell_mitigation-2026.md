@@ -3,7 +3,7 @@ date: 2026-01-01
 draft: true
 title: "Apache JMeter Log4j 보안 대응 가이드"
 description: "Apache JMeter에서 Log4j 관련 취약점에 대응하는 현재 기준의 보안 가이드. 과거 Log4Shell 대응 문서를 2026년 기준으로 재정리했습니다."
-featured_image: "cdn/tech/apache_jmeter_log4shell-1.png"
+featured_image: "/cdn/tech/apache_jmeter_log4shell-1.png"
 tags: ["Apache JMeter", "Log4j", "Log4Shell", "보안", "취약점", "CVE"]
 ---
 
