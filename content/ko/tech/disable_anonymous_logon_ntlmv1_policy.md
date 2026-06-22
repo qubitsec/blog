@@ -3,7 +3,7 @@ date: 2023-02-20T00:00:00
 draft: false
 title: "ANONYMOUS LOGON, NTLM V1 사용 정책 중지"
 description: 
-featured_image: "cdn/tech/disable_anonymous_logon_ntlmv1_policy-1.png"
+featured_image: "/cdn/tech/disable_anonymous_logon_ntlmv1_policy-1.png"
 tags: ["ANONYMOUS LOGON", "NTLM V1", "보안 정책", "Microsoft", "KISA", "LAN Manager", "인증 보안"]
 ---
 
