@@ -3,7 +3,7 @@ date: 2023-11-14
 draft: false
 title: "[WEB] 관리자 페이지 노출 대응"
 description: 
-featured_image: "cdn/respond/admin_page_exposure_mitigation-1.png"
+featured_image: "/cdn/respond/admin_page_exposure_mitigation-1.png"
 tags: ["관리자 페이지", "보안", "WAF", "2차 인증", "Brute Force", "PLURA", "웹 보안", "SQL 인젝션"]
 ---
 
