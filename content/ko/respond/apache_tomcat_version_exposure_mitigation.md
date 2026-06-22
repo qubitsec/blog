@@ -3,7 +3,7 @@ date: 2023-10-05
 draft: false
 title: "[Apache Tomcat] 버전 정보 노출 대응"
 description: 
-featured_image: "cdn/respond/http_status_500_Internal_server_error-1.png"
+featured_image: "/cdn/respond/http_status_500_Internal_server_error-1.png"
 tags: ["Apache Tomcat", "보안", "버전 정보", "서버 설정", "취약점 대응"]
 ---
 
