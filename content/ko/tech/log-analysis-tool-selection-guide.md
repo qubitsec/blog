@@ -3,7 +3,7 @@ date: 2016-06-27T00:00:00
 draft: false
 title: "로그 분석 툴, 우리 회사는 무엇을 선택해야 할까?"
 description: "로그 분석 툴을 선택할 때 조직 환경, 운영 역량, 보안 요구사항을 기준으로 무엇을 검토해야 하는지 실무 관점에서 정리합니다."
-featured_image: "cdn/column/log_analysis_tool_selection_guide-1.png"
+featured_image: "/cdn/column/log_analysis_tool_selection_guide-1.png"
 tags: ["로그 분석", "보안", "시스템 관리", "솔루션 선택", "PLURA", "로그 관리", "SIEM", "오픈소스"]
 ---
 
