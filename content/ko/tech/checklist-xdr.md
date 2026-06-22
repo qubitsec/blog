@@ -2,7 +2,7 @@
 title: "XDR 선택 체크리스트"
 date: 2026-06-16
 draft: false
-featured_image: "cdn/tech/checklist-xdr.png"
+featured_image: "/cdn/tech/checklist-xdr.png"
 description: "사이버보안 관점에서 XDR 선택 시 반드시 고려해야 할 핵심 기준. 단순 알림 통합이 아니라, 실제 공격 탐지·상관분석·차단·격리·복구까지 연결되는 구조인지 평가해야 한다."
 tags: ["XDR", "EDR", "NDR", "SIEM", "SOAR", "MDR", "Forensic", "사이버보안", "침해대응", "보안 체크리스트"]
 ---
