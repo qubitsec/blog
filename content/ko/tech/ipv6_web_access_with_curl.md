@@ -3,7 +3,7 @@ date: 2021-08-14T01:00:00
 title: "IPv6 기반에서 curl 이용하여 웹 접속 체크"
 draft: false
 description: 
-featured_image: "cdn/tech/ipv6_web_access_with_curl-1.png"
+featured_image: "/cdn/tech/ipv6_web_access_with_curl-1.png"
 tags: ["IPv6", "curl", "Apache Tomcat", "네트워크"]
 ---
 
