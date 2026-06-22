@@ -4,7 +4,7 @@ title: "아사히 맥주 랜섬웨어 공격 분석 – ‘맥주가 끊기고, 
 date: 2025-12-08
 draft: false
 description: "2025년 9월 29일 아사히 그룹(Asahi Group Holdings)을 강타한 Qilin 랜섬웨어 공격을 타임라인과 기술 TTP, OT 영향 관점에서 분석하고, 일본·한국 제조업이 무엇을 바로 바꿔야 하는지 정리합니다."
-featured_image: "cdn/threats/case-asahi_brewery.png"
+featured_image: "/cdn/threats/case-asahi_brewery.png"
 tags: ["Asahi", "랜섬웨어", "Qilin", "제조업 보안", "OT 보안", "침해사고", "보안운영"]
 ---
 
