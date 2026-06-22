@@ -3,7 +3,7 @@ date: 2025-05-12T00:00:10
 draft: true
 title: "SIEM 로그 분석 도구 도입 자가 진단하기"
 description: "SIEM(Security Information and Event Management) 솔루션 도입이 실제 보안 강화와 이상 징후 탐지에 효과적인지, 혹은 단순 이벤트 모니터링에 그치는지 살펴보고, 보다 현실적인 대안을 제시합니다."
-featured_image: "cdn/tech/siem_evaluation_self_checklist.png"
+featured_image: "/cdn/tech/siem_evaluation_self_checklist.png"
 tags: ["SIEM", "로그 분석", "이상 징후 탐지", "보안 관제", "연계 분석", "보안 최적화"]
 ---
 
