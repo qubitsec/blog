@@ -3,7 +3,7 @@ date: 2020-10-20T00:07:01
 draft: false
 title: "hosts 파일 변조"
 description: 
-featured_image: "cdn/threats/hosts_file_forgery-1.png"
+featured_image: "/cdn/threats/hosts_file_forgery-1.png"
 tags: ["hosts 파일", "해킹", "파밍", "파일 변조", "보안"]
 ---
 
