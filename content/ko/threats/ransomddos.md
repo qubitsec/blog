@@ -3,7 +3,7 @@ date: 2017-08-18T00:03:00
 draft: false
 title: "협박성 디도스 공격, 랜섬디도스(RansomDDoS)"
 description: 
-featured_image: "cdn/threats/ransomddos-1.png"
+featured_image: "/cdn/threats/ransomddos-1.png"
 tags: ["랜섬디도스", "디도스 공격", "보안", "네트워크 보안", "DDoS", "TCP Syn Flood", "HTTP Flood", "ICMP Flood"]
 ---
 
