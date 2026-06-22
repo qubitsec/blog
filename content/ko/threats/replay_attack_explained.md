@@ -3,7 +3,7 @@ date: 2020-11-13T00:07:00
 draft: false
 title: "[재전송 공격] Replay Attack이란"
 description: 
-featured_image: "cdn/threats/replay_attack_explained-1.png"
+featured_image: "/cdn/threats/replay_attack_explained-1.png"
 tags: ["재전송 공격", "Replay attack", "보안", "로그 분석", "해킹 탐지", "모의 해킹", "Post-body"]
 ---
 
