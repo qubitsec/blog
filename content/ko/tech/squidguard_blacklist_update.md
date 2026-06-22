@@ -3,7 +3,7 @@ date: 2021-07-19T00:00:00
 draft: false
 title: "유해차단 목록 다운받기"
 description: 
-featured_image: "cdn/tech/squidguard_blacklist_update-1.png"
+featured_image: "/cdn/tech/squidguard_blacklist_update-1.png"
 tags: 
 ---
 
