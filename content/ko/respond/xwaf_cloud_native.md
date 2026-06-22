@@ -3,7 +3,7 @@ title: "xWAF – 클라우드 네이티브 차세대 웹방화벽"
 date: 2025-09-01T15:30:00
 draft: false
 description: "xWAF는 클라우드 환경에 최적화된 SaaS 웹방화벽 서비스입니다. 운영 복잡성을 줄이면서도 최신 공격에 대응하는 강력한 보호 기능을 제공합니다."
-featured_image: "cdn/respond/xwaf_cloud_native.png"
+featured_image: "/cdn/respond/xwaf_cloud_native.png"
 tags: ["웹방화벽", "차세대 WAF", "클라우드 보안", "API 보안", "크리덴셜 스터핑", "제로데이 대응"]
 ---
 
