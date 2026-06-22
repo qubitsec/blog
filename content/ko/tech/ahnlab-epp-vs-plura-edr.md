@@ -3,7 +3,7 @@ title: "AhnLab EPP와 PLURA-EDR, 무엇이 어떻게 다른가?"
 date: 2026-04-23
 draft: false
 description: "AhnLab EPP와 PLURA-EDR을 비교합니다. AhnLab EPP는 V3를 포함한 통합 엔드포인트 보호 플랫폼이고, PLURA-EDR은 상세 로그와 행위 맥락 중심의 EDR입니다. 특히 PLURA-EDR은 PLURA-XDR로 확장되어 웹 공격까지 탐지·차단하므로, AI 해킹 시대의 고속·다단계 공격 대응 논리까지 함께 설명합니다."
-featured_image: "cdn/tech/ahnlab-epp-vs-plura-edr.png"
+featured_image: "/cdn/tech/ahnlab-epp-vs-plura-edr.png"
 tags: ["AhnLab EPP", "PLURA-EDR", "PLURA-XDR", "EDR", "EPP", "Microsoft Defender", "V3", "ETW", "상관분석", "AI 해킹", "Mythos", "웹 공격", "WAF"]
 ---
 
