@@ -3,7 +3,7 @@ date: 2023-02-19T01:00:00
 draft: false
 title: "샤오치잉(Xiaoqiying) 해킹 공격 대응하기"
 description: 
-featured_image: "cdn/respond/xiaoqiying-hacking-attack-1.png"
+featured_image: "/cdn/respond/xiaoqiying-hacking-attack-1.png"
 tags: ["Xiaoqiying", "PLURA-WAF", "웹 방화벽", "웹 해킹", "공격 대응", "크리덴셜 스터핑"]
 ---
 
