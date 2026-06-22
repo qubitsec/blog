@@ -3,7 +3,7 @@ title: "'좀비처럼 살아남은 위협' - 스마트에디터 구버전의 확
 date: 2025-12-17
 draft: false
 description: "국내 웹사이트 게시판 10곳 중 7곳에서 마주치는 가장 익숙한 UI, 바로 '네이버 스마트에디터(Smart Editor)'... 현재 해커들이 선호하는 타깃이 되고 있습니다."
-featured_image: "cdn/respond/smart_editor.png"
+featured_image: "/cdn/respond/smart_editor.png"
 tags: ["스마트에디터", "SmartEditor", "공격 탐지", "hacking", "webshell", "웹쉘"]
 ---
 
