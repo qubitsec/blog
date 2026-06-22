@@ -3,7 +3,7 @@ date: 2023-02-06T00:00:00
 draft: false
 title: "EMOTET 탐지 필터"
 description: 
-featured_image: "cdn/respond/emotet-detection-filter-1.png"
+featured_image: "/cdn/respond/emotet-detection-filter-1.png"
 tags: ["Emotet", "악성코드", "트로이 목마", "PLURA", "필터"] 
 ---
 
