@@ -2,7 +2,7 @@
 date: 2025-03-09
 draft: true
 description: "퍼블릭 클라우드 환경에서의 NAT Gateway 제거를 통한 보안 강화 방법과 안전한 네트워크 아키텍처 설계"
-featured_image: "cdn/tech/cloud-1.png"
+featured_image: "/cdn/tech/cloud-1.png"
 tags: ["클라우드 인프라 구성", "네트워크", "nat gateway"]
 title: "퍼블릭 클라우드 환경에서의 안전한 네트워크 아키텍처 설계"
 ---
