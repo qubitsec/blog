@@ -3,7 +3,7 @@ title: "GS리테일·GS홈쇼핑 크리덴셜 스터핑 공격 사례"
 date: 2025-05-01
 draft: false
 description: "2025년 1~2월 중 발생한 GS리테일과 GS홈쇼핑의 대규모 크리덴셜 스터핑 공격 개요와 공격 방식을 살펴봅니다."
-featured_image: "cdn/threats/case-gs_credential_stuffing.png"
+featured_image: "/cdn/threats/case-gs_credential_stuffing.png"
 tags: ["GS리테일", "GS홈쇼핑", "Credential Stuffing", "보안 사고", "개인정보 유출", "웹 보안"]
 ---
 
