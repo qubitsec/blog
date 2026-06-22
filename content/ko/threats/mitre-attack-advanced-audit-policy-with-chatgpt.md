@@ -3,7 +3,7 @@ date: 2023-02-19T05:00:00
 draft: false
 title: "마이터어택 관점에서 고급감사정책 활용 with ChatGPT"
 description: ""
-featured_image: "cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png"
+featured_image: "/cdn/threats/mitre_attack_advanced_audit_policy_with_chatgpt-1.png"
 tags: ["마이터 어택", "고급감사정책", "이벤트 채널", "Windows PowerShell 채널", "MITRE ATT&CK", "Windows Event Log"]
 ---
 
