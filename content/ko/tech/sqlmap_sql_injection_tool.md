@@ -3,7 +3,7 @@ date: 2022-06-21T00:00:00
 draft: false
 title: "sqlmap"
 description: "SQL Injection 탐지 및 악용을 위한 오픈 소스 침투 테스트 도구"
-featured_image: "cdn/tech/sqlmap-1.png"
+featured_image: "/cdn/tech/sqlmap-1.png"
 tags: ["sqlmap", "SQL Injection", "보안", "침투 테스트", "데이터베이스"]
 ---
 
