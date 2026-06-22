@@ -3,7 +3,7 @@ title: "SK텔레콤 해킹 사건과 i-Soon의 연관성 분석"
 date: 2025-06-09
 draft: true
 description: "2025년 4월 발생한 SK텔레콤 해킹 사건은 BPFDoor 악성코드를 이용한 APT 공격으로, 중국 해커 용병 조직 i-Soon의 침투 방식과 전략적 유사성이 다수 발견됩니다."
-featured_image: "cdn/threats/case-skt_bpfdoor.png"
+featured_image: "/cdn/threats/case-skt_bpfdoor.png"
 tags: ["i-Soon", "SK텔레콤", "BPFDoor", "APT", "중국 해킹 그룹"]
 ---
 
