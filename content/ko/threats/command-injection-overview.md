@@ -3,7 +3,7 @@ date: 2020-12-22T00:01:00
 draft: false
 title: "Command Injection"
 description: 
-featured_image: "cdn/threats/command_injection_overview-1.png"
+featured_image: "/cdn/threats/command_injection_overview-1.png"
 tags: ["Command Injection", "OWASP TOP 10", "보안 취약점", "웹 애플리케이션 보안", "해킹 방어"]
 ---
 
