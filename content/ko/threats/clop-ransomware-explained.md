@@ -3,7 +3,7 @@ date: 2020-12-30T00:01:00
 draft: false
 title: "클롭(CLOP) 랜섬웨어란?"
 description: 
-featured_image: "cdn/threats/clop-ransomware-explained-1.png"
+featured_image: "/cdn/threats/clop-ransomware-explained-1.png"
 tags: ["클롭 랜섬웨어", "AD 서버 보안", "랜섬웨어 방지", "사이버 보안", "해킹 대응"]
 ---
 
