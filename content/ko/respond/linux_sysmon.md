@@ -3,7 +3,7 @@ date: 2025-04-07
 draft: false
 title: "리눅스에서도 Sysmon을 사용해야 하는 이유!"
 description: Sysmon은 eBPF 기반의 고급 보안 로깅 도구로, Linux 환경에서도 실시간 위협 탐지와 MITRE ATT&CK 연계를 통해 강력한 보안 가시성을 제공합니다.
-featured_image: "cdn/respond/sysmon_linux.png"
+featured_image: "/cdn/respond/sysmon_linux.png"
 tags: ["sysmon", "Linux 보안", "위협탐지", "eBPF", "MITRE ATT&CK", "PLURA"]
 ---
 
