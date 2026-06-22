@@ -3,7 +3,7 @@ title: "SKT 해킹 가설: 유심 데이터 탈취와 BPFDoor 설치, 어떻게 
 date: 2025-05-03
 draft: false
 description: "2025년 4월 발생한 SKT 유심 정보 대규모 유출 사건을 중심으로, 웹셸·RCE 공격 가설과 BPFDoor 백도어의 침투 시나리오, 그리고 실제 적용 가능한 대응 방안을 쉽게 정리했습니다."
-featured_image: "cdn/threats/case-skt-hypothesis.png"
+featured_image: "/cdn/threats/case-skt-hypothesis.png"
 tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "LGU+ 해킹", "LGU+ 유출", "RCE", "Webshell", "웹셸", "BPFDoor", "APT 공격", "PLURA-XDR", "개인정보 유출", "망분리 해킹", "시연", "데모", "demo"]
 ---
 
