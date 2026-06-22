@@ -3,7 +3,7 @@ date: 2023-01-11T02:00:00
 draft: false
 title: "마이터 어택 관점에서 Emotet (이모텟) 탐지하기"
 description: ""
-featured_image: "cdn/respond/detecting-emotet-with-mitre-attck-1.png"
+featured_image: "/cdn/respond/detecting-emotet-with-mitre-attck-1.png"
 tags: ["emotet", "마이터어택"]
 ---
 
