@@ -3,7 +3,7 @@ date: 2020-05-12T00:03:00
 draft: false
 title: "PowerShell을 이용한 공격"
 description: 
-featured_image: "cdn/threats/powershell_attack_techniques-1.png"
+featured_image: "/cdn/threats/powershell_attack_techniques-1.png"
 tags: ["PowerShell", "악성코드", "웹 해킹", "보안 취약점", "PLURA"]
 ---
 
