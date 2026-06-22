@@ -3,7 +3,7 @@ title: "대학 통합정보시스템 해킹과 PLURA-XDR의 대응 전략"
 date: 2025-05-01
 draft: false
 description: "2024년 전북대학교와 이화여자대학교에서 발생한 대규모 개인정보 유출 사건은 모두 통합정보시스템의 웹 취약점을 노린 해킹에서 비롯되었다. 본 문서는 사건 개요와 피해 규모를 정리하고, 이러한 유형의 공격을 PLURA-XDR이 어떻게 사전 탐지·차단할 수 있는지를 구체적으로 설명한다."
-featured_image: "cdn/threats/case-jbnu_ewha_breach.png"
+featured_image: "/cdn/threats/case-jbnu_ewha_breach.png"
 tags: ["통합정보시스템", "개인정보유출", "SQL 인젝션", "파라미터 변조", "PLURA-XDR", "웹보안", "MITRE ATT&CK", "SIEM", "WAF"]
 ---
 
