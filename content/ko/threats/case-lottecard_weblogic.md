@@ -4,7 +4,7 @@ title: "롯데카드 해킹 사고 분석 - 왜 웹방화벽은 무용지물이 
 date: 2025-09-22
 draft: false
 description: "2025년 8월 롯데카드 온라인 결제 서버 해킹을 통해 드러난 WAF 한계와 운영 실패를 분석합니다. 웹셸 설치·대용량 유출 타임라인, 왜 차단되지 않았는지, 그리고 어떻게 운영해야 하는지를 정리합니다."
-featured_image: "cdn/threats/case-lottecard_weblogic.png"
+featured_image: "/cdn/threats/case-lottecard_weblogic.png"
 tags: ["롯데카드", "해킹", "웹방화벽", "WAF", "데이터 유출", "웹셸", "Oracle WebLogic", "CVE-2017-10271", "DLP", "침해사고"]
 ---
 
