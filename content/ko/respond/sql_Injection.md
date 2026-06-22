@@ -3,7 +3,7 @@ date: 2022-03-21T04:00:00
 draft: false
 title: "SQL 인젝션"
 description: 
-featured_image: "cdn/respond/sql_injection-1.png"
+featured_image: "/cdn/respond/sql_injection-1.png"
 tags: ["SQL Injection", "보안 취약점", "데이터 유출", "웹 해킹", "PLURA"]
 ---
 
