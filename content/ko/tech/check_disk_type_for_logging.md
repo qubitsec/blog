@@ -3,7 +3,7 @@ date: 2021-07-16T00:00:00
 draft: false
 title: "로깅(Logging) 을 위해 SSD 사용하기"
 description: 
-featured_image: "cdn/tech/check_disk_type_for_logging-1.png"
+featured_image: "/cdn/tech/check_disk_type_for_logging-1.png"
 tags: 
 ---
 
