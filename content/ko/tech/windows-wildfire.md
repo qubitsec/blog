@@ -2,7 +2,7 @@
 title: "보안의 본질: 와일드파이어와 Windows, 그리고 SecureOS"
 date: 2026-03-22
 draft: false
-featured_image: "cdn/tech/windows-wildfire.png"
+featured_image: "/cdn/tech/windows-wildfire.png"
 description: "왕좌의 게임의 와일드파이어처럼, Windows 시스템도 강력한 도구이자 위험한 무기가 될 수 있습니다. 이를 안전하게 다루는 방법을 PLURA-SecureOS 관점에서 정리합니다."
 tags: ["SecureOS", "Windows Security", "PLURA-XDR", "LOLBAS", "Attack Surface", "보안 운영"]
 ---
