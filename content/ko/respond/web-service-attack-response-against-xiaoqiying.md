@@ -3,7 +3,7 @@ date: 2023-02-20T02:00:00
 draft: false
 title: "웹 서비스 공격에 대응하기 against 샤오치잉(Xiaoqiying)"
 description: ""
-featured_image: "cdn/respond/web_service_attack_response_against_xiaoqiying-1.png"
+featured_image: "/cdn/respond/web_service_attack_response_against_xiaoqiying-1.png"
 tags: ["PLURA-SIEM", "WAF", "Post-body", "웹 보안", "크리덴셜 스터핑", "공격 대응"]
 ---
 
