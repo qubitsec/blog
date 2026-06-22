@@ -3,7 +3,7 @@ date: 2020-10-22T00:03:00
 draft: false
 title: "FTP는 보안에 취약하다?"
 description: 
-featured_image: "cdn/threats/ftp_security_vulnerabilities_and_defense_measures-1.png"
+featured_image: "/cdn/threats/ftp_security_vulnerabilities_and_defense_measures-1.png"
 tags: ["FTP", "보안 취약점", "파일 전송", "해킹 방어", "무차별 대입 공격"]
 ---
 
