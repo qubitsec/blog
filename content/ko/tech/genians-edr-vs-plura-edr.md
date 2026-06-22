@@ -3,7 +3,7 @@ title: "지니언스 EDR과 PLURA-EDR, 무엇이 어떻게 다른가?"
 date: 2026-06-01
 draft: false
 description: "지니언스 EDR(Genian Insights E)과 PLURA-EDR을 비교합니다. 지니언스 EDR은 EDR·AV·안티랜섬·매체제어를 단일 에이전트로 통합한 단말 보안 플랫폼이고, PLURA-EDR은 Microsoft Defender와 Windows VSS 같은 운영체제 기본 기능을 전제로 상세 로그·행위 분석·상관분석을 강화하며 PLURA-XDR로 확장되어 웹 공격까지 함께 탐지·차단하는 구조입니다. 특히 AV 기능 제공과 자체 백신 엔진 보유는 구분해서 살펴봅니다."
-featured_image: "cdn/tech/genians-edr-vs-plura-edr.png"
+featured_image: "/cdn/tech/genians-edr-vs-plura-edr.png"
 tags: ["지니언스", "Genian Insights E", "Genian EDR", "PLURA-EDR", "PLURA-XDR", "EDR", "XDR", "Microsoft Defender", "VSS", "랜섬웨어", "웹 공격", "상관분석", "MITRE ATT&CK", "AI 보안"]
 ---
 
