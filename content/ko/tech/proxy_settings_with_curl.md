@@ -3,7 +3,7 @@ date: 2021-07-14T10:58:08-04:00
 draft: false
 title: "curl 프록시 옵션 설정"
 description: "curl 명령어를 사용하여 프록시 경유 방법을 설명합니다."
-featured_image: "cdn/tech/proxy_settings_with_curl-1.png"
+featured_image: "/cdn/tech/proxy_settings_with_curl-1.png"
 tags: ["curl", "proxy", "프록시 설정"]
 ---
 
