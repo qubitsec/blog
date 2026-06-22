@@ -3,7 +3,7 @@ date: 2020-12-16T00:03:00
 draft: false
 title: "가장 치명적인 해킹 방법, USB"
 description: 
-featured_image: "cdn/threats/usb_hacking_methods-1.png"
+featured_image: "/cdn/threats/usb_hacking_methods-1.png"
 tags: ["USB 해킹", "스턱스넷", "내부 보안", "USB 보안", "악성코드", "보안 수칙", "외부저장장치"]
 ---
 
