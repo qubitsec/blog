@@ -3,7 +3,7 @@ date: 2021-12-14T00:00:00
 draft: false
 title: "Apache JMeter Log4Shell 대응 방법"
 description: "Apache JMeter와 관련된 Log4j 취약점(Log4Shell) 대응 방법"
-featured_image: "cdn/tech/apache_jmeter_log4shell-1.png"
+featured_image: "/cdn/tech/apache_jmeter_log4shell-1.png"
 tags: ["Apache JMeter", "Log4j", "Log4Shell", "보안", "취약점"]
 ---
 
