@@ -4,7 +4,7 @@ date: 2026-06-04
 lastmod: 2026-06-07
 draft: false
 description: "2026년 6월 공개된 티빙 개인정보 유출 사고를 침해 사고 관점에서 정리합니다. 1보에서는 개인정보 DB 비인가 접근과 개인정보 파일 외부 전송이 핵심이었으나, 후속 보도에서는 GitHub에 노출된 자격증명과 AWS 액세스 키 관리 부실, 내부 시스템 직접 접근, 데이터 조회·수정 쿼리 실행 정황까지 제기됐습니다. 본 글은 SQL 인젝션 가능성, 클라우드/IAM 권한 침해 가능성, 단방향 해시 비밀번호의 크랙 위험, 암호화 데이터의 키 노출 위험, 피해 범위 규명과 컴플라이언스 대응 포인트를 정리합니다."
-featured_image: "cdn/threats/case-cj-tving.png"
+featured_image: "/cdn/threats/case-cj-tving.png"
 tags: ["TVING", "티빙", "CJ ENM", "개인정보 유출", "DB 침해", "GitHub", "AWS", "Access Key", "Cloud IAM", "SQL Injection", "SQL 인젝션", "Password Hash", "CI", "DI", "KISA", "ISMS", "PLURA-XDR", "PLURA-WAF", "PLURA-EDR"]
 ---
 
