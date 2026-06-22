@@ -3,7 +3,7 @@ date: 2026-05-04
 draft: false
 title: "루트킷 탐지를 위한 방안"
 description: "KISA가 공개한 리눅스 커널 루트킷 점검 스크립트의 의미와 한계를 살펴보고, 파일 기반 점검만으로는 확인하기 어려운 커널 메모리 영역의 공격과 보완 탐지 방안을 정리합니다."
-featured_image: "cdn/tech/rootkit-detection-strategy.png"
+featured_image: "/cdn/tech/rootkit-detection-strategy.png"
 tags: ["Linux 보안", "Rootkit", "Kernel Module", "modprobe", "KISA", "커널 메모리", "EDR", "XDR", "포렌식"]
 ---
 
