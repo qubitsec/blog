@@ -3,7 +3,7 @@ date: 2022-03-14T00:00:00
 draft: false
 title: "지능형지속위협(APT)공격"
 description: 
-featured_image: "cdn/respond/advanced_persistent_threat-1.png"
+featured_image: "/cdn/respond/advanced_persistent_threat-1.png"
 태그: ["APT 공격", "MITRE ATT&CK", "사이버 보안", "멀웨어", "PLURA"]
 ---
 
