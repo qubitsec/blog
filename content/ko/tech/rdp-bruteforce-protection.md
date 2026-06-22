@@ -3,7 +3,7 @@ date: 2025-07-31
 draft: false
 title: "RDP 기본 설정 변경만으로 무차별 대입 공격 차단하기"
 description: "원격 데스크톱(RDP)을 방화벽에서 오픈할 경우, 외부 공격자가 무차별 대입(Brute-force) 공격을 시도할 수 있습니다. 기본 포트와 계정명을 변경함으로써 효과적으로 이를 방지할 수 있습니다."
-featured_image: "cdn/tech/rdp-bruteforce-protection.png"
+featured_image: "/cdn/tech/rdp-bruteforce-protection.png"
 tags: ["Windows 보안", "RDP", "Brute Force", "계정 보안", "포트 변경", "원격 데스크톱 프로토콜"]
 ---
 
