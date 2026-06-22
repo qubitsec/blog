@@ -2,7 +2,7 @@
 date: 2025-08-09
 draft: true
 description: "PowerShell Constrained Language Mode(CL​M)의 필요성과 운영 방법"
-featured_image: "cdn/tech/powershell_clm.png"
+featured_image: "/cdn/tech/powershell_clm.png"
 tags: ["PowerShell", "Windows Security", "CLM", "Endpoint Security", "Privilege Management"]
 title: "왜 PowerShell Constrained Language Mode(CL​M)를 사용해야 하는가? 🔒"
 ---
