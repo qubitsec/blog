@@ -3,7 +3,7 @@ date: 2025-02-20
 draft: false
 title: "웹의 전체 로그 분석은 왜 중요한가?"
 description: "제로데이 공격, 크리덴셜 스터핑, 웹쉘 탐지 등 왜 전체 웹 로그, 특히 Request/Response Body를 포함한 분석이 중요한지 정리합니다."
-featured_image: "cdn/column/very_important_analyze_web_logs.png"
+featured_image: "/cdn/column/very_important_analyze_web_logs.png"
 tags: ["GET 방식", "POST 방식", "웹로그 분석", "보안", "PLURA-XDR"]
 ---
 
