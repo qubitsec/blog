@@ -2,7 +2,7 @@
 date: 2025-02-10T16:32:00
 draft: false
 description: "Masquerading(T1036) 기법을 실제 데모와 함께 살펴보고, 복사된 시스템 파일과 정상 파일을 보안 솔루션이 어떻게 구별하는지 분석합니다."
-featured_image: "cdn/column/masquerading.png"
+featured_image: "/cdn/column/masquerading.png"
 tags: ["Masquerading", "CyberThreats", "EndpointSecurity", "ThreatHunting", "EDR_Security", "LOLBAS", "MITRE ATT&CK"]
 title: "복사된 시스템 파일, 보안 솔루션은 동일하게 볼까?"
 ---
