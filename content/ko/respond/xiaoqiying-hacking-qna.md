@@ -3,7 +3,7 @@ date: 2023-02-19T05:00:00
 draft: false
 title: "[QnA] 샤오치잉(Xiaoqiying) 해킹 공격 대응하기 with ChatGPT"
 description: ""
-featured_image: "cdn/respond/xiaoqiying_hacking_qna-1.png"
+featured_image: "/cdn/respond/xiaoqiying_hacking_qna-1.png"
 tags: ["Xiaoqiying", "PLURA-WAF", "PLURA-SIEM"]
 ---
 
