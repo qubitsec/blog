@@ -3,7 +3,7 @@ title: "진학사 캐치(CATCH) 개인정보 유출 사고 사례"
 date: 2026-03-25
 draft: false
 description: "2026년 3월 발생한 진학사 캐치 서비스 개인정보 유출 사고를 통해 크리덴셜 스터핑 공격의 위험성과 대응 방안을 분석합니다."
-featured_image: "cdn/threats/case_jinhaksa_catch.png"
+featured_image: "/cdn/threats/case_jinhaksa_catch.png"
 tags: ["진학사", "캐치", "Credential Stuffing", "보안 사고", "개인정보 유출", "웹 보안"]
 ---
 
