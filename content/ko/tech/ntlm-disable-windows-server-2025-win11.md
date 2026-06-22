@@ -4,7 +4,7 @@ title: "왜 그나마 최신 운영체제로 빠르게 바꿔야 할까요?
 date: 2026-01-01
 draft: false
 description: "요즘 기업·기관 해킹이 유난히 쉬워진 이유는 ‘최초 침입’과 더불어 ‘내부 확산’에 있습니다. NTLM 환경에서 Pass-the-Hash는 내부 측면 이동을 매우 쉽게 만들며, 이를 줄이기 위해서는 최신 OS 전환과 NTLM Disable 전략, 그리고 탐지·대응 체계가 필수입니다."
-featured_image: "cdn/tech/ntlm-disable.png"
+featured_image: "/cdn/tech/ntlm-disable.png"
 tags: ["Windows", "Windows Server 2025", "Windows 11", "Active Directory", "NTLM", "Pass-the-Hash", "내부해킹", "측면이동", "보안기본값", "MITRE ATT&CK", "PLURA"]
 ---
 
