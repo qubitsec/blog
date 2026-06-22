@@ -3,7 +3,7 @@ date: 2017-08-18T00:01:00
 draft: false
 title: "누군가 당신의 인터넷 사용을 훔쳐보고 있다? ARP Spoofing"
 description: 
-featured_image: "cdn/threats/arp_spoofing_overview-1.png"
+featured_image: "/cdn/threats/arp_spoofing_overview-1.png"
 tags: ["ARP Spoofing", "네트워크 보안", "해킹 기법", "사이버 보안", "정보 보호"]
 ---
 
