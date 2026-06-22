@@ -3,7 +3,7 @@ date: 2021-04-28T00:03:00
 draft: false
 title: "사용자 정의 규칙 필터 (웹 & 웹방화벽)"
 description: 
-featured_image: "cdn/threats/custom_rule_filter_web_waf-1.png"
+featured_image: "/cdn/threats/custom_rule_filter_web_waf-1.png"
 tags: ["사용자 정의 규칙", "웹 해킹", "웹 방화벽", "제로데이 취약점", "WPScan"]
 ---
 
