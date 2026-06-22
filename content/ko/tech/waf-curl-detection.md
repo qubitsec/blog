@@ -3,7 +3,7 @@ date: 2025-08-04
 draft: false  
 title: "curl 요청은 악성일까? 과탐 없는 WAF 운영을 위한 체크포인트"  
 description: "curl User-Agent 탐지를 기준으로 웹 공격을 판단할 수 있을까? 과탐 우려와 실제 대응 방안을 PLURA WAF 기준으로 정리합니다."  
-featured_image: "cdn/tech/waf-curl-detection_01.png"  
+featured_image: "/cdn/tech/waf-curl-detection_01.png"  
 tags: ["WAF", "curl", "User-Agent", "false positive", "signature"]  
 ---
 
