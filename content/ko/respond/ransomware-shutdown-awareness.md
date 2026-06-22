@@ -3,7 +3,7 @@ title: "고급 랜섬웨어 대응 전략: 노트북 전원 차단이 왜 중요
 date: 2025-06-20
 draft: false
 description: "절전·외장 장치까지 노리는 진화형 랜섬웨어를 분석하고, 전원 차단·포맷·외장 장치 없이 데이터 복구 등 실전 대응법을 제시합니다." # 118 자
-featured_image: "cdn/respond/ransomware-shutdown-awareness.png"
+featured_image: "/cdn/respond/ransomware-shutdown-awareness.png"
 tags: ["랜섬웨어(Ransomware)", "노트북", "사이버공격", "정보보안", "PLURA-XDR", "EDR", "파일리스", "보안 상식", "복구"]
 ---
 
