@@ -3,7 +3,7 @@ date: 2023-02-14T01:10:00
 draft: false
 title: "디렉토리 리스팅 공격 대응"
 description: ""
-featured_image: "cdn/respond/directory_listing_attack-1.png"
+featured_image: "/cdn/respond/directory_listing_attack-1.png"
 tags: ["디렉토리 리스팅", "사이버 보안", "웹 서버", "WAF", "접근 제어"]
 ---
 
