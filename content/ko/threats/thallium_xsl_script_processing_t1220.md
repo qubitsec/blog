@@ -3,7 +3,7 @@ date: 2021-01-25T00:02:00
 draft: false
 title: "탈륨 (Thallium) 조직, XSL Script Processing 공격 수행 [T1220]"
 description: 
-featured_image: "cdn/threats/thallium_xsl_script_processing_t1220-1.png"
+featured_image: "/cdn/threats/thallium_xsl_script_processing_t1220-1.png"
 tags: ["탈륨", "Thallium", "XSL Script Processing", "T1220", "보안", "공격 기법", "WMIC", "마이터 ATT&CK"]
 ---
 
