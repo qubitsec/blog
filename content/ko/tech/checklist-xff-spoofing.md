@@ -2,7 +2,7 @@
 title: "공격자는 왜 X-Forwarded-For를 조작하는가 — 웹방화벽이 놓치기 쉬운 실제 IP 우회 문제"
 date: 2026-04-04
 draft: false
-featured_image: "cdn/tech/checklist-xff-spoofing.png"
+featured_image: "/cdn/tech/checklist-xff-spoofing.png"
 description: "공격자가 X-Forwarded-For(XFF)를 조작해 자신의 실제 IP를 숨기는 이유와 위험성, PLURA의 HAProxy 기반 대응 방식, 그리고 다른 SaaS WAF 제품에서 반드시 확인해야 할 체크리스트를 정리한다."
 tags: ["XFF", "X-Forwarded-For", "WAF", "HAProxy", "SaaS WAF", "IP 우회", "웹보안", "PLURA", "체크리스트", "Checklist"]
 ---
