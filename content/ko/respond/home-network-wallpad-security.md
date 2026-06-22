@@ -3,7 +3,7 @@ date: 2022-03-19T02:00:00
 draft: false
 title: "홈네트워크 (월패드) 보안"
 description: 
-featured_image: "cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
+featured_image: "/cdn/column/importance_of_cloud_security_platform_in_hacking_incidents-1.png"
 tags: ["홈네트워크", "월패드", "사이버 보안", "WAF", "SIEM"]
 ---
 
