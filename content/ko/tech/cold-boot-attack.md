@@ -3,7 +3,7 @@ title: "Cold‑Boot 공격 다시보기 – RAM 잔류 데이터로 암호화 
 date: 2025-06-20
 draft: false
 description: "2008년 ‘Lest We Remember’ 논문으로 알려진 Cold‑Boot 공격은 2018년 F‑Secure 연구에서 현대 노트북에서도 재현되었습니다. 본 글은 공격 원리·랜섬웨어 시나리오에서의 현실성·TPM·MOR bit 등 실무 대응 방안을 정리합니다."
-featured_image: "cdn/tech/cold-boot-attack.png"
+featured_image: "/cdn/tech/cold-boot-attack.png"
 tags: ["Cold Boot Attack", "RAM 잔류 데이터", "암호화 키", "BitLocker", "F‑Secure", "물리적 공격", "정보보안"]
 ---
 
