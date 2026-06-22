@@ -3,7 +3,7 @@ title: "SGI서울보증보험 해킹 사고 분석 – 침투부터 랜섬웨어
 date: 2025-07-22
 draft: false
 description: "2025년 6~7월 SGI서울보증보험이 당한 해킹 공격과 고객정보 유출 사고의 전체 흐름을 분석합니다. 침해 경로부터 다크웹 유출까지 공격 단계별로 정리합니다."
-featured_image: "cdn/threats/case-sgic_credential_stuffing.png"
+featured_image: "/cdn/threats/case-sgic_credential_stuffing.png"
 tags: ["SGI서울보증보험", "해킹", "개인정보 유출", "랜섬웨어", "APT", "사이버 보안", "침해사고"]
 ---
 
