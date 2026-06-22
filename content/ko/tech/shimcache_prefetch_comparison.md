@@ -3,7 +3,7 @@ date: 2026-01-24T09:00:00
 draft: false
 title: "Sysmon → Prefetch → ShimCache → Amcache: 실행 체인 복원 실무 가이드 (LOLBAS 로그 연계 포함)"
 description: "Sysmon Event ID 1을 출발점으로 Prefetch·ShimCache·Amcache를 교차해 ‘실행 여부’에서 ‘실행 체인(Execution Chain)’까지 복원하는 실무 흐름을 정리합니다. (LOLBAS 로그 연계 포함)"
-featured_image: "cdn/tech/shimcache_prefetch_comparison.png"
+featured_image: "/cdn/tech/shimcache_prefetch_comparison.png"
 tags: ["Digital Forensics", "Sysmon", "Prefetch", "ShimCache", "Amcache", "Windows Event Log", "LOLBAS", "침해 사고 분석", "Execution Chain", "지속성(Persistence)"]
 ---
 
