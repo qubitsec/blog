@@ -3,7 +3,7 @@ date: 2019-06-24T00:01:00
 draft: false
 title: "Windows Remote Logging"
 description: 
-featured_image: "cdn/tech/windows_remote_logging-1.png"
+featured_image: "/cdn/tech/windows_remote_logging-1.png"
 tags: ["Windows", "Remote Logging", "Windows Event Collector", "Active Directory", "로그 관리", "보안"]
 ---
 
