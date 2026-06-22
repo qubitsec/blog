@@ -3,7 +3,7 @@ date: 2019-02-14T00:00:00
 draft: false
 title: "오픈소스 웹 방화벽 WebKnight"
 description: 
-featured_image: "cdn/tech/webknight-1.png"
+featured_image: "/cdn/tech/webknight-1.png"
 tags: 
 ---
 
