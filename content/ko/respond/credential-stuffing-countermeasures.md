@@ -3,7 +3,7 @@ date: 2023-02-23T00:00:00
 draft: false
 title: "크리덴셜 스터핑 공격 대응하기"
 description: "크리덴셜 스터핑은 유출된 계정 정보를 여러 사이트에 반복 대입해 계정을 탈취하는 대표적인 계정 공격이다. 왜 기존 장비만으로 놓치기 쉬운지와 대응 포인트를 짧게 정리한다."
-featured_image: "cdn/respond/credential_stuffing_with_chatgpt-1.png"
+featured_image: "/cdn/respond/credential_stuffing_with_chatgpt-1.png"
 tags: ["크리덴셜 스터핑", "사이버 보안", "PLURA", "계정 공격", "MITRE ATT&CK", "로그인 보안"]
 ---
 
