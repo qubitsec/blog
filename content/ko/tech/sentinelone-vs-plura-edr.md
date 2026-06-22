@@ -3,7 +3,7 @@ title: "SentinelOne과 PLURA-EDR, 무엇이 어떻게 다른가?"
 date: 2026-04-23
 draft: false
 description: "SentinelOne과 PLURA-EDR을 비교합니다. SentinelOne은 행위 기반 보호와 자동 대응 중심의 EDR이고, PLURA-EDR은 상세 로그와 행위 맥락 중심의 EDR입니다. 특히 PLURA-EDR은 PLURA-XDR로 확장되어 웹 공격까지 탐지·차단하므로, AI 해킹 시대의 고속·다단계 공격 대응 논리까지 함께 설명합니다."
-featured_image: "cdn/tech/sentinelone-vs-plura-edr.png"
+featured_image: "/cdn/tech/sentinelone-vs-plura-edr.png"
 tags: ["SentinelOne", "PLURA-EDR", "PLURA-XDR", "EDR", "Purple AI", "Storyline", "Deep Visibility", "Microsoft Defender", "웹 공격", "MITRE ATT&CK", "AI 해킹", "Mythos"]
 ---
 
