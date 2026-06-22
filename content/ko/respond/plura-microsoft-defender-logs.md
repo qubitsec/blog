@@ -3,7 +3,7 @@ date: 2024-03-04
 draft: false
 title: "PLURA에서 Microsoft Defender Antivirus 로그 확인하기"
 description:
-featured_image: "cdn/respond/plura_microsoft_defender_logs-1.png"
+featured_image: "/cdn/respond/plura_microsoft_defender_logs-1.png"
 tags: ["Microsoft Defender", "보안 로그", "PLURA", "안티바이러스"]
 ---
 
