@@ -3,7 +3,7 @@ date: 2021-07-14T11:58:08-04:00
 draft: false
 title: "MAC 주소 확인하기"
 description: 
-featured_image: "cdn/tech/check_mac_address-1.png"
+featured_image: "/cdn/tech/check_mac_address-1.png"
 tags: ["MAC 주소", "네트워크", "PC 정보"]
 ---
 
