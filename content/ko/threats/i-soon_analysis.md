@@ -3,7 +3,7 @@ title: "중국 해킹 그룹 i-Soon: 최근 5년간 조직 및 활동 분석"
 date: 2025-06-09
 draft: true
 description: "중국의 민간 위장 해커 용병 조직 i-Soon은 최근 5년간 다수의 국가 기관과 기업을 표적으로 APT 공격을 수행해왔으며, 중국 정부와의 연계 정황도 다수 드러났습니다."
-featured_image: "cdn/threats/i-soon_analysis.png"
+featured_image: "/cdn/threats/i-soon_analysis.png"
 tags: ["i-Soon", "APT", "아이순", "중국 해커", "사이버 첩보", "BPFDoor"]
 ---
 
