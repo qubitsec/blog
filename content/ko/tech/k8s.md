@@ -3,7 +3,7 @@ date: 2023-03-15T00:00:00
 draft: false
 title: "Kubernetes(k8s) with PLURA"
 description: 
-featured_image: "cdn/tech/k8s-1.png"
+featured_image: "/cdn/tech/k8s-1.png"
 tags: ["Kubernetes", "k8s", "PLURA", "로그 수집", "웹 로그", "syslog", "컨테이너 로그", "보안"]
 ---
 
