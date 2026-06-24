@@ -48,3 +48,124 @@ pre.mermaid svg {
   color: #111827 !important;
 }
 /* END Mermaid diagram styles */
+
+/* BEGIN Content image lightbox */
+.nested-copy-line-height img:not([data-no-lightbox]),
+.nested-copy-line-height pre.mermaid svg {
+  cursor: zoom-in;
+}
+
+.nested-copy-line-height img:not([data-no-lightbox]):focus-visible,
+.nested-copy-line-height pre.mermaid svg:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 4px;
+}
+
+html.content-lightbox-open,
+html.content-lightbox-open body {
+  overflow: hidden;
+}
+
+.content-lightbox[hidden] {
+  display: none !important;
+}
+
+.content-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(17, 24, 39, 0.92);
+  box-sizing: border-box;
+}
+
+.content-lightbox__dialog {
+  position: relative;
+  width: min(96vw, 1800px);
+  height: min(94vh, 1200px);
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+.content-lightbox__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 3.5rem 1.25rem 1.25rem;
+  overflow: auto;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content-lightbox__media {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(94vh - 5rem);
+  object-fit: contain;
+}
+
+.content-lightbox__media--diagram {
+  width: clamp(1000px, 90vw, 1600px);
+  max-width: none;
+  max-height: none;
+  background: #ffffff;
+}
+
+.content-lightbox__close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.75rem;
+  z-index: 1;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: #111827;
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.content-lightbox__close:hover,
+.content-lightbox__close:focus-visible {
+  background: #374151;
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  .content-lightbox {
+    padding: 0;
+  }
+
+  .content-lightbox__dialog {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .content-lightbox__stage {
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+
+  .content-lightbox__media {
+    max-height: calc(100vh - 5rem);
+  }
+
+  .content-lightbox__media--diagram {
+    width: 1000px;
+  }
+}
+/* END Content image lightbox */
