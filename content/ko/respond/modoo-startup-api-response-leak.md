@@ -3,7 +3,7 @@ title: "‘모두의창업’ 정보 유출, 핵심은 “AI 도구”가 아니
 date: 2026-06-25
 draft: false
 description: "AI 도구를 이용한 백엔드 API 비정상 접근 사건을 통해, 요청 탐지 중심 WAF의 한계와 응답본문 기반 민감정보 탐지의 필요성을 살펴봅니다."
-featured_image: "/cdn/respond/modu-startup-api-response-leak.png"
+featured_image: "/cdn/respond/modoo-startup-api-response-leak.png"
 tags: ["PLURA-XDR", "PLURA-WAF", "API 보안", "정보유출", "응답본문분석", "AI 도구"]
 ---
 
