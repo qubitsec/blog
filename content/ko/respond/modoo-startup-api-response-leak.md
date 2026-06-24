@@ -101,7 +101,7 @@ Authorization: Bearer 정상토큰
 
 ---
 
-### 3-2. 공격 흐름 Mermaid
+### 3-2. 공격 흐름
 
 ```mermaid
 %%{init: {
