@@ -17,3 +17,22 @@ table th {
     font-weight: bold !important;
     color: #222 !important;
 }
+
+/* BEGIN Mermaid diagram styles */
+pre.mermaid {
+  background: transparent !important;
+  color: inherit !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: normal !important;
+  padding: 1rem 0 !important;
+  text-align: center;
+}
+
+pre.mermaid svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+/* END Mermaid diagram styles */
