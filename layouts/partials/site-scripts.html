@@ -10,7 +10,44 @@
     mermaid.initialize({
       startOnLoad: false,
       securityLevel: "strict",
-      theme: "default"
+      theme: "base",
+      themeVariables: {
+        darkMode: false,
+        background: "#ffffff",
+        textColor: "#111827",
+        lineColor: "#1f2937",
+
+        primaryColor: "#eff6ff",
+        primaryTextColor: "#111827",
+        primaryBorderColor: "#2563eb",
+
+        secondaryColor: "#f0fdf4",
+        tertiaryColor: "#fff7ed",
+
+        clusterBkg: "#ffffff",
+        clusterBorder: "#6b7280",
+        edgeLabelBackground: "#ffffff",
+
+        actorBkg: "#ffffff",
+        actorBorder: "#374151",
+        actorTextColor: "#111827",
+        actorLineColor: "#4b5563",
+
+        signalColor: "#1f2937",
+        signalTextColor: "#111827",
+
+        labelBoxBkgColor: "#ffffff",
+        labelBoxBorderColor: "#6b7280",
+        labelTextColor: "#111827",
+        loopTextColor: "#111827",
+
+        noteBkgColor: "#fffbea",
+        noteBorderColor: "#ca8a04",
+        noteTextColor: "#111827",
+
+        activationBkgColor: "#dbeafe",
+        activationBorderColor: "#2563eb"
+      }
     });
 
     await mermaid.run({ nodes: diagrams });

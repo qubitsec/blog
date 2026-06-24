@@ -20,13 +20,23 @@ table th {
 
 /* BEGIN Mermaid diagram styles */
 pre.mermaid {
-  background: transparent !important;
-  color: inherit !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #111827 !important;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  margin: 1.5rem 0 !important;
+  padding: 1.25rem !important;
   overflow-x: auto !important;
   overflow-y: hidden !important;
-  white-space: normal !important;
-  padding: 1rem 0 !important;
+  white-space: pre !important;
   text-align: center;
+}
+
+pre.mermaid[data-processed="true"] {
+  white-space: normal !important;
 }
 
 pre.mermaid svg {
@@ -34,5 +44,7 @@ pre.mermaid svg {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  background-color: #ffffff !important;
+  color: #111827 !important;
 }
 /* END Mermaid diagram styles */
