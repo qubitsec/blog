@@ -160,8 +160,6 @@ Qilinは**RaaS(サービス型ランサムウェア)**グループであり、
 
 ## 🧭 攻撃概念図 (状況に基づくシナリオ)
 
-![Asahi_flowchart_ko](https://blog.plura.io/cdn/threats/Asahi_flowchart_ja.png)
-
 ```mermaid
 sequenceDiagram
     participant A as 攻撃者(Qilin系列)
