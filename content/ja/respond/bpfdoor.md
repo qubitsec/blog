@@ -66,33 +66,33 @@ sequenceDiagram
     %% Participants
     participant Attacker
     participant HSS
-    participant Kernel/eBPF as eBPF
+    participant eBPF as Kernel/eBPF
     participant BPFDoor
-    participant Host OS as OS
+    participant OS as Host OS
 
-    %% ① マジックバイト & マルチプロトコル
-    Attacker->>HSS: 通常スキャン・パケット<br/>(マジックバイトなし)
-    HSS-->>Attacker: 応答なし（ポートレス状態）
-    Attacker->>HSS: Magic Packet 0x7255 (TCP/UDP, 22/80/443)
+    %% 1. マジックバイト & マルチプロトコル
+    Attacker->>HSS: 通常スキャンおよびパケット (マジックバイトなし)
+    HSS-->>Attacker: 応答なし (ポートレス状態)
+    Attacker->>HSS: Magic Packet 0x7255 (TCP/UDP, 22/80/443)
     Attacker->>HSS: Magic Packet 0x5293 (ICMP)
     HSS->>eBPF: パケットを転送
-    eBPF-->>BPFDoor: マジックバイト一致 → 有効化
+    eBPF-->>BPFDoor: マジックバイト一致 -> 有効化
 
-    %% ② RC4暗号化・パスワード認証
+    %% 2. RC4暗号化・パスワード認証
     BPFDoor->>BPFDoor: magic_packet構造体をパース<br/>passフィールドを検証
     alt パスワード一致
-        BPFDoor-->>Attacker: セッション確立（RC4暗号化ストリーム）
+        BPFDoor-->>Attacker: セッション確立 (RC4暗号化ストリーム)
     else 不一致
         BPFDoor-->>Attacker: 応答なし・セッション拒否
     end
 
-    %% ③ 隠蔽・持続化フェーズ
-    BPFDoor->>OS: /dev/shm に自己コピー → 元ファイル削除
-    BPFDoor->>OS: プロセス名を偽装<br/>("/sbin/udevd -d" など)
-    BPFDoor->>OS: iptables -I INPUT <attacker IP>
+    %% 3. 隠蔽・持続化フェーズ
+    BPFDoor->>OS: /dev/shm に自己コピー -> 元ファイル削除
+    BPFDoor->>OS: プロセス名を偽装 ("/sbin/udevd -d" など)
+    BPFDoor->>OS: iptables -I INPUT [attacker IP]
     BPFDoor->>OS: iptables -t nat PREROUTING DNAT
-    BPFDoor->>OS: open /dev/ptmx → /bin/sh を生成
-    Attacker-->>BPFDoor: PTYシェル操作（コマンド実行）
+    BPFDoor->>OS: open /dev/ptmx -> /bin/sh を生成
+    Attacker-->>BPFDoor: PTYシェル操作 (コマンド実行)
 ```
 
 ---
