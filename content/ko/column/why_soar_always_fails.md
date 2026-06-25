@@ -253,9 +253,6 @@ sequenceDiagram
     Note over SOAR,SIEM: 7. 결과를 SIEM에 기록
     SOAR ->> SIEM: Update Event Status
 ```
-
-![SOAR, SIEM & WAF 동작 구성도](https://blog.plura.io/cdn/column/why_soar_always_fails-2.png)
-
 ---
 
 ## 3. 왜 “SIEM 문제”가 곧 “SOAR 문제”인가?
