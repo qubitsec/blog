@@ -12,8 +12,6 @@ tags: ["Odido", "Data Breach", "Phishing", "Social Engineering", "Vishing", "CRM
 이후 **고객 연락처/CRM 시스템에서 대량 조회·다운로드**(스크래핑/수집)가 발생한 것으로 보도되었습니다.  
 (공격 주체는 공개적으로 확인되지 않았으며, 아래 비교는 **‘전술(TTP) 유사성’** 관점입니다.)
 
-![Odido 데이터 유출 케이스](https://blog.plura.io/cdn/threats/case-odido_breach.png)
-
 <!--more-->
 
 ---
@@ -176,8 +174,6 @@ sequenceDiagram
     SOC->>CRM: 세션 종료/접근 차단
     SOC->>SOC: 영향 범위·로그 포렌식
 ```
-
-![Odido 데이터 유출 케이스 데이터 흐름](https://blog.plura.io/cdn/threats/case-odido_breach-ko.png)
 
 ---
 
