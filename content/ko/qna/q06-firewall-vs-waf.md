@@ -93,8 +93,6 @@ flowchart LR
     WEB --> LOG
 ```
 
-![Web Flow](https://blog.plura.io/cdn/qna/q6-2.png)
-
 이 구조에서:
 
 * 방화벽은 **허용된 통로만 열어두고**
