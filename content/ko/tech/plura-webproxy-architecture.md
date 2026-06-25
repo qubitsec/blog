@@ -49,8 +49,6 @@ flowchart LR
     C --> D[Web]
 ```
 
-![Flow-1](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_01.png)
-
 이 구조에서는 방화벽이 네트워크 접근을 통제하고,  
 WAF가 HTTP/HTTPS 트래픽에 대해 정책 기반 차단을 수행한 뒤,  
 최종 Web 서버가 요청을 처리합니다.
@@ -111,8 +109,6 @@ flowchart LR
     C --> D[PLURA-WebProxy]
     D --> E[Web]
 ```
-
-![Flow-2](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_02.png)
 
 핵심은 단순합니다.
 
@@ -195,7 +191,6 @@ flowchart LR
     B --> C[WAF]
     C --> D[Web]
 ```
-![Flow-3](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_03.png)
 
 이 구조의 장점은 단순함입니다.  
 하지만 Web Body 정보 관리는 제한적일 수 있습니다.
@@ -209,7 +204,6 @@ flowchart LR
     C --> D[PLURA-WebProxy]
     D --> E[Web]
 ```
-![Flow-4](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_04.png)
 
 이 구조의 핵심은 다음과 같습니다.
 
@@ -277,7 +271,6 @@ flowchart LR
     D --> F[Web Service 2]
     D --> G[Web Service N]
 ```
-![Flow-5](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_05.png)
 
 이 구조에서는
 
@@ -307,7 +300,6 @@ flowchart LR
     C --> D[PLURA-WebProxy on Kubernetes]
     D --> E[Service / Pod - Web]
 ```
-![Flow-6](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_06.png)
 
 이 구조는 다음과 같은 장점이 있습니다.
 
@@ -328,7 +320,6 @@ flowchart LR
     C --> D[PLURA-WebProxy on VM/Hypervisor]
     D --> E[Web]
 ```
-![Flow-7](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_07.png)
 
 이 구조는 기존 온프레미스나 VM 기반 운영 환경에 적합합니다.
 
@@ -384,7 +375,6 @@ flowchart LR
     C --> D[PLURA-WebProxy]
     D --> E[Web]
 ```
-![Flow-8](https://blog.plura.io/cdn/tech/plura-webproxy-architecture_08.png)
 
 이 구조의 장점은 명확합니다.
 
