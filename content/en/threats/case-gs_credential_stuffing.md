@@ -11,7 +11,6 @@ In **January–February 2025**, a **credential stuffing** attack occurred on the
 The attackers leveraged previously leaked account/password combinations to attempt mass automated logins. They exploited the vulnerability of some users reusing **the same passwords across different websites**, resulting in a breach.
 
 <!--more-->
-![Credential Stuffing on GS Retail & GS Home Shopping](https://blog.plura.io/cdn/threats/case-gs_credential_stuffing_02.png)
 
 ---
 
