@@ -182,9 +182,6 @@ flowchart LR
     F --> G["EDR / HIPS<br/>(실제 프로세스·파일·권한 행위)"]
 ```
 
-![IPS와 NDR의 차이](https://blog.plura.io/cdn/column/ips_vs_ndr-2.png)
-
-
 이 그림이 보여주는 핵심은 하나입니다.
 
 > **암호화가 강해질수록  
