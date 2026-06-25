@@ -12,8 +12,6 @@ The incident reportedly began with **phishing emails + IT support impersonation 
 followed by **mass queries and downloads from the customer contact/CRM system** (scraping/collection).  
 (The threat actor has not been publicly confirmed; the comparison below focuses on **tactical (TTP) similarities**.)
 
-![Odido Data Breach Case](https://blog.plura.io/cdn/threats/case-odido_breach.png)
-
 <!--more-->
 
 ---
@@ -175,7 +173,6 @@ sequenceDiagram
     SOC->>CRM: Terminate session/block access
     SOC->>SOC: Impact assessment · log forensics
 ```
-![Odido Data Breach Case Data Flow](https://blog.plura.io/cdn/threats/case-odido_breach-en.png)
 
 ---
 
