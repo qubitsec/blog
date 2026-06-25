@@ -108,8 +108,6 @@ flowchart LR
     WAF --> ORIGIN["오리진 웹서버"]
 ```
 
-![waf](https://blog.plura.io/cdn/column/waf-img-1.png)
-
 이 구조는 단순하고 빠르지만,  
 외부에서 오리진을 직접 겨냥할 수 있는 가능성이 상대적으로 큽니다.  
 또한 WAF 자체가 트래픽 경로의 병목이 될 수 있습니다.
@@ -125,9 +123,6 @@ flowchart LR
     ORIGIN --> XDR["로그 / XDR 분석"]
     PROXY --> XDR
 ```
-
-![waf](https://blog.plura.io/cdn/column/waf-img-2.png)
-
 
 이 구조에서는 외부 사용자가 직접 보는 것은 프록시뿐이며,  
 오리진은 내부망 또는 제한된 네트워크에 둘 수 있습니다.  
