@@ -162,8 +162,6 @@ flowchart LR
     Dev --> Policy --> Test --> Deploy --> Operate --> Review
 ```
 
-![WAF](https://blog.plura.io/cdn/column/waf_dev_exception-2.png)
-
 핵심은  
 배포 후 예외를 붙이는 것이 아니라,  
 **정책을 먼저 정의하고 그 정책 안에서 개발하는 것**입니다.
