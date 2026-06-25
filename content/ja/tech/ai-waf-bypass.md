@@ -21,8 +21,6 @@ tags: ["AIセキュリティ", "WAF", "LLM", "SOAP", "XML", "バイパス", "自
 
 <!--more-->
 
-![LLMを活用したバイパスオートメーション — シーケンス図](https://blog.plura.io/cdn/tech/ai-waf-bypass_ja.png)
-
 ---
 
 ## LLMを利用したバイパスオートメーション — シーケンス図
