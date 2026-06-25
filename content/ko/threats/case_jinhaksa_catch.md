@@ -14,8 +14,6 @@ tags: ["진학사", "캐치", "Credential Stuffing", "보안 사고", "개인정
 특히 수백만 건에 달하는 로그인 시도가 발생한 정황이 알려지면서,  
 비밀번호 재사용과 로그인 보호 정책의 한계, 그리고 실시간 탐지 체계의 중요성이 다시 한번 드러났습니다.
 
-![진학사 캐치 크리덴셜 스터핑 공격](https://blog.plura.io/cdn/threats/case_jinhaksa_catch.png)
-
 ---
 
 ## 1. **정찰 (Reconnaissance)**
