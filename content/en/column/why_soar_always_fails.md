@@ -116,10 +116,6 @@ sequenceDiagram
 
 ---
 
-![SOAR, SIEM & WAF Implementation Flow](https://blog.plura.io/cdn/column/why_soar_always_fails-2_en.png)
-
----
-
 ## 3. How “SIEM Problems” Become “SOAR Problems”
 
 As explained in the linked article, the biggest **SIEM** issue is “**inadequate log collection** and **lack of analysis staff**.”
