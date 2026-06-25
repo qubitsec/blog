@@ -891,9 +891,9 @@ AI 도구 시대의 정보 유출은 더 이상 이상한 공격 문자열로만
 
 ---
 
-📚 함께 읽기
+## 📚 함께 읽기
 * [쿠팡 등 API 인증 키(JWT) 유출 사고](https://blog.plura.io/ko/threats/case-coupang_authkey/)
 
-## 관련 기사
+## 📖 관련 기사
 
 * [‘모두의창업’ 정보 유출 원인은 “AI 도구로 백엔드 API에 비정상 접근” – 바이라인네트워크](https://byline.network/2026/06/22-573/)
