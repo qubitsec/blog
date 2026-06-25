@@ -267,8 +267,6 @@ flowchart LR
     C -->|아니오| E
 ```
 
-![Flow](https://blog.plura.io/cdn/column/ips_ndr_needed-3.png)
-
 핵심은  
 “네트워크 보안 장비를 더 넣을까?”가 아니라,
 
