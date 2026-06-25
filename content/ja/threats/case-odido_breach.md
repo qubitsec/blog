@@ -177,8 +177,6 @@ sequenceDiagram
     SOC->>SOC: 影響範囲・ログフォレンジック
 ```
 
-![Odido データ流出ケース データフロー](https://blog.plura.io/cdn/threats/case-odido_breach-ja.png)
-
 ---
 
 ## 7. Odidoの公表された対応（要約）
