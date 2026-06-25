@@ -12,8 +12,6 @@ tags: ["SKT 해킹", "SKT 유심 유출", "유심 해킹", "LGU+ 해킹", "LGU+ 
 
 <!--more-->
 
-![SKT 해킹 공격 시퀀스 다이어그램 예시](https://blog.plura.io/cdn/threats/case-skt-hypothesis.png)
-
 ---
 
 아래 문서는  
