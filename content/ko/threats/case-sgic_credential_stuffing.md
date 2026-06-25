@@ -13,8 +13,6 @@ tags: ["SGI서울보증보험", "해킹", "개인정보 유출", "랜섬웨어",
 > **해당 SSL VPN 장비의 관리자 계정 정보는 이미 여러 경로를 통해 유출된 것으로 추정되며,  
 > 단순한 무차별 대입보다는 전통적인 *크리덴셜 스터핑(Credential Stuffing)* 공격을 통해 로그인이 성공되었을 가능성이 더 높습니다.**
 
-![SGI서울보증보험 해킹 사건](https://blog.plura.io/cdn/threats/case-sgic_credential_stuffing.png)
-
 <!--more-->
 
 ---
