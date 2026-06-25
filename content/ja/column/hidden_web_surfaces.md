@@ -74,8 +74,6 @@ tags: ["ウェブファイアウォール", "WAF", "エッジセキュリティ"
 
 ## 5) **標準対処アーキテクチャ** (管理ポータル保護)
 
-![hidden_web_surfaces_flowchart_ja](https://blog.plura.io/cdn/column/hidden_web_surfaces_flowchart_ja.png)
-
 ```mermaid
 flowchart LR
     Internet["インターネット/外部ユーザー"]
