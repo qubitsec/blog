@@ -357,7 +357,7 @@ PLURA-XDR은 웹·서버·PC·계정·로그를 연결해 공격 흐름, 피해 
 - [1분 안에 해킹 여부 판단, PLURA-XDR의 즉각적인 가시성](https://blog.plura.io/ko/respond/1-minute-detection/)
 - [CEO가 가장 두려워하는 문제, 사이버 해킹](https://blog.plura.io/ko/column/ceo-cyberfear/)
 - [스타트업 대표가 사이버보안 투자를 미루면 안 되는 이유](https://blog.plura.io/ko/column/startup-ceo-cybersecurity-investment/)
-- [대한민국 상장사 해킹 피해 사례 보고서](https://blog.plura.io/ko/column/listed-company-hacking-cases/)
+- [상장사 이사회는 사이버보안을 어떻게 보고받고 있습니까?](https://blog.plura.io/ko/column/listed-company-cybersecurity-investment/)
 
 ---
 
