@@ -251,7 +251,7 @@ AI 기반 PLURA-XDR은 이 질문에 답하기 위해 다음 흐름을 지원합
 ## 🔄 PLURA-XDR 도입 전과 도입 후는 무엇이 달라집니까?
 
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph Before[도입 전]
         B1[방화벽·백신·VPN 경보 분산]
         B2[전산 담당자 수동 확인]
