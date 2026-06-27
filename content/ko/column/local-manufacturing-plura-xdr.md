@@ -253,19 +253,11 @@ AI 기반 PLURA-XDR은 이 질문에 답하기 위해 다음 흐름을 지원합
 ```mermaid
 flowchart LR
     subgraph Before[도입 전]
-        direction TB
-        B1[방화벽·백신·VPN 경보 분산]
-        B2[전산 담당자 수동 확인]
-        B3[웹·서버·PC·계정 로그 연결 어려움]
-        B4[사고 후 원인·범위 설명 지연]
+        B1["방화벽·백신·VPN 경보 분산<br><br>전산 담당자 수동 확인<br><br>웹·서버·PC·계정 로그 연결 어려움<br><br>사고 후 원인·범위 설명 지연"]
     end
 
     subgraph After[PLURA-XDR 도입 후]
-        direction TB
-        A1[핵심 자산·로그 통합 수집]
-        A2[AI 기반 요약·위험도 분류]
-        A3[공격 흐름과 사건 타임라인 확인]
-        A4[차단·격리·보고 근거 확보]
+        A1["핵심 자산·로그 통합 수집<br><br>AI 기반 요약·위험도 분류<br><br>공격 흐름과 사건 타임라인 확인<br><br>차단·격리·보고 근거 확보"]
     end
 
     Before --> After
