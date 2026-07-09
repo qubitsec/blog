@@ -1,7 +1,7 @@
 ---
 title: "Google Wiz와 PLURA-XDR, 무엇이 어떻게 다른가?"
 date: 2026-07-09
-draft: true
+draft: false
 description: "Google Cloud 산하 Wiz와 PLURA-XDR을 공정하게 비교하여, 클라우드 보안/CNAPP과 웹·시스템 통합형 XDR/SECaaS, 감사 정책 기반 실시간 로그 분석의 차이를 쉬운 비유와 구조적 기준으로 설명합니다."
 featured_image: "/cdn/tech/wiz-vs-plura-xdr.png"
 tags: ["Wiz", "Google Cloud", "PLURA-XDR", "CNAPP", "XDR", "Cloud Security", "WAF", "EDR", "SIEM", "SOAR", "Forensic", "MITRE ATT&CK", "실시간 로그 분석", "감사 정책", "고급 감사 정책"]
