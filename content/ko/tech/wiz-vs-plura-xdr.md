@@ -7,8 +7,6 @@ featured_image: "/cdn/tech/wiz-vs-plura-xdr.png"
 tags: ["Wiz", "Google Cloud", "PLURA-XDR", "CNAPP", "XDR", "Cloud Security", "WAF", "EDR", "SIEM", "SOAR", "Forensic", "MITRE ATT&CK", "실시간 로그 분석", "감사 정책", "고급 감사 정책"]
 ---
 
-# Google Wiz와 PLURA-XDR, 무엇이 어떻게 다른가?
-
 📉 최근 보안 시장에서는  
 CNAPP, XDR, CDR, CSPM, CWPP, SIEM, SOAR, AI 보안 같은 표현이 함께 쓰이면서  
 서로 다른 제품이 마치 같은 범주의 제품처럼 보일 때가 많습니다.
