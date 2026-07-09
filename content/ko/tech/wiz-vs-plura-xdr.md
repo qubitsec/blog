@@ -1,13 +1,11 @@
 ---
 title: "Google Wiz와 PLURA-XDR, 무엇이 어떻게 다른가?"
 date: 2026-07-09
-draft: true
+draft: false
 description: "Google Cloud 산하 Wiz와 PLURA-XDR을 공정하게 비교하여, 클라우드 보안/CNAPP과 WAF-first 전주기 사이버보안 플랫폼의 차이를 쉽게 설명합니다."
 featured_image: "/cdn/tech/wiz-vs-plura-xdr.png"
 tags: ["Wiz", "Google Cloud", "PLURA-XDR", "CNAPP", "XDR", "Cloud Security", "WAF", "EDR", "SIEM", "SOAR", "Forensic", "MITRE ATT&CK", "전주기 사이버보안", "실시간 로그 분석", "감사 정책"]
 ---
-
-# Google Wiz와 PLURA-XDR, 무엇이 어떻게 다른가?
 
 📉 최근 보안 시장에서는  
 CNAPP, XDR, CDR, CSPM, CWPP, SIEM, SOAR, AI 보안 같은 표현이 함께 쓰이면서  
