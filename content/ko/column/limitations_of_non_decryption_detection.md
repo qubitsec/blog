@@ -453,3 +453,8 @@ AI에게도 최상의 데이터가 필요하다. payload, 웹 요청 본문, 애
 
 ### 데일리시큐 쿼드마이너 인터뷰 기사
 - [「AI 보안의 핵심은 경보가 아니라 공격의 맥락을 보여주는 데이터」](https://www.dailysecu.com/news/articleView.html?idxno=207439)
+
+### 샌즈랩 MNX·CTX 관련 기사
+
+* [「샌즈랩, 정보보호의 날서 AI 위협 탐지·악성코드 분석 기술 공개」](https://www.etnews.com/20260709000199)
+* [「샌즈랩, AI로 네트워크 위협·악성코드 분석…정보보호의 날 기술 시연」](https://mobile.newsis.com/view_amp.html?ar_id=NISX20260709_0003703030)
