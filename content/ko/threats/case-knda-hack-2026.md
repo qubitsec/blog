@@ -1994,9 +1994,15 @@ AND 외부 전송량 증가
 ### 📖 함께 읽기
 
 - [웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs/)
+
+### 📖 해킹 사고 분석
+
 - [CJ올리브네트웍스 인증서 유출 사건: 김수키의 공급망 공격](https://blog.plura.io/ko/threats/case-cjolivenetworks_digitalsignature_mitre/)
 - [현대엘리베이터 해킹 사건: 에베레스트 랜섬웨어의 1.1TB 유출 주장](https://blog.plura.io/ko/threats/case-hyundaielevator/)
 - [티빙 개인정보 유출 사고: GitHub 자격증명 노출과 AWS 액세스 키 관리 논란](https://blog.plura.io/ko/threats/case-cj-tving/)
+- [CU편의점택배(CUPOST) 개인정보 유출 사고: 웹 취약점 침해와 CI 유출의 위험](https://blog.plura.io/ko/threats/case-cu-cupost-bgfnetworks/)
+- [업비트 445억 원 해킹 전말: 솔라나 핫월렛 개인키 추정 취약점과 온체인 자금세탁](https://blog.plura.io/ko/threats/case-upbit-hack-2025/)
+- [듀오 개인정보 유출 사고: 직원 PC 악성코드 감염과 DB 계정 탈취가 만든 42만 명 프로필 유출](https://blog.plura.io/ko/threats/case-duo-personal-info-leak/)
 
 ---
 
