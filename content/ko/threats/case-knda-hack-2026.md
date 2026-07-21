@@ -1994,8 +1994,9 @@ AND 외부 전송량 증가
 ### 📖 함께 읽기
 
 - [웹의 전체 로그 분석은 왜 중요한가?](https://blog.plura.io/ko/respond/very_important_analyze_web_logs/)
+- [보안의 출발점은 기록이다](https://blog.plura.io/ko/column/news-cybersecurity-begins-with-logging/)
 
-### 📖 해킹 사고 분석
+### 📚 해킹 사고 분석
 
 - [CJ올리브네트웍스 인증서 유출 사건: 김수키의 공급망 공격](https://blog.plura.io/ko/threats/case-cjolivenetworks_digitalsignature_mitre/)
 - [현대엘리베이터 해킹 사건: 에베레스트 랜섬웨어의 1.1TB 유출 주장](https://blog.plura.io/ko/threats/case-hyundaielevator/)
