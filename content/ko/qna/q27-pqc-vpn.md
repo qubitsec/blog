@@ -9,6 +9,13 @@ tags: ["PQC", "양자내성암호", "SSLVPN", "VPN", "OpenVPN", "HNDL", "TLS", "
 
 **A. 아닙니다. SSL VPN이 중요하다는 사실과 지금 PQC VPN 제품을 도입해야 한다는 결론은 전혀 다릅니다.**
 
+> **핵심 답변**
+>
+> - 일반적인 SSL VPN은 PQC 때문에 지금 교체할 이유가 없습니다.
+> - 우선순위는 VPN 제품명이 아니라 사용자·접속 대상·권한·데이터 수명으로 정해야 합니다.
+> - OpenVPN에서 PQC 영향은 주로 TLS 제어 채널의 키 합의와 인증서·PKI 영역이며, 데이터 채널의 AES-GCM·ChaCha20-Poly1305는 직접 교체 대상이 아닙니다.
+> - OpenVPN 2.7과 OpenSSL 3.5 LTS 조합은 `X25519MLKEM768`을 지원할 수 있는 기반을 이미 제공하므로, 먼저 할 일은 신규 제품 구매가 아니라 업그레이드와 상호운용성 검증입니다.
+
 SSL VPN은 외부 사용자가 내부 시스템에 접근하는 중요한 접점입니다.
 
 그래서 사용자 인증, MFA, 단말 상태 검증, 최소 권한, 접속 로그, 세션 통제는 중요합니다.
@@ -58,7 +65,7 @@ OpenVPN도 마찬가지입니다.
 
 OpenVPN은 SSL/TLS 기반 제어 채널에서 인증서와 공개키 키 합의를 사용하므로 PQC의 영향을 받습니다. 그러나 실제 VPN 데이터를 RSA나 ECC로 암호화하는 것은 아닙니다. 실제 데이터 채널은 AES-GCM이나 ChaCha20-Poly1305 같은 대칭키 암호를 사용합니다.[^openvpn-pq][^openvpn-27-manual]
 
-그리고 OpenVPN 2.7 계열은 OpenSSL 3.5 같은 지원 라이브러리와 결합해 `X25519MLKEM768` 하이브리드 키 합의를 사용할 수 있는 방향으로 이미 움직이고 있습니다.[^openvpn-27-manual][^openssl-35]
+그리고 OpenVPN 2.7 계열은 OpenSSL 3.5 같은 지원 라이브러리와 결합해 `X25519MLKEM768` 하이브리드 키 합의를 사용할 수 있는 기반을 이미 제공합니다.[^openvpn-27-manual][^openssl-35]
 
 이것은 중요한 사실을 보여줍니다.
 
@@ -517,6 +524,8 @@ OpenVPN에서 PQC 영향을 받는 핵심 영역은 세 가지입니다.[^openvp
 
 OpenVPN 2.7 매뉴얼은 기존 유한체 DH 대신 ECDH 또는 `X25519MLKEM768` 같은 새로운 하이브리드 키 합의 알고리즘을 사용할 수 있다고 명시합니다.[^openvpn-27-manual]
 
+OpenSSL 3.5는 2025년 4월 8일 출시된 장기지원(LTS) 버전이며, 공식 지원 기한은 2030년 4월 8일입니다.[^openssl-35-lts]
+
 OpenSSL 3.5는 다음 기능을 제공합니다.[^openssl-35]
 
 - ML-KEM 지원
@@ -524,6 +533,10 @@ OpenSSL 3.5는 다음 기능을 제공합니다.[^openssl-35]
 - SLH-DSA 지원
 - 하이브리드 PQC KEM 그룹을 TLS 기본 지원 그룹에 포함
 - 기본 TLS key share로 `X25519MLKEM768`과 `X25519` 제공
+
+다만 이것을 “OpenSSL 3.5로 올리기만 하면 모든 OpenVPN 연결에 PQC가 자동 적용된다”는 뜻으로 읽어서는 안 됩니다.
+
+실제 협상에는 서버와 클라이언트 양쪽의 라이브러리·패키지 지원, TLS 그룹 설정, 상호운용성이 필요하며, 연결 로그에서 실제 협상 그룹을 확인해야 합니다.
 
 따라서 흐름은 다음과 같습니다.
 
@@ -849,7 +862,7 @@ OpenVPN도 PQC 영향을 받는다.
 하지만 실제 데이터 암호화가 아니라 키 합의와 인증서 영역이 중심이다.
 
 OpenVPN 2.7과 OpenSSL 3.5 생태계는
-X25519MLKEM768 하이브리드 키 합의를 이미 흡수하고 있다.
+X25519MLKEM768 하이브리드 키 합의를 지원할 수 있는 기반을 이미 제공한다.
 
 지금 할 일은 VPN 교체가 아니다.
 현재 보안 강화, 자산 식별, 표준 확인, 호환성 검증이다.
@@ -874,8 +887,9 @@ X25519MLKEM768 하이브리드 키 합의를 이미 흡수하고 있다.
 
 ---
 
-[^zdnet-pqc-vpn]: ZDNet Korea, “수산아이앤티 ‘PQC 시대...암호만 바꿔서는 부족’,” 2026-07-22. https://zdnet.co.kr/view/?no=20260722165728
+[^zdnet-pqc-vpn]: [ZDNet Korea, “수산아이앤티 ‘PQC 시대...암호만 바꿔서는 부족’,” 2026-07-22.](https://zdnet.co.kr/view/?no=20260722165728)
 [^openvpn-27-manual]: OpenVPN, “OpenVPN 2.7 manual.” https://openvpn.net/community-docs/community-articles/openvpn-2-7-manual.html
 [^openvpn-pq]: OpenVPN Community, “Post-quantum cryptography security in OpenVPN.” https://community.openvpn.net/PQCryptoOpenVPN
 [^openssl-35]: OpenSSL, “OpenSSL 3.5 Series Release Notes.” https://openssl-library.org/news/openssl-3.5-notes/
+[^openssl-35-lts]: OpenSSL, “OpenSSL 3.5 Final Release - Live,” 2025-04-08. https://openssl-library.org/post/2025-04-08-openssl-35-final-release/
 [^ietf-mlkem]: IETF Datatracker, “Post-quantum hybrid ECDHE-MLKEM Key Agreement for TLS 1.3.” https://datatracker.ietf.org/doc/draft-ietf-tls-ecdhe-mlkem/
