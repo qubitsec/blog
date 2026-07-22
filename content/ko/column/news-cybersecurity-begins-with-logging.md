@@ -376,13 +376,19 @@ MITRE ATT&CK 같은 실제 공격 프레임워크를 기준으로
 그리고 기록 없는 보안은, 결국 설명할 수 없는 보안입니다.
 ---
 
-## 함께 읽기
+## 📖 함께 읽기
 
 - [[전자신문] ISMS-P 인증받고도 뚫린다… 미토스 시대, 실전 사이버보안으로 가야 한다](https://blog.plura.io/ko/column/news-isms-p-cybersecurity-op-ed/)
 - [[전자신문] AI 해킹 시대, 낡은 인증으로는 국가를 지킬 수 없다](https://blog.plura.io/ko/column/news-ai-era-certification-crisis/)
 - [[전자신문] AI 해킹 공격, 방어도 AI로 해야 한다](https://blog.plura.io/ko/column/news-ai-cyberattack-defense-with-ai/)
 - [[머니투데이방송] AI 사이버보안, 공개 시험으로 국민을 안심시켜야 한다](https://blog.plura.io/ko/column/news-national-ai-cyber-defense-challenge/)
 - [[전자신문] 24시간 관제의 역설: 왜 아무도 대응하지 못했는가](https://blog.plura.io/ko/column/news-saving-soc/)
+
+
+## 📰 뉴스 인터뷰
+
+- [외교부 해킹에 정보요원까지 탈탈 털려 … 로그 부실로 사후 분석·피해 규명도 '깜깜이'](https://www.newdaily.co.kr/site/data/html/2026/07/22/2026072200038.html)
+
 ---
 
 ## 📰 원문 뉴스
