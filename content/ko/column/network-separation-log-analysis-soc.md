@@ -3,7 +3,7 @@ title: "인터넷이 차단된 서버도 해킹된다 — 망분리 환경에서
 date: 2026-07-22
 draft: false
 description: "외부 인터넷 차단은 공격 경로를 줄일 뿐, 관리자 PC 감염·계정 탈취·유지보수 유입·정책 오류·내부 횡적 이동을 막지 못합니다. 법원행정처와 SKT 사례를 통해 망분리 서버의 호스트 로그 분석과 SOC가 필요한 이유와 최소 허용 로그 전송 구조를 설명합니다."
-featured_image: "/cdn/column/network_separation_log_soc.png"
+featured_image: "/cdn/column/network-separation-log-analysis-soc.png"
 tags: ["망분리", "인터넷 차단", "호스트보안", "로그 분석", "보안관제", "SOC", "XDR", "법원행정처", "SKT", "BPFDoor", "PLURA-XDR"]
 ---
 
@@ -15,7 +15,7 @@ tags: ["망분리", "인터넷 차단", "호스트보안", "로그 분석", "보
 
 <!--more-->
 
-![망분리 서버 로그 분석과 SOC](https://blog.plura.io/cdn/column/network_separation_log_soc.png)
+![망분리 서버 로그 분석과 SOC](https://blog.plura.io/cdn/column/network-separation-log-analysis-soc.png)
 
 ---
 
