@@ -613,6 +613,6 @@ PLURA-XDR이 지향하는 핵심은 여러 보안 기능을 하나의 이름 아
 
 ## 📖 함께 보기
 
-- [PLURA-XDR 제품 소개](https://docs.plura.io/ko/video/company/product)
+- [PLURA-XDR 제품 소개](https://docs.plura.io/ko/v6/video/company/product)
 - [PLURA-XDR 상관분석](https://docs.plura.io/ko/v6/fn/comm/correlation)
 - [PLURA-XDR MITRE ATT&CK](https://docs.plura.io/ko/v6/fn/comm/mitre)
