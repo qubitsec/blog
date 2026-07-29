@@ -7,7 +7,7 @@ featured_image: "/cdn/column/physical-ai-vs-cybersecurity-ai.png"
 tags: ["Physical AI", "사이버보안 AI", "생성형 AI", "보안 데이터", "XDR", "SOC", "AI 보안"]
 ---
 
-최근 AI 산업에서 가장 주목받는 분야 중 하나가 **Physical AI**입니다.
+🤖 최근 AI 산업에서 가장 주목받는 분야 중 하나가 **Physical AI**입니다.
 
 생성형 AI가 텍스트·이미지·코드를 만들어 내는 데 집중했다면, Physical AI는 카메라와 센서로 현실을 관찰하고 판단한 뒤 로봇·자동차·기계장치를 직접 움직입니다.
 
