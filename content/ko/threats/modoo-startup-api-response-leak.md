@@ -293,8 +293,8 @@ API Enumeration
 PLURA 공식 문서는 웹 탐지 로그에 **요청본문과 응답본문 정보가 포함**되며, `유출정보` 항목에서 웹 서버 응답본문에서 탐지된 기밀정보와 사용자 정보를 확인할 수 있다고 설명합니다. 또한 상태값과 응답 크기를 함께 제공하고, 원본 로그에서는 데이터 유출 필터에 탐지된 응답을 `Resp-body1`과 같은 형태로 확인할 수 있습니다.
 
 * [PLURA-XDR 데이터유출](https://docs.plura.io/ko/v6/fn/comm/sdetection/databreach)
-* [PLURA 웹 필터탐지](https://docs.plura.io/ko/fn/waf/detection)
-* [PLURA 웹 탐지 로그](https://docs.plura.io/ko/fn/comm/fdetection/web)
+* [PLURA 웹 필터탐지](https://docs.plura.io/ko/v6/fn/waf/detection)
+* [PLURA 웹 탐지 로그](https://docs.plura.io/ko/v6/fn/comm/fdetection/web)
 
 이 기능을 이번 사고에 적용한다면 탐지 기준은 단순히 “요청이 많았는가?”가 아닙니다.
 
