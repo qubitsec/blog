@@ -659,7 +659,7 @@ OpenVPN의 `tls-crypt`는 사전 공유 대칭키를 이용해
 TLS 제어 채널 패킷을 추가로 암호화하고 인증합니다.
 
 OpenVPN 공식 매뉴얼은 공격자가 사전 공유키를 영원히 알지 못한다는 조건에서
-이를 이른바 **“poor-man's post-quantum security”**라고 설명합니다.[^openvpn-27-manual]
+이를 이른바 “**poor-man's post-quantum security**”라고 설명합니다.[^openvpn-27-manual]
 
 이 기능은 다음 효과가 있습니다.
 
