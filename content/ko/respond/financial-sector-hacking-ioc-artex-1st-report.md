@@ -7,7 +7,6 @@ featured_image: "/cdn/respond/financial-sector-hacking-ioc-artex.png"
 tags: ["금융권해킹", "ARTEX", "IOC", "AI해킹", "웹해킹", "WAF", "PLURA", "침해사고대응", "ThreatHunting", "사이버보안"]
 ---
 
-# [1보] 금융권 해킹 공격 IOC
 ## ARTEX AI 관련 공개 지표와 즉시 점검 항목
 
 > **2026년 10월 3일 · 1보 수정본**
