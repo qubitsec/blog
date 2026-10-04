@@ -3,7 +3,7 @@ title: "금융권은 뚫리는데, 왜 같은 대책만 반복하는가"
 date: 2026-10-04
 draft: false
 description: "금융권 연쇄 침해사고를 통해 2027년 AI 보안 전환 계획과 현재의 방어 공백, 제로트러스트·ISMS-P 중심 대응의 한계, C-TAS의 IOC 전파와 현장 적용 문제를 살펴봅니다. 미래 기술을 기다리는 대신 웹 요청·응답과 서버·계정 행위를 분석하고 정책 기반 대응으로 연결하는 PLURA-XDR의 현재 적용 방안을 제시합니다."
-featured_image: "/cdn/column/financial-sector-ai-hacking-response.png"
+featured_image: ""
 tags: ["금융권 해킹", "AI 해킹", "사이버보안", "과학기술정보통신부", "KISA", "C-TAS", "IOC", "제로트러스트", "ISMS-P", "PLURA-XDR", "PLURA-WAF", "PLURA-EDR", "AI-SOC"]
 ---
 
