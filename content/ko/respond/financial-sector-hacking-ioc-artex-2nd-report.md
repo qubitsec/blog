@@ -3,7 +3,7 @@ title: "[2보] 금융권 해킹 공격 IOC: 공격자 IP 19개 · ARTEX User-Age
 date: 2026-10-07
 draft: false
 description: "금융감독원 전파 자료의 공격자 IP 19개와 [1보]에서 정리한 ARTEX 공개 소스 기반 User-Agent 3종을 함께 정리합니다. 이번 IOC 2보는 공격자 IP와 공격자 UA를 구분해 즉시 점검할 수 있도록 구성했습니다."
-featured_image: ""
+featured_image: "/cdn/respond/financial-sector-hacking-ioc-artex.png"
 tags: ["금융권해킹", "IOC", "공격자IP", "User-Agent", "금융감독원", "금융보안원", "C-TAS", "ARTEX", "AI해킹", "WAF", "PLURA", "침해사고대응"]
 ---
 
