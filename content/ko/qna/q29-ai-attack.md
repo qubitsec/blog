@@ -1,7 +1,7 @@
 ---
 title: "Q29. AI 해킹 공격은 기존 해킹과 무엇이 다르고, 어떻게 막아야 할까요?"
 date: 2026-10-08
-draft: false
+draft: true
 description: "최근 금융권 연쇄 침해사고를 계기로 AI가 공격의 속도·규모·자동화를 어떻게 바꾸는지, 기존 보안의 빈틈과 웹 요청·응답 원본 데이터의 중요성, AI 기반 실시간 방어와 금융정책 전환 방향을 설명합니다."
 featured_image: "/cdn/qna/q29.png"
 tags: ["AI 해킹", "AI 사이버보안", "금융보안", "웹보안", "XDR", "WAF", "EDR", "SOC", "ISMS-P", "제로트러스트"]
