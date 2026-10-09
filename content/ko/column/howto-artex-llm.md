@@ -230,14 +230,14 @@ A와 B는 각각 대조 요청과 쿼리 요청의 **HTTP 상태·본문 길이�
 
 이 글은 2026년 10월 9일 실시한 **승인된 사내 ARTEX·LLM 합성 시그니처 시험의 공개용 파생 기록**을 바탕으로 작성했습니다. 공개용 자료는 원본 증거 전체가 아니며, IP·계정·원본 응답·비밀값·관리 화면을 제외했습니다.
 
-- [`01_requests.json`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): 요청 8건의 비식별 시각·상태·응답 크기·해시
-- [`02_tool_timeline.json`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): ARTEX 도구 실행 순서
-- [`03_verification.json`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): 시험 조건과 완료 검증 범위
-- [`04_waf_screen_correlation.md`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): WAF 화면 전사·대조 및 한계
-- [`05_detection_candidates.md`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): 탐지 후보와 아직 검증되지 않은 부분
-- [`artex-llm-flow.mmd`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): 수정 가능한 Mermaid 흐름도
-- [`artex-llm-flow.png`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): 이미지(PNG) 흐름도
-- [`artex-llm-flow.svg`](https://blog.plura.io/ko/column/howto-artex-llm/howto-artex-llm): 벡터 이미지(SVG) 흐름도
+- [`01_requests.json`](https://blog.plura.io/ko/column/howto-artex-llm/01_requests.json): 요청 8건의 비식별 시각·상태·응답 크기·해시
+- [`02_tool_timeline.json`](https://blog.plura.io/ko/column/howto-artex-llm/02_tool_timeline.json): ARTEX 도구 실행 순서
+- [`03_verification.json`](https://blog.plura.io/ko/column/howto-artex-llm/03_verification.json): 시험 조건과 완료 검증 범위
+- [`04_waf_screen_correlation.md`](https://blog.plura.io/ko/column/howto-artex-llm/04_waf_screen_correlation.md): WAF 화면 전사·대조 및 한계
+- [`05_detection_candidates.md`](https://blog.plura.io/ko/column/howto-artex-llm/05_detection_candidates.md): 탐지 후보와 아직 검증되지 않은 부분
+- [`artex-llm-flow.mmd`](https://blog.plura.io/ko/column/howto-artex-llm/artex-llm-flow.mmd): 수정 가능한 Mermaid 흐름도
+- [`artex-llm-flow.png`](https://blog.plura.io/ko/column/howto-artex-llm/artex-llm-flow.png): 이미지(PNG) 흐름도
+- [`artex-llm-flow.svg`](https://blog.plura.io/ko/column/howto-artex-llm/artex-llm-flow.svg): 벡터 이미지(SVG) 흐름도
 
 ## 함께 보기
 
