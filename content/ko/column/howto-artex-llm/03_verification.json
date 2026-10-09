@@ -1,0 +1,41 @@
+{
+  "classification": "SELECTED_VERIFICATION_FIELDS",
+  "date": "2026-10-09",
+  "artex_version": "v0.3.14",
+  "artex_commit": "86162d7edac41afcdd82d8de9ecab512b7e014d6",
+  "LLM_model_as_configured": "gpt-6-astra",
+  "outcome": "COMPLETED_REAL_ARTEX_LLM_SIGNATURE_OBSERVATION",
+  "checks": {
+    "task_done": true,
+    "natural_ARTEX_completion": true,
+    "exactly_eight_expected_requests_once": true,
+    "all_requests_AI_stage": true,
+    "no_module_or_auxiliary_execution": true,
+    "actual_Bash_tool_observed": true,
+    "AI_workspace_body_evidence": true,
+    "unique_client_url_status_body_provenance": true,
+    "gateway_host_hash_match": true,
+    "prior_false_positive_regressions_pass": true,
+    "original_http_client_UA_absence_verified": true,
+    "unique_tool_execution_time_correlation": true
+  },
+  "target_requests": 8,
+  "provider_calls": 20,
+  "task_status": "done",
+  "termination": "ARTEX_done",
+  "LLM_limit": {
+    "requests": 20,
+    "seconds": 600,
+    "estimated_USD": 5
+  },
+  "estimated_cost_USD": 3.77945,
+  "cost_note": "Existing configured unit prices; not an invoice or current price quotation.",
+  "original_evidence_files_rechecked": 232,
+  "original_manifest_sha256": "94c5d9b16437d32671309111c77b7e968f6535f0cad451a0001260448e8145ae",
+  "original_SHA256SUMS_sha256": "1a904beedbac129a7044e9bcc297511748c6c05d07c59d6ec70d303e8006ea3a",
+  "source_originals_included": false,
+  "limit": "Original hashes identify the internal evidence bundle; this public subset does not allow full revalidation of excluded originals.",
+  "current_WAF_evidence": "USER_SCREENSHOT_PARTIAL_FIELD_CORRELATION; NO_RAW_RULE_OR_ACTION_EXPORT",
+  "origin_authentication_logs": "NOT_AVAILABLE",
+  "real_incident_correlation": "NOT_VERIFIED"
+}

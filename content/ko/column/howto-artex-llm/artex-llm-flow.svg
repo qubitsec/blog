@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<title>ARTEX와 LLM의 역할 분담</title>
+<desc>LLM은 도구 호출과 코드를 생성하고 ARTEX가 실행한다. Python이 랩 게이트웨이를 거쳐 요청하고 PLURA에서 웹 흔적을 관측한다.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#52677b"/></marker></defs>
+<rect width="1200" height="900" fill="#f5f8fc"/>
+<g font-family="Malgun Gothic, Noto Sans KR, sans-serif">
+<text x="60" y="52" font-size="30" font-weight="bold" fill="#183044" text-anchor="start">ARTEX와 LLM — 판단·실행·관측의 역할</text>
+<text x="60" y="85" font-size="18" font-weight="normal" fill="#50667b" text-anchor="start">사내 승인 랩의 실제 도구 실행과 요청·응답 기록을 바탕으로 구성</text>
+<rect x="60" y="140" width="270" height="120" rx="16" fill="#ffffff" stroke="#c5d2df"/>
+<text x="195.0" y="186" font-size="23" font-weight="bold" fill="#183044" text-anchor="middle">사람</text>
+<text x="195.0" y="221" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">목표·범위·케이스·한도</text>
+<rect x="470" y="140" width="290" height="120" rx="16" fill="#e5efff" stroke="#c5d2df"/>
+<text x="615.0" y="186" font-size="23" font-weight="bold" fill="#183044" text-anchor="middle">ARTEX</text>
+<text x="615.0" y="221" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">작업·도구·상태 관리</text>
+<rect x="880" y="140" width="270" height="120" rx="16" fill="#ece8ff" stroke="#c5d2df"/>
+<text x="1015.0" y="186" font-size="23" font-weight="bold" fill="#183044" text-anchor="middle">LLM</text>
+<text x="1015.0" y="221" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">계획·코드·도구 호출</text>
+<polyline points="330,195 470,195" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="400" y="179" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">범위 지정</text>
+<polyline points="760,175 880,175" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="820" y="156" font-size="15" font-weight="normal" fill="#183044" text-anchor="middle">목표·상태</text>
+<polyline points="880,230 760,230" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="820" y="217" font-size="15" font-weight="normal" fill="#183044" text-anchor="middle">도구 호출</text>
+<rect x="470" y="410" width="290" height="110" rx="16" fill="#e4f4ed" stroke="#c5d2df"/>
+<text x="615.0" y="456" font-size="23" font-weight="bold" fill="#183044" text-anchor="middle">Python 실행 도구</text>
+<text x="615.0" y="491" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">실제 HTTP 요청·응답 처리</text>
+<polyline points="555,260 555,410" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="535" y="337" font-size="17" font-weight="normal" fill="#183044" text-anchor="end">실행</text>
+<polyline points="675,410 675,260" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="692" y="337" font-size="17" font-weight="normal" fill="#183044" text-anchor="start">도구 결과</text>
+<rect x="60" y="655" width="270" height="115" rx="16" fill="#fff4df" stroke="#c5d2df"/>
+<text x="195.0" y="701" font-size="23" font-weight="bold" fill="#183044" text-anchor="middle">랩 게이트웨이</text>
+<text x="195.0" y="736" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">주소·속도 제한 / 증거 보존</text>
+<rect x="470" y="655" width="290" height="115" rx="16" fill="#ffffff" stroke="#c5d2df"/>
+<text x="615.0" y="701" font-size="23" font-weight="bold" fill="#183044" text-anchor="middle">승인 시험서비스</text>
+<text x="615.0" y="736" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">합성 케이스·응답</text>
+<rect x="880" y="655" width="270" height="115" rx="16" fill="#e6f0fa" stroke="#c5d2df"/>
+<text x="1015.0" y="701" font-size="23" font-weight="bold" fill="#183044" text-anchor="middle">PLURA</text>
+<text x="1015.0" y="736" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">WAF 로그 관측</text>
+<polyline points="555,520 555,575 195,575 195,655" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="375" y="562" font-size="18" font-weight="normal" fill="#183044" text-anchor="middle">HTTP 요청</text>
+<polyline points="330,710 470,710" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="400" y="694" font-size="17" font-weight="normal" fill="#183044" text-anchor="middle">전달</text>
+<polyline points="675,655 675,520" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="693" y="594" font-size="18" font-weight="normal" fill="#183044" text-anchor="start">응답¹</text>
+<polyline points="760,710 880,710" fill="none" stroke="#52677b" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="7 6"/>
+<text x="820" y="694" font-size="16" font-weight="normal" fill="#183044" text-anchor="middle">WAF 로그</text>
+<text x="60" y="823" font-size="21" font-weight="bold" fill="#183044" text-anchor="start">AI 참여는 실행 기록으로, 웹 흔적은 요청·응답과 WAF 기록으로 확인한다.</text>
+<text x="60" y="858" font-size="16" font-weight="normal" fill="#50667b" text-anchor="start">¹ 응답은 같은 계측 경로를 거친다. 그림의 응답 화살표는 그 경로를 축약했다.</text>
+</g></svg>

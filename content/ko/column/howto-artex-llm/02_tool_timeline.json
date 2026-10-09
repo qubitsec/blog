@@ -1,0 +1,90 @@
+{
+  "classification": "DERIVED_PUBLIC_SUMMARY_NOT_RAW_ACTIVITY",
+  "timeline": [
+    {
+      "activity_sequence": 27,
+      "tool": "Write",
+      "started_utc": "2026-10-09T02:01:04Z",
+      "ended_utc": "2026-10-09T02:01:04Z",
+      "result_sequence": 28,
+      "tool_error": false,
+      "description": "collect.py 작성"
+    },
+    {
+      "activity_sequence": 30,
+      "tool": "Bash",
+      "started_utc": "2026-10-09T02:01:07Z",
+      "ended_utc": "2026-10-09T02:01:09Z",
+      "result_sequence": 31,
+      "tool_error": false,
+      "description": "기준선·목록 2건 수집"
+    },
+    {
+      "activity_sequence": 33,
+      "tool": "Bash",
+      "started_utc": "2026-10-09T02:01:17Z",
+      "ended_utc": "2026-10-09T02:01:17Z",
+      "result_sequence": 34,
+      "tool_error": false,
+      "description": "저장된 목록 로컬 분석; 네트워크 요청 없음"
+    },
+    {
+      "activity_sequence": 36,
+      "tool": "Bash",
+      "started_utc": "2026-10-09T02:01:31Z",
+      "ended_utc": "2026-10-09T02:01:35Z",
+      "result_sequence": 37,
+      "tool_error": false,
+      "description": "쿼리 없는 대조 2건·오류·스크립트 표식 수집"
+    },
+    {
+      "activity_sequence": 39,
+      "tool": "Bash",
+      "started_utc": "2026-10-09T02:01:41Z",
+      "ended_utc": "2026-10-09T02:01:42Z",
+      "result_sequence": 40,
+      "tool_error": false,
+      "description": "지정 쿼리 2건 수집"
+    },
+    {
+      "activity_sequence": 42,
+      "tool": "Write",
+      "started_utc": "2026-10-09T02:01:57Z",
+      "ended_utc": "2026-10-09T02:01:57Z",
+      "result_sequence": 43,
+      "tool_error": false,
+      "description": "analyze.py 작성"
+    },
+    {
+      "activity_sequence": 45,
+      "tool": "Bash",
+      "started_utc": "2026-10-09T02:02:04Z",
+      "ended_utc": "2026-10-09T02:02:04Z",
+      "result_sequence": 46,
+      "tool_error": false,
+      "description": "응답 비교 코드 실행"
+    },
+    {
+      "activity_sequence": 48,
+      "tool": "record_fact",
+      "started_utc": "2026-10-09T02:02:30Z",
+      "ended_utc": "2026-10-09T02:02:30Z",
+      "result_sequence": 49,
+      "tool_error": false,
+      "description": "관측 사실과 한계 기록"
+    },
+    {
+      "activity_sequence": 57,
+      "tool": "prove_goal",
+      "started_utc": "2026-10-09T02:02:56Z",
+      "ended_utc": "2026-10-09T02:02:56Z",
+      "result_sequence": 58,
+      "tool_error": false,
+      "description": "증거를 근거로 목표 충족 처리"
+    }
+  ],
+  "LLM_part": "planning, code and tool-call generation, interpretation",
+  "ARTEX_part": "tool dispatch, execution and task/evidence management",
+  "HTTP_sender": "Python http.client process executed via ARTEX Bash tool",
+  "operator_part": "target, four cases, queries and limits supplied in advance"
+}
