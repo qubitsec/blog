@@ -1,4 +1,11 @@
-# ARTEX·LLM 모의시험: AI가 만든 웹 요청, WAF에는 무엇이 남았나?
+---
+title: "ARTEX·LLM 모의시험: AI가 만든 웹 요청, WAF에는 무엇이 남았나?"
+date: 2026-10-09
+draft: false
+description: "ARTEX와 LLM을 연계한 사내 모의시험에서 웹 요청 8건과 LLM 호출 20회를 분석했습니다. AI가 생성한 요청의 User-Agent 특성과 WAF 관측 결과, 탐지의 한계를 살펴봅니다."
+featured_image: "/cdn/column/artex-llm-flow.png"
+tags: ["ARTEX", "LLM", "AI공격", "AI해킹", "웹방화벽", "WAF", "PLURA-XDR", "User-Agent", "IOC", "모의시험"]
+---
 
 ## LLM의 판단부터 ARTEX의 도구 실행까지 — 실제 HTTP 요청 8건으로 검증한 AI 공격 자동화의 구조
 
