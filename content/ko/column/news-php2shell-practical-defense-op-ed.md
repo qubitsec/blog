@@ -2,7 +2,7 @@
 title: "[전자신문] PHP2Shell 대응, 경고보다 실질적 방어체계가 먼저다"
 date: 2026-10-28
 draft: false
-featured_image: ""
+featured_image: "cdn/column/news-php2shell-practical-defense-op-ed.png"
 description: "PHP2Shell 대응의 핵심은 웹방화벽으로 공격 경로를 통제하면서 신속히 패치하는 것이다. 웹 요청·응답과 서버 감사 로그를 연결하고, 중소기업 지원정책도 실제 탐지·차단 능력을 갖추는 방향으로 바뀌어야 한다."
 tags: ["PHP2Shell", "PHP", "웹방화벽", "WAF", "가상패치", "취약점대응", "로그분석", "침해대응", "중소기업보안", "SECaaS", "ISMS-P", "XDR", "PLURA-Blog"]
 ---
