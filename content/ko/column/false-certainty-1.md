@@ -18,6 +18,9 @@ title: "가장 위험한 것은 잘못된 확신이다"
 
 ![가장 위험한 것은 잘못된 확신이다](https://blog.plura.io/cdn/column/false-certainty-1.png)
 
+
+![가장 위험한 것은 잘못된 확신이다](https://blog.plura.io/cdn/column/false-certainty-2.png)
+
 <!--more-->
 
 ---
