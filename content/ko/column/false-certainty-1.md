@@ -10,7 +10,8 @@ title: "가장 위험한 것은 잘못된 확신이다"
 > “It ain't what you don't know that gets you into trouble.  
 > It's what you know for sure that just ain't so.”
 
-> “우리를 곤경에 빠뜨리는 것은 우리가 모르는 것이 아니다. 우리가 확실히 안다고 착각하는 것이 우리를 곤경에 빠뜨린다.”
+> “우리를 곤경에 빠뜨리는 것은 우리가 모르는 것이 아니다.  
+> 우리가 확실히 안다고 착각하는 것이 우리를 곤경에 빠뜨린다.”
 
 — 마크 트웨인(Mark Twain)  
 *영화 《빅쇼트(The Big Short)》 오프닝에서*
