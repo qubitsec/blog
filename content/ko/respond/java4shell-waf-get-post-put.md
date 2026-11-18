@@ -4,6 +4,7 @@ date: 2026-11-19
 lastmod: 2026-11-19
 draft: false
 description: "NGINX와 ModSecurity를 기준으로 Java4Shell의 HTTP 메서드별 검사 위치, Base64 탐지식, 본문 파서, 동기 차단과 검증 방법을 설명합니다."
+featured_image: "/cdn/respond/java4shell-waf-get-post-put.png"
 tags: ["Java4Shell", "CVE-2026-114938", "Java", "웹방화벽", "WAF", "ModSecurity", "NGINX", "가상 패치", "PLURA-WAF"]
 ---
 
