@@ -157,11 +157,29 @@ SecRule XML://text()|XML://@* "@rx (?:\A|[^A-Za-z0-9+/_=-])(?:[A-Za-z0-9+/_-]{64
 
 현재 경로 변수 `REQUEST_FILENAME`도 percent-decoded 경로를 담으므로, 이 예제에서는 추가 URL 디코딩을 하지 않습니다.[^transaction]
 
+#### ⑤ 64의 배수 조건을 유지하는 이유
+
+공통식의 `(?:[A-Za-z0-9+/_-]{64})+`를 `(?:[A-Za-z0-9+/_-]{4}){16,}`로 바꾸면 탐지 범위가 넓어집니다. 그러나 **더 많은 비정상 문자열에 일치한다는 사실만으로 기존 식에 같은 취약점의 우회가 있다고 판단할 수는 없습니다.**
+
+OpenJDK의 원인 설명에 따르면 `L_finalBit`은 64바이트 처리 후 남은 **1~63바이트 전체**를 처리합니다. 출력 길이의 초기값은 `floor(잔여 길이 / 4) × 3`이며, 잔여 길이가 4보다 짧아 초기값이 0인 상태에서 패딩 길이를 빼면 음수가 됩니다. 최종 수정도 `length < 4`인 경우 Java의 일반 처리 경로로 보내는 가드를 추가합니다.[^openjdk-pr][^openjdk-fix]
+
+다음은 데이터 문자 뒤에 `X=`를 붙였을 때의 계산입니다. **해당 벡터 처리 경로에 도달했다고 가정한 원인 비교**이며, 모든 문자열이 실제 공격에 성공한다는 뜻은 아닙니다.
+
+| No. | `X=` 앞 데이터 문자 수 | 전체 길이 | 64바이트 처리 후 잔여 길이 | 패딩 반영 출력 길이 |
+| --- | --- | --- | --- | --- |
+| 1 | 64 | 66 | 2 | `floor(2/4) × 3 − 1 = −1` |
+| 2 | 68 | 70 | 6 | `floor(6/4) × 3 − 1 = 2` |
+| 3 | 72 | 74 | 10 | `floor(10/4) × 3 − 1 = 5` |
+
+68·72자 접두부의 경우에는 잔여 6·10바이트를 기준으로 계산합니다. 마지막 불완전한 4문자 단위만 다시 떼어 동일한 음수 계산을 수행한다는 설명은 위 구현과 맞지 않습니다. **이 문서의 공통식은 64의 배수 조건을 유지합니다.** 68·72자 뒤의 비정상 패딩 등 더 넓은 문법 위반은 아래의 지정 필드 검사로 거부합니다.
+
 ---
 
 ### 🎯 실제 Base64 필드에는 정상 문법을 적용합니다
 
-공통 패턴만으로는 잘못된 패딩 뒤에 추가 데이터가 붙는 경우 등 모든 문법 위반을 다루지 못합니다. 애플리케이션이 디코딩할 필드를 알면 해당 값 전체에 허용 문법을 적용할 수 있습니다.
+**Base64를 디코딩하는 핵심 API에는 공통 패턴 검사와 지정 필드의 전체 문법 검사를 함께 적용해야 합니다.** 공통 패턴만으로는 잘못된 패딩 뒤에 추가 데이터가 붙는 경우 등 모든 문법 위반을 다루지 못합니다.
+
+예를 들어 `64개의 데이터 문자 + X= + 추가 데이터` 같은 형태는 공통식의 오른쪽 경계 조건과 일치하지 않을 수 있습니다. 이 경계를 없애면 정상 패딩의 일부만 탐지하는 오탐이 생길 수 있으므로 유지하고, **패딩 뒤 데이터와 중간 패딩은 지정 필드 전체의 허용 문법으로 거부**합니다. 이를 흔히 Tail Injection이라고 부르더라도, 공통식의 비검출이 곧 실제 Java4Shell 악용 가능성을 입증하는 것은 아닙니다. 디코더에 최종 전달되는 값과 실행 경로는 별도 확인 대상입니다.
 
 예를 들어 `/api/decode`가 다음 세 형식을 지원하고, `payload`를 표준 Base64로 처리한다고 가정하겠습니다. 아래 값 `TQ==`는 정상적인 간단한 예시입니다.
 
@@ -195,6 +213,49 @@ SecRule REQUEST_FILENAME "@streq /api/token" \
 
 또한 전체 JWT는 하나의 Base64url 값이 아닙니다. `Bearer`라는 접두어만 보고 위 규칙을 모든 인증 토큰에 적용해서도 안 됩니다. 토큰 형식에 맞는 구성요소 검사와 서버의 인증·서명 검증은 별도로 유지해야 합니다.
 
+#### JSON 배열·중첩 객체는 실제 변수명으로 지정합니다
+
+위의 기본 예제는 `payload`와 `token`이 단일 문자열인 API를 가정합니다. `payload`의 문자열 배열을 받아 각 원소를 디코딩하는 API라면 배열 원소도 지정 필드 검사에 포함해야 합니다. 공통 규칙 `11930`은 이미 `ARGS` 전체를 검사하지만, 단일 대상인 `ARGS:json.payload`만으로는 배열 원소의 **전체 문법 검사**까지 수행되지 않습니다.
+
+확인한 libModSecurity v3의 공식 구현은 배열 경로에 `.array_`와 인덱스를 붙입니다. 다음 이름을 기준으로 대상식을 작성하되, 배포된 엔진에서 무해한 테스트로 실제 생성 이름을 확인합니다. `.0`, `.1` 형식으로 단정해서는 안 됩니다.[^json-parser][^json-names]
+
+| No. | JSON 구조 | 확인한 v3 구현의 대상 이름 |
+| --- | --- | --- |
+| 1 | `{"payload":"TQ=="}` | `ARGS:json.payload` |
+| 2 | `{"payload":["TQ==","TWE="]}` | `ARGS:json.payload.array_0`, `ARGS:json.payload.array_1` |
+| 3 | `{"items":[{"payload":"TQ=="}]}` | `ARGS:json.items.array_0.payload` |
+
+단일 문자열과 바로 아래의 문자열 배열을 함께 지원한다면, `11951`의 하위 규칙을 다음으로 **교체**합니다. 같은 ID의 시작 규칙을 추가로 복제하는 방식이 아닙니다.
+
+```apache
+    SecRule ARGS:payload|ARGS:json.payload|ARGS:/\Ajson\.payload\.array_[0-9]+\z/ "!@rx \A(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}(?:==)?|[A-Za-z0-9+/]{3}=?)?\z" "t:none"
+```
+
+이 대상식은 객체 배열·다차원 배열·모든 중첩 필드를 자동으로 포함하지 않습니다. 실제 JSON 경로를 확인해 필요한 필드만 추가합니다. 문자열 타입, 필수 값, 빈 배열, 중복 키와 허용 객체 구조는 API 스키마에서 검증해야 합니다. 단일 문자열만 받는 API라면 배열을 허용하도록 바꾸지 말고 스키마에서 거부합니다.
+
+#### 경로 별칭도 같은 디코더로 연결되는지 확인합니다
+
+`REQUEST_FILENAME`의 percent decoding과 애플리케이션의 최종 라우팅은 별개입니다. `@streq /api/decode`는 정확한 경로만 검사하므로, 다른 경로도 같은 디코더에 연결된다면 그 경로까지 동일한 필드 정책이 필요합니다.
+
+`t:normalizePath`는 연속 슬래시와 `.`·`..` 경로 요소를 정리합니다. **끝 슬래시나 `;jsessionid`를 모두 제거하는 변환자는 아닙니다.** NGINX의 location 매칭에도 자체 URI 정규화가 적용되므로 WAF의 경로 조건과 결과가 같다고 가정하지 말고 실제 설정을 대조해야 합니다.[^transformations][^nginx-location]
+
+| No. | 경로 형태 | 적용 기준 |
+| --- | --- | --- |
+| 1 | `/api//decode`, `/api/./decode`, `/api/x/../decode` | 동일한 API로 라우팅되는 환경이면 경로 조건의 `t:normalizePath` 적용 검토 |
+| 2 | `/api/decode/` | 같은 핸들러로 연결됨을 확인한 경우에만 끝 슬래시 허용 |
+| 3 | `/api/decode;jsessionid=1` | 프레임워크·컨테이너의 허용·제거·거부 동작을 확인해 명시적으로 처리 |
+| 4 | `/api;a=b/decode`와 다른 matrix parameter | 서비스가 지원하는 경로 계약에 맞춰 처리. 일괄 제거하지 않음 |
+| 5 | rewrite·별칭 URL | 같은 디코더에 연결되는 모든 실제 경로에 정책 적용 |
+
+중복 슬래시·dot segment가 정규화되고 끝 슬래시도 같은 API로 처리되는 환경을 확인했다면, `11951`의 시작 조건은 다음과 같이 바꿀 수 있습니다. 바로 아래의 Base64 값 검사에는 계속 `t:none`을 사용합니다.
+
+```apache
+SecRule REQUEST_FILENAME "@rx \A/api/decode/?\z" \
+    "id:11951,phase:2,t:none,t:normalizePath,deny,status:403,log,msg:'Invalid standard Base64 in designated payload field',tag:'CVE-2026-114938',chain"
+```
+
+**경로 범위를 바꿀 때는 필드 규칙 `11951`·`11952`와 Content-Type·Content-Encoding 규칙 `11954`~`11956`을 함께 맞춰야 합니다.** 제공한 `field-policy-normalized-array.conf.example`에는 이 조건부 경로 처리와 `payload` 직접 배열 검사를 모두 반영했습니다. 기본 `field-policy.conf.example`과 **둘 중 하나만** 선택하며, 두 파일은 같은 규칙 ID를 사용하므로 함께 Include하지 않습니다. 세미콜론·matrix parameter와 추가 rewrite 경로는 이 대체 예제가 자동 처리하지 않으므로, 허용하는 별칭에 같은 정책을 추가하거나 미지원 경로 형식을 거부합니다.
+
 ---
 
 ### 🚧 검사 한도와 파싱 실패도 정책에 포함합니다
@@ -226,6 +287,37 @@ SecRule &ARGS "@ge 1000" \
 지정 API에는 허용 Content-Type도 정해야 합니다. JSON·폼만 받는 API라면 본문이 있는데 Content-Type이 없거나 미지원 형식인 경우 거부합니다. 압축 본문을 지원한다면 압축 해제와 검사 순서를 일치시켜야 하며, 지원하지 않는 API에서는 거부합니다. 파일의 두 예시 API는 JSON·폼만 허용하고 미지원 압축을 거부하도록 작성했습니다.
 
 **본문 크기 제한은 Base64 문법 검사를 대신하지 않습니다.** 작은 입력도 취약 경로에 도달할 수 있으므로, 정상 서비스에 맞는 크기 제한과 입력 값 검사를 함께 적용해야 합니다.[^calif]
+
+#### Rule ID 요약
+
+기존 CRS와 통합할 때는 아래 ID의 충돌 여부와 적용 순서를 확인합니다. `11951`~`11956`은 서비스의 경로·필드 계약에 맞춰 선택한 예제이며, `11981`~`11987`은 **테스트 환경에서만 임시로 사용하는 스모크 규칙**입니다.
+
+| No. | Rule ID | 기능 | Phase | 동작·상태 코드 |
+| --- | --- | --- | --- | --- |
+| 1 | `11903` | 중복 Content-Type 거부 | 1 | 차단·400 |
+| 2 | `11901` | JSON 본문 프로세서 선택 | 1 | `pass`·차단 없음 |
+| 3 | `11902` | XML 본문 프로세서 선택 | 1 | `pass`·차단 없음 |
+| 4 | `11910` | 헤더·쿠키·쿼리의 공통 패턴 | 1 | 차단·403 |
+| 5 | `11911` | Base64url 경로 세그먼트 | 1 | 차단·403 |
+| 6 | `11919` | phase 1 정규식 오류·한도 초과 | 1 | 차단·400 |
+| 7 | `11920` | 본문 검사 한도 초과 | 2 | 차단·413, 엔진 선행 거부 시 403 가능 |
+| 8 | `11921` | 본문 파싱 실패 | 2 | 차단·400 |
+| 9 | `11922` | multipart 엄격 검사 실패 | 2 | 차단·400 |
+| 10 | `11923` | 인자 수 한도 도달 | 2 | 차단·400 |
+| 11 | `11924` | URLENCODED 파싱 오류 | 2 | 차단·400 |
+| 12 | `11930` | 파싱된 `ARGS`의 공통 패턴 | 2 | 차단·403 |
+| 13 | `11931` | XML 텍스트·속성의 공통 패턴 | 2 | 차단·403 |
+| 14 | `11932` | 원시 본문의 보조 패턴 검색 | 2 | 차단·403 |
+| 15 | `11990` | 공통 본문 규칙 뒤 정규식 오류 확인 | 2 | 차단·400 |
+| 16 | `11951` | 지정 `payload`의 표준 Base64 문법 | 2 | 차단·403 |
+| 17 | `11952` | 지정 `token`의 Base64url 문법 | 2 | 차단·403 |
+| 18 | `11954` | 지정 API 본문의 Content-Type 누락 | 2 | 차단·415 |
+| 19 | `11955` | 지정 API 본문의 미지원 Content-Type | 2 | 차단·415 |
+| 20 | `11956` | 지정 API의 미지원 Content-Encoding | 1 | 차단·415 |
+| 21 | `11999` | 지정 필드 규칙 뒤 정규식 오류 확인 | 2 | 차단·400 |
+| 22 | `11981`~`11983` | 쿼리·헤더·쿠키 파서 스모크 | 1 | 테스트용 차단·403 |
+| 23 | `11984`~`11986` | 폼·JSON·XML 파서 스모크 | 2 | 테스트용 차단·403 |
+| 24 | `11987` | JSON 직접 배열 원소 파서 스모크 | 2 | 테스트용 차단·403 |
 
 ---
 
@@ -260,23 +352,34 @@ Include /etc/nginx/modsecurity/java4shell.conf
 
 기존 CRS와 설정을 유지하며 통합하고 규칙 ID 충돌을 확인합니다. 특히 phase 1의 `allow`나 `allow:request`는 뒤의 본문 검사 전체를 생략시킬 수 있습니다. Include 순서만으로 해결되지 않으므로 전체 허용·skip·`ctl:ruleEngine=Off`·`ctl:requestBodyAccess=Off` 예외를 함께 점검해야 합니다.[^actions]
 
+#### 정상 트래픽을 확인하며 단계적으로 적용합니다
+
+헤더·쿠키 전체를 검색하는 `11910`은 레거시 토큰과 사용자 정의 헤더에서도 일치할 수 있습니다. 다음 순서로 적용 범위와 오탐을 확인합니다.
+
+1. **테스트 환경에서 정상 요청을 대조합니다.** 로그인·세션 갱신·API·업로드와 대표적인 헤더·쿠키를 포함하고, Base64를 실제로 디코딩하는 경로를 확인합니다.
+2. **보호를 유지한 상태에서 제한적으로 관측합니다.** 운영에서 특정 규칙을 잠시 탐지 전용으로 관측해야 한다면 먼저 JVM 패치·검증된 임시 완화 또는 다른 검증된 차단 계층으로 해당 경로를 보호하고, 관측 범위와 종료 시점을 정합니다. 전체 `SecRuleEngine`을 `DetectionOnly`로 바꾸면 파싱 실패·검사 한도 초과의 차단까지 비활성화될 수 있으므로 이 문서의 Fail-Closed 구성으로 볼 수 없습니다.[^actions][^config]
+3. **예외는 확인한 대상에 한정합니다.** 규칙 ID·정확한 헤더/쿠키 이름·API 범위를 기록하고, 해당 값이 디코더에 전달되는지 확인한 뒤 필요한 대상만 조정합니다. `Cookie` 원문 헤더와 파싱된 `REQUEST_COOKIES`가 함께 검사될 수 있으므로 실제 매칭 변수를 확인합니다. 전체 요청 허용이나 보호 API의 일괄 검사 해제는 피합니다.
+4. **차단 전환과 재검증을 완료합니다.** 정상 요청의 통과, 의도한 규칙 ID의 거부, 원본 서버 미도달을 확인하고 예외의 담당자·검토 기한을 남깁니다.
+
 ---
 
 ### 🧪 규칙 등록 이후에는 무엇을 검증해야 할까요?
 
 **정규식의 일치 결과와 실제 HTTP 요청의 차단 결과는 구분해 확인해야 합니다.**
 
-제공한 설정의 **7개 규칙에서 정규식을 추출해 오프라인 PCRE2로 검사한 결과, 2,464개 사례의 일치·불일치 결과가 설정한 기대값과 일치**했습니다. 정상 Base64, 공개된 비정상 꼬리, 경로 세그먼트, 지정 필드의 허용 문법과 **탐지 범위를 확인하기 위한 알려진 비검출 사례**를 포함합니다.
+제공한 기본 설정의 **7개 규칙에서 정규식을 추출해 오프라인 PCRE2로 검사한 결과, 2,864개 사례의 일치·불일치 결과가 설정한 기대값과 일치**했습니다. 기존 2,464건에 68·72자 접두부, 패딩 뒤 추가 데이터, 대응하는 정상 값 등 400건을 추가했습니다. 정상 Base64, 공개된 비정상 꼬리, 경로 세그먼트, 지정 필드의 허용 문법과 **탐지 범위를 확인하기 위한 알려진 비검출 사례**를 포함합니다.
 
 | No. | 검증 범위 | 결과·확인 사항 |
 | --- | --- | --- |
-| 1 | 정규식 매칭 | 7개 규칙, 2,464개 매칭 사례의 기대값 일치 |
-| 2 | ModSecurity 설정 로드·chain 실행 | 해당 검사 수치에 포함되지 않음. 실제 배포 환경에서 확인 |
+| 1 | 정규식 매칭 | 기본 설정 7개 규칙, 2,864개 매칭 사례의 기대값 일치 |
+| 2 | ModSecurity 설정 로드·chain·변환·대상 선택 | 해당 검사 수치에 포함되지 않음. 대체 경로·배열 설정도 실제 배포 환경에서 확인 |
 | 3 | GET·POST·PUT·PATCH의 파서 동작 | 무해한 테스트 문자열이 올바른 변수와 규칙 ID에 도달하는지 확인 |
 | 4 | 실제 요청 거부 | WAF의 응답과 원본 서버 미도달을 함께 확인 |
 | 5 | 서비스 영향 | 정상 로그인·API·업로드가 의도대로 동작하는지 확인 |
 
 이 결과는 실제 JVM 취약점 재현이나 모든 변형 공격 차단을 검증한 수치가 아닙니다. 정규식 결과 파일에는 알려진 비검출 범위도 별도로 기록했습니다.
+
+68·72자 접두부와 패딩 뒤 데이터의 일부 사례는 공통식의 비검출을 기대값으로 기록하고, 지정 필드 문법에서는 거부 조건임을 확인했습니다. **비검출 사례의 검사 통과는 공격 차단 성공이나 안전한 입력 판정을 뜻하지 않습니다.** 이 수치에는 JSON 배열 변수의 생성, 대상 선택, 경로 정규화와 실제 upstream 차단이 포함되지 않습니다.
 
 #### 공격 입력 없이 JSON 파서를 확인하는 방법
 
@@ -306,6 +409,26 @@ curl --noproxy '*' -i -X PATCH \
 두 요청은 JSON 파싱 후 같은 값을 가집니다. **403 응답, 규칙 ID `11985`, 원본 서버 미도달**이 함께 확인되어야 합니다. 다른 규칙이 먼저 거부한 403을 JSON 파서 성공으로 판단하면 안 됩니다. 정상 문자열 요청은 테스트용 upstream에 도달하는지도 비교합니다.
 
 같은 방식으로 GET 쿼리, POST·PUT 폼, 쿠키, 헤더, XML을 확인합니다. `nginx -t`의 성공은 설정 문법 확인이며 파서와 차단 동작의 확인까지 대신하지는 않습니다.
+
+#### JSON 배열의 이름과 대상 선택도 별도로 확인합니다
+
+배열을 지원하는 API에는 다음 임시 규칙을 사용합니다. marker인 `UExVUkFfQVJSQVlfVEVTVA==`는 짧고 정상적인 Base64이므로 지정 필드의 허용 문법과 충돌하지 않습니다.
+
+```apache
+SecRule ARGS:/\Ajson\.payload\.array_[0-9]+\z/ "@streq UExVUkFfQVJSQVlfVEVTVA==" \
+    "id:11987,phase:2,t:none,deny,status:403,log,msg:'Parser smoke: JSON array payload',logdata:'%{MATCHED_VAR_NAME}'"
+```
+
+```bash
+curl --noproxy '*' -i -X PUT \
+  -H 'Content-Type: application/json' \
+  --data '{"payload":["TQ==","UExVUkFfQVJSQVlfVEVTVA=="]}' \
+  "$WAF_TEST_ORIGIN/__waf_parser_test"
+```
+
+기대하는 결과는 **403, 규칙 ID `11987`, 일치 변수 `ARGS:json.payload.array_1`, 테스트용 upstream 미도달**입니다. marker를 첫 번째 원소로 옮기면 `array_0`인지 확인합니다. 배열 대상식만 정규식 엔진에서 검사한 결과로는 실제 JSON 파서가 그 변수를 생성했음을 입증할 수 없습니다.
+
+경로 별칭은 같은 테스트 환경에서 정상적인 짧은 값으로 실제 라우트를 먼저 확인합니다. 그 뒤 `payload`에 `@`처럼 짧은 문법 위반 값을 넣어 해당 별칭에서 `11951`이 거부하는지 확인하고, Content-Type·Content-Encoding 거부도 같은 별칭에 적용되는지 확인합니다. 시험에는 취약 JVM 대신 테스트용 upstream을 사용하며, 경로가 클라이언트에서 먼저 정규화되지 않도록 전송된 요청 경로도 확인합니다.
 
 ---
 
@@ -342,11 +465,12 @@ curl --noproxy '*' -i -X PATCH \
 | --- | --- | --- |
 | 1 | `java4shell.conf` | 파서 선택, 공통 탐지, 검사 한도·오류 거부 |
 | 2 | `field-policy.conf.example` | API 경로와 Base64 필드 문법 검증 |
-| 3 | `nginx-integration.conf.example` | NGINX 연결 설정 |
-| 4 | `tests/parser-smoke.conf.example` | 무해한 파서 확인 규칙 |
-| 5 | `tests/verify_patterns.py` | 오프라인 PCRE2 검증기 |
-| 6 | `tests/regex-results.json` | 검사 결과와 미검증 범위 |
-| 7 | `README.md`, `SHA256SUMS` | 적용 설명과 파일 무결성 확인 |
+| 3 | `field-policy-normalized-array.conf.example` | 확인된 경로 정규화·끝 슬래시와 `payload` 직접 배열의 조건부 대체 예제 |
+| 4 | `nginx-integration.conf.example` | NGINX 연결 설정 |
+| 5 | `tests/parser-smoke.conf.example` | JSON 배열을 포함한 무해한 파서 확인 규칙 |
+| 6 | `tests/verify_patterns.py` | 오프라인 PCRE2 검증기 |
+| 7 | `tests/regex-results.json` | 검사 결과와 미검증 범위 |
+| 8 | `README.md`, `SHA256SUMS` | 적용 설명과 파일 무결성 확인 |
 
 ---
 
@@ -372,3 +496,9 @@ curl --noproxy '*' -i -X PATCH \
 [^connector]: [ModSecurity-nginx 공식 connector](https://github.com/owasp-modsecurity/ModSecurity-nginx).
 [^nginx-buffering]: [NGINX — proxy_request_buffering](https://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_request_buffering).
 [^cloudflare]: [Cloudflare — How Cloudflare WAF helps protect against Java4Shell](https://blog.cloudflare.com/java4shell-waf-protection/). WAF 보호 범위와 인바운드 HTTP 밖의 경로.
+[^openjdk-pr]: [OpenJDK — PR #32781, AVX-512 Base64 decoder overwrites output buffer on short padded tail](https://github.com/openjdk/jdk/pull/32781). 잔여 길이와 출력 길이 계산에 관한 원인 설명.
+[^openjdk-fix]: [OpenJDK — 최종 수정 커밋 5177a70](https://github.com/openjdk/jdk/commit/5177a70b385c16f26ede191fdac7aaba0bed0f8b). `length < 4`에서 일반 처리 경로로 분기하는 수정.
+[^json-parser]: [ModSecurity — JSON 파서 구현](https://github.com/owasp-modsecurity/ModSecurity/blob/5bdfcbf1/src/request_body_processor/json.cc). 배열 이름에 `.array_`와 인덱스를 추가하는 구현.
+[^json-names]: [ModSecurity — Issue #2942, JSON 변수명 차이](https://github.com/owasp-modsecurity/ModSecurity/issues/2942). v2·v3 차이와 v3 `json.foo.array_0.bar`에 관한 관리자 설명.
+[^transformations]: [ModSecurity — Transformation Functions](https://modsecurity.org/docs/3-reference-manual/3-4-transformation-functions/index.html). `normalizePath`와 변환 적용 범위.
+[^nginx-location]: [NGINX — location](https://nginx.org/en/docs/http/ngx_http_core_module.html#location). location 매칭 전 URI 정규화.
