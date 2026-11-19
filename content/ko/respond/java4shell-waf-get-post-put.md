@@ -12,7 +12,9 @@ tags: ["Java4Shell", "CVE-2026-114938", "Java", "웹방화벽", "WAF", "ModSecur
 
 **Java4Shell 대응의 핵심은 외부에서 들어온 비정상 Base64 값이 취약한 Java 디코더에 도달하기 전에 차단하는 것입니다.** 웹방화벽에서 보호할 HTTP 경로와 검사 대상을 구체화하고, 실제 차단 효과를 확인하면서 Java 패치를 병행해야 합니다.
 
-2026년 11월 17일 공개된 **Java4Shell**(CVE-2026-114938)은 Java의 하드웨어 가속 Base64 디코딩 경로에서 발생하는 메모리 손상 취약점입니다. 취약 코드가 포함된 미수정 런타임에서 **x86-64의 AVX-512 VBMI 가속 경로**가 사용되고, 공격자가 제어한 입력이 해당 디코더에 도달하는 조건이 맞으면 정보 노출·서비스 장애·원격 코드 실행으로 이어질 수 있습니다.[^microsoft][^calif]
+2026년 11월 17일 미국 태평양시간 기준으로 공개된 **Java4Shell**(CVE-2026-114938)은 Java의 하드웨어 가속 Base64 디코딩 경로에서 발생하는 메모리 손상 취약점입니다. 한국시간으로는 11월 18일입니다. 취약 코드가 포함된 미수정 런타임에서 **x86-64의 AVX-512 VBMI 가속 경로**가 사용되고, 공격자가 제어한 입력이 해당 디코더에 도달하는 조건이 맞으면 정보 노출·서비스 장애·원격 코드 실행으로 이어질 수 있습니다.[^microsoft][^calif]
+
+위험도는 **Calif의 CVSS 4.0 기준 9.2점(Critical)**과 **Oracle의 CVSS 3.1 기준 8.1점(High)**을 평가 주체·버전과 함께 구분해 표기합니다. 실제 RCE의 인증 필요 여부와 성립 조건은 제품·입력 처리 경로에 따라 다르므로, Java를 사용한다는 사실만으로 모든 서비스의 무인증 RCE를 단정하지 않습니다.[^calif][^oracle-cspu]
 
 운영자에게 필요한 것은 “Base64를 검사한다”는 설명을 실제 정책으로 바꾸는 기준입니다. **어느 HTTP 메서드에서, 어느 위치의 값을, 어떻게 파싱하고, 언제 거부할 것인지**가 정해져야 WAF에 규칙을 넣을 수 있습니다.
 
@@ -92,6 +94,8 @@ SecRule REQUEST_HEADERS:Content-Type "@rx ^(?:(?:application|text)/xml|applicati
 ### 🧬 어떤 Base64를 차단해야 할까요?
 
 정상 Base64에도 끝의 `=`나 `==`가 사용됩니다. 따라서 **`=`가 있다는 이유만으로 차단하지 않습니다.** 문자 개수, 마지막 단위, 패딩 위치와 개수를 함께 검사해야 합니다. Java 디코더는 일부 정상 입력의 패딩 생략도 허용하므로 서비스가 허용하는 문법을 먼저 정해야 합니다.[^decoder]
+
+**디코딩 예외를 처리하는 것만으로는 이 취약점을 완화할 수 없습니다.** Java가 최종적으로 `IllegalArgumentException`을 발생시켜 입력을 거부하더라도, 취약한 가속 경로에서 메모리 손상이 먼저 발생할 수 있기 때문입니다. 입력 검사는 취약한 디코더를 호출하기 전에 수행해야 합니다. 애플리케이션의 오류 응답만으로 보호를 판단하지 않고, WAF의 거부 기록과 원본 서버 미도달을 함께 확인하는 이유도 여기에 있습니다.[^calif][^openjdk-pr]
 
 Calif의 분석은 64개 단위 처리 후 남는 입력에서 다음과 같은 비정상 꼬리가 문제가 될 수 있음을 설명합니다. `X`, `Y`는 데이터 문자이며, 아래는 전체 공격 문자열의 종류가 아니라 **마지막 꼬리의 형태**입니다.[^calif]
 
@@ -436,6 +440,8 @@ curl --noproxy '*' -i -X PUT \
 
 이 규칙이 검사하는 범위는 WAF가 실제로 해석할 수 있는 HTTP 입력입니다. MIME·중첩 인코딩·업로드 파일 내부·압축 본문·WebSocket 업그레이드 이후 메시지에는 별도 처리가 필요합니다. Java가 외부 서버에서 받는 데이터와 내부 메시지 등 인바운드 WAF를 거치지 않는 경로도 있습니다.[^cloudflare]
 
+Calif는 **악성 서버에 TLS로 접속하는 Java 프로그램의 클라이언트 측 악용 사례**도 보고했습니다. 외부에 서비스 포트를 열지 않은 프로그램도 해당 실행 조건과 입력 경로를 점검해야 하며, 인바운드 WAF 밖에서 데이터를 받는 클라이언트 런타임의 패치·완화도 확인해야 합니다.[^calif]
+
 따라서 운영에서는 다음 작업을 병행합니다.
 
 | No. | 담당 영역 | 완료 기준 |
@@ -446,6 +452,24 @@ curl --noproxy '*' -i -X PUT \
 | 4 | 운영·관제 | 정상 서비스 영향과 Java 프로세스의 이상 행위 확인 |
 
 즉시 패치하기 어려운 환경은 공급자가 안내한 JVM 임시 완화를 검토하고, 실제 서비스가 사용하는 런타임에 적용됐는지 확인합니다. 내장 JDK/JRE와 컨테이너도 수정 대상에서 빠지지 않아야 합니다.[^microsoft]
+
+#### 실행 중인 서비스의 빌드와 옵션을 확인합니다
+
+셸에서 실행한 `java -version`은 그 셸이 선택한 Java의 정보입니다. **서비스가 다른 경로나 컨테이너의 Java를 사용한다면 이 결과만으로 패치 완료를 판단할 수 없습니다.** 실행 경로와 배포판·전체 빌드를 확인하고, 지원되는 환경에서는 대상 프로세스의 PID로 다음 정보를 조회합니다.[^jcmd]
+
+| No. | 확인 대상 | 명령 예시 |
+| --- | --- | --- |
+| 1 | 실행 중인 JVM의 버전·빌드 | `jcmd <PID> VM.version` |
+| 2 | JVM 시작 명령과 전달된 인수 | `jcmd <PID> VM.command_line` |
+| 3 | 현재 JVM 플래그 값 | `jcmd <PID> VM.flags -all` |
+
+`<PID>`는 해당 서비스 프로세스의 실제 PID로 바꿉니다. `jcmd`는 대상 JVM과 같은 머신에서 동일한 유효 사용자·그룹 권한으로 사용하며, 컨테이너는 해당 실행 환경과 PID를 확인해야 합니다. 도구가 없거나 진단 연결이 제한되면 서비스 관리자·컨테이너 설정과 실제 프로세스 실행 경로를 대조합니다. **재시작 후에는 새 프로세스의 빌드와 완화 옵션을 다시 확인**해야 합니다.[^jcmd]
+
+#### Java 8도 배포판과 빌드를 구분합니다
+
+**Java 메이저 버전만으로 점검 대상을 제외하지 않습니다.** Oracle의 해당 CVE 영향 목록에는 Java 8 Enterprise Performance Pack의 `8u511b33-perf`도 포함됩니다. 2026년 11월 수정 릴리스는 `8u513-perf`, 전체 버전은 `1.8.0_513-perf-b4`입니다. 일반 Java 8과 EPP의 `-perf` 빌드를 구분하고, 다른 OpenJDK 배포판에는 각 공급자의 해당 CVE 권고와 수정 빌드 기준을 적용합니다.[^oracle-cspu][^oracle-epp]
+
+운영·관제에서는 비정상 Base64 입력의 반복이나 JVM 비정상 종료를 **조사 단서**로 사용합니다. 이 현상만으로 RCE 성공을 확정하지 않고, 같은 시각의 WAF 로그·원본 전달 여부·Java 오류·프로세스·파일·외부 연결 기록을 대조합니다.
 
 ### 📌 대응 원칙
 
@@ -483,6 +507,8 @@ curl --noproxy '*' -i -X PUT \
 
 ## 📚 참고 자료
 
+- 추가 운영 참고: [지니언스 — Java4Shell 시스템 운영자용 보안 대응 안내서](https://www.genians.co.kr/blog/threat_intelligence/cve-2026-114938). 운영 점검 범위를 비교 검토한 자료이며, 기술 조건과 빌드는 아래 Oracle·Calif 원문을 기준으로 확인했습니다.
+
 [^calif]: [Calif — Java4Shell](https://calif.io/java4shell/). 취약점 원인, 마지막 단위와 비정상 패딩 처리, JVM 완화.
 [^microsoft]: [Microsoft — Addressing Java4Shell CVE-2026-114938: upgrade guidance and Azure WAF mitigations](https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/addressing-java4shell-cve-2026-114938-upgrade-guidance-and-azure-waf-mitigations/4574305). HTTP 입력 위치별 WAF 규칙과 런타임 업데이트.
 [^phases]: [ModSecurity — Processing Phases](https://modsecurity.org/docs/3-reference-manual/3-1-processing-phases/).
@@ -502,3 +528,6 @@ curl --noproxy '*' -i -X PUT \
 [^json-names]: [ModSecurity — Issue #2942, JSON 변수명 차이](https://github.com/owasp-modsecurity/ModSecurity/issues/2942). v2·v3 차이와 v3 `json.foo.array_0.bar`에 관한 관리자 설명.
 [^transformations]: [ModSecurity — Transformation Functions](https://modsecurity.org/docs/3-reference-manual/3-4-transformation-functions/index.html). `normalizePath`와 변환 적용 범위.
 [^nginx-location]: [NGINX — location](https://nginx.org/en/docs/http/ngx_http_core_module.html#location). location 매칭 전 URI 정규화.
+[^oracle-cspu]: [Oracle — November 2026 Critical Security Patch Update](https://www.oracle.com/security-alerts/cspunov2026.html). Java SE Risk Matrix의 CVE-2026-114938 개별 행, CVSS 3.1 평가와 영향 제품·빌드.
+[^oracle-epp]: [Oracle — Java SE 8u513 Enterprise Performance Pack Release Notes](https://www.oracle.com/java/technologies/javase/8u513-perf-relnotes.html). EPP 수정 릴리스의 전체 빌드 문자열.
+[^jcmd]: [Oracle — The jcmd Command](https://docs.oracle.com/en/java/javase/25/docs/specs/man/jcmd.html). 실행 중인 JVM의 버전·명령행·플래그 조회와 실행 권한 조건.
