@@ -7,8 +7,6 @@ featured_image: "/cdn/tech/WordPress_PLURA-XDR.png"
 tags: ["WordPress", "WordPress보안", "워드프레스", "웹보안", "WAF", "PLURA-XDR", "취약점대응"]
 ---
 
-# 워드프레스 보안, PLURA-XDR은 어떻게 대응하고 무엇을 강화해 나갈 것인가?
-
 워드프레스(WordPress)는 홈페이지와 블로그, 쇼핑몰을 만들고 운영할 수 있는 콘텐츠 관리 시스템(CMS)입니다.  
 테마로 디자인을 바꾸고, 플러그인으로 게시판·회원·예약·결제 같은 기능을 쉽게 추가할 수 있습니다.
 
